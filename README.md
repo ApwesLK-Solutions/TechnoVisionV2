@@ -7,7 +7,7 @@ Required
 
 > Mysql Version 8.0.15 64Bit 
 
-> Mysql ODBC Connector 64Bit 
+> Mysql ODBC Connector 8.0.15 64Bit 
 
 > SAP - Crystal Reports Runtime Package 64Bit 
 
