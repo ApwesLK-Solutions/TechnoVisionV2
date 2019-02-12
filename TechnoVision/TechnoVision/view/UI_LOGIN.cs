@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TechnoVision;
+
 
 namespace TechnoVision.view
 {
@@ -19,7 +21,7 @@ namespace TechnoVision.view
 
         private void UI_LOGIN_Load(object sender, EventArgs e)
         {
-
+            CommonFunctions.WriteToErrorLog("LOL");
         }
     }
 }
