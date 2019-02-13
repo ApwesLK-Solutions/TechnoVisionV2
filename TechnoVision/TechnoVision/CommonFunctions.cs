@@ -24,11 +24,11 @@ namespace TechnoVision
                 }
                 ErrorLogFilePath = @"D:\TechnoVision\Data\Error_Log.file";
                 StreamWriter writer = new StreamWriter(ErrorLogFilePath, true);
-                writer.WriteLine(row);
+                writer.WriteLine(DateTime.Now.ToString() + " : " + row);
                 writer.Close();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
