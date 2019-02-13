@@ -21,7 +21,7 @@ namespace TechnoVision.view
 
         private void UI_LOGIN_Load(object sender, EventArgs e)
         {
-            
+            CommonFunctions.WriteToErrorLog("This is an Error");
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)

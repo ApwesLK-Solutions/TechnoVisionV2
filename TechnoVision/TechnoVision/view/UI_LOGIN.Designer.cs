@@ -31,6 +31,11 @@
             this.UserName = new MetroFramework.Controls.MetroTextBox();
             this.Password = new MetroFramework.Controls.MetroTextBox();
             this.BtnLogin = new MetroFramework.Controls.MetroTile();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.BtnForgetPassword = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // UserName
@@ -49,7 +54,7 @@
             this.UserName.CustomButton.Visible = false;
             this.UserName.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.UserName.Lines = new string[0];
-            this.UserName.Location = new System.Drawing.Point(229, 122);
+            this.UserName.Location = new System.Drawing.Point(183, 145);
             this.UserName.MaxLength = 32767;
             this.UserName.Name = "UserName";
             this.UserName.PasswordChar = '\0';
@@ -82,7 +87,7 @@
             this.Password.CustomButton.Visible = false;
             this.Password.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.Password.Lines = new string[0];
-            this.Password.Location = new System.Drawing.Point(229, 158);
+            this.Password.Location = new System.Drawing.Point(183, 181);
             this.Password.MaxLength = 32767;
             this.Password.Name = "Password";
             this.Password.PasswordChar = '*';
@@ -102,7 +107,7 @@
             // BtnLogin
             // 
             this.BtnLogin.ActiveControl = null;
-            this.BtnLogin.Location = new System.Drawing.Point(163, 210);
+            this.BtnLogin.Location = new System.Drawing.Point(217, 226);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(119, 46);
             this.BtnLogin.Style = MetroFramework.MetroColorStyle.Green;
@@ -114,20 +119,65 @@
             this.BtnLogin.UseSelectable = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TechnoVision.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(104, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(350, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(108, 152);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Username";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(108, 188);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Password";
+            // 
+            // BtnForgetPassword
+            // 
+            this.BtnForgetPassword.AutoSize = true;
+            this.BtnForgetPassword.Location = new System.Drawing.Point(420, 255);
+            this.BtnForgetPassword.Name = "BtnForgetPassword";
+            this.BtnForgetPassword.Size = new System.Drawing.Size(114, 17);
+            this.BtnForgetPassword.TabIndex = 6;
+            this.BtnForgetPassword.TabStop = true;
+            this.BtnForgetPassword.Text = "Forget Password";
+            // 
             // UI_LOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(522, 296);
+            this.ClientSize = new System.Drawing.Size(547, 281);
+            this.Controls.Add(this.BtnForgetPassword);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.UserName);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "UI_LOGIN";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Load += new System.EventHandler(this.UI_LOGIN_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -136,5 +186,9 @@
         private MetroFramework.Controls.MetroTextBox UserName;
         private MetroFramework.Controls.MetroTextBox Password;
         private MetroFramework.Controls.MetroTile BtnLogin;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.LinkLabel BtnForgetPassword;
     }
 }

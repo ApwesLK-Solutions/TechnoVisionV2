@@ -20,7 +20,7 @@ namespace TechnoVision
                 }
                 if (File.Exists(@"D:\TechnoVision\Data\Error_Log.file") == false)
                 {
-                    File.Create(@"D:\TechnoVision\Data\Error_Log.file");
+                    File.Create(@"D:\TechnoVision\Data\Error_Log.file").Close();
                 }
                 ErrorLogFilePath = @"D:\TechnoVision\Data\Error_Log.file";
                 StreamWriter writer = new StreamWriter(ErrorLogFilePath, true);
