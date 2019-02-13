@@ -24,7 +24,7 @@ namespace TechnoVision
                 }
                 ErrorLogFilePath = @"D:\TechnoVision\Data\Error_Log.file";
                 StreamWriter writer = new StreamWriter(ErrorLogFilePath, true);
-                writer.WriteLine(DateTime.Now.ToString() + " : " + row);
+                writer.WriteLine(DateTime.Now.ToString("yyyy-MM-dd") +" " +DateTime.Now.ToString("hh:mm:ss")+" : " + row);
                 writer.Close();
                 return true;
             }
