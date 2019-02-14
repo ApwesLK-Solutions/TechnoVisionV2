@@ -65,7 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonFunctions.cs" />
+    <Compile Include="controller\SpecOrderController.cs" />
     <Compile Include="controller\UserController.cs" />
+    <Compile Include="model\Customer.cs" />
     <Compile Include="model\LenseOrder.cs" />
     <Compile Include="model\SpecOrder.cs" />
     <Compile Include="model\User.cs" />
