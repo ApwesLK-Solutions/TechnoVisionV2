@@ -3384,7 +3384,7 @@ namespace TechnoVision {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public customerRow AddcustomerRow(uint Id, string Name, string Address, string Profession, string Age, string Phone, string Email, string Branch) {
+            public customerRow AddcustomerRow(uint Id, string Name, string Address, string Profession, string Age, string Phone, string Email, int Branch) {
                 customerRow rowcustomerRow = ((customerRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
@@ -3451,7 +3451,7 @@ namespace TechnoVision {
                 base.Columns.Add(this.columnPhone);
                 this.columnEmail = new global::System.Data.DataColumn("Email", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEmail);
-                this.columnBranch = new global::System.Data.DataColumn("Branch", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnBranch = new global::System.Data.DataColumn("Branch", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBranch);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
@@ -3470,7 +3470,6 @@ namespace TechnoVision {
                 this.columnEmail.AllowDBNull = false;
                 this.columnEmail.MaxLength = 50;
                 this.columnBranch.AllowDBNull = false;
-                this.columnBranch.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4816,9 +4815,9 @@ namespace TechnoVision {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Branch {
+            public int Branch {
                 get {
-                    return ((string)(this[this.tablecustomer.BranchColumn]));
+                    return ((int)(this[this.tablecustomer.BranchColumn]));
                 }
                 set {
                     this[this.tablecustomer.BranchColumn] = value;
@@ -11693,8 +11692,8 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p8";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "Branch";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -11748,8 +11747,8 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p7";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "Branch";
             this._adapter.InsertCommand.Parameters.Add(param);
@@ -11801,8 +11800,8 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p7";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "Branch";
             this._adapter.UpdateCommand.Parameters.Add(param);
@@ -11864,8 +11863,8 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p15";
-            param.DbType = global::System.Data.DbType.String;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.DbType = global::System.Data.DbType.Int32;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "Branch";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -11885,8 +11884,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[1];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT `Id`, `Name`, `Address`, `Profession`, `Age`, `Phone`, `Email`, `Branch` F" +
-                "ROM `customer`";
+            this._commandCollection[0].CommandText = "SELECT * FROM `customer`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -11947,7 +11945,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(uint p1, string p2, string p3, string p4, string p5, string p6, string p7, string p8) {
+        public virtual int Delete(uint p1, string p2, string p3, string p4, string p5, string p6, string p7, int p8) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((uint)(p1));
             if ((p2 == null)) {
                 throw new global::System.ArgumentNullException("p2");
@@ -11985,12 +11983,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             else {
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(p7));
             }
-            if ((p8 == null)) {
-                throw new global::System.ArgumentNullException("p8");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(p8));
-            }
+            this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(p8));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -12011,7 +12004,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string p1, string p2, string p3, string p4, string p5, string p6, string p7) {
+        public virtual int Insert(string p1, string p2, string p3, string p4, string p5, string p6, int p7) {
             if ((p1 == null)) {
                 throw new global::System.ArgumentNullException("p1");
             }
@@ -12048,12 +12041,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = ((string)(p6));
             }
-            if ((p7 == null)) {
-                throw new global::System.ArgumentNullException("p7");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(p7));
-            }
+            this.Adapter.InsertCommand.Parameters[6].Value = ((int)(p7));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -12074,7 +12062,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string p1, string p2, string p3, string p4, string p5, string p6, string p7, uint p8, string p9, string p10, string p11, string p12, string p13, string p14, string p15) {
+        public virtual int Update(string p1, string p2, string p3, string p4, string p5, string p6, int p7, uint p8, string p9, string p10, string p11, string p12, string p13, string p14, int p15) {
             if ((p1 == null)) {
                 throw new global::System.ArgumentNullException("p1");
             }
@@ -12111,12 +12099,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(p6));
             }
-            if ((p7 == null)) {
-                throw new global::System.ArgumentNullException("p7");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(p7));
-            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(p7));
             this.Adapter.UpdateCommand.Parameters[7].Value = ((uint)(p8));
             if ((p9 == null)) {
                 throw new global::System.ArgumentNullException("p9");
@@ -12154,12 +12137,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(p14));
             }
-            if ((p15 == null)) {
-                throw new global::System.ArgumentNullException("p15");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(p15));
-            }
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(p15));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
