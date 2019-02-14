@@ -29,5 +29,11 @@ namespace TechnoVision.model
         {
             UserController.ActiveUser(form, username);
         }
+
+        public static void UpdatePassword(MetroForm form, string username, string password, string confirmPassword, string Contact, string nic)
+        {
+            UserController.UpdatePassword(form, username, password, confirmPassword, Contact, nic);
+
+        }
     }
 }

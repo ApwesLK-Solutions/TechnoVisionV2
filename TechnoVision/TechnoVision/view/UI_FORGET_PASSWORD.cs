@@ -1,4 +1,5 @@
 ﻿using System;
+using TechnoVision.model;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,9 @@ namespace TechnoVision.view
             InitializeComponent();
         }
 
-      
+        private void BtnChangePassword_Click(object sender, EventArgs e)
+        {
+            User.UpdatePassword(this, TxtUsername.Text, TxtNewPassword.Text, TxtConfirmPassword.Text, TxtContactNumber.Text, TxtNic.Text);
+        }
     }
 }

@@ -59,6 +59,7 @@
             this.BtnChangePassword.UseCustomForeColor = true;
             this.BtnChangePassword.UseSelectable = true;
             this.BtnChangePassword.UseStyleColors = true;
+            this.BtnChangePassword.Click += new System.EventHandler(this.BtnChangePassword_Click);
             // 
             // metroLabel6
             // 
