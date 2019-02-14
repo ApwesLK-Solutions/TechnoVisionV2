@@ -8,63 +8,65 @@ namespace TechnoVision.model
 {
     class LenseOrder
     {
-        private string OrderNumber;
-        private string JobType;
-        private string TestedBy;
+        public static string OrderNumber;
+        public static string OrderDate;
+        public static string DueDate;
+        public static string JobType;
+        public static string TestedBy;
+        public static string OrderStatus;
+        public static double Total;
+        public static double Advance;
+        public static double Discount;
+        public static double Balance;
 
-        private string OldRightSph;
-        private string OldRightCyl;
-        private string OldRightAxis;
-        private string OldRightAdd;
 
-        private string OldLeftSph;
-        private string OldLeftCyl;
-        private string OldLeftAxis;
-        private string OldLeftAdd;
 
-        private string PresentRightSph;
-        private string PresentRightCyl;
-        private string PresentRightAxis;
-        private string PresentRightAdd;
+        public string OldRightSph;
+        public string OldRightCyl;
+        public string OldRightAxis;
+        public string OldRightAdd;
 
-        private string PresentLeftSph;
-        private string PresentLeftCyl;
-        private string PresentLeftAxis;
-        private string PresentLeftAdd;
+        public string OldLeftSph;
+        public string OldLeftCyl;
+        public string OldLeftAxis;
+        public string OldLeftAdd;
 
-        private string RightBc;
-        private string RightPow;
-        private string RightDia;
-        private string RightDesz;
+        public string PresentRightSph;
+        public string PresentRightCyl;
+        public string PresentRightAxis;
+        public string PresentRightAdd;
 
-        private string LeftBc;
-        private string LeftPow;
-        private string LeftDia;
-        private string LeftDesz;
+        public string PresentLeftSph;
+        public string PresentLeftCyl;
+        public string PresentLeftAxis;
+        public string PresentLeftAdd;
 
-        private string TrailLense;
-        private string OverRefract;
-        private string KReading;
-        private string BlinkTest;
-        private string SpecialInstruction;
-        private string Remarks;
-        private string ReminderDays;
+        public string RightBc;
+        public string RightPow;
+        public string RightDia;
+        public string RightDesz;
+
+        public string LeftBc;
+        public string LeftPow;
+        public string LeftDia;
+        public string LeftDesz;
+
+        public string TrailLense;
+        public string OverRefract;
+        public string KReading;
+        public string BlinkTest;
+        public string SpecialInstruction;
+        public string Remarks;
+        public string ReminderDays;
         
-        public LenseOrder()
-        {
-            this.OrderNumber = getOrderNumber();
-        }
-        public void testPrintOrderNumber()
-        {
-            Console.WriteLine(this.OrderNumber);
-        }
-        private string getOrderNumber()
+   
+        /*private string getOrderNumber()
         {
             try
             {
                 technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
                 string newID = t.getMaxID().ToString();
-                if (newID == "")
+                if (newID =)
                 {
                     newID = "0";
                 }
@@ -83,7 +85,7 @@ namespace TechnoVision.model
             {
                 return null;
             }
-        }
+        }*/
 
 
     }
