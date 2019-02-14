@@ -198,7 +198,7 @@
             this.TxtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // TxtUserName
+            // TxtUsername
             // 
             // 
             // 
@@ -260,7 +260,7 @@
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.TxtContactNumber);
             this.Controls.Add(this.TxtPassword);
-            this.Controls.Add(this.TxtUserName);
+            this.Controls.Add(this.TxtUsername);
             this.MaximizeBox = false;
             this.Name = "UI_EDIT_SYSTEM_USER";
             this.Style = MetroFramework.MetroColorStyle.Green;
