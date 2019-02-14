@@ -33,5 +33,22 @@ namespace TechnoVision
                 return false;
             }
         }
+
+        public static void ShowError(string msg)
+        {
+
+        }
+        public static void ShowSuccess(string msg)
+        {
+
+        }
+        public static bool WriteUserLog(string row)
+        {
+
+        }
+        public static void ShowUnexpectedError()
+        {
+            
+        }
     }
 }

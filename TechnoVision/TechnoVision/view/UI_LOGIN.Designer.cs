@@ -58,7 +58,7 @@
             this.UserName.MaxLength = 32767;
             this.UserName.Name = "UserName";
             this.UserName.PasswordChar = '\0';
-            this.UserName.WaterMark = "Enter Username";
+            this.UserName.PromptText = "Enter Username";
             this.UserName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.UserName.SelectedText = "";
             this.UserName.SelectionLength = 0;
@@ -91,7 +91,7 @@
             this.Password.MaxLength = 32767;
             this.Password.Name = "Password";
             this.Password.PasswordChar = '*';
-            this.Password.WaterMark = "Enter Password";
+            this.Password.PromptText = "Enter Password";
             this.Password.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.Password.SelectedText = "";
             this.Password.SelectionLength = 0;
