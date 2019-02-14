@@ -21,8 +21,16 @@ namespace TechnoVision.view
 
         private void UI_ADD_USER_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.branch' table. You can move, or remove it, as needed.
-            this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.branch' table. You can move, or remove it, as needed.
+                this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
 
         }
 

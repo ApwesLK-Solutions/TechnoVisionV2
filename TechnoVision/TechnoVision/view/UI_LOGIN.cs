@@ -20,10 +20,7 @@ namespace TechnoVision.view
             InitializeComponent();
         }
 
-        private void UI_LOGIN_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
