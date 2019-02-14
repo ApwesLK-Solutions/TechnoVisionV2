@@ -33,7 +33,7 @@ namespace TechnoVision.view
 
         private void BtnEditUser_Click(object sender, EventArgs e)
         {
-            new UI_EDIT_SYSTEM_USER(UserGrid.SelectedRows[0].Cells[0].Value.ToString()).Show();
+            //new UI_EDIT_SYSTEM_USER(UserGrid.SelectedRows[0].Cells[0].Value.ToString()).Show();
         }
     }
 }

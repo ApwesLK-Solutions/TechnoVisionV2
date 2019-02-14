@@ -41,6 +41,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "UI_DASHBOARD";
+            this.Load += new System.EventHandler(this.UI_DASHBOARD_Load);
             this.ResumeLayout(false);
 
         }

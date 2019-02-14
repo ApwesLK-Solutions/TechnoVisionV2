@@ -1,4 +1,5 @@
 ﻿using System;
+using TechnoVision.model;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace TechnoVision.view
         public UI_DASHBOARD()
         {
             InitializeComponent();
+        }
+
+        private void UI_DASHBOARD_Load(object sender, EventArgs e)
+        {
+         
         }
     }
 }

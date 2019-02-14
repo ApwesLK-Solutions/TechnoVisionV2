@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="CommonFunctions.cs" />
     <Compile Include="controller\UserController.cs" />
+    <Compile Include="model\LenseOrder.cs" />
     <Compile Include="model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
