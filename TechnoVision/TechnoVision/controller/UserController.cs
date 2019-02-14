@@ -18,22 +18,21 @@ namespace TechnoVision.controller
         {
             try
             {
+                if ((User.Username == "") || (User.Password == ""))
+                {
+                    CommonFunctions.ShowError(form, "Please Enter valid username or Password.Fields can not be empty...");
+                    CommonFunctions.WriteUserLog("SYSTEM", " Some User Tried to Login with Null username or Password");
+                }
                 row = userTable.FindByUsername(User.Username);
-                if (row == null)
+                 if(row == null)
                 {
                     //user not exists 
-                    CommonFunctions.ShowError(form, "User does not Exists.");                 
-                    // MetroFramework.MetroMessageBox.Show(form, row.Password);
-                    Console.WriteLine("user not found");
+                    CommonFunctions.ShowError(form, "User does not Exists.");   
                     CommonFunctions.WriteUserLog("SYSTEM", "Failed Login Attemp With Username -> " + User.Username);
                     //return false;
 
                 }
-                else if((User.Username =="") || (User.Password==""))
-                {
-                    CommonFunctions.ShowError(form, "Please Enter valid username or Password.Fields can not be empty...");
-                    CommonFunctions.WriteUserLog("SYSTEM"," Some User Tried to Login with Null username or Password");
-                }
+               
                 else if ((row != null) && (User.Password != row.Password))
                 {
                     //wrong password      
