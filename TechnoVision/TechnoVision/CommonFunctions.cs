@@ -44,7 +44,7 @@ namespace TechnoVision
         }
         public static bool WriteUserLog(string row)
         {
-
+            return true;
         }
         public static void ShowUnexpectedError()
         {
