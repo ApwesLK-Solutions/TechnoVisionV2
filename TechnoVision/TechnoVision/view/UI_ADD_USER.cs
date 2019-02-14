@@ -36,13 +36,30 @@ namespace TechnoVision.view
 
         private void BtnAddUser_Click(object sender, EventArgs e)
         {
-            User.Username = TxtUsername.Text;
-            User.Password = TxtPassword.Text;
-            User.FullName = TxtFullName.Text;
-            User.Nic = TxtNic.Text;
-            User.ContactNumber = TxtContactNumber.Text;
-            User.BranchId = (int)CmbBranch.SelectedValue;
-            User.RegisterNewUser(this);
+            try
+            {
+                if(TxtUsername.Text=="" || TxtPassword.Text =="" || TxtFullName.Text=="" || TxtNic.Text=="" || TxtContactNumber.Text=="")
+                {
+                    CommonFunctions.ShowError(this, "All Fileds Required...");
+                    CommonFunctions.WriteUserLog("SYSTEM", User.Username + " is tried to save data without filling required fields");
+                }
+                else
+                {
+                    User.Username = TxtUsername.Text;
+                    User.Password = TxtPassword.Text;
+                    User.FullName = TxtFullName.Text;
+                    User.Nic = TxtNic.Text;
+                    User.ContactNumber = TxtContactNumber.Text;
+                    User.BranchId = (int)CmbBranch.SelectedValue;
+                    User.RegisterNewUser(this);
+                }
+                
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message);
+            }
+            
         }
     }
 }
