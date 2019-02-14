@@ -39,7 +39,7 @@
             this.TxtNic = new MetroFramework.Controls.MetroTextBox();
             this.TxtFullName = new MetroFramework.Controls.MetroTextBox();
             this.TxtNewPassword = new MetroFramework.Controls.MetroTextBox();
-            this.TxtUserName = new MetroFramework.Controls.MetroTextBox();
+            this.TxtUsername = new MetroFramework.Controls.MetroTextBox();
             this.TxtConfirmPassword = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
@@ -254,38 +254,38 @@
             this.TxtNewPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtNewPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // TxtUserName
+            // TxtUsername
             // 
             // 
             // 
             // 
-            this.TxtUserName.CustomButton.Image = null;
-            this.TxtUserName.CustomButton.Location = new System.Drawing.Point(372, 2);
-            this.TxtUserName.CustomButton.Name = "";
-            this.TxtUserName.CustomButton.Size = new System.Drawing.Size(25, 25);
-            this.TxtUserName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TxtUserName.CustomButton.TabIndex = 1;
-            this.TxtUserName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TxtUserName.CustomButton.UseSelectable = true;
-            this.TxtUserName.CustomButton.Visible = false;
-            this.TxtUserName.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.TxtUserName.Lines = new string[0];
-            this.TxtUserName.Location = new System.Drawing.Point(157, 95);
-            this.TxtUserName.MaxLength = 32767;
-            this.TxtUserName.Name = "TxtUserName";
-            this.TxtUserName.PasswordChar = '\0';
-            this.TxtUserName.PromptText = "Enter Username...";
-            this.TxtUserName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TxtUserName.SelectedText = "";
-            this.TxtUserName.SelectionLength = 0;
-            this.TxtUserName.SelectionStart = 0;
-            this.TxtUserName.ShortcutsEnabled = true;
-            this.TxtUserName.Size = new System.Drawing.Size(400, 30);
-            this.TxtUserName.TabIndex = 0;
-            this.TxtUserName.UseSelectable = true;
-            this.TxtUserName.WaterMark = "Enter Username...";
-            this.TxtUserName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TxtUserName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtUsername.CustomButton.Image = null;
+            this.TxtUsername.CustomButton.Location = new System.Drawing.Point(372, 2);
+            this.TxtUsername.CustomButton.Name = "";
+            this.TxtUsername.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtUsername.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtUsername.CustomButton.TabIndex = 1;
+            this.TxtUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtUsername.CustomButton.UseSelectable = true;
+            this.TxtUsername.CustomButton.Visible = false;
+            this.TxtUsername.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtUsername.Lines = new string[0];
+            this.TxtUsername.Location = new System.Drawing.Point(157, 95);
+            this.TxtUsername.MaxLength = 32767;
+            this.TxtUsername.Name = "TxtUsername";
+            this.TxtUsername.PasswordChar = '\0';
+            this.TxtUsername.PromptText = "Enter Username...";
+            this.TxtUsername.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtUsername.SelectedText = "";
+            this.TxtUsername.SelectionLength = 0;
+            this.TxtUsername.SelectionStart = 0;
+            this.TxtUsername.ShortcutsEnabled = true;
+            this.TxtUsername.Size = new System.Drawing.Size(400, 30);
+            this.TxtUsername.TabIndex = 0;
+            this.TxtUsername.UseSelectable = true;
+            this.TxtUsername.WaterMark = "Enter Username...";
+            this.TxtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtUsername.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // TxtConfirmPassword
             // 
@@ -348,7 +348,7 @@
             this.Controls.Add(this.TxtFullName);
             this.Controls.Add(this.TxtConfirmPassword);
             this.Controls.Add(this.TxtNewPassword);
-            this.Controls.Add(this.TxtUserName);
+            this.Controls.Add(this.TxtUsername);
             this.MaximizeBox = false;
             this.Name = "UI_FORGET_PASSWORD";
             this.Resizable = false;
@@ -372,7 +372,7 @@
         private MetroFramework.Controls.MetroTextBox TxtNic;
         private MetroFramework.Controls.MetroTextBox TxtFullName;
         private MetroFramework.Controls.MetroTextBox TxtNewPassword;
-        private MetroFramework.Controls.MetroTextBox TxtUserName;
+        private MetroFramework.Controls.MetroTextBox TxtUsername;
         private MetroFramework.Controls.MetroTextBox TxtConfirmPassword;
         private MetroFramework.Controls.MetroLabel metroLabel7;
     }
