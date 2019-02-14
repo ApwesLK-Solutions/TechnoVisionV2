@@ -104,7 +104,7 @@
             this.TxtPassword.SelectionStart = 0;
             this.TxtPassword.ShortcutsEnabled = true;
             this.TxtPassword.Size = new System.Drawing.Size(400, 30);
-            this.TxtPassword.TabIndex = 0;
+            this.TxtPassword.TabIndex = 2;
             this.TxtPassword.UseSelectable = true;
             this.TxtPassword.WaterMark = "Enter Password...";
             this.TxtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -137,7 +137,7 @@
             this.TxtFullName.SelectionStart = 0;
             this.TxtFullName.ShortcutsEnabled = true;
             this.TxtFullName.Size = new System.Drawing.Size(400, 30);
-            this.TxtFullName.TabIndex = 0;
+            this.TxtFullName.TabIndex = 3;
             this.TxtFullName.UseSelectable = true;
             this.TxtFullName.WaterMark = "Enter Full Name...";
             this.TxtFullName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -170,7 +170,7 @@
             this.TxtNic.SelectionStart = 0;
             this.TxtNic.ShortcutsEnabled = true;
             this.TxtNic.Size = new System.Drawing.Size(400, 30);
-            this.TxtNic.TabIndex = 0;
+            this.TxtNic.TabIndex = 4;
             this.TxtNic.UseSelectable = true;
             this.TxtNic.WaterMark = "Enter Nic...";
             this.TxtNic.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -203,7 +203,7 @@
             this.TxtContactNumber.SelectionStart = 0;
             this.TxtContactNumber.ShortcutsEnabled = true;
             this.TxtContactNumber.Size = new System.Drawing.Size(400, 30);
-            this.TxtContactNumber.TabIndex = 0;
+            this.TxtContactNumber.TabIndex = 5;
             this.TxtContactNumber.UseSelectable = true;
             this.TxtContactNumber.WaterMark = "Enter Contact Number...";
             this.TxtContactNumber.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -286,7 +286,7 @@
             this.CmbBranch.Location = new System.Drawing.Point(175, 286);
             this.CmbBranch.Name = "CmbBranch";
             this.CmbBranch.Size = new System.Drawing.Size(400, 30);
-            this.CmbBranch.TabIndex = 2;
+            this.CmbBranch.TabIndex = 6;
             this.CmbBranch.UseSelectable = true;
             // 
             // BtnAddUser
@@ -300,7 +300,7 @@
             this.BtnAddUser.Name = "BtnAddUser";
             this.BtnAddUser.Size = new System.Drawing.Size(181, 45);
             this.BtnAddUser.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnAddUser.TabIndex = 3;
+            this.BtnAddUser.TabIndex = 7;
             this.BtnAddUser.Text = "Add System User";
             this.BtnAddUser.UseCustomBackColor = true;
             this.BtnAddUser.UseCustomForeColor = true;

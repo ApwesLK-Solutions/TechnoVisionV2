@@ -74,6 +74,12 @@
     <Compile Include="view\UI_ADD_USER.Designer.cs">
       <DependentUpon>UI_ADD_USER.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\UI_EDIT_SYSTEM_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UI_EDIT_SYSTEM_USER.Designer.cs">
+      <DependentUpon>UI_EDIT_SYSTEM_USER.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="view\UI_ADD_USER.resx">
       <DependentUpon>UI_ADD_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\UI_EDIT_SYSTEM_USER.resx">
+      <DependentUpon>UI_EDIT_SYSTEM_USER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_LOGIN.resx">
       <DependentUpon>UI_LOGIN.cs</DependentUpon>
