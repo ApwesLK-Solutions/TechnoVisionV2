@@ -8,7 +8,7 @@ namespace TechnoVision
 {
     class Session
     {
-        public static string Username;
+        public static string Username = "check";
         public static int BranchId;
         public static string BranchMasterPassword;
     }

@@ -9,11 +9,25 @@ namespace TechnoVision.model
         public static string FullName;
         public static string Nic;
         public static string ContactNumber;
-        public static int branchId = 0;
+        public static int BranchId = 0;
 
         public static void login(MetroForm form)
         {
             UserController.login(form);
+        }
+        
+        public static void RegisterNewUser(MetroForm form)
+        {
+            UserController.RegisterNewUser(form);
+        }
+
+        public static void DeleteUser(MetroForm form , string username)
+        {
+            UserController.DeleteUser(form , username);
+        }
+        public static void ActiveUser(MetroForm form, string username)
+        {
+            UserController.ActiveUser(form, username);
         }
     }
 }

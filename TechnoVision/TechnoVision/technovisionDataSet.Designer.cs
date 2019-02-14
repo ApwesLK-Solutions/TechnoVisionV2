@@ -2535,15 +2535,24 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT * FROM `users` WHERE `Username` = @uname\r\n";
+            this._commandCollection[1].CommandText = "UPDATE `users` SET `IsActive` = @ActiveStatus WHERE `Username` = @uname";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@ActiveStatus";
+            param.DbType = global::System.Data.DbType.Object;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Byte;
+            param.Size = 1024;
+            param.IsNullable = true;
+            param.SourceColumn = "IsActive";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@uname";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.Size = 20;
             param.IsNullable = true;
             param.SourceColumn = "Username";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[1].Parameters.Add(param);
         }
         
@@ -2566,42 +2575,6 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual technovisionDataSet.usersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            technovisionDataSet.usersDataTable dataTable = new technovisionDataSet.usersDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByUname(technovisionDataSet.usersDataTable dataTable, string uname) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((uname == null)) {
-                throw new global::System.ArgumentNullException("uname");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(uname));
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual technovisionDataSet.usersDataTable GetDataByUname(string uname) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((uname == null)) {
-                throw new global::System.ArgumentNullException("uname");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(uname));
-            }
             technovisionDataSet.usersDataTable dataTable = new technovisionDataSet.usersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -2833,6 +2806,41 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string p2, string p3, string p4, string p5, int p6, byte p7, string p8, string p9, string p10, string p11, string p12, int p13, byte p14) {
             return this.Update(p8, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateUserActiveStatus(object ActiveStatus, string uname) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[1];
+            if ((ActiveStatus == null)) {
+                throw new global::System.ArgumentNullException("ActiveStatus");
+            }
+            else {
+                command.Parameters[0].Value = ((object)(ActiveStatus));
+            }
+            if ((uname == null)) {
+                throw new global::System.ArgumentNullException("uname");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(uname));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     

@@ -36,7 +36,7 @@ namespace TechnoVision
         {
             try
             {
-                UserLog.Insert(user, User.branchId, DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd")), DateTime.Parse(DateTime.Now.ToString("hh:mm:ss")), row);
+                UserLog.Insert(user, User.BranchId, DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd")), DateTime.Parse(DateTime.Now.ToString("hh:mm:ss")), row);
                 return true;
             }
             catch(Exception ex)

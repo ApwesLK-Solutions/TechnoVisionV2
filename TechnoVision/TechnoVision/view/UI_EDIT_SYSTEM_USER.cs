@@ -12,9 +12,24 @@ namespace TechnoVision.view
 {
     public partial class UI_EDIT_SYSTEM_USER : MetroFramework.Forms.MetroForm
     {
-        public UI_EDIT_SYSTEM_USER()
+        private string username;
+        public UI_EDIT_SYSTEM_USER(string username)
         {
             InitializeComponent();
+            this.username = username;
+        }
+
+        private void UI_EDIT_SYSTEM_USER_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'technovisionDataSet.users' table. You can move, or remove it, as needed.
+            this.usersTableAdapter.Fill(this.technovisionDataSet.users);
+            usersBindingSource.Filter = "Username = '" + username + "'";
+        }
+
+        private void BtnEditUser_Click(object sender, EventArgs e)
+        {
+            usersBindingSource.EndEdit();
+            usersTableAdapter.Update(technovisionDataSet);
         }
     }
 }

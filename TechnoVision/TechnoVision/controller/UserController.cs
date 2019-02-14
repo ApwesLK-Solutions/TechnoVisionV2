@@ -8,12 +8,12 @@ namespace TechnoVision.controller
     {
         private static technovisionDataSetTableAdapters.usersTableAdapter usersAdapter = new technovisionDataSetTableAdapters.usersTableAdapter();
         private static technovisionDataSet.usersDataTable userTable = usersAdapter.GetData();
-
         private static technovisionDataSetTableAdapters.branchTableAdapter branchAdapter = new technovisionDataSetTableAdapters.branchTableAdapter();
         private static technovisionDataSet.branchDataTable branchTable = branchAdapter.GetData();
-
         private static technovisionDataSet.usersRow row;
         private static technovisionDataSet.branchRow Brow;
+
+
         public static void login(MetroForm form)
         {
             try
@@ -63,5 +63,45 @@ namespace TechnoVision.controller
                 //return false;
             }         
         }
+        public static void RegisterNewUser(MetroForm form)
+        {
+            try
+            {
+                //user reg done
+                usersAdapter.Insert(User.Username, User.Password, User.FullName, User.Nic, User.ContactNumber, User.BranchId, 1);
+                CommonFunctions.WriteUserLog(Session.Username, "Added New User to the System (" + User.Username + ")");
+            }
+            catch(Exception ex)
+            {
+                //error
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+
+        }
+        public static void DeleteUser(MetroForm form, string username)
+        {
+            try
+            {
+                usersAdapter.UpdateUserActiveStatus(0, username);
+                CommonFunctions.WriteUserLog(Session.Username, "Made " + username + " As a Disabled User");
+            }
+            catch (Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+        }
+        public static void ActiveUser(MetroForm form, string username)
+        {
+            try
+            {
+                usersAdapter.UpdateUserActiveStatus(1, username);
+                CommonFunctions.WriteUserLog(Session.Username, "Made " + username + " As a Disabled User");
+            }
+            catch (Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+        }
+
     }
 }
