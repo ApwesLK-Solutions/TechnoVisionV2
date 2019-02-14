@@ -58,8 +58,6 @@ namespace TechnoVision.model
         {
             Console.WriteLine(this.OrderNumber);
         }
-
-
         private string getOrderNumber()
         {
             try
@@ -86,5 +84,7 @@ namespace TechnoVision.model
                 return null;
             }
         }
+
+
     }
 }

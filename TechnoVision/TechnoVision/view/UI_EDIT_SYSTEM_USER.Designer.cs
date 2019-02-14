@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.BtnEditUser = new MetroFramework.Controls.MetroButton();
             this.CmbBranch = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
@@ -40,6 +41,11 @@
             this.TxtFullName = new MetroFramework.Controls.MetroTextBox();
             this.TxtPassword = new MetroFramework.Controls.MetroTextBox();
             this.TxtUsername = new MetroFramework.Controls.MetroTextBox();
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.usersTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnEditUser
@@ -59,10 +65,12 @@
             this.BtnEditUser.UseCustomForeColor = true;
             this.BtnEditUser.UseSelectable = true;
             this.BtnEditUser.UseStyleColors = true;
+            this.BtnEditUser.Click += new System.EventHandler(this.BtnEditUser_Click);
             // 
             // CmbBranch
             // 
-            this.CmbBranch.DisplayMember = "BranchName";
+            this.CmbBranch.DataSource = this.usersBindingSource;
+            this.CmbBranch.DisplayMember = "BranchId";
             this.CmbBranch.FormattingEnabled = true;
             this.CmbBranch.ItemHeight = 24;
             this.CmbBranch.Location = new System.Drawing.Point(160, 244);
@@ -146,6 +154,7 @@
             this.TxtContactNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtContactNumber.CustomButton.UseSelectable = true;
             this.TxtContactNumber.CustomButton.Visible = false;
+            this.TxtContactNumber.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "ContactNumber", true));
             this.TxtContactNumber.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.TxtContactNumber.Lines = new string[0];
             this.TxtContactNumber.Location = new System.Drawing.Point(160, 208);
@@ -179,6 +188,7 @@
             this.TxtFullName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtFullName.CustomButton.UseSelectable = true;
             this.TxtFullName.CustomButton.Visible = false;
+            this.TxtFullName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "FullName", true));
             this.TxtFullName.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.TxtFullName.Lines = new string[0];
             this.TxtFullName.Location = new System.Drawing.Point(160, 172);
@@ -212,6 +222,7 @@
             this.TxtPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtPassword.CustomButton.UseSelectable = true;
             this.TxtPassword.CustomButton.Visible = false;
+            this.TxtPassword.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Password", true));
             this.TxtPassword.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.TxtPassword.Lines = new string[0];
             this.TxtPassword.Location = new System.Drawing.Point(160, 136);
@@ -245,6 +256,7 @@
             this.TxtUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtUsername.CustomButton.UseSelectable = true;
             this.TxtUsername.CustomButton.Visible = false;
+            this.TxtUsername.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Username", true));
             this.TxtUsername.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.TxtUsername.Lines = new string[0];
             this.TxtUsername.Location = new System.Drawing.Point(160, 98);
@@ -263,6 +275,20 @@
             this.TxtUsername.WaterMark = "Enter Username...";
             this.TxtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtUsername.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "users";
+            this.usersBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
             // 
             // UI_EDIT_SYSTEM_USER
             // 
@@ -286,6 +312,9 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Edit System User Details";
+            this.Load += new System.EventHandler(this.UI_EDIT_SYSTEM_USER_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,5 +334,8 @@
         private MetroFramework.Controls.MetroTextBox TxtFullName;
         private MetroFramework.Controls.MetroTextBox TxtPassword;
         private MetroFramework.Controls.MetroTextBox TxtUsername;
+        private technovisionDataSet technovisionDataSet;
+        private System.Windows.Forms.BindingSource usersBindingSource;
+        private technovisionDataSetTableAdapters.usersTableAdapter usersTableAdapter;
     }
 }
