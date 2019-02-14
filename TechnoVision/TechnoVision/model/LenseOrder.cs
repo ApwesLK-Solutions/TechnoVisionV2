@@ -11,55 +11,55 @@ namespace TechnoVision.model
         public static string OrderNumber;
         public static string OrderDate;
         public static string DueDate;
-        public static string JobType;
         public static string TestedBy;
         public static string OrderStatus;
         public static double Total;
         public static double Advance;
         public static double Discount;
         public static double Balance;
+        public static string PaymentPlan;
+        public static string PaymentMethod;
 
 
 
-        public string OldRightSph;
-        public string OldRightCyl;
-        public string OldRightAxis;
-        public string OldRightAdd;
+        public static string OldRightSph;
+        public static string OldRightCyl;
+        public static string OldRightAxis;
+        public static string OldRightAdd;
 
-        public string OldLeftSph;
-        public string OldLeftCyl;
-        public string OldLeftAxis;
-        public string OldLeftAdd;
+        public static string OldLeftSph;
+        public static string OldLeftCyl;
+        public static string OldLeftAxis;
+        public static string OldLeftAdd;
 
-        public string PresentRightSph;
-        public string PresentRightCyl;
-        public string PresentRightAxis;
-        public string PresentRightAdd;
+        public static string PresentRightSph;
+        public static string PresentRightCyl;
+        public static string PresentRightAxis;
+        public static string PresentRightAdd;
 
-        public string PresentLeftSph;
-        public string PresentLeftCyl;
-        public string PresentLeftAxis;
-        public string PresentLeftAdd;
+        public static string PresentLeftSph;
+        public static string PresentLeftCyl;
+        public static string PresentLeftAxis;
+        public static string PresentLeftAdd;
 
-        public string RightBc;
-        public string RightPow;
-        public string RightDia;
-        public string RightDesz;
+        public static string RightBc;
+        public static string RightPow;
+        public static string RightDia;
+        public static string RightDesz;
 
-        public string LeftBc;
-        public string LeftPow;
-        public string LeftDia;
-        public string LeftDesz;
+        public static string LeftBc;
+        public static string LeftPow;
+        public static string LeftDia;
+        public static string LeftDesz;
 
-        public string TrailLense;
-        public string OverRefract;
-        public string KReading;
-        public string BlinkTest;
-        public string SpecialInstruction;
-        public string Remarks;
-        public string ReminderDays;
-        
-   
+        public static string TrailLense;
+        public static string OverRefract;
+        public static string KReading;
+        public static string BlinkTest;
+        public static string SpecialInstruction;
+        public static string Remarks;
+        public static int ReminderDays;
+
         /*private string getOrderNumber()
         {
             try

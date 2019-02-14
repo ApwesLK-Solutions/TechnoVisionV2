@@ -44,9 +44,11 @@ namespace TechnoVision.model
         public static string SegmentHeight;
         public static string SpecialInstruction;
         public static string Remarks;
-        public static string ReminderDays;
+        public static int ReminderDays;
 
-   
+       
+
+
         /*private string getOrderNumber()
         {
             try
