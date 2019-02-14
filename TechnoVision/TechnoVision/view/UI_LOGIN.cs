@@ -24,7 +24,7 @@ namespace TechnoVision.view
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(TxtUsername.Text);
+           
             User.Username = TxtUsername.Text;
             User.Password = TxtPassword.Text;
             User.login(this);
