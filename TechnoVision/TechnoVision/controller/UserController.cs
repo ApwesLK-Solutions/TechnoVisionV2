@@ -21,33 +21,42 @@ namespace TechnoVision.controller
                 row = userTable.FindByUsername(User.Username);
                 if (row == null)
                 {
-                    //user not exists                  
-
+                    //user not exists 
+                    CommonFunctions.ShowError(form, "User does not Exists.");                 
                     // MetroFramework.MetroMessageBox.Show(form, row.Password);
                     Console.WriteLine("user not found");
                     CommonFunctions.WriteUserLog("SYSTEM", "Failed Login Attemp With Username -> " + User.Username);
                     //return false;
 
                 }
+                else if((User.Username =="") || (User.Password==""))
+                {
+                    CommonFunctions.ShowError(form, "Please Enter valid username or Password.Fields can not be empty...");
+                    CommonFunctions.WriteUserLog("SYSTEM"," Some User Tried to Login with Null username or Password");
+                }
                 else if ((row != null) && (User.Password != row.Password))
                 {
                     //wrong password      
-                    Console.WriteLine("wrong password");
-                    CommonFunctions.WriteUserLog("SYSTEM", User.Username + " Tried to Login with Wrong Password");
+
+                    CommonFunctions.ShowError(form, "Wrong Password.Please Check and Re enter...");        
+                    CommonFunctions.WriteUserLog("SYSTEM",User.Username + " Tried to Login with Wrong Password");
+
                     //return false;
                 }
                 else if ((User.Username == row.Username) && (row.Password == User.Password) && (row.IsActive == 0))
                 {
                     //Disabled User
-                    Console.WriteLine("Deleted user");
-                    CommonFunctions.WriteUserLog("SYSTEM", "A Disabled User Tried to Login > " + User.Username);
+
+                    CommonFunctions.ShowError(form, "This User can not Login in to the System. Access Denied...");
+                    CommonFunctions.WriteUserLog("SYSTEM","A Disabled User Tried to Login > "+User.Username);
+
                     //return false;
                 }
 
                 else if ((User.Username == row.Username) && (row.Password == User.Password))
                 {
                     //login success
-                    Console.WriteLine("login success");
+                    CommonFunctions.ShowSuccess(form, "Login Successfully...");
                     Session.Username = row.Username;
                     Session.BranchId = row.BranchId;
                     Brow = branchTable.FindById(row.BranchId);
@@ -59,6 +68,7 @@ namespace TechnoVision.controller
             catch (Exception ex)
             {
                 //show some error and log the original error!
+                CommonFunctions.ShowError(form, ex.ToString());
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
                 //return false;
             }
@@ -69,11 +79,13 @@ namespace TechnoVision.controller
             {
                 //user reg done
                 usersAdapter.Insert(User.Username, User.Password, User.FullName, User.Nic, User.ContactNumber, User.BranchId, 1);
+                CommonFunctions.ShowSuccess(form, "New User Added Succesfully...");
                 CommonFunctions.WriteUserLog(Session.Username, "Added New User to the System (" + User.Username + ")");
             }
             catch (Exception ex)
             {
                 //error
+                CommonFunctions.ShowError(form, ex.ToString());
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
 
@@ -84,9 +96,11 @@ namespace TechnoVision.controller
             {
                 usersAdapter.UpdateUserActiveStatus(0, username);
                 CommonFunctions.WriteUserLog(Session.Username, "Made " + username + " As a Disabled User");
+                CommonFunctions.ShowSuccess( form,"Deactivate successfull... ");
             }
             catch (Exception ex)
             {
+                CommonFunctions.ShowError(form,ex.ToString());
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
         }
@@ -95,11 +109,13 @@ namespace TechnoVision.controller
             try
             {
                 usersAdapter.UpdateUserActiveStatus(1, username);
-                CommonFunctions.WriteUserLog(Session.Username, "Made " + username + " As a Disabled User");
+                CommonFunctions.WriteUserLog(Session.Username, "Made " + username + " As a active User");
+                CommonFunctions.ShowError(form, "user Activate successfull...");
             }
             catch (Exception ex)
             {
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+                CommonFunctions.ShowError(form, ex.ToString());
             }
         }
 

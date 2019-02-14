@@ -172,7 +172,6 @@
             this.Name = "UI_LOGIN";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Load += new System.EventHandler(this.UI_LOGIN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

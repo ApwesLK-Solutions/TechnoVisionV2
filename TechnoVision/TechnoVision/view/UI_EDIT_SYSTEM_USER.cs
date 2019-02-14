@@ -12,7 +12,7 @@ namespace TechnoVision.view
 {
     public partial class UI_EDIT_SYSTEM_USER : MetroFramework.Forms.MetroForm
     {
-        public UI_EDIT_SYSTEM_USER()
+        public UI_EDIT_SYSTEM_USER(string e)
         {
             InitializeComponent();
         }

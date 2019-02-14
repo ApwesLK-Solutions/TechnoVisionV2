@@ -21,20 +21,45 @@ namespace TechnoVision.view
 
         private void UI_ADD_USER_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.branch' table. You can move, or remove it, as needed.
-            this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.branch' table. You can move, or remove it, as needed.
+                this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
 
         }
 
         private void BtnAddUser_Click(object sender, EventArgs e)
         {
-            User.Username = TxtUsername.Text;
-            User.Password = TxtPassword.Text;
-            User.FullName = TxtFullName.Text;
-            User.Nic = TxtNic.Text;
-            User.ContactNumber = TxtContactNumber.Text;
-            User.BranchId = (int)CmbBranch.SelectedValue;
-            User.RegisterNewUser(this);
+            try
+            {
+                if(TxtUsername.Text=="" || TxtPassword.Text =="" || TxtFullName.Text=="" || TxtNic.Text=="" || TxtContactNumber.Text=="")
+                {
+                    CommonFunctions.ShowError(this, "All Fileds Required...");
+                    CommonFunctions.WriteUserLog("SYSTEM", User.Username + " is tried to save data without filling required fields");
+                }
+                else
+                {
+                    User.Username = TxtUsername.Text;
+                    User.Password = TxtPassword.Text;
+                    User.FullName = TxtFullName.Text;
+                    User.Nic = TxtNic.Text;
+                    User.ContactNumber = TxtContactNumber.Text;
+                    User.BranchId = (int)CmbBranch.SelectedValue;
+                    User.RegisterNewUser(this);
+                }
+                
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message);
+            }
+            
         }
     }
 }

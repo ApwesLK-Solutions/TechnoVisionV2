@@ -45,6 +45,7 @@
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.usersTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.usersTableAdapter();
+            this.BtnActivateUser = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.UserGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
@@ -194,11 +195,27 @@
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
             // 
+            // BtnActivateUser
+            // 
+            this.BtnActivateUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnActivateUser.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.BtnActivateUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnActivateUser.Highlight = true;
+            resources.ApplyResources(this.BtnActivateUser, "BtnActivateUser");
+            this.BtnActivateUser.Name = "BtnActivateUser";
+            this.BtnActivateUser.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnActivateUser.UseCustomBackColor = true;
+            this.BtnActivateUser.UseCustomForeColor = true;
+            this.BtnActivateUser.UseSelectable = true;
+            this.BtnActivateUser.UseStyleColors = true;
+            this.BtnActivateUser.Click += new System.EventHandler(this.BtnDeleteUser_Click);
+            // 
             // UI_MANAGE_SYSTEM_USER
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.UserGrid);
+            this.Controls.Add(this.BtnActivateUser);
             this.Controls.Add(this.BtnDeleteUser);
             this.Controls.Add(this.BtnEditUser);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -229,5 +246,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn contactNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn branchIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn isActiveDataGridViewTextBoxColumn;
+        private MetroFramework.Controls.MetroButton BtnActivateUser;
     }
 }
