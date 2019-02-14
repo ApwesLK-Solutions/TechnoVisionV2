@@ -74,6 +74,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_ADD_USER.cs">
       <SubType>Form</SubType>
     </Compile>
