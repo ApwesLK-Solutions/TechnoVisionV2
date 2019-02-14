@@ -31,10 +31,10 @@
             this.UserName = new MetroFramework.Controls.MetroTextBox();
             this.Password = new MetroFramework.Controls.MetroTextBox();
             this.BtnLogin = new MetroFramework.Controls.MetroTile();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnForgetPassword = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,16 +119,6 @@
             this.BtnLogin.UseSelectable = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TechnoVision.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(104, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -153,9 +143,19 @@
             this.BtnForgetPassword.Location = new System.Drawing.Point(420, 255);
             this.BtnForgetPassword.Name = "BtnForgetPassword";
             this.BtnForgetPassword.Size = new System.Drawing.Size(114, 17);
-            this.BtnForgetPassword.TabIndex = 6;
+            this.BtnForgetPassword.TabIndex = 3;
             this.BtnForgetPassword.TabStop = true;
             this.BtnForgetPassword.Text = "Forget Password";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TechnoVision.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(104, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(350, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // UI_LOGIN
             // 
