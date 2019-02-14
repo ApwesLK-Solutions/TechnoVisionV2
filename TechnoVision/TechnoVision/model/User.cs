@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using TechnoVision.controller;
+using MetroFramework.Forms;
 namespace TechnoVision.model
 {
     class User
@@ -13,8 +9,11 @@ namespace TechnoVision.model
         public static string FullName;
         public static string Nic;
         public static string ContactNumber;
-        public static int branchId;
+        public static int branchId = 0;
 
-
+        public static void login(MetroForm form)
+        {
+            UserController.login(form);
+        }
     }
 }

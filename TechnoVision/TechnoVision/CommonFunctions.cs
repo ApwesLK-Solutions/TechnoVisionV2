@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
+using TechnoVision.model;
+using MetroFramework.Forms;
 namespace TechnoVision
 {
     class CommonFunctions
     {
         private static string ErrorLogFilePath;
+        private static technovisionDataSetTableAdapters.logsTableAdapter UserLog = new technovisionDataSetTableAdapters.logsTableAdapter();
 
         public static bool WriteToErrorLog(string row)
         {
@@ -33,22 +32,26 @@ namespace TechnoVision
                 return false;
             }
         }
-
-        public static void ShowError(string msg)
+        public static bool WriteUserLog(string user,string row)
         {
-
+            try
+            {
+                UserLog.Insert(user, User.branchId, DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd")), DateTime.Parse(DateTime.Now.ToString("hh:mm:ss")), row);
+                return true;
+            }
+            catch(Exception ex)
+            {
+                WriteToErrorLog(ex.Message.ToString());
+                return false;
+            }
         }
-        public static void ShowSuccess(string msg)
+        public static void ShowError(MetroForm form , string msg)
         {
-
+            MetroFramework.MetroMessageBox.Show(form, msg, "Error!",System.Windows.Forms.MessageBoxButtons.OK,System.Windows.Forms.MessageBoxIcon.Error);
         }
-        public static bool WriteUserLog(string row)
+        public static void ShowSuccess(MetroForm form, string msg)
         {
-            return true;
-        }
-        public static void ShowUnexpectedError()
-        {
-            
+            MetroFramework.MetroMessageBox.Show(form, msg, "Success!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Question);
         }
     }
 }

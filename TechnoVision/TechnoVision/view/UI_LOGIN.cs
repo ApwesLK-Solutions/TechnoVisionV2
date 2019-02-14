@@ -1,4 +1,5 @@
 ﻿using System;
+using TechnoVision.model;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,12 +22,15 @@ namespace TechnoVision.view
 
         private void UI_LOGIN_Load(object sender, EventArgs e)
         {
-            CommonFunctions.WriteToErrorLog("This is an Error");
+
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(TxtUsername.Text);
+            User.Username = TxtUsername.Text;
+            User.Password = TxtPassword.Text;
+            User.login(this);
         }
     }
 }
