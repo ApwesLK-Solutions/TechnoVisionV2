@@ -16,10 +16,12 @@ namespace TechnoVision.controller
             try
             {
                 tableAdapter.Insert(Customer.Name, Customer.Address, Customer.Profession, Customer.Age, Customer.Phone, Customer.Email, int.Parse(Customer.Branch));
+                CommonFunctions.ShowSuccess(form, "New Customer Details Saved Successfully. Please Refresh to see Customer Details In Table");
             }
             catch(Exception ex)
             {
-
+                CommonFunctions.ShowError(form ,"Can not Save...Please Try again");
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
         }
     }

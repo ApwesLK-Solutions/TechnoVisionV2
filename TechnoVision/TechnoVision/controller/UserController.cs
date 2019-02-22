@@ -109,7 +109,7 @@ namespace TechnoVision.controller
             {
                 usersAdapter.UpdateUserActiveStatus(1, username);
                 CommonFunctions.WriteUserLog(Session.Username, "Made " + username + " As a active User");
-                CommonFunctions.ShowError(form, "user Activate successfull...");
+                CommonFunctions.ShowSuccess(form, "user Activate successfull...");
             }
             catch (Exception ex)
             {
@@ -125,25 +125,28 @@ namespace TechnoVision.controller
                 row = userTable.FindByUsername(username);
                 if (row == null)
                 {
-                    //user not exists
+                    CommonFunctions.WriteUserLog(Session.Username, "Entered wrong Username");
                 }
                 else if (password != confirmPassword)
                 {
-                    //pasword not match
+                    CommonFunctions.WriteUserLog(Session.Username, "Entered wrong Password");
                 }
                 else if ((Contact != row.ContactNumber) || (nic != row.Nic))
                 {
-                    //cant verify
+                    CommonFunctions.WriteUserLog(Session.Username, "Entered wrong Contact  Number ");
                 }
                 else
                 {
                     usersAdapter.UpdateUserPasswordByUsername(password, username);
                     CommonFunctions.WriteUserLog(Session.Username, "Changed the Password of " + username);
+                    CommonFunctions.ShowSuccess(form,"Changed the Password of " + username);
                 }
             }
             catch(Exception ex)
             {
                 CommonFunctions.WriteToErrorLog(ex.Message);
+                CommonFunctions.ShowError(form, "Can not Change Password.");
+
             }
         }
     }

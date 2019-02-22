@@ -81,11 +81,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="view\frm_customer.cs">
+    <Compile Include="view\UI_ADD_CUSTOMER.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\frm_customer.Designer.cs">
-      <DependentUpon>frm_customer.cs</DependentUpon>
+    <Compile Include="view\UI_ADD_CUSTOMER.Designer.cs">
+      <DependentUpon>UI_ADD_CUSTOMER.cs</DependentUpon>
     </Compile>
     <Compile Include="view\UI_ADD_USER.cs">
       <SubType>Form</SubType>
@@ -133,8 +133,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="view\frm_customer.resx">
-      <DependentUpon>frm_customer.cs</DependentUpon>
+    <EmbeddedResource Include="view\UI_ADD_CUSTOMER.resx">
+      <DependentUpon>UI_ADD_CUSTOMER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_ADD_USER.resx">
       <DependentUpon>UI_ADD_USER.cs</DependentUpon>
