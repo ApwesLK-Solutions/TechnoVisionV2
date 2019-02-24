@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.BtnEditUser = new MetroFramework.Controls.MetroButton();
             this.CmbBranch = new MetroFramework.Controls.MetroComboBox();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
@@ -41,11 +43,9 @@
             this.TxtFullName = new MetroFramework.Controls.MetroTextBox();
             this.TxtPassword = new MetroFramework.Controls.MetroTextBox();
             this.TxtUsername = new MetroFramework.Controls.MetroTextBox();
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usersTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.usersTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnEditUser
@@ -79,6 +79,16 @@
             this.CmbBranch.TabIndex = 5;
             this.CmbBranch.UseSelectable = true;
             this.CmbBranch.ValueMember = "Id";
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "users";
+            this.usersBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // metroLabel7
             // 
@@ -276,16 +286,6 @@
             this.TxtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtUsername.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "users";
-            this.usersBindingSource.DataSource = this.technovisionDataSet;
-            // 
             // usersTableAdapter
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
@@ -313,8 +313,8 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Edit System User Details";
             this.Load += new System.EventHandler(this.UI_EDIT_SYSTEM_USER_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

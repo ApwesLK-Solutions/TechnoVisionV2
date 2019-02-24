@@ -37,6 +37,8 @@
             this.TxtAge = new MetroFramework.Controls.MetroTextBox();
             this.TxtProffession = new MetroFramework.Controls.MetroTextBox();
             this.CmbBranch = new MetroFramework.Controls.MetroComboBox();
+            this.branchBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -45,11 +47,9 @@
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.BtnSave = new MetroFramework.Controls.MetroButton();
             this.BtnClear = new MetroFramework.Controls.MetroButton();
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.branchBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.branchTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.branchTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // lael
@@ -274,6 +274,16 @@
             this.CmbBranch.UseSelectable = true;
             this.CmbBranch.ValueMember = "Id";
             // 
+            // branchBindingSource
+            // 
+            this.branchBindingSource.DataMember = "branch";
+            this.branchBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
@@ -370,16 +380,7 @@
             this.BtnClear.UseCustomForeColor = true;
             this.BtnClear.UseSelectable = true;
             this.BtnClear.UseStyleColors = true;
-            // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // branchBindingSource
-            // 
-            this.branchBindingSource.DataMember = "branch";
-            this.branchBindingSource.DataSource = this.technovisionDataSet;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // branchTableAdapter
             // 
@@ -412,8 +413,8 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Add New Customer";
             this.Load += new System.EventHandler(this.UI_ADD_CUSTOMER_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

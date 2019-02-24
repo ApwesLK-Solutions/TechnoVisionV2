@@ -53,6 +53,8 @@ namespace TechnoVision.view
             {
                 // TODO: This line of code loads data into the 'technovisionDataSet.branch' table. You can move, or remove it, as needed.
                 this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
+                CmbBranch.SelectedIndex = 0;
+
             }
             catch(Exception ex)
             {
@@ -61,6 +63,17 @@ namespace TechnoVision.view
             }
            
 
+        }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            TxtCustomerName.Text="";
+            TxtAddress.Text="";
+            TxtAge.Text="";
+            TxtContactNumber.Text="";
+            TxtProffession.Text="";
+            TxtEmail.Text="";
+            
         }
     }
 }
