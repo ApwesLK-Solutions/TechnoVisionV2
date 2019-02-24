@@ -165,7 +165,7 @@
             this.TxtContactNumber.CustomButton.UseSelectable = true;
             this.TxtContactNumber.CustomButton.Visible = false;
             this.TxtContactNumber.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "ContactNumber", true));
-            this.TxtContactNumber.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtContactNumber.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtContactNumber.Lines = new string[0];
             this.TxtContactNumber.Location = new System.Drawing.Point(160, 208);
             this.TxtContactNumber.MaxLength = 32767;
@@ -199,7 +199,7 @@
             this.TxtFullName.CustomButton.UseSelectable = true;
             this.TxtFullName.CustomButton.Visible = false;
             this.TxtFullName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "FullName", true));
-            this.TxtFullName.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtFullName.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtFullName.Lines = new string[0];
             this.TxtFullName.Location = new System.Drawing.Point(160, 172);
             this.TxtFullName.MaxLength = 32767;
@@ -233,7 +233,7 @@
             this.TxtPassword.CustomButton.UseSelectable = true;
             this.TxtPassword.CustomButton.Visible = false;
             this.TxtPassword.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Password", true));
-            this.TxtPassword.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtPassword.Lines = new string[0];
             this.TxtPassword.Location = new System.Drawing.Point(160, 136);
             this.TxtPassword.MaxLength = 32767;
@@ -267,7 +267,7 @@
             this.TxtUsername.CustomButton.UseSelectable = true;
             this.TxtUsername.CustomButton.Visible = false;
             this.TxtUsername.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Username", true));
-            this.TxtUsername.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtUsername.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtUsername.Lines = new string[0];
             this.TxtUsername.Location = new System.Drawing.Point(160, 98);
             this.TxtUsername.MaxLength = 32767;

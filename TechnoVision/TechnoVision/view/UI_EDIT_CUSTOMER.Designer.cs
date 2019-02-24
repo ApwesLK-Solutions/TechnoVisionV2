@@ -71,6 +71,7 @@
             this.BtnDiscard.UseCustomForeColor = true;
             this.BtnDiscard.UseSelectable = true;
             this.BtnDiscard.UseStyleColors = true;
+            this.BtnDiscard.Click += new System.EventHandler(this.BtnDiscard_Click);
             // 
             // BtnSave
             // 

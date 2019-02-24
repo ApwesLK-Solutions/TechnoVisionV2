@@ -125,7 +125,7 @@
             this.TxtContactNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtContactNumber.CustomButton.UseSelectable = true;
             this.TxtContactNumber.CustomButton.Visible = false;
-            this.TxtContactNumber.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtContactNumber.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtContactNumber.Lines = new string[0];
             this.TxtContactNumber.Location = new System.Drawing.Point(157, 167);
             this.TxtContactNumber.MaxLength = 32767;
@@ -158,7 +158,7 @@
             this.TxtNic.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtNic.CustomButton.UseSelectable = true;
             this.TxtNic.CustomButton.Visible = false;
-            this.TxtNic.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtNic.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtNic.Lines = new string[0];
             this.TxtNic.Location = new System.Drawing.Point(157, 131);
             this.TxtNic.MaxLength = 32767;
@@ -191,7 +191,7 @@
             this.TxtNewPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtNewPassword.CustomButton.UseSelectable = true;
             this.TxtNewPassword.CustomButton.Visible = false;
-            this.TxtNewPassword.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtNewPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtNewPassword.Lines = new string[0];
             this.TxtNewPassword.Location = new System.Drawing.Point(157, 205);
             this.TxtNewPassword.MaxLength = 32767;
@@ -224,7 +224,7 @@
             this.TxtUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtUsername.CustomButton.UseSelectable = true;
             this.TxtUsername.CustomButton.Visible = false;
-            this.TxtUsername.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtUsername.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtUsername.Lines = new string[0];
             this.TxtUsername.Location = new System.Drawing.Point(157, 95);
             this.TxtUsername.MaxLength = 32767;
@@ -257,7 +257,7 @@
             this.TxtConfirmPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtConfirmPassword.CustomButton.UseSelectable = true;
             this.TxtConfirmPassword.CustomButton.Visible = false;
-            this.TxtConfirmPassword.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtConfirmPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtConfirmPassword.Lines = new string[0];
             this.TxtConfirmPassword.Location = new System.Drawing.Point(157, 241);
             this.TxtConfirmPassword.MaxLength = 32767;

@@ -21,10 +21,22 @@ namespace TechnoVision.view
 
         private void UI_EDIT_CUSTOMER_Load(object sender, EventArgs e)
         {
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
+                this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
             
-            // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
-            this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+        }
 
+        private void BtnDiscard_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

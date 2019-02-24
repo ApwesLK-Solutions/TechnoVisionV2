@@ -42,12 +42,12 @@
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.CmbBranch = new MetroFramework.Controls.MetroComboBox();
-            this.BtnAddUser = new MetroFramework.Controls.MetroButton();
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.branchBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.BtnAddUser = new MetroFramework.Controls.MetroButton();
             this.branchTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.branchTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtUsername
@@ -64,7 +64,7 @@
             this.TxtUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtUsername.CustomButton.UseSelectable = true;
             this.TxtUsername.CustomButton.Visible = false;
-            this.TxtUsername.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtUsername.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtUsername.Lines = new string[0];
             this.TxtUsername.Location = new System.Drawing.Point(168, 104);
             this.TxtUsername.MaxLength = 32767;
@@ -97,7 +97,7 @@
             this.TxtPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtPassword.CustomButton.UseSelectable = true;
             this.TxtPassword.CustomButton.Visible = false;
-            this.TxtPassword.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtPassword.Lines = new string[0];
             this.TxtPassword.Location = new System.Drawing.Point(168, 142);
             this.TxtPassword.MaxLength = 32767;
@@ -130,7 +130,7 @@
             this.TxtFullName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtFullName.CustomButton.UseSelectable = true;
             this.TxtFullName.CustomButton.Visible = false;
-            this.TxtFullName.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtFullName.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtFullName.Lines = new string[0];
             this.TxtFullName.Location = new System.Drawing.Point(168, 178);
             this.TxtFullName.MaxLength = 32767;
@@ -163,7 +163,7 @@
             this.TxtNic.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtNic.CustomButton.UseSelectable = true;
             this.TxtNic.CustomButton.Visible = false;
-            this.TxtNic.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtNic.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtNic.Lines = new string[0];
             this.TxtNic.Location = new System.Drawing.Point(168, 214);
             this.TxtNic.MaxLength = 32767;
@@ -196,7 +196,7 @@
             this.TxtContactNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtContactNumber.CustomButton.UseSelectable = true;
             this.TxtContactNumber.CustomButton.Visible = false;
-            this.TxtContactNumber.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtContactNumber.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtContactNumber.Lines = new string[0];
             this.TxtContactNumber.Location = new System.Drawing.Point(168, 250);
             this.TxtContactNumber.MaxLength = 32767;
@@ -298,6 +298,16 @@
             this.CmbBranch.UseSelectable = true;
             this.CmbBranch.ValueMember = "Id";
             // 
+            // branchBindingSource
+            // 
+            this.branchBindingSource.DataMember = "branch";
+            this.branchBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // BtnAddUser
             // 
             this.BtnAddUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -316,16 +326,6 @@
             this.BtnAddUser.UseSelectable = true;
             this.BtnAddUser.UseStyleColors = true;
             this.BtnAddUser.Click += new System.EventHandler(this.BtnAddUser_Click);
-            // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // branchBindingSource
-            // 
-            this.branchBindingSource.DataMember = "branch";
-            this.branchBindingSource.DataSource = this.technovisionDataSet;
             // 
             // branchTableAdapter
             // 
@@ -356,8 +356,8 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Add System User";
             this.Load += new System.EventHandler(this.UI_ADD_USER_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -33,9 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GridManageCustomer = new MetroFramework.Controls.MetroGrid();
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customerTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.customerTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,11 +41,15 @@
             this.professionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.branchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.customerTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.customerTableAdapter();
             this.BtnEditCustomer = new MetroFramework.Controls.MetroButton();
             this.BtnShowOrders = new MetroFramework.Controls.MetroButton();
+            this.TxtSearchCustomer = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GridManageCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // GridManageCustomer
@@ -111,20 +112,6 @@
             this.GridManageCustomer.Size = new System.Drawing.Size(1170, 425);
             this.GridManageCustomer.Style = MetroFramework.MetroColorStyle.Green;
             this.GridManageCustomer.TabIndex = 0;
-            // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customerBindingSource
-            // 
-            this.customerBindingSource.DataMember = "customer";
-            this.customerBindingSource.DataSource = this.technovisionDataSet;
-            // 
-            // customerTableAdapter
-            // 
-            this.customerTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -190,6 +177,20 @@
             this.branchDataGridViewTextBoxColumn.ReadOnly = true;
             this.branchDataGridViewTextBoxColumn.Width = 98;
             // 
+            // customerBindingSource
+            // 
+            this.customerBindingSource.DataMember = "customer";
+            this.customerBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customerTableAdapter
+            // 
+            this.customerTableAdapter.ClearBeforeFill = true;
+            // 
             // BtnEditCustomer
             // 
             this.BtnEditCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -225,11 +226,45 @@
             this.BtnShowOrders.UseSelectable = true;
             this.BtnShowOrders.UseStyleColors = true;
             // 
+            // TxtSearchCustomer
+            // 
+            // 
+            // 
+            // 
+            this.TxtSearchCustomer.CustomButton.Image = null;
+            this.TxtSearchCustomer.CustomButton.Location = new System.Drawing.Point(198, 2);
+            this.TxtSearchCustomer.CustomButton.Name = "";
+            this.TxtSearchCustomer.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtSearchCustomer.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtSearchCustomer.CustomButton.TabIndex = 1;
+            this.TxtSearchCustomer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtSearchCustomer.CustomButton.UseSelectable = true;
+            this.TxtSearchCustomer.CustomButton.Visible = false;
+            this.TxtSearchCustomer.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.TxtSearchCustomer.Lines = new string[0];
+            this.TxtSearchCustomer.Location = new System.Drawing.Point(964, 22);
+            this.TxtSearchCustomer.MaxLength = 32767;
+            this.TxtSearchCustomer.Name = "TxtSearchCustomer";
+            this.TxtSearchCustomer.PasswordChar = '\0';
+            this.TxtSearchCustomer.PromptText = "Search by Name or Phone...";
+            this.TxtSearchCustomer.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtSearchCustomer.SelectedText = "";
+            this.TxtSearchCustomer.SelectionLength = 0;
+            this.TxtSearchCustomer.SelectionStart = 0;
+            this.TxtSearchCustomer.ShortcutsEnabled = true;
+            this.TxtSearchCustomer.Size = new System.Drawing.Size(226, 30);
+            this.TxtSearchCustomer.TabIndex = 3;
+            this.TxtSearchCustomer.UseSelectable = true;
+            this.TxtSearchCustomer.WaterMark = "Search by Name or Phone...";
+            this.TxtSearchCustomer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtSearchCustomer.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // UI_VIEW_CUSTOMER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1210, 580);
+            this.Controls.Add(this.TxtSearchCustomer);
             this.Controls.Add(this.BtnShowOrders);
             this.Controls.Add(this.BtnEditCustomer);
             this.Controls.Add(this.GridManageCustomer);
@@ -240,8 +275,8 @@
             this.Text = "Manage Customer Details";
             this.Load += new System.EventHandler(this.UI_VIEW_CUSTOMER_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridManageCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,5 +297,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn branchDataGridViewTextBoxColumn;
         private MetroFramework.Controls.MetroButton BtnEditCustomer;
         private MetroFramework.Controls.MetroButton BtnShowOrders;
+        private MetroFramework.Controls.MetroTextBox TxtSearchCustomer;
     }
 }
