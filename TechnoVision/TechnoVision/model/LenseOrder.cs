@@ -60,33 +60,5 @@ namespace TechnoVision.model
         public static string Remarks;
         public static int ReminderDays;
 
-        /*private string getOrderNumber()
-        {
-            try
-            {
-                technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
-                string newID = t.getMaxID().ToString();
-                if (newID =)
-                {
-                    newID = "0";
-                }
-                newID = (int.Parse(newID) + 1).ToString();
-                if (newID.Length < 4)
-                {
-                    while (newID.Length < 4)
-                    {
-                        newID = "0" + newID;
-                    }
-                }
-                newID = DateTime.Now.ToString("yy") + newID;
-                return newID;
-            }
-            catch(Exception ex)
-            {
-                return null;
-            }
-        }*/
-
-
     }
 }

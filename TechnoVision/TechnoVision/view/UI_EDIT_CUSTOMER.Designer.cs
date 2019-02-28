@@ -137,7 +137,7 @@
             this.TxtAge.MaxLength = 32767;
             this.TxtAge.Name = "TxtAge";
             this.TxtAge.PasswordChar = '\0';
-            this.TxtAge.PromptText = "Enter Age...";
+            this.TxtAge.WaterMark = "Enter Age...";
             this.TxtAge.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtAge.SelectedText = "";
             this.TxtAge.SelectionLength = 0;
@@ -171,7 +171,7 @@
             this.TxtProffession.MaxLength = 32767;
             this.TxtProffession.Name = "TxtProffession";
             this.TxtProffession.PasswordChar = '\0';
-            this.TxtProffession.PromptText = "Enter profession...";
+            this.TxtProffession.WaterMark = "Enter profession...";
             this.TxtProffession.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtProffession.SelectedText = "";
             this.TxtProffession.SelectionLength = 0;
@@ -205,7 +205,7 @@
             this.TxtContactNumber.MaxLength = 32767;
             this.TxtContactNumber.Name = "TxtContactNumber";
             this.TxtContactNumber.PasswordChar = '\0';
-            this.TxtContactNumber.PromptText = "Enter Contact number...";
+            this.TxtContactNumber.WaterMark = "Enter Contact number...";
             this.TxtContactNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtContactNumber.SelectedText = "";
             this.TxtContactNumber.SelectionLength = 0;
@@ -239,7 +239,7 @@
             this.TxtEmail.MaxLength = 32767;
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.PasswordChar = '\0';
-            this.TxtEmail.PromptText = "Enter E-mail address...";
+            this.TxtEmail.WaterMark = "Enter E-mail address...";
             this.TxtEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtEmail.SelectedText = "";
             this.TxtEmail.SelectionLength = 0;
@@ -274,7 +274,7 @@
             this.TxtAddress.Multiline = true;
             this.TxtAddress.Name = "TxtAddress";
             this.TxtAddress.PasswordChar = '\0';
-            this.TxtAddress.PromptText = "Enter Address...";
+            this.TxtAddress.WaterMark = "Enter Address...";
             this.TxtAddress.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtAddress.SelectedText = "";
             this.TxtAddress.SelectionLength = 0;
@@ -308,7 +308,7 @@
             this.TxtCustomerName.MaxLength = 32767;
             this.TxtCustomerName.Name = "TxtCustomerName";
             this.TxtCustomerName.PasswordChar = '\0';
-            this.TxtCustomerName.PromptText = "Enter Name...";
+            this.TxtCustomerName.WaterMark = "Enter Name...";
             this.TxtCustomerName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtCustomerName.SelectedText = "";
             this.TxtCustomerName.SelectionLength = 0;

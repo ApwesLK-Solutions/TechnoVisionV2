@@ -231,7 +231,7 @@
             this.TxtSearchByNic.MaxLength = 32767;
             this.TxtSearchByNic.Name = "TxtSearchByNic";
             this.TxtSearchByNic.PasswordChar = '\0';
-            this.TxtSearchByNic.PromptText = "Search By NIC...";
+            this.TxtSearchByNic.WaterMark = "Search By NIC...";
             this.TxtSearchByNic.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtSearchByNic.SelectedText = "";
             this.TxtSearchByNic.SelectionLength = 0;

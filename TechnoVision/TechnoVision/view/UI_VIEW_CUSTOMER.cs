@@ -28,5 +28,10 @@ namespace TechnoVision.view
         {
             new UI_EDIT_CUSTOMER(GridManageCustomer.SelectedRows[0].Cells[0].Value.ToString()).Show();
         }
+
+        private void TxtSearchCustomer_TextChanged(object sender, EventArgs e)
+        {
+            customerBindingSource.Filter = "Name LIKE '*" + TxtSearchCustomer.Text + "*' OR Phone LIKE'*" + TxtSearchCustomer.Text + "*'";
+        }
     }
 }

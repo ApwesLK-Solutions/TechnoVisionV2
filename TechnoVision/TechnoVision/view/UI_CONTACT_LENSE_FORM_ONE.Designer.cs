@@ -462,6 +462,7 @@
             this.BtnNext.UseCustomForeColor = true;
             this.BtnNext.UseSelectable = true;
             this.BtnNext.UseStyleColors = true;
+            this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // BtnClear
             // 
@@ -520,6 +521,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Contact Lenses - Order Summary";
+            this.Load += new System.EventHandler(this.UI_CONTACT_LENSE_FORM_ONE_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
