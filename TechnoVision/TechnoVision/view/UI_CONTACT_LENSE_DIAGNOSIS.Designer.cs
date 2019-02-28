@@ -35,8 +35,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(906, 563);
+            this.MaximizeBox = false;
             this.Name = "UI_CONTACT_LENSE_DIAGNOSIS";
-            this.Text = "UI_CONTACT_LENSE_DIAGNOSIS";
+            this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Green;
+            this.Text = "Contact Lense - Diagnosis";
             this.ResumeLayout(false);
 
         }
