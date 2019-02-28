@@ -17,6 +17,7 @@ namespace TechnoVision.view
         {
             InitializeComponent();
             this.LblCustomerId.Text = e;
+            this.Id = e;
         }
 
         private void UI_EDIT_CUSTOMER_Load(object sender, EventArgs e)
@@ -25,6 +26,7 @@ namespace TechnoVision.view
             {
                 // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
                 this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+                customerBindingSource.Filter = "Id = '" + Id +"'";
             }
             catch(Exception ex)
             {
@@ -37,6 +39,20 @@ namespace TechnoVision.view
         private void BtnDiscard_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                customerBindingSource.EndEdit();
+                customerTableAdapter.Update(technovisionDataSet);
+            }
+            catch(Exception ex)
+            {
+
+            }
+           
         }
     }
 }
