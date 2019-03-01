@@ -98,6 +98,7 @@
             this.BtnNext.UseCustomForeColor = true;
             this.BtnNext.UseSelectable = true;
             this.BtnNext.UseStyleColors = true;
+            this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // BtnCalculate
             // 

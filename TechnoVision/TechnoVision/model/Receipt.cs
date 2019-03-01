@@ -8,10 +8,9 @@ namespace TechnoVision.model
 {
     class Receipt
     {
-        private static int receiptID;
-        private static int orderNumber;
-        private static double paymentAmount;
-        private static string receiptDate;
-
+        public static int orderNumber;
+        public static double paymentAmount;
+        public static string receiptDate;
+        public static int branch = Session.BranchId;
     }
 }
