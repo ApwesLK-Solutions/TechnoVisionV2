@@ -25,6 +25,8 @@ namespace TechnoVision.view
             try
             {
                 LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yy-MM-dd"), DateDueDate.Value.ToString("yy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text));
+                this.Hide();
+                new UI_CONTACT_LENSE_DIAGNOSIS(this).Show();
             }
             catch(Exception ex)
             {
@@ -38,26 +40,23 @@ namespace TechnoVision.view
             TxtOrderNo.Text = getOrderNumber();
         }
 
-         private string getOrderNumber()
+        private string getOrderNumber()
         {
             try
             {
-                technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
-                string newID = t.getMaxID().ToString();
-                if(newID == "")
+                string LastOrderNumber;
+                string NewOrderNumber;
+                technovisionDataSetTableAdapters.contactlenseTableAdapter table = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+                try
                 {
-                    newID = "0";
+                    LastOrderNumber = table.GetMaxOrderNumber(Session.BranchId).ToString();
+                    NewOrderNumber = (int.Parse(LastOrderNumber) + 1).ToString();
                 }
-                newID = (int.Parse(newID) + 1).ToString();
-                if (newID.Length < 4)
+                catch (NullReferenceException ex)
                 {
-                    while (newID.Length < 4)
-                    {
-                        newID = "0" + newID;
-                    }
+                    NewOrderNumber = DateTime.Now.ToString("yy") + "0001";
                 }
-                newID = DateTime.Now.ToString("yy") + newID;
-                return newID;
+                return NewOrderNumber;
             }
             catch(Exception ex)
             {

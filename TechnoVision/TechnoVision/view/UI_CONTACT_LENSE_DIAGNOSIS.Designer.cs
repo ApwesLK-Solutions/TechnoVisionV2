@@ -1305,6 +1305,7 @@
             this.BtnClear.UseCustomForeColor = true;
             this.BtnClear.UseSelectable = true;
             this.BtnClear.UseStyleColors = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // BtnSave
             // 
@@ -1323,6 +1324,7 @@
             this.BtnSave.UseCustomForeColor = true;
             this.BtnSave.UseSelectable = true;
             this.BtnSave.UseStyleColors = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // UI_CONTACT_LENSE_DIAGNOSIS
             // 
@@ -1392,6 +1394,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Contact Lense - Diagnosis";
+            this.Load += new System.EventHandler(this.UI_CONTACT_LENSE_DIAGNOSIS_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

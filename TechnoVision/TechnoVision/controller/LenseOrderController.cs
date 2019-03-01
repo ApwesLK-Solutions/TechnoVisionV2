@@ -25,7 +25,7 @@ namespace TechnoVision.controller
             LenseOrder.ReminderDays = ReminderDays;
         }
 
-       public static void FillFormTwo(string oldRightSph, string oldRightCyl, string oldRightAxis, string oldRightAdd, string oldLeftSph, string oldLeftCyl, string oldLeftAxis, string oldLeftAdd, string presentRightSph, string presentRightCyl, string presentRightAxis, string presentRightAdd, string presentLeftSph, string presentLeftCyl, string presentLeftAxis, string presentLeftAdd, string rightBc, string rightPow, string rightDia, string rightDesz, string leftBc, string leftPow, string leftDia, string leftDesz, string trailLense, string overRefract, string kReading, string blinkTest, string specialInstruction, string remarks, int reminderDays)
+       public static void FillFormTwo(string oldRightSph, string oldRightCyl, string oldRightAxis, string oldRightAdd, string oldLeftSph, string oldLeftCyl, string oldLeftAxis, string oldLeftAdd, string presentRightSph, string presentRightCyl, string presentRightAxis, string presentRightAdd, string presentLeftSph, string presentLeftCyl, string presentLeftAxis, string presentLeftAdd, string rightBc, string rightPow, string rightDia, string rightDesz, string leftBc, string leftPow, string leftDia, string leftDesz, string trailLense, string overRefract, string kReading, string blinkTest, string specialInstruction, string remarks)
        {
            LenseOrder.OldRightSph = oldRightSph;
            LenseOrder.OldRightCyl = oldRightCyl;
@@ -57,7 +57,6 @@ namespace TechnoVision.controller
            LenseOrder.BlinkTest = blinkTest;
            LenseOrder.SpecialInstruction = specialInstruction;
            LenseOrder.Remarks = remarks;
-           LenseOrder.ReminderDays = reminderDays;
        }
     }
 }
