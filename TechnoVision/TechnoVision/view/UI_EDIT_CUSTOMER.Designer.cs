@@ -90,6 +90,7 @@
             this.BtnSave.UseCustomForeColor = true;
             this.BtnSave.UseSelectable = true;
             this.BtnSave.UseStyleColors = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // CmbBranch
             // 

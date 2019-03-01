@@ -117,7 +117,6 @@ namespace TechnoVision.controller
                 CommonFunctions.ShowError(form, ex.ToString());
             }
         }
-
         public static void UpdatePassword(MetroForm form, string username, string password, string confirmPassword, string Contact, string nic)
         {
             try

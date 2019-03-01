@@ -50,9 +50,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // GrdUser
-            // 
+            //
             this.GrdUser.AllowUserToAddRows = false;
             this.GrdUser.AllowUserToDeleteRows = false;
             this.GrdUser.AllowUserToOrderColumns = true;
@@ -110,68 +110,68 @@
             this.GrdUser.Size = new System.Drawing.Size(981, 388);
             this.GrdUser.Style = MetroFramework.MetroColorStyle.Green;
             this.GrdUser.TabIndex = 0;
-            // 
+            //
             // technovisionDataSet
-            // 
+            //
             this.technovisionDataSet.DataSetName = "technovisionDataSet";
             this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
+            //
             // usersBindingSource
-            // 
+            //
             this.usersBindingSource.DataMember = "users";
             this.usersBindingSource.DataSource = this.technovisionDataSet;
-            // 
+            //
             // usersTableAdapter
-            // 
+            //
             this.usersTableAdapter.ClearBeforeFill = true;
-            // 
+            //
             // usernameDataGridViewTextBoxColumn
-            // 
+            //
             this.usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
             this.usernameDataGridViewTextBoxColumn.HeaderText = "Username";
             this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
             this.usernameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // nicDataGridViewTextBoxColumn
-            // 
+            //
             this.nicDataGridViewTextBoxColumn.DataPropertyName = "Nic";
             this.nicDataGridViewTextBoxColumn.HeaderText = "NIC";
             this.nicDataGridViewTextBoxColumn.Name = "nicDataGridViewTextBoxColumn";
             this.nicDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // contactNumberDataGridViewTextBoxColumn
-            // 
+            //
             this.contactNumberDataGridViewTextBoxColumn.DataPropertyName = "ContactNumber";
             this.contactNumberDataGridViewTextBoxColumn.HeaderText = "ContactNumber";
             this.contactNumberDataGridViewTextBoxColumn.Name = "contactNumberDataGridViewTextBoxColumn";
             this.contactNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // isActiveDataGridViewTextBoxColumn
-            // 
+            //
             this.isActiveDataGridViewTextBoxColumn.DataPropertyName = "IsActive";
             this.isActiveDataGridViewTextBoxColumn.HeaderText = "Is Active User";
             this.isActiveDataGridViewTextBoxColumn.Name = "isActiveDataGridViewTextBoxColumn";
             this.isActiveDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // fullNameDataGridViewTextBoxColumn
-            // 
+            //
             this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
             this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
             this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
             this.fullNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // branchIdDataGridViewTextBoxColumn
-            // 
+            //
             this.branchIdDataGridViewTextBoxColumn.DataPropertyName = "BranchId";
             this.branchIdDataGridViewTextBoxColumn.HeaderText = "Branch ID";
             this.branchIdDataGridViewTextBoxColumn.Name = "branchIdDataGridViewTextBoxColumn";
             this.branchIdDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // TxtSearch
-            // 
-            // 
-            // 
-            // 
+            //
+            //
+            //
+            //
             this.TxtSearch.CustomButton.Image = null;
             this.TxtSearch.CustomButton.Location = new System.Drawing.Point(261, 2);
             this.TxtSearch.CustomButton.Name = "";
@@ -198,9 +198,9 @@
             this.TxtSearch.WaterMark = "search by nic...";
             this.TxtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
+            //
             // BtnDeleteUser
-            // 
+            //
             this.BtnDeleteUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnDeleteUser.FontSize = MetroFramework.MetroButtonSize.Medium;
@@ -217,9 +217,9 @@
             this.BtnDeleteUser.UseSelectable = true;
             this.BtnDeleteUser.UseStyleColors = true;
             this.BtnDeleteUser.Click += new System.EventHandler(this.BtnDeleteUser_Click);
-            // 
+            //
             // BtnActivateUser
-            // 
+            //
             this.BtnActivateUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnActivateUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnActivateUser.FontSize = MetroFramework.MetroButtonSize.Medium;
@@ -235,28 +235,42 @@
             this.BtnActivateUser.UseCustomForeColor = true;
             this.BtnActivateUser.UseSelectable = true;
             this.BtnActivateUser.UseStyleColors = true;
-            // 
-            // BtnEditUser
-            // 
-            this.BtnEditUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnEditUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnEditUser.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.BtnEditUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnEditUser.Highlight = true;
-            this.BtnEditUser.Location = new System.Drawing.Point(897, 487);
-            this.BtnEditUser.Name = "BtnEditUser";
-            this.BtnEditUser.Size = new System.Drawing.Size(129, 45);
-            this.BtnEditUser.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnEditUser.TabIndex = 8;
-            this.BtnEditUser.Text = "Edit User";
-            this.BtnEditUser.UseCustomBackColor = true;
-            this.BtnEditUser.UseCustomForeColor = true;
-            this.BtnEditUser.UseSelectable = true;
-            this.BtnEditUser.UseStyleColors = true;
-            // 
-            // UI_MANAGE_USER
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.BtnActivateUser.Click += new System.EventHandler(this.BtnDeleteUser_Click);
+            //
+            // TxtSearchByNic
+            //
+            //
+            //
+            //
+            this.TxtSearchByNic.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.TxtSearchByNic.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
+            this.TxtSearchByNic.CustomButton.Name = "";
+            this.TxtSearchByNic.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
+            this.TxtSearchByNic.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtSearchByNic.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
+            this.TxtSearchByNic.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtSearchByNic.CustomButton.UseSelectable = true;
+            this.TxtSearchByNic.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
+            this.TxtSearchByNic.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.TxtSearchByNic.Lines = new string[0];
+            resources.ApplyResources(this.TxtSearchByNic, "TxtSearchByNic");
+            this.TxtSearchByNic.MaxLength = 32767;
+            this.TxtSearchByNic.Name = "TxtSearchByNic";
+            this.TxtSearchByNic.PasswordChar = '\0';
+            this.TxtSearchByNic.WaterMark = "Search By NIC...";
+            this.TxtSearchByNic.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtSearchByNic.SelectedText = "";
+            this.TxtSearchByNic.SelectionLength = 0;
+            this.TxtSearchByNic.SelectionStart = 0;
+            this.TxtSearchByNic.ShortcutsEnabled = true;
+            this.TxtSearchByNic.UseSelectable = true;
+            this.TxtSearchByNic.WaterMark = "Search By NIC...";
+            this.TxtSearchByNic.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtSearchByNic.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            //
+            // UI_MANAGE_SYSTEM_USER
+            //
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1049, 549);
             this.Controls.Add(this.BtnEditUser);

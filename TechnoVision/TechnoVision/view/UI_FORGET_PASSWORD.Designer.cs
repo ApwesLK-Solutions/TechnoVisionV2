@@ -131,7 +131,7 @@
             this.TxtContactNumber.MaxLength = 32767;
             this.TxtContactNumber.Name = "TxtContactNumber";
             this.TxtContactNumber.PasswordChar = '\0';
-            this.TxtContactNumber.PromptText = "Enter Contact Number...";
+            this.TxtContactNumber.WaterMark = "Enter Contact Number...";
             this.TxtContactNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtContactNumber.SelectedText = "";
             this.TxtContactNumber.SelectionLength = 0;
@@ -164,7 +164,7 @@
             this.TxtNic.MaxLength = 32767;
             this.TxtNic.Name = "TxtNic";
             this.TxtNic.PasswordChar = '\0';
-            this.TxtNic.PromptText = "Enter Nic...";
+            this.TxtNic.WaterMark = "Enter Nic...";
             this.TxtNic.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtNic.SelectedText = "";
             this.TxtNic.SelectionLength = 0;
@@ -197,7 +197,7 @@
             this.TxtNewPassword.MaxLength = 32767;
             this.TxtNewPassword.Name = "TxtNewPassword";
             this.TxtNewPassword.PasswordChar = '\0';
-            this.TxtNewPassword.PromptText = "Enter new Password...";
+            this.TxtNewPassword.WaterMark = "Enter new Password...";
             this.TxtNewPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtNewPassword.SelectedText = "";
             this.TxtNewPassword.SelectionLength = 0;
@@ -230,7 +230,7 @@
             this.TxtUsername.MaxLength = 32767;
             this.TxtUsername.Name = "TxtUsername";
             this.TxtUsername.PasswordChar = '\0';
-            this.TxtUsername.PromptText = "Enter Username...";
+            this.TxtUsername.WaterMark = "Enter Username...";
             this.TxtUsername.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtUsername.SelectedText = "";
             this.TxtUsername.SelectionLength = 0;
@@ -263,7 +263,7 @@
             this.TxtConfirmPassword.MaxLength = 32767;
             this.TxtConfirmPassword.Name = "TxtConfirmPassword";
             this.TxtConfirmPassword.PasswordChar = '\0';
-            this.TxtConfirmPassword.PromptText = "Enter Password...";
+            this.TxtConfirmPassword.WaterMark = "Enter Password...";
             this.TxtConfirmPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtConfirmPassword.SelectedText = "";
             this.TxtConfirmPassword.SelectionLength = 0;

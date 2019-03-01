@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TechnoVision.model;
+using TechnoVision.controller;
 
 namespace TechnoVision.view
 {
@@ -15,6 +17,44 @@ namespace TechnoVision.view
         public UI_CONTACT_LENSE_FORM_ONE()
         {
             InitializeComponent();
+            
+        }
+
+        private void BtnNext_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UI_CONTACT_LENSE_FORM_ONE_Load(object sender, EventArgs e)
+        {
+            TxtOrderNo.Text = getOrderNumber();
+        }
+
+         private string getOrderNumber()
+        {
+            try
+            {
+                technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+                string newID = t.getMaxID().ToString();
+                if(newID == "")
+                {
+                    newID = "0";
+                }
+                newID = (int.Parse(newID) + 1).ToString();
+                if (newID.Length < 4)
+                {
+                    while (newID.Length < 4)
+                    {
+                        newID = "0" + newID;
+                    }
+                }
+                newID = DateTime.Now.ToString("yy") + newID;
+                return newID;
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

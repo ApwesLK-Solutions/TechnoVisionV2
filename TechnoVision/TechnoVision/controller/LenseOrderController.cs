@@ -9,7 +9,7 @@ namespace TechnoVision.controller
 {
     class LenseOrderController
     {
-        public void FillFormOne(string orderNumber, string orderDate, string dueDate, string testedBy, string orderStatus, double total, double advance, double discount, double balance , string paymentMethod , string PaymentPlan)
+        public static void FillFormOne(string orderNumber, string orderDate, string dueDate, string testedBy, string orderStatus, double total, double advance, double discount, double balance , string paymentMethod , string PaymentPlan)
         {
             LenseOrder.OrderNumber = orderNumber;
             LenseOrder.OrderDate = orderDate;
@@ -24,7 +24,7 @@ namespace TechnoVision.controller
             LenseOrder.PaymentPlan = PaymentPlan;
         }
 
-       public void FillFormTwo(string oldRightSph, string oldRightCyl, string oldRightAxis, string oldRightAdd, string oldLeftSph, string oldLeftCyl, string oldLeftAxis, string oldLeftAdd, string presentRightSph, string presentRightCyl, string presentRightAxis, string presentRightAdd, string presentLeftSph, string presentLeftCyl, string presentLeftAxis, string presentLeftAdd, string rightBc, string rightPow, string rightDia, string rightDesz, string leftBc, string leftPow, string leftDia, string leftDesz, string trailLense, string overRefract, string kReading, string blinkTest, string specialInstruction, string remarks, int reminderDays)
+       public static void FillFormTwo(string oldRightSph, string oldRightCyl, string oldRightAxis, string oldRightAdd, string oldLeftSph, string oldLeftCyl, string oldLeftAxis, string oldLeftAdd, string presentRightSph, string presentRightCyl, string presentRightAxis, string presentRightAdd, string presentLeftSph, string presentLeftCyl, string presentLeftAxis, string presentLeftAdd, string rightBc, string rightPow, string rightDia, string rightDesz, string leftBc, string leftPow, string leftDia, string leftDesz, string trailLense, string overRefract, string kReading, string blinkTest, string specialInstruction, string remarks, int reminderDays)
        {
            LenseOrder.OldRightSph = oldRightSph;
            LenseOrder.OldRightCyl = oldRightCyl;

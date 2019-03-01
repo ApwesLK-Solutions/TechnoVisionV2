@@ -171,7 +171,7 @@
             this.TxtContactNumber.MaxLength = 32767;
             this.TxtContactNumber.Name = "TxtContactNumber";
             this.TxtContactNumber.PasswordChar = '\0';
-            this.TxtContactNumber.PromptText = "Enter Contact Number...";
+            this.TxtContactNumber.WaterMark = "Enter Contact Number...";
             this.TxtContactNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtContactNumber.SelectedText = "";
             this.TxtContactNumber.SelectionLength = 0;
@@ -205,7 +205,7 @@
             this.TxtFullName.MaxLength = 32767;
             this.TxtFullName.Name = "TxtFullName";
             this.TxtFullName.PasswordChar = '\0';
-            this.TxtFullName.PromptText = "Enter Full Name...";
+            this.TxtFullName.WaterMark = "Enter Full Name...";
             this.TxtFullName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtFullName.SelectedText = "";
             this.TxtFullName.SelectionLength = 0;
@@ -239,7 +239,7 @@
             this.TxtPassword.MaxLength = 32767;
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '\0';
-            this.TxtPassword.PromptText = "Enter Password...";
+            this.TxtPassword.WaterMark = "Enter Password...";
             this.TxtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtPassword.SelectedText = "";
             this.TxtPassword.SelectionLength = 0;
@@ -273,7 +273,7 @@
             this.TxtUsername.MaxLength = 32767;
             this.TxtUsername.Name = "TxtUsername";
             this.TxtUsername.PasswordChar = '\0';
-            this.TxtUsername.PromptText = "Enter Username...";
+            this.TxtUsername.WaterMark = "Enter Username...";
             this.TxtUsername.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtUsername.SelectedText = "";
             this.TxtUsername.SelectionLength = 0;
