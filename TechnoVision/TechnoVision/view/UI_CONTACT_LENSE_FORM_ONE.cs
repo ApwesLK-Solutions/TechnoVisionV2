@@ -25,6 +25,8 @@ namespace TechnoVision.view
             try
             {
                 LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yy-MM-dd"), DateDueDate.Value.ToString("yy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text));
+                this.Hide();
+                new UI_CONTACT_LENSE_DIAGNOSIS(this).Show();
             }
             catch(Exception ex)
             {
