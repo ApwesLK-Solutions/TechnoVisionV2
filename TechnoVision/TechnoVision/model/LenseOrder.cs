@@ -11,6 +11,7 @@ namespace TechnoVision.model
         public static string OrderNumber;
         public static string OrderDate;
         public static string DueDate;
+        public static string JobType;
         public static string TestedBy;
         public static string OrderStatus;
         public static double Total;
