@@ -1332,10 +1332,12 @@
             this.BtnBack.ActiveControl = null;
             this.BtnBack.Location = new System.Drawing.Point(0, 24);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(57, 31);
+            this.BtnBack.Size = new System.Drawing.Size(57, 39);
             this.BtnBack.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnBack.TabIndex = 69;
+            this.BtnBack.Text = "<----";
             this.BtnBack.UseSelectable = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // UI_CONTACT_LENSE_DIAGNOSIS
             // 

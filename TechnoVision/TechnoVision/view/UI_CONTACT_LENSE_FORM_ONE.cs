@@ -38,6 +38,7 @@ namespace TechnoVision.view
         private void UI_CONTACT_LENSE_FORM_ONE_Load(object sender, EventArgs e)
         {
             TxtOrderNo.Text = getOrderNumber();
+            showReceiptNumber();
         }
 
         private string getOrderNumber()
@@ -62,6 +63,22 @@ namespace TechnoVision.view
             {
                 return null;
             }
+        }
+        private void showReceiptNumber()
+        {
+            technovisionDataSetTableAdapters.receiptTableAdapter t = new technovisionDataSetTableAdapters.receiptTableAdapter();
+            string rno;
+            string newRno;
+            try
+            {
+                rno = t.getReceiptNumberByBranch(Session.BranchId).ToString();
+                newRno = (int.Parse(rno) + 1).ToString();
+            }
+            catch(NullReferenceException ex)
+            {
+                newRno = "1";
+            }
+            LblReceiptNo.Text = newRno;
         }
     }
 }
