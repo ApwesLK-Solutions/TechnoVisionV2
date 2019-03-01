@@ -61,11 +61,11 @@
             this.BtnDiscard.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnDiscard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnDiscard.Highlight = true;
-            this.BtnDiscard.Location = new System.Drawing.Point(671, 397);
+            this.BtnDiscard.Location = new System.Drawing.Point(671, 408);
             this.BtnDiscard.Name = "BtnDiscard";
             this.BtnDiscard.Size = new System.Drawing.Size(126, 45);
             this.BtnDiscard.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnDiscard.TabIndex = 25;
+            this.BtnDiscard.TabIndex = 9;
             this.BtnDiscard.Text = "Discard Changes";
             this.BtnDiscard.UseCustomBackColor = true;
             this.BtnDiscard.UseCustomForeColor = true;
@@ -80,11 +80,11 @@
             this.BtnSave.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnSave.Highlight = true;
-            this.BtnSave.Location = new System.Drawing.Point(803, 397);
+            this.BtnSave.Location = new System.Drawing.Point(803, 408);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(126, 45);
             this.BtnSave.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnSave.TabIndex = 24;
+            this.BtnSave.TabIndex = 8;
             this.BtnSave.Text = "Save Changes";
             this.BtnSave.UseCustomBackColor = true;
             this.BtnSave.UseCustomForeColor = true;
@@ -103,7 +103,7 @@
             this.CmbBranch.Location = new System.Drawing.Point(643, 351);
             this.CmbBranch.Name = "CmbBranch";
             this.CmbBranch.Size = new System.Drawing.Size(286, 30);
-            this.CmbBranch.TabIndex = 23;
+            this.CmbBranch.TabIndex = 7;
             this.CmbBranch.UseSelectable = true;
             this.CmbBranch.ValueMember = "Branch";
             // 
@@ -119,6 +119,7 @@
             // 
             // TxtAge
             // 
+            this.TxtAge.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
@@ -145,7 +146,7 @@
             this.TxtAge.SelectionStart = 0;
             this.TxtAge.ShortcutsEnabled = true;
             this.TxtAge.Size = new System.Drawing.Size(286, 30);
-            this.TxtAge.TabIndex = 22;
+            this.TxtAge.TabIndex = 6;
             this.TxtAge.UseSelectable = true;
             this.TxtAge.WaterMark = "Enter Age...";
             this.TxtAge.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -153,6 +154,7 @@
             // 
             // TxtProffession
             // 
+            this.TxtProffession.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
@@ -179,7 +181,7 @@
             this.TxtProffession.SelectionStart = 0;
             this.TxtProffession.ShortcutsEnabled = true;
             this.TxtProffession.Size = new System.Drawing.Size(266, 30);
-            this.TxtProffession.TabIndex = 21;
+            this.TxtProffession.TabIndex = 5;
             this.TxtProffession.UseSelectable = true;
             this.TxtProffession.WaterMark = "Enter profession...";
             this.TxtProffession.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -187,6 +189,7 @@
             // 
             // TxtContactNumber
             // 
+            this.TxtContactNumber.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
@@ -213,7 +216,7 @@
             this.TxtContactNumber.SelectionStart = 0;
             this.TxtContactNumber.ShortcutsEnabled = true;
             this.TxtContactNumber.Size = new System.Drawing.Size(266, 30);
-            this.TxtContactNumber.TabIndex = 20;
+            this.TxtContactNumber.TabIndex = 4;
             this.TxtContactNumber.UseSelectable = true;
             this.TxtContactNumber.WaterMark = "Enter Contact number...";
             this.TxtContactNumber.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -221,6 +224,7 @@
             // 
             // TxtEmail
             // 
+            this.TxtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
@@ -247,7 +251,7 @@
             this.TxtEmail.SelectionStart = 0;
             this.TxtEmail.ShortcutsEnabled = true;
             this.TxtEmail.Size = new System.Drawing.Size(771, 30);
-            this.TxtEmail.TabIndex = 19;
+            this.TxtEmail.TabIndex = 3;
             this.TxtEmail.UseSelectable = true;
             this.TxtEmail.WaterMark = "Enter E-mail address...";
             this.TxtEmail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -255,6 +259,7 @@
             // 
             // TxtAddress
             // 
+            this.TxtAddress.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
@@ -282,7 +287,7 @@
             this.TxtAddress.SelectionStart = 0;
             this.TxtAddress.ShortcutsEnabled = true;
             this.TxtAddress.Size = new System.Drawing.Size(771, 93);
-            this.TxtAddress.TabIndex = 18;
+            this.TxtAddress.TabIndex = 2;
             this.TxtAddress.UseSelectable = true;
             this.TxtAddress.WaterMark = "Enter Address...";
             this.TxtAddress.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -290,6 +295,7 @@
             // 
             // TxtCustomerName
             // 
+            this.TxtCustomerName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
@@ -316,7 +322,7 @@
             this.TxtCustomerName.SelectionStart = 0;
             this.TxtCustomerName.ShortcutsEnabled = true;
             this.TxtCustomerName.Size = new System.Drawing.Size(771, 30);
-            this.TxtCustomerName.TabIndex = 17;
+            this.TxtCustomerName.TabIndex = 1;
             this.TxtCustomerName.UseSelectable = true;
             this.TxtCustomerName.WaterMark = "Enter Name...";
             this.TxtCustomerName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));

@@ -109,7 +109,7 @@
             this.GrdUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GrdUser.Size = new System.Drawing.Size(981, 388);
             this.GrdUser.Style = MetroFramework.MetroColorStyle.Green;
-            this.GrdUser.TabIndex = 0;
+            this.GrdUser.TabIndex = 1;
             // 
             // usernameDataGridViewTextBoxColumn
             // 
@@ -193,7 +193,7 @@
             this.TxtSearch.SelectionStart = 0;
             this.TxtSearch.ShortcutsEnabled = true;
             this.TxtSearch.Size = new System.Drawing.Size(289, 30);
-            this.TxtSearch.TabIndex = 1;
+            this.TxtSearch.TabIndex = 0;
             this.TxtSearch.UseSelectable = true;
             this.TxtSearch.WaterMark = "search by nic...";
             this.TxtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -210,7 +210,7 @@
             this.BtnDeleteUser.Name = "BtnDeleteUser";
             this.BtnDeleteUser.Size = new System.Drawing.Size(129, 45);
             this.BtnDeleteUser.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnDeleteUser.TabIndex = 8;
+            this.BtnDeleteUser.TabIndex = 2;
             this.BtnDeleteUser.Text = "Dactivate User";
             this.BtnDeleteUser.UseCustomBackColor = true;
             this.BtnDeleteUser.UseCustomForeColor = true;
@@ -229,7 +229,7 @@
             this.BtnActivateUser.Name = "BtnActivateUser";
             this.BtnActivateUser.Size = new System.Drawing.Size(129, 45);
             this.BtnActivateUser.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnActivateUser.TabIndex = 9;
+            this.BtnActivateUser.TabIndex = 3;
             this.BtnActivateUser.Text = "Activate User";
             this.BtnActivateUser.UseCustomBackColor = true;
             this.BtnActivateUser.UseCustomForeColor = true;
@@ -248,7 +248,7 @@
             this.BtnEditUser.Name = "BtnEditUser";
             this.BtnEditUser.Size = new System.Drawing.Size(129, 45);
             this.BtnEditUser.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnEditUser.TabIndex = 10;
+            this.BtnEditUser.TabIndex = 4;
             this.BtnEditUser.Text = "Edit User";
             this.BtnEditUser.UseCustomBackColor = true;
             this.BtnEditUser.UseCustomForeColor = true;
