@@ -1330,7 +1330,7 @@
             // BtnBack
             // 
             this.BtnBack.ActiveControl = null;
-            this.BtnBack.Location = new System.Drawing.Point(0, 24);
+            this.BtnBack.Location = new System.Drawing.Point(0, 21);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(57, 39);
             this.BtnBack.Style = MetroFramework.MetroColorStyle.Green;

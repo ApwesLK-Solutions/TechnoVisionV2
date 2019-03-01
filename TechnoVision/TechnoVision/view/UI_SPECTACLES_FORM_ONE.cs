@@ -22,6 +22,11 @@ namespace TechnoVision.view
         {
             DateOrderDate.Value = DateTime.UtcNow;
             DateDueDate.Value = DateTime.UtcNow;
+            CmbOrderStatus.SelectedIndex = 0;
+            CmbPaymentMethod.SelectedIndex = 0;
+            CmbPaymentPlan.SelectedIndex = 0;
+            CmbTestedBy.SelectedIndex = 0;
+            
             TxtOrderNo.Text = getOrderNumber();
         }
         private string getOrderNumber()
@@ -67,8 +72,25 @@ namespace TechnoVision.view
 
         private void BtnNext_Click(object sender, EventArgs e)
         {
-            //SpecOrderController.FillFormOne(); fill this
-            new UI_SPECTACLES_DIAGNOSIS(this).Show();
+            try
+            {
+                if(TxtOrderNo.Text=="" || TxtAdvance.Text=="" || TxtBalance.Text =="" || TxtDiscount.Text=="" || TxtEyeWearAmount.Text =="" || TxtLenseAmount.Text=="" ||TxtRemindDays.Text ==""||TxtTotal.Text=="" || CmbOrderStatus.Text =="" || CmbPaymentMethod.Text =="" || CmbPaymentPlan.Text =="" || CmbTestedBy.Text=="")
+                {
+                    CommonFunctions.ShowError(this, "Please Complete All Fields to continue...");
+                    CommonFunctions.WriteUserLog(Session.Username, "tried to continue without enter all fields");
+                }
+                else
+                {
+                    SpecOrderController.FillFormOne(SpecOrder.OrderNumber, SpecOrder.OrderDate, SpecOrder.DueDate, SpecOrder.PaymentPlan, SpecOrder.PaymentMethod, SpecOrder.TestBy, SpecOrder.OrderStatus, SpecOrder.Eyewear, SpecOrder.Lense, SpecOrder.Total, SpecOrder.Advance, SpecOrder.Discount, SpecOrder.Balance);
+                    new UI_SPECTACLES_DIAGNOSIS(this).Show();
+                }
+                
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
         }
     }
 }

@@ -31,12 +31,8 @@ namespace TechnoVision.model
         public static string DistLeftCyl;
         public static string DistLeftAxis;
 
-        public static string AddRightSph;
-        public static string AddRightCyl;
-        public static string AddRightAxis;
-        public static string AddLeftSph;
-        public static string AddLeftCyl;
-        public static string AddLeftAxis;
+        public static string AddRight;
+        public static string AddLeft;
 
         public static string LenseType;
         public static string Frame;
@@ -45,8 +41,9 @@ namespace TechnoVision.model
         public static string SpecialInstruction;
         public static string Remarks;
         public static int ReminderDays;
+        public static int Branch = Session.BranchId;
 
-       
+
 
 
         /*private string getOrderNumber()

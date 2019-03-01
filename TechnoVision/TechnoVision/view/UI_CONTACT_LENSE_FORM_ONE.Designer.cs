@@ -349,6 +349,9 @@
             // 
             this.CmbJobType.FormattingEnabled = true;
             this.CmbJobType.ItemHeight = 24;
+            this.CmbJobType.Items.AddRange(new object[] {
+            "NEW",
+            "REPLACEMENT"});
             this.CmbJobType.Location = new System.Drawing.Point(155, 226);
             this.CmbJobType.Name = "CmbJobType";
             this.CmbJobType.Size = new System.Drawing.Size(290, 30);
@@ -359,6 +362,9 @@
             // 
             this.CmbOrderStatus.FormattingEnabled = true;
             this.CmbOrderStatus.ItemHeight = 24;
+            this.CmbOrderStatus.Items.AddRange(new object[] {
+            "PENDING",
+            "DELEVERED"});
             this.CmbOrderStatus.Location = new System.Drawing.Point(155, 270);
             this.CmbOrderStatus.Name = "CmbOrderStatus";
             this.CmbOrderStatus.Size = new System.Drawing.Size(290, 30);
@@ -379,6 +385,10 @@
             // 
             this.CmbPaymentMethod.FormattingEnabled = true;
             this.CmbPaymentMethod.ItemHeight = 24;
+            this.CmbPaymentMethod.Items.AddRange(new object[] {
+            "CASH",
+            "CREDIT CARD",
+            "DEBIT CARD"});
             this.CmbPaymentMethod.Location = new System.Drawing.Point(625, 102);
             this.CmbPaymentMethod.Name = "CmbPaymentMethod";
             this.CmbPaymentMethod.Size = new System.Drawing.Size(288, 30);
@@ -389,6 +399,9 @@
             // 
             this.CmbPaymentPlan.FormattingEnabled = true;
             this.CmbPaymentPlan.ItemHeight = 24;
+            this.CmbPaymentPlan.Items.AddRange(new object[] {
+            "FULL PAYMENT",
+            "INSTALLAMENT"});
             this.CmbPaymentPlan.Location = new System.Drawing.Point(625, 144);
             this.CmbPaymentPlan.Name = "CmbPaymentPlan";
             this.CmbPaymentPlan.Size = new System.Drawing.Size(290, 30);

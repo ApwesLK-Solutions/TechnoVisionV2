@@ -24,14 +24,22 @@ namespace TechnoVision.view
         {
             try
             {
+                if(TxtRightDistSph.Text=="" ||TxtRightDistCyl.Text==""|| TxtRightDistAxis.Text=="" ||TxtLeftDistSph.Text==""|| TxtLeftDistCyl.Text==""|| TxtLeftDistAxis.Text==""|| TxtRightAdd.Text==""|| TxtLeftAdd.Text==""|| TxtLenseType.Text==""|| CmbFrame.Text==""|| TxtPD.Text==""|| TxtSegmentHeight.Text==""|| TxtSpecialIns.Text==""|| TxtRemarks.Text=="")
+                {
+                    CommonFunctions.ShowError(this, "Please Complete All Fields to continue...If You have Empty Fileds Please put'-' into Text Area...");
+                    CommonFunctions.WriteUserLog(Session.Username, "tried to continue without enter all fields");
+                }
+                else
+                {
+                    SpecOrderController.FillFormTwo(TxtRightDistSph.Text, TxtRightDistCyl.Text, TxtRightDistAxis.Text, TxtLeftDistSph.Text, TxtLeftDistCyl.Text, TxtLeftDistAxis.Text, TxtRightAdd.Text, TxtLeftAdd.Text, TxtLenseType.Text, CmbFrame.Text, TxtPD.Text, TxtSegmentHeight.Text, TxtSpecialIns.Text, TxtRemarks.Text);
+                    receiptController.FillReceipt(int.Parse(SpecOrder.OrderNumber), SpecOrder.Advance, SpecOrder.OrderDate);
+                    technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
+
+                    t.Insert(SpecOrder.OrderNumber, DateTime.Parse(SpecOrder.OrderDate), DateTime.Parse(SpecOrder.DueDate), SpecOrder.OrderStatus, SpecOrder.Total, SpecOrder.Advance, SpecOrder.Discount, SpecOrder.Balance, SpecOrder.TestBy, SpecOrder.Eyewear, SpecOrder.Lense, SpecOrder.PaymentPlan, SpecOrder.PaymentMethod, SpecOrder.DistRightSph, SpecOrder.DistRightCyl, SpecOrder.DistRightAxis, SpecOrder.DistLeftSph, SpecOrder.DistLeftCyl, SpecOrder.DistLeftAxis, SpecOrder.AddRight, SpecOrder.AddLeft, SpecOrder.LenseType, SpecOrder.Frame, SpecOrder.PD, SpecOrder.SegmentHeight, SpecOrder.SpecialInstruction, SpecOrder.Remarks, SpecOrder.ReminderDays, SpecOrder.Branch);
+                    CommonFunctions.WriteUserLog(Session.Username, "Added New Spec Order : " + SpecOrder.OrderNumber);
+                    receiptController.WriteReceipt();
+                }
                 
-                //SpecOrderController.FillFormTwo();fill this
-                receiptController.FillReceipt(int.Parse(SpecOrder.OrderNumber), SpecOrder.Advance, SpecOrder.OrderDate);
-                technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
-                
-                //t.Insert();fillthis
-                CommonFunctions.WriteUserLog(Session.Username, "Added New Spec Order : " + SpecOrder.OrderNumber);
-                receiptController.WriteReceipt();
             }
             catch (Exception ex)
             {

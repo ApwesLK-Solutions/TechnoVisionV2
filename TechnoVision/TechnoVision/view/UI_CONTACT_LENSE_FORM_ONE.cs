@@ -24,9 +24,18 @@ namespace TechnoVision.view
         {
             try
             {
-                LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yy-MM-dd"), DateDueDate.Value.ToString("yy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text));
-                this.Hide();
-                new UI_CONTACT_LENSE_DIAGNOSIS(this).Show();
+                if(TxtAdvance.Text=="" || TxtBalance.Text=="" || TxtDiscount.Text=="" || TxtLensesTotal.Text=="" || TxtOrderNo.Text == ""||TxtRemindDays.Text=="")
+                {
+                    CommonFunctions.ShowError(this, "Please Complete All Fields to continue...");
+                    CommonFunctions.WriteUserLog(Session.Username, "tried to continue without enter all fields");
+                }
+                else
+                {
+                    LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yy-MM-dd"), DateDueDate.Value.ToString("yy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text));
+                    this.Hide();
+                    new UI_CONTACT_LENSE_DIAGNOSIS(this).Show();
+                }
+                
             }
             catch(Exception ex)
             {
@@ -39,6 +48,11 @@ namespace TechnoVision.view
         {
             DateOrderDate.Value = DateTime.UtcNow;
             DateDueDate.Value = DateTime.UtcNow;
+            CmbJobType.SelectedIndex = 0;
+            CmbOrderStatus.SelectedIndex = 0;
+            CmbPaymentMethod.SelectedIndex = 0;
+            CmbPaymentPlan.SelectedIndex = 0;
+            CmbTestedBy.SelectedIndex = 0;
             TxtOrderNo.Text = getOrderNumber();
             showReceiptNumber();
         }
