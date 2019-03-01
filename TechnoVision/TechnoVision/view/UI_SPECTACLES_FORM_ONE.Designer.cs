@@ -582,7 +582,7 @@
             // 
             this.LblReceiptNo.AutoSize = true;
             this.LblReceiptNo.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblReceiptNo.Location = new System.Drawing.Point(787, 34);
+            this.LblReceiptNo.Location = new System.Drawing.Point(787, 46);
             this.LblReceiptNo.Name = "LblReceiptNo";
             this.LblReceiptNo.Size = new System.Drawing.Size(123, 20);
             this.LblReceiptNo.TabIndex = 97;
@@ -592,7 +592,7 @@
             // 
             this.metroLabel15.AutoSize = true;
             this.metroLabel15.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel15.Location = new System.Drawing.Point(658, 34);
+            this.metroLabel15.Location = new System.Drawing.Point(658, 46);
             this.metroLabel15.Name = "metroLabel15";
             this.metroLabel15.Size = new System.Drawing.Size(123, 20);
             this.metroLabel15.TabIndex = 98;
