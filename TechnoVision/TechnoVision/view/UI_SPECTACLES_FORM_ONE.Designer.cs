@@ -98,6 +98,7 @@
             this.BtnNext.UseCustomForeColor = true;
             this.BtnNext.UseSelectable = true;
             this.BtnNext.UseStyleColors = true;
+            this.BtnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // BtnCalculate
             // 
@@ -641,6 +642,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Spectacles Order Summary";
+            this.Load += new System.EventHandler(this.UI_SPECTACLES_FORM_ONE_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

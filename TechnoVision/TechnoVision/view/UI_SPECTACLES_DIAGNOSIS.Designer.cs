@@ -72,6 +72,7 @@
             this.BtnBack.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnBack.TabIndex = 17;
             this.BtnBack.UseSelectable = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnSave
             // 
@@ -90,6 +91,7 @@
             this.BtnSave.UseCustomForeColor = true;
             this.BtnSave.UseSelectable = true;
             this.BtnSave.UseStyleColors = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // BtnClear
             // 
@@ -116,7 +118,7 @@
             // 
             // 
             this.TxtRemarks.CustomButton.Image = null;
-            this.TxtRemarks.CustomButton.Location = new System.Drawing.Point(749, 1);
+            this.TxtRemarks.CustomButton.Location = new System.Drawing.Point(739, 1);
             this.TxtRemarks.CustomButton.Name = "";
             this.TxtRemarks.CustomButton.Size = new System.Drawing.Size(71, 71);
             this.TxtRemarks.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -149,7 +151,7 @@
             // 
             // 
             this.TxtSpecialIns.CustomButton.Image = null;
-            this.TxtSpecialIns.CustomButton.Location = new System.Drawing.Point(749, 1);
+            this.TxtSpecialIns.CustomButton.Location = new System.Drawing.Point(739, 1);
             this.TxtSpecialIns.CustomButton.Name = "";
             this.TxtSpecialIns.CustomButton.Size = new System.Drawing.Size(71, 71);
             this.TxtSpecialIns.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -736,6 +738,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "     Spectacles - Diagnosis";
+            this.Load += new System.EventHandler(this.UI_SPECTACLES_DIAGNOSIS_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
