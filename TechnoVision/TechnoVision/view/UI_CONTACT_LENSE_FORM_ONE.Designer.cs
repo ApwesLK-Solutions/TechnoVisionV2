@@ -59,7 +59,6 @@
             this.BtnClear = new MetroFramework.Controls.MetroButton();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.TxtDiscount = new MetroFramework.Controls.MetroTextBox();
-            this.BtnBack = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -530,22 +529,11 @@
             this.TxtDiscount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtDiscount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // BtnBack
-            // 
-            this.BtnBack.ActiveControl = null;
-            this.BtnBack.Location = new System.Drawing.Point(0, 23);
-            this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(57, 31);
-            this.BtnBack.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnBack.TabIndex = 68;
-            this.BtnBack.UseSelectable = true;
-            // 
             // UI_CONTACT_LENSE_FORM_ONE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 440);
-            this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.BtnClear);
             this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.BtnCalculate);
@@ -581,7 +569,7 @@
             this.Name = "UI_CONTACT_LENSE_FORM_ONE";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "     Contact Lenses - Order Summary";
+            this.Text = "Contact Lenses - Order Summary";
             this.Load += new System.EventHandler(this.UI_CONTACT_LENSE_FORM_ONE_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -621,6 +609,5 @@
         private MetroFramework.Controls.MetroButton BtnClear;
         private MetroFramework.Controls.MetroLabel metroLabel14;
         private MetroFramework.Controls.MetroTextBox TxtDiscount;
-        private MetroFramework.Controls.MetroTile BtnBack;
     }
 }

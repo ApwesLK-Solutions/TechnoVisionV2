@@ -59,7 +59,8 @@
             this.TxtEyeWearAmount = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.BtnBack = new MetroFramework.Controls.MetroTile();
+            this.LblReceiptNo = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // BtnClear
@@ -577,22 +578,33 @@
             this.metroLabel5.TabIndex = 77;
             this.metroLabel5.Text = "Eye Wear";
             // 
-            // BtnBack
+            // LblReceiptNo
             // 
-            this.BtnBack.ActiveControl = null;
-            this.BtnBack.Location = new System.Drawing.Point(0, 23);
-            this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(57, 31);
-            this.BtnBack.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnBack.TabIndex = 15;
-            this.BtnBack.UseSelectable = true;
+            this.LblReceiptNo.AutoSize = true;
+            this.LblReceiptNo.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.LblReceiptNo.Location = new System.Drawing.Point(787, 34);
+            this.LblReceiptNo.Name = "LblReceiptNo";
+            this.LblReceiptNo.Size = new System.Drawing.Size(123, 20);
+            this.LblReceiptNo.TabIndex = 97;
+            this.LblReceiptNo.Text = "Receipt Number";
+            // 
+            // metroLabel15
+            // 
+            this.metroLabel15.AutoSize = true;
+            this.metroLabel15.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel15.Location = new System.Drawing.Point(658, 34);
+            this.metroLabel15.Name = "metroLabel15";
+            this.metroLabel15.Size = new System.Drawing.Size(123, 20);
+            this.metroLabel15.TabIndex = 98;
+            this.metroLabel15.Text = "Receipt Number";
             // 
             // UI_SPECTACLES_FORM_ONE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 440);
-            this.Controls.Add(this.BtnBack);
+            this.Controls.Add(this.LblReceiptNo);
+            this.Controls.Add(this.metroLabel15);
             this.Controls.Add(this.BtnClear);
             this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.BtnCalculate);
@@ -628,7 +640,7 @@
             this.Name = "UI_SPECTACLES_FORM_ONE";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "     Spectacles Order Summary";
+            this.Text = "Spectacles Order Summary";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -667,6 +679,7 @@
         private MetroFramework.Controls.MetroTextBox TxtEyeWearAmount;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroTile BtnBack;
+        private MetroFramework.Controls.MetroLabel LblReceiptNo;
+        private MetroFramework.Controls.MetroLabel metroLabel15;
     }
 }

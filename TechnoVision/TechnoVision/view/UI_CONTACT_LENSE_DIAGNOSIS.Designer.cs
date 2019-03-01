@@ -86,6 +86,7 @@
             this.TxtRemarks = new MetroFramework.Controls.MetroTextBox();
             this.BtnClear = new MetroFramework.Controls.MetroButton();
             this.BtnSave = new MetroFramework.Controls.MetroButton();
+            this.BtnBack = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -1326,11 +1327,22 @@
             this.BtnSave.UseStyleColors = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
+            // BtnBack
+            // 
+            this.BtnBack.ActiveControl = null;
+            this.BtnBack.Location = new System.Drawing.Point(0, 24);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(57, 31);
+            this.BtnBack.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnBack.TabIndex = 69;
+            this.BtnBack.UseSelectable = true;
+            // 
             // UI_CONTACT_LENSE_DIAGNOSIS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 597);
+            this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.BtnSave);
             this.Controls.Add(this.BtnClear);
             this.Controls.Add(this.TxtLeftDeze);
@@ -1393,7 +1405,7 @@
             this.Name = "UI_CONTACT_LENSE_DIAGNOSIS";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "Contact Lense - Diagnosis";
+            this.Text = "     Contact Lense - Diagnosis";
             this.Load += new System.EventHandler(this.UI_CONTACT_LENSE_DIAGNOSIS_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1460,5 +1472,6 @@
         private MetroFramework.Controls.MetroTextBox TxtRemarks;
         private MetroFramework.Controls.MetroButton BtnClear;
         private MetroFramework.Controls.MetroButton BtnSave;
+        private MetroFramework.Controls.MetroTile BtnBack;
     }
 }
