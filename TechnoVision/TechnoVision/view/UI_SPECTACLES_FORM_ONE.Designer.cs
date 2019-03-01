@@ -641,6 +641,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Spectacles Order Summary";
+            this.Load += new System.EventHandler(this.UI_SPECTACLES_FORM_ONE_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

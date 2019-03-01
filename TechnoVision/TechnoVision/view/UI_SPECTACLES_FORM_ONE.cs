@@ -16,5 +16,11 @@ namespace TechnoVision.view
         {
             InitializeComponent();
         }
+
+        private void UI_SPECTACLES_FORM_ONE_Load(object sender, EventArgs e)
+        {
+            DateOrderDate.Value = DateTime.UtcNow;
+            DateDueDate.Value = DateTime.UtcNow;
+        }
     }
 }

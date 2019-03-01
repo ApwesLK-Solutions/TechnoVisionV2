@@ -37,6 +37,8 @@ namespace TechnoVision.view
 
         private void UI_CONTACT_LENSE_FORM_ONE_Load(object sender, EventArgs e)
         {
+            DateOrderDate.Value = DateTime.UtcNow;
+            DateDueDate.Value = DateTime.UtcNow;
             TxtOrderNo.Text = getOrderNumber();
         }
 

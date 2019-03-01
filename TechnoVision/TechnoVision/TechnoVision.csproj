@@ -158,6 +158,12 @@
     <Compile Include="view\UI_MANAGE_USER.Designer.cs">
       <DependentUpon>UI_MANAGE_USER.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\UI_ORDER_COMPLETE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UI_ORDER_COMPLETE.Designer.cs">
+      <DependentUpon>UI_ORDER_COMPLETE.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_SPECTACLES_DIAGNOSIS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_MANAGE_USER.resx">
       <DependentUpon>UI_MANAGE_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\UI_ORDER_COMPLETE.resx">
+      <DependentUpon>UI_ORDER_COMPLETE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_SPECTACLES_DIAGNOSIS.resx">
       <DependentUpon>UI_SPECTACLES_DIAGNOSIS.cs</DependentUpon>
