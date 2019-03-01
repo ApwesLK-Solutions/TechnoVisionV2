@@ -111,7 +111,7 @@
             this.GridManageCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridManageCustomer.Size = new System.Drawing.Size(1170, 425);
             this.GridManageCustomer.Style = MetroFramework.MetroColorStyle.Green;
-            this.GridManageCustomer.TabIndex = 0;
+            this.GridManageCustomer.TabIndex = 1;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -201,7 +201,7 @@
             this.BtnEditCustomer.Name = "BtnEditCustomer";
             this.BtnEditCustomer.Size = new System.Drawing.Size(173, 45);
             this.BtnEditCustomer.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnEditCustomer.TabIndex = 2;
+            this.BtnEditCustomer.TabIndex = 3;
             this.BtnEditCustomer.Text = "Edit Customer Details";
             this.BtnEditCustomer.UseCustomBackColor = true;
             this.BtnEditCustomer.UseCustomForeColor = true;
@@ -219,7 +219,7 @@
             this.BtnShowOrders.Name = "BtnShowOrders";
             this.BtnShowOrders.Size = new System.Drawing.Size(173, 45);
             this.BtnShowOrders.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnShowOrders.TabIndex = 1;
+            this.BtnShowOrders.TabIndex = 2;
             this.BtnShowOrders.Text = "Show Orders";
             this.BtnShowOrders.UseCustomBackColor = true;
             this.BtnShowOrders.UseCustomForeColor = true;
@@ -253,7 +253,7 @@
             this.TxtSearchCustomer.SelectionStart = 0;
             this.TxtSearchCustomer.ShortcutsEnabled = true;
             this.TxtSearchCustomer.Size = new System.Drawing.Size(226, 30);
-            this.TxtSearchCustomer.TabIndex = 3;
+            this.TxtSearchCustomer.TabIndex = 0;
             this.TxtSearchCustomer.UseSelectable = true;
             this.TxtSearchCustomer.WaterMark = "Search by Name or Phone...";
             this.TxtSearchCustomer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));

@@ -86,6 +86,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="view\UI_ADD_BRANCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UI_ADD_BRANCH.Designer.cs">
+      <DependentUpon>UI_ADD_BRANCH.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_ADD_CUSTOMER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,12 @@
     <Compile Include="view\UI_MANAGE_USER.Designer.cs">
       <DependentUpon>UI_MANAGE_USER.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\UI_SPECTACLES_FORM_ONE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UI_SPECTACLES_FORM_ONE.Designer.cs">
+      <DependentUpon>UI_SPECTACLES_FORM_ONE.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_VIEW_CUSTOMER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +174,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="view\UI_ADD_BRANCH.resx">
+      <DependentUpon>UI_ADD_BRANCH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\UI_ADD_CUSTOMER.resx">
       <DependentUpon>UI_ADD_CUSTOMER.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_MANAGE_USER.resx">
       <DependentUpon>UI_MANAGE_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\UI_SPECTACLES_FORM_ONE.resx">
+      <DependentUpon>UI_SPECTACLES_FORM_ONE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_VIEW_CUSTOMER.resx">
       <DependentUpon>UI_VIEW_CUSTOMER.cs</DependentUpon>

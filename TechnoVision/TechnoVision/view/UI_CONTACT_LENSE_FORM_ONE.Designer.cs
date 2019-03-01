@@ -88,7 +88,7 @@
             this.metroLabel2.Location = new System.Drawing.Point(33, 107);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(71, 20);
-            this.metroLabel2.TabIndex = 1;
+            this.metroLabel2.TabIndex = 67;
             this.metroLabel2.Text = "Order No";
             // 
             // TxtOrderNo
@@ -440,6 +440,7 @@
             // BtnCalculate
             // 
             this.BtnCalculate.ActiveControl = null;
+            this.BtnCalculate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCalculate.Location = new System.Drawing.Point(877, 306);
             this.BtnCalculate.Name = "BtnCalculate";
             this.BtnCalculate.Size = new System.Drawing.Size(38, 36);
