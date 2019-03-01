@@ -59,6 +59,7 @@
             this.GridManageCustomer.AllowUserToResizeRows = false;
             this.GridManageCustomer.AutoGenerateColumns = false;
             this.GridManageCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.GridManageCustomer.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridManageCustomer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridManageCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridManageCustomer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -90,11 +91,10 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GridManageCustomer.DefaultCellStyle = dataGridViewCellStyle2;
-            this.GridManageCustomer.Dock = System.Windows.Forms.DockStyle.Top;
             this.GridManageCustomer.EnableHeadersVisualStyles = false;
             this.GridManageCustomer.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridManageCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GridManageCustomer.Location = new System.Drawing.Point(20, 60);
+            this.GridManageCustomer.Location = new System.Drawing.Point(23, 81);
             this.GridManageCustomer.Name = "GridManageCustomer";
             this.GridManageCustomer.ReadOnly = true;
             this.GridManageCustomer.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -242,7 +242,7 @@
             this.TxtSearchCustomer.CustomButton.Visible = false;
             this.TxtSearchCustomer.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtSearchCustomer.Lines = new string[0];
-            this.TxtSearchCustomer.Location = new System.Drawing.Point(964, 22);
+            this.TxtSearchCustomer.Location = new System.Drawing.Point(967, 45);
             this.TxtSearchCustomer.MaxLength = 32767;
             this.TxtSearchCustomer.Name = "TxtSearchCustomer";
             this.TxtSearchCustomer.PasswordChar = '\0';

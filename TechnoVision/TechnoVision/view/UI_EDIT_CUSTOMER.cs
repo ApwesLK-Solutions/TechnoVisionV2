@@ -17,6 +17,7 @@ namespace TechnoVision.view
         {
             InitializeComponent();
             this.LblCustomerId.Text = e;
+            this.Id = e; 
         }
 
         private void UI_EDIT_CUSTOMER_Load(object sender, EventArgs e)
@@ -24,6 +25,7 @@ namespace TechnoVision.view
             try
             {
                 // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
+                customerBindingSource.Filter = "Id ='" + Id + "'";
                 this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
             }
             catch(Exception ex)
