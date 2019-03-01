@@ -42,7 +42,7 @@
             this.TxtLeftPresentCyl = new MetroFramework.Controls.MetroTextBox();
             this.TxtLeftPresentSph = new MetroFramework.Controls.MetroTextBox();
             this.TxtRightPresentAdd = new MetroFramework.Controls.MetroTextBox();
-            this.TxtRightPresentDia = new MetroFramework.Controls.MetroTextBox();
+            this.TxtRightPresentAxis = new MetroFramework.Controls.MetroTextBox();
             this.TxtRightPresentCyl = new MetroFramework.Controls.MetroTextBox();
             this.TxtRightPresentSph = new MetroFramework.Controls.MetroTextBox();
             this.TxtRightBc = new MetroFramework.Controls.MetroTextBox();
@@ -501,36 +501,36 @@
             this.TxtRightPresentAdd.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtRightPresentAdd.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // TxtRightPresentDia
+            // TxtRightPresentAxis
             // 
             // 
             // 
             // 
-            this.TxtRightPresentDia.CustomButton.Image = null;
-            this.TxtRightPresentDia.CustomButton.Location = new System.Drawing.Point(41, 1);
-            this.TxtRightPresentDia.CustomButton.Name = "";
-            this.TxtRightPresentDia.CustomButton.Size = new System.Drawing.Size(33, 33);
-            this.TxtRightPresentDia.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TxtRightPresentDia.CustomButton.TabIndex = 1;
-            this.TxtRightPresentDia.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TxtRightPresentDia.CustomButton.UseSelectable = true;
-            this.TxtRightPresentDia.CustomButton.Visible = false;
-            this.TxtRightPresentDia.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.TxtRightPresentDia.Lines = new string[0];
-            this.TxtRightPresentDia.Location = new System.Drawing.Point(294, 163);
-            this.TxtRightPresentDia.MaxLength = 32767;
-            this.TxtRightPresentDia.Name = "TxtRightPresentDia";
-            this.TxtRightPresentDia.PasswordChar = '\0';
-            this.TxtRightPresentDia.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TxtRightPresentDia.SelectedText = "";
-            this.TxtRightPresentDia.SelectionLength = 0;
-            this.TxtRightPresentDia.SelectionStart = 0;
-            this.TxtRightPresentDia.ShortcutsEnabled = true;
-            this.TxtRightPresentDia.Size = new System.Drawing.Size(75, 35);
-            this.TxtRightPresentDia.TabIndex = 11;
-            this.TxtRightPresentDia.UseSelectable = true;
-            this.TxtRightPresentDia.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TxtRightPresentDia.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtRightPresentAxis.CustomButton.Image = null;
+            this.TxtRightPresentAxis.CustomButton.Location = new System.Drawing.Point(41, 1);
+            this.TxtRightPresentAxis.CustomButton.Name = "";
+            this.TxtRightPresentAxis.CustomButton.Size = new System.Drawing.Size(33, 33);
+            this.TxtRightPresentAxis.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtRightPresentAxis.CustomButton.TabIndex = 1;
+            this.TxtRightPresentAxis.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtRightPresentAxis.CustomButton.UseSelectable = true;
+            this.TxtRightPresentAxis.CustomButton.Visible = false;
+            this.TxtRightPresentAxis.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.TxtRightPresentAxis.Lines = new string[0];
+            this.TxtRightPresentAxis.Location = new System.Drawing.Point(294, 163);
+            this.TxtRightPresentAxis.MaxLength = 32767;
+            this.TxtRightPresentAxis.Name = "TxtRightPresentAxis";
+            this.TxtRightPresentAxis.PasswordChar = '\0';
+            this.TxtRightPresentAxis.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtRightPresentAxis.SelectedText = "";
+            this.TxtRightPresentAxis.SelectionLength = 0;
+            this.TxtRightPresentAxis.SelectionStart = 0;
+            this.TxtRightPresentAxis.ShortcutsEnabled = true;
+            this.TxtRightPresentAxis.Size = new System.Drawing.Size(75, 35);
+            this.TxtRightPresentAxis.TabIndex = 11;
+            this.TxtRightPresentAxis.UseSelectable = true;
+            this.TxtRightPresentAxis.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtRightPresentAxis.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // TxtRightPresentCyl
             // 
@@ -1347,7 +1347,7 @@
             this.Controls.Add(this.TxtRightBc);
             this.Controls.Add(this.TxtRightPresentSph);
             this.Controls.Add(this.TxtRightPresentCyl);
-            this.Controls.Add(this.TxtRightPresentDia);
+            this.Controls.Add(this.TxtRightPresentAxis);
             this.Controls.Add(this.TxtRightPresentAdd);
             this.Controls.Add(this.TxtLeftPresentSph);
             this.Controls.Add(this.TxtLeftPresentCyl);
@@ -1413,7 +1413,7 @@
         private MetroFramework.Controls.MetroTextBox TxtLeftPresentCyl;
         private MetroFramework.Controls.MetroTextBox TxtLeftPresentSph;
         private MetroFramework.Controls.MetroTextBox TxtRightPresentAdd;
-        private MetroFramework.Controls.MetroTextBox TxtRightPresentDia;
+        private MetroFramework.Controls.MetroTextBox TxtRightPresentAxis;
         private MetroFramework.Controls.MetroTextBox TxtRightPresentCyl;
         private MetroFramework.Controls.MetroTextBox TxtRightPresentSph;
         private MetroFramework.Controls.MetroTextBox TxtRightBc;
