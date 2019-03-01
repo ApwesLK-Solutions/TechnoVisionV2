@@ -57,6 +57,8 @@
             this.BtnCalculate = new MetroFramework.Controls.MetroTile();
             this.BtnNext = new MetroFramework.Controls.MetroButton();
             this.BtnClear = new MetroFramework.Controls.MetroButton();
+            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
+            this.TxtDiscount = new MetroFramework.Controls.MetroTextBox();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -206,7 +208,7 @@
             // 
             this.metroLabel11.AutoSize = true;
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel11.Location = new System.Drawing.Point(491, 231);
+            this.metroLabel11.Location = new System.Drawing.Point(491, 270);
             this.metroLabel11.Name = "metroLabel11";
             this.metroLabel11.Size = new System.Drawing.Size(66, 20);
             this.metroLabel11.TabIndex = 1;
@@ -216,7 +218,7 @@
             // 
             this.metroLabel12.AutoSize = true;
             this.metroLabel12.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel12.Location = new System.Drawing.Point(491, 275);
+            this.metroLabel12.Location = new System.Drawing.Point(491, 314);
             this.metroLabel12.Name = "metroLabel12";
             this.metroLabel12.Size = new System.Drawing.Size(61, 20);
             this.metroLabel12.TabIndex = 1;
@@ -274,7 +276,7 @@
             this.TxtAdvance.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtAdvance.Lines = new string[] {
         "0"};
-            this.TxtAdvance.Location = new System.Drawing.Point(625, 223);
+            this.TxtAdvance.Location = new System.Drawing.Point(625, 262);
             this.TxtAdvance.MaxLength = 32767;
             this.TxtAdvance.Name = "TxtAdvance";
             this.TxtAdvance.PasswordChar = '\0';
@@ -308,7 +310,7 @@
             this.TxtBalance.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtBalance.Lines = new string[] {
         "0"};
-            this.TxtBalance.Location = new System.Drawing.Point(625, 267);
+            this.TxtBalance.Location = new System.Drawing.Point(625, 306);
             this.TxtBalance.MaxLength = 32767;
             this.TxtBalance.Name = "TxtBalance";
             this.TxtBalance.PasswordChar = '\0';
@@ -377,9 +379,9 @@
             // 
             this.CmbPaymentMethod.FormattingEnabled = true;
             this.CmbPaymentMethod.ItemHeight = 24;
-            this.CmbPaymentMethod.Location = new System.Drawing.Point(623, 102);
+            this.CmbPaymentMethod.Location = new System.Drawing.Point(625, 102);
             this.CmbPaymentMethod.Name = "CmbPaymentMethod";
-            this.CmbPaymentMethod.Size = new System.Drawing.Size(290, 30);
+            this.CmbPaymentMethod.Size = new System.Drawing.Size(288, 30);
             this.CmbPaymentMethod.TabIndex = 6;
             this.CmbPaymentMethod.UseSelectable = true;
             // 
@@ -438,7 +440,7 @@
             // BtnCalculate
             // 
             this.BtnCalculate.ActiveControl = null;
-            this.BtnCalculate.Location = new System.Drawing.Point(877, 267);
+            this.BtnCalculate.Location = new System.Drawing.Point(877, 306);
             this.BtnCalculate.Name = "BtnCalculate";
             this.BtnCalculate.Size = new System.Drawing.Size(38, 36);
             this.BtnCalculate.Style = MetroFramework.MetroColorStyle.Green;
@@ -482,6 +484,50 @@
             this.BtnClear.UseSelectable = true;
             this.BtnClear.UseStyleColors = true;
             // 
+            // metroLabel14
+            // 
+            this.metroLabel14.AutoSize = true;
+            this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel14.Location = new System.Drawing.Point(491, 229);
+            this.metroLabel14.Name = "metroLabel14";
+            this.metroLabel14.Size = new System.Drawing.Size(67, 20);
+            this.metroLabel14.TabIndex = 1;
+            this.metroLabel14.Text = "Discount";
+            // 
+            // TxtDiscount
+            // 
+            this.TxtDiscount.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            // 
+            // 
+            // 
+            this.TxtDiscount.CustomButton.Image = null;
+            this.TxtDiscount.CustomButton.Location = new System.Drawing.Point(256, 2);
+            this.TxtDiscount.CustomButton.Name = "";
+            this.TxtDiscount.CustomButton.Size = new System.Drawing.Size(31, 31);
+            this.TxtDiscount.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtDiscount.CustomButton.TabIndex = 1;
+            this.TxtDiscount.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtDiscount.CustomButton.UseSelectable = true;
+            this.TxtDiscount.CustomButton.Visible = false;
+            this.TxtDiscount.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.TxtDiscount.Lines = new string[] {
+        "0"};
+            this.TxtDiscount.Location = new System.Drawing.Point(625, 221);
+            this.TxtDiscount.MaxLength = 32767;
+            this.TxtDiscount.Name = "TxtDiscount";
+            this.TxtDiscount.PasswordChar = '\0';
+            this.TxtDiscount.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtDiscount.SelectedText = "";
+            this.TxtDiscount.SelectionLength = 0;
+            this.TxtDiscount.SelectionStart = 0;
+            this.TxtDiscount.ShortcutsEnabled = true;
+            this.TxtDiscount.Size = new System.Drawing.Size(290, 36);
+            this.TxtDiscount.TabIndex = 8;
+            this.TxtDiscount.Text = "0";
+            this.TxtDiscount.UseSelectable = true;
+            this.TxtDiscount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtDiscount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // UI_CONTACT_LENSE_FORM_ONE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -500,9 +546,11 @@
             this.Controls.Add(this.TxtBalance);
             this.Controls.Add(this.TxtAdvance);
             this.Controls.Add(this.TxtRemindDays);
+            this.Controls.Add(this.TxtDiscount);
             this.Controls.Add(this.TxtLensesTotal);
             this.Controls.Add(this.TxtOrderNo);
             this.Controls.Add(this.metroLabel12);
+            this.Controls.Add(this.metroLabel14);
             this.Controls.Add(this.metroLabel11);
             this.Controls.Add(this.metroLabel10);
             this.Controls.Add(this.metroLabel9);
@@ -558,5 +606,7 @@
         private MetroFramework.Controls.MetroTile BtnCalculate;
         private MetroFramework.Controls.MetroButton BtnNext;
         private MetroFramework.Controls.MetroButton BtnClear;
+        private MetroFramework.Controls.MetroLabel metroLabel14;
+        private MetroFramework.Controls.MetroTextBox TxtDiscount;
     }
 }

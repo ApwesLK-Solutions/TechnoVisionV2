@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using TechnoVision.model;
 
 namespace TechnoVision.view
 {
@@ -27,8 +27,19 @@ namespace TechnoVision.view
 
         private void BtnDeleteUser_Click(object sender, EventArgs e)
         {
-            model.User.DeleteUser(this, GrdUser.SelectedRows[0].Cells[0].Value.ToString());
+            User.DeleteUser(this, GrdUser.SelectedRows[0].Cells[0].Value.ToString());
             this.usersTableAdapter.Fill(this.technovisionDataSet.users);
+        }
+
+        private void BtnActivateUser_Click(object sender, EventArgs e)
+        {
+            User.ActiveUser(this, GrdUser.SelectedRows[0].Cells[0].Value.ToString());
+            this.usersTableAdapter.Fill(this.technovisionDataSet.users);
+        }
+
+        private void BtnEditUser_Click(object sender, EventArgs e)
+        {
+            new UI_EDIT_SYSTEM_USER(GrdUser.SelectedRows[0].Cells[0].Value.ToString()).Show();
         }
     }
 }

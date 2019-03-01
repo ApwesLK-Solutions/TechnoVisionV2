@@ -29,6 +29,7 @@ namespace TechnoVision.view
         {
             // TODO: This line of code loads data into the 'technovisionDataSet.users' table. You can move, or remove it, as needed.
             this.usersTableAdapter.Fill(this.technovisionDataSet.users);
+            usersBindingSource.Filter = "username = '" + username + "'";
 
         }
     }

@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 574);
+            this.ClientSize = new System.Drawing.Size(1060, 574);
             this.MaximizeBox = false;
             this.Name = "UI_CONTACT_LENSE_DIAGNOSIS";
             this.Resizable = false;

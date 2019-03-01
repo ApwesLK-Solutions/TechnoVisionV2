@@ -19,6 +19,7 @@ namespace TechnoVision.model
         public static double Balance;
         public static string PaymentPlan;
         public static string PaymentMethod;
+        
 
 
 
@@ -59,6 +60,7 @@ namespace TechnoVision.model
         public static string SpecialInstruction;
         public static string Remarks;
         public static int ReminderDays;
+        public static int Branch = Session.BranchId;
 
     }
 }

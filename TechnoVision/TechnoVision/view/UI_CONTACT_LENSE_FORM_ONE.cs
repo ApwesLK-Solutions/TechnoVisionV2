@@ -22,7 +22,15 @@ namespace TechnoVision.view
 
         private void BtnNext_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yy-MM-dd"), DateDueDate.Value.ToString("yy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text));
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
         }
 
         private void UI_CONTACT_LENSE_FORM_ONE_Load(object sender, EventArgs e)
