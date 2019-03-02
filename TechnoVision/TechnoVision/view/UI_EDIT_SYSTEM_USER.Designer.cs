@@ -46,6 +46,8 @@
             this.usersTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.usersTableAdapter();
             this.TxtMasterPassword = new MetroFramework.Controls.MetroTextBox();
             this.TmrMasterPassword = new System.Windows.Forms.Timer(this.components);
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
@@ -57,11 +59,11 @@
             this.BtnEditUser.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnEditUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnEditUser.Highlight = true;
-            this.BtnEditUser.Location = new System.Drawing.Point(213, 340);
+            this.BtnEditUser.Location = new System.Drawing.Point(207, 375);
             this.BtnEditUser.Name = "BtnEditUser";
             this.BtnEditUser.Size = new System.Drawing.Size(158, 45);
             this.BtnEditUser.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnEditUser.TabIndex = 6;
+            this.BtnEditUser.TabIndex = 7;
             this.BtnEditUser.Text = "Save changes";
             this.BtnEditUser.UseCustomBackColor = true;
             this.BtnEditUser.UseCustomForeColor = true;
@@ -308,20 +310,20 @@
             this.TxtMasterPassword.CustomButton.Visible = false;
             this.TxtMasterPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtMasterPassword.Lines = new string[0];
-            this.TxtMasterPassword.Location = new System.Drawing.Point(172, 304);
+            this.TxtMasterPassword.Location = new System.Drawing.Point(173, 339);
             this.TxtMasterPassword.MaxLength = 32767;
             this.TxtMasterPassword.Name = "TxtMasterPassword";
             this.TxtMasterPassword.PasswordChar = '#';
-            this.TxtMasterPassword.PromptText = "Enter Full Name...";
+            this.TxtMasterPassword.PromptText = "Enter Master Password...";
             this.TxtMasterPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtMasterPassword.SelectedText = "";
             this.TxtMasterPassword.SelectionLength = 0;
             this.TxtMasterPassword.SelectionStart = 0;
             this.TxtMasterPassword.ShortcutsEnabled = true;
             this.TxtMasterPassword.Size = new System.Drawing.Size(236, 30);
-            this.TxtMasterPassword.TabIndex = 3;
+            this.TxtMasterPassword.TabIndex = 6;
             this.TxtMasterPassword.UseSelectable = true;
-            this.TxtMasterPassword.WaterMark = "Enter Full Name...";
+            this.TxtMasterPassword.WaterMark = "Enter Master Password...";
             this.TxtMasterPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtMasterPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -330,11 +332,33 @@
             this.TmrMasterPassword.Enabled = true;
             this.TmrMasterPassword.Tick += new System.EventHandler(this.TmrMasterPassword_Tick);
             // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel5.Location = new System.Drawing.Point(99, 291);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(393, 20);
+            this.metroLabel5.TabIndex = 16;
+            this.metroLabel5.Text = "Please Enter Master Password To Enable Below Button.";
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel8.Location = new System.Drawing.Point(131, 311);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(316, 20);
+            this.metroLabel8.TabIndex = 16;
+            this.metroLabel8.Text = " Master Password is Unique for each Branch";
+            // 
             // UI_EDIT_SYSTEM_USER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 408);
+            this.ClientSize = new System.Drawing.Size(590, 440);
+            this.Controls.Add(this.metroLabel8);
+            this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.BtnEditUser);
             this.Controls.Add(this.CmbBranch);
             this.Controls.Add(this.metroLabel7);
@@ -380,5 +404,7 @@
         private technovisionDataSetTableAdapters.usersTableAdapter usersTableAdapter;
         private MetroFramework.Controls.MetroTextBox TxtMasterPassword;
         private System.Windows.Forms.Timer TmrMasterPassword;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
     }
 }

@@ -21,16 +21,33 @@ namespace TechnoVision.view
 
         private void BtnEditUser_Click(object sender, EventArgs e)
         {
-            usersBindingSource.EndEdit();
-            usersTableAdapter.Update(technovisionDataSet);
-            CommonFunctions.WriteUserLog(Session.Username, "Changed the Password of " + username);
+            try
+            {
+                usersBindingSource.EndEdit();
+                usersTableAdapter.Update(technovisionDataSet);
+                CommonFunctions.WriteUserLog(Session.Username, "Changed the details of " + username);
+                CommonFunctions.ShowSuccess(this, "Data Successfully Changed...");
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
         }
 
         private void UI_EDIT_SYSTEM_USER_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.users' table. You can move, or remove it, as needed.
-            this.usersTableAdapter.Fill(this.technovisionDataSet.users);
-            usersBindingSource.Filter = "username = '" + username + "'";
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.users' table. You can move, or remove it, as needed.
+                this.usersTableAdapter.Fill(this.technovisionDataSet.users);
+                usersBindingSource.Filter = "username = '" + username + "'";
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+           
         }
 
         private void TmrMasterPassword_Tick(object sender, EventArgs e)

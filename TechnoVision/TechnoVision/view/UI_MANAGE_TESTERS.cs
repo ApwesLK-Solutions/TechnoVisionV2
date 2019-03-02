@@ -16,5 +16,12 @@ namespace TechnoVision.view
         {
             InitializeComponent();
         }
+
+        private void UI_MANAGE_TESTERS_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
+            this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+
+        }
     }
 }

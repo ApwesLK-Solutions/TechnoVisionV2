@@ -16,5 +16,12 @@ namespace TechnoVision.view
         {
             InitializeComponent();
         }
+
+        private void UI_MANAGE_FRAMES_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'technovisionDataSet.frames' table. You can move, or remove it, as needed.
+            this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
+
+        }
     }
 }
