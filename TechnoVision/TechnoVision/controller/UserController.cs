@@ -1,7 +1,7 @@
 ﻿using MetroFramework.Forms;
 using TechnoVision.model;
 using System;
-
+using TechnoVision.view;
 namespace TechnoVision.controller
 {
     class UserController
@@ -62,6 +62,9 @@ namespace TechnoVision.controller
                     Session.BranchMasterPassword = Brow.MasterPassword;
                     Session.BranchName = Brow.BranchName;
                     CommonFunctions.WriteUserLog("SYSTEM", User.Username + " is Log into the System");
+                    new UI_LOGIN().Dispose();
+                    new UI_DASHBOARD().Show();
+                    
                     //return true;
                 }
             }
