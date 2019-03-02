@@ -263,6 +263,7 @@
             this.TxtLensesTotal.UseSelectable = true;
             this.TxtLensesTotal.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtLensesTotal.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtLensesTotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtLensesTotal_KeyPress);
             // 
             // TxtAdvance
             // 
@@ -292,11 +293,12 @@
             this.TxtAdvance.SelectionStart = 0;
             this.TxtAdvance.ShortcutsEnabled = true;
             this.TxtAdvance.Size = new System.Drawing.Size(290, 36);
-            this.TxtAdvance.TabIndex = 9;
+            this.TxtAdvance.TabIndex = 10;
             this.TxtAdvance.Text = "0";
             this.TxtAdvance.UseSelectable = true;
             this.TxtAdvance.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtAdvance.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtAdvance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtAdvance_KeyPress);
             // 
             // TxtBalance
             // 
@@ -477,7 +479,7 @@
             this.BtnCalculate.Name = "BtnCalculate";
             this.BtnCalculate.Size = new System.Drawing.Size(38, 36);
             this.BtnCalculate.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnCalculate.TabIndex = 10;
+            this.BtnCalculate.TabIndex = 11;
             this.BtnCalculate.UseSelectable = true;
             this.BtnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
             // 
@@ -492,7 +494,7 @@
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(118, 45);
             this.BtnNext.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnNext.TabIndex = 11;
+            this.BtnNext.TabIndex = 12;
             this.BtnNext.Text = "Next";
             this.BtnNext.UseCustomBackColor = true;
             this.BtnNext.UseCustomForeColor = true;
@@ -511,7 +513,7 @@
             this.BtnClear.Name = "BtnClear";
             this.BtnClear.Size = new System.Drawing.Size(118, 45);
             this.BtnClear.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnClear.TabIndex = 12;
+            this.BtnClear.TabIndex = 13;
             this.BtnClear.Text = "Clear";
             this.BtnClear.UseCustomBackColor = true;
             this.BtnClear.UseCustomForeColor = true;
@@ -556,11 +558,12 @@
             this.TxtDiscount.SelectionStart = 0;
             this.TxtDiscount.ShortcutsEnabled = true;
             this.TxtDiscount.Size = new System.Drawing.Size(290, 36);
-            this.TxtDiscount.TabIndex = 8;
+            this.TxtDiscount.TabIndex = 9;
             this.TxtDiscount.Text = "0";
             this.TxtDiscount.UseSelectable = true;
             this.TxtDiscount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtDiscount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtDiscount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDiscount_KeyPress);
             // 
             // testersTableAdapter
             // 

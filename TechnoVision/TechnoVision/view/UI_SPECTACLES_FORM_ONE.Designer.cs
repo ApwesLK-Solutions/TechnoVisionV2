@@ -267,6 +267,7 @@
             this.TxtAdvance.UseSelectable = true;
             this.TxtAdvance.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtAdvance.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtAdvance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtAdvance_KeyPress);
             // 
             // TxtRemindDays
             // 
@@ -333,6 +334,7 @@
             this.TxtDiscount.UseSelectable = true;
             this.TxtDiscount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtDiscount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtDiscount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDiscount_KeyPress);
             // 
             // TxtTotal
             // 
@@ -356,6 +358,7 @@
             this.TxtTotal.MaxLength = 32767;
             this.TxtTotal.Name = "TxtTotal";
             this.TxtTotal.PasswordChar = '\0';
+            this.TxtTotal.ReadOnly = true;
             this.TxtTotal.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtTotal.SelectedText = "";
             this.TxtTotal.SelectionLength = 0;
@@ -554,6 +557,7 @@
             this.TxtLenseAmount.UseSelectable = true;
             this.TxtLenseAmount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtLenseAmount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtLenseAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtLenseAmount_KeyPress);
             // 
             // TxtEyeWearAmount
             // 
@@ -588,6 +592,7 @@
             this.TxtEyeWearAmount.UseSelectable = true;
             this.TxtEyeWearAmount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtEyeWearAmount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtEyeWearAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEyeWearAmount_KeyPress);
             // 
             // metroLabel1
             // 
