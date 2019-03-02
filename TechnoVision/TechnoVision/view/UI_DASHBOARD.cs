@@ -20,12 +20,18 @@ namespace TechnoVision.view
 
         private void UI_DASHBOARD_Load(object sender, EventArgs e)
         {
-         
+            LblBranch.Text = Session.BranchName;
+            LblUsername.Text = Session.Username;
         }
 
         private void BtnSpectacles_Click(object sender, EventArgs e)
         {
-             
+            new UI_SELECT_CUSTOMER("S").Show(); 
+        }
+
+        private void BtnContactLenses_Click(object sender, EventArgs e)
+        {
+            new UI_SELECT_CUSTOMER("L").Show(); 
         }
     }
 }

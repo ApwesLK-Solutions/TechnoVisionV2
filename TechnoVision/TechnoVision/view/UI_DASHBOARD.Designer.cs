@@ -127,6 +127,7 @@
             this.BtnContactLenses.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.BtnContactLenses.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.BtnContactLenses.UseSelectable = true;
+            this.BtnContactLenses.Click += new System.EventHandler(this.BtnContactLenses_Click);
             // 
             // BtnReports
             // 

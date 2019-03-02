@@ -12,9 +12,11 @@ namespace TechnoVision.view
 {
     public partial class UI_SELECT_CUSTOMER : MetroFramework.Forms.MetroForm
     {
-        public UI_SELECT_CUSTOMER()
+        private string OrderType;
+        public UI_SELECT_CUSTOMER(string OrderType)
         {
             InitializeComponent();
+            this.OrderType = OrderType;
         }
 
         private void UI_SELECT_CUSTOMER_Load(object sender, EventArgs e)
@@ -42,6 +44,30 @@ namespace TechnoVision.view
         {
             new UI_ADD_CUSTOMER().Show();
             new UI_ADD_CUSTOMER().BringToFront();
+        }
+
+        private void GridSelectCustomer_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if(OrderType == "S")
+            {
+                new UI_SPECTACLES_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+            }
+            else if(OrderType == "L")
+            {
+                new UI_CONTACT_LENSE_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+            }
+        }
+
+        private void BtnSelect_Click(object sender, EventArgs e)
+        {
+            if (OrderType == "S")
+            {
+                new UI_SPECTACLES_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+            }
+            else if (OrderType == "L")
+            {
+                new UI_CONTACT_LENSE_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+            }
         }
     }
 }

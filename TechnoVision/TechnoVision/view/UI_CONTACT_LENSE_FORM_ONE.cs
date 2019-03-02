@@ -15,10 +15,11 @@ namespace TechnoVision.view
 {
     public partial class UI_CONTACT_LENSE_FORM_ONE : MetroFramework.Forms.MetroForm
     {
-        public UI_CONTACT_LENSE_FORM_ONE()
+        int custID;
+        public UI_CONTACT_LENSE_FORM_ONE(int custID)
         {
             InitializeComponent();
-            
+            this.custID = custID;
         }
 
         private void BtnNext_Click(object sender, EventArgs e)

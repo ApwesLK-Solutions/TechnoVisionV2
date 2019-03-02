@@ -13,9 +13,11 @@ namespace TechnoVision.view
 {
     public partial class UI_SPECTACLES_FORM_ONE : MetroFramework.Forms.MetroForm
     {
-        public UI_SPECTACLES_FORM_ONE()
+        int custID;
+        public UI_SPECTACLES_FORM_ONE(int CustID)
         {
             InitializeComponent();
+            this.custID = CustID;
         }
 
         private void UI_SPECTACLES_FORM_ONE_Load(object sender, EventArgs e)
