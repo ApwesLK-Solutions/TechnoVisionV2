@@ -98,7 +98,7 @@
             this.GrdBranch.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GrdBranch.RowTemplate.Height = 24;
             this.GrdBranch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GrdBranch.Size = new System.Drawing.Size(537, 275);
+            this.GrdBranch.Size = new System.Drawing.Size(537, 300);
             this.GrdBranch.Style = MetroFramework.MetroColorStyle.Green;
             this.GrdBranch.TabIndex = 0;
             // 
@@ -136,7 +136,7 @@
             // 
             // 
             this.TxtBranchName.CustomButton.Image = null;
-            this.TxtBranchName.CustomButton.Location = new System.Drawing.Point(201, 1);
+            this.TxtBranchName.CustomButton.Location = new System.Drawing.Point(164, 1);
             this.TxtBranchName.CustomButton.Name = "";
             this.TxtBranchName.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtBranchName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -146,18 +146,20 @@
             this.TxtBranchName.CustomButton.Visible = false;
             this.TxtBranchName.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtBranchName.Lines = new string[0];
-            this.TxtBranchName.Location = new System.Drawing.Point(119, 355);
+            this.TxtBranchName.Location = new System.Drawing.Point(24, 385);
             this.TxtBranchName.MaxLength = 32767;
             this.TxtBranchName.Name = "TxtBranchName";
             this.TxtBranchName.PasswordChar = '\0';
+            this.TxtBranchName.PromptText = "Enter Branch Name...";
             this.TxtBranchName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtBranchName.SelectedText = "";
             this.TxtBranchName.SelectionLength = 0;
             this.TxtBranchName.SelectionStart = 0;
             this.TxtBranchName.ShortcutsEnabled = true;
-            this.TxtBranchName.Size = new System.Drawing.Size(235, 35);
+            this.TxtBranchName.Size = new System.Drawing.Size(198, 35);
             this.TxtBranchName.TabIndex = 1;
             this.TxtBranchName.UseSelectable = true;
+            this.TxtBranchName.WaterMark = "Enter Branch Name...";
             this.TxtBranchName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtBranchName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -168,7 +170,7 @@
             this.BtnAddBranch.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnAddBranch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnAddBranch.Highlight = true;
-            this.BtnAddBranch.Location = new System.Drawing.Point(360, 355);
+            this.BtnAddBranch.Location = new System.Drawing.Point(432, 385);
             this.BtnAddBranch.Name = "BtnAddBranch";
             this.BtnAddBranch.Size = new System.Drawing.Size(126, 35);
             this.BtnAddBranch.Style = MetroFramework.MetroColorStyle.Green;
@@ -186,7 +188,7 @@
             // 
             // 
             this.TxtMasterPassword.CustomButton.Image = null;
-            this.TxtMasterPassword.CustomButton.Location = new System.Drawing.Point(201, 1);
+            this.TxtMasterPassword.CustomButton.Location = new System.Drawing.Point(164, 1);
             this.TxtMasterPassword.CustomButton.Name = "";
             this.TxtMasterPassword.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtMasterPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -196,18 +198,20 @@
             this.TxtMasterPassword.CustomButton.Visible = false;
             this.TxtMasterPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtMasterPassword.Lines = new string[0];
-            this.TxtMasterPassword.Location = new System.Drawing.Point(119, 396);
+            this.TxtMasterPassword.Location = new System.Drawing.Point(228, 385);
             this.TxtMasterPassword.MaxLength = 32767;
             this.TxtMasterPassword.Name = "TxtMasterPassword";
             this.TxtMasterPassword.PasswordChar = '*';
+            this.TxtMasterPassword.PromptText = "Enter Branch Master Password...";
             this.TxtMasterPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtMasterPassword.SelectedText = "";
             this.TxtMasterPassword.SelectionLength = 0;
             this.TxtMasterPassword.SelectionStart = 0;
             this.TxtMasterPassword.ShortcutsEnabled = true;
-            this.TxtMasterPassword.Size = new System.Drawing.Size(235, 35);
+            this.TxtMasterPassword.Size = new System.Drawing.Size(198, 35);
             this.TxtMasterPassword.TabIndex = 1;
             this.TxtMasterPassword.UseSelectable = true;
+            this.TxtMasterPassword.WaterMark = "Enter Branch Master Password...";
             this.TxtMasterPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtMasterPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
