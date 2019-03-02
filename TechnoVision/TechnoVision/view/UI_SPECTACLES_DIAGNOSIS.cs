@@ -38,6 +38,7 @@ namespace TechnoVision.view
                     t.Insert(SpecOrder.OrderNumber, DateTime.Parse(SpecOrder.OrderDate), DateTime.Parse(SpecOrder.DueDate), SpecOrder.OrderStatus, SpecOrder.Total, SpecOrder.Advance, SpecOrder.Discount, SpecOrder.Balance, SpecOrder.TestBy, SpecOrder.Eyewear, SpecOrder.Lense, SpecOrder.PaymentPlan, SpecOrder.PaymentMethod, SpecOrder.DistRightSph, SpecOrder.DistRightCyl, SpecOrder.DistRightAxis, SpecOrder.DistLeftSph, SpecOrder.DistLeftCyl, SpecOrder.DistLeftAxis, SpecOrder.AddRight, SpecOrder.AddLeft, SpecOrder.LenseType, SpecOrder.Frame, SpecOrder.PD, SpecOrder.SegmentHeight, SpecOrder.SpecialInstruction, SpecOrder.Remarks, SpecOrder.ReminderDays, SpecOrder.Branch);
                     CommonFunctions.WriteUserLog(Session.Username, "Added New Spec Order : " + SpecOrder.OrderNumber);
                     receiptController.WriteReceipt();
+                    CommonFunctions.ShowSuccess(this, "Order Number " + SpecOrder.OrderNumber + "Saved Succesfully...");
                 }
                 
             }
