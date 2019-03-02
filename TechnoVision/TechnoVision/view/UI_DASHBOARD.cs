@@ -22,5 +22,10 @@ namespace TechnoVision.view
         {
          
         }
+
+        private void BtnSpectacles_Click(object sender, EventArgs e)
+        {
+             
+        }
     }
 }
