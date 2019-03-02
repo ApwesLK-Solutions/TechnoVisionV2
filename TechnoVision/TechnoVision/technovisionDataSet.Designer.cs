@@ -11,8 +11,8 @@
 #pragma warning disable 1591
 
 namespace TechnoVision {
-
-
+    
+    
     /// <summary>
     ///Represents a strongly typed in-memory cache of data.
     ///</summary>
@@ -23,27 +23,27 @@ namespace TechnoVision {
     [global::System.Xml.Serialization.XmlRootAttribute("technovisionDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class technovisionDataSet : global::System.Data.DataSet {
-
+        
         private logsDataTable tablelogs;
-
+        
         private usersDataTable tableusers;
-
+        
         private branchDataTable tablebranch;
-
+        
         private customerDataTable tablecustomer;
-
+        
         private receiptDataTable tablereceipt;
-
+        
         private framesDataTable tableframes;
-
+        
         private testersDataTable tabletesters;
-
+        
         private contactlenseDataTable tablecontactlense;
-
+        
         private spectaclesDataTable tablespectacles;
-
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public technovisionDataSet() {
@@ -54,10 +54,10 @@ namespace TechnoVision {
             base.Relations.CollectionChanged += schemaChangedHandler;
             this.EndInit();
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected technovisionDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) :
+        protected technovisionDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -114,7 +114,7 @@ namespace TechnoVision {
             base.Tables.CollectionChanged += schemaChangedHandler;
             this.Relations.CollectionChanged += schemaChangedHandler;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -124,7 +124,7 @@ namespace TechnoVision {
                 return this.tablelogs;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -134,7 +134,7 @@ namespace TechnoVision {
                 return this.tableusers;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -144,7 +144,7 @@ namespace TechnoVision {
                 return this.tablebranch;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -154,7 +154,7 @@ namespace TechnoVision {
                 return this.tablecustomer;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -164,7 +164,7 @@ namespace TechnoVision {
                 return this.tablereceipt;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -174,7 +174,7 @@ namespace TechnoVision {
                 return this.tableframes;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -184,7 +184,7 @@ namespace TechnoVision {
                 return this.tabletesters;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -194,7 +194,7 @@ namespace TechnoVision {
                 return this.tablecontactlense;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -204,7 +204,7 @@ namespace TechnoVision {
                 return this.tablespectacles;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
@@ -217,7 +217,7 @@ namespace TechnoVision {
                 this._schemaSerializationMode = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Hidden)]
@@ -226,7 +226,7 @@ namespace TechnoVision {
                 return base.Tables;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Hidden)]
@@ -235,7 +235,7 @@ namespace TechnoVision {
                 return base.Relations;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected override void InitializeDerivedDataSet() {
@@ -243,7 +243,7 @@ namespace TechnoVision {
             this.InitClass();
             this.EndInit();
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
@@ -252,19 +252,19 @@ namespace TechnoVision {
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected override bool ShouldSerializeTables() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected override bool ShouldSerializeRelations() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected override void ReadXmlSerializable(global::System.Xml.XmlReader reader) {
@@ -313,7 +313,7 @@ namespace TechnoVision {
                 this.InitVars();
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected override global::System.Xml.Schema.XmlSchema GetSchemaSerializable() {
@@ -322,13 +322,13 @@ namespace TechnoVision {
             stream.Position = 0;
             return global::System.Xml.Schema.XmlSchema.Read(new global::System.Xml.XmlTextReader(stream), null);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars() {
             this.InitVars(true);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
@@ -387,7 +387,7 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
@@ -415,61 +415,61 @@ namespace TechnoVision {
             this.tablespectacles = new spectaclesDataTable();
             base.Tables.Add(this.tablespectacles);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializelogs() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeusers() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializebranch() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializecustomer() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializereceipt() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeframes() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializetesters() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializecontactlense() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializespectacles() {
             return false;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
@@ -477,7 +477,7 @@ namespace TechnoVision {
                 this.InitVars();
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
@@ -502,7 +502,7 @@ namespace TechnoVision {
                         if ((s1.Length == s2.Length)) {
                             s1.Position = 0;
                             s2.Position = 0;
-                            for (; ((s1.Position != s1.Length)
+                            for (; ((s1.Position != s1.Length) 
                                         && (s1.ReadByte() == s2.ReadByte())); ) {
                                 ;
                             }
@@ -524,53 +524,53 @@ namespace TechnoVision {
             xs.Add(dsSchema);
             return type;
         }
-
+        
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void logsRowChangeEventHandler(object sender, logsRowChangeEvent e);
-
+        
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void usersRowChangeEventHandler(object sender, usersRowChangeEvent e);
-
+        
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void branchRowChangeEventHandler(object sender, branchRowChangeEvent e);
-
+        
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void customerRowChangeEventHandler(object sender, customerRowChangeEvent e);
-
+        
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void receiptRowChangeEventHandler(object sender, receiptRowChangeEvent e);
-
+        
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void framesRowChangeEventHandler(object sender, framesRowChangeEvent e);
-
+        
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void testersRowChangeEventHandler(object sender, testersRowChangeEvent e);
-
+        
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void contactlenseRowChangeEventHandler(object sender, contactlenseRowChangeEvent e);
-
+        
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void spectaclesRowChangeEventHandler(object sender, spectaclesRowChangeEvent e);
-
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class logsDataTable : global::System.Data.TypedTableBase<logsRow> {
-
+            
             private global::System.Data.DataColumn columnId;
-
+            
             private global::System.Data.DataColumn columnUser;
-
+            
             private global::System.Data.DataColumn columnRecordDate;
-
+            
             private global::System.Data.DataColumn columnRecordTime;
-
+            
             private global::System.Data.DataColumn columnRecordContent;
-
+            
             private global::System.Data.DataColumn columnBranchId;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public logsDataTable() {
@@ -579,7 +579,7 @@ namespace TechnoVision {
                 this.InitClass();
                 this.EndInit();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal logsDataTable(global::System.Data.DataTable table) {
@@ -596,14 +596,14 @@ namespace TechnoVision {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected logsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) :
+            protected logsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IdColumn {
@@ -611,7 +611,7 @@ namespace TechnoVision {
                     return this.columnId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn UserColumn {
@@ -619,7 +619,7 @@ namespace TechnoVision {
                     return this.columnUser;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn RecordDateColumn {
@@ -627,7 +627,7 @@ namespace TechnoVision {
                     return this.columnRecordDate;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn RecordTimeColumn {
@@ -635,7 +635,7 @@ namespace TechnoVision {
                     return this.columnRecordTime;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn RecordContentColumn {
@@ -643,7 +643,7 @@ namespace TechnoVision {
                     return this.columnRecordContent;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BranchIdColumn {
@@ -651,7 +651,7 @@ namespace TechnoVision {
                     return this.columnBranchId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
@@ -660,7 +660,7 @@ namespace TechnoVision {
                     return this.Rows.Count;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public logsRow this[int index] {
@@ -668,25 +668,25 @@ namespace TechnoVision {
                     return ((logsRow)(this.Rows[index]));
                 }
             }
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event logsRowChangeEventHandler logsRowChanging;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event logsRowChangeEventHandler logsRowChanged;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event logsRowChangeEventHandler logsRowDeleting;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event logsRowChangeEventHandler logsRowDeleted;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddlogsRow(logsRow row) {
                 this.Rows.Add(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public logsRow AddlogsRow(string User, System.DateTime RecordDate, System.DateTime RecordTime, string RecordContent, int BranchId) {
@@ -702,14 +702,14 @@ namespace TechnoVision {
                 this.Rows.Add(rowlogsRow);
                 return rowlogsRow;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public logsRow FindById(int Id) {
                 return ((logsRow)(this.Rows.Find(new object[] {
                             Id})));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
@@ -717,13 +717,13 @@ namespace TechnoVision {
                 cln.InitVars();
                 return cln;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
                 return new logsDataTable();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
@@ -734,7 +734,7 @@ namespace TechnoVision {
                 this.columnRecordContent = base.Columns["RecordContent"];
                 this.columnBranchId = base.Columns["BranchId"];
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
@@ -765,25 +765,25 @@ namespace TechnoVision {
                 this.columnRecordContent.MaxLength = 255;
                 this.columnBranchId.AllowDBNull = false;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public logsRow NewlogsRow() {
                 return ((logsRow)(this.NewRow()));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
                 return new logsRow(builder);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
                 return typeof(logsRow);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
@@ -792,7 +792,7 @@ namespace TechnoVision {
                     this.logsRowChanged(this, new logsRowChangeEvent(((logsRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
@@ -801,7 +801,7 @@ namespace TechnoVision {
                     this.logsRowChanging(this, new logsRowChangeEvent(((logsRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
@@ -810,7 +810,7 @@ namespace TechnoVision {
                     this.logsRowDeleted(this, new logsRowChangeEvent(((logsRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
@@ -819,13 +819,13 @@ namespace TechnoVision {
                     this.logsRowDeleting(this, new logsRowChangeEvent(((logsRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void RemovelogsRow(logsRow row) {
                 this.Rows.Remove(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
@@ -866,7 +866,7 @@ namespace TechnoVision {
                             if ((s1.Length == s2.Length)) {
                                 s1.Position = 0;
                                 s2.Position = 0;
-                                for (; ((s1.Position != s1.Length)
+                                for (; ((s1.Position != s1.Length) 
                                             && (s1.ReadByte() == s2.ReadByte())); ) {
                                     ;
                                 }
@@ -889,28 +889,28 @@ namespace TechnoVision {
                 return type;
             }
         }
-
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class usersDataTable : global::System.Data.TypedTableBase<usersRow> {
-
+            
             private global::System.Data.DataColumn columnUsername;
-
+            
             private global::System.Data.DataColumn columnPassword;
-
+            
             private global::System.Data.DataColumn columnFullName;
-
+            
             private global::System.Data.DataColumn columnNic;
-
+            
             private global::System.Data.DataColumn columnContactNumber;
-
+            
             private global::System.Data.DataColumn columnBranchId;
-
+            
             private global::System.Data.DataColumn columnIsActive;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public usersDataTable() {
@@ -919,7 +919,7 @@ namespace TechnoVision {
                 this.InitClass();
                 this.EndInit();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal usersDataTable(global::System.Data.DataTable table) {
@@ -936,14 +936,14 @@ namespace TechnoVision {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected usersDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) :
+            protected usersDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn UsernameColumn {
@@ -951,7 +951,7 @@ namespace TechnoVision {
                     return this.columnUsername;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PasswordColumn {
@@ -959,7 +959,7 @@ namespace TechnoVision {
                     return this.columnPassword;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn FullNameColumn {
@@ -967,7 +967,7 @@ namespace TechnoVision {
                     return this.columnFullName;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn NicColumn {
@@ -975,7 +975,7 @@ namespace TechnoVision {
                     return this.columnNic;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ContactNumberColumn {
@@ -983,7 +983,7 @@ namespace TechnoVision {
                     return this.columnContactNumber;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BranchIdColumn {
@@ -991,7 +991,7 @@ namespace TechnoVision {
                     return this.columnBranchId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IsActiveColumn {
@@ -999,7 +999,7 @@ namespace TechnoVision {
                     return this.columnIsActive;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
@@ -1008,7 +1008,7 @@ namespace TechnoVision {
                     return this.Rows.Count;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public usersRow this[int index] {
@@ -1016,25 +1016,25 @@ namespace TechnoVision {
                     return ((usersRow)(this.Rows[index]));
                 }
             }
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event usersRowChangeEventHandler usersRowChanging;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event usersRowChangeEventHandler usersRowChanged;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event usersRowChangeEventHandler usersRowDeleting;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event usersRowChangeEventHandler usersRowDeleted;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddusersRow(usersRow row) {
                 this.Rows.Add(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public usersRow AddusersRow(string Username, string Password, string FullName, string Nic, string ContactNumber, int BranchId, sbyte IsActive) {
@@ -1051,14 +1051,14 @@ namespace TechnoVision {
                 this.Rows.Add(rowusersRow);
                 return rowusersRow;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public usersRow FindByUsername(string Username) {
                 return ((usersRow)(this.Rows.Find(new object[] {
                             Username})));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
@@ -1066,13 +1066,13 @@ namespace TechnoVision {
                 cln.InitVars();
                 return cln;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
                 return new usersDataTable();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
@@ -1084,7 +1084,7 @@ namespace TechnoVision {
                 this.columnBranchId = base.Columns["BranchId"];
                 this.columnIsActive = base.Columns["IsActive"];
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
@@ -1118,25 +1118,25 @@ namespace TechnoVision {
                 this.columnBranchId.AllowDBNull = false;
                 this.columnIsActive.AllowDBNull = false;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public usersRow NewusersRow() {
                 return ((usersRow)(this.NewRow()));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
                 return new usersRow(builder);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
                 return typeof(usersRow);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
@@ -1145,7 +1145,7 @@ namespace TechnoVision {
                     this.usersRowChanged(this, new usersRowChangeEvent(((usersRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
@@ -1154,7 +1154,7 @@ namespace TechnoVision {
                     this.usersRowChanging(this, new usersRowChangeEvent(((usersRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
@@ -1163,7 +1163,7 @@ namespace TechnoVision {
                     this.usersRowDeleted(this, new usersRowChangeEvent(((usersRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
@@ -1172,13 +1172,13 @@ namespace TechnoVision {
                     this.usersRowDeleting(this, new usersRowChangeEvent(((usersRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void RemoveusersRow(usersRow row) {
                 this.Rows.Remove(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
@@ -1219,7 +1219,7 @@ namespace TechnoVision {
                             if ((s1.Length == s2.Length)) {
                                 s1.Position = 0;
                                 s2.Position = 0;
-                                for (; ((s1.Position != s1.Length)
+                                for (; ((s1.Position != s1.Length) 
                                             && (s1.ReadByte() == s2.ReadByte())); ) {
                                     ;
                                 }
@@ -1242,20 +1242,20 @@ namespace TechnoVision {
                 return type;
             }
         }
-
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class branchDataTable : global::System.Data.TypedTableBase<branchRow> {
-
+            
             private global::System.Data.DataColumn columnId;
-
+            
             private global::System.Data.DataColumn columnBranchName;
-
+            
             private global::System.Data.DataColumn columnMasterPassword;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public branchDataTable() {
@@ -1264,7 +1264,7 @@ namespace TechnoVision {
                 this.InitClass();
                 this.EndInit();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal branchDataTable(global::System.Data.DataTable table) {
@@ -1281,14 +1281,14 @@ namespace TechnoVision {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected branchDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) :
+            protected branchDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IdColumn {
@@ -1296,7 +1296,7 @@ namespace TechnoVision {
                     return this.columnId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BranchNameColumn {
@@ -1304,7 +1304,7 @@ namespace TechnoVision {
                     return this.columnBranchName;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn MasterPasswordColumn {
@@ -1312,7 +1312,7 @@ namespace TechnoVision {
                     return this.columnMasterPassword;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
@@ -1321,7 +1321,7 @@ namespace TechnoVision {
                     return this.Rows.Count;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public branchRow this[int index] {
@@ -1329,25 +1329,25 @@ namespace TechnoVision {
                     return ((branchRow)(this.Rows[index]));
                 }
             }
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event branchRowChangeEventHandler branchRowChanging;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event branchRowChangeEventHandler branchRowChanged;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event branchRowChangeEventHandler branchRowDeleting;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event branchRowChangeEventHandler branchRowDeleted;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddbranchRow(branchRow row) {
                 this.Rows.Add(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public branchRow AddbranchRow(string BranchName, string MasterPassword) {
@@ -1360,14 +1360,14 @@ namespace TechnoVision {
                 this.Rows.Add(rowbranchRow);
                 return rowbranchRow;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public branchRow FindById(int Id) {
                 return ((branchRow)(this.Rows.Find(new object[] {
                             Id})));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
@@ -1375,13 +1375,13 @@ namespace TechnoVision {
                 cln.InitVars();
                 return cln;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
                 return new branchDataTable();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
@@ -1389,7 +1389,7 @@ namespace TechnoVision {
                 this.columnBranchName = base.Columns["BranchName"];
                 this.columnMasterPassword = base.Columns["MasterPassword"];
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
@@ -1411,25 +1411,25 @@ namespace TechnoVision {
                 this.columnMasterPassword.AllowDBNull = false;
                 this.columnMasterPassword.MaxLength = 45;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public branchRow NewbranchRow() {
                 return ((branchRow)(this.NewRow()));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
                 return new branchRow(builder);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
                 return typeof(branchRow);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
@@ -1438,7 +1438,7 @@ namespace TechnoVision {
                     this.branchRowChanged(this, new branchRowChangeEvent(((branchRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
@@ -1447,7 +1447,7 @@ namespace TechnoVision {
                     this.branchRowChanging(this, new branchRowChangeEvent(((branchRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
@@ -1456,7 +1456,7 @@ namespace TechnoVision {
                     this.branchRowDeleted(this, new branchRowChangeEvent(((branchRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
@@ -1465,13 +1465,13 @@ namespace TechnoVision {
                     this.branchRowDeleting(this, new branchRowChangeEvent(((branchRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void RemovebranchRow(branchRow row) {
                 this.Rows.Remove(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
@@ -1512,7 +1512,7 @@ namespace TechnoVision {
                             if ((s1.Length == s2.Length)) {
                                 s1.Position = 0;
                                 s2.Position = 0;
-                                for (; ((s1.Position != s1.Length)
+                                for (; ((s1.Position != s1.Length) 
                                             && (s1.ReadByte() == s2.ReadByte())); ) {
                                     ;
                                 }
@@ -1535,30 +1535,30 @@ namespace TechnoVision {
                 return type;
             }
         }
-
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class customerDataTable : global::System.Data.TypedTableBase<customerRow> {
-
+            
             private global::System.Data.DataColumn columnId;
-
+            
             private global::System.Data.DataColumn columnName;
-
+            
             private global::System.Data.DataColumn columnAddress;
-
+            
             private global::System.Data.DataColumn columnProfession;
-
+            
             private global::System.Data.DataColumn columnAge;
-
+            
             private global::System.Data.DataColumn columnPhone;
-
+            
             private global::System.Data.DataColumn columnEmail;
-
+            
             private global::System.Data.DataColumn columnBranch;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public customerDataTable() {
@@ -1567,7 +1567,7 @@ namespace TechnoVision {
                 this.InitClass();
                 this.EndInit();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal customerDataTable(global::System.Data.DataTable table) {
@@ -1584,14 +1584,14 @@ namespace TechnoVision {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected customerDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) :
+            protected customerDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IdColumn {
@@ -1599,7 +1599,7 @@ namespace TechnoVision {
                     return this.columnId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn NameColumn {
@@ -1607,7 +1607,7 @@ namespace TechnoVision {
                     return this.columnName;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn AddressColumn {
@@ -1615,7 +1615,7 @@ namespace TechnoVision {
                     return this.columnAddress;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ProfessionColumn {
@@ -1623,7 +1623,7 @@ namespace TechnoVision {
                     return this.columnProfession;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn AgeColumn {
@@ -1631,7 +1631,7 @@ namespace TechnoVision {
                     return this.columnAge;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PhoneColumn {
@@ -1639,7 +1639,7 @@ namespace TechnoVision {
                     return this.columnPhone;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn EmailColumn {
@@ -1647,7 +1647,7 @@ namespace TechnoVision {
                     return this.columnEmail;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BranchColumn {
@@ -1655,7 +1655,7 @@ namespace TechnoVision {
                     return this.columnBranch;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
@@ -1664,7 +1664,7 @@ namespace TechnoVision {
                     return this.Rows.Count;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public customerRow this[int index] {
@@ -1672,25 +1672,25 @@ namespace TechnoVision {
                     return ((customerRow)(this.Rows[index]));
                 }
             }
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event customerRowChangeEventHandler customerRowChanging;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event customerRowChangeEventHandler customerRowChanged;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event customerRowChangeEventHandler customerRowDeleting;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event customerRowChangeEventHandler customerRowDeleted;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddcustomerRow(customerRow row) {
                 this.Rows.Add(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public customerRow AddcustomerRow(uint Id, string Name, string Address, string Profession, string Age, string Phone, string Email, int Branch) {
@@ -1708,14 +1708,14 @@ namespace TechnoVision {
                 this.Rows.Add(rowcustomerRow);
                 return rowcustomerRow;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public customerRow FindById(uint Id) {
                 return ((customerRow)(this.Rows.Find(new object[] {
                             Id})));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
@@ -1723,13 +1723,13 @@ namespace TechnoVision {
                 cln.InitVars();
                 return cln;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
                 return new customerDataTable();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
@@ -1742,7 +1742,7 @@ namespace TechnoVision {
                 this.columnEmail = base.Columns["Email"];
                 this.columnBranch = base.Columns["Branch"];
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
@@ -1780,25 +1780,25 @@ namespace TechnoVision {
                 this.columnEmail.MaxLength = 50;
                 this.columnBranch.AllowDBNull = false;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public customerRow NewcustomerRow() {
                 return ((customerRow)(this.NewRow()));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
                 return new customerRow(builder);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
                 return typeof(customerRow);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
@@ -1807,7 +1807,7 @@ namespace TechnoVision {
                     this.customerRowChanged(this, new customerRowChangeEvent(((customerRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
@@ -1816,7 +1816,7 @@ namespace TechnoVision {
                     this.customerRowChanging(this, new customerRowChangeEvent(((customerRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
@@ -1825,7 +1825,7 @@ namespace TechnoVision {
                     this.customerRowDeleted(this, new customerRowChangeEvent(((customerRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
@@ -1834,13 +1834,13 @@ namespace TechnoVision {
                     this.customerRowDeleting(this, new customerRowChangeEvent(((customerRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void RemovecustomerRow(customerRow row) {
                 this.Rows.Remove(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
@@ -1881,7 +1881,7 @@ namespace TechnoVision {
                             if ((s1.Length == s2.Length)) {
                                 s1.Position = 0;
                                 s2.Position = 0;
-                                for (; ((s1.Position != s1.Length)
+                                for (; ((s1.Position != s1.Length) 
                                             && (s1.ReadByte() == s2.ReadByte())); ) {
                                     ;
                                 }
@@ -1904,30 +1904,30 @@ namespace TechnoVision {
                 return type;
             }
         }
-
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class receiptDataTable : global::System.Data.TypedTableBase<receiptRow> {
-
+            
             private global::System.Data.DataColumn columnId;
-
+            
             private global::System.Data.DataColumn columnReceiptDate;
-
+            
             private global::System.Data.DataColumn columnOrderNumber;
-
+            
             private global::System.Data.DataColumn columnPaymentAmount;
-
+            
             private global::System.Data.DataColumn columnBranch;
-
+            
             private global::System.Data.DataColumn columnReceiptNumber;
-
+            
             private global::System.Data.DataColumn columnOrderType;
-
+            
             private global::System.Data.DataColumn columnYear;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public receiptDataTable() {
@@ -1936,7 +1936,7 @@ namespace TechnoVision {
                 this.InitClass();
                 this.EndInit();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal receiptDataTable(global::System.Data.DataTable table) {
@@ -1953,14 +1953,14 @@ namespace TechnoVision {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected receiptDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) :
+            protected receiptDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IdColumn {
@@ -1968,7 +1968,7 @@ namespace TechnoVision {
                     return this.columnId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ReceiptDateColumn {
@@ -1976,7 +1976,7 @@ namespace TechnoVision {
                     return this.columnReceiptDate;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OrderNumberColumn {
@@ -1984,7 +1984,7 @@ namespace TechnoVision {
                     return this.columnOrderNumber;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PaymentAmountColumn {
@@ -1992,7 +1992,7 @@ namespace TechnoVision {
                     return this.columnPaymentAmount;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BranchColumn {
@@ -2000,7 +2000,7 @@ namespace TechnoVision {
                     return this.columnBranch;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ReceiptNumberColumn {
@@ -2008,7 +2008,7 @@ namespace TechnoVision {
                     return this.columnReceiptNumber;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OrderTypeColumn {
@@ -2016,7 +2016,7 @@ namespace TechnoVision {
                     return this.columnOrderType;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn YearColumn {
@@ -2024,7 +2024,7 @@ namespace TechnoVision {
                     return this.columnYear;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
@@ -2033,7 +2033,7 @@ namespace TechnoVision {
                     return this.Rows.Count;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public receiptRow this[int index] {
@@ -2041,25 +2041,25 @@ namespace TechnoVision {
                     return ((receiptRow)(this.Rows[index]));
                 }
             }
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event receiptRowChangeEventHandler receiptRowChanging;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event receiptRowChangeEventHandler receiptRowChanged;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event receiptRowChangeEventHandler receiptRowDeleting;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event receiptRowChangeEventHandler receiptRowDeleted;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddreceiptRow(receiptRow row) {
                 this.Rows.Add(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public receiptRow AddreceiptRow(System.DateTime ReceiptDate, string OrderNumber, double PaymentAmount, int Branch, string ReceiptNumber, string OrderType, string Year) {
@@ -2077,14 +2077,14 @@ namespace TechnoVision {
                 this.Rows.Add(rowreceiptRow);
                 return rowreceiptRow;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public receiptRow FindById(int Id) {
                 return ((receiptRow)(this.Rows.Find(new object[] {
                             Id})));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
@@ -2092,13 +2092,13 @@ namespace TechnoVision {
                 cln.InitVars();
                 return cln;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
                 return new receiptDataTable();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
@@ -2111,7 +2111,7 @@ namespace TechnoVision {
                 this.columnOrderType = base.Columns["OrderType"];
                 this.columnYear = base.Columns["Year"];
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
@@ -2150,25 +2150,25 @@ namespace TechnoVision {
                 this.columnYear.AllowDBNull = false;
                 this.columnYear.MaxLength = 45;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public receiptRow NewreceiptRow() {
                 return ((receiptRow)(this.NewRow()));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
                 return new receiptRow(builder);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
                 return typeof(receiptRow);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
@@ -2177,7 +2177,7 @@ namespace TechnoVision {
                     this.receiptRowChanged(this, new receiptRowChangeEvent(((receiptRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
@@ -2186,7 +2186,7 @@ namespace TechnoVision {
                     this.receiptRowChanging(this, new receiptRowChangeEvent(((receiptRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
@@ -2195,7 +2195,7 @@ namespace TechnoVision {
                     this.receiptRowDeleted(this, new receiptRowChangeEvent(((receiptRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
@@ -2204,13 +2204,13 @@ namespace TechnoVision {
                     this.receiptRowDeleting(this, new receiptRowChangeEvent(((receiptRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void RemovereceiptRow(receiptRow row) {
                 this.Rows.Remove(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
@@ -2251,7 +2251,7 @@ namespace TechnoVision {
                             if ((s1.Length == s2.Length)) {
                                 s1.Position = 0;
                                 s2.Position = 0;
-                                for (; ((s1.Position != s1.Length)
+                                for (; ((s1.Position != s1.Length) 
                                             && (s1.ReadByte() == s2.ReadByte())); ) {
                                     ;
                                 }
@@ -2274,18 +2274,18 @@ namespace TechnoVision {
                 return type;
             }
         }
-
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class framesDataTable : global::System.Data.TypedTableBase<framesRow> {
-
+            
             private global::System.Data.DataColumn columnId;
-
+            
             private global::System.Data.DataColumn columnFrameName;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public framesDataTable() {
@@ -2294,7 +2294,7 @@ namespace TechnoVision {
                 this.InitClass();
                 this.EndInit();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal framesDataTable(global::System.Data.DataTable table) {
@@ -2311,14 +2311,14 @@ namespace TechnoVision {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected framesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) :
+            protected framesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IdColumn {
@@ -2326,7 +2326,7 @@ namespace TechnoVision {
                     return this.columnId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn FrameNameColumn {
@@ -2334,7 +2334,7 @@ namespace TechnoVision {
                     return this.columnFrameName;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
@@ -2343,7 +2343,7 @@ namespace TechnoVision {
                     return this.Rows.Count;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public framesRow this[int index] {
@@ -2351,25 +2351,25 @@ namespace TechnoVision {
                     return ((framesRow)(this.Rows[index]));
                 }
             }
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event framesRowChangeEventHandler framesRowChanging;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event framesRowChangeEventHandler framesRowChanged;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event framesRowChangeEventHandler framesRowDeleting;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event framesRowChangeEventHandler framesRowDeleted;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddframesRow(framesRow row) {
                 this.Rows.Add(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public framesRow AddframesRow(uint Id, string FrameName) {
@@ -2381,14 +2381,14 @@ namespace TechnoVision {
                 this.Rows.Add(rowframesRow);
                 return rowframesRow;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public framesRow FindById(uint Id) {
                 return ((framesRow)(this.Rows.Find(new object[] {
                             Id})));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
@@ -2396,20 +2396,20 @@ namespace TechnoVision {
                 cln.InitVars();
                 return cln;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
                 return new framesDataTable();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnId = base.Columns["Id"];
                 this.columnFrameName = base.Columns["FrameName"];
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
@@ -2424,25 +2424,25 @@ namespace TechnoVision {
                 this.columnFrameName.AllowDBNull = false;
                 this.columnFrameName.MaxLength = 45;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public framesRow NewframesRow() {
                 return ((framesRow)(this.NewRow()));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
                 return new framesRow(builder);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
                 return typeof(framesRow);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
@@ -2451,7 +2451,7 @@ namespace TechnoVision {
                     this.framesRowChanged(this, new framesRowChangeEvent(((framesRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
@@ -2460,7 +2460,7 @@ namespace TechnoVision {
                     this.framesRowChanging(this, new framesRowChangeEvent(((framesRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
@@ -2469,7 +2469,7 @@ namespace TechnoVision {
                     this.framesRowDeleted(this, new framesRowChangeEvent(((framesRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
@@ -2478,13 +2478,13 @@ namespace TechnoVision {
                     this.framesRowDeleting(this, new framesRowChangeEvent(((framesRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void RemoveframesRow(framesRow row) {
                 this.Rows.Remove(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
@@ -2525,7 +2525,7 @@ namespace TechnoVision {
                             if ((s1.Length == s2.Length)) {
                                 s1.Position = 0;
                                 s2.Position = 0;
-                                for (; ((s1.Position != s1.Length)
+                                for (; ((s1.Position != s1.Length) 
                                             && (s1.ReadByte() == s2.ReadByte())); ) {
                                     ;
                                 }
@@ -2548,18 +2548,18 @@ namespace TechnoVision {
                 return type;
             }
         }
-
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class testersDataTable : global::System.Data.TypedTableBase<testersRow> {
-
+            
             private global::System.Data.DataColumn columnId;
-
+            
             private global::System.Data.DataColumn columnName;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public testersDataTable() {
@@ -2568,7 +2568,7 @@ namespace TechnoVision {
                 this.InitClass();
                 this.EndInit();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal testersDataTable(global::System.Data.DataTable table) {
@@ -2585,14 +2585,14 @@ namespace TechnoVision {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected testersDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) :
+            protected testersDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IdColumn {
@@ -2600,7 +2600,7 @@ namespace TechnoVision {
                     return this.columnId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn NameColumn {
@@ -2608,7 +2608,7 @@ namespace TechnoVision {
                     return this.columnName;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
@@ -2617,7 +2617,7 @@ namespace TechnoVision {
                     return this.Rows.Count;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public testersRow this[int index] {
@@ -2625,25 +2625,25 @@ namespace TechnoVision {
                     return ((testersRow)(this.Rows[index]));
                 }
             }
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event testersRowChangeEventHandler testersRowChanging;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event testersRowChangeEventHandler testersRowChanged;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event testersRowChangeEventHandler testersRowDeleting;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event testersRowChangeEventHandler testersRowDeleted;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddtestersRow(testersRow row) {
                 this.Rows.Add(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public testersRow AddtestersRow(string Name) {
@@ -2655,14 +2655,14 @@ namespace TechnoVision {
                 this.Rows.Add(rowtestersRow);
                 return rowtestersRow;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public testersRow FindById(int Id) {
                 return ((testersRow)(this.Rows.Find(new object[] {
                             Id})));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
@@ -2670,20 +2670,20 @@ namespace TechnoVision {
                 cln.InitVars();
                 return cln;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
                 return new testersDataTable();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnId = base.Columns["Id"];
                 this.columnName = base.Columns["Name"];
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
@@ -2700,25 +2700,25 @@ namespace TechnoVision {
                 this.columnId.Unique = true;
                 this.columnName.MaxLength = 45;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public testersRow NewtestersRow() {
                 return ((testersRow)(this.NewRow()));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
                 return new testersRow(builder);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
                 return typeof(testersRow);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
@@ -2727,7 +2727,7 @@ namespace TechnoVision {
                     this.testersRowChanged(this, new testersRowChangeEvent(((testersRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
@@ -2736,7 +2736,7 @@ namespace TechnoVision {
                     this.testersRowChanging(this, new testersRowChangeEvent(((testersRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
@@ -2745,7 +2745,7 @@ namespace TechnoVision {
                     this.testersRowDeleted(this, new testersRowChangeEvent(((testersRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
@@ -2754,13 +2754,13 @@ namespace TechnoVision {
                     this.testersRowDeleting(this, new testersRowChangeEvent(((testersRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void RemovetestersRow(testersRow row) {
                 this.Rows.Remove(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
@@ -2801,7 +2801,7 @@ namespace TechnoVision {
                             if ((s1.Length == s2.Length)) {
                                 s1.Position = 0;
                                 s2.Position = 0;
-                                for (; ((s1.Position != s1.Length)
+                                for (; ((s1.Position != s1.Length) 
                                             && (s1.ReadByte() == s2.ReadByte())); ) {
                                     ;
                                 }
@@ -2824,108 +2824,108 @@ namespace TechnoVision {
                 return type;
             }
         }
-
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class contactlenseDataTable : global::System.Data.TypedTableBase<contactlenseRow> {
-
+            
             private global::System.Data.DataColumn columnId;
-
+            
             private global::System.Data.DataColumn columnOrderNumber;
-
+            
             private global::System.Data.DataColumn columnOrderDate;
-
+            
             private global::System.Data.DataColumn columnDueDate;
-
+            
             private global::System.Data.DataColumn columnJobType;
-
+            
             private global::System.Data.DataColumn columnTestedBy;
-
+            
             private global::System.Data.DataColumn columnTotal;
-
+            
             private global::System.Data.DataColumn columnDiscount;
-
+            
             private global::System.Data.DataColumn columnAdvance;
-
+            
             private global::System.Data.DataColumn columnBalance;
-
+            
             private global::System.Data.DataColumn columnPaymentMethod;
-
+            
             private global::System.Data.DataColumn columnPaymentPlan;
-
+            
             private global::System.Data.DataColumn columnOrderStatus;
-
+            
             private global::System.Data.DataColumn columnOldRightSph;
-
+            
             private global::System.Data.DataColumn columnOldRightCyl;
-
+            
             private global::System.Data.DataColumn columnOldRightAxis;
-
+            
             private global::System.Data.DataColumn columnOldRightAdd;
-
+            
             private global::System.Data.DataColumn columnOldLeftSph;
-
+            
             private global::System.Data.DataColumn columnOldLeftCyl;
-
+            
             private global::System.Data.DataColumn columnOldLeftAxis;
-
+            
             private global::System.Data.DataColumn columnOldLeftAdd;
-
+            
             private global::System.Data.DataColumn columnPresentRightSph;
-
+            
             private global::System.Data.DataColumn columnPresentRightCyl;
-
+            
             private global::System.Data.DataColumn columnPresentRightAxis;
-
+            
             private global::System.Data.DataColumn columnPresentRightAdd;
-
+            
             private global::System.Data.DataColumn columnPresentLeftSph;
-
+            
             private global::System.Data.DataColumn columnPresentLeftCyl;
-
+            
             private global::System.Data.DataColumn columnPresentLeftAxis;
-
+            
             private global::System.Data.DataColumn columnPresentLeftAdd;
-
+            
             private global::System.Data.DataColumn columnRightBc;
-
+            
             private global::System.Data.DataColumn columnRightPow;
-
+            
             private global::System.Data.DataColumn columnRightDia;
-
+            
             private global::System.Data.DataColumn columnRightDesz;
-
+            
             private global::System.Data.DataColumn columnLeftBc;
-
+            
             private global::System.Data.DataColumn columnLeftPow;
-
+            
             private global::System.Data.DataColumn columnLeftDia;
-
+            
             private global::System.Data.DataColumn columnLeftDesz;
-
+            
             private global::System.Data.DataColumn columnTrailLense;
-
+            
             private global::System.Data.DataColumn columnOverRefract;
-
+            
             private global::System.Data.DataColumn columnKReading;
-
+            
             private global::System.Data.DataColumn columnBlinkTest;
-
+            
             private global::System.Data.DataColumn columnSpecialInstractions;
-
+            
             private global::System.Data.DataColumn columnRemarks;
-
+            
             private global::System.Data.DataColumn columnReminderDays;
-
+            
             private global::System.Data.DataColumn columnBranch;
-
+            
             private global::System.Data.DataColumn columnYear;
-
+            
             private global::System.Data.DataColumn columnCustomerId;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public contactlenseDataTable() {
@@ -2934,7 +2934,7 @@ namespace TechnoVision {
                 this.InitClass();
                 this.EndInit();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal contactlenseDataTable(global::System.Data.DataTable table) {
@@ -2951,14 +2951,14 @@ namespace TechnoVision {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected contactlenseDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) :
+            protected contactlenseDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IdColumn {
@@ -2966,7 +2966,7 @@ namespace TechnoVision {
                     return this.columnId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OrderNumberColumn {
@@ -2974,7 +2974,7 @@ namespace TechnoVision {
                     return this.columnOrderNumber;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OrderDateColumn {
@@ -2982,7 +2982,7 @@ namespace TechnoVision {
                     return this.columnOrderDate;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DueDateColumn {
@@ -2990,7 +2990,7 @@ namespace TechnoVision {
                     return this.columnDueDate;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn JobTypeColumn {
@@ -2998,7 +2998,7 @@ namespace TechnoVision {
                     return this.columnJobType;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn TestedByColumn {
@@ -3006,7 +3006,7 @@ namespace TechnoVision {
                     return this.columnTestedBy;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn TotalColumn {
@@ -3014,7 +3014,7 @@ namespace TechnoVision {
                     return this.columnTotal;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DiscountColumn {
@@ -3022,7 +3022,7 @@ namespace TechnoVision {
                     return this.columnDiscount;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn AdvanceColumn {
@@ -3030,7 +3030,7 @@ namespace TechnoVision {
                     return this.columnAdvance;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BalanceColumn {
@@ -3038,7 +3038,7 @@ namespace TechnoVision {
                     return this.columnBalance;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PaymentMethodColumn {
@@ -3046,7 +3046,7 @@ namespace TechnoVision {
                     return this.columnPaymentMethod;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PaymentPlanColumn {
@@ -3054,7 +3054,7 @@ namespace TechnoVision {
                     return this.columnPaymentPlan;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OrderStatusColumn {
@@ -3062,7 +3062,7 @@ namespace TechnoVision {
                     return this.columnOrderStatus;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OldRightSphColumn {
@@ -3070,7 +3070,7 @@ namespace TechnoVision {
                     return this.columnOldRightSph;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OldRightCylColumn {
@@ -3078,7 +3078,7 @@ namespace TechnoVision {
                     return this.columnOldRightCyl;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OldRightAxisColumn {
@@ -3086,7 +3086,7 @@ namespace TechnoVision {
                     return this.columnOldRightAxis;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OldRightAddColumn {
@@ -3094,7 +3094,7 @@ namespace TechnoVision {
                     return this.columnOldRightAdd;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OldLeftSphColumn {
@@ -3102,7 +3102,7 @@ namespace TechnoVision {
                     return this.columnOldLeftSph;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OldLeftCylColumn {
@@ -3110,7 +3110,7 @@ namespace TechnoVision {
                     return this.columnOldLeftCyl;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OldLeftAxisColumn {
@@ -3118,7 +3118,7 @@ namespace TechnoVision {
                     return this.columnOldLeftAxis;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OldLeftAddColumn {
@@ -3126,7 +3126,7 @@ namespace TechnoVision {
                     return this.columnOldLeftAdd;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PresentRightSphColumn {
@@ -3134,7 +3134,7 @@ namespace TechnoVision {
                     return this.columnPresentRightSph;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PresentRightCylColumn {
@@ -3142,7 +3142,7 @@ namespace TechnoVision {
                     return this.columnPresentRightCyl;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PresentRightAxisColumn {
@@ -3150,7 +3150,7 @@ namespace TechnoVision {
                     return this.columnPresentRightAxis;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PresentRightAddColumn {
@@ -3158,7 +3158,7 @@ namespace TechnoVision {
                     return this.columnPresentRightAdd;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PresentLeftSphColumn {
@@ -3166,7 +3166,7 @@ namespace TechnoVision {
                     return this.columnPresentLeftSph;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PresentLeftCylColumn {
@@ -3174,7 +3174,7 @@ namespace TechnoVision {
                     return this.columnPresentLeftCyl;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PresentLeftAxisColumn {
@@ -3182,7 +3182,7 @@ namespace TechnoVision {
                     return this.columnPresentLeftAxis;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PresentLeftAddColumn {
@@ -3190,7 +3190,7 @@ namespace TechnoVision {
                     return this.columnPresentLeftAdd;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn RightBcColumn {
@@ -3198,7 +3198,7 @@ namespace TechnoVision {
                     return this.columnRightBc;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn RightPowColumn {
@@ -3206,7 +3206,7 @@ namespace TechnoVision {
                     return this.columnRightPow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn RightDiaColumn {
@@ -3214,7 +3214,7 @@ namespace TechnoVision {
                     return this.columnRightDia;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn RightDeszColumn {
@@ -3222,7 +3222,7 @@ namespace TechnoVision {
                     return this.columnRightDesz;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn LeftBcColumn {
@@ -3230,7 +3230,7 @@ namespace TechnoVision {
                     return this.columnLeftBc;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn LeftPowColumn {
@@ -3238,7 +3238,7 @@ namespace TechnoVision {
                     return this.columnLeftPow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn LeftDiaColumn {
@@ -3246,7 +3246,7 @@ namespace TechnoVision {
                     return this.columnLeftDia;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn LeftDeszColumn {
@@ -3254,7 +3254,7 @@ namespace TechnoVision {
                     return this.columnLeftDesz;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn TrailLenseColumn {
@@ -3262,7 +3262,7 @@ namespace TechnoVision {
                     return this.columnTrailLense;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OverRefractColumn {
@@ -3270,7 +3270,7 @@ namespace TechnoVision {
                     return this.columnOverRefract;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn KReadingColumn {
@@ -3278,7 +3278,7 @@ namespace TechnoVision {
                     return this.columnKReading;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BlinkTestColumn {
@@ -3286,7 +3286,7 @@ namespace TechnoVision {
                     return this.columnBlinkTest;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn SpecialInstractionsColumn {
@@ -3294,7 +3294,7 @@ namespace TechnoVision {
                     return this.columnSpecialInstractions;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn RemarksColumn {
@@ -3302,7 +3302,7 @@ namespace TechnoVision {
                     return this.columnRemarks;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ReminderDaysColumn {
@@ -3310,7 +3310,7 @@ namespace TechnoVision {
                     return this.columnReminderDays;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BranchColumn {
@@ -3318,7 +3318,7 @@ namespace TechnoVision {
                     return this.columnBranch;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn YearColumn {
@@ -3326,7 +3326,7 @@ namespace TechnoVision {
                     return this.columnYear;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn CustomerIdColumn {
@@ -3334,7 +3334,7 @@ namespace TechnoVision {
                     return this.columnCustomerId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
@@ -3343,7 +3343,7 @@ namespace TechnoVision {
                     return this.Rows.Count;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public contactlenseRow this[int index] {
@@ -3351,74 +3351,74 @@ namespace TechnoVision {
                     return ((contactlenseRow)(this.Rows[index]));
                 }
             }
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event contactlenseRowChangeEventHandler contactlenseRowChanging;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event contactlenseRowChangeEventHandler contactlenseRowChanged;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event contactlenseRowChangeEventHandler contactlenseRowDeleting;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event contactlenseRowChangeEventHandler contactlenseRowDeleted;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddcontactlenseRow(contactlenseRow row) {
                 this.Rows.Add(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public contactlenseRow AddcontactlenseRow(
-                        uint Id,
-                        string OrderNumber,
-                        System.DateTime OrderDate,
-                        System.DateTime DueDate,
-                        string JobType,
-                        string TestedBy,
-                        double Total,
-                        double Discount,
-                        double Advance,
-                        double Balance,
-                        string PaymentMethod,
-                        string PaymentPlan,
-                        string OrderStatus,
-                        string OldRightSph,
-                        string OldRightCyl,
-                        string OldRightAxis,
-                        string OldRightAdd,
-                        string OldLeftSph,
-                        string OldLeftCyl,
-                        string OldLeftAxis,
-                        string OldLeftAdd,
-                        string PresentRightSph,
-                        string PresentRightCyl,
-                        string PresentRightAxis,
-                        string PresentRightAdd,
-                        string PresentLeftSph,
-                        string PresentLeftCyl,
-                        string PresentLeftAxis,
-                        string PresentLeftAdd,
-                        string RightBc,
-                        string RightPow,
-                        string RightDia,
-                        string RightDesz,
-                        string LeftBc,
-                        string LeftPow,
-                        string LeftDia,
-                        string LeftDesz,
-                        string TrailLense,
-                        string OverRefract,
-                        string KReading,
-                        string BlinkTest,
-                        string SpecialInstractions,
-                        string Remarks,
-                        int ReminderDays,
-                        int Branch,
-                        string Year,
+                        uint Id, 
+                        string OrderNumber, 
+                        System.DateTime OrderDate, 
+                        System.DateTime DueDate, 
+                        string JobType, 
+                        string TestedBy, 
+                        double Total, 
+                        double Discount, 
+                        double Advance, 
+                        double Balance, 
+                        string PaymentMethod, 
+                        string PaymentPlan, 
+                        string OrderStatus, 
+                        string OldRightSph, 
+                        string OldRightCyl, 
+                        string OldRightAxis, 
+                        string OldRightAdd, 
+                        string OldLeftSph, 
+                        string OldLeftCyl, 
+                        string OldLeftAxis, 
+                        string OldLeftAdd, 
+                        string PresentRightSph, 
+                        string PresentRightCyl, 
+                        string PresentRightAxis, 
+                        string PresentRightAdd, 
+                        string PresentLeftSph, 
+                        string PresentLeftCyl, 
+                        string PresentLeftAxis, 
+                        string PresentLeftAdd, 
+                        string RightBc, 
+                        string RightPow, 
+                        string RightDia, 
+                        string RightDesz, 
+                        string LeftBc, 
+                        string LeftPow, 
+                        string LeftDia, 
+                        string LeftDesz, 
+                        string TrailLense, 
+                        string OverRefract, 
+                        string KReading, 
+                        string BlinkTest, 
+                        string SpecialInstractions, 
+                        string Remarks, 
+                        int ReminderDays, 
+                        int Branch, 
+                        string Year, 
                         int CustomerId) {
                 contactlenseRow rowcontactlenseRow = ((contactlenseRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -3473,14 +3473,14 @@ namespace TechnoVision {
                 this.Rows.Add(rowcontactlenseRow);
                 return rowcontactlenseRow;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public contactlenseRow FindById(uint Id) {
                 return ((contactlenseRow)(this.Rows.Find(new object[] {
                             Id})));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
@@ -3488,13 +3488,13 @@ namespace TechnoVision {
                 cln.InitVars();
                 return cln;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
                 return new contactlenseDataTable();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
@@ -3546,7 +3546,7 @@ namespace TechnoVision {
                 this.columnYear = base.Columns["Year"];
                 this.columnCustomerId = base.Columns["CustomerId"];
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
@@ -3731,25 +3731,25 @@ namespace TechnoVision {
                 this.columnYear.MaxLength = 45;
                 this.columnCustomerId.AllowDBNull = false;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public contactlenseRow NewcontactlenseRow() {
                 return ((contactlenseRow)(this.NewRow()));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
                 return new contactlenseRow(builder);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
                 return typeof(contactlenseRow);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
@@ -3758,7 +3758,7 @@ namespace TechnoVision {
                     this.contactlenseRowChanged(this, new contactlenseRowChangeEvent(((contactlenseRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
@@ -3767,7 +3767,7 @@ namespace TechnoVision {
                     this.contactlenseRowChanging(this, new contactlenseRowChangeEvent(((contactlenseRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
@@ -3776,7 +3776,7 @@ namespace TechnoVision {
                     this.contactlenseRowDeleted(this, new contactlenseRowChangeEvent(((contactlenseRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
@@ -3785,13 +3785,13 @@ namespace TechnoVision {
                     this.contactlenseRowDeleting(this, new contactlenseRowChangeEvent(((contactlenseRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void RemovecontactlenseRow(contactlenseRow row) {
                 this.Rows.Remove(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
@@ -3832,7 +3832,7 @@ namespace TechnoVision {
                             if ((s1.Length == s2.Length)) {
                                 s1.Position = 0;
                                 s2.Position = 0;
-                                for (; ((s1.Position != s1.Length)
+                                for (; ((s1.Position != s1.Length) 
                                             && (s1.ReadByte() == s2.ReadByte())); ) {
                                     ;
                                 }
@@ -3855,78 +3855,78 @@ namespace TechnoVision {
                 return type;
             }
         }
-
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class spectaclesDataTable : global::System.Data.TypedTableBase<spectaclesRow> {
-
+            
             private global::System.Data.DataColumn columnId;
-
+            
             private global::System.Data.DataColumn columnOrderNumber;
-
+            
             private global::System.Data.DataColumn columnOrderDate;
-
+            
             private global::System.Data.DataColumn columnDueDate;
-
+            
             private global::System.Data.DataColumn columnOrderStatus;
-
+            
             private global::System.Data.DataColumn columnTotal;
-
+            
             private global::System.Data.DataColumn columnAdvance;
-
+            
             private global::System.Data.DataColumn columnDiscount;
-
+            
             private global::System.Data.DataColumn columnBalance;
-
+            
             private global::System.Data.DataColumn columnTestBy;
-
+            
             private global::System.Data.DataColumn columnEyeWear;
-
+            
             private global::System.Data.DataColumn columnLense;
-
+            
             private global::System.Data.DataColumn columnPaymentPlan;
-
+            
             private global::System.Data.DataColumn columnPaymentMethod;
-
+            
             private global::System.Data.DataColumn columnDistRightSph;
-
+            
             private global::System.Data.DataColumn columnDistRightCyl;
-
+            
             private global::System.Data.DataColumn columnDistRightAxis;
-
+            
             private global::System.Data.DataColumn columnDistLeftSph;
-
+            
             private global::System.Data.DataColumn columnDistLeftCyl;
-
+            
             private global::System.Data.DataColumn columnDistLeftAxis;
-
+            
             private global::System.Data.DataColumn columnAddRight;
-
+            
             private global::System.Data.DataColumn columnAddLeft;
-
+            
             private global::System.Data.DataColumn columnLenseType;
-
+            
             private global::System.Data.DataColumn columnFrame;
-
+            
             private global::System.Data.DataColumn columnPD;
-
+            
             private global::System.Data.DataColumn columnSegmentHight;
-
+            
             private global::System.Data.DataColumn columnSpecialInstractions;
-
+            
             private global::System.Data.DataColumn columnRemarks;
-
+            
             private global::System.Data.DataColumn columnReminderDate;
-
+            
             private global::System.Data.DataColumn columnBranch;
-
+            
             private global::System.Data.DataColumn columnYear;
-
+            
             private global::System.Data.DataColumn columnCustomerId;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public spectaclesDataTable() {
@@ -3935,7 +3935,7 @@ namespace TechnoVision {
                 this.InitClass();
                 this.EndInit();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal spectaclesDataTable(global::System.Data.DataTable table) {
@@ -3952,14 +3952,14 @@ namespace TechnoVision {
                 this.Prefix = table.Prefix;
                 this.MinimumCapacity = table.MinimumCapacity;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected spectaclesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) :
+            protected spectaclesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IdColumn {
@@ -3967,7 +3967,7 @@ namespace TechnoVision {
                     return this.columnId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OrderNumberColumn {
@@ -3975,7 +3975,7 @@ namespace TechnoVision {
                     return this.columnOrderNumber;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OrderDateColumn {
@@ -3983,7 +3983,7 @@ namespace TechnoVision {
                     return this.columnOrderDate;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DueDateColumn {
@@ -3991,7 +3991,7 @@ namespace TechnoVision {
                     return this.columnDueDate;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OrderStatusColumn {
@@ -3999,7 +3999,7 @@ namespace TechnoVision {
                     return this.columnOrderStatus;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn TotalColumn {
@@ -4007,7 +4007,7 @@ namespace TechnoVision {
                     return this.columnTotal;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn AdvanceColumn {
@@ -4015,7 +4015,7 @@ namespace TechnoVision {
                     return this.columnAdvance;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DiscountColumn {
@@ -4023,7 +4023,7 @@ namespace TechnoVision {
                     return this.columnDiscount;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BalanceColumn {
@@ -4031,7 +4031,7 @@ namespace TechnoVision {
                     return this.columnBalance;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn TestByColumn {
@@ -4039,7 +4039,7 @@ namespace TechnoVision {
                     return this.columnTestBy;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn EyeWearColumn {
@@ -4047,7 +4047,7 @@ namespace TechnoVision {
                     return this.columnEyeWear;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn LenseColumn {
@@ -4055,7 +4055,7 @@ namespace TechnoVision {
                     return this.columnLense;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PaymentPlanColumn {
@@ -4063,7 +4063,7 @@ namespace TechnoVision {
                     return this.columnPaymentPlan;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PaymentMethodColumn {
@@ -4071,7 +4071,7 @@ namespace TechnoVision {
                     return this.columnPaymentMethod;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DistRightSphColumn {
@@ -4079,7 +4079,7 @@ namespace TechnoVision {
                     return this.columnDistRightSph;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DistRightCylColumn {
@@ -4087,7 +4087,7 @@ namespace TechnoVision {
                     return this.columnDistRightCyl;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DistRightAxisColumn {
@@ -4095,7 +4095,7 @@ namespace TechnoVision {
                     return this.columnDistRightAxis;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DistLeftSphColumn {
@@ -4103,7 +4103,7 @@ namespace TechnoVision {
                     return this.columnDistLeftSph;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DistLeftCylColumn {
@@ -4111,7 +4111,7 @@ namespace TechnoVision {
                     return this.columnDistLeftCyl;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn DistLeftAxisColumn {
@@ -4119,7 +4119,7 @@ namespace TechnoVision {
                     return this.columnDistLeftAxis;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn AddRightColumn {
@@ -4127,7 +4127,7 @@ namespace TechnoVision {
                     return this.columnAddRight;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn AddLeftColumn {
@@ -4135,7 +4135,7 @@ namespace TechnoVision {
                     return this.columnAddLeft;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn LenseTypeColumn {
@@ -4143,7 +4143,7 @@ namespace TechnoVision {
                     return this.columnLenseType;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn FrameColumn {
@@ -4151,7 +4151,7 @@ namespace TechnoVision {
                     return this.columnFrame;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PDColumn {
@@ -4159,7 +4159,7 @@ namespace TechnoVision {
                     return this.columnPD;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn SegmentHightColumn {
@@ -4167,7 +4167,7 @@ namespace TechnoVision {
                     return this.columnSegmentHight;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn SpecialInstractionsColumn {
@@ -4175,7 +4175,7 @@ namespace TechnoVision {
                     return this.columnSpecialInstractions;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn RemarksColumn {
@@ -4183,7 +4183,7 @@ namespace TechnoVision {
                     return this.columnRemarks;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ReminderDateColumn {
@@ -4191,7 +4191,7 @@ namespace TechnoVision {
                     return this.columnReminderDate;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn BranchColumn {
@@ -4199,7 +4199,7 @@ namespace TechnoVision {
                     return this.columnBranch;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn YearColumn {
@@ -4207,7 +4207,7 @@ namespace TechnoVision {
                     return this.columnYear;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn CustomerIdColumn {
@@ -4215,7 +4215,7 @@ namespace TechnoVision {
                     return this.columnCustomerId;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
@@ -4224,7 +4224,7 @@ namespace TechnoVision {
                     return this.Rows.Count;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public spectaclesRow this[int index] {
@@ -4232,58 +4232,58 @@ namespace TechnoVision {
                     return ((spectaclesRow)(this.Rows[index]));
                 }
             }
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event spectaclesRowChangeEventHandler spectaclesRowChanging;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event spectaclesRowChangeEventHandler spectaclesRowChanged;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event spectaclesRowChangeEventHandler spectaclesRowDeleting;
-
+            
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public event spectaclesRowChangeEventHandler spectaclesRowDeleted;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddspectaclesRow(spectaclesRow row) {
                 this.Rows.Add(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public spectaclesRow AddspectaclesRow(
-                        string OrderNumber,
-                        System.DateTime OrderDate,
-                        System.DateTime DueDate,
-                        string OrderStatus,
-                        double Total,
-                        double Advance,
-                        double Discount,
-                        double Balance,
-                        string TestBy,
-                        double EyeWear,
-                        double Lense,
-                        string PaymentPlan,
-                        string PaymentMethod,
-                        string DistRightSph,
-                        string DistRightCyl,
-                        string DistRightAxis,
-                        string DistLeftSph,
-                        string DistLeftCyl,
-                        string DistLeftAxis,
-                        string AddRight,
-                        string AddLeft,
-                        string LenseType,
-                        string Frame,
-                        string PD,
-                        string SegmentHight,
-                        string SpecialInstractions,
-                        string Remarks,
-                        int ReminderDate,
-                        int Branch,
-                        string Year,
+                        string OrderNumber, 
+                        System.DateTime OrderDate, 
+                        System.DateTime DueDate, 
+                        string OrderStatus, 
+                        double Total, 
+                        double Advance, 
+                        double Discount, 
+                        double Balance, 
+                        string TestBy, 
+                        double EyeWear, 
+                        double Lense, 
+                        string PaymentPlan, 
+                        string PaymentMethod, 
+                        string DistRightSph, 
+                        string DistRightCyl, 
+                        string DistRightAxis, 
+                        string DistLeftSph, 
+                        string DistLeftCyl, 
+                        string DistLeftAxis, 
+                        string AddRight, 
+                        string AddLeft, 
+                        string LenseType, 
+                        string Frame, 
+                        string PD, 
+                        string SegmentHight, 
+                        string SpecialInstractions, 
+                        string Remarks, 
+                        int ReminderDate, 
+                        int Branch, 
+                        string Year, 
                         int CustomerId) {
                 spectaclesRow rowspectaclesRow = ((spectaclesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -4323,14 +4323,14 @@ namespace TechnoVision {
                 this.Rows.Add(rowspectaclesRow);
                 return rowspectaclesRow;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public spectaclesRow FindById(int Id) {
                 return ((spectaclesRow)(this.Rows.Find(new object[] {
                             Id})));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
@@ -4338,13 +4338,13 @@ namespace TechnoVision {
                 cln.InitVars();
                 return cln;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
                 return new spectaclesDataTable();
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
@@ -4381,7 +4381,7 @@ namespace TechnoVision {
                 this.columnYear = base.Columns["Year"];
                 this.columnCustomerId = base.Columns["CustomerId"];
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
@@ -4508,25 +4508,25 @@ namespace TechnoVision {
                 this.columnYear.MaxLength = 45;
                 this.columnCustomerId.AllowDBNull = false;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public spectaclesRow NewspectaclesRow() {
                 return ((spectaclesRow)(this.NewRow()));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
                 return new spectaclesRow(builder);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
                 return typeof(spectaclesRow);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
@@ -4535,7 +4535,7 @@ namespace TechnoVision {
                     this.spectaclesRowChanged(this, new spectaclesRowChangeEvent(((spectaclesRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
@@ -4544,7 +4544,7 @@ namespace TechnoVision {
                     this.spectaclesRowChanging(this, new spectaclesRowChangeEvent(((spectaclesRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
@@ -4553,7 +4553,7 @@ namespace TechnoVision {
                     this.spectaclesRowDeleted(this, new spectaclesRowChangeEvent(((spectaclesRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
@@ -4562,13 +4562,13 @@ namespace TechnoVision {
                     this.spectaclesRowDeleting(this, new spectaclesRowChangeEvent(((spectaclesRow)(e.Row)), e.Action));
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void RemovespectaclesRow(spectaclesRow row) {
                 this.Rows.Remove(row);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
@@ -4609,7 +4609,7 @@ namespace TechnoVision {
                             if ((s1.Length == s2.Length)) {
                                 s1.Position = 0;
                                 s2.Position = 0;
-                                for (; ((s1.Position != s1.Length)
+                                for (; ((s1.Position != s1.Length) 
                                             && (s1.ReadByte() == s2.ReadByte())); ) {
                                     ;
                                 }
@@ -4632,21 +4632,21 @@ namespace TechnoVision {
                 return type;
             }
         }
-
+        
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class logsRow : global::System.Data.DataRow {
-
+            
             private logsDataTable tablelogs;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal logsRow(global::System.Data.DataRowBuilder rb) :
+            internal logsRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tablelogs = ((logsDataTable)(this.Table));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Id {
@@ -4657,7 +4657,7 @@ namespace TechnoVision {
                     this[this.tablelogs.IdColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string User {
@@ -4668,7 +4668,7 @@ namespace TechnoVision {
                     this[this.tablelogs.UserColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime RecordDate {
@@ -4679,7 +4679,7 @@ namespace TechnoVision {
                     this[this.tablelogs.RecordDateColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime RecordTime {
@@ -4690,7 +4690,7 @@ namespace TechnoVision {
                     this[this.tablelogs.RecordTimeColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string RecordContent {
@@ -4701,7 +4701,7 @@ namespace TechnoVision {
                     this[this.tablelogs.RecordContentColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int BranchId {
@@ -4713,21 +4713,21 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class usersRow : global::System.Data.DataRow {
-
+            
             private usersDataTable tableusers;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal usersRow(global::System.Data.DataRowBuilder rb) :
+            internal usersRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tableusers = ((usersDataTable)(this.Table));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Username {
@@ -4738,7 +4738,7 @@ namespace TechnoVision {
                     this[this.tableusers.UsernameColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Password {
@@ -4749,7 +4749,7 @@ namespace TechnoVision {
                     this[this.tableusers.PasswordColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string FullName {
@@ -4760,7 +4760,7 @@ namespace TechnoVision {
                     this[this.tableusers.FullNameColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Nic {
@@ -4771,7 +4771,7 @@ namespace TechnoVision {
                     this[this.tableusers.NicColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string ContactNumber {
@@ -4782,7 +4782,7 @@ namespace TechnoVision {
                     this[this.tableusers.ContactNumberColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int BranchId {
@@ -4793,7 +4793,7 @@ namespace TechnoVision {
                     this[this.tableusers.BranchIdColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public sbyte IsActive {
@@ -4805,21 +4805,21 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class branchRow : global::System.Data.DataRow {
-
+            
             private branchDataTable tablebranch;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal branchRow(global::System.Data.DataRowBuilder rb) :
+            internal branchRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tablebranch = ((branchDataTable)(this.Table));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Id {
@@ -4830,7 +4830,7 @@ namespace TechnoVision {
                     this[this.tablebranch.IdColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string BranchName {
@@ -4841,7 +4841,7 @@ namespace TechnoVision {
                     this[this.tablebranch.BranchNameColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string MasterPassword {
@@ -4853,21 +4853,21 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class customerRow : global::System.Data.DataRow {
-
+            
             private customerDataTable tablecustomer;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal customerRow(global::System.Data.DataRowBuilder rb) :
+            internal customerRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tablecustomer = ((customerDataTable)(this.Table));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public uint Id {
@@ -4878,7 +4878,7 @@ namespace TechnoVision {
                     this[this.tablecustomer.IdColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Name {
@@ -4889,7 +4889,7 @@ namespace TechnoVision {
                     this[this.tablecustomer.NameColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Address {
@@ -4900,7 +4900,7 @@ namespace TechnoVision {
                     this[this.tablecustomer.AddressColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Profession {
@@ -4911,7 +4911,7 @@ namespace TechnoVision {
                     this[this.tablecustomer.ProfessionColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Age {
@@ -4922,7 +4922,7 @@ namespace TechnoVision {
                     this[this.tablecustomer.AgeColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Phone {
@@ -4933,7 +4933,7 @@ namespace TechnoVision {
                     this[this.tablecustomer.PhoneColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Email {
@@ -4944,7 +4944,7 @@ namespace TechnoVision {
                     this[this.tablecustomer.EmailColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Branch {
@@ -4956,21 +4956,21 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class receiptRow : global::System.Data.DataRow {
-
+            
             private receiptDataTable tablereceipt;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal receiptRow(global::System.Data.DataRowBuilder rb) :
+            internal receiptRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tablereceipt = ((receiptDataTable)(this.Table));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Id {
@@ -4981,7 +4981,7 @@ namespace TechnoVision {
                     this[this.tablereceipt.IdColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime ReceiptDate {
@@ -4992,7 +4992,7 @@ namespace TechnoVision {
                     this[this.tablereceipt.ReceiptDateColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OrderNumber {
@@ -5003,7 +5003,7 @@ namespace TechnoVision {
                     this[this.tablereceipt.OrderNumberColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double PaymentAmount {
@@ -5014,7 +5014,7 @@ namespace TechnoVision {
                     this[this.tablereceipt.PaymentAmountColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Branch {
@@ -5025,7 +5025,7 @@ namespace TechnoVision {
                     this[this.tablereceipt.BranchColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string ReceiptNumber {
@@ -5036,7 +5036,7 @@ namespace TechnoVision {
                     this[this.tablereceipt.ReceiptNumberColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OrderType {
@@ -5047,7 +5047,7 @@ namespace TechnoVision {
                     this[this.tablereceipt.OrderTypeColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Year {
@@ -5059,21 +5059,21 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class framesRow : global::System.Data.DataRow {
-
+            
             private framesDataTable tableframes;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal framesRow(global::System.Data.DataRowBuilder rb) :
+            internal framesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tableframes = ((framesDataTable)(this.Table));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public uint Id {
@@ -5084,7 +5084,7 @@ namespace TechnoVision {
                     this[this.tableframes.IdColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string FrameName {
@@ -5096,21 +5096,21 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class testersRow : global::System.Data.DataRow {
-
+            
             private testersDataTable tabletesters;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal testersRow(global::System.Data.DataRowBuilder rb) :
+            internal testersRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tabletesters = ((testersDataTable)(this.Table));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Id {
@@ -5121,7 +5121,7 @@ namespace TechnoVision {
                     this[this.tabletesters.IdColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Name {
@@ -5137,34 +5137,34 @@ namespace TechnoVision {
                     this[this.tabletesters.NameColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsNameNull() {
                 return this.IsNull(this.tabletesters.NameColumn);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetNameNull() {
                 this[this.tabletesters.NameColumn] = global::System.Convert.DBNull;
             }
         }
-
+        
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class contactlenseRow : global::System.Data.DataRow {
-
+            
             private contactlenseDataTable tablecontactlense;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal contactlenseRow(global::System.Data.DataRowBuilder rb) :
+            internal contactlenseRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tablecontactlense = ((contactlenseDataTable)(this.Table));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public uint Id {
@@ -5175,7 +5175,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.IdColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OrderNumber {
@@ -5186,7 +5186,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OrderNumberColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime OrderDate {
@@ -5197,7 +5197,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OrderDateColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime DueDate {
@@ -5208,7 +5208,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.DueDateColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string JobType {
@@ -5219,7 +5219,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.JobTypeColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string TestedBy {
@@ -5230,7 +5230,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.TestedByColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double Total {
@@ -5241,7 +5241,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.TotalColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double Discount {
@@ -5252,7 +5252,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.DiscountColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double Advance {
@@ -5263,7 +5263,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.AdvanceColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double Balance {
@@ -5274,7 +5274,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.BalanceColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PaymentMethod {
@@ -5285,7 +5285,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.PaymentMethodColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PaymentPlan {
@@ -5296,7 +5296,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.PaymentPlanColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OrderStatus {
@@ -5312,7 +5312,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OrderStatusColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OldRightSph {
@@ -5323,7 +5323,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OldRightSphColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OldRightCyl {
@@ -5334,7 +5334,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OldRightCylColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OldRightAxis {
@@ -5345,7 +5345,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OldRightAxisColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OldRightAdd {
@@ -5356,7 +5356,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OldRightAddColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OldLeftSph {
@@ -5367,7 +5367,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OldLeftSphColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OldLeftCyl {
@@ -5378,7 +5378,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OldLeftCylColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OldLeftAxis {
@@ -5389,7 +5389,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OldLeftAxisColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OldLeftAdd {
@@ -5400,7 +5400,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OldLeftAddColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PresentRightSph {
@@ -5411,7 +5411,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.PresentRightSphColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PresentRightCyl {
@@ -5422,7 +5422,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.PresentRightCylColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PresentRightAxis {
@@ -5433,7 +5433,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.PresentRightAxisColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PresentRightAdd {
@@ -5444,7 +5444,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.PresentRightAddColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PresentLeftSph {
@@ -5455,7 +5455,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.PresentLeftSphColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PresentLeftCyl {
@@ -5466,7 +5466,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.PresentLeftCylColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PresentLeftAxis {
@@ -5477,7 +5477,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.PresentLeftAxisColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PresentLeftAdd {
@@ -5488,7 +5488,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.PresentLeftAddColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string RightBc {
@@ -5499,7 +5499,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.RightBcColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string RightPow {
@@ -5510,7 +5510,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.RightPowColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string RightDia {
@@ -5521,7 +5521,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.RightDiaColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string RightDesz {
@@ -5532,7 +5532,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.RightDeszColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string LeftBc {
@@ -5543,7 +5543,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.LeftBcColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string LeftPow {
@@ -5554,7 +5554,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.LeftPowColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string LeftDia {
@@ -5565,7 +5565,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.LeftDiaColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string LeftDesz {
@@ -5576,7 +5576,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.LeftDeszColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string TrailLense {
@@ -5587,7 +5587,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.TrailLenseColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OverRefract {
@@ -5598,7 +5598,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.OverRefractColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string KReading {
@@ -5609,7 +5609,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.KReadingColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string BlinkTest {
@@ -5620,7 +5620,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.BlinkTestColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string SpecialInstractions {
@@ -5631,7 +5631,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.SpecialInstractionsColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Remarks {
@@ -5642,7 +5642,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.RemarksColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int ReminderDays {
@@ -5653,7 +5653,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.ReminderDaysColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Branch {
@@ -5664,7 +5664,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.BranchColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Year {
@@ -5675,7 +5675,7 @@ namespace TechnoVision {
                     this[this.tablecontactlense.YearColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int CustomerId {
@@ -5686,34 +5686,34 @@ namespace TechnoVision {
                     this[this.tablecontactlense.CustomerIdColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsOrderStatusNull() {
                 return this.IsNull(this.tablecontactlense.OrderStatusColumn);
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetOrderStatusNull() {
                 this[this.tablecontactlense.OrderStatusColumn] = global::System.Convert.DBNull;
             }
         }
-
+        
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class spectaclesRow : global::System.Data.DataRow {
-
+            
             private spectaclesDataTable tablespectacles;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal spectaclesRow(global::System.Data.DataRowBuilder rb) :
+            internal spectaclesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tablespectacles = ((spectaclesDataTable)(this.Table));
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Id {
@@ -5724,7 +5724,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.IdColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OrderNumber {
@@ -5735,7 +5735,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.OrderNumberColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime OrderDate {
@@ -5746,7 +5746,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.OrderDateColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime DueDate {
@@ -5757,7 +5757,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.DueDateColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string OrderStatus {
@@ -5768,7 +5768,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.OrderStatusColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double Total {
@@ -5779,7 +5779,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.TotalColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double Advance {
@@ -5790,7 +5790,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.AdvanceColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double Discount {
@@ -5801,7 +5801,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.DiscountColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double Balance {
@@ -5812,7 +5812,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.BalanceColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string TestBy {
@@ -5823,7 +5823,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.TestByColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double EyeWear {
@@ -5834,7 +5834,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.EyeWearColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double Lense {
@@ -5845,7 +5845,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.LenseColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PaymentPlan {
@@ -5856,7 +5856,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.PaymentPlanColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PaymentMethod {
@@ -5867,7 +5867,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.PaymentMethodColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string DistRightSph {
@@ -5878,7 +5878,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.DistRightSphColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string DistRightCyl {
@@ -5889,7 +5889,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.DistRightCylColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string DistRightAxis {
@@ -5900,7 +5900,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.DistRightAxisColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string DistLeftSph {
@@ -5911,7 +5911,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.DistLeftSphColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string DistLeftCyl {
@@ -5922,7 +5922,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.DistLeftCylColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string DistLeftAxis {
@@ -5933,7 +5933,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.DistLeftAxisColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string AddRight {
@@ -5944,7 +5944,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.AddRightColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string AddLeft {
@@ -5955,7 +5955,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.AddLeftColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string LenseType {
@@ -5966,7 +5966,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.LenseTypeColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Frame {
@@ -5977,7 +5977,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.FrameColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string PD {
@@ -5988,7 +5988,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.PDColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string SegmentHight {
@@ -5999,7 +5999,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.SegmentHightColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string SpecialInstractions {
@@ -6010,7 +6010,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.SpecialInstractionsColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Remarks {
@@ -6021,7 +6021,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.RemarksColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int ReminderDate {
@@ -6032,7 +6032,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.ReminderDateColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Branch {
@@ -6043,7 +6043,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.BranchColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Year {
@@ -6054,7 +6054,7 @@ namespace TechnoVision {
                     this[this.tablespectacles.YearColumn] = value;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int CustomerId {
@@ -6066,24 +6066,24 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class logsRowChangeEvent : global::System.EventArgs {
-
+            
             private logsRow eventRow;
-
+            
             private global::System.Data.DataRowAction eventAction;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public logsRowChangeEvent(logsRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public logsRow Row {
@@ -6091,7 +6091,7 @@ namespace TechnoVision {
                     return this.eventRow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataRowAction Action {
@@ -6100,24 +6100,24 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class usersRowChangeEvent : global::System.EventArgs {
-
+            
             private usersRow eventRow;
-
+            
             private global::System.Data.DataRowAction eventAction;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public usersRowChangeEvent(usersRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public usersRow Row {
@@ -6125,7 +6125,7 @@ namespace TechnoVision {
                     return this.eventRow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataRowAction Action {
@@ -6134,24 +6134,24 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class branchRowChangeEvent : global::System.EventArgs {
-
+            
             private branchRow eventRow;
-
+            
             private global::System.Data.DataRowAction eventAction;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public branchRowChangeEvent(branchRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public branchRow Row {
@@ -6159,7 +6159,7 @@ namespace TechnoVision {
                     return this.eventRow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataRowAction Action {
@@ -6168,24 +6168,24 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class customerRowChangeEvent : global::System.EventArgs {
-
+            
             private customerRow eventRow;
-
+            
             private global::System.Data.DataRowAction eventAction;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public customerRowChangeEvent(customerRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public customerRow Row {
@@ -6193,7 +6193,7 @@ namespace TechnoVision {
                     return this.eventRow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataRowAction Action {
@@ -6202,24 +6202,24 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class receiptRowChangeEvent : global::System.EventArgs {
-
+            
             private receiptRow eventRow;
-
+            
             private global::System.Data.DataRowAction eventAction;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public receiptRowChangeEvent(receiptRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public receiptRow Row {
@@ -6227,7 +6227,7 @@ namespace TechnoVision {
                     return this.eventRow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataRowAction Action {
@@ -6236,24 +6236,24 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class framesRowChangeEvent : global::System.EventArgs {
-
+            
             private framesRow eventRow;
-
+            
             private global::System.Data.DataRowAction eventAction;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public framesRowChangeEvent(framesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public framesRow Row {
@@ -6261,7 +6261,7 @@ namespace TechnoVision {
                     return this.eventRow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataRowAction Action {
@@ -6270,24 +6270,24 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class testersRowChangeEvent : global::System.EventArgs {
-
+            
             private testersRow eventRow;
-
+            
             private global::System.Data.DataRowAction eventAction;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public testersRowChangeEvent(testersRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public testersRow Row {
@@ -6295,7 +6295,7 @@ namespace TechnoVision {
                     return this.eventRow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataRowAction Action {
@@ -6304,24 +6304,24 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class contactlenseRowChangeEvent : global::System.EventArgs {
-
+            
             private contactlenseRow eventRow;
-
+            
             private global::System.Data.DataRowAction eventAction;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public contactlenseRowChangeEvent(contactlenseRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public contactlenseRow Row {
@@ -6329,7 +6329,7 @@ namespace TechnoVision {
                     return this.eventRow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataRowAction Action {
@@ -6338,24 +6338,24 @@ namespace TechnoVision {
                 }
             }
         }
-
+        
         /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class spectaclesRowChangeEvent : global::System.EventArgs {
-
+            
             private spectaclesRow eventRow;
-
+            
             private global::System.Data.DataRowAction eventAction;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public spectaclesRowChangeEvent(spectaclesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public spectaclesRow Row {
@@ -6363,7 +6363,7 @@ namespace TechnoVision {
                     return this.eventRow;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataRowAction Action {
@@ -6375,8 +6375,8 @@ namespace TechnoVision {
     }
 }
 namespace TechnoVision.technovisionDataSetTableAdapters {
-
-
+    
+    
     /// <summary>
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
@@ -6387,23 +6387,23 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class logsTableAdapter : global::System.ComponentModel.Component {
-
+        
         private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
-
+        
         private global::MySql.Data.MySqlClient.MySqlConnection _connection;
-
+        
         private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
-
+        
         private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
-
+        
         private bool _clearBeforeFill;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public logsTableAdapter() {
             this.ClearBeforeFill = true;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
@@ -6414,7 +6414,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._adapter;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
@@ -6442,7 +6442,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
@@ -6454,21 +6454,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
                     this.CommandCollection[i].Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.DeleteCommand != null))) {
                     this.Adapter.DeleteCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.InsertCommand != null))) {
                     this.Adapter.InsertCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.UpdateCommand != null))) {
                     this.Adapter.UpdateCommand.Transaction = this._transaction;
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
@@ -6479,7 +6479,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._commandCollection;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool ClearBeforeFill {
@@ -6490,7 +6490,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
@@ -6689,14 +6689,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
             this._connection.ConnectionString = global::TechnoVision.Properties.Settings.Default.technovisionConnectionString;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
@@ -6706,7 +6706,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._commandCollection[0].CommandText = "SELECT * FROM `logs`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -6719,7 +6719,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -6730,21 +6730,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet.logsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet dataSet) {
             return this.Adapter.Update(dataSet, "logs");
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -6752,14 +6752,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
                         dataRow});
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -6782,7 +6782,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(p6));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.DeleteCommand.Connection.Open();
             }
@@ -6796,7 +6796,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -6818,7 +6818,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(p5));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.InsertCommand.Connection.Open();
             }
@@ -6832,7 +6832,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -6870,7 +6870,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(p11));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.UpdateCommand.Connection.Open();
             }
@@ -6885,7 +6885,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
         }
     }
-
+    
     /// <summary>
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
@@ -6896,23 +6896,23 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class usersTableAdapter : global::System.ComponentModel.Component {
-
+        
         private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
-
+        
         private global::MySql.Data.MySqlClient.MySqlConnection _connection;
-
+        
         private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
-
+        
         private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
-
+        
         private bool _clearBeforeFill;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public usersTableAdapter() {
             this.ClearBeforeFill = true;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
@@ -6923,7 +6923,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._adapter;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
@@ -6951,7 +6951,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
@@ -6963,21 +6963,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
                     this.CommandCollection[i].Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.DeleteCommand != null))) {
                     this.Adapter.DeleteCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.InsertCommand != null))) {
                     this.Adapter.InsertCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.UpdateCommand != null))) {
                     this.Adapter.UpdateCommand.Transaction = this._transaction;
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
@@ -6988,7 +6988,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._commandCollection;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool ClearBeforeFill {
@@ -6999,7 +6999,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
@@ -7241,14 +7241,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
             this._connection.ConnectionString = global::TechnoVision.Properties.Settings.Default.technovisionConnectionString;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
@@ -7300,7 +7300,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[2].Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7313,7 +7313,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7324,21 +7324,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet.usersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet dataSet) {
             return this.Adapter.Update(dataSet, "users");
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7346,14 +7346,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
                         dataRow});
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7392,7 +7392,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.DeleteCommand.Parameters[5].Value = ((int)(p6));
             this.Adapter.DeleteCommand.Parameters[6].Value = ((byte)(p7));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.DeleteCommand.Connection.Open();
             }
@@ -7406,7 +7406,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7445,7 +7445,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.InsertCommand.Parameters[5].Value = ((int)(p6));
             this.Adapter.InsertCommand.Parameters[6].Value = ((byte)(p7));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.InsertCommand.Connection.Open();
             }
@@ -7459,7 +7459,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7530,7 +7530,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(p13));
             this.Adapter.UpdateCommand.Parameters[13].Value = ((byte)(p14));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.UpdateCommand.Connection.Open();
             }
@@ -7544,7 +7544,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7552,7 +7552,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         public virtual int Update(string p2, string p3, string p4, string p5, int p6, byte p7, string p8, string p9, string p10, string p11, string p12, int p13, byte p14) {
             return this.Update(p8, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7572,7 +7572,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 command.Parameters[1].Value = ((string)(uname));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
@@ -7587,7 +7587,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             return returnValue;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7607,7 +7607,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 command.Parameters[1].Value = ((string)(username));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
@@ -7623,7 +7623,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return returnValue;
         }
     }
-
+    
     /// <summary>
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
@@ -7634,23 +7634,23 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class branchTableAdapter : global::System.ComponentModel.Component {
-
+        
         private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
-
+        
         private global::MySql.Data.MySqlClient.MySqlConnection _connection;
-
+        
         private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
-
+        
         private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
-
+        
         private bool _clearBeforeFill;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public branchTableAdapter() {
             this.ClearBeforeFill = true;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
@@ -7661,7 +7661,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._adapter;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
@@ -7689,7 +7689,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
@@ -7701,21 +7701,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
                     this.CommandCollection[i].Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.DeleteCommand != null))) {
                     this.Adapter.DeleteCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.InsertCommand != null))) {
                     this.Adapter.InsertCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.UpdateCommand != null))) {
                     this.Adapter.UpdateCommand.Transaction = this._transaction;
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
@@ -7726,7 +7726,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._commandCollection;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool ClearBeforeFill {
@@ -7737,7 +7737,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
@@ -7840,14 +7840,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
             this._connection.ConnectionString = global::TechnoVision.Properties.Settings.Default.technovisionConnectionString;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
@@ -7857,7 +7857,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._commandCollection[0].CommandText = "SELECT `Id`, `BranchName`, `MasterPassword` FROM `branch`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7870,7 +7870,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7881,21 +7881,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet.branchDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet dataSet) {
             return this.Adapter.Update(dataSet, "branch");
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7903,14 +7903,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
                         dataRow});
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7930,7 +7930,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(p3));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.DeleteCommand.Connection.Open();
             }
@@ -7944,7 +7944,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -7963,7 +7963,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(p2));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.InsertCommand.Connection.Open();
             }
@@ -7977,7 +7977,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -8009,7 +8009,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(p5));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.UpdateCommand.Connection.Open();
             }
@@ -8024,7 +8024,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
         }
     }
-
+    
     /// <summary>
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
@@ -8035,23 +8035,23 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class customerTableAdapter : global::System.ComponentModel.Component {
-
+        
         private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
-
+        
         private global::MySql.Data.MySqlClient.MySqlConnection _connection;
-
+        
         private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
-
+        
         private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
-
+        
         private bool _clearBeforeFill;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public customerTableAdapter() {
             this.ClearBeforeFill = true;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
@@ -8062,7 +8062,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._adapter;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
@@ -8090,7 +8090,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
@@ -8102,21 +8102,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
                     this.CommandCollection[i].Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.DeleteCommand != null))) {
                     this.Adapter.DeleteCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.InsertCommand != null))) {
                     this.Adapter.InsertCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.UpdateCommand != null))) {
                     this.Adapter.UpdateCommand.Transaction = this._transaction;
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
@@ -8127,7 +8127,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._commandCollection;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool ClearBeforeFill {
@@ -8138,7 +8138,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
@@ -8397,14 +8397,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
             this._connection.ConnectionString = global::TechnoVision.Properties.Settings.Default.technovisionConnectionString;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
@@ -8414,7 +8414,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._commandCollection[0].CommandText = "SELECT * FROM `customer`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -8427,7 +8427,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -8438,21 +8438,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet.customerDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet dataSet) {
             return this.Adapter.Update(dataSet, "customer");
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -8460,14 +8460,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
                         dataRow});
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -8512,7 +8512,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(p8));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.DeleteCommand.Connection.Open();
             }
@@ -8526,7 +8526,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -8570,7 +8570,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             this.Adapter.InsertCommand.Parameters[6].Value = ((int)(p7));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.InsertCommand.Connection.Open();
             }
@@ -8584,7 +8584,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -8666,7 +8666,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(p15));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.UpdateCommand.Connection.Open();
             }
@@ -8681,7 +8681,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
         }
     }
-
+    
     /// <summary>
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
@@ -8692,23 +8692,23 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class receiptTableAdapter : global::System.ComponentModel.Component {
-
+        
         private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
-
+        
         private global::MySql.Data.MySqlClient.MySqlConnection _connection;
-
+        
         private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
-
+        
         private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
-
+        
         private bool _clearBeforeFill;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public receiptTableAdapter() {
             this.ClearBeforeFill = true;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
@@ -8719,7 +8719,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._adapter;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
@@ -8747,7 +8747,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
@@ -8759,21 +8759,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
                     this.CommandCollection[i].Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.DeleteCommand != null))) {
                     this.Adapter.DeleteCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.InsertCommand != null))) {
                     this.Adapter.InsertCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.UpdateCommand != null))) {
                     this.Adapter.UpdateCommand.Transaction = this._transaction;
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
@@ -8784,7 +8784,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._commandCollection;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool ClearBeforeFill {
@@ -8795,7 +8795,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
@@ -9054,14 +9054,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
             this._connection.ConnectionString = global::TechnoVision.Properties.Settings.Default.technovisionConnectionString;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
@@ -9094,7 +9094,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceColumn = "Year";
             this._commandCollection[2].Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9107,7 +9107,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9118,21 +9118,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet.receiptDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet dataSet) {
             return this.Adapter.Update(dataSet, "receipt");
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9140,14 +9140,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
                         dataRow});
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9182,7 +9182,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(p8));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.DeleteCommand.Connection.Open();
             }
@@ -9196,7 +9196,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9230,7 +9230,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[6].Value = ((string)(p7));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.InsertCommand.Connection.Open();
             }
@@ -9244,7 +9244,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9306,7 +9306,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(p15));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.UpdateCommand.Connection.Open();
             }
@@ -9320,14 +9320,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual global::System.Nullable<int> GetReceiptNumber() {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[1];
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
@@ -9340,7 +9340,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                     command.Connection.Close();
                 }
             }
-            if (((returnValue == null)
+            if (((returnValue == null) 
                         || (returnValue.GetType() == typeof(global::System.DBNull)))) {
                 return new global::System.Nullable<int>();
             }
@@ -9348,7 +9348,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return new global::System.Nullable<int>(((int)(returnValue)));
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9362,7 +9362,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 command.Parameters[1].Value = ((string)(year));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
@@ -9375,7 +9375,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                     command.Connection.Close();
                 }
             }
-            if (((returnValue == null)
+            if (((returnValue == null) 
                         || (returnValue.GetType() == typeof(global::System.DBNull)))) {
                 return null;
             }
@@ -9384,7 +9384,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
         }
     }
-
+    
     /// <summary>
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
@@ -9395,23 +9395,23 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class framesTableAdapter : global::System.ComponentModel.Component {
-
+        
         private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
-
+        
         private global::MySql.Data.MySqlClient.MySqlConnection _connection;
-
+        
         private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
-
+        
         private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
-
+        
         private bool _clearBeforeFill;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public framesTableAdapter() {
             this.ClearBeforeFill = true;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
@@ -9422,7 +9422,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._adapter;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
@@ -9450,7 +9450,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
@@ -9462,21 +9462,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
                     this.CommandCollection[i].Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.DeleteCommand != null))) {
                     this.Adapter.DeleteCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.InsertCommand != null))) {
                     this.Adapter.InsertCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.UpdateCommand != null))) {
                     this.Adapter.UpdateCommand.Transaction = this._transaction;
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
@@ -9487,7 +9487,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._commandCollection;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool ClearBeforeFill {
@@ -9498,7 +9498,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
@@ -9569,14 +9569,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
             this._connection.ConnectionString = global::TechnoVision.Properties.Settings.Default.technovisionConnectionString;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
@@ -9598,7 +9598,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[1].Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9611,7 +9611,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9622,21 +9622,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet.framesDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet dataSet) {
             return this.Adapter.Update(dataSet, "frames");
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9644,14 +9644,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
                         dataRow});
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9665,7 +9665,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(p2));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.DeleteCommand.Connection.Open();
             }
@@ -9679,7 +9679,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9692,7 +9692,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(p1));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.InsertCommand.Connection.Open();
             }
@@ -9706,7 +9706,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9726,7 +9726,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(p3));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.UpdateCommand.Connection.Open();
             }
@@ -9740,7 +9740,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -9749,7 +9749,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[1];
             command.Parameters[0].Value = ((int)(p1));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
@@ -9765,7 +9765,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return returnValue;
         }
     }
-
+    
     /// <summary>
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
@@ -9776,23 +9776,23 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class testersTableAdapter : global::System.ComponentModel.Component {
-
+        
         private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
-
+        
         private global::MySql.Data.MySqlClient.MySqlConnection _connection;
-
+        
         private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
-
+        
         private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
-
+        
         private bool _clearBeforeFill;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public testersTableAdapter() {
             this.ClearBeforeFill = true;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
@@ -9803,7 +9803,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._adapter;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
@@ -9831,7 +9831,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
@@ -9843,21 +9843,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
                     this.CommandCollection[i].Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.DeleteCommand != null))) {
                     this.Adapter.DeleteCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.InsertCommand != null))) {
                     this.Adapter.InsertCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.UpdateCommand != null))) {
                     this.Adapter.UpdateCommand.Transaction = this._transaction;
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
@@ -9868,7 +9868,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._commandCollection;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool ClearBeforeFill {
@@ -9879,7 +9879,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
@@ -9969,14 +9969,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
             this._connection.ConnectionString = global::TechnoVision.Properties.Settings.Default.technovisionConnectionString;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
@@ -9998,7 +9998,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[1].Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -10011,7 +10011,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -10022,21 +10022,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet.testersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet dataSet) {
             return this.Adapter.Update(dataSet, "testers");
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -10044,14 +10044,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
                         dataRow});
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -10067,7 +10067,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(p3));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.DeleteCommand.Connection.Open();
             }
@@ -10081,7 +10081,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -10094,7 +10094,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(p1));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.InsertCommand.Connection.Open();
             }
@@ -10108,7 +10108,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -10130,7 +10130,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(p4));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.UpdateCommand.Connection.Open();
             }
@@ -10144,7 +10144,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -10153,7 +10153,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[1];
             command.Parameters[0].Value = ((int)(id));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
@@ -10169,7 +10169,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return returnValue;
         }
     }
-
+    
     /// <summary>
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
@@ -10180,23 +10180,23 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class contactlenseTableAdapter : global::System.ComponentModel.Component {
-
+        
         private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
-
+        
         private global::MySql.Data.MySqlClient.MySqlConnection _connection;
-
+        
         private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
-
+        
         private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
-
+        
         private bool _clearBeforeFill;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public contactlenseTableAdapter() {
             this.ClearBeforeFill = true;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
@@ -10207,7 +10207,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._adapter;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
@@ -10235,7 +10235,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
@@ -10247,21 +10247,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
                     this.CommandCollection[i].Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.DeleteCommand != null))) {
                     this.Adapter.DeleteCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.InsertCommand != null))) {
                     this.Adapter.InsertCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.UpdateCommand != null))) {
                     this.Adapter.UpdateCommand.Transaction = this._transaction;
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
@@ -10272,7 +10272,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._commandCollection;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool ClearBeforeFill {
@@ -10283,7 +10283,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
@@ -11794,14 +11794,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
             this._connection.ConnectionString = global::TechnoVision.Properties.Settings.Default.technovisionConnectionString;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
@@ -11853,7 +11853,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[2].Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -11866,7 +11866,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -11877,21 +11877,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet.contactlenseDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet dataSet) {
             return this.Adapter.Update(dataSet, "contactlense");
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -11899,65 +11899,65 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
                         dataRow});
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
         public virtual int Delete(
-                    uint p1,
-                    string p2,
-                    System.DateTime p3,
-                    System.DateTime p4,
-                    string p5,
-                    string p6,
-                    double p7,
-                    double p8,
-                    double p9,
-                    double p10,
-                    string p11,
-                    string p12,
-                    string p14,
-                    string p15,
-                    string p16,
-                    string p17,
-                    string p18,
-                    string p19,
-                    string p20,
-                    string p21,
-                    string p22,
-                    string p23,
-                    string p24,
-                    string p25,
-                    string p26,
-                    string p27,
-                    string p28,
-                    string p29,
-                    string p30,
-                    string p31,
-                    string p32,
-                    string p33,
-                    string p34,
-                    string p35,
-                    string p36,
-                    string p37,
-                    string p38,
-                    string p39,
-                    string p40,
-                    string p41,
-                    string p42,
-                    string p43,
-                    string p44,
-                    int p45,
-                    int p46,
-                    string p47,
+                    uint p1, 
+                    string p2, 
+                    System.DateTime p3, 
+                    System.DateTime p4, 
+                    string p5, 
+                    string p6, 
+                    double p7, 
+                    double p8, 
+                    double p9, 
+                    double p10, 
+                    string p11, 
+                    string p12, 
+                    string p14, 
+                    string p15, 
+                    string p16, 
+                    string p17, 
+                    string p18, 
+                    string p19, 
+                    string p20, 
+                    string p21, 
+                    string p22, 
+                    string p23, 
+                    string p24, 
+                    string p25, 
+                    string p26, 
+                    string p27, 
+                    string p28, 
+                    string p29, 
+                    string p30, 
+                    string p31, 
+                    string p32, 
+                    string p33, 
+                    string p34, 
+                    string p35, 
+                    string p36, 
+                    string p37, 
+                    string p38, 
+                    string p39, 
+                    string p40, 
+                    string p41, 
+                    string p42, 
+                    string p43, 
+                    string p44, 
+                    int p45, 
+                    int p46, 
+                    string p47, 
                     int p48) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((uint)(p1));
             if ((p2 == null)) {
@@ -12194,7 +12194,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             this.Adapter.DeleteCommand.Parameters[47].Value = ((int)(p48));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.DeleteCommand.Connection.Open();
             }
@@ -12208,57 +12208,57 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(
-                    string p1,
-                    System.DateTime p2,
-                    System.DateTime p3,
-                    string p4,
-                    string p5,
-                    double p6,
-                    double p7,
-                    double p8,
-                    double p9,
-                    string p10,
-                    string p11,
-                    string p12,
-                    string p13,
-                    string p14,
-                    string p15,
-                    string p16,
-                    string p17,
-                    string p18,
-                    string p19,
-                    string p20,
-                    string p21,
-                    string p22,
-                    string p23,
-                    string p24,
-                    string p25,
-                    string p26,
-                    string p27,
-                    string p28,
-                    string p29,
-                    string p30,
-                    string p31,
-                    string p32,
-                    string p33,
-                    string p34,
-                    string p35,
-                    string p36,
-                    string p37,
-                    string p38,
-                    string p39,
-                    string p40,
-                    string p41,
-                    string p42,
-                    int p43,
-                    int p44,
-                    string p45,
+                    string p1, 
+                    System.DateTime p2, 
+                    System.DateTime p3, 
+                    string p4, 
+                    string p5, 
+                    double p6, 
+                    double p7, 
+                    double p8, 
+                    double p9, 
+                    string p10, 
+                    string p11, 
+                    string p12, 
+                    string p13, 
+                    string p14, 
+                    string p15, 
+                    string p16, 
+                    string p17, 
+                    string p18, 
+                    string p19, 
+                    string p20, 
+                    string p21, 
+                    string p22, 
+                    string p23, 
+                    string p24, 
+                    string p25, 
+                    string p26, 
+                    string p27, 
+                    string p28, 
+                    string p29, 
+                    string p30, 
+                    string p31, 
+                    string p32, 
+                    string p33, 
+                    string p34, 
+                    string p35, 
+                    string p36, 
+                    string p37, 
+                    string p38, 
+                    string p39, 
+                    string p40, 
+                    string p41, 
+                    string p42, 
+                    int p43, 
+                    int p44, 
+                    string p45, 
                     int p46) {
             if ((p1 == null)) {
                 throw new global::System.ArgumentNullException("p1");
@@ -12492,7 +12492,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             this.Adapter.InsertCommand.Parameters[45].Value = ((int)(p46));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.InsertCommand.Connection.Open();
             }
@@ -12506,104 +12506,104 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string p1,
-                    System.DateTime p2,
-                    System.DateTime p3,
-                    string p4,
-                    string p5,
-                    double p6,
-                    double p7,
-                    double p8,
-                    double p9,
-                    string p10,
-                    string p11,
-                    string p12,
-                    string p13,
-                    string p14,
-                    string p15,
-                    string p16,
-                    string p17,
-                    string p18,
-                    string p19,
-                    string p20,
-                    string p21,
-                    string p22,
-                    string p23,
-                    string p24,
-                    string p25,
-                    string p26,
-                    string p27,
-                    string p28,
-                    string p29,
-                    string p30,
-                    string p31,
-                    string p32,
-                    string p33,
-                    string p34,
-                    string p35,
-                    string p36,
-                    string p37,
-                    string p38,
-                    string p39,
-                    string p40,
-                    string p41,
-                    string p42,
-                    int p43,
-                    int p44,
-                    string p45,
-                    int p46,
-                    uint p47,
-                    string p48,
-                    System.DateTime p49,
-                    System.DateTime p50,
-                    string p51,
-                    string p52,
-                    double p53,
-                    double p54,
-                    double p55,
-                    double p56,
-                    string p57,
-                    string p58,
-                    string p60,
-                    string p61,
-                    string p62,
-                    string p63,
-                    string p64,
-                    string p65,
-                    string p66,
-                    string p67,
-                    string p68,
-                    string p69,
-                    string p70,
-                    string p71,
-                    string p72,
-                    string p73,
-                    string p74,
-                    string p75,
-                    string p76,
-                    string p77,
-                    string p78,
-                    string p79,
-                    string p80,
-                    string p81,
-                    string p82,
-                    string p83,
-                    string p84,
-                    string p85,
-                    string p86,
-                    string p87,
-                    string p88,
-                    string p89,
-                    string p90,
-                    int p91,
-                    int p92,
-                    string p93,
+                    string p1, 
+                    System.DateTime p2, 
+                    System.DateTime p3, 
+                    string p4, 
+                    string p5, 
+                    double p6, 
+                    double p7, 
+                    double p8, 
+                    double p9, 
+                    string p10, 
+                    string p11, 
+                    string p12, 
+                    string p13, 
+                    string p14, 
+                    string p15, 
+                    string p16, 
+                    string p17, 
+                    string p18, 
+                    string p19, 
+                    string p20, 
+                    string p21, 
+                    string p22, 
+                    string p23, 
+                    string p24, 
+                    string p25, 
+                    string p26, 
+                    string p27, 
+                    string p28, 
+                    string p29, 
+                    string p30, 
+                    string p31, 
+                    string p32, 
+                    string p33, 
+                    string p34, 
+                    string p35, 
+                    string p36, 
+                    string p37, 
+                    string p38, 
+                    string p39, 
+                    string p40, 
+                    string p41, 
+                    string p42, 
+                    int p43, 
+                    int p44, 
+                    string p45, 
+                    int p46, 
+                    uint p47, 
+                    string p48, 
+                    System.DateTime p49, 
+                    System.DateTime p50, 
+                    string p51, 
+                    string p52, 
+                    double p53, 
+                    double p54, 
+                    double p55, 
+                    double p56, 
+                    string p57, 
+                    string p58, 
+                    string p60, 
+                    string p61, 
+                    string p62, 
+                    string p63, 
+                    string p64, 
+                    string p65, 
+                    string p66, 
+                    string p67, 
+                    string p68, 
+                    string p69, 
+                    string p70, 
+                    string p71, 
+                    string p72, 
+                    string p73, 
+                    string p74, 
+                    string p75, 
+                    string p76, 
+                    string p77, 
+                    string p78, 
+                    string p79, 
+                    string p80, 
+                    string p81, 
+                    string p82, 
+                    string p83, 
+                    string p84, 
+                    string p85, 
+                    string p86, 
+                    string p87, 
+                    string p88, 
+                    string p89, 
+                    string p90, 
+                    int p91, 
+                    int p92, 
+                    string p93, 
                     int p94) {
             if ((p1 == null)) {
                 throw new global::System.ArgumentNullException("p1");
@@ -13071,7 +13071,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             this.Adapter.UpdateCommand.Parameters[93].Value = ((int)(p94));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.UpdateCommand.Connection.Open();
             }
@@ -13085,7 +13085,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -13099,7 +13099,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 command.Parameters[1].Value = ((string)(year));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
@@ -13112,7 +13112,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                     command.Connection.Close();
                 }
             }
-            if (((returnValue == null)
+            if (((returnValue == null) 
                         || (returnValue.GetType() == typeof(global::System.DBNull)))) {
                 return null;
             }
@@ -13120,7 +13120,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return ((string)(returnValue));
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -13140,7 +13140,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 command.Parameters[1].Value = ((string)(OrderNumber));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
@@ -13156,7 +13156,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return returnValue;
         }
     }
-
+    
     /// <summary>
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
@@ -13167,23 +13167,23 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class spectaclesTableAdapter : global::System.ComponentModel.Component {
-
+        
         private global::MySql.Data.MySqlClient.MySqlDataAdapter _adapter;
-
+        
         private global::MySql.Data.MySqlClient.MySqlConnection _connection;
-
+        
         private global::MySql.Data.MySqlClient.MySqlTransaction _transaction;
-
+        
         private global::MySql.Data.MySqlClient.MySqlCommand[] _commandCollection;
-
+        
         private bool _clearBeforeFill;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public spectaclesTableAdapter() {
             this.ClearBeforeFill = true;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected internal global::MySql.Data.MySqlClient.MySqlDataAdapter Adapter {
@@ -13194,7 +13194,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._adapter;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlConnection Connection {
@@ -13222,7 +13222,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal global::MySql.Data.MySqlClient.MySqlTransaction Transaction {
@@ -13234,21 +13234,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
                     this.CommandCollection[i].Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.DeleteCommand != null))) {
                     this.Adapter.DeleteCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.InsertCommand != null))) {
                     this.Adapter.InsertCommand.Transaction = this._transaction;
                 }
-                if (((this.Adapter != null)
+                if (((this.Adapter != null) 
                             && (this.Adapter.UpdateCommand != null))) {
                     this.Adapter.UpdateCommand.Transaction = this._transaction;
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected global::MySql.Data.MySqlClient.MySqlCommand[] CommandCollection {
@@ -13259,7 +13259,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return this._commandCollection;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool ClearBeforeFill {
@@ -13270,7 +13270,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._clearBeforeFill = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
@@ -14270,23 +14270,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
             this._connection.ConnectionString = global::TechnoVision.Properties.Settings.Default.technovisionConnectionString;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
             this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[3];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-
             this._commandCollection[0].CommandText = "SELECT * FROM spectacles";
-
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[1].Connection = this.Connection;
@@ -14329,7 +14327,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[2].Parameters.Add(param);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -14342,7 +14340,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -14353,21 +14351,21 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet.spectaclesDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(technovisionDataSet dataSet) {
             return this.Adapter.Update(dataSet, "spectacles");
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -14375,50 +14373,50 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
                         dataRow});
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
         public virtual int Delete(
-                    int p1,
-                    string p2,
-                    System.DateTime p3,
-                    System.DateTime p4,
-                    string p5,
-                    double p6,
-                    double p7,
-                    double p8,
-                    double p9,
-                    string p10,
-                    double p11,
-                    double p12,
-                    string p13,
-                    string p14,
-                    string p15,
-                    string p16,
-                    string p17,
-                    string p18,
-                    string p19,
-                    string p20,
-                    string p21,
-                    string p22,
-                    string p23,
-                    string p24,
-                    string p25,
-                    string p26,
-                    string p27,
-                    string p28,
-                    int p29,
-                    int p30,
-                    string p31,
+                    int p1, 
+                    string p2, 
+                    System.DateTime p3, 
+                    System.DateTime p4, 
+                    string p5, 
+                    double p6, 
+                    double p7, 
+                    double p8, 
+                    double p9, 
+                    string p10, 
+                    double p11, 
+                    double p12, 
+                    string p13, 
+                    string p14, 
+                    string p15, 
+                    string p16, 
+                    string p17, 
+                    string p18, 
+                    string p19, 
+                    string p20, 
+                    string p21, 
+                    string p22, 
+                    string p23, 
+                    string p24, 
+                    string p25, 
+                    string p26, 
+                    string p27, 
+                    string p28, 
+                    int p29, 
+                    int p30, 
+                    string p31, 
                     int p32) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(p1));
             if ((p2 == null)) {
@@ -14553,7 +14551,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             this.Adapter.DeleteCommand.Parameters[31].Value = ((int)(p32));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.DeleteCommand.Connection.Open();
             }
@@ -14567,42 +14565,42 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
         public virtual int Insert(
-                    string p1,
-                    System.DateTime p2,
-                    System.DateTime p3,
-                    string p4,
-                    double p5,
-                    double p6,
-                    double p7,
-                    double p8,
-                    string p9,
-                    double p10,
-                    double p11,
-                    string p12,
-                    string p13,
-                    string p14,
-                    string p15,
-                    string p16,
-                    string p17,
-                    string p18,
-                    string p19,
-                    string p20,
-                    string p21,
-                    string p22,
-                    string p23,
-                    string p24,
-                    string p25,
-                    string p26,
-                    string p27,
-                    int p28,
-                    int p29,
-                    string p30,
+                    string p1, 
+                    System.DateTime p2, 
+                    System.DateTime p3, 
+                    string p4, 
+                    double p5, 
+                    double p6, 
+                    double p7, 
+                    double p8, 
+                    string p9, 
+                    double p10, 
+                    double p11, 
+                    string p12, 
+                    string p13, 
+                    string p14, 
+                    string p15, 
+                    string p16, 
+                    string p17, 
+                    string p18, 
+                    string p19, 
+                    string p20, 
+                    string p21, 
+                    string p22, 
+                    string p23, 
+                    string p24, 
+                    string p25, 
+                    string p26, 
+                    string p27, 
+                    int p28, 
+                    int p29, 
+                    string p30, 
                     int p31) {
             if ((p1 == null)) {
                 throw new global::System.ArgumentNullException("p1");
@@ -14736,7 +14734,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             this.Adapter.InsertCommand.Parameters[30].Value = ((int)(p31));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.InsertCommand.Connection.Open();
             }
@@ -14750,74 +14748,74 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string p1,
-                    System.DateTime p2,
-                    System.DateTime p3,
-                    string p4,
-                    double p5,
-                    double p6,
-                    double p7,
-                    double p8,
-                    string p9,
-                    double p10,
-                    double p11,
-                    string p12,
-                    string p13,
-                    string p14,
-                    string p15,
-                    string p16,
-                    string p17,
-                    string p18,
-                    string p19,
-                    string p20,
-                    string p21,
-                    string p22,
-                    string p23,
-                    string p24,
-                    string p25,
-                    string p26,
-                    string p27,
-                    int p28,
-                    int p29,
-                    string p30,
-                    int p31,
-                    int p32,
-                    string p33,
-                    System.DateTime p34,
-                    System.DateTime p35,
-                    string p36,
-                    double p37,
-                    double p38,
-                    double p39,
-                    double p40,
-                    string p41,
-                    double p42,
-                    double p43,
-                    string p44,
-                    string p45,
-                    string p46,
-                    string p47,
-                    string p48,
-                    string p49,
-                    string p50,
-                    string p51,
-                    string p52,
-                    string p53,
-                    string p54,
-                    string p55,
-                    string p56,
-                    string p57,
-                    string p58,
-                    string p59,
-                    int p60,
-                    int p61,
-                    string p62,
+                    string p1, 
+                    System.DateTime p2, 
+                    System.DateTime p3, 
+                    string p4, 
+                    double p5, 
+                    double p6, 
+                    double p7, 
+                    double p8, 
+                    string p9, 
+                    double p10, 
+                    double p11, 
+                    string p12, 
+                    string p13, 
+                    string p14, 
+                    string p15, 
+                    string p16, 
+                    string p17, 
+                    string p18, 
+                    string p19, 
+                    string p20, 
+                    string p21, 
+                    string p22, 
+                    string p23, 
+                    string p24, 
+                    string p25, 
+                    string p26, 
+                    string p27, 
+                    int p28, 
+                    int p29, 
+                    string p30, 
+                    int p31, 
+                    int p32, 
+                    string p33, 
+                    System.DateTime p34, 
+                    System.DateTime p35, 
+                    string p36, 
+                    double p37, 
+                    double p38, 
+                    double p39, 
+                    double p40, 
+                    string p41, 
+                    double p42, 
+                    double p43, 
+                    string p44, 
+                    string p45, 
+                    string p46, 
+                    string p47, 
+                    string p48, 
+                    string p49, 
+                    string p50, 
+                    string p51, 
+                    string p52, 
+                    string p53, 
+                    string p54, 
+                    string p55, 
+                    string p56, 
+                    string p57, 
+                    string p58, 
+                    string p59, 
+                    int p60, 
+                    int p61, 
+                    string p62, 
                     int p63) {
             if ((p1 == null)) {
                 throw new global::System.ArgumentNullException("p1");
@@ -15083,7 +15081,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             this.Adapter.UpdateCommand.Parameters[62].Value = ((int)(p63));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.UpdateCommand.Connection.Open();
             }
@@ -15097,7 +15095,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 }
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -15111,7 +15109,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 command.Parameters[1].Value = ((object)(year));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
@@ -15124,7 +15122,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                     command.Connection.Close();
                 }
             }
-            if (((returnValue == null)
+            if (((returnValue == null) 
                         || (returnValue.GetType() == typeof(global::System.DBNull)))) {
                 return null;
             }
@@ -15132,7 +15130,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return ((object)(returnValue));
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
@@ -15152,7 +15150,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 command.Parameters[1].Value = ((string)(OrderNumber));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open)
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
@@ -15168,7 +15166,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             return returnValue;
         }
     }
-
+    
     /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
@@ -15178,31 +15176,31 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         "esigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapterManager")]
     public partial class TableAdapterManager : global::System.ComponentModel.Component {
-
+        
         private UpdateOrderOption _updateOrder;
-
+        
         private logsTableAdapter _logsTableAdapter;
-
+        
         private usersTableAdapter _usersTableAdapter;
-
+        
         private branchTableAdapter _branchTableAdapter;
-
+        
         private customerTableAdapter _customerTableAdapter;
-
+        
         private receiptTableAdapter _receiptTableAdapter;
-
+        
         private framesTableAdapter _framesTableAdapter;
-
+        
         private testersTableAdapter _testersTableAdapter;
-
+        
         private contactlenseTableAdapter _contactlenseTableAdapter;
-
+        
         private spectaclesTableAdapter _spectaclesTableAdapter;
-
+        
         private bool _backupDataSetBeforeUpdate;
-
+        
         private global::System.Data.IDbConnection _connection;
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public UpdateOrderOption UpdateOrder {
@@ -15213,7 +15211,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._updateOrder = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
@@ -15227,7 +15225,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._logsTableAdapter = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
@@ -15241,7 +15239,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._usersTableAdapter = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
@@ -15255,7 +15253,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._branchTableAdapter = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
@@ -15269,7 +15267,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._customerTableAdapter = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
@@ -15283,7 +15281,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._receiptTableAdapter = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
@@ -15297,7 +15295,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._framesTableAdapter = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
@@ -15311,7 +15309,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._testersTableAdapter = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
@@ -15325,7 +15323,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._contactlenseTableAdapter = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
@@ -15339,7 +15337,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._spectaclesTableAdapter = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
@@ -15350,7 +15348,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._backupDataSetBeforeUpdate = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -15359,39 +15357,39 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._logsTableAdapter != null)
+                if (((this._logsTableAdapter != null) 
                             && (this._logsTableAdapter.Connection != null))) {
                     return this._logsTableAdapter.Connection;
                 }
-                if (((this._usersTableAdapter != null)
+                if (((this._usersTableAdapter != null) 
                             && (this._usersTableAdapter.Connection != null))) {
                     return this._usersTableAdapter.Connection;
                 }
-                if (((this._branchTableAdapter != null)
+                if (((this._branchTableAdapter != null) 
                             && (this._branchTableAdapter.Connection != null))) {
                     return this._branchTableAdapter.Connection;
                 }
-                if (((this._customerTableAdapter != null)
+                if (((this._customerTableAdapter != null) 
                             && (this._customerTableAdapter.Connection != null))) {
                     return this._customerTableAdapter.Connection;
                 }
-                if (((this._receiptTableAdapter != null)
+                if (((this._receiptTableAdapter != null) 
                             && (this._receiptTableAdapter.Connection != null))) {
                     return this._receiptTableAdapter.Connection;
                 }
-                if (((this._framesTableAdapter != null)
+                if (((this._framesTableAdapter != null) 
                             && (this._framesTableAdapter.Connection != null))) {
                     return this._framesTableAdapter.Connection;
                 }
-                if (((this._testersTableAdapter != null)
+                if (((this._testersTableAdapter != null) 
                             && (this._testersTableAdapter.Connection != null))) {
                     return this._testersTableAdapter.Connection;
                 }
-                if (((this._contactlenseTableAdapter != null)
+                if (((this._contactlenseTableAdapter != null) 
                             && (this._contactlenseTableAdapter.Connection != null))) {
                     return this._contactlenseTableAdapter.Connection;
                 }
-                if (((this._spectaclesTableAdapter != null)
+                if (((this._spectaclesTableAdapter != null) 
                             && (this._spectaclesTableAdapter.Connection != null))) {
                     return this._spectaclesTableAdapter.Connection;
                 }
@@ -15401,7 +15399,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 this._connection = value;
             }
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
@@ -15438,7 +15436,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return count;
             }
         }
-
+        
         /// <summary>
         ///Update rows in top-down order.
         ///</summary>
@@ -15449,7 +15447,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             if ((this._logsTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.logs.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null)
+                if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._logsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
@@ -15458,7 +15456,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             if ((this._usersTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.users.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null)
+                if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._usersTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
@@ -15467,7 +15465,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             if ((this._branchTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.branch.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null)
+                if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._branchTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
@@ -15476,7 +15474,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             if ((this._customerTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.customer.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null)
+                if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._customerTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
@@ -15485,7 +15483,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             if ((this._receiptTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.receipt.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null)
+                if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._receiptTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
@@ -15494,7 +15492,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             if ((this._framesTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.frames.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null)
+                if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._framesTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
@@ -15503,7 +15501,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             if ((this._testersTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.testers.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null)
+                if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._testersTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
@@ -15512,7 +15510,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             if ((this._contactlenseTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.contactlense.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null)
+                if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._contactlenseTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
@@ -15521,7 +15519,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             if ((this._spectaclesTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.spectacles.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null)
+                if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._spectaclesTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
@@ -15529,7 +15527,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             return result;
         }
-
+        
         /// <summary>
         ///Insert rows in top-down order.
         ///</summary>
@@ -15539,7 +15537,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int result = 0;
             if ((this._logsTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.logs.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null)
+                if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._logsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
@@ -15547,7 +15545,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._usersTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.users.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null)
+                if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._usersTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
@@ -15555,7 +15553,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._branchTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.branch.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null)
+                if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._branchTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
@@ -15563,7 +15561,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._customerTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.customer.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null)
+                if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._customerTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
@@ -15571,7 +15569,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._receiptTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.receipt.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null)
+                if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._receiptTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
@@ -15579,7 +15577,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._framesTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.frames.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null)
+                if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._framesTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
@@ -15587,7 +15585,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._testersTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.testers.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null)
+                if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._testersTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
@@ -15595,7 +15593,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._contactlenseTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.contactlense.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null)
+                if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._contactlenseTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
@@ -15603,7 +15601,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._spectaclesTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.spectacles.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null)
+                if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._spectaclesTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
@@ -15611,7 +15609,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             return result;
         }
-
+        
         /// <summary>
         ///Delete rows in bottom-up order.
         ///</summary>
@@ -15621,7 +15619,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             int result = 0;
             if ((this._spectaclesTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.spectacles.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null)
+                if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._spectaclesTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
@@ -15629,7 +15627,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._contactlenseTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.contactlense.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null)
+                if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._contactlenseTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
@@ -15637,7 +15635,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._testersTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.testers.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null)
+                if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._testersTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
@@ -15645,7 +15643,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._framesTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.frames.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null)
+                if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._framesTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
@@ -15653,7 +15651,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._receiptTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.receipt.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null)
+                if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._receiptTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
@@ -15661,7 +15659,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._customerTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.customer.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null)
+                if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._customerTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
@@ -15669,7 +15667,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._branchTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.branch.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null)
+                if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._branchTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
@@ -15677,7 +15675,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._usersTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.users.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null)
+                if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._usersTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
@@ -15685,7 +15683,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             if ((this._logsTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.logs.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null)
+                if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._logsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
@@ -15693,18 +15691,18 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             return result;
         }
-
+        
         /// <summary>
         ///Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private global::System.Data.DataRow[] GetRealUpdatedRows(global::System.Data.DataRow[] updatedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
-            if (((updatedRows == null)
+            if (((updatedRows == null) 
                         || (updatedRows.Length < 1))) {
                 return updatedRows;
             }
-            if (((allAddedRows == null)
+            if (((allAddedRows == null) 
                         || (allAddedRows.Count < 1))) {
                 return updatedRows;
             }
@@ -15717,7 +15715,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             return realUpdatedRows.ToArray();
         }
-
+        
         /// <summary>
         ///Update all changes to the dataset.
         ///</summary>
@@ -15730,47 +15728,47 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._logsTableAdapter != null)
+            if (((this._logsTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._logsTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._usersTableAdapter != null)
+            if (((this._usersTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._usersTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._branchTableAdapter != null)
+            if (((this._branchTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._branchTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._customerTableAdapter != null)
+            if (((this._customerTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._customerTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._receiptTableAdapter != null)
+            if (((this._receiptTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._receiptTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._framesTableAdapter != null)
+            if (((this._framesTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._framesTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._testersTableAdapter != null)
+            if (((this._testersTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._testersTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._contactlenseTableAdapter != null)
+            if (((this._contactlenseTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._contactlenseTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._spectaclesTableAdapter != null)
+            if (((this._spectaclesTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._spectaclesTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
@@ -15781,7 +15779,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                         "ger TableAdapter property to a valid TableAdapter instance.");
             }
             bool workConnOpened = false;
-            if (((workConnection.State & global::System.Data.ConnectionState.Broken)
+            if (((workConnection.State & global::System.Data.ConnectionState.Broken) 
                         == global::System.Data.ConnectionState.Broken)) {
                 workConnection.Close();
             }
@@ -15888,7 +15886,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                         adaptersWithAcceptChangesDuringUpdate.Add(this._spectaclesTableAdapter.Adapter);
                     }
                 }
-                //
+                // 
                 //---- Perform updates -----------
                 //
                 if ((this.UpdateOrder == UpdateOrderOption.UpdateInsertDelete)) {
@@ -15900,7 +15898,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                     result = (result + this.UpdateUpdatedRows(dataSet, allChangedRows, allAddedRows));
                 }
                 result = (result + this.UpdateDeletedRows(dataSet, allChangedRows));
-                //
+                // 
                 //---- Commit updates -----------
                 //
                 workTransaction.Commit();
@@ -15993,20 +15991,20 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             return result;
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected virtual void SortSelfReferenceRows(global::System.Data.DataRow[] rows, global::System.Data.DataRelation relation, bool childFirst) {
             global::System.Array.Sort<global::System.Data.DataRow>(rows, new SelfReferenceComparer(relation, childFirst));
         }
-
+        
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         protected virtual bool MatchTableAdapterConnection(global::System.Data.IDbConnection inputConnection) {
             if ((this._connection != null)) {
                 return true;
             }
-            if (((this.Connection == null)
+            if (((this.Connection == null) 
                         || (inputConnection == null))) {
                 return true;
             }
@@ -16015,28 +16013,28 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             return false;
         }
-
+        
         /// <summary>
         ///Update Order Option
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public enum UpdateOrderOption {
-
+            
             InsertUpdateDelete = 0,
-
+            
             UpdateInsertDelete = 1,
         }
-
+        
         /// <summary>
         ///Used to sort self-referenced table's rows
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private class SelfReferenceComparer : object, global::System.Collections.Generic.IComparer<global::System.Data.DataRow> {
-
+            
             private global::System.Data.DataRelation _relation;
-
+            
             private int _childFirst;
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal SelfReferenceComparer(global::System.Data.DataRelation relation, bool childFirst) {
@@ -16048,7 +16046,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                     this._childFirst = 1;
                 }
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private global::System.Data.DataRow GetRoot(global::System.Data.DataRow row, out int distance) {
@@ -16061,8 +16059,8 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
 
                 global::System.Data.DataRow parent = row.GetParentRow(this._relation, global::System.Data.DataRowVersion.Default);
                 for (
-                ; ((parent != null)
-                            && (traversedRows.ContainsKey(parent) == false));
+                ; ((parent != null) 
+                            && (traversedRows.ContainsKey(parent) == false)); 
                 ) {
                     distance = (distance + 1);
                     root = parent;
@@ -16075,8 +16073,8 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                     traversedRows[row] = row;
                     parent = row.GetParentRow(this._relation, global::System.Data.DataRowVersion.Original);
                     for (
-                    ; ((parent != null)
-                                && (traversedRows.ContainsKey(parent) == false));
+                    ; ((parent != null) 
+                                && (traversedRows.ContainsKey(parent) == false)); 
                     ) {
                         distance = (distance + 1);
                         root = parent;
@@ -16087,7 +16085,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
 
                 return root;
             }
-
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Compare(global::System.Data.DataRow row1, global::System.Data.DataRow row2) {
@@ -16111,7 +16109,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                     return (this._childFirst * distance1.CompareTo(distance2));
                 }
                 else {
-                    global::System.Diagnostics.Debug.Assert(((root1.Table != null)
+                    global::System.Diagnostics.Debug.Assert(((root1.Table != null) 
                                     && (root2.Table != null)));
                     if ((root1.Table.Rows.IndexOf(root1) < root2.Table.Rows.IndexOf(root2))) {
                         return -1;
