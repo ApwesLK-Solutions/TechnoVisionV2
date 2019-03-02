@@ -8,7 +8,7 @@ namespace TechnoVision.controller
 {
     class SpecOrderController
     {
-        public static void FillFormOne(string orderNumber, string orderDate, string dueDate, string paymentPlan, string paymentMethod, string testBy, string orderStatus, double eyewear, double lense, double total, double advance, double discount, double balance, int reminderDays)
+        public static void FillFormOne(string orderNumber, string orderDate, string dueDate, string paymentPlan, string paymentMethod, string testBy, string orderStatus, double eyewear, double lense, double total, double advance, double discount, double balance, int reminderDays , int custid)
         {
             SpecOrder.OrderNumber = orderNumber;
             SpecOrder.OrderDate = orderDate;
@@ -24,6 +24,7 @@ namespace TechnoVision.controller
             SpecOrder.Discount = discount;
             SpecOrder.Balance = balance;
             SpecOrder.ReminderDays = reminderDays;
+            SpecOrder.custID = custid;
         }
 
         public static void FillFormTwo(string distRightSph, string distRightCyl, string distRightAxis, string distLeftSph, string distLeftCyl, string distLeftAxis, string addRight, string addLeft, string lenseType, string frame, string pD, string segmentHeight, string specialInstruction, string remarks)

@@ -8,6 +8,7 @@ namespace TechnoVision.model
 {
     class LenseOrder
     {
+        public static int custID;
         public static string OrderNumber;
         public static string OrderDate;
         public static string DueDate;
