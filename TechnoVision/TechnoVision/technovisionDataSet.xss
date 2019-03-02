@@ -13,8 +13,8 @@
     <Shape ID="DesignTable:receipt" ZOrder="2" X="237" Y="41" Height="250" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="145" />
     <Shape ID="DesignTable:frames" ZOrder="3" X="881" Y="218" Height="62" Width="215" AdapterExpanded="false" DataTableExpanded="false" OldAdapterHeight="76" OldDataTableHeight="76" SplitterPosition="28" />
     <Shape ID="DesignTable:testers" ZOrder="6" X="876" Y="301" Height="62" Width="214" AdapterExpanded="false" DataTableExpanded="false" OldAdapterHeight="76" OldDataTableHeight="76" SplitterPosition="28" />
-    <Shape ID="DesignTable:contactlense" ZOrder="1" X="1884" Y="94" Height="388" Width="293" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="306" />
-    <Shape ID="DesignTable:spectacles" ZOrder="4" X="1556" Y="93" Height="388" Width="293" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="306" />
+    <Shape ID="DesignTable:contactlense" ZOrder="1" X="1884" Y="94" Height="411" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="306" />
+    <Shape ID="DesignTable:spectacles" ZOrder="4" X="1556" Y="93" Height="411" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="306" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

@@ -3925,7 +3925,7 @@ namespace TechnoVision {
             
             private global::System.Data.DataColumn columnYear;
             
-            private global::System.Data.DataColumn columnCustId;
+            private global::System.Data.DataColumn columnCustomerId;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -4210,9 +4210,9 @@ namespace TechnoVision {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CustIdColumn {
+            public global::System.Data.DataColumn CustomerIdColumn {
                 get {
-                    return this.columnCustId;
+                    return this.columnCustomerId;
                 }
             }
             
@@ -4284,7 +4284,7 @@ namespace TechnoVision {
                         int ReminderDate, 
                         int Branch, 
                         string Year, 
-                        int CustId) {
+                        int CustomerId) {
                 spectaclesRow rowspectaclesRow = ((spectaclesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -4318,7 +4318,7 @@ namespace TechnoVision {
                         ReminderDate,
                         Branch,
                         Year,
-                        CustId};
+                        CustomerId};
                 rowspectaclesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowspectaclesRow);
                 return rowspectaclesRow;
@@ -4379,7 +4379,7 @@ namespace TechnoVision {
                 this.columnReminderDate = base.Columns["ReminderDate"];
                 this.columnBranch = base.Columns["Branch"];
                 this.columnYear = base.Columns["Year"];
-                this.columnCustId = base.Columns["CustId"];
+                this.columnCustomerId = base.Columns["CustomerId"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4447,8 +4447,8 @@ namespace TechnoVision {
                 base.Columns.Add(this.columnBranch);
                 this.columnYear = new global::System.Data.DataColumn("Year", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnYear);
-                this.columnCustId = new global::System.Data.DataColumn("CustId", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCustId);
+                this.columnCustomerId = new global::System.Data.DataColumn("CustomerId", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCustomerId);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -4506,7 +4506,7 @@ namespace TechnoVision {
                 this.columnBranch.AllowDBNull = false;
                 this.columnYear.AllowDBNull = false;
                 this.columnYear.MaxLength = 45;
-                this.columnCustId.AllowDBNull = false;
+                this.columnCustomerId.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6057,12 +6057,12 @@ namespace TechnoVision {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int CustId {
+            public int CustomerId {
                 get {
-                    return ((int)(this[this.tablespectacles.CustIdColumn]));
+                    return ((int)(this[this.tablespectacles.CustomerIdColumn]));
                 }
                 set {
-                    this[this.tablespectacles.CustIdColumn] = value;
+                    this[this.tablespectacles.CustomerIdColumn] = value;
                 }
             }
         }
@@ -11805,7 +11805,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[2];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[3];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT * FROM `contactlense`";
@@ -11830,6 +11830,28 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "Year";
             this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "UPDATE `contactlense`  SET  `OrderStatus` = @Status WHERE `OrderNumber` = @OrderN" +
+                "umber";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@Status";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 15;
+            param.IsNullable = true;
+            param.SourceColumn = "OrderStatus";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@OrderNumber";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "OrderNumber";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13098,6 +13120,41 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
                 return ((string)(returnValue));
             }
         }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateOrderStatus(string Status, string OrderNumber) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[2];
+            if ((Status == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Status));
+            }
+            if ((OrderNumber == null)) {
+                throw new global::System.ArgumentNullException("OrderNumber");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(OrderNumber));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
     }
     
     /// <summary>
@@ -13252,11 +13309,11 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("ReminderDate", "ReminderDate");
             tableMapping.ColumnMappings.Add("Branch", "Branch");
             tableMapping.ColumnMappings.Add("Year", "Year");
-            tableMapping.ColumnMappings.Add("CustId", "CustId");
+            tableMapping.ColumnMappings.Add("CustomerId", "CustomerId");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `spectacles` WHERE ((`Id` = @p1) AND (`OrderNumber` = @p2) AND (`OrderDate` = @p3) AND (`DueDate` = @p4) AND (`OrderStatus` = @p5) AND (`Total` = @p6) AND (`Advance` = @p7) AND (`Discount` = @p8) AND (`Balance` = @p9) AND (`TestBy` = @p10) AND (`EyeWear` = @p11) AND (`Lense` = @p12) AND (`PaymentPlan` = @p13) AND (`PaymentMethod` = @p14) AND (`DistRightSph` = @p15) AND (`DistRightCyl` = @p16) AND (`DistRightAxis` = @p17) AND (`DistLeftSph` = @p18) AND (`DistLeftCyl` = @p19) AND (`DistLeftAxis` = @p20) AND (`AddRight` = @p21) AND (`AddLeft` = @p22) AND (`LenseType` = @p23) AND (`Frame` = @p24) AND (`PD` = @p25) AND (`SegmentHight` = @p26) AND (`SpecialInstractions` = @p27) AND (`Remarks` = @p28) AND (`ReminderDate` = @p29) AND (`Branch` = @p30) AND (`Year` = @p31) AND (`CustId` = @p32))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `spectacles` WHERE ((`Id` = @p1) AND (`OrderNumber` = @p2) AND (`OrderDate` = @p3) AND (`DueDate` = @p4) AND (`OrderStatus` = @p5) AND (`Total` = @p6) AND (`Advance` = @p7) AND (`Discount` = @p8) AND (`Balance` = @p9) AND (`TestBy` = @p10) AND (`EyeWear` = @p11) AND (`Lense` = @p12) AND (`PaymentPlan` = @p13) AND (`PaymentMethod` = @p14) AND (`DistRightSph` = @p15) AND (`DistRightCyl` = @p16) AND (`DistRightAxis` = @p17) AND (`DistLeftSph` = @p18) AND (`DistLeftCyl` = @p19) AND (`DistLeftAxis` = @p20) AND (`AddRight` = @p21) AND (`AddLeft` = @p22) AND (`LenseType` = @p23) AND (`Frame` = @p24) AND (`PD` = @p25) AND (`SegmentHight` = @p26) AND (`SpecialInstractions` = @p27) AND (`Remarks` = @p28) AND (`ReminderDate` = @p29) AND (`Branch` = @p30) AND (`Year` = @p31) AND (`CustomerId` = @p32))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -13511,12 +13568,12 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "CustId";
+            param.SourceColumn = "CustomerId";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO `spectacles` (`OrderNumber`, `OrderDate`, `DueDate`, `OrderStatus`, `Total`, `Advance`, `Discount`, `Balance`, `TestBy`, `EyeWear`, `Lense`, `PaymentPlan`, `PaymentMethod`, `DistRightSph`, `DistRightCyl`, `DistRightAxis`, `DistLeftSph`, `DistLeftCyl`, `DistLeftAxis`, `AddRight`, `AddLeft`, `LenseType`, `Frame`, `PD`, `SegmentHight`, `SpecialInstractions`, `Remarks`, `ReminderDate`, `Branch`, `Year`, `CustId`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO `spectacles` (`OrderNumber`, `OrderDate`, `DueDate`, `OrderStatus`, `Total`, `Advance`, `Discount`, `Balance`, `TestBy`, `EyeWear`, `Lense`, `PaymentPlan`, `PaymentMethod`, `DistRightSph`, `DistRightCyl`, `DistRightAxis`, `DistLeftSph`, `DistLeftCyl`, `DistLeftAxis`, `AddRight`, `AddLeft`, `LenseType`, `Frame`, `PD`, `SegmentHight`, `SpecialInstractions`, `Remarks`, `ReminderDate`, `Branch`, `Year`, `CustomerId`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -13733,11 +13790,11 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "CustId";
+            param.SourceColumn = "CustomerId";
             this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `spectacles` SET `OrderNumber` = @p1, `OrderDate` = @p2, `DueDate` = @p3, `OrderStatus` = @p4, `Total` = @p5, `Advance` = @p6, `Discount` = @p7, `Balance` = @p8, `TestBy` = @p9, `EyeWear` = @p10, `Lense` = @p11, `PaymentPlan` = @p12, `PaymentMethod` = @p13, `DistRightSph` = @p14, `DistRightCyl` = @p15, `DistRightAxis` = @p16, `DistLeftSph` = @p17, `DistLeftCyl` = @p18, `DistLeftAxis` = @p19, `AddRight` = @p20, `AddLeft` = @p21, `LenseType` = @p22, `Frame` = @p23, `PD` = @p24, `SegmentHight` = @p25, `SpecialInstractions` = @p26, `Remarks` = @p27, `ReminderDate` = @p28, `Branch` = @p29, `Year` = @p30, `CustId` = @p31 WHERE ((`Id` = @p32) AND (`OrderNumber` = @p33) AND (`OrderDate` = @p34) AND (`DueDate` = @p35) AND (`OrderStatus` = @p36) AND (`Total` = @p37) AND (`Advance` = @p38) AND (`Discount` = @p39) AND (`Balance` = @p40) AND (`TestBy` = @p41) AND (`EyeWear` = @p42) AND (`Lense` = @p43) AND (`PaymentPlan` = @p44) AND (`PaymentMethod` = @p45) AND (`DistRightSph` = @p46) AND (`DistRightCyl` = @p47) AND (`DistRightAxis` = @p48) AND (`DistLeftSph` = @p49) AND (`DistLeftCyl` = @p50) AND (`DistLeftAxis` = @p51) AND (`AddRight` = @p52) AND (`AddLeft` = @p53) AND (`LenseType` = @p54) AND (`Frame` = @p55) AND (`PD` = @p56) AND (`SegmentHight` = @p57) AND (`SpecialInstractions` = @p58) AND (`Remarks` = @p59) AND (`ReminderDate` = @p60) AND (`Branch` = @p61) AND (`Year` = @p62) AND (`CustId` = @p63))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `spectacles` SET `OrderNumber` = @p1, `OrderDate` = @p2, `DueDate` = @p3, `OrderStatus` = @p4, `Total` = @p5, `Advance` = @p6, `Discount` = @p7, `Balance` = @p8, `TestBy` = @p9, `EyeWear` = @p10, `Lense` = @p11, `PaymentPlan` = @p12, `PaymentMethod` = @p13, `DistRightSph` = @p14, `DistRightCyl` = @p15, `DistRightAxis` = @p16, `DistLeftSph` = @p17, `DistLeftCyl` = @p18, `DistLeftAxis` = @p19, `AddRight` = @p20, `AddLeft` = @p21, `LenseType` = @p22, `Frame` = @p23, `PD` = @p24, `SegmentHight` = @p25, `SpecialInstractions` = @p26, `Remarks` = @p27, `ReminderDate` = @p28, `Branch` = @p29, `Year` = @p30, `CustomerId` = @p31 WHERE ((`Id` = @p32) AND (`OrderNumber` = @p33) AND (`OrderDate` = @p34) AND (`DueDate` = @p35) AND (`OrderStatus` = @p36) AND (`Total` = @p37) AND (`Advance` = @p38) AND (`Discount` = @p39) AND (`Balance` = @p40) AND (`TestBy` = @p41) AND (`EyeWear` = @p42) AND (`Lense` = @p43) AND (`PaymentPlan` = @p44) AND (`PaymentMethod` = @p45) AND (`DistRightSph` = @p46) AND (`DistRightCyl` = @p47) AND (`DistRightAxis` = @p48) AND (`DistLeftSph` = @p49) AND (`DistLeftCyl` = @p50) AND (`DistLeftAxis` = @p51) AND (`AddRight` = @p52) AND (`AddLeft` = @p53) AND (`LenseType` = @p54) AND (`Frame` = @p55) AND (`PD` = @p56) AND (`SegmentHight` = @p57) AND (`SpecialInstractions` = @p58) AND (`Remarks` = @p59) AND (`ReminderDate` = @p60) AND (`Branch` = @p61) AND (`Year` = @p62) AND (`CustomerId` = @p63))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -13954,7 +14011,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "CustId";
+            param.SourceColumn = "CustomerId";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p32";
@@ -14209,7 +14266,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "CustId";
+            param.SourceColumn = "CustomerId";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
         }
@@ -14224,10 +14281,10 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[2];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[3];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT * FROM `spectacles`";
+            this._commandCollection[0].CommandText = @"SELECT Id, OrderNumber, OrderDate, DueDate, OrderStatus, Total, Advance, Discount, Balance, TestBy, EyeWear, Lense, PaymentPlan, PaymentMethod, DistRightSph, DistRightCyl, DistRightAxis, DistLeftSph, DistLeftCyl, DistLeftAxis, AddRight, AddLeft, LenseType, Frame, PD, SegmentHight, SpecialInstractions, Remarks, ReminderDate, Branch, Year, CustomerId FROM spectacles";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[1].Connection = this.Connection;
@@ -14247,6 +14304,28 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "";
             this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "UPDATE `spectacles` SET  `OrderStatus` = @Status WHERE `OrderNumber` = @OrderNumb" +
+                "er";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@Status";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 45;
+            param.IsNullable = true;
+            param.SourceColumn = "OrderStatus";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@OrderNumber";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "OrderNumber";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15050,6 +15129,41 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             else {
                 return ((object)(returnValue));
             }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateOrderStatus(string Status, string OrderNumber) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[2];
+            if ((Status == null)) {
+                throw new global::System.ArgumentNullException("Status");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Status));
+            }
+            if ((OrderNumber == null)) {
+                throw new global::System.ArgumentNullException("OrderNumber");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(OrderNumber));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
