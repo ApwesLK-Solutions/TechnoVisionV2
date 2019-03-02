@@ -23,5 +23,12 @@ namespace TechnoVision.view
             this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
 
         }
+
+        private void BtnAddBranch_Click(object sender, EventArgs e)
+        {
+            //cover with try
+            technovisionDataSetTableAdapters.branchTableAdapter t = new technovisionDataSetTableAdapters.branchTableAdapter();
+            t.Insert(TxtBranchName.Text, TxtMasterPassword.Text);
+        }
     }
 }

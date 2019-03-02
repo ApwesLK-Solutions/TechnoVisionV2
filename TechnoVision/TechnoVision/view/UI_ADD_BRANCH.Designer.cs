@@ -33,16 +33,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GrdBranch = new MetroFramework.Controls.MetroGrid();
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.branchBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.branchTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.branchTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.branchNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.branchBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.branchTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.branchTableAdapter();
             this.TxtBranchName = new MetroFramework.Controls.MetroTextBox();
             this.BtnAddBranch = new MetroFramework.Controls.MetroButton();
+            this.TxtMasterPassword = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GrdBranch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // GrdBranch
@@ -101,20 +102,6 @@
             this.GrdBranch.Style = MetroFramework.MetroColorStyle.Green;
             this.GrdBranch.TabIndex = 0;
             // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // branchBindingSource
-            // 
-            this.branchBindingSource.DataMember = "branch";
-            this.branchBindingSource.DataSource = this.technovisionDataSet;
-            // 
-            // branchTableAdapter
-            // 
-            this.branchTableAdapter.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -128,6 +115,20 @@
             this.branchNameDataGridViewTextBoxColumn.HeaderText = "Branch Name";
             this.branchNameDataGridViewTextBoxColumn.Name = "branchNameDataGridViewTextBoxColumn";
             this.branchNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // branchBindingSource
+            // 
+            this.branchBindingSource.DataMember = "branch";
+            this.branchBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // branchTableAdapter
+            // 
+            this.branchTableAdapter.ClearBeforeFill = true;
             // 
             // TxtBranchName
             // 
@@ -177,13 +178,46 @@
             this.BtnAddBranch.UseCustomForeColor = true;
             this.BtnAddBranch.UseSelectable = true;
             this.BtnAddBranch.UseStyleColors = true;
+            this.BtnAddBranch.Click += new System.EventHandler(this.BtnAddBranch_Click);
+            // 
+            // TxtMasterPassword
+            // 
+            // 
+            // 
+            // 
+            this.TxtMasterPassword.CustomButton.Image = null;
+            this.TxtMasterPassword.CustomButton.Location = new System.Drawing.Point(201, 1);
+            this.TxtMasterPassword.CustomButton.Name = "";
+            this.TxtMasterPassword.CustomButton.Size = new System.Drawing.Size(33, 33);
+            this.TxtMasterPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtMasterPassword.CustomButton.TabIndex = 1;
+            this.TxtMasterPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtMasterPassword.CustomButton.UseSelectable = true;
+            this.TxtMasterPassword.CustomButton.Visible = false;
+            this.TxtMasterPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.TxtMasterPassword.Lines = new string[0];
+            this.TxtMasterPassword.Location = new System.Drawing.Point(119, 396);
+            this.TxtMasterPassword.MaxLength = 32767;
+            this.TxtMasterPassword.Name = "TxtMasterPassword";
+            this.TxtMasterPassword.PasswordChar = '*';
+            this.TxtMasterPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtMasterPassword.SelectedText = "";
+            this.TxtMasterPassword.SelectionLength = 0;
+            this.TxtMasterPassword.SelectionStart = 0;
+            this.TxtMasterPassword.ShortcutsEnabled = true;
+            this.TxtMasterPassword.Size = new System.Drawing.Size(235, 35);
+            this.TxtMasterPassword.TabIndex = 1;
+            this.TxtMasterPassword.UseSelectable = true;
+            this.TxtMasterPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtMasterPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // UI_ADD_BRANCH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 404);
+            this.ClientSize = new System.Drawing.Size(584, 438);
             this.Controls.Add(this.BtnAddBranch);
+            this.Controls.Add(this.TxtMasterPassword);
             this.Controls.Add(this.TxtBranchName);
             this.Controls.Add(this.GrdBranch);
             this.MaximizeBox = false;
@@ -193,8 +227,8 @@
             this.Text = "Add Branches";
             this.Load += new System.EventHandler(this.UI_ADD_BRANCH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GrdBranch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,5 +243,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn branchNameDataGridViewTextBoxColumn;
         private MetroFramework.Controls.MetroTextBox TxtBranchName;
         private MetroFramework.Controls.MetroButton BtnAddBranch;
+        private MetroFramework.Controls.MetroTextBox TxtMasterPassword;
     }
 }
