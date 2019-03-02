@@ -309,7 +309,7 @@
             this.TxtEyeWearAmount.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtEyeWearAmount.Lines = new string[] {
         "0"};
-            this.TxtEyeWearAmount.Location = new System.Drawing.Point(153, 180);
+            this.TxtEyeWearAmount.Location = new System.Drawing.Point(153, 185);
             this.TxtEyeWearAmount.MaxLength = 32767;
             this.TxtEyeWearAmount.Name = "TxtEyeWearAmount";
             this.TxtEyeWearAmount.PasswordChar = '\0';
@@ -461,7 +461,7 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel5.Location = new System.Drawing.Point(19, 188);
+            this.metroLabel5.Location = new System.Drawing.Point(19, 193);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(70, 20);
             this.metroLabel5.TabIndex = 119;

@@ -153,6 +153,12 @@
     <Compile Include="view\UI_DASHBOARD.Designer.cs">
       <DependentUpon>UI_DASHBOARD.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\UI_EDIT_CONTACT_LENSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UI_EDIT_CONTACT_LENSE.Designer.cs">
+      <DependentUpon>UI_EDIT_CONTACT_LENSE.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_EDIT_CUSTOMER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -292,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_DASHBOARD.resx">
       <DependentUpon>UI_DASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\UI_EDIT_CONTACT_LENSE.resx">
+      <DependentUpon>UI_EDIT_CONTACT_LENSE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_EDIT_CUSTOMER.resx">
       <DependentUpon>UI_EDIT_CUSTOMER.cs</DependentUpon>
