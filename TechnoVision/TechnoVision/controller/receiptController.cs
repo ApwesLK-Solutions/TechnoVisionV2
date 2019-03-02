@@ -15,7 +15,7 @@ namespace TechnoVision.controller
             {
                 technovisionDataSetTableAdapters.receiptTableAdapter t = new technovisionDataSetTableAdapters.receiptTableAdapter();
                 t.Insert(DateTime.Parse(Receipt.receiptDate), Receipt.orderNumber.ToString(), Receipt.paymentAmount, Receipt.branch);
-                CommonFunctions.WriteUserLog(Session.Username, "New Payment Receipt for Order Number " + Receipt.orderNumber + " Added to the System.");
+                CommonFunctions.WriteUserLog(Session.Username, "New Payment Receipt for " + Receipt.OrderType + " Order Number " + Receipt.orderNumber + " Added to the System.");
             }
             catch(Exception ex)
             {
