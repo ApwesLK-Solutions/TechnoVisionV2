@@ -23,6 +23,7 @@ namespace TechnoVision.view
         {
             usersBindingSource.EndEdit();
             usersTableAdapter.Update(technovisionDataSet);
+            CommonFunctions.WriteUserLog(Session.Username, "Changed the Password of " + username);
         }
 
         private void UI_EDIT_SYSTEM_USER_Load(object sender, EventArgs e)
