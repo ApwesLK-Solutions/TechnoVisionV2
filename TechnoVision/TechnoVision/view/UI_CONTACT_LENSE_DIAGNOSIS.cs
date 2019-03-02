@@ -39,7 +39,7 @@ namespace TechnoVision.view
                     receiptController.WriteReceipt();
                     CommonFunctions.ShowSuccess(this, "Order Number " + LenseOrder.OrderNumber + "Saved Succesfully...");
                     this.Dispose();
-                    new UI_ORDER_COMPLETE("L", SpecOrder.OrderNumber, Receipt.ReceiptNumber).Show();
+                    new UI_ORDER_COMPLETE("L", LenseOrder.OrderNumber, Receipt.ReceiptNumber).Show();
 
                 }
                 
