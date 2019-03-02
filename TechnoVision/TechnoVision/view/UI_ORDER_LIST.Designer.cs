@@ -47,41 +47,10 @@
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.spectaclesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.spectaclesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.spectaclesTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dueDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.advanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.discountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.balanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.testByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eyeWearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lenseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paymentPlanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paymentMethodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distRightSphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distRightCylDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distRightAxisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distLeftSphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distLeftCylDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distLeftAxisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addRightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addLeftDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lenseTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.frameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.segmentHightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.specialInstractionsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.remarksDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reminderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.branchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.LenseGrid = new MetroFramework.Controls.MetroGrid();
             this.contactlenseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.contactlenseTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.contactlenseTableAdapter();
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dueDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,39 +63,21 @@
             this.paymentMethodDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentPlanDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderStatusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oldRightSphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oldRightCylDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oldRightAxisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oldRightAddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oldLeftSphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oldLeftCylDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oldLeftAxisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.oldLeftAddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.presentRightSphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.presentRightCylDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.presentRightAxisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.presentRightAddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.presentLeftSphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.presentLeftCylDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.presentLeftAxisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.presentLeftAddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rightBcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rightPowDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rightDiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rightDeszDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.leftBcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.leftPowDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.leftDiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.leftDeszDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trailLenseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.overRefractDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kReadingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.blinkTestDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.specialInstractionsDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.remarksDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reminderDaysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.branchDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReminderDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dueDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.advanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.discountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.balanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.testByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentPlanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentMethodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reminderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.branchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
@@ -295,7 +246,6 @@
             this.SpecGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.SpecGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SpecGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
             this.orderNumberDataGridViewTextBoxColumn,
             this.orderDateDataGridViewTextBoxColumn,
             this.dueDateDataGridViewTextBoxColumn,
@@ -305,24 +255,8 @@
             this.discountDataGridViewTextBoxColumn,
             this.balanceDataGridViewTextBoxColumn,
             this.testByDataGridViewTextBoxColumn,
-            this.eyeWearDataGridViewTextBoxColumn,
-            this.lenseDataGridViewTextBoxColumn,
             this.paymentPlanDataGridViewTextBoxColumn,
             this.paymentMethodDataGridViewTextBoxColumn,
-            this.distRightSphDataGridViewTextBoxColumn,
-            this.distRightCylDataGridViewTextBoxColumn,
-            this.distRightAxisDataGridViewTextBoxColumn,
-            this.distLeftSphDataGridViewTextBoxColumn,
-            this.distLeftCylDataGridViewTextBoxColumn,
-            this.distLeftAxisDataGridViewTextBoxColumn,
-            this.addRightDataGridViewTextBoxColumn,
-            this.addLeftDataGridViewTextBoxColumn,
-            this.lenseTypeDataGridViewTextBoxColumn,
-            this.frameDataGridViewTextBoxColumn,
-            this.pDDataGridViewTextBoxColumn,
-            this.segmentHightDataGridViewTextBoxColumn,
-            this.specialInstractionsDataGridViewTextBoxColumn,
-            this.remarksDataGridViewTextBoxColumn,
             this.reminderDateDataGridViewTextBoxColumn,
             this.branchDataGridViewTextBoxColumn});
             this.SpecGrid.DataSource = this.spectaclesBindingSource;
@@ -369,216 +303,6 @@
             // 
             this.spectaclesTableAdapter.ClearBeforeFill = true;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // orderNumberDataGridViewTextBoxColumn
-            // 
-            this.orderNumberDataGridViewTextBoxColumn.DataPropertyName = "OrderNumber";
-            this.orderNumberDataGridViewTextBoxColumn.HeaderText = "OrderNumber";
-            this.orderNumberDataGridViewTextBoxColumn.Name = "orderNumberDataGridViewTextBoxColumn";
-            this.orderNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // orderDateDataGridViewTextBoxColumn
-            // 
-            this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn.HeaderText = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn.Name = "orderDateDataGridViewTextBoxColumn";
-            this.orderDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dueDateDataGridViewTextBoxColumn
-            // 
-            this.dueDateDataGridViewTextBoxColumn.DataPropertyName = "DueDate";
-            this.dueDateDataGridViewTextBoxColumn.HeaderText = "DueDate";
-            this.dueDateDataGridViewTextBoxColumn.Name = "dueDateDataGridViewTextBoxColumn";
-            this.dueDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // orderStatusDataGridViewTextBoxColumn
-            // 
-            this.orderStatusDataGridViewTextBoxColumn.DataPropertyName = "OrderStatus";
-            this.orderStatusDataGridViewTextBoxColumn.HeaderText = "OrderStatus";
-            this.orderStatusDataGridViewTextBoxColumn.Name = "orderStatusDataGridViewTextBoxColumn";
-            this.orderStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // totalDataGridViewTextBoxColumn
-            // 
-            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
-            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
-            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
-            this.totalDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // advanceDataGridViewTextBoxColumn
-            // 
-            this.advanceDataGridViewTextBoxColumn.DataPropertyName = "Advance";
-            this.advanceDataGridViewTextBoxColumn.HeaderText = "Advance";
-            this.advanceDataGridViewTextBoxColumn.Name = "advanceDataGridViewTextBoxColumn";
-            this.advanceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // discountDataGridViewTextBoxColumn
-            // 
-            this.discountDataGridViewTextBoxColumn.DataPropertyName = "Discount";
-            this.discountDataGridViewTextBoxColumn.HeaderText = "Discount";
-            this.discountDataGridViewTextBoxColumn.Name = "discountDataGridViewTextBoxColumn";
-            this.discountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // balanceDataGridViewTextBoxColumn
-            // 
-            this.balanceDataGridViewTextBoxColumn.DataPropertyName = "Balance";
-            this.balanceDataGridViewTextBoxColumn.HeaderText = "Balance";
-            this.balanceDataGridViewTextBoxColumn.Name = "balanceDataGridViewTextBoxColumn";
-            this.balanceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // testByDataGridViewTextBoxColumn
-            // 
-            this.testByDataGridViewTextBoxColumn.DataPropertyName = "TestBy";
-            this.testByDataGridViewTextBoxColumn.HeaderText = "TestBy";
-            this.testByDataGridViewTextBoxColumn.Name = "testByDataGridViewTextBoxColumn";
-            this.testByDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // eyeWearDataGridViewTextBoxColumn
-            // 
-            this.eyeWearDataGridViewTextBoxColumn.DataPropertyName = "EyeWear";
-            this.eyeWearDataGridViewTextBoxColumn.HeaderText = "EyeWear";
-            this.eyeWearDataGridViewTextBoxColumn.Name = "eyeWearDataGridViewTextBoxColumn";
-            this.eyeWearDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lenseDataGridViewTextBoxColumn
-            // 
-            this.lenseDataGridViewTextBoxColumn.DataPropertyName = "Lense";
-            this.lenseDataGridViewTextBoxColumn.HeaderText = "Lense";
-            this.lenseDataGridViewTextBoxColumn.Name = "lenseDataGridViewTextBoxColumn";
-            this.lenseDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // paymentPlanDataGridViewTextBoxColumn
-            // 
-            this.paymentPlanDataGridViewTextBoxColumn.DataPropertyName = "PaymentPlan";
-            this.paymentPlanDataGridViewTextBoxColumn.HeaderText = "PaymentPlan";
-            this.paymentPlanDataGridViewTextBoxColumn.Name = "paymentPlanDataGridViewTextBoxColumn";
-            this.paymentPlanDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // paymentMethodDataGridViewTextBoxColumn
-            // 
-            this.paymentMethodDataGridViewTextBoxColumn.DataPropertyName = "PaymentMethod";
-            this.paymentMethodDataGridViewTextBoxColumn.HeaderText = "PaymentMethod";
-            this.paymentMethodDataGridViewTextBoxColumn.Name = "paymentMethodDataGridViewTextBoxColumn";
-            this.paymentMethodDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distRightSphDataGridViewTextBoxColumn
-            // 
-            this.distRightSphDataGridViewTextBoxColumn.DataPropertyName = "DistRightSph";
-            this.distRightSphDataGridViewTextBoxColumn.HeaderText = "DistRightSph";
-            this.distRightSphDataGridViewTextBoxColumn.Name = "distRightSphDataGridViewTextBoxColumn";
-            this.distRightSphDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distRightCylDataGridViewTextBoxColumn
-            // 
-            this.distRightCylDataGridViewTextBoxColumn.DataPropertyName = "DistRightCyl";
-            this.distRightCylDataGridViewTextBoxColumn.HeaderText = "DistRightCyl";
-            this.distRightCylDataGridViewTextBoxColumn.Name = "distRightCylDataGridViewTextBoxColumn";
-            this.distRightCylDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distRightAxisDataGridViewTextBoxColumn
-            // 
-            this.distRightAxisDataGridViewTextBoxColumn.DataPropertyName = "DistRightAxis";
-            this.distRightAxisDataGridViewTextBoxColumn.HeaderText = "DistRightAxis";
-            this.distRightAxisDataGridViewTextBoxColumn.Name = "distRightAxisDataGridViewTextBoxColumn";
-            this.distRightAxisDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distLeftSphDataGridViewTextBoxColumn
-            // 
-            this.distLeftSphDataGridViewTextBoxColumn.DataPropertyName = "DistLeftSph";
-            this.distLeftSphDataGridViewTextBoxColumn.HeaderText = "DistLeftSph";
-            this.distLeftSphDataGridViewTextBoxColumn.Name = "distLeftSphDataGridViewTextBoxColumn";
-            this.distLeftSphDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distLeftCylDataGridViewTextBoxColumn
-            // 
-            this.distLeftCylDataGridViewTextBoxColumn.DataPropertyName = "DistLeftCyl";
-            this.distLeftCylDataGridViewTextBoxColumn.HeaderText = "DistLeftCyl";
-            this.distLeftCylDataGridViewTextBoxColumn.Name = "distLeftCylDataGridViewTextBoxColumn";
-            this.distLeftCylDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distLeftAxisDataGridViewTextBoxColumn
-            // 
-            this.distLeftAxisDataGridViewTextBoxColumn.DataPropertyName = "DistLeftAxis";
-            this.distLeftAxisDataGridViewTextBoxColumn.HeaderText = "DistLeftAxis";
-            this.distLeftAxisDataGridViewTextBoxColumn.Name = "distLeftAxisDataGridViewTextBoxColumn";
-            this.distLeftAxisDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // addRightDataGridViewTextBoxColumn
-            // 
-            this.addRightDataGridViewTextBoxColumn.DataPropertyName = "AddRight";
-            this.addRightDataGridViewTextBoxColumn.HeaderText = "AddRight";
-            this.addRightDataGridViewTextBoxColumn.Name = "addRightDataGridViewTextBoxColumn";
-            this.addRightDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // addLeftDataGridViewTextBoxColumn
-            // 
-            this.addLeftDataGridViewTextBoxColumn.DataPropertyName = "AddLeft";
-            this.addLeftDataGridViewTextBoxColumn.HeaderText = "AddLeft";
-            this.addLeftDataGridViewTextBoxColumn.Name = "addLeftDataGridViewTextBoxColumn";
-            this.addLeftDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lenseTypeDataGridViewTextBoxColumn
-            // 
-            this.lenseTypeDataGridViewTextBoxColumn.DataPropertyName = "LenseType";
-            this.lenseTypeDataGridViewTextBoxColumn.HeaderText = "LenseType";
-            this.lenseTypeDataGridViewTextBoxColumn.Name = "lenseTypeDataGridViewTextBoxColumn";
-            this.lenseTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // frameDataGridViewTextBoxColumn
-            // 
-            this.frameDataGridViewTextBoxColumn.DataPropertyName = "Frame";
-            this.frameDataGridViewTextBoxColumn.HeaderText = "Frame";
-            this.frameDataGridViewTextBoxColumn.Name = "frameDataGridViewTextBoxColumn";
-            this.frameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pDDataGridViewTextBoxColumn
-            // 
-            this.pDDataGridViewTextBoxColumn.DataPropertyName = "PD";
-            this.pDDataGridViewTextBoxColumn.HeaderText = "PD";
-            this.pDDataGridViewTextBoxColumn.Name = "pDDataGridViewTextBoxColumn";
-            this.pDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // segmentHightDataGridViewTextBoxColumn
-            // 
-            this.segmentHightDataGridViewTextBoxColumn.DataPropertyName = "SegmentHight";
-            this.segmentHightDataGridViewTextBoxColumn.HeaderText = "SegmentHight";
-            this.segmentHightDataGridViewTextBoxColumn.Name = "segmentHightDataGridViewTextBoxColumn";
-            this.segmentHightDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // specialInstractionsDataGridViewTextBoxColumn
-            // 
-            this.specialInstractionsDataGridViewTextBoxColumn.DataPropertyName = "SpecialInstractions";
-            this.specialInstractionsDataGridViewTextBoxColumn.HeaderText = "SpecialInstractions";
-            this.specialInstractionsDataGridViewTextBoxColumn.Name = "specialInstractionsDataGridViewTextBoxColumn";
-            this.specialInstractionsDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // remarksDataGridViewTextBoxColumn
-            // 
-            this.remarksDataGridViewTextBoxColumn.DataPropertyName = "Remarks";
-            this.remarksDataGridViewTextBoxColumn.HeaderText = "Remarks";
-            this.remarksDataGridViewTextBoxColumn.Name = "remarksDataGridViewTextBoxColumn";
-            this.remarksDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // reminderDateDataGridViewTextBoxColumn
-            // 
-            this.reminderDateDataGridViewTextBoxColumn.DataPropertyName = "ReminderDate";
-            this.reminderDateDataGridViewTextBoxColumn.HeaderText = "ReminderDate";
-            this.reminderDateDataGridViewTextBoxColumn.Name = "reminderDateDataGridViewTextBoxColumn";
-            this.reminderDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // branchDataGridViewTextBoxColumn
-            // 
-            this.branchDataGridViewTextBoxColumn.DataPropertyName = "Branch";
-            this.branchDataGridViewTextBoxColumn.HeaderText = "Branch";
-            this.branchDataGridViewTextBoxColumn.Name = "branchDataGridViewTextBoxColumn";
-            this.branchDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -601,7 +325,6 @@
             this.LenseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.LenseGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.LenseGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn1,
             this.orderNumberDataGridViewTextBoxColumn1,
             this.orderDateDataGridViewTextBoxColumn1,
             this.dueDateDataGridViewTextBoxColumn1,
@@ -614,39 +337,8 @@
             this.paymentMethodDataGridViewTextBoxColumn1,
             this.paymentPlanDataGridViewTextBoxColumn1,
             this.orderStatusDataGridViewTextBoxColumn1,
-            this.oldRightSphDataGridViewTextBoxColumn,
-            this.oldRightCylDataGridViewTextBoxColumn,
-            this.oldRightAxisDataGridViewTextBoxColumn,
-            this.oldRightAddDataGridViewTextBoxColumn,
-            this.oldLeftSphDataGridViewTextBoxColumn,
-            this.oldLeftCylDataGridViewTextBoxColumn,
-            this.oldLeftAxisDataGridViewTextBoxColumn,
-            this.oldLeftAddDataGridViewTextBoxColumn,
-            this.presentRightSphDataGridViewTextBoxColumn,
-            this.presentRightCylDataGridViewTextBoxColumn,
-            this.presentRightAxisDataGridViewTextBoxColumn,
-            this.presentRightAddDataGridViewTextBoxColumn,
-            this.presentLeftSphDataGridViewTextBoxColumn,
-            this.presentLeftCylDataGridViewTextBoxColumn,
-            this.presentLeftAxisDataGridViewTextBoxColumn,
-            this.presentLeftAddDataGridViewTextBoxColumn,
-            this.rightBcDataGridViewTextBoxColumn,
-            this.rightPowDataGridViewTextBoxColumn,
-            this.rightDiaDataGridViewTextBoxColumn,
-            this.rightDeszDataGridViewTextBoxColumn,
-            this.leftBcDataGridViewTextBoxColumn,
-            this.leftPowDataGridViewTextBoxColumn,
-            this.leftDiaDataGridViewTextBoxColumn,
-            this.leftDeszDataGridViewTextBoxColumn,
-            this.trailLenseDataGridViewTextBoxColumn,
-            this.overRefractDataGridViewTextBoxColumn,
-            this.kReadingDataGridViewTextBoxColumn,
-            this.blinkTestDataGridViewTextBoxColumn,
-            this.specialInstractionsDataGridViewTextBoxColumn1,
-            this.remarksDataGridViewTextBoxColumn1,
-            this.reminderDaysDataGridViewTextBoxColumn,
             this.branchDataGridViewTextBoxColumn1,
-            this.yearDataGridViewTextBoxColumn});
+            this.ReminderDays});
             this.LenseGrid.DataSource = this.contactlenseBindingSource;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -684,12 +376,6 @@
             // contactlenseTableAdapter
             // 
             this.contactlenseTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
             // 
             // orderNumberDataGridViewTextBoxColumn1
             // 
@@ -763,203 +449,108 @@
             this.orderStatusDataGridViewTextBoxColumn1.HeaderText = "OrderStatus";
             this.orderStatusDataGridViewTextBoxColumn1.Name = "orderStatusDataGridViewTextBoxColumn1";
             // 
-            // oldRightSphDataGridViewTextBoxColumn
-            // 
-            this.oldRightSphDataGridViewTextBoxColumn.DataPropertyName = "OldRightSph";
-            this.oldRightSphDataGridViewTextBoxColumn.HeaderText = "OldRightSph";
-            this.oldRightSphDataGridViewTextBoxColumn.Name = "oldRightSphDataGridViewTextBoxColumn";
-            // 
-            // oldRightCylDataGridViewTextBoxColumn
-            // 
-            this.oldRightCylDataGridViewTextBoxColumn.DataPropertyName = "OldRightCyl";
-            this.oldRightCylDataGridViewTextBoxColumn.HeaderText = "OldRightCyl";
-            this.oldRightCylDataGridViewTextBoxColumn.Name = "oldRightCylDataGridViewTextBoxColumn";
-            // 
-            // oldRightAxisDataGridViewTextBoxColumn
-            // 
-            this.oldRightAxisDataGridViewTextBoxColumn.DataPropertyName = "OldRightAxis";
-            this.oldRightAxisDataGridViewTextBoxColumn.HeaderText = "OldRightAxis";
-            this.oldRightAxisDataGridViewTextBoxColumn.Name = "oldRightAxisDataGridViewTextBoxColumn";
-            // 
-            // oldRightAddDataGridViewTextBoxColumn
-            // 
-            this.oldRightAddDataGridViewTextBoxColumn.DataPropertyName = "OldRightAdd";
-            this.oldRightAddDataGridViewTextBoxColumn.HeaderText = "OldRightAdd";
-            this.oldRightAddDataGridViewTextBoxColumn.Name = "oldRightAddDataGridViewTextBoxColumn";
-            // 
-            // oldLeftSphDataGridViewTextBoxColumn
-            // 
-            this.oldLeftSphDataGridViewTextBoxColumn.DataPropertyName = "OldLeftSph";
-            this.oldLeftSphDataGridViewTextBoxColumn.HeaderText = "OldLeftSph";
-            this.oldLeftSphDataGridViewTextBoxColumn.Name = "oldLeftSphDataGridViewTextBoxColumn";
-            // 
-            // oldLeftCylDataGridViewTextBoxColumn
-            // 
-            this.oldLeftCylDataGridViewTextBoxColumn.DataPropertyName = "OldLeftCyl";
-            this.oldLeftCylDataGridViewTextBoxColumn.HeaderText = "OldLeftCyl";
-            this.oldLeftCylDataGridViewTextBoxColumn.Name = "oldLeftCylDataGridViewTextBoxColumn";
-            // 
-            // oldLeftAxisDataGridViewTextBoxColumn
-            // 
-            this.oldLeftAxisDataGridViewTextBoxColumn.DataPropertyName = "OldLeftAxis";
-            this.oldLeftAxisDataGridViewTextBoxColumn.HeaderText = "OldLeftAxis";
-            this.oldLeftAxisDataGridViewTextBoxColumn.Name = "oldLeftAxisDataGridViewTextBoxColumn";
-            // 
-            // oldLeftAddDataGridViewTextBoxColumn
-            // 
-            this.oldLeftAddDataGridViewTextBoxColumn.DataPropertyName = "OldLeftAdd";
-            this.oldLeftAddDataGridViewTextBoxColumn.HeaderText = "OldLeftAdd";
-            this.oldLeftAddDataGridViewTextBoxColumn.Name = "oldLeftAddDataGridViewTextBoxColumn";
-            // 
-            // presentRightSphDataGridViewTextBoxColumn
-            // 
-            this.presentRightSphDataGridViewTextBoxColumn.DataPropertyName = "PresentRightSph";
-            this.presentRightSphDataGridViewTextBoxColumn.HeaderText = "PresentRightSph";
-            this.presentRightSphDataGridViewTextBoxColumn.Name = "presentRightSphDataGridViewTextBoxColumn";
-            // 
-            // presentRightCylDataGridViewTextBoxColumn
-            // 
-            this.presentRightCylDataGridViewTextBoxColumn.DataPropertyName = "PresentRightCyl";
-            this.presentRightCylDataGridViewTextBoxColumn.HeaderText = "PresentRightCyl";
-            this.presentRightCylDataGridViewTextBoxColumn.Name = "presentRightCylDataGridViewTextBoxColumn";
-            // 
-            // presentRightAxisDataGridViewTextBoxColumn
-            // 
-            this.presentRightAxisDataGridViewTextBoxColumn.DataPropertyName = "PresentRightAxis";
-            this.presentRightAxisDataGridViewTextBoxColumn.HeaderText = "PresentRightAxis";
-            this.presentRightAxisDataGridViewTextBoxColumn.Name = "presentRightAxisDataGridViewTextBoxColumn";
-            // 
-            // presentRightAddDataGridViewTextBoxColumn
-            // 
-            this.presentRightAddDataGridViewTextBoxColumn.DataPropertyName = "PresentRightAdd";
-            this.presentRightAddDataGridViewTextBoxColumn.HeaderText = "PresentRightAdd";
-            this.presentRightAddDataGridViewTextBoxColumn.Name = "presentRightAddDataGridViewTextBoxColumn";
-            // 
-            // presentLeftSphDataGridViewTextBoxColumn
-            // 
-            this.presentLeftSphDataGridViewTextBoxColumn.DataPropertyName = "PresentLeftSph";
-            this.presentLeftSphDataGridViewTextBoxColumn.HeaderText = "PresentLeftSph";
-            this.presentLeftSphDataGridViewTextBoxColumn.Name = "presentLeftSphDataGridViewTextBoxColumn";
-            // 
-            // presentLeftCylDataGridViewTextBoxColumn
-            // 
-            this.presentLeftCylDataGridViewTextBoxColumn.DataPropertyName = "PresentLeftCyl";
-            this.presentLeftCylDataGridViewTextBoxColumn.HeaderText = "PresentLeftCyl";
-            this.presentLeftCylDataGridViewTextBoxColumn.Name = "presentLeftCylDataGridViewTextBoxColumn";
-            // 
-            // presentLeftAxisDataGridViewTextBoxColumn
-            // 
-            this.presentLeftAxisDataGridViewTextBoxColumn.DataPropertyName = "PresentLeftAxis";
-            this.presentLeftAxisDataGridViewTextBoxColumn.HeaderText = "PresentLeftAxis";
-            this.presentLeftAxisDataGridViewTextBoxColumn.Name = "presentLeftAxisDataGridViewTextBoxColumn";
-            // 
-            // presentLeftAddDataGridViewTextBoxColumn
-            // 
-            this.presentLeftAddDataGridViewTextBoxColumn.DataPropertyName = "PresentLeftAdd";
-            this.presentLeftAddDataGridViewTextBoxColumn.HeaderText = "PresentLeftAdd";
-            this.presentLeftAddDataGridViewTextBoxColumn.Name = "presentLeftAddDataGridViewTextBoxColumn";
-            // 
-            // rightBcDataGridViewTextBoxColumn
-            // 
-            this.rightBcDataGridViewTextBoxColumn.DataPropertyName = "RightBc";
-            this.rightBcDataGridViewTextBoxColumn.HeaderText = "RightBc";
-            this.rightBcDataGridViewTextBoxColumn.Name = "rightBcDataGridViewTextBoxColumn";
-            // 
-            // rightPowDataGridViewTextBoxColumn
-            // 
-            this.rightPowDataGridViewTextBoxColumn.DataPropertyName = "RightPow";
-            this.rightPowDataGridViewTextBoxColumn.HeaderText = "RightPow";
-            this.rightPowDataGridViewTextBoxColumn.Name = "rightPowDataGridViewTextBoxColumn";
-            // 
-            // rightDiaDataGridViewTextBoxColumn
-            // 
-            this.rightDiaDataGridViewTextBoxColumn.DataPropertyName = "RightDia";
-            this.rightDiaDataGridViewTextBoxColumn.HeaderText = "RightDia";
-            this.rightDiaDataGridViewTextBoxColumn.Name = "rightDiaDataGridViewTextBoxColumn";
-            // 
-            // rightDeszDataGridViewTextBoxColumn
-            // 
-            this.rightDeszDataGridViewTextBoxColumn.DataPropertyName = "RightDesz";
-            this.rightDeszDataGridViewTextBoxColumn.HeaderText = "RightDesz";
-            this.rightDeszDataGridViewTextBoxColumn.Name = "rightDeszDataGridViewTextBoxColumn";
-            // 
-            // leftBcDataGridViewTextBoxColumn
-            // 
-            this.leftBcDataGridViewTextBoxColumn.DataPropertyName = "LeftBc";
-            this.leftBcDataGridViewTextBoxColumn.HeaderText = "LeftBc";
-            this.leftBcDataGridViewTextBoxColumn.Name = "leftBcDataGridViewTextBoxColumn";
-            // 
-            // leftPowDataGridViewTextBoxColumn
-            // 
-            this.leftPowDataGridViewTextBoxColumn.DataPropertyName = "LeftPow";
-            this.leftPowDataGridViewTextBoxColumn.HeaderText = "LeftPow";
-            this.leftPowDataGridViewTextBoxColumn.Name = "leftPowDataGridViewTextBoxColumn";
-            // 
-            // leftDiaDataGridViewTextBoxColumn
-            // 
-            this.leftDiaDataGridViewTextBoxColumn.DataPropertyName = "LeftDia";
-            this.leftDiaDataGridViewTextBoxColumn.HeaderText = "LeftDia";
-            this.leftDiaDataGridViewTextBoxColumn.Name = "leftDiaDataGridViewTextBoxColumn";
-            // 
-            // leftDeszDataGridViewTextBoxColumn
-            // 
-            this.leftDeszDataGridViewTextBoxColumn.DataPropertyName = "LeftDesz";
-            this.leftDeszDataGridViewTextBoxColumn.HeaderText = "LeftDesz";
-            this.leftDeszDataGridViewTextBoxColumn.Name = "leftDeszDataGridViewTextBoxColumn";
-            // 
-            // trailLenseDataGridViewTextBoxColumn
-            // 
-            this.trailLenseDataGridViewTextBoxColumn.DataPropertyName = "TrailLense";
-            this.trailLenseDataGridViewTextBoxColumn.HeaderText = "TrailLense";
-            this.trailLenseDataGridViewTextBoxColumn.Name = "trailLenseDataGridViewTextBoxColumn";
-            // 
-            // overRefractDataGridViewTextBoxColumn
-            // 
-            this.overRefractDataGridViewTextBoxColumn.DataPropertyName = "OverRefract";
-            this.overRefractDataGridViewTextBoxColumn.HeaderText = "OverRefract";
-            this.overRefractDataGridViewTextBoxColumn.Name = "overRefractDataGridViewTextBoxColumn";
-            // 
-            // kReadingDataGridViewTextBoxColumn
-            // 
-            this.kReadingDataGridViewTextBoxColumn.DataPropertyName = "KReading";
-            this.kReadingDataGridViewTextBoxColumn.HeaderText = "KReading";
-            this.kReadingDataGridViewTextBoxColumn.Name = "kReadingDataGridViewTextBoxColumn";
-            // 
-            // blinkTestDataGridViewTextBoxColumn
-            // 
-            this.blinkTestDataGridViewTextBoxColumn.DataPropertyName = "BlinkTest";
-            this.blinkTestDataGridViewTextBoxColumn.HeaderText = "BlinkTest";
-            this.blinkTestDataGridViewTextBoxColumn.Name = "blinkTestDataGridViewTextBoxColumn";
-            // 
-            // specialInstractionsDataGridViewTextBoxColumn1
-            // 
-            this.specialInstractionsDataGridViewTextBoxColumn1.DataPropertyName = "SpecialInstractions";
-            this.specialInstractionsDataGridViewTextBoxColumn1.HeaderText = "SpecialInstractions";
-            this.specialInstractionsDataGridViewTextBoxColumn1.Name = "specialInstractionsDataGridViewTextBoxColumn1";
-            // 
-            // remarksDataGridViewTextBoxColumn1
-            // 
-            this.remarksDataGridViewTextBoxColumn1.DataPropertyName = "Remarks";
-            this.remarksDataGridViewTextBoxColumn1.HeaderText = "Remarks";
-            this.remarksDataGridViewTextBoxColumn1.Name = "remarksDataGridViewTextBoxColumn1";
-            // 
-            // reminderDaysDataGridViewTextBoxColumn
-            // 
-            this.reminderDaysDataGridViewTextBoxColumn.DataPropertyName = "ReminderDays";
-            this.reminderDaysDataGridViewTextBoxColumn.HeaderText = "ReminderDays";
-            this.reminderDaysDataGridViewTextBoxColumn.Name = "reminderDaysDataGridViewTextBoxColumn";
-            // 
             // branchDataGridViewTextBoxColumn1
             // 
             this.branchDataGridViewTextBoxColumn1.DataPropertyName = "Branch";
             this.branchDataGridViewTextBoxColumn1.HeaderText = "Branch";
             this.branchDataGridViewTextBoxColumn1.Name = "branchDataGridViewTextBoxColumn1";
             // 
-            // yearDataGridViewTextBoxColumn
+            // ReminderDays
             // 
-            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
-            this.yearDataGridViewTextBoxColumn.HeaderText = "Year";
-            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
+            this.ReminderDays.DataPropertyName = "ReminderDays";
+            this.ReminderDays.HeaderText = "ReminderDays";
+            this.ReminderDays.Name = "ReminderDays";
+            // 
+            // orderNumberDataGridViewTextBoxColumn
+            // 
+            this.orderNumberDataGridViewTextBoxColumn.DataPropertyName = "OrderNumber";
+            this.orderNumberDataGridViewTextBoxColumn.HeaderText = "OrderNumber";
+            this.orderNumberDataGridViewTextBoxColumn.Name = "orderNumberDataGridViewTextBoxColumn";
+            this.orderNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // orderDateDataGridViewTextBoxColumn
+            // 
+            this.orderDateDataGridViewTextBoxColumn.DataPropertyName = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn.HeaderText = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn.Name = "orderDateDataGridViewTextBoxColumn";
+            this.orderDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dueDateDataGridViewTextBoxColumn
+            // 
+            this.dueDateDataGridViewTextBoxColumn.DataPropertyName = "DueDate";
+            this.dueDateDataGridViewTextBoxColumn.HeaderText = "DueDate";
+            this.dueDateDataGridViewTextBoxColumn.Name = "dueDateDataGridViewTextBoxColumn";
+            this.dueDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // orderStatusDataGridViewTextBoxColumn
+            // 
+            this.orderStatusDataGridViewTextBoxColumn.DataPropertyName = "OrderStatus";
+            this.orderStatusDataGridViewTextBoxColumn.HeaderText = "OrderStatus";
+            this.orderStatusDataGridViewTextBoxColumn.Name = "orderStatusDataGridViewTextBoxColumn";
+            this.orderStatusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            this.totalDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // advanceDataGridViewTextBoxColumn
+            // 
+            this.advanceDataGridViewTextBoxColumn.DataPropertyName = "Advance";
+            this.advanceDataGridViewTextBoxColumn.HeaderText = "Advance";
+            this.advanceDataGridViewTextBoxColumn.Name = "advanceDataGridViewTextBoxColumn";
+            this.advanceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // discountDataGridViewTextBoxColumn
+            // 
+            this.discountDataGridViewTextBoxColumn.DataPropertyName = "Discount";
+            this.discountDataGridViewTextBoxColumn.HeaderText = "Discount";
+            this.discountDataGridViewTextBoxColumn.Name = "discountDataGridViewTextBoxColumn";
+            this.discountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // balanceDataGridViewTextBoxColumn
+            // 
+            this.balanceDataGridViewTextBoxColumn.DataPropertyName = "Balance";
+            this.balanceDataGridViewTextBoxColumn.HeaderText = "Balance";
+            this.balanceDataGridViewTextBoxColumn.Name = "balanceDataGridViewTextBoxColumn";
+            this.balanceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // testByDataGridViewTextBoxColumn
+            // 
+            this.testByDataGridViewTextBoxColumn.DataPropertyName = "TestBy";
+            this.testByDataGridViewTextBoxColumn.HeaderText = "TestBy";
+            this.testByDataGridViewTextBoxColumn.Name = "testByDataGridViewTextBoxColumn";
+            this.testByDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // paymentPlanDataGridViewTextBoxColumn
+            // 
+            this.paymentPlanDataGridViewTextBoxColumn.DataPropertyName = "PaymentPlan";
+            this.paymentPlanDataGridViewTextBoxColumn.HeaderText = "PaymentPlan";
+            this.paymentPlanDataGridViewTextBoxColumn.Name = "paymentPlanDataGridViewTextBoxColumn";
+            this.paymentPlanDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // paymentMethodDataGridViewTextBoxColumn
+            // 
+            this.paymentMethodDataGridViewTextBoxColumn.DataPropertyName = "PaymentMethod";
+            this.paymentMethodDataGridViewTextBoxColumn.HeaderText = "PaymentMethod";
+            this.paymentMethodDataGridViewTextBoxColumn.Name = "paymentMethodDataGridViewTextBoxColumn";
+            this.paymentMethodDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // reminderDateDataGridViewTextBoxColumn
+            // 
+            this.reminderDateDataGridViewTextBoxColumn.DataPropertyName = "ReminderDate";
+            this.reminderDateDataGridViewTextBoxColumn.HeaderText = "ReminderDate";
+            this.reminderDateDataGridViewTextBoxColumn.Name = "reminderDateDataGridViewTextBoxColumn";
+            this.reminderDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // branchDataGridViewTextBoxColumn
+            // 
+            this.branchDataGridViewTextBoxColumn.DataPropertyName = "Branch";
+            this.branchDataGridViewTextBoxColumn.HeaderText = "Branch";
+            this.branchDataGridViewTextBoxColumn.Name = "branchDataGridViewTextBoxColumn";
+            this.branchDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // UI_ORDER_LIST
             // 
@@ -1004,7 +595,10 @@
         private technovisionDataSet technovisionDataSet;
         private System.Windows.Forms.BindingSource spectaclesBindingSource;
         private technovisionDataSetTableAdapters.spectaclesTableAdapter spectaclesTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Timer timer1;
+        private MetroFramework.Controls.MetroGrid LenseGrid;
+        private System.Windows.Forms.BindingSource contactlenseBindingSource;
+        private technovisionDataSetTableAdapters.contactlenseTableAdapter contactlenseTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dueDateDataGridViewTextBoxColumn;
@@ -1014,31 +608,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn discountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn balanceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn testByDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn eyeWearDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lenseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn paymentPlanDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn paymentMethodDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn distRightSphDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn distRightCylDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn distRightAxisDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn distLeftSphDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn distLeftCylDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn distLeftAxisDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addRightDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addLeftDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lenseTypeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn frameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn segmentHightDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn specialInstractionsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn remarksDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reminderDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn branchDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Timer timer1;
-        private MetroFramework.Controls.MetroGrid LenseGrid;
-        private System.Windows.Forms.BindingSource contactlenseBindingSource;
-        private technovisionDataSetTableAdapters.contactlenseTableAdapter contactlenseTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderNumberDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderDateDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dueDateDataGridViewTextBoxColumn1;
@@ -1051,38 +624,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn paymentMethodDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn paymentPlanDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderStatusDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oldRightSphDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oldRightCylDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oldRightAxisDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oldRightAddDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oldLeftSphDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oldLeftCylDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oldLeftAxisDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oldLeftAddDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn presentRightSphDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn presentRightCylDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn presentRightAxisDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn presentRightAddDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn presentLeftSphDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn presentLeftCylDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn presentLeftAxisDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn presentLeftAddDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rightBcDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rightPowDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rightDiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rightDeszDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn leftBcDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn leftPowDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn leftDiaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn leftDeszDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn trailLenseDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn overRefractDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kReadingDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn blinkTestDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn specialInstractionsDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn remarksDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reminderDaysDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn branchDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReminderDays;
     }
 }
