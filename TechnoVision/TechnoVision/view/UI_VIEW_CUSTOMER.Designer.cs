@@ -83,6 +83,7 @@
             this.professionDataGridViewTextBoxColumn,
             this.ageDataGridViewTextBoxColumn,
             this.branchDataGridViewTextBoxColumn});
+            this.GridManageCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GridManageCustomer.DataSource = this.customerBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -195,6 +196,7 @@
             // BtnEditCustomer
             // 
             this.BtnEditCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnEditCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEditCustomer.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnEditCustomer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnEditCustomer.Highlight = true;
@@ -213,6 +215,7 @@
             // BtnShowOrders
             // 
             this.BtnShowOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnShowOrders.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnShowOrders.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnShowOrders.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnShowOrders.Highlight = true;
@@ -264,6 +267,7 @@
             // BtnRefresh
             // 
             this.BtnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnRefresh.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnRefresh.Highlight = true;
