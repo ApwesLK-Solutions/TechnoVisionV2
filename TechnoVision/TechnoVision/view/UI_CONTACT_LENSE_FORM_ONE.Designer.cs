@@ -51,6 +51,8 @@
             this.CmbJobType = new MetroFramework.Controls.MetroComboBox();
             this.CmbOrderStatus = new MetroFramework.Controls.MetroComboBox();
             this.CmbTestedBy = new MetroFramework.Controls.MetroComboBox();
+            this.testersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.CmbPaymentMethod = new MetroFramework.Controls.MetroComboBox();
             this.CmbPaymentPlan = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
@@ -60,11 +62,9 @@
             this.BtnClear = new MetroFramework.Controls.MetroButton();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.TxtDiscount = new MetroFramework.Controls.MetroTextBox();
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.testersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.testersTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.testersTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -390,6 +390,16 @@
             this.CmbTestedBy.UseSelectable = true;
             this.CmbTestedBy.ValueMember = "Name";
             // 
+            // testersBindingSource
+            // 
+            this.testersBindingSource.DataMember = "testers";
+            this.testersBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // CmbPaymentMethod
             // 
             this.CmbPaymentMethod.FormattingEnabled = true;
@@ -469,6 +479,7 @@
             this.BtnCalculate.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnCalculate.TabIndex = 10;
             this.BtnCalculate.UseSelectable = true;
+            this.BtnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
             // 
             // BtnNext
             // 
@@ -551,16 +562,6 @@
             this.TxtDiscount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtDiscount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // testersBindingSource
-            // 
-            this.testersBindingSource.DataMember = "testers";
-            this.testersBindingSource.DataSource = this.technovisionDataSet;
-            // 
             // testersTableAdapter
             // 
             this.testersTableAdapter.ClearBeforeFill = true;
@@ -607,8 +608,8 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Contact Lenses - Order Summary";
             this.Load += new System.EventHandler(this.UI_CONTACT_LENSE_FORM_ONE_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
