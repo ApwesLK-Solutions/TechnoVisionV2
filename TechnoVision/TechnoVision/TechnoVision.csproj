@@ -219,6 +219,12 @@
     <Compile Include="view\UI_SELECT_CUSTOMER.Designer.cs">
       <DependentUpon>UI_SELECT_CUSTOMER.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\UI_SHOW_ORDER_BY_CUSTOMER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UI_SHOW_ORDER_BY_CUSTOMER.Designer.cs">
+      <DependentUpon>UI_SHOW_ORDER_BY_CUSTOMER.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_SPECTACLES_DIAGNOSIS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -313,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_SELECT_CUSTOMER.resx">
       <DependentUpon>UI_SELECT_CUSTOMER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\UI_SHOW_ORDER_BY_CUSTOMER.resx">
+      <DependentUpon>UI_SHOW_ORDER_BY_CUSTOMER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_SPECTACLES_DIAGNOSIS.resx">
       <DependentUpon>UI_SPECTACLES_DIAGNOSIS.cs</DependentUpon>
