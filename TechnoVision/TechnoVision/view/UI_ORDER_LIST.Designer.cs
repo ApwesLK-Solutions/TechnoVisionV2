@@ -36,6 +36,7 @@
             this.RadioContactLense = new MetroFramework.Controls.MetroRadioButton();
             this.RadioSpectacles = new MetroFramework.Controls.MetroRadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TxtSearch = new MetroFramework.Controls.MetroTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,21 +114,21 @@
             this.RadioAll.Checked = true;
             this.RadioAll.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.RadioAll.FontWeight = MetroFramework.MetroCheckBoxWeight.Bold;
-            this.RadioAll.Location = new System.Drawing.Point(354, 21);
+            this.RadioAll.Location = new System.Drawing.Point(33, 31);
             this.RadioAll.Name = "RadioAll";
             this.RadioAll.Size = new System.Drawing.Size(51, 25);
             this.RadioAll.Style = MetroFramework.MetroColorStyle.Green;
             this.RadioAll.TabIndex = 6;
+            this.RadioAll.TabStop = true;
             this.RadioAll.Text = "All";
             this.RadioAll.UseSelectable = true;
-           
             // 
             // RadioContactLense
             // 
             this.RadioContactLense.AutoSize = true;
             this.RadioContactLense.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.RadioContactLense.FontWeight = MetroFramework.MetroCheckBoxWeight.Bold;
-            this.RadioContactLense.Location = new System.Drawing.Point(609, 21);
+            this.RadioContactLense.Location = new System.Drawing.Point(288, 31);
             this.RadioContactLense.Name = "RadioContactLense";
             this.RadioContactLense.Size = new System.Drawing.Size(160, 25);
             this.RadioContactLense.Style = MetroFramework.MetroColorStyle.Green;
@@ -140,7 +141,7 @@
             this.RadioSpectacles.AutoSize = true;
             this.RadioSpectacles.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.RadioSpectacles.FontWeight = MetroFramework.MetroCheckBoxWeight.Bold;
-            this.RadioSpectacles.Location = new System.Drawing.Point(444, 20);
+            this.RadioSpectacles.Location = new System.Drawing.Point(123, 30);
             this.RadioSpectacles.Name = "RadioSpectacles";
             this.RadioSpectacles.Size = new System.Drawing.Size(119, 25);
             this.RadioSpectacles.Style = MetroFramework.MetroColorStyle.Green;
@@ -150,16 +151,50 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TxtSearch);
             this.groupBox1.Controls.Add(this.RadioContactLense);
             this.groupBox1.Controls.Add(this.RadioSpectacles);
             this.groupBox1.Controls.Add(this.RadioAll);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(23, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1109, 56);
+            this.groupBox1.Size = new System.Drawing.Size(1109, 71);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Searching Criteria";
+            // 
+            // TxtSearch
+            // 
+            // 
+            // 
+            // 
+            this.TxtSearch.CustomButton.Image = null;
+            this.TxtSearch.CustomButton.Location = new System.Drawing.Point(196, 2);
+            this.TxtSearch.CustomButton.Name = "";
+            this.TxtSearch.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtSearch.CustomButton.TabIndex = 1;
+            this.TxtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtSearch.CustomButton.UseSelectable = true;
+            this.TxtSearch.CustomButton.Visible = false;
+            this.TxtSearch.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.TxtSearch.Lines = new string[0];
+            this.TxtSearch.Location = new System.Drawing.Point(879, 26);
+            this.TxtSearch.MaxLength = 32767;
+            this.TxtSearch.Name = "TxtSearch";
+            this.TxtSearch.PasswordChar = '\0';
+            this.TxtSearch.PromptText = "Search By Order Number...";
+            this.TxtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtSearch.SelectedText = "";
+            this.TxtSearch.SelectionLength = 0;
+            this.TxtSearch.SelectionStart = 0;
+            this.TxtSearch.ShortcutsEnabled = true;
+            this.TxtSearch.Size = new System.Drawing.Size(224, 30);
+            this.TxtSearch.TabIndex = 7;
+            this.TxtSearch.UseSelectable = true;
+            this.TxtSearch.WaterMark = "Search By Order Number...";
+            this.TxtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // UI_ORDER_LIST
             // 
@@ -192,5 +227,6 @@
         private MetroFramework.Controls.MetroRadioButton RadioContactLense;
         private MetroFramework.Controls.MetroRadioButton RadioSpectacles;
         private System.Windows.Forms.GroupBox groupBox1;
+        private MetroFramework.Controls.MetroTextBox TxtSearch;
     }
 }
