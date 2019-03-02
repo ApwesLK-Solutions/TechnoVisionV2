@@ -31,6 +31,7 @@
             this.BtnAddFrame = new MetroFramework.Controls.MetroButton();
             this.BtnDeleteFrame = new MetroFramework.Controls.MetroButton();
             this.TxtAddFrame = new MetroFramework.Controls.MetroTextBox();
+            this.TxtSearch = new MetroFramework.Controls.MetroTextBox();
             this.SuspendLayout();
             // 
             // BtnAddFrame
@@ -83,6 +84,7 @@
             this.TxtAddFrame.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtAddFrame.CustomButton.UseSelectable = true;
             this.TxtAddFrame.CustomButton.Visible = false;
+            this.TxtAddFrame.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtAddFrame.Lines = new string[0];
             this.TxtAddFrame.Location = new System.Drawing.Point(15, 549);
             this.TxtAddFrame.MaxLength = 32767;
@@ -99,11 +101,45 @@
             this.TxtAddFrame.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtAddFrame.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // TxtSearch
+            // 
+            // 
+            // 
+            // 
+            this.TxtSearch.CustomButton.Image = null;
+            this.TxtSearch.CustomButton.Location = new System.Drawing.Point(243, 2);
+            this.TxtSearch.CustomButton.Name = "";
+            this.TxtSearch.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtSearch.CustomButton.TabIndex = 1;
+            this.TxtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtSearch.CustomButton.UseSelectable = true;
+            this.TxtSearch.CustomButton.Visible = false;
+            this.TxtSearch.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtSearch.Lines = new string[0];
+            this.TxtSearch.Location = new System.Drawing.Point(261, 33);
+            this.TxtSearch.MaxLength = 32767;
+            this.TxtSearch.Name = "TxtSearch";
+            this.TxtSearch.PasswordChar = '\0';
+            this.TxtSearch.PromptText = "Search Frames...";
+            this.TxtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtSearch.SelectedText = "";
+            this.TxtSearch.SelectionLength = 0;
+            this.TxtSearch.SelectionStart = 0;
+            this.TxtSearch.ShortcutsEnabled = true;
+            this.TxtSearch.Size = new System.Drawing.Size(271, 30);
+            this.TxtSearch.TabIndex = 9;
+            this.TxtSearch.UseSelectable = true;
+            this.TxtSearch.WaterMark = "Search Frames...";
+            this.TxtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // UI_MANAGE_FRAMES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(555, 601);
+            this.Controls.Add(this.TxtSearch);
             this.Controls.Add(this.TxtAddFrame);
             this.Controls.Add(this.BtnDeleteFrame);
             this.Controls.Add(this.BtnAddFrame);
@@ -121,5 +157,6 @@
         private MetroFramework.Controls.MetroButton BtnAddFrame;
         private MetroFramework.Controls.MetroButton BtnDeleteFrame;
         private MetroFramework.Controls.MetroTextBox TxtAddFrame;
+        private MetroFramework.Controls.MetroTextBox TxtSearch;
     }
 }
