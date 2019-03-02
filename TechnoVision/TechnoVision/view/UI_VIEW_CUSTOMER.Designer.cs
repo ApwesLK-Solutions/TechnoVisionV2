@@ -202,7 +202,7 @@
             this.BtnEditCustomer.Name = "BtnEditCustomer";
             this.BtnEditCustomer.Size = new System.Drawing.Size(173, 45);
             this.BtnEditCustomer.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnEditCustomer.TabIndex = 3;
+            this.BtnEditCustomer.TabIndex = 4;
             this.BtnEditCustomer.Text = "Edit Customer Details";
             this.BtnEditCustomer.UseCustomBackColor = true;
             this.BtnEditCustomer.UseCustomForeColor = true;
@@ -220,7 +220,7 @@
             this.BtnShowOrders.Name = "BtnShowOrders";
             this.BtnShowOrders.Size = new System.Drawing.Size(173, 45);
             this.BtnShowOrders.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnShowOrders.TabIndex = 2;
+            this.BtnShowOrders.TabIndex = 3;
             this.BtnShowOrders.Text = "Show Orders";
             this.BtnShowOrders.UseCustomBackColor = true;
             this.BtnShowOrders.UseCustomForeColor = true;
@@ -267,7 +267,7 @@
             this.BtnRefresh.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnRefresh.Highlight = true;
-            this.BtnRefresh.Location = new System.Drawing.Point(40, 512);
+            this.BtnRefresh.Location = new System.Drawing.Point(723, 512);
             this.BtnRefresh.Name = "BtnRefresh";
             this.BtnRefresh.Size = new System.Drawing.Size(106, 45);
             this.BtnRefresh.Style = MetroFramework.MetroColorStyle.Green;
