@@ -39,6 +39,8 @@ namespace TechnoVision.view
                     CommonFunctions.WriteUserLog(Session.Username, "Added New Spec Order : " + SpecOrder.OrderNumber);
                     receiptController.WriteReceipt();
                     CommonFunctions.ShowSuccess(this, "Order Number " + SpecOrder.OrderNumber + "Saved Succesfully...");
+                    this.Dispose();
+                    new UI_ORDER_COMPLETE().Show();
                 }
                 
             }
