@@ -23,6 +23,7 @@ namespace TechnoVision.view
         {
             usersBindingSource.EndEdit();
             usersTableAdapter.Update(technovisionDataSet);
+            CommonFunctions.WriteUserLog(Session.Username, "Changed the Password of " + username);
         }
 
         private void UI_EDIT_SYSTEM_USER_Load(object sender, EventArgs e)
@@ -30,7 +31,18 @@ namespace TechnoVision.view
             // TODO: This line of code loads data into the 'technovisionDataSet.users' table. You can move, or remove it, as needed.
             this.usersTableAdapter.Fill(this.technovisionDataSet.users);
             usersBindingSource.Filter = "username = '" + username + "'";
+        }
 
+        private void TmrMasterPassword_Tick(object sender, EventArgs e)
+        {
+            if(TxtMasterPassword.Text == Session.BranchMasterPassword)
+            {
+                BtnEditUser.Enabled = true;
+            }
+            else
+            {
+                BtnEditUser.Enabled = false;
+            }
         }
     }
 }
