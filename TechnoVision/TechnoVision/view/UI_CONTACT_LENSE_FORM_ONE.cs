@@ -32,7 +32,7 @@ namespace TechnoVision.view
                 }
                 else
                 {
-                    LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yy-MM-dd"), DateDueDate.Value.ToString("yy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text));
+                    LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yyyy-MM-dd"), DateDueDate.Value.ToString("yyyy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text),CmbJobType.Text);
                     this.Hide();
                     new UI_CONTACT_LENSE_DIAGNOSIS(this).Show();
                 }
@@ -47,13 +47,15 @@ namespace TechnoVision.view
 
         private void UI_CONTACT_LENSE_FORM_ONE_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
+            this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
             DateOrderDate.Value = DateTime.UtcNow;
             DateDueDate.Value = DateTime.UtcNow;
             CmbJobType.SelectedIndex = 0;
             CmbOrderStatus.SelectedIndex = 0;
             CmbPaymentMethod.SelectedIndex = 0;
             CmbPaymentPlan.SelectedIndex = 0;
-            //CmbTestedBy.SelectedIndex = 0;
+            CmbTestedBy.SelectedIndex = 0;
             TxtOrderNo.Text = getOrderNumber();
             showReceiptNumber();
         }

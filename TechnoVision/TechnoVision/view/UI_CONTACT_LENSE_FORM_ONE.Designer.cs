@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.LblReceiptNo = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
@@ -59,6 +60,11 @@
             this.BtnClear = new MetroFramework.Controls.MetroButton();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.TxtDiscount = new MetroFramework.Controls.MetroTextBox();
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.testersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.testersTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.testersTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -373,6 +379,8 @@
             // 
             // CmbTestedBy
             // 
+            this.CmbTestedBy.DataSource = this.testersBindingSource;
+            this.CmbTestedBy.DisplayMember = "Name";
             this.CmbTestedBy.FormattingEnabled = true;
             this.CmbTestedBy.ItemHeight = 24;
             this.CmbTestedBy.Location = new System.Drawing.Point(155, 312);
@@ -380,6 +388,7 @@
             this.CmbTestedBy.Size = new System.Drawing.Size(290, 30);
             this.CmbTestedBy.TabIndex = 4;
             this.CmbTestedBy.UseSelectable = true;
+            this.CmbTestedBy.ValueMember = "Name";
             // 
             // CmbPaymentMethod
             // 
@@ -542,6 +551,20 @@
             this.TxtDiscount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtDiscount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // testersBindingSource
+            // 
+            this.testersBindingSource.DataMember = "testers";
+            this.testersBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // testersTableAdapter
+            // 
+            this.testersTableAdapter.ClearBeforeFill = true;
+            // 
             // UI_CONTACT_LENSE_FORM_ONE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -584,6 +607,8 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Contact Lenses - Order Summary";
             this.Load += new System.EventHandler(this.UI_CONTACT_LENSE_FORM_ONE_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -622,5 +647,8 @@
         private MetroFramework.Controls.MetroButton BtnClear;
         private MetroFramework.Controls.MetroLabel metroLabel14;
         private MetroFramework.Controls.MetroTextBox TxtDiscount;
+        private technovisionDataSet technovisionDataSet;
+        private System.Windows.Forms.BindingSource testersBindingSource;
+        private technovisionDataSetTableAdapters.testersTableAdapter testersTableAdapter;
     }
 }
