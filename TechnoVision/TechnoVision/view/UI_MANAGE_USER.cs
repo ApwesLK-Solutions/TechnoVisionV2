@@ -41,5 +41,10 @@ namespace TechnoVision.view
         {
             new UI_EDIT_SYSTEM_USER(GrdUser.SelectedRows[0].Cells[0].Value.ToString()).Show();
         }
+
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
+        {
+            usersBindingSource.Filter = ("Nic LIKE '%" + TxtSearch.Text + "%'");
+        }
     }
 }
