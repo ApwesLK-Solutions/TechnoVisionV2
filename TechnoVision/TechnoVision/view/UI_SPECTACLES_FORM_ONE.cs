@@ -81,7 +81,7 @@ namespace TechnoVision.view
                 }
                 else
                 {
-                    SpecOrderController.FillFormOne(SpecOrder.OrderNumber, SpecOrder.OrderDate, SpecOrder.DueDate, SpecOrder.PaymentPlan, SpecOrder.PaymentMethod, SpecOrder.TestBy, SpecOrder.OrderStatus, SpecOrder.Eyewear, SpecOrder.Lense, SpecOrder.Total, SpecOrder.Advance, SpecOrder.Discount, SpecOrder.Balance);
+                    SpecOrderController.FillFormOne(TxtOrderNo.Text,DateOrderDate.Text,DateDueDate.Text,CmbPaymentPlan.Text,CmbPaymentMethod.Text,CmbTestedBy.Text,CmbOrderStatus.Text,Double.Parse(TxtEyeWearAmount.Text),Double.Parse(TxtLenseAmount.Text),Double.Parse(TxtTotal.Text),Double.Parse(TxtAdvance.Text),Double.Parse(TxtDiscount.Text),Double.Parse(TxtBalance.Text),int.Parse(TxtRemindDays.Text));
                     new UI_SPECTACLES_DIAGNOSIS(this).Show();
                 }
                 
