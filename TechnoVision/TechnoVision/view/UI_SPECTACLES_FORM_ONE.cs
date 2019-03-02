@@ -63,7 +63,11 @@ namespace TechnoVision.view
             try
             {
                 rno = t.getReceiptNumberByBranch(Session.BranchId,DateTime.Now.ToString("yyyy")).ToString();
+                MessageBox.Show(rno);
                 string BranchCharacter = rno.Substring(0, 1);
+                MessageBox.Show(rno);
+                MessageBox.Show(BranchCharacter);
+
                 newRno = BranchCharacter + (int.Parse(rno.Remove(0,1)) + 1).ToString();
             }
             catch (NullReferenceException ex)

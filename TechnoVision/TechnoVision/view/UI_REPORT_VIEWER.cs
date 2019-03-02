@@ -9,16 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace TechnoVision.view
 {
-    public partial class UI_REPORT_VIEWER : MetroFramework.Forms.MetroForm
+    public partial class UI_REPORT_VIEWER : Form
     {
-        public UI_REPORT_VIEWER()
+        CrystalDecisions.CrystalReports.Engine.ReportDocument rpt;
+        public UI_REPORT_VIEWER(CrystalDecisions.CrystalReports.Engine.ReportDocument rpt)
         {
             InitializeComponent();
+            this.rpt = rpt;
         }
 
         private void UI_REPORT_VIEWER_Load(object sender, EventArgs e)
         {
-
+            crystalReportViewer1.ReportSource = rpt;
+            crystalReportViewer1.Show();
         }
     }
 }

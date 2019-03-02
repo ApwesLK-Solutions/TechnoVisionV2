@@ -9022,7 +9022,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT MAX(Id) FROM receipt WHERE Branch = @branchID AND Year = @year";
+            this._commandCollection[2].CommandText = "SELECT MAX(ReceiptNumber) FROM receipt WHERE Branch = @branchID AND Year = @year";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@branchID";

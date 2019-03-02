@@ -82,6 +82,7 @@
             this.BtnViewCompanyCopy.UseCustomForeColor = true;
             this.BtnViewCompanyCopy.UseSelectable = true;
             this.BtnViewCompanyCopy.UseStyleColors = true;
+            this.BtnViewCompanyCopy.Click += new System.EventHandler(this.BtnViewCompanyCopy_Click);
             // 
             // BtnPrintCustomerCopy
             // 
