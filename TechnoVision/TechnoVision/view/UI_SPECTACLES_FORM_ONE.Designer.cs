@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.BtnClear = new MetroFramework.Controls.MetroButton();
             this.BtnNext = new MetroFramework.Controls.MetroButton();
             this.BtnCalculate = new MetroFramework.Controls.MetroTile();
@@ -61,6 +62,11 @@
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.LblReceiptNo = new MetroFramework.Controls.MetroLabel();
             this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.testersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.testersTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.testersTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnClear
@@ -113,6 +119,8 @@
             // 
             // CmbTestedBy
             // 
+            this.CmbTestedBy.DataSource = this.testersBindingSource;
+            this.CmbTestedBy.DisplayMember = "Name";
             this.CmbTestedBy.FormattingEnabled = true;
             this.CmbTestedBy.ItemHeight = 24;
             this.CmbTestedBy.Location = new System.Drawing.Point(161, 239);
@@ -120,6 +128,7 @@
             this.CmbTestedBy.Size = new System.Drawing.Size(290, 30);
             this.CmbTestedBy.TabIndex = 4;
             this.CmbTestedBy.UseSelectable = true;
+            this.CmbTestedBy.ValueMember = "Name";
             // 
             // CmbOrderStatus
             // 
@@ -609,6 +618,20 @@
             this.metroLabel15.TabIndex = 98;
             this.metroLabel15.Text = "Receipt Number";
             // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // testersBindingSource
+            // 
+            this.testersBindingSource.DataMember = "testers";
+            this.testersBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // testersTableAdapter
+            // 
+            this.testersTableAdapter.ClearBeforeFill = true;
+            // 
             // UI_SPECTACLES_FORM_ONE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -653,6 +676,8 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Spectacles Order Summary";
             this.Load += new System.EventHandler(this.UI_SPECTACLES_FORM_ONE_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -693,5 +718,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroLabel LblReceiptNo;
         private MetroFramework.Controls.MetroLabel metroLabel15;
+        private technovisionDataSet technovisionDataSet;
+        private System.Windows.Forms.BindingSource testersBindingSource;
+        private technovisionDataSetTableAdapters.testersTableAdapter testersTableAdapter;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.BtnBack = new MetroFramework.Controls.MetroTile();
             this.BtnSave = new MetroFramework.Controls.MetroButton();
             this.BtnClear = new MetroFramework.Controls.MetroButton();
@@ -61,6 +62,11 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.CmbFrame = new MetroFramework.Controls.MetroComboBox();
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.framesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.framesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.framesTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnBack
@@ -687,6 +693,8 @@
             // 
             // CmbFrame
             // 
+            this.CmbFrame.DataSource = this.framesBindingSource;
+            this.CmbFrame.DisplayMember = "FrameName";
             this.CmbFrame.FormattingEnabled = true;
             this.CmbFrame.ItemHeight = 24;
             this.CmbFrame.Location = new System.Drawing.Point(636, 227);
@@ -694,6 +702,21 @@
             this.CmbFrame.Size = new System.Drawing.Size(318, 30);
             this.CmbFrame.TabIndex = 11;
             this.CmbFrame.UseSelectable = true;
+            this.CmbFrame.ValueMember = "FrameName";
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // framesBindingSource
+            // 
+            this.framesBindingSource.DataMember = "frames";
+            this.framesBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // framesTableAdapter
+            // 
+            this.framesTableAdapter.ClearBeforeFill = true;
             // 
             // UI_SPECTACLES_DIAGNOSIS
             // 
@@ -739,6 +762,8 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "     Spectacles - Diagnosis";
             this.Load += new System.EventHandler(this.UI_SPECTACLES_DIAGNOSIS_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -779,5 +804,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroComboBox CmbFrame;
+        private technovisionDataSet technovisionDataSet;
+        private System.Windows.Forms.BindingSource framesBindingSource;
+        private technovisionDataSetTableAdapters.framesTableAdapter framesTableAdapter;
     }
 }

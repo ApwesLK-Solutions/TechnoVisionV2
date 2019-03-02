@@ -12,5 +12,6 @@ namespace TechnoVision.model
         public static double paymentAmount;
         public static string receiptDate;
         public static int branch = Session.BranchId;
+        public static string OrderType;
     }
 }

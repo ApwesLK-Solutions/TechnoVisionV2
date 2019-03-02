@@ -23,8 +23,9 @@ namespace TechnoVision.controller
             }
 
         }
-        public static void FillReceipt(int orderNumber , double amount , string date)
+        public static void FillReceipt(int orderNumber , double amount , string date , string OrderType)
         {
+            Receipt.OrderType = OrderType;
             Receipt.orderNumber = orderNumber;
             Receipt.paymentAmount = amount;
             Receipt.receiptDate = date;
