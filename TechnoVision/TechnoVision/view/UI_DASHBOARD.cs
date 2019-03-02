@@ -33,5 +33,15 @@ namespace TechnoVision.view
         {
             new UI_SELECT_CUSTOMER("L").Show(); 
         }
+
+        private void metroTile8_Click(object sender, EventArgs e)
+        {
+            new UI_ORDER_LIST().Show();
+        }
+
+        private void BtnManageBranches_Click(object sender, EventArgs e)
+        {
+            new UI_ADD_BRANCH().Show();
+        }
     }
 }

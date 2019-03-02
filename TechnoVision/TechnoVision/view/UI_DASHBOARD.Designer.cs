@@ -193,6 +193,7 @@
             this.BtnManageBranches.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.BtnManageBranches.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.BtnManageBranches.UseSelectable = true;
+            this.BtnManageBranches.Click += new System.EventHandler(this.BtnManageBranches_Click);
             // 
             // metroTile8
             // 
@@ -202,10 +203,11 @@
             this.metroTile8.Size = new System.Drawing.Size(304, 210);
             this.metroTile8.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile8.TabIndex = 0;
-            this.metroTile8.Text = "New Spectacles Order";
+            this.metroTile8.Text = "Order List";
             this.metroTile8.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile8.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile8.UseSelectable = true;
+            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
             // 
             // metroTile9
             // 

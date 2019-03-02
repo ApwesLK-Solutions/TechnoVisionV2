@@ -17,6 +17,31 @@ namespace TechnoVision.view
             InitializeComponent();
         }
 
+        private void UI_ORDER_LIST_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
+            this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+            timer1.Enabled = true;
+            RadioSpectacles.Checked = true;
+            // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
+            this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(RadioSpectacles.Checked == true)
+            {
+                SpecGrid.Visible = true;
+                LenseGrid.Visible = false;
+            }
+            else if(RadioContactLense.Checked == true)
+            {
+                SpecGrid.Visible = false;
+                LenseGrid.Visible = true;
+            }
+        }
+
         
     }
 }
