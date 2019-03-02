@@ -37,6 +37,7 @@ namespace TechnoVision.view
         private void metroTile8_Click(object sender, EventArgs e)
         {
             new UI_ORDER_LIST().Show();
+        }
         private void BtnManageCustomer_Click(object sender, EventArgs e)
         {
             new UI_VIEW_CUSTOMER().Show();
