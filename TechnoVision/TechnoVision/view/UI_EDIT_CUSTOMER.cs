@@ -22,6 +22,8 @@ namespace TechnoVision.view
 
         private void UI_EDIT_CUSTOMER_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'technovisionDataSet.branch' table. You can move, or remove it, as needed.
+            
             try
             {
                 // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
@@ -50,7 +52,7 @@ namespace TechnoVision.view
             }
             catch(Exception ex)
             {
-
+                CommonFunctions.WriteToErrorLog(ex.Message);
             }
 
         }

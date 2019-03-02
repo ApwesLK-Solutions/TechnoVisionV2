@@ -21,7 +21,7 @@ namespace TechnoVision.view
         {
             // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
             this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
-
+            //edit upon multi branch to filter for branch customers
         }
 
         private void BtnEditCustomer_Click(object sender, EventArgs e)
@@ -32,6 +32,11 @@ namespace TechnoVision.view
         private void TxtSearchCustomer_TextChanged(object sender, EventArgs e)
         {
             customerBindingSource.Filter = "Name LIKE '*" + TxtSearchCustomer.Text + "*' OR Phone LIKE'*" + TxtSearchCustomer.Text + "*'";
+        }
+
+        private void BtnRefresh_Click(object sender, EventArgs e)
+        {
+            this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
         }
     }
 }
