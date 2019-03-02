@@ -42,6 +42,17 @@ namespace TechnoVision.view
             }
         }
 
-        
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if(RadioContactLense.Checked==true)
+            {
+                contactlenseBindingSource.Filter += "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
+            }
+            else if(RadioSpectacles.Checked ==true)
+            {
+                spectaclesBindingSource.Filter += "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
+
+            }
+        }
     }
 }
