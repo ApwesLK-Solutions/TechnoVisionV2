@@ -44,6 +44,8 @@
             this.TxtPassword = new MetroFramework.Controls.MetroTextBox();
             this.TxtUsername = new MetroFramework.Controls.MetroTextBox();
             this.usersTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.usersTableAdapter();
+            this.TxtMasterPassword = new MetroFramework.Controls.MetroTextBox();
+            this.TmrMasterPassword = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +57,7 @@
             this.BtnEditUser.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnEditUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnEditUser.Highlight = true;
-            this.BtnEditUser.Location = new System.Drawing.Point(213, 297);
+            this.BtnEditUser.Location = new System.Drawing.Point(213, 340);
             this.BtnEditUser.Name = "BtnEditUser";
             this.BtnEditUser.Size = new System.Drawing.Size(158, 45);
             this.BtnEditUser.Style = MetroFramework.MetroColorStyle.Green;
@@ -171,7 +173,7 @@
             this.TxtContactNumber.MaxLength = 32767;
             this.TxtContactNumber.Name = "TxtContactNumber";
             this.TxtContactNumber.PasswordChar = '\0';
-            this.TxtContactNumber.WaterMark = "Enter Contact Number...";
+            this.TxtContactNumber.PromptText = "Enter Contact Number...";
             this.TxtContactNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtContactNumber.SelectedText = "";
             this.TxtContactNumber.SelectionLength = 0;
@@ -205,7 +207,7 @@
             this.TxtFullName.MaxLength = 32767;
             this.TxtFullName.Name = "TxtFullName";
             this.TxtFullName.PasswordChar = '\0';
-            this.TxtFullName.WaterMark = "Enter Full Name...";
+            this.TxtFullName.PromptText = "Enter Full Name...";
             this.TxtFullName.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtFullName.SelectedText = "";
             this.TxtFullName.SelectionLength = 0;
@@ -238,8 +240,8 @@
             this.TxtPassword.Location = new System.Drawing.Point(160, 136);
             this.TxtPassword.MaxLength = 32767;
             this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.PasswordChar = '\0';
-            this.TxtPassword.WaterMark = "Enter Password...";
+            this.TxtPassword.PasswordChar = '*';
+            this.TxtPassword.PromptText = "Enter Password...";
             this.TxtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtPassword.SelectedText = "";
             this.TxtPassword.SelectionLength = 0;
@@ -273,7 +275,7 @@
             this.TxtUsername.MaxLength = 32767;
             this.TxtUsername.Name = "TxtUsername";
             this.TxtUsername.PasswordChar = '\0';
-            this.TxtUsername.WaterMark = "Enter Username...";
+            this.TxtUsername.PromptText = "Enter Username...";
             this.TxtUsername.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtUsername.SelectedText = "";
             this.TxtUsername.SelectionLength = 0;
@@ -290,11 +292,49 @@
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
             // 
+            // TxtMasterPassword
+            // 
+            // 
+            // 
+            // 
+            this.TxtMasterPassword.CustomButton.Image = null;
+            this.TxtMasterPassword.CustomButton.Location = new System.Drawing.Point(208, 2);
+            this.TxtMasterPassword.CustomButton.Name = "";
+            this.TxtMasterPassword.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtMasterPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtMasterPassword.CustomButton.TabIndex = 1;
+            this.TxtMasterPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtMasterPassword.CustomButton.UseSelectable = true;
+            this.TxtMasterPassword.CustomButton.Visible = false;
+            this.TxtMasterPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.TxtMasterPassword.Lines = new string[0];
+            this.TxtMasterPassword.Location = new System.Drawing.Point(172, 304);
+            this.TxtMasterPassword.MaxLength = 32767;
+            this.TxtMasterPassword.Name = "TxtMasterPassword";
+            this.TxtMasterPassword.PasswordChar = '#';
+            this.TxtMasterPassword.PromptText = "Enter Full Name...";
+            this.TxtMasterPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtMasterPassword.SelectedText = "";
+            this.TxtMasterPassword.SelectionLength = 0;
+            this.TxtMasterPassword.SelectionStart = 0;
+            this.TxtMasterPassword.ShortcutsEnabled = true;
+            this.TxtMasterPassword.Size = new System.Drawing.Size(236, 30);
+            this.TxtMasterPassword.TabIndex = 3;
+            this.TxtMasterPassword.UseSelectable = true;
+            this.TxtMasterPassword.WaterMark = "Enter Full Name...";
+            this.TxtMasterPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtMasterPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // TmrMasterPassword
+            // 
+            this.TmrMasterPassword.Enabled = true;
+            this.TmrMasterPassword.Tick += new System.EventHandler(this.TmrMasterPassword_Tick);
+            // 
             // UI_EDIT_SYSTEM_USER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 371);
+            this.ClientSize = new System.Drawing.Size(590, 408);
             this.Controls.Add(this.BtnEditUser);
             this.Controls.Add(this.CmbBranch);
             this.Controls.Add(this.metroLabel7);
@@ -304,6 +344,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.TxtContactNumber);
+            this.Controls.Add(this.TxtMasterPassword);
             this.Controls.Add(this.TxtFullName);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtUsername);
@@ -337,5 +378,7 @@
         private technovisionDataSet technovisionDataSet;
         private System.Windows.Forms.BindingSource usersBindingSource;
         private technovisionDataSetTableAdapters.usersTableAdapter usersTableAdapter;
+        private MetroFramework.Controls.MetroTextBox TxtMasterPassword;
+        private System.Windows.Forms.Timer TmrMasterPassword;
     }
 }
