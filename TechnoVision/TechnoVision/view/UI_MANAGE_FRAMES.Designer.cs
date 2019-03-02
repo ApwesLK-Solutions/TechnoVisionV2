@@ -37,14 +37,14 @@
             this.TxtAddFrame = new MetroFramework.Controls.MetroTextBox();
             this.TxtSearch = new MetroFramework.Controls.MetroTextBox();
             this.GridFrame = new MetroFramework.Controls.MetroGrid();
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.framesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.framesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.framesTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.frameNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GridFrame)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnAddFrame
@@ -148,6 +148,7 @@
             this.TxtSearch.WaterMark = "Search Frames...";
             this.TxtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
             // 
             // GridFrame
             // 
@@ -205,15 +206,15 @@
             this.GridFrame.Style = MetroFramework.MetroColorStyle.Green;
             this.GridFrame.TabIndex = 10;
             // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // framesBindingSource
             // 
             this.framesBindingSource.DataMember = "frames";
             this.framesBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // framesTableAdapter
             // 
@@ -229,7 +230,7 @@
             // frameNameDataGridViewTextBoxColumn
             // 
             this.frameNameDataGridViewTextBoxColumn.DataPropertyName = "FrameName";
-            this.frameNameDataGridViewTextBoxColumn.HeaderText = "FrameName";
+            this.frameNameDataGridViewTextBoxColumn.HeaderText = "Frame Name";
             this.frameNameDataGridViewTextBoxColumn.Name = "frameNameDataGridViewTextBoxColumn";
             this.frameNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -250,8 +251,8 @@
             this.Text = "Manage Frames";
             this.Load += new System.EventHandler(this.UI_MANAGE_FRAMES_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridFrame)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

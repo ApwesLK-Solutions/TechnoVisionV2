@@ -23,5 +23,10 @@ namespace TechnoVision.view
             this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
 
         }
+
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
+        {
+            framesBindingSource.Filter = ("FrameName LIKE '%" + TxtSearch.Text + "%'");
+        }
     }
 }
