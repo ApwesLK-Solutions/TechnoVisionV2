@@ -23,5 +23,19 @@ namespace TechnoVision.view
             this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
 
         }
+
+        private void BtnAddFrame_Click(object sender, EventArgs e)
+        {
+            technovisionDataSetTableAdapters.framesTableAdapter t = new technovisionDataSetTableAdapters.framesTableAdapter();
+            t.Insert(TxtAddFrame.Text);
+            this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
+        }
+
+        private void BtnDeleteFrame_Click(object sender, EventArgs e)
+        {
+            technovisionDataSetTableAdapters.framesTableAdapter t = new technovisionDataSetTableAdapters.framesTableAdapter();
+            t.DeleteByID(int.Parse(GridFrame.SelectedRows[0].Cells[0].Value.ToString()));
+            this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
+        }
     }
 }

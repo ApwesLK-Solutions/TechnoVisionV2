@@ -17,7 +17,7 @@ namespace TechnoVision
             if (Environment.OSVersion.Version.Major >= 6) SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UI_CONTACT_LENSE_FORM_ONE());
+            Application.Run(new UI_MANAGE_FRAMES());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
