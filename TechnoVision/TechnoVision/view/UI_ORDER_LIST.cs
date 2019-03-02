@@ -19,6 +19,8 @@ namespace TechnoVision.view
 
         private void UI_ORDER_LIST_Load(object sender, EventArgs e)
         {
+            spectaclesBindingSource.Filter = "Branch =" + Session.BranchId;
+            contactlenseBindingSource.Filter = "Branch =" + Session.BranchId;
             // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
             this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
             timer1.Enabled = true;
