@@ -150,7 +150,8 @@
             this.Controls.Add(this.metroLabel1);
             this.Name = "UI_ORDER_COMPLETE";
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "Order Complete Menu";
+            this.Text = "Order Complete ";
+            this.Load += new System.EventHandler(this.UI_ORDER_COMPLETE_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
