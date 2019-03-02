@@ -46,14 +46,30 @@ namespace TechnoVision.view
 
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
-            if(RadioContactLense.Checked==true)
+            if(RadioContactLense.Checked == true)
             {
-                contactlenseBindingSource.Filter += "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
+                contactlenseBindingSource.Filter = "Branch =" + Session.BranchId + "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
             }
-            else if(RadioSpectacles.Checked ==true)
+            else if(RadioSpectacles.Checked == true)
             {
-                spectaclesBindingSource.Filter += "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
+                spectaclesBindingSource.Filter = "Branch =" + Session.BranchId + "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
 
+            }
+        }
+
+        private void BtnMarkAs_Click(object sender, EventArgs e)
+        {
+            if(RadioSpectacles.Checked == true)
+            {
+                technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
+                t.UpdateOrderStatus(CmbSetAs.Text, SpecGrid.SelectedRows[0].Cells[0].Value.ToString());
+                this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+            }
+            else if(RadioContactLense.Checked == true)
+            {
+                technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+                t.UpdateOrderStatus(CmbSetAs.Text, LenseGrid.SelectedRows[0].Cells[0].Value.ToString());
+                this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
             }
         }
     }
