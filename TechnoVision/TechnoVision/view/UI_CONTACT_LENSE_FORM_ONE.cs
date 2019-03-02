@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TechnoVision.model;
 using TechnoVision.controller;
+using TechnoVision.view;
 
 namespace TechnoVision.view
 {
@@ -52,7 +53,7 @@ namespace TechnoVision.view
             CmbOrderStatus.SelectedIndex = 0;
             CmbPaymentMethod.SelectedIndex = 0;
             CmbPaymentPlan.SelectedIndex = 0;
-            CmbTestedBy.SelectedIndex = 0;
+            //CmbTestedBy.SelectedIndex = 0;
             TxtOrderNo.Text = getOrderNumber();
             showReceiptNumber();
         }
