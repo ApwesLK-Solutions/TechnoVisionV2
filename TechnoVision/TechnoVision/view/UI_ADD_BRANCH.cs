@@ -19,16 +19,33 @@ namespace TechnoVision.view
 
         private void UI_ADD_BRANCH_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.branch' table. You can move, or remove it, as needed.
-            this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.branch' table. You can move, or remove it, as needed.
+                this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this,"Can not Load Branches List...");
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
 
         }
 
         private void BtnAddBranch_Click(object sender, EventArgs e)
         {
-            //cover with try
-            technovisionDataSetTableAdapters.branchTableAdapter t = new technovisionDataSetTableAdapters.branchTableAdapter();
-            t.Insert(TxtBranchName.Text, TxtMasterPassword.Text);
+            try
+            {
+                technovisionDataSetTableAdapters.branchTableAdapter t = new technovisionDataSetTableAdapters.branchTableAdapter();
+                t.Insert(TxtBranchName.Text, TxtMasterPassword.Text);
+                CommonFunctions.ShowSuccess(this, "New Branch Added Successfully...");
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
         }
     }
 }
