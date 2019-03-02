@@ -30,10 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.BtnEditUser = new MetroFramework.Controls.MetroButton();
-            this.CmbBranch = new MetroFramework.Controls.MetroComboBox();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -59,7 +57,7 @@
             this.BtnEditUser.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnEditUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnEditUser.Highlight = true;
-            this.BtnEditUser.Location = new System.Drawing.Point(207, 375);
+            this.BtnEditUser.Location = new System.Drawing.Point(216, 352);
             this.BtnEditUser.Name = "BtnEditUser";
             this.BtnEditUser.Size = new System.Drawing.Size(158, 45);
             this.BtnEditUser.Style = MetroFramework.MetroColorStyle.Green;
@@ -71,19 +69,6 @@
             this.BtnEditUser.UseStyleColors = true;
             this.BtnEditUser.Click += new System.EventHandler(this.BtnEditUser_Click);
             // 
-            // CmbBranch
-            // 
-            this.CmbBranch.DataSource = this.usersBindingSource;
-            this.CmbBranch.DisplayMember = "BranchId";
-            this.CmbBranch.FormattingEnabled = true;
-            this.CmbBranch.ItemHeight = 24;
-            this.CmbBranch.Location = new System.Drawing.Point(160, 244);
-            this.CmbBranch.Name = "CmbBranch";
-            this.CmbBranch.Size = new System.Drawing.Size(400, 30);
-            this.CmbBranch.TabIndex = 5;
-            this.CmbBranch.UseSelectable = true;
-            this.CmbBranch.ValueMember = "Id";
-            // 
             // usersBindingSource
             // 
             this.usersBindingSource.DataMember = "users";
@@ -93,16 +78,6 @@
             // 
             this.technovisionDataSet.DataSetName = "technovisionDataSet";
             this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // metroLabel7
-            // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel7.Location = new System.Drawing.Point(31, 249);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(54, 20);
-            this.metroLabel7.TabIndex = 9;
-            this.metroLabel7.Text = "Branch";
             // 
             // metroLabel6
             // 
@@ -310,7 +285,7 @@
             this.TxtMasterPassword.CustomButton.Visible = false;
             this.TxtMasterPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtMasterPassword.Lines = new string[0];
-            this.TxtMasterPassword.Location = new System.Drawing.Point(173, 339);
+            this.TxtMasterPassword.Location = new System.Drawing.Point(182, 316);
             this.TxtMasterPassword.MaxLength = 32767;
             this.TxtMasterPassword.Name = "TxtMasterPassword";
             this.TxtMasterPassword.PasswordChar = '#';
@@ -336,7 +311,7 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel5.Location = new System.Drawing.Point(99, 291);
+            this.metroLabel5.Location = new System.Drawing.Point(108, 268);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(393, 20);
             this.metroLabel5.TabIndex = 16;
@@ -346,7 +321,7 @@
             // 
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel8.Location = new System.Drawing.Point(131, 311);
+            this.metroLabel8.Location = new System.Drawing.Point(140, 288);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(316, 20);
             this.metroLabel8.TabIndex = 16;
@@ -356,12 +331,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 440);
+            this.ClientSize = new System.Drawing.Size(590, 414);
             this.Controls.Add(this.metroLabel8);
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.BtnEditUser);
-            this.Controls.Add(this.CmbBranch);
-            this.Controls.Add(this.metroLabel7);
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
@@ -388,8 +361,6 @@
         #endregion
 
         private MetroFramework.Controls.MetroButton BtnEditUser;
-        private MetroFramework.Controls.MetroComboBox CmbBranch;
-        private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel metroLabel3;
