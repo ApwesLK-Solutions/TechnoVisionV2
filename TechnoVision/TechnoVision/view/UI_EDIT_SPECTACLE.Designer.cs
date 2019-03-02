@@ -114,7 +114,7 @@
             this.groupBox1.Location = new System.Drawing.Point(24, 64);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1060, 249);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Order Summary";
             // 
@@ -126,7 +126,7 @@
             this.BtnCalculate.Name = "BtnCalculate";
             this.BtnCalculate.Size = new System.Drawing.Size(38, 36);
             this.BtnCalculate.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnCalculate.TabIndex = 109;
+            this.BtnCalculate.TabIndex = 10;
             this.BtnCalculate.UseSelectable = true;
             // 
             // CmbPaymentPlan
@@ -139,7 +139,7 @@
             this.CmbPaymentPlan.Location = new System.Drawing.Point(153, 149);
             this.CmbPaymentPlan.Name = "CmbPaymentPlan";
             this.CmbPaymentPlan.Size = new System.Drawing.Size(290, 30);
-            this.CmbPaymentPlan.TabIndex = 103;
+            this.CmbPaymentPlan.TabIndex = 4;
             this.CmbPaymentPlan.UseSelectable = true;
             // 
             // CmbPaymentMethod
@@ -153,7 +153,7 @@
             this.CmbPaymentMethod.Location = new System.Drawing.Point(153, 113);
             this.CmbPaymentMethod.Name = "CmbPaymentMethod";
             this.CmbPaymentMethod.Size = new System.Drawing.Size(290, 30);
-            this.CmbPaymentMethod.TabIndex = 102;
+            this.CmbPaymentMethod.TabIndex = 3;
             this.CmbPaymentMethod.UseSelectable = true;
             // 
             // TxtBalance
@@ -185,7 +185,7 @@
             this.TxtBalance.SelectionStart = 0;
             this.TxtBalance.ShortcutsEnabled = true;
             this.TxtBalance.Size = new System.Drawing.Size(254, 36);
-            this.TxtBalance.TabIndex = 126;
+            this.TxtBalance.TabIndex = 100;
             this.TxtBalance.Text = "0";
             this.TxtBalance.UseSelectable = true;
             this.TxtBalance.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -219,7 +219,7 @@
             this.TxtAdvance.SelectionStart = 0;
             this.TxtAdvance.ShortcutsEnabled = true;
             this.TxtAdvance.Size = new System.Drawing.Size(290, 36);
-            this.TxtAdvance.TabIndex = 108;
+            this.TxtAdvance.TabIndex = 9;
             this.TxtAdvance.Text = "0";
             this.TxtAdvance.UseSelectable = true;
             this.TxtAdvance.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -252,7 +252,7 @@
             this.TxtRemindDays.SelectionStart = 0;
             this.TxtRemindDays.ShortcutsEnabled = true;
             this.TxtRemindDays.Size = new System.Drawing.Size(290, 36);
-            this.TxtRemindDays.TabIndex = 101;
+            this.TxtRemindDays.TabIndex = 2;
             this.TxtRemindDays.UseSelectable = true;
             this.TxtRemindDays.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtRemindDays.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -285,7 +285,7 @@
             this.TxtDiscount.SelectionStart = 0;
             this.TxtDiscount.ShortcutsEnabled = true;
             this.TxtDiscount.Size = new System.Drawing.Size(290, 36);
-            this.TxtDiscount.TabIndex = 107;
+            this.TxtDiscount.TabIndex = 8;
             this.TxtDiscount.Text = "0";
             this.TxtDiscount.UseSelectable = true;
             this.TxtDiscount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -319,7 +319,7 @@
             this.TxtEyeWearAmount.SelectionStart = 0;
             this.TxtEyeWearAmount.ShortcutsEnabled = true;
             this.TxtEyeWearAmount.Size = new System.Drawing.Size(290, 36);
-            this.TxtEyeWearAmount.TabIndex = 104;
+            this.TxtEyeWearAmount.TabIndex = 5;
             this.TxtEyeWearAmount.Text = "0";
             this.TxtEyeWearAmount.UseSelectable = true;
             this.TxtEyeWearAmount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -353,7 +353,7 @@
             this.TxtLenseAmount.SelectionStart = 0;
             this.TxtLenseAmount.ShortcutsEnabled = true;
             this.TxtLenseAmount.Size = new System.Drawing.Size(290, 36);
-            this.TxtLenseAmount.TabIndex = 105;
+            this.TxtLenseAmount.TabIndex = 6;
             this.TxtLenseAmount.Text = "0";
             this.TxtLenseAmount.UseSelectable = true;
             this.TxtLenseAmount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -388,7 +388,7 @@
             this.TxtTotal.SelectionStart = 0;
             this.TxtTotal.ShortcutsEnabled = true;
             this.TxtTotal.Size = new System.Drawing.Size(290, 36);
-            this.TxtTotal.TabIndex = 106;
+            this.TxtTotal.TabIndex = 7;
             this.TxtTotal.Text = "0";
             this.TxtTotal.UseSelectable = true;
             this.TxtTotal.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -422,7 +422,7 @@
             this.TxtOrderNo.SelectionStart = 0;
             this.TxtOrderNo.ShortcutsEnabled = true;
             this.TxtOrderNo.Size = new System.Drawing.Size(290, 36);
-            this.TxtOrderNo.TabIndex = 112;
+            this.TxtOrderNo.TabIndex = 1;
             this.TxtOrderNo.UseSelectable = true;
             this.TxtOrderNo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtOrderNo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -561,7 +561,7 @@
             this.groupBox2.Location = new System.Drawing.Point(24, 313);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1065, 265);
-            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Diagonosis";
             // 
@@ -591,7 +591,7 @@
             this.TxtRightAdd.SelectionStart = 0;
             this.TxtRightAdd.ShortcutsEnabled = true;
             this.TxtRightAdd.Size = new System.Drawing.Size(237, 35);
-            this.TxtRightAdd.TabIndex = 103;
+            this.TxtRightAdd.TabIndex = 17;
             this.TxtRightAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TxtRightAdd.UseSelectable = true;
             this.TxtRightAdd.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -623,7 +623,7 @@
             this.TxtLeftAdd.SelectionStart = 0;
             this.TxtLeftAdd.ShortcutsEnabled = true;
             this.TxtLeftAdd.Size = new System.Drawing.Size(237, 35);
-            this.TxtLeftAdd.TabIndex = 104;
+            this.TxtLeftAdd.TabIndex = 18;
             this.TxtLeftAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TxtLeftAdd.UseSelectable = true;
             this.TxtLeftAdd.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -655,7 +655,7 @@
             this.TxtLeftDistAxis.SelectionStart = 0;
             this.TxtLeftDistAxis.ShortcutsEnabled = true;
             this.TxtLeftDistAxis.Size = new System.Drawing.Size(75, 35);
-            this.TxtLeftDistAxis.TabIndex = 102;
+            this.TxtLeftDistAxis.TabIndex = 16;
             this.TxtLeftDistAxis.UseSelectable = true;
             this.TxtLeftDistAxis.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtLeftDistAxis.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -686,7 +686,7 @@
             this.TxtLeftDistCyl.SelectionStart = 0;
             this.TxtLeftDistCyl.ShortcutsEnabled = true;
             this.TxtLeftDistCyl.Size = new System.Drawing.Size(75, 35);
-            this.TxtLeftDistCyl.TabIndex = 101;
+            this.TxtLeftDistCyl.TabIndex = 15;
             this.TxtLeftDistCyl.UseSelectable = true;
             this.TxtLeftDistCyl.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtLeftDistCyl.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -717,7 +717,7 @@
             this.TxtLeftDistSph.SelectionStart = 0;
             this.TxtLeftDistSph.ShortcutsEnabled = true;
             this.TxtLeftDistSph.Size = new System.Drawing.Size(75, 35);
-            this.TxtLeftDistSph.TabIndex = 100;
+            this.TxtLeftDistSph.TabIndex = 14;
             this.TxtLeftDistSph.UseSelectable = true;
             this.TxtLeftDistSph.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtLeftDistSph.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -748,7 +748,7 @@
             this.TxtRightDistAxis.SelectionStart = 0;
             this.TxtRightDistAxis.ShortcutsEnabled = true;
             this.TxtRightDistAxis.Size = new System.Drawing.Size(75, 35);
-            this.TxtRightDistAxis.TabIndex = 99;
+            this.TxtRightDistAxis.TabIndex = 13;
             this.TxtRightDistAxis.UseSelectable = true;
             this.TxtRightDistAxis.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtRightDistAxis.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -779,7 +779,7 @@
             this.TxtRightDistCyl.SelectionStart = 0;
             this.TxtRightDistCyl.ShortcutsEnabled = true;
             this.TxtRightDistCyl.Size = new System.Drawing.Size(75, 35);
-            this.TxtRightDistCyl.TabIndex = 98;
+            this.TxtRightDistCyl.TabIndex = 12;
             this.TxtRightDistCyl.UseSelectable = true;
             this.TxtRightDistCyl.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtRightDistCyl.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -810,7 +810,7 @@
             this.TxtRightDistSph.SelectionStart = 0;
             this.TxtRightDistSph.ShortcutsEnabled = true;
             this.TxtRightDistSph.Size = new System.Drawing.Size(75, 35);
-            this.TxtRightDistSph.TabIndex = 97;
+            this.TxtRightDistSph.TabIndex = 11;
             this.TxtRightDistSph.UseSelectable = true;
             this.TxtRightDistSph.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtRightDistSph.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -925,7 +925,7 @@
             this.CmbFrame.Location = new System.Drawing.Point(747, 82);
             this.CmbFrame.Name = "CmbFrame";
             this.CmbFrame.Size = new System.Drawing.Size(253, 30);
-            this.CmbFrame.TabIndex = 117;
+            this.CmbFrame.TabIndex = 21;
             this.CmbFrame.UseSelectable = true;
             this.CmbFrame.ValueMember = "FrameName";
             // 
@@ -956,7 +956,7 @@
             this.TxtSegmentHeight.SelectionStart = 0;
             this.TxtSegmentHeight.ShortcutsEnabled = true;
             this.TxtSegmentHeight.Size = new System.Drawing.Size(226, 35);
-            this.TxtSegmentHeight.TabIndex = 116;
+            this.TxtSegmentHeight.TabIndex = 20;
             this.TxtSegmentHeight.UseSelectable = true;
             this.TxtSegmentHeight.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSegmentHeight.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -988,7 +988,7 @@
             this.TxtPD.SelectionStart = 0;
             this.TxtPD.ShortcutsEnabled = true;
             this.TxtPD.Size = new System.Drawing.Size(253, 35);
-            this.TxtPD.TabIndex = 118;
+            this.TxtPD.TabIndex = 22;
             this.TxtPD.UseSelectable = true;
             this.TxtPD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtPD.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -1020,7 +1020,7 @@
             this.TxtLenseType.SelectionStart = 0;
             this.TxtLenseType.ShortcutsEnabled = true;
             this.TxtLenseType.Size = new System.Drawing.Size(238, 35);
-            this.TxtLenseType.TabIndex = 115;
+            this.TxtLenseType.TabIndex = 19;
             this.TxtLenseType.UseSelectable = true;
             this.TxtLenseType.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtLenseType.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -1093,7 +1093,7 @@
             this.TxtRemarks.SelectionStart = 0;
             this.TxtRemarks.ShortcutsEnabled = true;
             this.TxtRemarks.Size = new System.Drawing.Size(862, 46);
-            this.TxtRemarks.TabIndex = 123;
+            this.TxtRemarks.TabIndex = 23;
             this.TxtRemarks.UseSelectable = true;
             this.TxtRemarks.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtRemarks.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -1155,7 +1155,7 @@
             this.TxtMasterPassword.SelectionStart = 0;
             this.TxtMasterPassword.ShortcutsEnabled = true;
             this.TxtMasterPassword.Size = new System.Drawing.Size(236, 30);
-            this.TxtMasterPassword.TabIndex = 17;
+            this.TxtMasterPassword.TabIndex = 24;
             this.TxtMasterPassword.UseSelectable = true;
             this.TxtMasterPassword.WaterMark = "Enter Master Password...";
             this.TxtMasterPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1172,7 +1172,7 @@
             this.BtnSaveUser.Name = "BtnSaveUser";
             this.BtnSaveUser.Size = new System.Drawing.Size(158, 45);
             this.BtnSaveUser.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnSaveUser.TabIndex = 20;
+            this.BtnSaveUser.TabIndex = 25;
             this.BtnSaveUser.Text = "Save changes";
             this.BtnSaveUser.UseCustomBackColor = true;
             this.BtnSaveUser.UseCustomForeColor = true;
