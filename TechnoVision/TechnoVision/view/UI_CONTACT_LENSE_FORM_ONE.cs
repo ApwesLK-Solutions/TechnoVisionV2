@@ -51,11 +51,12 @@ namespace TechnoVision.view
             this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
             DateOrderDate.Value = DateTime.UtcNow;
             DateDueDate.Value = DateTime.UtcNow;
+            
             CmbJobType.SelectedIndex = 0;
             CmbOrderStatus.SelectedIndex = 0;
             CmbPaymentMethod.SelectedIndex = 0;
             CmbPaymentPlan.SelectedIndex = 0;
-            CmbTestedBy.SelectedIndex = 0;
+            //CmbTestedBy.SelectedIndex = 0;
             TxtOrderNo.Text = getOrderNumber();
             showReceiptNumber();
         }
@@ -98,6 +99,23 @@ namespace TechnoVision.view
                 newRno = "1";
             }
             LblReceiptNo.Text = newRno;
+        }
+
+        private void BtnCalculate_Click(object sender, EventArgs e)
+        {
+            double total = 0;
+            double discount = 0;
+            double advance = 0;
+            double balance = 0;
+
+            total = Double.Parse(TxtLensesTotal.Text);
+            discount = Double.Parse(TxtDiscount.Text);
+            advance = Double.Parse(TxtAdvance.Text);
+
+            balance = (total) - (discount) -(advance);
+            TxtBalance.Text = balance.ToString();
+
+
         }
     }
 }

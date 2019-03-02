@@ -28,10 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnAddFrame = new MetroFramework.Controls.MetroButton();
             this.BtnDeleteFrame = new MetroFramework.Controls.MetroButton();
             this.TxtAddFrame = new MetroFramework.Controls.MetroTextBox();
             this.TxtSearch = new MetroFramework.Controls.MetroTextBox();
+            this.GridFrame = new MetroFramework.Controls.MetroGrid();
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.framesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.framesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.framesTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.frameNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.GridFrame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnAddFrame
@@ -76,7 +89,7 @@
             // 
             // 
             this.TxtAddFrame.CustomButton.Image = null;
-            this.TxtAddFrame.CustomButton.Location = new System.Drawing.Point(246, 1);
+            this.TxtAddFrame.CustomButton.Location = new System.Drawing.Point(238, 1);
             this.TxtAddFrame.CustomButton.Name = "";
             this.TxtAddFrame.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtAddFrame.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -86,18 +99,20 @@
             this.TxtAddFrame.CustomButton.Visible = false;
             this.TxtAddFrame.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtAddFrame.Lines = new string[0];
-            this.TxtAddFrame.Location = new System.Drawing.Point(15, 549);
+            this.TxtAddFrame.Location = new System.Drawing.Point(23, 554);
             this.TxtAddFrame.MaxLength = 32767;
             this.TxtAddFrame.Name = "TxtAddFrame";
             this.TxtAddFrame.PasswordChar = '\0';
+            this.TxtAddFrame.PromptText = "Enter Frame...";
             this.TxtAddFrame.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtAddFrame.SelectedText = "";
             this.TxtAddFrame.SelectionLength = 0;
             this.TxtAddFrame.SelectionStart = 0;
             this.TxtAddFrame.ShortcutsEnabled = true;
-            this.TxtAddFrame.Size = new System.Drawing.Size(280, 35);
+            this.TxtAddFrame.Size = new System.Drawing.Size(272, 35);
             this.TxtAddFrame.TabIndex = 8;
             this.TxtAddFrame.UseSelectable = true;
+            this.TxtAddFrame.WaterMark = "Enter Frame...";
             this.TxtAddFrame.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtAddFrame.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -134,11 +149,96 @@
             this.TxtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // GridFrame
+            // 
+            this.GridFrame.AllowUserToAddRows = false;
+            this.GridFrame.AllowUserToDeleteRows = false;
+            this.GridFrame.AllowUserToOrderColumns = true;
+            this.GridFrame.AllowUserToResizeRows = false;
+            this.GridFrame.AutoGenerateColumns = false;
+            this.GridFrame.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GridFrame.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.GridFrame.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GridFrame.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GridFrame.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GridFrame.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridFrame.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.GridFrame.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridFrame.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.frameNameDataGridViewTextBoxColumn});
+            this.GridFrame.DataSource = this.framesBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridFrame.DefaultCellStyle = dataGridViewCellStyle2;
+            this.GridFrame.EnableHeadersVisualStyles = false;
+            this.GridFrame.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.GridFrame.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.GridFrame.Location = new System.Drawing.Point(24, 81);
+            this.GridFrame.Name = "GridFrame";
+            this.GridFrame.ReadOnly = true;
+            this.GridFrame.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridFrame.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.GridFrame.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.GridFrame.RowTemplate.Height = 24;
+            this.GridFrame.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GridFrame.Size = new System.Drawing.Size(508, 437);
+            this.GridFrame.Style = MetroFramework.MetroColorStyle.Green;
+            this.GridFrame.TabIndex = 10;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // framesBindingSource
+            // 
+            this.framesBindingSource.DataMember = "frames";
+            this.framesBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // framesTableAdapter
+            // 
+            this.framesTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // frameNameDataGridViewTextBoxColumn
+            // 
+            this.frameNameDataGridViewTextBoxColumn.DataPropertyName = "FrameName";
+            this.frameNameDataGridViewTextBoxColumn.HeaderText = "FrameName";
+            this.frameNameDataGridViewTextBoxColumn.Name = "frameNameDataGridViewTextBoxColumn";
+            this.frameNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // UI_MANAGE_FRAMES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(555, 601);
+            this.Controls.Add(this.GridFrame);
             this.Controls.Add(this.TxtSearch);
             this.Controls.Add(this.TxtAddFrame);
             this.Controls.Add(this.BtnDeleteFrame);
@@ -148,6 +248,10 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Manage Frames";
+            this.Load += new System.EventHandler(this.UI_MANAGE_FRAMES_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.GridFrame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -158,5 +262,11 @@
         private MetroFramework.Controls.MetroButton BtnDeleteFrame;
         private MetroFramework.Controls.MetroTextBox TxtAddFrame;
         private MetroFramework.Controls.MetroTextBox TxtSearch;
+        private MetroFramework.Controls.MetroGrid GridFrame;
+        private technovisionDataSet technovisionDataSet;
+        private System.Windows.Forms.BindingSource framesBindingSource;
+        private technovisionDataSetTableAdapters.framesTableAdapter framesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn frameNameDataGridViewTextBoxColumn;
     }
 }

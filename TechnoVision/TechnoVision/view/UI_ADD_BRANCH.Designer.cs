@@ -209,7 +209,7 @@
             this.TxtMasterPassword.SelectionStart = 0;
             this.TxtMasterPassword.ShortcutsEnabled = true;
             this.TxtMasterPassword.Size = new System.Drawing.Size(198, 35);
-            this.TxtMasterPassword.TabIndex = 1;
+            this.TxtMasterPassword.TabIndex = 2;
             this.TxtMasterPassword.UseSelectable = true;
             this.TxtMasterPassword.WaterMark = "Enter Branch Master Password...";
             this.TxtMasterPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));

@@ -181,6 +181,7 @@
             this.TxtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtSearch.CustomButton.UseSelectable = true;
             this.TxtSearch.CustomButton.Visible = false;
+            this.TxtSearch.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.TxtSearch.Lines = new string[0];
             this.TxtSearch.Location = new System.Drawing.Point(737, 46);
             this.TxtSearch.MaxLength = 32767;
