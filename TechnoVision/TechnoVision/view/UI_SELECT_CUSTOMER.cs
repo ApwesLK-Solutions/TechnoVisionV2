@@ -19,8 +19,17 @@ namespace TechnoVision.view
 
         private void UI_SELECT_CUSTOMER_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
-            this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
+                this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+                CommonFunctions.ShowError(this,"CancelButton not Load Customer List");
+            }
+            
 
         }
 
