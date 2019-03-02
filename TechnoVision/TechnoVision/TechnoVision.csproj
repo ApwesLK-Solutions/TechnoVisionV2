@@ -159,6 +159,12 @@
     <Compile Include="view\UI_EDIT_CUSTOMER.Designer.cs">
       <DependentUpon>UI_EDIT_CUSTOMER.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\UI_EDIT_SPECTACLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UI_EDIT_SPECTACLE.Designer.cs">
+      <DependentUpon>UI_EDIT_SPECTACLE.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_EDIT_SYSTEM_USER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_EDIT_CUSTOMER.resx">
       <DependentUpon>UI_EDIT_CUSTOMER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\UI_EDIT_SPECTACLE.resx">
+      <DependentUpon>UI_EDIT_SPECTACLE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_EDIT_SYSTEM_USER.resx">
       <DependentUpon>UI_EDIT_SYSTEM_USER.cs</DependentUpon>
