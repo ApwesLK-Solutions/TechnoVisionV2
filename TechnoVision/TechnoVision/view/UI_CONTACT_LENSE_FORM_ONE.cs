@@ -91,12 +91,13 @@ namespace TechnoVision.view
             string newRno;
             try
             {
-                rno = t.getReceiptNumberByBranch(Session.BranchId).ToString();
-                newRno = (int.Parse(rno) + 1).ToString();
+                rno = t.getReceiptNumberByBranch(Session.BranchId, DateTime.Now.ToString("yyyy")).ToString();
+                string BranchCharacter = rno.Substring(0, 1);
+                newRno = BranchCharacter + (int.Parse(rno.Remove(0, 1)) + 1).ToString();
             }
             catch(NullReferenceException ex)
             {
-                newRno = "1";
+                newRno = Session.BranchName[0] + "1";
             }
             LblReceiptNo.Text = newRno;
         }
