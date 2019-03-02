@@ -26,7 +26,16 @@ namespace TechnoVision.view
 
         private void BtnEditCustomer_Click(object sender, EventArgs e)
         {
-            new UI_EDIT_CUSTOMER(GridManageCustomer.SelectedRows[0].Cells[0].Value.ToString()).Show();
+            try
+            {
+                new UI_EDIT_CUSTOMER(GridManageCustomer.SelectedRows[0].Cells[0].Value.ToString()).Show();
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, "There is Nothing To Select Or Not Selected");
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
         }
 
         private void TxtSearchCustomer_TextChanged(object sender, EventArgs e)

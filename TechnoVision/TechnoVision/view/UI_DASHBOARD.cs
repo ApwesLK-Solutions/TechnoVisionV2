@@ -37,6 +37,19 @@ namespace TechnoVision.view
         private void metroTile8_Click(object sender, EventArgs e)
         {
             new UI_ORDER_LIST().Show();
+        private void BtnManageCustomer_Click(object sender, EventArgs e)
+        {
+            new UI_VIEW_CUSTOMER().Show();
+        }
+
+        private void BtnManageFrames_Click(object sender, EventArgs e)
+        {
+            new UI_MANAGE_FRAMES().Show();
+        }
+
+        private void BtnManageTesters_Click(object sender, EventArgs e)
+        {
+            new UI_MANAGE_TESTERS().Show();
         }
 
         private void BtnManageBranches_Click(object sender, EventArgs e)

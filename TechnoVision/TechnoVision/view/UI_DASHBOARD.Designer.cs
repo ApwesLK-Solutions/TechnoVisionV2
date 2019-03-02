@@ -154,6 +154,7 @@
             this.BtnManageCustomer.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.BtnManageCustomer.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.BtnManageCustomer.UseSelectable = true;
+            this.BtnManageCustomer.Click += new System.EventHandler(this.BtnManageCustomer_Click);
             // 
             // BtnManageFrames
             // 
@@ -167,6 +168,7 @@
             this.BtnManageFrames.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.BtnManageFrames.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.BtnManageFrames.UseSelectable = true;
+            this.BtnManageFrames.Click += new System.EventHandler(this.BtnManageFrames_Click);
             // 
             // BtnManageTesters
             // 
@@ -180,6 +182,7 @@
             this.BtnManageTesters.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.BtnManageTesters.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.BtnManageTesters.UseSelectable = true;
+            this.BtnManageTesters.Click += new System.EventHandler(this.BtnManageTesters_Click);
             // 
             // BtnManageBranches
             // 
