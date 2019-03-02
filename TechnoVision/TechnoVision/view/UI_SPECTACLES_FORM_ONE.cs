@@ -94,5 +94,26 @@ namespace TechnoVision.view
             }
             
         }
+
+        private void BtnCalculate_Click(object sender, EventArgs e)
+        {
+            double EyeWearAmount = 0;
+            double LenseAmount = 0;
+            double total = 0;
+            double discount = 0;
+            double advance = 0;
+            double balance = 0;
+
+            EyeWearAmount =Double.Parse(TxtEyeWearAmount.Text);
+            LenseAmount = Double.Parse(TxtLenseAmount.Text);
+            total = Double.Parse(TxtDiscount.Text);
+            discount = Double.Parse(TxtDiscount.Text);
+            advance = Double.Parse(TxtAdvance.Text);
+            balance = Double.Parse(TxtBalance.Text);
+
+            total = EyeWearAmount + LenseAmount;
+            balance = total - discount - advance;
+            TxtBalance.Text = balance.ToString();
+        }
     }
 }
