@@ -40,7 +40,9 @@ namespace TechnoVision.view
             }
             else if(OrderType == "L")
             {
-
+                InvoiceLenseCompany rpt = new InvoiceLenseCompany();
+                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + OrderNumber + "'";
+                new UI_REPORT_VIEWER(rpt).Show();
             }
         }
 
@@ -54,7 +56,9 @@ namespace TechnoVision.view
             }
             else if (OrderType == "L")
             {
-
+                InvoiceLenseCustomer rpt = new InvoiceLenseCustomer();
+                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + OrderNumber + "'";
+                new UI_REPORT_VIEWER(rpt).Show();
             }
         }
 
@@ -68,11 +72,30 @@ namespace TechnoVision.view
             }
             else if (OrderType == "L")
             {
-
+                InvoiceLenseCustomer rpt = new InvoiceLenseCustomer();
+                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + OrderNumber + "'";
+                rpt.PrintToPrinter(1, false, 1, 1);
             }
         }
 
         private void BtnPrintCompanyCopy_Click(object sender, EventArgs e)
+        {
+            if (OrderType == "S")
+            {
+                InvoiceSpecCompany rpt = new InvoiceSpecCompany();
+                rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "'";
+                rpt.PrintToPrinter(1, false, 1, 1);
+                
+            }
+            else if (OrderType == "L")
+            {
+                InvoiceLenseCompany rpt = new InvoiceLenseCompany();
+                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + OrderNumber + "'";
+                rpt.PrintToPrinter(1, false, 1, 1);
+            }
+        }
+
+        private void BtnPrintBothCopies_Click(object sender, EventArgs e)
         {
             if (OrderType == "S")
             {
@@ -85,21 +108,12 @@ namespace TechnoVision.view
             }
             else if (OrderType == "L")
             {
-
-            }
-        }
-
-        private void BtnPrintBothCopies_Click(object sender, EventArgs e)
-        {
-            if (OrderType == "S")
-            {
-                InvoiceSpecCompany rpt = new InvoiceSpecCompany();
-                rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "'";
+                InvoiceLenseCompany rpt = new InvoiceLenseCompany();
+                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + OrderNumber + "'";
                 rpt.PrintToPrinter(1, false, 1, 1);
-            }
-            else if (OrderType == "L")
-            {
-
+                InvoiceLenseCustomer rpt2 = new InvoiceLenseCustomer();
+                rpt2.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + OrderNumber + "'";
+                rpt2.PrintToPrinter(1, false, 1, 1);
             }
         }
     }
