@@ -37,6 +37,9 @@
             this.TxtAddFrame = new MetroFramework.Controls.MetroTextBox();
             this.TxtSearch = new MetroFramework.Controls.MetroTextBox();
             this.GridFrame = new MetroFramework.Controls.MetroGrid();
+            this.framesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.framesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.framesTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.frameNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.framesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -150,6 +153,7 @@
             this.TxtSearch.WaterMark = "Search Frames...";
             this.TxtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
             // 
             // GridFrame
             // 
@@ -207,6 +211,20 @@
             this.GridFrame.Style = MetroFramework.MetroColorStyle.Green;
             this.GridFrame.TabIndex = 10;
             // 
+            // framesBindingSource
+            // 
+            this.framesBindingSource.DataMember = "frames";
+            this.framesBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // framesTableAdapter
+            // 
+            this.framesTableAdapter.ClearBeforeFill = true;
+            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -217,7 +235,7 @@
             // frameNameDataGridViewTextBoxColumn
             // 
             this.frameNameDataGridViewTextBoxColumn.DataPropertyName = "FrameName";
-            this.frameNameDataGridViewTextBoxColumn.HeaderText = "FrameName";
+            this.frameNameDataGridViewTextBoxColumn.HeaderText = "Frame Name";
             this.frameNameDataGridViewTextBoxColumn.Name = "frameNameDataGridViewTextBoxColumn";
             this.frameNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 

@@ -36,6 +36,9 @@ namespace TechnoVision.view
             technovisionDataSetTableAdapters.framesTableAdapter t = new technovisionDataSetTableAdapters.framesTableAdapter();
             t.DeleteByID(int.Parse(GridFrame.SelectedRows[0].Cells[0].Value.ToString()));
             this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
+        {
+            framesBindingSource.Filter = ("FrameName LIKE '%" + TxtSearch.Text + "%'");
         }
     }
 }
