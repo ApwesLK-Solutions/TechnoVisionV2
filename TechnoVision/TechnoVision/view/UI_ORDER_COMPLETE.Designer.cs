@@ -64,6 +64,7 @@
             this.BtnViewCustomerCopy.UseCustomForeColor = true;
             this.BtnViewCustomerCopy.UseSelectable = true;
             this.BtnViewCustomerCopy.UseStyleColors = true;
+            this.BtnViewCustomerCopy.Click += new System.EventHandler(this.BtnViewCustomerCopy_Click);
             // 
             // BtnViewCompanyCopy
             // 
@@ -101,6 +102,7 @@
             this.BtnPrintCustomerCopy.UseCustomForeColor = true;
             this.BtnPrintCustomerCopy.UseSelectable = true;
             this.BtnPrintCustomerCopy.UseStyleColors = true;
+            this.BtnPrintCustomerCopy.Click += new System.EventHandler(this.BtnPrintCustomerCopy_Click);
             // 
             // BtnPrintCompanyCopy
             // 
@@ -119,6 +121,7 @@
             this.BtnPrintCompanyCopy.UseCustomForeColor = true;
             this.BtnPrintCompanyCopy.UseSelectable = true;
             this.BtnPrintCompanyCopy.UseStyleColors = true;
+            this.BtnPrintCompanyCopy.Click += new System.EventHandler(this.BtnPrintCompanyCopy_Click);
             // 
             // BtnPrintBothCopies
             // 
@@ -137,6 +140,7 @@
             this.BtnPrintBothCopies.UseCustomForeColor = true;
             this.BtnPrintBothCopies.UseSelectable = true;
             this.BtnPrintBothCopies.UseStyleColors = true;
+            this.BtnPrintBothCopies.Click += new System.EventHandler(this.BtnPrintBothCopies_Click);
             // 
             // UI_ORDER_COMPLETE
             // 
