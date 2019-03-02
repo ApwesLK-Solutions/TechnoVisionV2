@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.BtnDiscard = new MetroFramework.Controls.MetroButton();
             this.BtnSave = new MetroFramework.Controls.MetroButton();
-            this.CmbBranch = new MetroFramework.Controls.MetroComboBox();
             this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.TxtAge = new MetroFramework.Controls.MetroTextBox();
@@ -50,6 +49,7 @@
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.LblCustomerId = new MetroFramework.Controls.MetroLabel();
             this.customerTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.customerTableAdapter();
+            this.TxtBranch = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
@@ -91,21 +91,6 @@
             this.BtnSave.UseSelectable = true;
             this.BtnSave.UseStyleColors = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
-            // 
-            // CmbBranch
-            // 
-            this.CmbBranch.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.customerBindingSource, "Branch", true));
-            this.CmbBranch.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.technovisionDataSet, "branch.BranchName", true));
-            this.CmbBranch.DataSource = this.customerBindingSource;
-            this.CmbBranch.DisplayMember = "Branch";
-            this.CmbBranch.FormattingEnabled = true;
-            this.CmbBranch.ItemHeight = 24;
-            this.CmbBranch.Location = new System.Drawing.Point(643, 351);
-            this.CmbBranch.Name = "CmbBranch";
-            this.CmbBranch.Size = new System.Drawing.Size(286, 30);
-            this.CmbBranch.TabIndex = 7;
-            this.CmbBranch.UseSelectable = true;
-            this.CmbBranch.ValueMember = "Branch";
             // 
             // customerBindingSource
             // 
@@ -424,6 +409,41 @@
             // 
             this.customerTableAdapter.ClearBeforeFill = true;
             // 
+            // TxtBranch
+            // 
+            this.TxtBranch.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            // 
+            // 
+            // 
+            this.TxtBranch.CustomButton.Image = null;
+            this.TxtBranch.CustomButton.Location = new System.Drawing.Point(258, 2);
+            this.TxtBranch.CustomButton.Name = "";
+            this.TxtBranch.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtBranch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.TxtBranch.CustomButton.TabIndex = 1;
+            this.TxtBranch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.TxtBranch.CustomButton.UseSelectable = true;
+            this.TxtBranch.CustomButton.Visible = false;
+            this.TxtBranch.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customerBindingSource, "Branch", true));
+            this.TxtBranch.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.TxtBranch.Lines = new string[0];
+            this.TxtBranch.Location = new System.Drawing.Point(643, 342);
+            this.TxtBranch.MaxLength = 32767;
+            this.TxtBranch.Name = "TxtBranch";
+            this.TxtBranch.PasswordChar = '\0';
+            this.TxtBranch.PromptText = "Enter Branch...";
+            this.TxtBranch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TxtBranch.SelectedText = "";
+            this.TxtBranch.SelectionLength = 0;
+            this.TxtBranch.SelectionStart = 0;
+            this.TxtBranch.ShortcutsEnabled = true;
+            this.TxtBranch.Size = new System.Drawing.Size(286, 30);
+            this.TxtBranch.TabIndex = 6;
+            this.TxtBranch.UseSelectable = true;
+            this.TxtBranch.WaterMark = "Enter Branch...";
+            this.TxtBranch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.TxtBranch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // UI_EDIT_CUSTOMER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -431,7 +451,7 @@
             this.ClientSize = new System.Drawing.Size(963, 470);
             this.Controls.Add(this.BtnDiscard);
             this.Controls.Add(this.BtnSave);
-            this.Controls.Add(this.CmbBranch);
+            this.Controls.Add(this.TxtBranch);
             this.Controls.Add(this.TxtAge);
             this.Controls.Add(this.TxtProffession);
             this.Controls.Add(this.TxtContactNumber);
@@ -464,7 +484,6 @@
 
         private MetroFramework.Controls.MetroButton BtnDiscard;
         private MetroFramework.Controls.MetroButton BtnSave;
-        private MetroFramework.Controls.MetroComboBox CmbBranch;
         private MetroFramework.Controls.MetroTextBox TxtAge;
         private MetroFramework.Controls.MetroTextBox TxtProffession;
         private MetroFramework.Controls.MetroTextBox TxtContactNumber;
@@ -483,5 +502,6 @@
         private technovisionDataSet technovisionDataSet;
         private System.Windows.Forms.BindingSource customerBindingSource;
         private technovisionDataSetTableAdapters.customerTableAdapter customerTableAdapter;
+        private MetroFramework.Controls.MetroTextBox TxtBranch;
     }
 }
