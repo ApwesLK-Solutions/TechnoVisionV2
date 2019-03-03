@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TxtSearch = new MetroFramework.Controls.MetroTextBox();
             this.RadioContactLense = new MetroFramework.Controls.MetroRadioButton();
@@ -42,11 +42,39 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.LblCustomerName = new MetroFramework.Controls.MetroLabel();
             this.GridSpectacle = new MetroFramework.Controls.MetroGrid();
-            this.GridContactLense = new MetroFramework.Controls.MetroGrid();
-            this.BtnViewOrder = new MetroFramework.Controls.MetroButton();
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dueDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderStatusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.advanceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.discountDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.balanceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.testByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eyeWearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lenseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentPlanDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentMethodDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.distRightSphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.distRightCylDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.distRightAxisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.distLeftSphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.distLeftCylDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.distLeftAxisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addRightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addLeftDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lenseTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.frameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.segmentHightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.specialInstractionsDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.remarksDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reminderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.branchDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spectaclesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.contactlenseBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.contactlenseTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.contactlenseTableAdapter();
+            this.GridContactLense = new MetroFramework.Controls.MetroGrid();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,45 +121,19 @@
             this.reminderDaysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.branchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.spectaclesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.contactlenseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.BtnViewOrder = new MetroFramework.Controls.MetroButton();
+            this.contactlenseTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.contactlenseTableAdapter();
             this.spectaclesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.spectaclesTableAdapter();
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dueDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderStatusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.advanceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.discountDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.balanceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.testByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eyeWearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lenseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paymentPlanDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paymentMethodDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distRightSphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distRightCylDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distRightAxisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distLeftSphDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distLeftCylDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distLeftAxisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addRightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addLeftDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lenseTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.frameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.segmentHightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.specialInstractionsDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.remarksDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reminderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.branchDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.BtnPrintCustomerCopy = new MetroFramework.Controls.MetroButton();
+            this.BtnPrintCompanyCopy = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridSpectacle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridContactLense)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contactlenseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spectaclesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridContactLense)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactlenseBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -238,14 +240,14 @@
             this.GridSpectacle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridSpectacle.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GridSpectacle.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridSpectacle.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridSpectacle.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GridSpectacle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridSpectacle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn1,
@@ -279,14 +281,14 @@
             this.reminderDateDataGridViewTextBoxColumn,
             this.branchDataGridViewTextBoxColumn1});
             this.GridSpectacle.DataSource = this.spectaclesBindingSource;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridSpectacle.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridSpectacle.DefaultCellStyle = dataGridViewCellStyle2;
             this.GridSpectacle.EnableHeadersVisualStyles = false;
             this.GridSpectacle.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridSpectacle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -294,19 +296,240 @@
             this.GridSpectacle.Name = "GridSpectacle";
             this.GridSpectacle.ReadOnly = true;
             this.GridSpectacle.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridSpectacle.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridSpectacle.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GridSpectacle.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GridSpectacle.RowTemplate.Height = 24;
             this.GridSpectacle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridSpectacle.Size = new System.Drawing.Size(783, 356);
+            this.GridSpectacle.Style = MetroFramework.MetroColorStyle.Green;
             this.GridSpectacle.TabIndex = 3;
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // orderNumberDataGridViewTextBoxColumn1
+            // 
+            this.orderNumberDataGridViewTextBoxColumn1.DataPropertyName = "OrderNumber";
+            this.orderNumberDataGridViewTextBoxColumn1.HeaderText = "OrderNumber";
+            this.orderNumberDataGridViewTextBoxColumn1.Name = "orderNumberDataGridViewTextBoxColumn1";
+            this.orderNumberDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // orderDateDataGridViewTextBoxColumn1
+            // 
+            this.orderDateDataGridViewTextBoxColumn1.DataPropertyName = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn1.HeaderText = "OrderDate";
+            this.orderDateDataGridViewTextBoxColumn1.Name = "orderDateDataGridViewTextBoxColumn1";
+            this.orderDateDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dueDateDataGridViewTextBoxColumn1
+            // 
+            this.dueDateDataGridViewTextBoxColumn1.DataPropertyName = "DueDate";
+            this.dueDateDataGridViewTextBoxColumn1.HeaderText = "DueDate";
+            this.dueDateDataGridViewTextBoxColumn1.Name = "dueDateDataGridViewTextBoxColumn1";
+            this.dueDateDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // orderStatusDataGridViewTextBoxColumn1
+            // 
+            this.orderStatusDataGridViewTextBoxColumn1.DataPropertyName = "OrderStatus";
+            this.orderStatusDataGridViewTextBoxColumn1.HeaderText = "OrderStatus";
+            this.orderStatusDataGridViewTextBoxColumn1.Name = "orderStatusDataGridViewTextBoxColumn1";
+            this.orderStatusDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // totalDataGridViewTextBoxColumn1
+            // 
+            this.totalDataGridViewTextBoxColumn1.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn1.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn1.Name = "totalDataGridViewTextBoxColumn1";
+            this.totalDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // advanceDataGridViewTextBoxColumn1
+            // 
+            this.advanceDataGridViewTextBoxColumn1.DataPropertyName = "Advance";
+            this.advanceDataGridViewTextBoxColumn1.HeaderText = "Advance";
+            this.advanceDataGridViewTextBoxColumn1.Name = "advanceDataGridViewTextBoxColumn1";
+            this.advanceDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // discountDataGridViewTextBoxColumn1
+            // 
+            this.discountDataGridViewTextBoxColumn1.DataPropertyName = "Discount";
+            this.discountDataGridViewTextBoxColumn1.HeaderText = "Discount";
+            this.discountDataGridViewTextBoxColumn1.Name = "discountDataGridViewTextBoxColumn1";
+            this.discountDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // balanceDataGridViewTextBoxColumn1
+            // 
+            this.balanceDataGridViewTextBoxColumn1.DataPropertyName = "Balance";
+            this.balanceDataGridViewTextBoxColumn1.HeaderText = "Balance";
+            this.balanceDataGridViewTextBoxColumn1.Name = "balanceDataGridViewTextBoxColumn1";
+            this.balanceDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // testByDataGridViewTextBoxColumn
+            // 
+            this.testByDataGridViewTextBoxColumn.DataPropertyName = "TestBy";
+            this.testByDataGridViewTextBoxColumn.HeaderText = "TestBy";
+            this.testByDataGridViewTextBoxColumn.Name = "testByDataGridViewTextBoxColumn";
+            this.testByDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // eyeWearDataGridViewTextBoxColumn
+            // 
+            this.eyeWearDataGridViewTextBoxColumn.DataPropertyName = "EyeWear";
+            this.eyeWearDataGridViewTextBoxColumn.HeaderText = "EyeWear";
+            this.eyeWearDataGridViewTextBoxColumn.Name = "eyeWearDataGridViewTextBoxColumn";
+            this.eyeWearDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lenseDataGridViewTextBoxColumn
+            // 
+            this.lenseDataGridViewTextBoxColumn.DataPropertyName = "Lense";
+            this.lenseDataGridViewTextBoxColumn.HeaderText = "Lense";
+            this.lenseDataGridViewTextBoxColumn.Name = "lenseDataGridViewTextBoxColumn";
+            this.lenseDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // paymentPlanDataGridViewTextBoxColumn1
+            // 
+            this.paymentPlanDataGridViewTextBoxColumn1.DataPropertyName = "PaymentPlan";
+            this.paymentPlanDataGridViewTextBoxColumn1.HeaderText = "PaymentPlan";
+            this.paymentPlanDataGridViewTextBoxColumn1.Name = "paymentPlanDataGridViewTextBoxColumn1";
+            this.paymentPlanDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // paymentMethodDataGridViewTextBoxColumn1
+            // 
+            this.paymentMethodDataGridViewTextBoxColumn1.DataPropertyName = "PaymentMethod";
+            this.paymentMethodDataGridViewTextBoxColumn1.HeaderText = "PaymentMethod";
+            this.paymentMethodDataGridViewTextBoxColumn1.Name = "paymentMethodDataGridViewTextBoxColumn1";
+            this.paymentMethodDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // distRightSphDataGridViewTextBoxColumn
+            // 
+            this.distRightSphDataGridViewTextBoxColumn.DataPropertyName = "DistRightSph";
+            this.distRightSphDataGridViewTextBoxColumn.HeaderText = "DistRightSph";
+            this.distRightSphDataGridViewTextBoxColumn.Name = "distRightSphDataGridViewTextBoxColumn";
+            this.distRightSphDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // distRightCylDataGridViewTextBoxColumn
+            // 
+            this.distRightCylDataGridViewTextBoxColumn.DataPropertyName = "DistRightCyl";
+            this.distRightCylDataGridViewTextBoxColumn.HeaderText = "DistRightCyl";
+            this.distRightCylDataGridViewTextBoxColumn.Name = "distRightCylDataGridViewTextBoxColumn";
+            this.distRightCylDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // distRightAxisDataGridViewTextBoxColumn
+            // 
+            this.distRightAxisDataGridViewTextBoxColumn.DataPropertyName = "DistRightAxis";
+            this.distRightAxisDataGridViewTextBoxColumn.HeaderText = "DistRightAxis";
+            this.distRightAxisDataGridViewTextBoxColumn.Name = "distRightAxisDataGridViewTextBoxColumn";
+            this.distRightAxisDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // distLeftSphDataGridViewTextBoxColumn
+            // 
+            this.distLeftSphDataGridViewTextBoxColumn.DataPropertyName = "DistLeftSph";
+            this.distLeftSphDataGridViewTextBoxColumn.HeaderText = "DistLeftSph";
+            this.distLeftSphDataGridViewTextBoxColumn.Name = "distLeftSphDataGridViewTextBoxColumn";
+            this.distLeftSphDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // distLeftCylDataGridViewTextBoxColumn
+            // 
+            this.distLeftCylDataGridViewTextBoxColumn.DataPropertyName = "DistLeftCyl";
+            this.distLeftCylDataGridViewTextBoxColumn.HeaderText = "DistLeftCyl";
+            this.distLeftCylDataGridViewTextBoxColumn.Name = "distLeftCylDataGridViewTextBoxColumn";
+            this.distLeftCylDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // distLeftAxisDataGridViewTextBoxColumn
+            // 
+            this.distLeftAxisDataGridViewTextBoxColumn.DataPropertyName = "DistLeftAxis";
+            this.distLeftAxisDataGridViewTextBoxColumn.HeaderText = "DistLeftAxis";
+            this.distLeftAxisDataGridViewTextBoxColumn.Name = "distLeftAxisDataGridViewTextBoxColumn";
+            this.distLeftAxisDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // addRightDataGridViewTextBoxColumn
+            // 
+            this.addRightDataGridViewTextBoxColumn.DataPropertyName = "AddRight";
+            this.addRightDataGridViewTextBoxColumn.HeaderText = "AddRight";
+            this.addRightDataGridViewTextBoxColumn.Name = "addRightDataGridViewTextBoxColumn";
+            this.addRightDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // addLeftDataGridViewTextBoxColumn
+            // 
+            this.addLeftDataGridViewTextBoxColumn.DataPropertyName = "AddLeft";
+            this.addLeftDataGridViewTextBoxColumn.HeaderText = "AddLeft";
+            this.addLeftDataGridViewTextBoxColumn.Name = "addLeftDataGridViewTextBoxColumn";
+            this.addLeftDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lenseTypeDataGridViewTextBoxColumn
+            // 
+            this.lenseTypeDataGridViewTextBoxColumn.DataPropertyName = "LenseType";
+            this.lenseTypeDataGridViewTextBoxColumn.HeaderText = "LenseType";
+            this.lenseTypeDataGridViewTextBoxColumn.Name = "lenseTypeDataGridViewTextBoxColumn";
+            this.lenseTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // frameDataGridViewTextBoxColumn
+            // 
+            this.frameDataGridViewTextBoxColumn.DataPropertyName = "Frame";
+            this.frameDataGridViewTextBoxColumn.HeaderText = "Frame";
+            this.frameDataGridViewTextBoxColumn.Name = "frameDataGridViewTextBoxColumn";
+            this.frameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // pDDataGridViewTextBoxColumn
+            // 
+            this.pDDataGridViewTextBoxColumn.DataPropertyName = "PD";
+            this.pDDataGridViewTextBoxColumn.HeaderText = "PD";
+            this.pDDataGridViewTextBoxColumn.Name = "pDDataGridViewTextBoxColumn";
+            this.pDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // segmentHightDataGridViewTextBoxColumn
+            // 
+            this.segmentHightDataGridViewTextBoxColumn.DataPropertyName = "SegmentHight";
+            this.segmentHightDataGridViewTextBoxColumn.HeaderText = "SegmentHight";
+            this.segmentHightDataGridViewTextBoxColumn.Name = "segmentHightDataGridViewTextBoxColumn";
+            this.segmentHightDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // specialInstractionsDataGridViewTextBoxColumn1
+            // 
+            this.specialInstractionsDataGridViewTextBoxColumn1.DataPropertyName = "SpecialInstractions";
+            this.specialInstractionsDataGridViewTextBoxColumn1.HeaderText = "SpecialInstractions";
+            this.specialInstractionsDataGridViewTextBoxColumn1.Name = "specialInstractionsDataGridViewTextBoxColumn1";
+            this.specialInstractionsDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // remarksDataGridViewTextBoxColumn1
+            // 
+            this.remarksDataGridViewTextBoxColumn1.DataPropertyName = "Remarks";
+            this.remarksDataGridViewTextBoxColumn1.HeaderText = "Remarks";
+            this.remarksDataGridViewTextBoxColumn1.Name = "remarksDataGridViewTextBoxColumn1";
+            this.remarksDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // reminderDateDataGridViewTextBoxColumn
+            // 
+            this.reminderDateDataGridViewTextBoxColumn.DataPropertyName = "ReminderDate";
+            this.reminderDateDataGridViewTextBoxColumn.HeaderText = "ReminderDate";
+            this.reminderDateDataGridViewTextBoxColumn.Name = "reminderDateDataGridViewTextBoxColumn";
+            this.reminderDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // branchDataGridViewTextBoxColumn1
+            // 
+            this.branchDataGridViewTextBoxColumn1.DataPropertyName = "Branch";
+            this.branchDataGridViewTextBoxColumn1.HeaderText = "Branch";
+            this.branchDataGridViewTextBoxColumn1.Name = "branchDataGridViewTextBoxColumn1";
+            this.branchDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // spectaclesBindingSource
+            // 
+            this.spectaclesBindingSource.DataMember = "spectacles";
+            this.spectaclesBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // GridContactLense
             // 
@@ -319,14 +542,14 @@
             this.GridContactLense.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridContactLense.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GridContactLense.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridContactLense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridContactLense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.GridContactLense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridContactLense.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -376,14 +599,14 @@
             this.branchDataGridViewTextBoxColumn,
             this.yearDataGridViewTextBoxColumn});
             this.GridContactLense.DataSource = this.contactlenseBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridContactLense.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridContactLense.DefaultCellStyle = dataGridViewCellStyle5;
             this.GridContactLense.EnableHeadersVisualStyles = false;
             this.GridContactLense.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridContactLense.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -391,51 +614,20 @@
             this.GridContactLense.Name = "GridContactLense";
             this.GridContactLense.ReadOnly = true;
             this.GridContactLense.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridContactLense.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridContactLense.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.GridContactLense.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GridContactLense.RowTemplate.Height = 24;
             this.GridContactLense.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridContactLense.Size = new System.Drawing.Size(783, 356);
+            this.GridContactLense.Style = MetroFramework.MetroColorStyle.Green;
             this.GridContactLense.TabIndex = 4;
-            // 
-            // BtnViewOrder
-            // 
-            this.BtnViewOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnViewOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnViewOrder.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.BtnViewOrder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnViewOrder.Highlight = true;
-            this.BtnViewOrder.Location = new System.Drawing.Point(655, 562);
-            this.BtnViewOrder.Name = "BtnViewOrder";
-            this.BtnViewOrder.Size = new System.Drawing.Size(152, 45);
-            this.BtnViewOrder.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnViewOrder.TabIndex = 8;
-            this.BtnViewOrder.Text = "View Order Details";
-            this.BtnViewOrder.UseCustomBackColor = true;
-            this.BtnViewOrder.UseCustomForeColor = true;
-            this.BtnViewOrder.UseSelectable = true;
-            this.BtnViewOrder.UseStyleColors = true;
-            // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // contactlenseBindingSource
-            // 
-            this.contactlenseBindingSource.DataMember = "contactlense";
-            this.contactlenseBindingSource.DataSource = this.technovisionDataSet;
-            // 
-            // contactlenseTableAdapter
-            // 
-            this.contactlenseTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -759,235 +951,85 @@
             this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
             this.yearDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // spectaclesBindingSource
+            // contactlenseBindingSource
             // 
-            this.spectaclesBindingSource.DataMember = "spectacles";
-            this.spectaclesBindingSource.DataSource = this.technovisionDataSet;
+            this.contactlenseBindingSource.DataMember = "contactlense";
+            this.contactlenseBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // BtnViewOrder
+            // 
+            this.BtnViewOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnViewOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnViewOrder.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.BtnViewOrder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnViewOrder.Highlight = true;
+            this.BtnViewOrder.Location = new System.Drawing.Point(655, 562);
+            this.BtnViewOrder.Name = "BtnViewOrder";
+            this.BtnViewOrder.Size = new System.Drawing.Size(152, 45);
+            this.BtnViewOrder.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnViewOrder.TabIndex = 8;
+            this.BtnViewOrder.Text = "View Order Details";
+            this.BtnViewOrder.UseCustomBackColor = true;
+            this.BtnViewOrder.UseCustomForeColor = true;
+            this.BtnViewOrder.UseSelectable = true;
+            this.BtnViewOrder.UseStyleColors = true;
+            // 
+            // contactlenseTableAdapter
+            // 
+            this.contactlenseTableAdapter.ClearBeforeFill = true;
             // 
             // spectaclesTableAdapter
             // 
             this.spectaclesTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // orderNumberDataGridViewTextBoxColumn1
-            // 
-            this.orderNumberDataGridViewTextBoxColumn1.DataPropertyName = "OrderNumber";
-            this.orderNumberDataGridViewTextBoxColumn1.HeaderText = "OrderNumber";
-            this.orderNumberDataGridViewTextBoxColumn1.Name = "orderNumberDataGridViewTextBoxColumn1";
-            this.orderNumberDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // orderDateDataGridViewTextBoxColumn1
-            // 
-            this.orderDateDataGridViewTextBoxColumn1.DataPropertyName = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn1.HeaderText = "OrderDate";
-            this.orderDateDataGridViewTextBoxColumn1.Name = "orderDateDataGridViewTextBoxColumn1";
-            this.orderDateDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dueDateDataGridViewTextBoxColumn1
-            // 
-            this.dueDateDataGridViewTextBoxColumn1.DataPropertyName = "DueDate";
-            this.dueDateDataGridViewTextBoxColumn1.HeaderText = "DueDate";
-            this.dueDateDataGridViewTextBoxColumn1.Name = "dueDateDataGridViewTextBoxColumn1";
-            this.dueDateDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // orderStatusDataGridViewTextBoxColumn1
-            // 
-            this.orderStatusDataGridViewTextBoxColumn1.DataPropertyName = "OrderStatus";
-            this.orderStatusDataGridViewTextBoxColumn1.HeaderText = "OrderStatus";
-            this.orderStatusDataGridViewTextBoxColumn1.Name = "orderStatusDataGridViewTextBoxColumn1";
-            this.orderStatusDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // totalDataGridViewTextBoxColumn1
-            // 
-            this.totalDataGridViewTextBoxColumn1.DataPropertyName = "Total";
-            this.totalDataGridViewTextBoxColumn1.HeaderText = "Total";
-            this.totalDataGridViewTextBoxColumn1.Name = "totalDataGridViewTextBoxColumn1";
-            this.totalDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // advanceDataGridViewTextBoxColumn1
-            // 
-            this.advanceDataGridViewTextBoxColumn1.DataPropertyName = "Advance";
-            this.advanceDataGridViewTextBoxColumn1.HeaderText = "Advance";
-            this.advanceDataGridViewTextBoxColumn1.Name = "advanceDataGridViewTextBoxColumn1";
-            this.advanceDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // discountDataGridViewTextBoxColumn1
-            // 
-            this.discountDataGridViewTextBoxColumn1.DataPropertyName = "Discount";
-            this.discountDataGridViewTextBoxColumn1.HeaderText = "Discount";
-            this.discountDataGridViewTextBoxColumn1.Name = "discountDataGridViewTextBoxColumn1";
-            this.discountDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // balanceDataGridViewTextBoxColumn1
-            // 
-            this.balanceDataGridViewTextBoxColumn1.DataPropertyName = "Balance";
-            this.balanceDataGridViewTextBoxColumn1.HeaderText = "Balance";
-            this.balanceDataGridViewTextBoxColumn1.Name = "balanceDataGridViewTextBoxColumn1";
-            this.balanceDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // testByDataGridViewTextBoxColumn
-            // 
-            this.testByDataGridViewTextBoxColumn.DataPropertyName = "TestBy";
-            this.testByDataGridViewTextBoxColumn.HeaderText = "TestBy";
-            this.testByDataGridViewTextBoxColumn.Name = "testByDataGridViewTextBoxColumn";
-            this.testByDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // eyeWearDataGridViewTextBoxColumn
-            // 
-            this.eyeWearDataGridViewTextBoxColumn.DataPropertyName = "EyeWear";
-            this.eyeWearDataGridViewTextBoxColumn.HeaderText = "EyeWear";
-            this.eyeWearDataGridViewTextBoxColumn.Name = "eyeWearDataGridViewTextBoxColumn";
-            this.eyeWearDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lenseDataGridViewTextBoxColumn
-            // 
-            this.lenseDataGridViewTextBoxColumn.DataPropertyName = "Lense";
-            this.lenseDataGridViewTextBoxColumn.HeaderText = "Lense";
-            this.lenseDataGridViewTextBoxColumn.Name = "lenseDataGridViewTextBoxColumn";
-            this.lenseDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // paymentPlanDataGridViewTextBoxColumn1
-            // 
-            this.paymentPlanDataGridViewTextBoxColumn1.DataPropertyName = "PaymentPlan";
-            this.paymentPlanDataGridViewTextBoxColumn1.HeaderText = "PaymentPlan";
-            this.paymentPlanDataGridViewTextBoxColumn1.Name = "paymentPlanDataGridViewTextBoxColumn1";
-            this.paymentPlanDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // paymentMethodDataGridViewTextBoxColumn1
-            // 
-            this.paymentMethodDataGridViewTextBoxColumn1.DataPropertyName = "PaymentMethod";
-            this.paymentMethodDataGridViewTextBoxColumn1.HeaderText = "PaymentMethod";
-            this.paymentMethodDataGridViewTextBoxColumn1.Name = "paymentMethodDataGridViewTextBoxColumn1";
-            this.paymentMethodDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // distRightSphDataGridViewTextBoxColumn
-            // 
-            this.distRightSphDataGridViewTextBoxColumn.DataPropertyName = "DistRightSph";
-            this.distRightSphDataGridViewTextBoxColumn.HeaderText = "DistRightSph";
-            this.distRightSphDataGridViewTextBoxColumn.Name = "distRightSphDataGridViewTextBoxColumn";
-            this.distRightSphDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distRightCylDataGridViewTextBoxColumn
-            // 
-            this.distRightCylDataGridViewTextBoxColumn.DataPropertyName = "DistRightCyl";
-            this.distRightCylDataGridViewTextBoxColumn.HeaderText = "DistRightCyl";
-            this.distRightCylDataGridViewTextBoxColumn.Name = "distRightCylDataGridViewTextBoxColumn";
-            this.distRightCylDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distRightAxisDataGridViewTextBoxColumn
-            // 
-            this.distRightAxisDataGridViewTextBoxColumn.DataPropertyName = "DistRightAxis";
-            this.distRightAxisDataGridViewTextBoxColumn.HeaderText = "DistRightAxis";
-            this.distRightAxisDataGridViewTextBoxColumn.Name = "distRightAxisDataGridViewTextBoxColumn";
-            this.distRightAxisDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distLeftSphDataGridViewTextBoxColumn
-            // 
-            this.distLeftSphDataGridViewTextBoxColumn.DataPropertyName = "DistLeftSph";
-            this.distLeftSphDataGridViewTextBoxColumn.HeaderText = "DistLeftSph";
-            this.distLeftSphDataGridViewTextBoxColumn.Name = "distLeftSphDataGridViewTextBoxColumn";
-            this.distLeftSphDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distLeftCylDataGridViewTextBoxColumn
-            // 
-            this.distLeftCylDataGridViewTextBoxColumn.DataPropertyName = "DistLeftCyl";
-            this.distLeftCylDataGridViewTextBoxColumn.HeaderText = "DistLeftCyl";
-            this.distLeftCylDataGridViewTextBoxColumn.Name = "distLeftCylDataGridViewTextBoxColumn";
-            this.distLeftCylDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // distLeftAxisDataGridViewTextBoxColumn
-            // 
-            this.distLeftAxisDataGridViewTextBoxColumn.DataPropertyName = "DistLeftAxis";
-            this.distLeftAxisDataGridViewTextBoxColumn.HeaderText = "DistLeftAxis";
-            this.distLeftAxisDataGridViewTextBoxColumn.Name = "distLeftAxisDataGridViewTextBoxColumn";
-            this.distLeftAxisDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // addRightDataGridViewTextBoxColumn
-            // 
-            this.addRightDataGridViewTextBoxColumn.DataPropertyName = "AddRight";
-            this.addRightDataGridViewTextBoxColumn.HeaderText = "AddRight";
-            this.addRightDataGridViewTextBoxColumn.Name = "addRightDataGridViewTextBoxColumn";
-            this.addRightDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // addLeftDataGridViewTextBoxColumn
-            // 
-            this.addLeftDataGridViewTextBoxColumn.DataPropertyName = "AddLeft";
-            this.addLeftDataGridViewTextBoxColumn.HeaderText = "AddLeft";
-            this.addLeftDataGridViewTextBoxColumn.Name = "addLeftDataGridViewTextBoxColumn";
-            this.addLeftDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lenseTypeDataGridViewTextBoxColumn
-            // 
-            this.lenseTypeDataGridViewTextBoxColumn.DataPropertyName = "LenseType";
-            this.lenseTypeDataGridViewTextBoxColumn.HeaderText = "LenseType";
-            this.lenseTypeDataGridViewTextBoxColumn.Name = "lenseTypeDataGridViewTextBoxColumn";
-            this.lenseTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // frameDataGridViewTextBoxColumn
-            // 
-            this.frameDataGridViewTextBoxColumn.DataPropertyName = "Frame";
-            this.frameDataGridViewTextBoxColumn.HeaderText = "Frame";
-            this.frameDataGridViewTextBoxColumn.Name = "frameDataGridViewTextBoxColumn";
-            this.frameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pDDataGridViewTextBoxColumn
-            // 
-            this.pDDataGridViewTextBoxColumn.DataPropertyName = "PD";
-            this.pDDataGridViewTextBoxColumn.HeaderText = "PD";
-            this.pDDataGridViewTextBoxColumn.Name = "pDDataGridViewTextBoxColumn";
-            this.pDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // segmentHightDataGridViewTextBoxColumn
-            // 
-            this.segmentHightDataGridViewTextBoxColumn.DataPropertyName = "SegmentHight";
-            this.segmentHightDataGridViewTextBoxColumn.HeaderText = "SegmentHight";
-            this.segmentHightDataGridViewTextBoxColumn.Name = "segmentHightDataGridViewTextBoxColumn";
-            this.segmentHightDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // specialInstractionsDataGridViewTextBoxColumn1
-            // 
-            this.specialInstractionsDataGridViewTextBoxColumn1.DataPropertyName = "SpecialInstractions";
-            this.specialInstractionsDataGridViewTextBoxColumn1.HeaderText = "SpecialInstractions";
-            this.specialInstractionsDataGridViewTextBoxColumn1.Name = "specialInstractionsDataGridViewTextBoxColumn1";
-            this.specialInstractionsDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // remarksDataGridViewTextBoxColumn1
-            // 
-            this.remarksDataGridViewTextBoxColumn1.DataPropertyName = "Remarks";
-            this.remarksDataGridViewTextBoxColumn1.HeaderText = "Remarks";
-            this.remarksDataGridViewTextBoxColumn1.Name = "remarksDataGridViewTextBoxColumn1";
-            this.remarksDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // reminderDateDataGridViewTextBoxColumn
-            // 
-            this.reminderDateDataGridViewTextBoxColumn.DataPropertyName = "ReminderDate";
-            this.reminderDateDataGridViewTextBoxColumn.HeaderText = "ReminderDate";
-            this.reminderDateDataGridViewTextBoxColumn.Name = "reminderDateDataGridViewTextBoxColumn";
-            this.reminderDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // branchDataGridViewTextBoxColumn1
-            // 
-            this.branchDataGridViewTextBoxColumn1.DataPropertyName = "Branch";
-            this.branchDataGridViewTextBoxColumn1.HeaderText = "Branch";
-            this.branchDataGridViewTextBoxColumn1.Name = "branchDataGridViewTextBoxColumn1";
-            this.branchDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // BtnPrintCustomerCopy
+            // 
+            this.BtnPrintCustomerCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnPrintCustomerCopy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPrintCustomerCopy.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.BtnPrintCustomerCopy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnPrintCustomerCopy.Highlight = true;
+            this.BtnPrintCustomerCopy.Location = new System.Drawing.Point(497, 562);
+            this.BtnPrintCustomerCopy.Name = "BtnPrintCustomerCopy";
+            this.BtnPrintCustomerCopy.Size = new System.Drawing.Size(152, 45);
+            this.BtnPrintCustomerCopy.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnPrintCustomerCopy.TabIndex = 8;
+            this.BtnPrintCustomerCopy.Text = "Print Customer Copy";
+            this.BtnPrintCustomerCopy.UseCustomBackColor = true;
+            this.BtnPrintCustomerCopy.UseCustomForeColor = true;
+            this.BtnPrintCustomerCopy.UseSelectable = true;
+            this.BtnPrintCustomerCopy.UseStyleColors = true;
+            // 
+            // BtnPrintCompanyCopy
+            // 
+            this.BtnPrintCompanyCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnPrintCompanyCopy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPrintCompanyCopy.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.BtnPrintCompanyCopy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnPrintCompanyCopy.Highlight = true;
+            this.BtnPrintCompanyCopy.Location = new System.Drawing.Point(339, 562);
+            this.BtnPrintCompanyCopy.Name = "BtnPrintCompanyCopy";
+            this.BtnPrintCompanyCopy.Size = new System.Drawing.Size(152, 45);
+            this.BtnPrintCompanyCopy.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnPrintCompanyCopy.TabIndex = 8;
+            this.BtnPrintCompanyCopy.Text = "Print Company Copy";
+            this.BtnPrintCompanyCopy.UseCustomBackColor = true;
+            this.BtnPrintCompanyCopy.UseCustomForeColor = true;
+            this.BtnPrintCompanyCopy.UseSelectable = true;
+            this.BtnPrintCompanyCopy.UseStyleColors = true;
+            // 
             // UI_SHOW_ORDER_BY_CUSTOMER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 630);
+            this.Controls.Add(this.BtnPrintCompanyCopy);
+            this.Controls.Add(this.BtnPrintCustomerCopy);
             this.Controls.Add(this.BtnViewOrder);
             this.Controls.Add(this.GridContactLense);
             this.Controls.Add(this.GridSpectacle);
@@ -1003,10 +1045,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridSpectacle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridContactLense)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contactlenseBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spectaclesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridContactLense)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactlenseBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1105,5 +1147,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn reminderDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn branchDataGridViewTextBoxColumn1;
         private System.Windows.Forms.Timer timer1;
+        private MetroFramework.Controls.MetroButton BtnPrintCustomerCopy;
+        private MetroFramework.Controls.MetroButton BtnPrintCompanyCopy;
     }
 }
