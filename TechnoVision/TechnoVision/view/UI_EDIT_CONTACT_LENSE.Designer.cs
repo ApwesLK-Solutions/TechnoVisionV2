@@ -151,7 +151,10 @@
             this.BtnCalculate.Size = new System.Drawing.Size(38, 36);
             this.BtnCalculate.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnCalculate.TabIndex = 8;
+            this.BtnCalculate.TileImage = global::TechnoVision.Properties.Resources.cal_GUh_icon;
+            this.BtnCalculate.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnCalculate.UseSelectable = true;
+            this.BtnCalculate.UseTileImage = true;
             // 
             // CmbPaymentPlan
             // 
