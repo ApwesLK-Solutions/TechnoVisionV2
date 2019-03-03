@@ -46,6 +46,7 @@ namespace TechnoVision.view
             catch(Exception ex)
             {
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+                CommonFunctions.ShowError(this,ex.Message.ToString());
             }
             
         }

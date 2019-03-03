@@ -61,7 +61,36 @@ namespace TechnoVision.view
 
         private void BtnClear_Click(object sender, EventArgs e)
         {
-            
+            TxtBlindTest.Text = "";
+            TxtKReading.Text = "";
+            TxtLeftBc.Text = "";
+            TxtLeftDeze.Text = "";
+            TxtLeftDia.Text = "";
+            TxtLeftOldAdd.Text = "";
+            TxtLeftOldAxis.Text = "";
+            TxtLeftOldCyl.Text = "";
+            TxtLeftOldSph.Text = "";
+            TxtLeftPow.Text = "";
+            TxtLeftPresentAdd.Text = "";
+            TxtLeftPresentAxis.Text = "";
+            TxtLeftPresentCyl.Text = "";
+            TxtLeftPresentSph.Text = "";
+            TxtOverRefract.Text = "";
+            TxtRemarks.Text = "";
+            TxtRightBc.Text = "";
+            TxtRightDeze.Text = "";
+            TxtRightDia.Text = "";
+            TxtRightOldAdd.Text = "";
+            TxtRightOldAxis.Text = "";
+            TxtRightOldCyl.Text = "";
+            TxtRightOldSph.Text = "";
+            TxtRightPow.Text = "";
+            TxtRightPresentAdd.Text = "";
+            TxtRightPresentAxis.Text = "";
+            TxtRightPresentCyl.Text = "";
+            TxtRightPresentSph.Text = "";
+            TxtSpecialIns.Text = "";
+            TxtTrailLense.Text = "";
         }
 
         private void BtnBack_Click(object sender, EventArgs e)

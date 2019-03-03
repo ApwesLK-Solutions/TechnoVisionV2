@@ -59,5 +59,10 @@ namespace TechnoVision.view
                 spectaclesBindingSource.Filter = "CustomerId = " + custID + " AND Branch =" + Session.BranchId + "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
             }
         }
+
+        private void BtnPrintCompanyCopy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
