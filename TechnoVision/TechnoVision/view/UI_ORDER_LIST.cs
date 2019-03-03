@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TechnoVision.reports;
 
 namespace TechnoVision.view
 {
@@ -71,6 +72,43 @@ namespace TechnoVision.view
                 t.UpdateOrderStatus(CmbSetAs.Text, LenseGrid.SelectedRows[0].Cells[0].Value.ToString());
                 this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
             }
+        }
+
+        private void BtnViewCustomerCopy_Click(object sender, EventArgs e)
+        {
+            if(RadioContactLense.Checked == true)
+            {
+                InvoiceLenseCustomer rpt = new InvoiceLenseCustomer();
+                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + LenseGrid.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                new UI_REPORT_VIEWER(rpt).Show();
+            }
+            else if(RadioSpectacles.Checked == true)
+            {
+                InvoiceSpecCustomer rpt = new InvoiceSpecCustomer();
+                rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + SpecGrid.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                new UI_REPORT_VIEWER(rpt).Show();
+            }
+        }
+
+        private void BtnViewCompanyCopy_Click(object sender, EventArgs e)
+        {
+            if (RadioContactLense.Checked == true)
+            {
+                InvoiceLenseCompany rpt = new InvoiceLenseCompany();
+                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + LenseGrid.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                new UI_REPORT_VIEWER(rpt).Show();
+            }
+            else if (RadioSpectacles.Checked == true)
+            {
+                InvoiceSpecCompany rpt = new InvoiceSpecCompany();
+                rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + SpecGrid.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                new UI_REPORT_VIEWER(rpt).Show();
+            }
+        }
+
+        private void TxtSearch_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

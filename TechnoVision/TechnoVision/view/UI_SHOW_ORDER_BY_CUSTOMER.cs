@@ -30,6 +30,7 @@ namespace TechnoVision.view
             this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
             contactlenseBindingSource.Filter = "CustomerId = " + custID;
             spectaclesBindingSource.Filter = "CustomerId = " + custID;
+            LblCustomerName.Text = CustName;
 
         }
 
@@ -44,6 +45,18 @@ namespace TechnoVision.view
             {
                 GridContactLense.Visible = true;
                 GridSpectacle.Visible = false;
+            }
+        }
+
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (RadioContactLense.Checked == true)
+            {
+                contactlenseBindingSource.Filter ="CustomerId = " + custID + " AND Branch =" + Session.BranchId + "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
+            }
+            else if (RadioSpectacles.Checked == true)
+            {
+                spectaclesBindingSource.Filter = "CustomerId = " + custID + " AND Branch =" + Session.BranchId + "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
             }
         }
     }
