@@ -57,7 +57,7 @@ namespace TechnoVision.view
             CmbOrderStatus.SelectedIndex = 0;
             CmbPaymentMethod.SelectedIndex = 0;
             CmbPaymentPlan.SelectedIndex = 0;
-            //CmbTestedBy.SelectedIndex = 0;
+            CmbTestedBy.SelectedIndex = 0;
             TxtOrderNo.Text = getOrderNumber();
             showReceiptNumber();
         }
