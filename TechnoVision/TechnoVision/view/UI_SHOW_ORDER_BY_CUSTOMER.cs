@@ -12,9 +12,39 @@ namespace TechnoVision.view
 {
     public partial class UI_SHOW_ORDER_BY_CUSTOMER : MetroFramework.Forms.MetroForm
     {
-        public UI_SHOW_ORDER_BY_CUSTOMER()
+        int custID;
+        string CustName;
+        public UI_SHOW_ORDER_BY_CUSTOMER(string custName , int custID)
         {
             InitializeComponent();
+            this.custID = custID;
+            this.CustName = custName;
+        }
+
+        private void UI_SHOW_ORDER_BY_CUSTOMER_Load(object sender, EventArgs e)
+        {
+            RadioSpectacles.Checked = true;
+            // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
+            this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+            // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
+            this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+            contactlenseBindingSource.Filter = "CustomerId = " + custID;
+            spectaclesBindingSource.Filter = "CustomerId = " + custID;
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(RadioSpectacles.Checked == true)
+            {
+                GridContactLense.Visible = false;
+                GridSpectacle.Visible = true;
+            }
+            else if(RadioContactLense.Checked == true)
+            {
+                GridContactLense.Visible = true;
+                GridSpectacle.Visible = false;
+            }
         }
     }
 }
