@@ -22,6 +22,7 @@ namespace TechnoVision.view
         {
             // TODO: This line of code loads data into the 'technovisionDataSet.users' table. You can move, or remove it, as needed.
             this.usersTableAdapter.Fill(this.technovisionDataSet.users);
+            usersBindingSource.Filter = "Branch = " + Session.BranchId;
 
         }
 
@@ -44,7 +45,12 @@ namespace TechnoVision.view
 
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
-            usersBindingSource.Filter = ("Nic LIKE '%" + TxtSearch.Text + "%'");
+            usersBindingSource.Filter = ("Nic LIKE '%" + TxtSearch.Text + "%' AND Branch =" + Session.BranchId);
+        }
+
+        private void GrdUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

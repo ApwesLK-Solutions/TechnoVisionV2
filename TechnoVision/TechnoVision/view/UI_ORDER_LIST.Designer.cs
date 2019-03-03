@@ -617,6 +617,7 @@
             this.BtnEditOrder.UseCustomForeColor = true;
             this.BtnEditOrder.UseSelectable = true;
             this.BtnEditOrder.UseStyleColors = true;
+            this.BtnEditOrder.Click += new System.EventHandler(this.BtnEditOrder_Click);
             // 
             // UI_ORDER_LIST
             // 

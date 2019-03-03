@@ -25,6 +25,7 @@ namespace TechnoVision.view
             {
                 // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
                 this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+                customerBindingSource.Filter = "Branch =" + Session.BranchId;
             }
             catch(Exception ex)
             {
@@ -37,7 +38,7 @@ namespace TechnoVision.view
 
         private void TxtSearchCustomer_TextChanged(object sender, EventArgs e)
         {
-            customerBindingSource.Filter = "Name LIKE '*" + TxtSearchCustomer.Text + "*' OR Phone LIKE'*" + TxtSearchCustomer.Text + "*'";
+            customerBindingSource.Filter = "Name LIKE '*" + TxtSearchCustomer.Text + "*' OR Phone LIKE'*" + TxtSearchCustomer.Text + "*' AND Branch =" + Session.BranchId;
         }
 
         private void BtnAddCustomer_Click(object sender, EventArgs e)
@@ -75,6 +76,11 @@ namespace TechnoVision.view
         {
             // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
             this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+        }
+
+        private void GridSelectCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

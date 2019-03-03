@@ -79,13 +79,13 @@ namespace TechnoVision.view
             if(RadioContactLense.Checked == true)
             {
                 InvoiceLenseCustomer rpt = new InvoiceLenseCustomer();
-                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + LenseGrid.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + LenseGrid.SelectedRows[0].Cells[0].Value.ToString() + "'AND Branch =" + Session.BranchId;
                 new UI_REPORT_VIEWER(rpt).Show();
             }
             else if(RadioSpectacles.Checked == true)
             {
                 InvoiceSpecCustomer rpt = new InvoiceSpecCustomer();
-                rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + SpecGrid.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + SpecGrid.SelectedRows[0].Cells[0].Value.ToString() + "'AND Branch =" + Session.BranchId;
                 new UI_REPORT_VIEWER(rpt).Show();
             }
         }
@@ -95,13 +95,13 @@ namespace TechnoVision.view
             if (RadioContactLense.Checked == true)
             {
                 InvoiceLenseCompany rpt = new InvoiceLenseCompany();
-                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + LenseGrid.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + LenseGrid.SelectedRows[0].Cells[0].Value.ToString() + "'AND Branch =" + Session.BranchId;
                 new UI_REPORT_VIEWER(rpt).Show();
             }
             else if (RadioSpectacles.Checked == true)
             {
                 InvoiceSpecCompany rpt = new InvoiceSpecCompany();
-                rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + SpecGrid.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + SpecGrid.SelectedRows[0].Cells[0].Value.ToString() + "'AND Branch =" + Session.BranchId;
                 new UI_REPORT_VIEWER(rpt).Show();
             }
         }
@@ -109,6 +109,18 @@ namespace TechnoVision.view
         private void TxtSearch_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnEditOrder_Click(object sender, EventArgs e)
+        {
+            if(RadioContactLense.Checked == true)
+            {
+                new UI_EDIT_CONTACT_LENSE(LenseGrid.SelectedRows[0].Cells[0].Value.ToString()).Show();
+            }
+            else if(RadioSpectacles.Checked == true)
+            {
+                new UI_EDIT_SPECTACLE(SpecGrid.SelectedRows[0].Cells[0].Value.ToString()).Show();
+            }
         }
     }
 }

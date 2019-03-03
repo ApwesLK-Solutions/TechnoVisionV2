@@ -110,6 +110,7 @@
             this.GrdUser.Size = new System.Drawing.Size(981, 388);
             this.GrdUser.Style = MetroFramework.MetroColorStyle.Green;
             this.GrdUser.TabIndex = 1;
+            this.GrdUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdUser_CellContentClick);
             // 
             // usernameDataGridViewTextBoxColumn
             // 

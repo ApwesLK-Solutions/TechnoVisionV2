@@ -32,6 +32,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BtnCalculate = new MetroFramework.Controls.MetroTile();
             this.CmbPaymentPlan = new MetroFramework.Controls.MetroComboBox();
+            this.contactlenseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.CmbPaymentMethod = new MetroFramework.Controls.MetroComboBox();
             this.TxtBalance = new MetroFramework.Controls.MetroTextBox();
             this.TxtAdvance = new MetroFramework.Controls.MetroTextBox();
@@ -106,13 +108,11 @@
             this.metroLabel35 = new MetroFramework.Controls.MetroLabel();
             this.BtnSave = new MetroFramework.Controls.MetroButton();
             this.TxtMasterPassword = new MetroFramework.Controls.MetroTextBox();
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.contactlenseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.contactlenseTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.contactlenseTableAdapter();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactlenseBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -165,6 +165,16 @@
             this.CmbPaymentPlan.TabIndex = 4;
             this.CmbPaymentPlan.UseSelectable = true;
             this.CmbPaymentPlan.ValueMember = "PaymentPlan";
+            // 
+            // contactlenseBindingSource
+            // 
+            this.contactlenseBindingSource.DataMember = "contactlense";
+            this.contactlenseBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // CmbPaymentMethod
             // 
@@ -1754,6 +1764,7 @@
             this.BtnSave.UseCustomForeColor = true;
             this.BtnSave.UseSelectable = true;
             this.BtnSave.UseStyleColors = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // TxtMasterPassword
             // 
@@ -1787,16 +1798,7 @@
             this.TxtMasterPassword.WaterMark = "Enter Master Password...";
             this.TxtMasterPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtMasterPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // contactlenseBindingSource
-            // 
-            this.contactlenseBindingSource.DataMember = "contactlense";
-            this.contactlenseBindingSource.DataSource = this.technovisionDataSet;
+            this.TxtMasterPassword.TextChanged += new System.EventHandler(this.TxtMasterPassword_TextChanged);
             // 
             // contactlenseTableAdapter
             // 
@@ -1821,10 +1823,10 @@
             this.Load += new System.EventHandler(this.UI_EDIT_CONTACT_LENSE_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contactlenseBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contactlenseBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
