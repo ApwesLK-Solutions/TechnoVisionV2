@@ -14,10 +14,13 @@ namespace TechnoVision.view
     public partial class UI_CONTACT_LENSE_DIAGNOSIS : MetroFramework.Forms.MetroForm
     {
         MetroFramework.Forms.MetroForm f;
+        private int custId;
+
         public UI_CONTACT_LENSE_DIAGNOSIS(MetroFramework.Forms.MetroForm form)
         {
             InitializeComponent();
             f = form;
+            
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -39,6 +42,7 @@ namespace TechnoVision.view
                     receiptController.WriteReceipt();
                     CommonFunctions.ShowSuccess(this, "Order Number " + LenseOrder.OrderNumber + "Saved Succesfully...");
                     this.Dispose();
+                    f.Dispose();
                     new UI_ORDER_COMPLETE("L", LenseOrder.OrderNumber, Receipt.ReceiptNumber).Show();
 
                 }
