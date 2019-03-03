@@ -77,6 +77,7 @@
             this.testedByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactlenseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.contactlenseTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.contactlenseTableAdapter();
+            this.BtnEditOrder = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spectaclesBindingSource)).BeginInit();
@@ -596,6 +597,24 @@
             // 
             this.contactlenseTableAdapter.ClearBeforeFill = true;
             // 
+            // BtnEditOrder
+            // 
+            this.BtnEditOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnEditOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEditOrder.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.BtnEditOrder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnEditOrder.Highlight = true;
+            this.BtnEditOrder.Location = new System.Drawing.Point(654, 594);
+            this.BtnEditOrder.Name = "BtnEditOrder";
+            this.BtnEditOrder.Size = new System.Drawing.Size(152, 45);
+            this.BtnEditOrder.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnEditOrder.TabIndex = 4;
+            this.BtnEditOrder.Text = "Edit Order";
+            this.BtnEditOrder.UseCustomBackColor = true;
+            this.BtnEditOrder.UseCustomForeColor = true;
+            this.BtnEditOrder.UseSelectable = true;
+            this.BtnEditOrder.UseStyleColors = true;
+            // 
             // UI_ORDER_LIST
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -607,6 +626,7 @@
             this.Controls.Add(this.CmbSetAs);
             this.Controls.Add(this.BtnViewCompanyCopy);
             this.Controls.Add(this.BtnMarkAs);
+            this.Controls.Add(this.BtnEditOrder);
             this.Controls.Add(this.BtnViewCustomerCopy);
             this.MaximizeBox = false;
             this.Name = "UI_ORDER_LIST";
@@ -669,5 +689,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn paymentPlanDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn branchDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn testedByDataGridViewTextBoxColumn;
+        private MetroFramework.Controls.MetroButton BtnEditOrder;
     }
 }
