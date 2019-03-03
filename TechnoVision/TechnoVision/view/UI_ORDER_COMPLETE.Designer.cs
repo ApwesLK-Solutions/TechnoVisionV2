@@ -34,6 +34,8 @@
             this.BtnPrintCustomerCopy = new MetroFramework.Controls.MetroButton();
             this.BtnPrintCompanyCopy = new MetroFramework.Controls.MetroButton();
             this.BtnPrintBothCopies = new MetroFramework.Controls.MetroButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -41,7 +43,7 @@
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(249, 194);
+            this.metroLabel1.Location = new System.Drawing.Point(254, 236);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(277, 25);
             this.metroLabel1.TabIndex = 0;
@@ -142,11 +144,22 @@
             this.BtnPrintBothCopies.UseStyleColors = true;
             this.BtnPrintBothCopies.Click += new System.EventHandler(this.BtnPrintBothCopies_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TechnoVision.Properties.Resources.Untitled_1;
+            this.pictureBox1.Location = new System.Drawing.Point(314, 82);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 151);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // UI_ORDER_COMPLETE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 445);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnPrintBothCopies);
             this.Controls.Add(this.BtnPrintCompanyCopy);
             this.Controls.Add(this.BtnViewCompanyCopy);
@@ -157,6 +170,7 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Order Complete ";
             this.Load += new System.EventHandler(this.UI_ORDER_COMPLETE_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,5 +184,6 @@
         private MetroFramework.Controls.MetroButton BtnPrintCustomerCopy;
         private MetroFramework.Controls.MetroButton BtnPrintCompanyCopy;
         private MetroFramework.Controls.MetroButton BtnPrintBothCopies;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

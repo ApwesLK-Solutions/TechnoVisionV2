@@ -1330,13 +1330,15 @@
             // BtnBack
             // 
             this.BtnBack.ActiveControl = null;
-            this.BtnBack.Location = new System.Drawing.Point(0, 21);
+            this.BtnBack.Location = new System.Drawing.Point(0, 19);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(57, 39);
             this.BtnBack.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnBack.TabIndex = 69;
-            this.BtnBack.Text = "<----";
+            this.BtnBack.TileImage = global::TechnoVision.Properties.Resources.back_9au_icon;
+            this.BtnBack.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnBack.UseSelectable = true;
+            this.BtnBack.UseTileImage = true;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // UI_CONTACT_LENSE_DIAGNOSIS

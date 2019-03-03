@@ -30,7 +30,7 @@ namespace TechnoVision.view
             catch(Exception ex)
             {
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
-                CommonFunctions.ShowError(this,"CancelButton not Load Customer List");
+                CommonFunctions.ShowError(this,"Can not Load Customer List");
             }
             
 

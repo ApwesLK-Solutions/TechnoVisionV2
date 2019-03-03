@@ -245,7 +245,10 @@
             this.TxtSearchCustomer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtSearchCustomer.CustomButton.UseSelectable = true;
             this.TxtSearchCustomer.CustomButton.Visible = false;
+            this.TxtSearchCustomer.DisplayIcon = true;
             this.TxtSearchCustomer.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.TxtSearchCustomer.Icon = global::TechnoVision.Properties.Resources.search;
+            this.TxtSearchCustomer.IconRight = true;
             this.TxtSearchCustomer.Lines = new string[0];
             this.TxtSearchCustomer.Location = new System.Drawing.Point(905, 45);
             this.TxtSearchCustomer.MaxLength = 32767;
