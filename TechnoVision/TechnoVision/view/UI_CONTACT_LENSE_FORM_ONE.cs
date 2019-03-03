@@ -146,5 +146,14 @@ namespace TechnoVision.view
                 e.Handled = true;
             }
         }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            TxtAdvance.Text = "0";
+            TxtBalance.Text = "0";
+            TxtDiscount.Text = "0";
+            TxtLensesTotal.Text = "0";
+            TxtRemindDays.Text ="";
+        }
     }
 }

@@ -132,6 +132,7 @@
             // 
             // TxtBranchName
             // 
+            this.TxtBranchName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 

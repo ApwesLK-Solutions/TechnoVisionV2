@@ -519,6 +519,7 @@
             this.BtnClear.UseCustomForeColor = true;
             this.BtnClear.UseSelectable = true;
             this.BtnClear.UseStyleColors = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // metroLabel14
             // 

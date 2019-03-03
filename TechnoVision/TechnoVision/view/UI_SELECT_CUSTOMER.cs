@@ -68,6 +68,13 @@ namespace TechnoVision.view
             {
                 new UI_CONTACT_LENSE_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
             }
+            this.Dispose();
+        }
+
+        private void BtnRefresh_Click(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
+            this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
         }
     }
 }
