@@ -229,6 +229,7 @@
             this.BtnShowOrders.UseCustomForeColor = true;
             this.BtnShowOrders.UseSelectable = true;
             this.BtnShowOrders.UseStyleColors = true;
+            this.BtnShowOrders.Click += new System.EventHandler(this.BtnShowOrders_Click);
             // 
             // TxtSearchCustomer
             // 

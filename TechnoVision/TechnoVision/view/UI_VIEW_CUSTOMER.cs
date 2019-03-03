@@ -47,5 +47,10 @@ namespace TechnoVision.view
         {
             this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
         }
+
+        private void BtnShowOrders_Click(object sender, EventArgs e)
+        {
+            new UI_SHOW_ORDER_BY_CUSTOMER(GridManageCustomer.SelectedRows[0].Cells[1].Value.ToString(), int.Parse(GridManageCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+        }
     }
 }

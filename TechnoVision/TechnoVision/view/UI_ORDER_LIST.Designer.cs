@@ -103,6 +103,7 @@
             this.BtnViewCompanyCopy.UseCustomForeColor = true;
             this.BtnViewCompanyCopy.UseSelectable = true;
             this.BtnViewCompanyCopy.UseStyleColors = true;
+            this.BtnViewCompanyCopy.Click += new System.EventHandler(this.BtnViewCompanyCopy_Click);
             // 
             // BtnViewCustomerCopy
             // 
@@ -121,6 +122,7 @@
             this.BtnViewCustomerCopy.UseCustomForeColor = true;
             this.BtnViewCustomerCopy.UseSelectable = true;
             this.BtnViewCustomerCopy.UseStyleColors = true;
+            this.BtnViewCustomerCopy.Click += new System.EventHandler(this.BtnViewCustomerCopy_Click);
             // 
             // CmbSetAs
             // 
@@ -227,6 +229,7 @@
             this.TxtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.TxtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
+            this.TxtSearch.Click += new System.EventHandler(this.TxtSearch_Click);
             // 
             // SpecGrid
             // 
