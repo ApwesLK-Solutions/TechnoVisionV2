@@ -52,9 +52,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // BtnRefresh
-            // 
+            //
             this.BtnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnRefresh.FontSize = MetroFramework.MetroButtonSize.Medium;
@@ -70,9 +70,9 @@
             this.BtnRefresh.UseCustomForeColor = true;
             this.BtnRefresh.UseSelectable = true;
             this.BtnRefresh.UseStyleColors = true;
-            // 
+            //
             // BtnNewPayment
-            // 
+            //
             this.BtnNewPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnNewPayment.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnNewPayment.FontSize = MetroFramework.MetroButtonSize.Medium;
@@ -88,9 +88,9 @@
             this.BtnNewPayment.UseCustomForeColor = true;
             this.BtnNewPayment.UseSelectable = true;
             this.BtnNewPayment.UseStyleColors = true;
-            // 
+            //
             // BtnPrintReceipt
-            // 
+            //
             this.BtnPrintReceipt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnPrintReceipt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnPrintReceipt.FontSize = MetroFramework.MetroButtonSize.Medium;
@@ -106,12 +106,12 @@
             this.BtnPrintReceipt.UseCustomForeColor = true;
             this.BtnPrintReceipt.UseSelectable = true;
             this.BtnPrintReceipt.UseStyleColors = true;
-            // 
+            //
             // TxtSearchReceipt
-            // 
-            // 
-            // 
-            // 
+            //
+            //
+            //
+            //
             this.TxtSearchReceipt.CustomButton.Image = null;
             this.TxtSearchReceipt.CustomButton.Location = new System.Drawing.Point(260, 2);
             this.TxtSearchReceipt.CustomButton.Name = "";
@@ -141,9 +141,9 @@
             this.TxtSearchReceipt.WaterMark = "Search by Receipt No  or Order Number";
             this.TxtSearchReceipt.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSearchReceipt.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
+            //
             // GridPayments
-            // 
+            //
             this.GridPayments.AllowUserToAddRows = false;
             this.GridPayments.AllowUserToDeleteRows = false;
             this.GridPayments.AllowUserToResizeRows = false;
@@ -200,83 +200,82 @@
             this.GridPayments.Size = new System.Drawing.Size(1081, 524);
             this.GridPayments.Style = MetroFramework.MetroColorStyle.Green;
             this.GridPayments.TabIndex = 9;
-            // 
+            //
             // technovisionDataSet
-            // 
+            //
             this.technovisionDataSet.DataSetName = "technovisionDataSet";
             this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
+            //
             // receiptBindingSource
-            // 
+            //
             this.receiptBindingSource.DataMember = "receipt";
             this.receiptBindingSource.DataSource = this.technovisionDataSet;
-            // 
+            //
             // receiptTableAdapter
-            // 
+            //
             this.receiptTableAdapter.ClearBeforeFill = true;
-            // 
+            //
             // idDataGridViewTextBoxColumn
-            // 
+            //
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // receiptDateDataGridViewTextBoxColumn
-            // 
+            //
             this.receiptDateDataGridViewTextBoxColumn.DataPropertyName = "ReceiptDate";
             this.receiptDateDataGridViewTextBoxColumn.HeaderText = "ReceiptDate";
             this.receiptDateDataGridViewTextBoxColumn.Name = "receiptDateDataGridViewTextBoxColumn";
             this.receiptDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // orderNumberDataGridViewTextBoxColumn
-            // 
+            //
             this.orderNumberDataGridViewTextBoxColumn.DataPropertyName = "OrderNumber";
             this.orderNumberDataGridViewTextBoxColumn.HeaderText = "OrderNumber";
             this.orderNumberDataGridViewTextBoxColumn.Name = "orderNumberDataGridViewTextBoxColumn";
             this.orderNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // paymentAmountDataGridViewTextBoxColumn
-            // 
+            //
             this.paymentAmountDataGridViewTextBoxColumn.DataPropertyName = "PaymentAmount";
             this.paymentAmountDataGridViewTextBoxColumn.HeaderText = "PaymentAmount";
             this.paymentAmountDataGridViewTextBoxColumn.Name = "paymentAmountDataGridViewTextBoxColumn";
             this.paymentAmountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // branchDataGridViewTextBoxColumn
-            // 
+            //
             this.branchDataGridViewTextBoxColumn.DataPropertyName = "Branch";
             this.branchDataGridViewTextBoxColumn.HeaderText = "Branch";
             this.branchDataGridViewTextBoxColumn.Name = "branchDataGridViewTextBoxColumn";
             this.branchDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // receiptNumberDataGridViewTextBoxColumn
-            // 
+            //
             this.receiptNumberDataGridViewTextBoxColumn.DataPropertyName = "ReceiptNumber";
             this.receiptNumberDataGridViewTextBoxColumn.HeaderText = "ReceiptNumber";
             this.receiptNumberDataGridViewTextBoxColumn.Name = "receiptNumberDataGridViewTextBoxColumn";
             this.receiptNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // orderTypeDataGridViewTextBoxColumn
-            // 
+            //
             this.orderTypeDataGridViewTextBoxColumn.DataPropertyName = "OrderType";
             this.orderTypeDataGridViewTextBoxColumn.HeaderText = "OrderType";
             this.orderTypeDataGridViewTextBoxColumn.Name = "orderTypeDataGridViewTextBoxColumn";
             this.orderTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // yearDataGridViewTextBoxColumn
-            // 
+            //
             this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
             this.yearDataGridViewTextBoxColumn.HeaderText = "Year";
             this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
             this.yearDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // UI_PAYMENT_VIEWER
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 694);
-            this.Controls.Add(this.GridPayments);
             this.Controls.Add(this.TxtSearchReceipt);
             this.Controls.Add(this.BtnRefresh);
             this.Controls.Add(this.BtnNewPayment);

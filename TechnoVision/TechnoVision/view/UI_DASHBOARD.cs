@@ -57,5 +57,10 @@ namespace TechnoVision.view
         {
             new UI_ADD_BRANCH().Show();
         }
+
+        private void metroTile9_Click(object sender, EventArgs e)
+        {
+            new UI_PAYMENT_VIEWER().Show();
+        }
     }
 }

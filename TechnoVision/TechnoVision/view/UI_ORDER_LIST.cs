@@ -154,5 +154,15 @@ namespace TechnoVision.view
             }
             
         }
+
+        private void BtnViewPayments_Click(object sender, EventArgs e)
+        {
+            if(RadioContactLense.Checked == true)
+            {
+                
+            }
+        }
+
+       
     }
 }

@@ -469,7 +469,7 @@
             this.LenseGrid.EnableHeadersVisualStyles = false;
             this.LenseGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.LenseGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.LenseGrid.Location = new System.Drawing.Point(23, 157);
+            this.LenseGrid.Location = new System.Drawing.Point(17, 157);
             this.LenseGrid.Name = "LenseGrid";
             this.LenseGrid.ReadOnly = true;
             this.LenseGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;

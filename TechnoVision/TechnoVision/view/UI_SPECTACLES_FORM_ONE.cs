@@ -91,6 +91,7 @@ namespace TechnoVision.view
                 }
                 else
                 {
+                    receiptController.FillReceipt(SpecOrder.OrderNumber, SpecOrder.Advance, SpecOrder.OrderDate, "SPEC",custID);
                     SpecOrderController.FillFormOne(TxtOrderNo.Text,DateOrderDate.Value.ToString("yyyy-MM-dd"),DateDueDate.Value.ToString("yyyy-MM-dd"),CmbPaymentPlan.Text,CmbPaymentMethod.Text,CmbTestedBy.Text,CmbOrderStatus.Text,Double.Parse(TxtEyeWearAmount.Text),Double.Parse(TxtLenseAmount.Text),Double.Parse(TxtTotal.Text),Double.Parse(TxtAdvance.Text),Double.Parse(TxtDiscount.Text),Double.Parse(TxtBalance.Text),int.Parse(TxtRemindDays.Text),custID);
                     new UI_SPECTACLES_DIAGNOSIS(this).Show();
                 }
