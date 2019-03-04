@@ -49,9 +49,6 @@
             this.orderTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GridPayment = new MetroFramework.Controls.MetroGrid();
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.receiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.receiptTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.receiptTableAdapter();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.receiptDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,10 +57,14 @@
             this.receiptNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.receiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.receiptTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.receiptTableAdapter();
+            this.CustId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GridPayments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridPayment)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnRefresh
@@ -297,7 +298,8 @@
             this.branchDataGridViewTextBoxColumn1,
             this.receiptNumberDataGridViewTextBoxColumn1,
             this.orderTypeDataGridViewTextBoxColumn1,
-            this.yearDataGridViewTextBoxColumn1});
+            this.yearDataGridViewTextBoxColumn1,
+            this.CustId});
             this.GridPayment.DataSource = this.receiptBindingSource;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -310,7 +312,7 @@
             this.GridPayment.EnableHeadersVisualStyles = false;
             this.GridPayment.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridPayment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GridPayment.Location = new System.Drawing.Point(24, 75);
+            this.GridPayment.Location = new System.Drawing.Point(23, 79);
             this.GridPayment.Name = "GridPayment";
             this.GridPayment.ReadOnly = true;
             this.GridPayment.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -327,20 +329,6 @@
             this.GridPayment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridPayment.Size = new System.Drawing.Size(1081, 532);
             this.GridPayment.TabIndex = 9;
-            // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // receiptBindingSource
-            // 
-            this.receiptBindingSource.DataMember = "receipt";
-            this.receiptBindingSource.DataSource = this.technovisionDataSet;
-            // 
-            // receiptTableAdapter
-            // 
-            this.receiptTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn1
             // 
@@ -398,6 +386,27 @@
             this.yearDataGridViewTextBoxColumn1.Name = "yearDataGridViewTextBoxColumn1";
             this.yearDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
+            // receiptBindingSource
+            // 
+            this.receiptBindingSource.DataMember = "receipt";
+            this.receiptBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // receiptTableAdapter
+            // 
+            this.receiptTableAdapter.ClearBeforeFill = true;
+            // 
+            // CustId
+            // 
+            this.CustId.DataPropertyName = "CustId";
+            this.CustId.HeaderText = "CustId";
+            this.CustId.Name = "CustId";
+            this.CustId.ReadOnly = true;
+            // 
             // UI_PAYMENT_VIEWER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -416,8 +425,8 @@
             this.Load += new System.EventHandler(this.UI_PAYMENT_VIEWER_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridPayments)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridPayment)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -449,5 +458,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn receiptNumberDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderTypeDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CustId;
     }
 }
