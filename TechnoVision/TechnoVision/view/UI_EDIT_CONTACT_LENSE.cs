@@ -21,18 +21,38 @@ namespace TechnoVision.view
 
         private void UI_EDIT_CONTACT_LENSE_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
-            this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
-            contactlenseBindingSource.Filter = "OrderNumber = '" + OrderNumber +"' AND Branch =" + Session.BranchId;
-            BtnSave.Enabled = false;
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
+                this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+                contactlenseBindingSource.Filter = "OrderNumber = '" + OrderNumber + "' AND Branch =" + Session.BranchId;
+                BtnSave.Enabled = false;
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+
+            }
+            
 
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            contactlenseBindingSource.EndEdit();
-            contactlenseTableAdapter.Update(technovisionDataSet);
-            this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+            try
+            {
+                contactlenseBindingSource.EndEdit();
+                contactlenseTableAdapter.Update(technovisionDataSet);
+                this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+                CommonFunctions.ShowSuccess(this, "Successfully Changed edit Details...");
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
         }
 
         private void TxtMasterPassword_TextChanged(object sender, EventArgs e)
@@ -45,6 +65,21 @@ namespace TechnoVision.view
             {
                 BtnSave.Enabled = false;
             }
+        }
+
+        private void BtnCalculate_Click(object sender, EventArgs e)
+        {
+            double total = 0;
+            double discount = 0;
+            double advance = 0;
+            double balance = 0;
+
+            total = Double.Parse(TxtLensesTotal.Text);
+            discount = Double.Parse(TxtDiscount.Text);
+            advance = Double.Parse(TxtAdvance.Text);
+
+            balance = (total) - (discount) - (advance);
+            TxtBalance.Text = balance.ToString();
         }
     }
 }

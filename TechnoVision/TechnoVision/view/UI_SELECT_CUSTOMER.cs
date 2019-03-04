@@ -30,7 +30,7 @@ namespace TechnoVision.view
             catch(Exception ex)
             {
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
-                CommonFunctions.ShowError(this,"Can not Load Customer List");
+                CommonFunctions.ShowError(this,"Can not Load Customer List OR no Customers in database");
             }
             
 
@@ -38,7 +38,7 @@ namespace TechnoVision.view
 
         private void TxtSearchCustomer_TextChanged(object sender, EventArgs e)
         {
-            customerBindingSource.Filter = "Name LIKE '*" + TxtSearchCustomer.Text + "*' OR Phone LIKE'*" + TxtSearchCustomer.Text + "*' AND Branch =" + Session.BranchId;
+            customerBindingSource.Filter = "*'Branch =" + Session.BranchId + "AND Name LIKE '*" + TxtSearchCustomer.Text + "*' OR Phone LIKE'*" + TxtSearchCustomer.Text;
         }
 
         private void BtnAddCustomer_Click(object sender, EventArgs e)
@@ -61,14 +61,23 @@ namespace TechnoVision.view
 
         private void BtnSelect_Click(object sender, EventArgs e)
         {
-            if (OrderType == "S")
+            try
             {
-                new UI_SPECTACLES_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+                if (OrderType == "S")
+                {
+                    new UI_SPECTACLES_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+                }
+                else if (OrderType == "L")
+                {
+                    new UI_CONTACT_LENSE_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+                }
             }
-            else if (OrderType == "L")
+            catch(Exception ex)
             {
-                new UI_CONTACT_LENSE_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+                CommonFunctions.ShowError(this, "Please Select a customer from the table or Double click on customer");
+                CommonFunctions.WriteUserLog(Session.Username, "selected customer null");
             }
+            
             this.Dispose();
         }
 
@@ -78,9 +87,6 @@ namespace TechnoVision.view
             this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
         }
 
-        private void GridSelectCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
     }
 }

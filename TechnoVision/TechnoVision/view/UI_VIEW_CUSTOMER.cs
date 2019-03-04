@@ -19,8 +19,17 @@ namespace TechnoVision.view
 
         private void UI_VIEW_CUSTOMER_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
-            this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
+                this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
             //edit upon multi branch to filter for branch customers
         }
 
@@ -50,7 +59,16 @@ namespace TechnoVision.view
 
         private void BtnShowOrders_Click(object sender, EventArgs e)
         {
-            new UI_SHOW_ORDER_BY_CUSTOMER(GridManageCustomer.SelectedRows[0].Cells[1].Value.ToString(), int.Parse(GridManageCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+            try
+            {
+                new UI_SHOW_ORDER_BY_CUSTOMER(GridManageCustomer.SelectedRows[0].Cells[1].Value.ToString(), int.Parse(GridManageCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+                CommonFunctions.ShowError(this,ex.Message.ToString());
+            }
         }
     }
 }

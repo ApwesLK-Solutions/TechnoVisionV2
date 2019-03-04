@@ -40,6 +40,7 @@ namespace TechnoVision.view
                     CommonFunctions.ShowSuccess(this, "Order Number " + SpecOrder.OrderNumber + "Saved Succesfully...");
                     this.Dispose();
                     new UI_ORDER_COMPLETE("S", SpecOrder.OrderNumber, Receipt.ReceiptNumber).Show();
+                    form.Dispose();
                 }
                 
             }

@@ -1410,7 +1410,6 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "     Contact Lense - Diagnosis";
-            this.Load += new System.EventHandler(this.UI_CONTACT_LENSE_DIAGNOSIS_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

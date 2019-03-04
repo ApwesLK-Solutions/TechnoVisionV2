@@ -133,7 +133,7 @@
             // 
             // TxtEmail
             // 
-            this.TxtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.TxtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             // 
             // 
             // 
