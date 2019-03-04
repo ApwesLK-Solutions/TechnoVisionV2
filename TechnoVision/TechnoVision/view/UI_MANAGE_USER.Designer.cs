@@ -110,7 +110,6 @@
             this.GrdUser.Size = new System.Drawing.Size(981, 388);
             this.GrdUser.Style = MetroFramework.MetroColorStyle.Green;
             this.GrdUser.TabIndex = 1;
-            this.GrdUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdUser_CellContentClick);
             // 
             // usernameDataGridViewTextBoxColumn
             // 
@@ -182,7 +181,9 @@
             this.TxtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtSearch.CustomButton.UseSelectable = true;
             this.TxtSearch.CustomButton.Visible = false;
+            this.TxtSearch.DisplayIcon = true;
             this.TxtSearch.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtSearch.Icon = global::TechnoVision.Properties.Resources.search;
             this.TxtSearch.Lines = new string[0];
             this.TxtSearch.Location = new System.Drawing.Point(737, 46);
             this.TxtSearch.MaxLength = 32767;

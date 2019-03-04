@@ -133,7 +133,11 @@
             this.BtnCalculate.Size = new System.Drawing.Size(38, 36);
             this.BtnCalculate.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnCalculate.TabIndex = 10;
+            this.BtnCalculate.TileImage = global::TechnoVision.Properties.Resources.cal_GUh_icon;
+            this.BtnCalculate.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnCalculate.UseSelectable = true;
+            this.BtnCalculate.UseTileImage = true;
+            this.BtnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
             // 
             // CmbPaymentPlan
             // 
@@ -241,6 +245,7 @@
             this.TxtAdvance.UseSelectable = true;
             this.TxtAdvance.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtAdvance.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtAdvance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtAdvance_KeyPress);
             // 
             // TxtRemindDays
             // 
@@ -309,6 +314,7 @@
             this.TxtDiscount.UseSelectable = true;
             this.TxtDiscount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtDiscount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtDiscount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDiscount_KeyPress);
             // 
             // TxtEyeWearAmount
             // 
@@ -344,6 +350,7 @@
             this.TxtEyeWearAmount.UseSelectable = true;
             this.TxtEyeWearAmount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtEyeWearAmount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtEyeWearAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEyeWearAmount_KeyPress);
             // 
             // TxtLenseAmount
             // 
@@ -379,6 +386,7 @@
             this.TxtLenseAmount.UseSelectable = true;
             this.TxtLenseAmount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtLenseAmount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtLenseAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtLenseAmount_KeyPress);
             // 
             // TxtTotal
             // 
@@ -415,6 +423,7 @@
             this.TxtTotal.UseSelectable = true;
             this.TxtTotal.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtTotal.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtTotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTotal_KeyPress);
             // 
             // TxtOrderNo
             // 
@@ -616,7 +625,7 @@
             this.TxtRemarks.SelectionLength = 0;
             this.TxtRemarks.SelectionStart = 0;
             this.TxtRemarks.ShortcutsEnabled = true;
-            this.TxtRemarks.Size = new System.Drawing.Size(862, 46);
+            this.TxtRemarks.Size = new System.Drawing.Size(921, 46);
             this.TxtRemarks.TabIndex = 23;
             this.TxtRemarks.UseSelectable = true;
             this.TxtRemarks.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -638,7 +647,7 @@
             this.CmbFrame.DisplayMember = "Frame";
             this.CmbFrame.FormattingEnabled = true;
             this.CmbFrame.ItemHeight = 24;
-            this.CmbFrame.Location = new System.Drawing.Point(747, 82);
+            this.CmbFrame.Location = new System.Drawing.Point(806, 83);
             this.CmbFrame.Name = "CmbFrame";
             this.CmbFrame.Size = new System.Drawing.Size(253, 30);
             this.CmbFrame.TabIndex = 21;
@@ -663,7 +672,7 @@
             this.TxtSegmentHeight.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spectaclesBindingSource, "SegmentHight", true));
             this.TxtSegmentHeight.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtSegmentHeight.Lines = new string[0];
-            this.TxtSegmentHeight.Location = new System.Drawing.Point(524, 164);
+            this.TxtSegmentHeight.Location = new System.Drawing.Point(806, 164);
             this.TxtSegmentHeight.MaxLength = 32767;
             this.TxtSegmentHeight.Name = "TxtSegmentHeight";
             this.TxtSegmentHeight.PasswordChar = '\0';
@@ -672,7 +681,7 @@
             this.TxtSegmentHeight.SelectionLength = 0;
             this.TxtSegmentHeight.SelectionStart = 0;
             this.TxtSegmentHeight.ShortcutsEnabled = true;
-            this.TxtSegmentHeight.Size = new System.Drawing.Size(226, 35);
+            this.TxtSegmentHeight.Size = new System.Drawing.Size(253, 35);
             this.TxtSegmentHeight.TabIndex = 20;
             this.TxtSegmentHeight.UseSelectable = true;
             this.TxtSegmentHeight.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -696,7 +705,7 @@
             this.TxtPD.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spectaclesBindingSource, "PD", true));
             this.TxtPD.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtPD.Lines = new string[0];
-            this.TxtPD.Location = new System.Drawing.Point(747, 122);
+            this.TxtPD.Location = new System.Drawing.Point(806, 123);
             this.TxtPD.MaxLength = 32767;
             this.TxtPD.Name = "TxtPD";
             this.TxtPD.PasswordChar = '\0';
@@ -748,7 +757,7 @@
             // 
             this.metroLabel22.AutoSize = true;
             this.metroLabel22.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel22.Location = new System.Drawing.Point(401, 170);
+            this.metroLabel22.Location = new System.Drawing.Point(679, 169);
             this.metroLabel22.Name = "metroLabel22";
             this.metroLabel22.Size = new System.Drawing.Size(117, 20);
             this.metroLabel22.TabIndex = 119;
@@ -1196,10 +1205,8 @@
             this.TxtMasterPassword.WaterMark = "Enter Master Password...";
             this.TxtMasterPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtMasterPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.TxtMasterPassword.TabIndexChanged += new System.EventHandler(this.TxtMasterPassword_TabIndexChanged);
-            this.TxtMasterPassword.TabStopChanged += new System.EventHandler(this.TxtMasterPassword_TabStopChanged);
             this.TxtMasterPassword.TextChanged += new System.EventHandler(this.TxtMasterPassword_TextChanged);
-            this.TxtMasterPassword.Click += new System.EventHandler(this.TxtMasterPassword_Click);
+           
             // 
             // BtnSaveUser
             // 

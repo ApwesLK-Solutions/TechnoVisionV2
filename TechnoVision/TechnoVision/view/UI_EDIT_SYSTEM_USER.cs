@@ -27,6 +27,7 @@ namespace TechnoVision.view
                 usersTableAdapter.Update(technovisionDataSet);
                 CommonFunctions.WriteUserLog(Session.Username, "Changed the details of " + username);
                 CommonFunctions.ShowSuccess(this, "Data Successfully Changed...");
+                CommonFunctions.WriteUserLog(Session.Username, "has changed systerm user " + TxtFullName + " Details");
             }
             catch(Exception ex)
             {

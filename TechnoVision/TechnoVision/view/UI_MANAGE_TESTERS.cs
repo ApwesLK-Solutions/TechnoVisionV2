@@ -68,6 +68,8 @@ namespace TechnoVision.view
             {
                 CommonFunctions.ShowError(this, "Nothing To Delete Or Not Selected...");
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+                CommonFunctions.ShowSuccess(this, "Tester Deleted Successfully...");
+                CommonFunctions.WriteUserLog(Session.Username, "Deleted Tester" + GridTesters.SelectedRows[0].Cells[1].Value.ToString());
             }
             
 

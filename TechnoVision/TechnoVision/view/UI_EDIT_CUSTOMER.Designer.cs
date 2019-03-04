@@ -174,7 +174,6 @@
             // 
             // TxtContactNumber
             // 
-            this.TxtContactNumber.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
@@ -206,10 +205,10 @@
             this.TxtContactNumber.WaterMark = "Enter Contact number...";
             this.TxtContactNumber.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtContactNumber.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtContactNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtContactNumber_KeyPress);
             // 
             // TxtEmail
             // 
-            this.TxtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 

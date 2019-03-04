@@ -21,37 +21,38 @@ namespace TechnoVision.view
 
         private void UI_EDIT_SPECTACLE_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
-            this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
-            spectaclesBindingSource.Filter = "OrderNumber = '" + OrderNumber + "' AND Branch = " + Session.BranchId;
-            BtnSaveUser.Enabled = false;
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
+                this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+                spectaclesBindingSource.Filter = "OrderNumber = '" + OrderNumber + "' AND Branch = " + Session.BranchId;
+                BtnSaveUser.Enabled = false;
+            }
+            catch (Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+                CommonFunctions.ShowError(this,ex.Message.ToString());
+            }
+            
 
 
         }
-
-        private void TxtMasterPassword_TabStopChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtMasterPassword_TabIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnSaveUser_Click(object sender, EventArgs e)
         {
-            spectaclesBindingSource.EndEdit();
-            spectaclesTableAdapter.Update(technovisionDataSet);
-            this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
-
+            try
+            {
+                spectaclesBindingSource.EndEdit();
+                spectaclesTableAdapter.Update(technovisionDataSet);
+                this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+                CommonFunctions.ShowSuccess(this, "Successfully Changed edit Details...");
+                CommonFunctions.WriteUserLog(Session.Username, "Edited order number"+TxtOrderNo+ "...Critical");
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
         }
-
-        private void TxtMasterPassword_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void TxtMasterPassword_TextChanged(object sender, EventArgs e)
         {
             if (TxtMasterPassword.Text == Session.BranchMasterPassword)
@@ -61,6 +62,73 @@ namespace TechnoVision.view
             else if (TxtMasterPassword.Text != Session.BranchMasterPassword)
             {
                 BtnSaveUser.Enabled = false;
+            }
+        }
+
+        private void BtnCalculate_Click(object sender, EventArgs e)
+        {
+            double EyeWearAmount = 0;
+            double LenseAmount = 0;
+            double total = 0;
+            double discount = 0;
+            double advance = 0;
+            double balance = 0;
+
+            EyeWearAmount = Double.Parse(TxtEyeWearAmount.Text);
+            LenseAmount = Double.Parse(TxtLenseAmount.Text);
+            total = Double.Parse(TxtDiscount.Text);
+            discount = Double.Parse(TxtDiscount.Text);
+            advance = Double.Parse(TxtAdvance.Text);
+            balance = Double.Parse(TxtBalance.Text);
+
+            total = EyeWearAmount + LenseAmount;
+            TxtTotal.Text = total.ToString();
+            balance = total - discount - advance;
+            TxtBalance.Text = balance.ToString();
+        }
+
+        private void TxtEyeWearAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtLenseAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtTotal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtDiscount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtAdvance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
             }
         }
     }

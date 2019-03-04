@@ -263,6 +263,7 @@
             this.TxtAdvance.UseSelectable = true;
             this.TxtAdvance.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtAdvance.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtAdvance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtAdvance_KeyPress);
             // 
             // TxtRemindDays
             // 
@@ -331,6 +332,7 @@
             this.TxtDiscount.UseSelectable = true;
             this.TxtDiscount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtDiscount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtDiscount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDiscount_KeyPress);
             // 
             // TxtLensesTotal
             // 
@@ -366,6 +368,7 @@
             this.TxtLensesTotal.UseSelectable = true;
             this.TxtLensesTotal.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtLensesTotal.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtLensesTotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtLensesTotal_KeyPress);
             // 
             // TxtOrderNo
             // 
@@ -583,7 +586,7 @@
             // 
             this.metroLabel33.AutoSize = true;
             this.metroLabel33.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel33.Location = new System.Drawing.Point(13, 238);
+            this.metroLabel33.Location = new System.Drawing.Point(13, 227);
             this.metroLabel33.Name = "metroLabel33";
             this.metroLabel33.Size = new System.Drawing.Size(65, 20);
             this.metroLabel33.TabIndex = 73;

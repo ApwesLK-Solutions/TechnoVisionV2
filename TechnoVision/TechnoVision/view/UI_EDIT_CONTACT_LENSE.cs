@@ -45,6 +45,7 @@ namespace TechnoVision.view
                 contactlenseBindingSource.EndEdit();
                 contactlenseTableAdapter.Update(technovisionDataSet);
                 this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+                CommonFunctions.WriteUserLog(Session.Username, "Edited order number" + TxtOrderNo + "...Critical");
                 CommonFunctions.ShowSuccess(this, "Successfully Changed edit Details...");
             }
             catch(Exception ex)
@@ -80,6 +81,33 @@ namespace TechnoVision.view
 
             balance = (total) - (discount) - (advance);
             TxtBalance.Text = balance.ToString();
+        }
+
+        private void TxtLensesTotal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtDiscount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtAdvance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

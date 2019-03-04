@@ -210,7 +210,9 @@
             this.TxtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtSearch.CustomButton.UseSelectable = true;
             this.TxtSearch.CustomButton.Visible = false;
+            this.TxtSearch.DisplayIcon = true;
             this.TxtSearch.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.TxtSearch.Icon = global::TechnoVision.Properties.Resources.search;
             this.TxtSearch.Lines = new string[0];
             this.TxtSearch.Location = new System.Drawing.Point(879, 26);
             this.TxtSearch.MaxLength = 32767;
@@ -229,7 +231,6 @@
             this.TxtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.TxtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
-            this.TxtSearch.Click += new System.EventHandler(this.TxtSearch_Click);
             // 
             // SpecGrid
             // 
