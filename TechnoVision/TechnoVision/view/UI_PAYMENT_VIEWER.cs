@@ -12,6 +12,12 @@ namespace TechnoVision.view
 {
     public partial class UI_PAYMENT_VIEWER : MetroFramework.Forms.MetroForm
     {
+        technovisionDataSetTableAdapters.customerTableAdapter cust = new technovisionDataSetTableAdapters.customerTableAdapter();
+        technovisionDataSetTableAdapters.spectaclesTableAdapter spec = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
+        technovisionDataSetTableAdapters.contactlenseTableAdapter lense = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+        string ordertype;
+        string orderNumber;
+
         public UI_PAYMENT_VIEWER()
         {
             InitializeComponent();
@@ -23,8 +29,33 @@ namespace TechnoVision.view
         {
             // TODO: This line of code loads data into the 'technovisionDataSet.receipt' table. You can move, or remove it, as needed.
             this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
+            LblCustomer.Text = cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
+            getAmounts();
 
 
+        }
+
+        private void GridPayment_Click(object sender, EventArgs e)
+        {
+            LblCustomer.Text =cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
+            getAmounts();
+        }
+
+        private void getAmounts()
+        {
+            ordertype = GridPayment.SelectedRows[0].Cells[6].Value.ToString();
+            orderNumber = GridPayment.SelectedRows[0].Cells[2].Value.ToString();
+            if (ordertype == "SPEC")
+            {
+                LblDue.Text = spec.FindBalanceByOrderNumber(orderNumber).ToString();
+                LblTotal.Text = spec.FindTotalByOrderNumber(orderNumber).ToString();
+            }
+            else if (ordertype == "LENSE")
+            {
+                LblDue.Text = lense.FindBalanceByOrderNumber(orderNumber).ToString();
+                LblTotal.Text = lense.FindTotalByOrderNumber(orderNumber).ToString();
+
+            }
         }
     }
 }

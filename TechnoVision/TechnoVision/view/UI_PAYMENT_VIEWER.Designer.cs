@@ -57,10 +57,13 @@
             this.receiptNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CustId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.receiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.receiptTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.receiptTableAdapter();
-            this.CustId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LblCustomer = new MetroFramework.Controls.MetroLabel();
+            this.LblTotal = new MetroFramework.Controls.MetroLabel();
+            this.LblDue = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.GridPayments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridPayment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).BeginInit();
@@ -312,7 +315,7 @@
             this.GridPayment.EnableHeadersVisualStyles = false;
             this.GridPayment.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridPayment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GridPayment.Location = new System.Drawing.Point(23, 79);
+            this.GridPayment.Location = new System.Drawing.Point(23, 128);
             this.GridPayment.Name = "GridPayment";
             this.GridPayment.ReadOnly = true;
             this.GridPayment.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -327,8 +330,9 @@
             this.GridPayment.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GridPayment.RowTemplate.Height = 24;
             this.GridPayment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GridPayment.Size = new System.Drawing.Size(1081, 532);
+            this.GridPayment.Size = new System.Drawing.Size(1081, 483);
             this.GridPayment.TabIndex = 9;
+            this.GridPayment.Click += new System.EventHandler(this.GridPayment_Click);
             // 
             // idDataGridViewTextBoxColumn1
             // 
@@ -386,6 +390,13 @@
             this.yearDataGridViewTextBoxColumn1.Name = "yearDataGridViewTextBoxColumn1";
             this.yearDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
+            // CustId
+            // 
+            this.CustId.DataPropertyName = "CustId";
+            this.CustId.HeaderText = "CustId";
+            this.CustId.Name = "CustId";
+            this.CustId.ReadOnly = true;
+            // 
             // receiptBindingSource
             // 
             this.receiptBindingSource.DataMember = "receipt";
@@ -400,18 +411,41 @@
             // 
             this.receiptTableAdapter.ClearBeforeFill = true;
             // 
-            // CustId
+            // LblCustomer
             // 
-            this.CustId.DataPropertyName = "CustId";
-            this.CustId.HeaderText = "CustId";
-            this.CustId.Name = "CustId";
-            this.CustId.ReadOnly = true;
+            this.LblCustomer.AutoSize = true;
+            this.LblCustomer.Location = new System.Drawing.Point(23, 86);
+            this.LblCustomer.Name = "LblCustomer";
+            this.LblCustomer.Size = new System.Drawing.Size(111, 20);
+            this.LblCustomer.TabIndex = 10;
+            this.LblCustomer.Text = "Customer Name";
+            // 
+            // LblTotal
+            // 
+            this.LblTotal.AutoSize = true;
+            this.LblTotal.Location = new System.Drawing.Point(217, 86);
+            this.LblTotal.Name = "LblTotal";
+            this.LblTotal.Size = new System.Drawing.Size(111, 20);
+            this.LblTotal.TabIndex = 10;
+            this.LblTotal.Text = "Customer Name";
+            // 
+            // LblDue
+            // 
+            this.LblDue.AutoSize = true;
+            this.LblDue.Location = new System.Drawing.Point(414, 86);
+            this.LblDue.Name = "LblDue";
+            this.LblDue.Size = new System.Drawing.Size(111, 20);
+            this.LblDue.TabIndex = 10;
+            this.LblDue.Text = "Customer Name";
             // 
             // UI_PAYMENT_VIEWER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 694);
+            this.Controls.Add(this.LblDue);
+            this.Controls.Add(this.LblTotal);
+            this.Controls.Add(this.LblCustomer);
             this.Controls.Add(this.GridPayment);
             this.Controls.Add(this.TxtSearchReceipt);
             this.Controls.Add(this.BtnRefresh);
@@ -428,6 +462,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -459,5 +494,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn orderTypeDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustId;
+        private MetroFramework.Controls.MetroLabel LblCustomer;
+        private MetroFramework.Controls.MetroLabel LblTotal;
+        private MetroFramework.Controls.MetroLabel LblDue;
     }
 }
