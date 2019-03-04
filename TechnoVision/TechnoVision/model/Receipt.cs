@@ -14,5 +14,6 @@ namespace TechnoVision.model
         public static int branch = Session.BranchId;
         public static string OrderType;
         public static string ReceiptNumber;
+        public static int custId;
     }
 }

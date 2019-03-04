@@ -14,7 +14,7 @@ namespace TechnoVision.controller
             try
             {
                 technovisionDataSetTableAdapters.receiptTableAdapter t = new technovisionDataSetTableAdapters.receiptTableAdapter();
-                t.Insert(Receipt.ReceiptNumber,DateTime.Parse(Receipt.receiptDate),Receipt.orderNumber,Receipt.paymentAmount,Receipt.branch,Receipt.OrderType,DateTime.Now.ToString("yyyy"));
+                t.Insert(Receipt.ReceiptNumber,DateTime.Parse(Receipt.receiptDate),Receipt.orderNumber,Receipt.paymentAmount,Receipt.branch,Receipt.OrderType,DateTime.Now.ToString("yyyy"),Receipt.custId);
                 CommonFunctions.WriteUserLog(Session.Username, "New Payment Receipt for " + Receipt.OrderType + " Order Number " + Receipt.orderNumber + " Added to the System.");
             }
             catch(Exception ex)
@@ -23,12 +23,13 @@ namespace TechnoVision.controller
             }
 
         }
-        public static void FillReceipt(string orderNumber , double amount , string date , string OrderType)
+        public static void FillReceipt(string orderNumber , double amount , string date , string OrderType , int CustId)
         {
             Receipt.OrderType = OrderType;
             Receipt.orderNumber = orderNumber;
             Receipt.paymentAmount = amount;
             Receipt.receiptDate = date;
+            Receipt.custId = CustId;
         }
     }
 }

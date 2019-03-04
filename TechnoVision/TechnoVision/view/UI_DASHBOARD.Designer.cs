@@ -30,23 +30,23 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnManageBranches = new MetroFramework.Controls.MetroTile();
-            this.metroTile8 = new MetroFramework.Controls.MetroTile();
-            this.metroTile10 = new MetroFramework.Controls.MetroTile();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.LblUsername = new MetroFramework.Controls.MetroLabel();
-            this.LblBranch = new MetroFramework.Controls.MetroLabel();
             this.BtnSpectacles = new MetroFramework.Controls.MetroTile();
             this.BtnContactLenses = new MetroFramework.Controls.MetroTile();
             this.BtnReports = new MetroFramework.Controls.MetroTile();
             this.BtnManageCustomer = new MetroFramework.Controls.MetroTile();
             this.BtnManageFrames = new MetroFramework.Controls.MetroTile();
             this.BtnManageTesters = new MetroFramework.Controls.MetroTile();
+            this.BtnManageBranches = new MetroFramework.Controls.MetroTile();
+            this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
+            this.metroTile10 = new MetroFramework.Controls.MetroTile();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.LblUsername = new MetroFramework.Controls.MetroLabel();
+            this.LblBranch = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -100,132 +100,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1554, 650);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // BtnManageBranches
-            // 
-            this.BtnManageBranches.ActiveControl = null;
-            this.BtnManageBranches.Location = new System.Drawing.Point(313, 219);
-            this.BtnManageBranches.Name = "BtnManageBranches";
-            this.BtnManageBranches.Size = new System.Drawing.Size(304, 210);
-            this.BtnManageBranches.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnManageBranches.TabIndex = 0;
-            this.BtnManageBranches.Text = "Manage Branches";
-            this.BtnManageBranches.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.BtnManageBranches.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.BtnManageBranches.UseSelectable = true;
-            this.BtnManageBranches.UseTileImage = true;
-            this.BtnManageBranches.Click += new System.EventHandler(this.BtnManageBranches_Click);
-            // 
-            // metroTile8
-            // 
-            this.metroTile8.ActiveControl = null;
-            this.metroTile8.Location = new System.Drawing.Point(623, 219);
-            this.metroTile8.Name = "metroTile8";
-            this.metroTile8.Size = new System.Drawing.Size(304, 210);
-            this.metroTile8.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile8.TabIndex = 0;
-            this.metroTile8.Text = "Order List";
-            this.metroTile8.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile8.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile8.UseSelectable = true;
-            this.metroTile8.UseTileImage = true;
-            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
-            // 
-            // metroTile10
-            // 
-            this.metroTile10.ActiveControl = null;
-            this.metroTile10.Location = new System.Drawing.Point(1243, 219);
-            this.metroTile10.Name = "metroTile10";
-            this.metroTile10.Size = new System.Drawing.Size(304, 210);
-            this.metroTile10.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile10.TabIndex = 0;
-            this.metroTile10.Text = "New Spectacles Order";
-            this.metroTile10.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile10.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile10.UseSelectable = true;
-            this.metroTile10.UseTileImage = true;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1554, 158);
-            this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(780, 3);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(771, 152);
-            this.tableLayoutPanel4.TabIndex = 1;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel5.Controls.Add(this.metroTile3, 2, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 79);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(765, 70);
-            this.tableLayoutPanel5.TabIndex = 0;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.LblUsername, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.LblBranch, 0, 1);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(765, 70);
-            this.tableLayoutPanel6.TabIndex = 1;
-            // 
-            // LblUsername
-            // 
-            this.LblUsername.AutoSize = true;
-            this.LblUsername.Dock = System.Windows.Forms.DockStyle.Right;
-            this.LblUsername.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblUsername.Location = new System.Drawing.Point(679, 0);
-            this.LblUsername.Name = "LblUsername";
-            this.LblUsername.Size = new System.Drawing.Size(83, 35);
-            this.LblUsername.TabIndex = 0;
-            this.LblUsername.Text = "Shehantha";
-            // 
-            // LblBranch
-            // 
-            this.LblBranch.AutoSize = true;
-            this.LblBranch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.LblBranch.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblBranch.Location = new System.Drawing.Point(704, 35);
-            this.LblBranch.Name = "LblBranch";
-            this.LblBranch.Size = new System.Drawing.Size(58, 35);
-            this.LblBranch.TabIndex = 1;
-            this.LblBranch.Text = "Branch";
             // 
             // BtnSpectacles
             // 
@@ -328,6 +202,36 @@
             this.BtnManageTesters.UseTileImage = true;
             this.BtnManageTesters.Click += new System.EventHandler(this.BtnManageTesters_Click);
             // 
+            // BtnManageBranches
+            // 
+            this.BtnManageBranches.ActiveControl = null;
+            this.BtnManageBranches.Location = new System.Drawing.Point(313, 219);
+            this.BtnManageBranches.Name = "BtnManageBranches";
+            this.BtnManageBranches.Size = new System.Drawing.Size(304, 210);
+            this.BtnManageBranches.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnManageBranches.TabIndex = 0;
+            this.BtnManageBranches.Text = "Manage Branches";
+            this.BtnManageBranches.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.BtnManageBranches.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.BtnManageBranches.UseSelectable = true;
+            this.BtnManageBranches.UseTileImage = true;
+            this.BtnManageBranches.Click += new System.EventHandler(this.BtnManageBranches_Click);
+            // 
+            // metroTile8
+            // 
+            this.metroTile8.ActiveControl = null;
+            this.metroTile8.Location = new System.Drawing.Point(623, 219);
+            this.metroTile8.Name = "metroTile8";
+            this.metroTile8.Size = new System.Drawing.Size(304, 210);
+            this.metroTile8.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile8.TabIndex = 0;
+            this.metroTile8.Text = "Order List";
+            this.metroTile8.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile8.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile8.UseSelectable = true;
+            this.metroTile8.UseTileImage = true;
+            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
+            // 
             // metroTile9
             // 
             this.metroTile9.ActiveControl = null;
@@ -343,6 +247,66 @@
             this.metroTile9.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile9.UseSelectable = true;
             this.metroTile9.UseTileImage = true;
+            this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
+            // 
+            // metroTile10
+            // 
+            this.metroTile10.ActiveControl = null;
+            this.metroTile10.Location = new System.Drawing.Point(1243, 219);
+            this.metroTile10.Name = "metroTile10";
+            this.metroTile10.Size = new System.Drawing.Size(304, 210);
+            this.metroTile10.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile10.TabIndex = 0;
+            this.metroTile10.Text = "New Spectacles Order";
+            this.metroTile10.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile10.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile10.UseSelectable = true;
+            this.metroTile10.UseTileImage = true;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1554, 158);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(780, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(771, 152);
+            this.tableLayoutPanel4.TabIndex = 1;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 3;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel5.Controls.Add(this.metroTile3, 2, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 79);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(765, 70);
+            this.tableLayoutPanel5.TabIndex = 0;
             // 
             // metroTile3
             // 
@@ -357,6 +321,43 @@
             this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile3.UseSelectable = true;
             this.metroTile3.UseTileImage = true;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.LblUsername, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.LblBranch, 0, 1);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(765, 70);
+            this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // LblUsername
+            // 
+            this.LblUsername.AutoSize = true;
+            this.LblUsername.Dock = System.Windows.Forms.DockStyle.Right;
+            this.LblUsername.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.LblUsername.Location = new System.Drawing.Point(679, 0);
+            this.LblUsername.Name = "LblUsername";
+            this.LblUsername.Size = new System.Drawing.Size(83, 35);
+            this.LblUsername.TabIndex = 0;
+            this.LblUsername.Text = "Shehantha";
+            // 
+            // LblBranch
+            // 
+            this.LblBranch.AutoSize = true;
+            this.LblBranch.Dock = System.Windows.Forms.DockStyle.Right;
+            this.LblBranch.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.LblBranch.Location = new System.Drawing.Point(704, 35);
+            this.LblBranch.Name = "LblBranch";
+            this.LblBranch.Size = new System.Drawing.Size(58, 35);
+            this.LblBranch.TabIndex = 1;
+            this.LblBranch.Text = "Branch";
             // 
             // pictureBox1
             // 

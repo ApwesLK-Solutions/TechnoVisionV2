@@ -122,5 +122,15 @@ namespace TechnoVision.view
                 new UI_EDIT_SPECTACLE(SpecGrid.SelectedRows[0].Cells[0].Value.ToString()).Show();
             }
         }
+
+        private void BtnViewPayments_Click(object sender, EventArgs e)
+        {
+            if(RadioContactLense.Checked == true)
+            {
+                
+            }
+        }
+
+       
     }
 }
