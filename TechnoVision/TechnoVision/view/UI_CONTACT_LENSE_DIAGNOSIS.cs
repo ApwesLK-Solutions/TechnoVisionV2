@@ -54,10 +54,7 @@ namespace TechnoVision.view
             }
         }
 
-        private void UI_CONTACT_LENSE_DIAGNOSIS_Load(object sender, EventArgs e)
-        {
-            
-        }
+       
 
         private void BtnClear_Click(object sender, EventArgs e)
         {

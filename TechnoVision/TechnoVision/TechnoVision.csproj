@@ -129,6 +129,12 @@
     <Compile Include="view\UI_ADD_CUSTOMER.Designer.cs">
       <DependentUpon>UI_ADD_CUSTOMER.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\UI_ADD_NEW_PAYMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UI_ADD_NEW_PAYMENT.Designer.cs">
+      <DependentUpon>UI_ADD_NEW_PAYMENT.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_ADD_USER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,12 @@
     <Compile Include="view\UI_ORDER_COMPLETE.Designer.cs">
       <DependentUpon>UI_ORDER_COMPLETE.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\UI_PAYMENT_VIEWER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UI_PAYMENT_VIEWER.Designer.cs">
+      <DependentUpon>UI_PAYMENT_VIEWER.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_REPORT_VIEWER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +299,9 @@
     <EmbeddedResource Include="view\UI_ADD_CUSTOMER.resx">
       <DependentUpon>UI_ADD_CUSTOMER.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\UI_ADD_NEW_PAYMENT.resx">
+      <DependentUpon>UI_ADD_NEW_PAYMENT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\UI_ADD_USER.resx">
       <DependentUpon>UI_ADD_USER.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_ORDER_COMPLETE.resx">
       <DependentUpon>UI_ORDER_COMPLETE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\UI_PAYMENT_VIEWER.resx">
+      <DependentUpon>UI_PAYMENT_VIEWER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_REPORT_VIEWER.resx">
       <DependentUpon>UI_REPORT_VIEWER.cs</DependentUpon>
@@ -409,7 +427,45 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\specs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lenses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frames.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup_KjJ_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_9au_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cal_GUh_icon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -11,6 +11,6 @@ namespace TechnoVision
         public static string Username = "check";
         public static int BranchId = 1;
         public static string BranchMasterPassword = "LOL";
-        public static string BranchName = "Ward Place";
+        public static string BranchName = "CASTLE";
     }
 }

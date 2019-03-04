@@ -470,6 +470,7 @@
             this.TxtRemindDays.UseSelectable = true;
             this.TxtRemindDays.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtRemindDays.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtRemindDays.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtRemindDays_KeyPress);
             // 
             // BtnCalculate
             // 
@@ -480,7 +481,10 @@
             this.BtnCalculate.Size = new System.Drawing.Size(38, 36);
             this.BtnCalculate.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnCalculate.TabIndex = 11;
+            this.BtnCalculate.TileImage = global::TechnoVision.Properties.Resources.cal_GUh_icon;
+            this.BtnCalculate.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnCalculate.UseSelectable = true;
+            this.BtnCalculate.UseTileImage = true;
             this.BtnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
             // 
             // BtnNext

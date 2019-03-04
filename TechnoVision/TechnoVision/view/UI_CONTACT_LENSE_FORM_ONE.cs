@@ -48,18 +48,27 @@ namespace TechnoVision.view
 
         private void UI_CONTACT_LENSE_FORM_ONE_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
-            this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
-            DateOrderDate.Value = DateTime.UtcNow;
-            DateDueDate.Value = DateTime.UtcNow;
-            
-            CmbJobType.SelectedIndex = 0;
-            CmbOrderStatus.SelectedIndex = 0;
-            CmbPaymentMethod.SelectedIndex = 0;
-            CmbPaymentPlan.SelectedIndex = 0;
-            CmbTestedBy.SelectedIndex = 0;
-            TxtOrderNo.Text = getOrderNumber();
-            showReceiptNumber();
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
+                this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+                DateOrderDate.Value = DateTime.UtcNow;
+                DateDueDate.Value = DateTime.UtcNow;
+
+                CmbJobType.SelectedIndex = 0;
+                CmbOrderStatus.SelectedIndex = 0;
+                CmbPaymentMethod.SelectedIndex = 0;
+                CmbPaymentPlan.SelectedIndex = 0;
+                CmbTestedBy.SelectedIndex = 0;
+                TxtOrderNo.Text = getOrderNumber();
+                showReceiptNumber();
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this,ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog( ex.Message.ToString());
+            }
+           
         }
 
         private string getOrderNumber()
@@ -154,6 +163,15 @@ namespace TechnoVision.view
             TxtDiscount.Text = "0";
             TxtLensesTotal.Text = "0";
             TxtRemindDays.Text ="";
+        }
+
+        private void TxtRemindDays_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

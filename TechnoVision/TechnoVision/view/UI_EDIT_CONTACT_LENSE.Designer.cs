@@ -151,7 +151,11 @@
             this.BtnCalculate.Size = new System.Drawing.Size(38, 36);
             this.BtnCalculate.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnCalculate.TabIndex = 8;
+            this.BtnCalculate.TileImage = global::TechnoVision.Properties.Resources.cal_GUh_icon;
+            this.BtnCalculate.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnCalculate.UseSelectable = true;
+            this.BtnCalculate.UseTileImage = true;
+            this.BtnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
             // 
             // CmbPaymentPlan
             // 
@@ -902,7 +906,7 @@
             this.TxtRightDeze.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "RightDesz", true));
             this.TxtRightDeze.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightDeze.Lines = new string[0];
-            this.TxtRightDeze.Location = new System.Drawing.Point(306, 158);
+            this.TxtRightDeze.Location = new System.Drawing.Point(309, 158);
             this.TxtRightDeze.MaxLength = 32767;
             this.TxtRightDeze.Name = "TxtRightDeze";
             this.TxtRightDeze.PasswordChar = '\0';
@@ -934,7 +938,7 @@
             this.TxtRightDia.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "RightDia", true));
             this.TxtRightDia.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightDia.Lines = new string[0];
-            this.TxtRightDia.Location = new System.Drawing.Point(232, 158);
+            this.TxtRightDia.Location = new System.Drawing.Point(234, 158);
             this.TxtRightDia.MaxLength = 32767;
             this.TxtRightDia.Name = "TxtRightDia";
             this.TxtRightDia.PasswordChar = '\0';
@@ -966,7 +970,7 @@
             this.TxtRightPow.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "RightPow", true));
             this.TxtRightPow.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightPow.Lines = new string[0];
-            this.TxtRightPow.Location = new System.Drawing.Point(158, 158);
+            this.TxtRightPow.Location = new System.Drawing.Point(159, 158);
             this.TxtRightPow.MaxLength = 32767;
             this.TxtRightPow.Name = "TxtRightPow";
             this.TxtRightPow.PasswordChar = '\0';
@@ -1062,7 +1066,7 @@
             this.TxtRightPresentCyl.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentRightCyl", true));
             this.TxtRightPresentCyl.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightPresentCyl.Lines = new string[0];
-            this.TxtRightPresentCyl.Location = new System.Drawing.Point(158, 97);
+            this.TxtRightPresentCyl.Location = new System.Drawing.Point(159, 97);
             this.TxtRightPresentCyl.MaxLength = 32767;
             this.TxtRightPresentCyl.Name = "TxtRightPresentCyl";
             this.TxtRightPresentCyl.PasswordChar = '\0';
@@ -1094,7 +1098,7 @@
             this.TxtRightPresentAxis.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentRightAxis", true));
             this.TxtRightPresentAxis.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightPresentAxis.Lines = new string[0];
-            this.TxtRightPresentAxis.Location = new System.Drawing.Point(232, 97);
+            this.TxtRightPresentAxis.Location = new System.Drawing.Point(234, 97);
             this.TxtRightPresentAxis.MaxLength = 32767;
             this.TxtRightPresentAxis.Name = "TxtRightPresentAxis";
             this.TxtRightPresentAxis.PasswordChar = '\0';
@@ -1126,7 +1130,7 @@
             this.TxtRightPresentAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentRightAdd", true));
             this.TxtRightPresentAdd.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightPresentAdd.Lines = new string[0];
-            this.TxtRightPresentAdd.Location = new System.Drawing.Point(306, 97);
+            this.TxtRightPresentAdd.Location = new System.Drawing.Point(309, 97);
             this.TxtRightPresentAdd.MaxLength = 32767;
             this.TxtRightPresentAdd.Name = "TxtRightPresentAdd";
             this.TxtRightPresentAdd.PasswordChar = '\0';
@@ -1414,7 +1418,7 @@
             this.TxtRightOldAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldRightAdd", true));
             this.TxtRightOldAdd.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightOldAdd.Lines = new string[0];
-            this.TxtRightOldAdd.Location = new System.Drawing.Point(306, 60);
+            this.TxtRightOldAdd.Location = new System.Drawing.Point(309, 60);
             this.TxtRightOldAdd.MaxLength = 32767;
             this.TxtRightOldAdd.Name = "TxtRightOldAdd";
             this.TxtRightOldAdd.PasswordChar = '\0';
@@ -1446,7 +1450,7 @@
             this.TxtRightOldAxis.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldRightAxis", true));
             this.TxtRightOldAxis.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightOldAxis.Lines = new string[0];
-            this.TxtRightOldAxis.Location = new System.Drawing.Point(232, 60);
+            this.TxtRightOldAxis.Location = new System.Drawing.Point(234, 60);
             this.TxtRightOldAxis.MaxLength = 32767;
             this.TxtRightOldAxis.Name = "TxtRightOldAxis";
             this.TxtRightOldAxis.PasswordChar = '\0';
@@ -1478,7 +1482,7 @@
             this.TxtRightOldCyl.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldRightCyl", true));
             this.TxtRightOldCyl.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightOldCyl.Lines = new string[0];
-            this.TxtRightOldCyl.Location = new System.Drawing.Point(158, 60);
+            this.TxtRightOldCyl.Location = new System.Drawing.Point(159, 60);
             this.TxtRightOldCyl.MaxLength = 32767;
             this.TxtRightOldCyl.Name = "TxtRightOldCyl";
             this.TxtRightOldCyl.PasswordChar = '\0';

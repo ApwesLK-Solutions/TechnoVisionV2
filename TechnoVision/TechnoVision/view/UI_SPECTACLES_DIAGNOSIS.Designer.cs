@@ -62,11 +62,11 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.CmbFrame = new MetroFramework.Controls.MetroComboBox();
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.framesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.framesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.framesTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnBack
@@ -77,7 +77,10 @@
             this.BtnBack.Size = new System.Drawing.Size(57, 31);
             this.BtnBack.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnBack.TabIndex = 17;
+            this.BtnBack.TileImage = global::TechnoVision.Properties.Resources.back_9au_icon;
+            this.BtnBack.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnBack.UseSelectable = true;
+            this.BtnBack.UseTileImage = true;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // BtnSave
@@ -704,15 +707,15 @@
             this.CmbFrame.UseSelectable = true;
             this.CmbFrame.ValueMember = "FrameName";
             // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // framesBindingSource
             // 
             this.framesBindingSource.DataMember = "frames";
             this.framesBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // framesTableAdapter
             // 
@@ -762,8 +765,8 @@
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "     Spectacles - Diagnosis";
             this.Load += new System.EventHandler(this.UI_SPECTACLES_DIAGNOSIS_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
