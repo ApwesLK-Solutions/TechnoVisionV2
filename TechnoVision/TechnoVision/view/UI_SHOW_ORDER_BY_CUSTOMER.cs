@@ -118,5 +118,10 @@ namespace TechnoVision.view
                 CommonFunctions.ShowError(this, ex.Message.ToString());
             }
         }
+
+        private void BtnViewOrder_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

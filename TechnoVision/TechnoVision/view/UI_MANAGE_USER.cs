@@ -24,7 +24,7 @@ namespace TechnoVision.view
             {
                 // TODO: This line of code loads data into the 'technovisionDataSet.users' table. You can move, or remove it, as needed.
                 this.usersTableAdapter.Fill(this.technovisionDataSet.users);
-                usersBindingSource.Filter = "Branch = " + Session.BranchId;
+                usersBindingSource.Filter = "BranchId = " + Session.BranchId;
             }
             catch(Exception ex)
             {
@@ -86,7 +86,7 @@ namespace TechnoVision.view
         {
             try
             {
-                usersBindingSource.Filter = ("Nic LIKE '%" + TxtSearch.Text + "%' AND Branch =" + Session.BranchId);
+                usersBindingSource.Filter = ("Nic LIKE '%" + TxtSearch.Text + "%' AND BranchId =" + Session.BranchId);
             }
             catch(Exception)
             {
