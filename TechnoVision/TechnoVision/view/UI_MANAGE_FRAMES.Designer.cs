@@ -87,6 +87,7 @@
             // 
             // TxtAddFrame
             // 
+            this.TxtAddFrame.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
@@ -133,7 +134,7 @@
             this.TxtSearch.CustomButton.UseSelectable = true;
             this.TxtSearch.CustomButton.Visible = false;
             this.TxtSearch.DisplayIcon = true;
-            this.TxtSearch.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.TxtSearch.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtSearch.Icon = global::TechnoVision.Properties.Resources.search;
             this.TxtSearch.Lines = new string[0];
             this.TxtSearch.Location = new System.Drawing.Point(261, 33);

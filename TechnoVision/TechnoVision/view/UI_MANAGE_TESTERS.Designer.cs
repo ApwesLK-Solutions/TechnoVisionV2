@@ -48,6 +48,7 @@
             // 
             // TxtAddTester
             // 
+            this.TxtAddTester.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 

@@ -50,17 +50,22 @@
             this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GridPayment = new MetroFramework.Controls.MetroGrid();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.receiptDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.receiptNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.receiptDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentAmountDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.branchDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.receiptNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CustId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.receiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.receiptTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.receiptTableAdapter();
-            this.CustId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LblCustomer = new MetroFramework.Controls.MetroLabel();
+            this.LblTotal = new MetroFramework.Controls.MetroLabel();
+            this.LblDue = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.GridPayments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridPayment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).BeginInit();
@@ -102,6 +107,7 @@
             this.BtnNewPayment.UseCustomForeColor = true;
             this.BtnNewPayment.UseSelectable = true;
             this.BtnNewPayment.UseStyleColors = true;
+            this.BtnNewPayment.Click += new System.EventHandler(this.BtnNewPayment_Click);
             // 
             // BtnPrintReceipt
             // 
@@ -277,86 +283,110 @@
             this.GridPayment.AllowUserToOrderColumns = true;
             this.GridPayment.AllowUserToResizeRows = false;
             this.GridPayment.AutoGenerateColumns = false;
+            this.GridPayment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.GridPayment.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridPayment.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GridPayment.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridPayment.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GridPayment.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.GridPayment.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.GridPayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridPayment.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn1,
-            this.receiptDateDataGridViewTextBoxColumn1,
             this.orderNumberDataGridViewTextBoxColumn1,
+            this.receiptNumberDataGridViewTextBoxColumn1,
+            this.receiptDateDataGridViewTextBoxColumn1,
+            this.orderTypeDataGridViewTextBoxColumn1,
             this.paymentAmountDataGridViewTextBoxColumn1,
             this.branchDataGridViewTextBoxColumn1,
-            this.receiptNumberDataGridViewTextBoxColumn1,
-            this.orderTypeDataGridViewTextBoxColumn1,
             this.yearDataGridViewTextBoxColumn1,
             this.CustId});
             this.GridPayment.DataSource = this.receiptBindingSource;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GridPayment.DefaultCellStyle = dataGridViewCellStyle5;
             this.GridPayment.EnableHeadersVisualStyles = false;
             this.GridPayment.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridPayment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GridPayment.Location = new System.Drawing.Point(23, 79);
+            this.GridPayment.Location = new System.Drawing.Point(23, 128);
             this.GridPayment.Name = "GridPayment";
             this.GridPayment.ReadOnly = true;
             this.GridPayment.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.GridPayment.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.GridPayment.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GridPayment.RowTemplate.Height = 24;
             this.GridPayment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GridPayment.Size = new System.Drawing.Size(1081, 532);
+            this.GridPayment.Size = new System.Drawing.Size(1081, 483);
+            this.GridPayment.Style = MetroFramework.MetroColorStyle.Green;
             this.GridPayment.TabIndex = 9;
+            this.GridPayment.Click += new System.EventHandler(this.GridPayment_Click);
             // 
             // idDataGridViewTextBoxColumn1
             // 
             this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "ID";
             this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
             this.idDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // receiptDateDataGridViewTextBoxColumn1
-            // 
-            this.receiptDateDataGridViewTextBoxColumn1.DataPropertyName = "ReceiptDate";
-            this.receiptDateDataGridViewTextBoxColumn1.HeaderText = "ReceiptDate";
-            this.receiptDateDataGridViewTextBoxColumn1.Name = "receiptDateDataGridViewTextBoxColumn1";
-            this.receiptDateDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn1.Width = 58;
             // 
             // orderNumberDataGridViewTextBoxColumn1
             // 
             this.orderNumberDataGridViewTextBoxColumn1.DataPropertyName = "OrderNumber";
-            this.orderNumberDataGridViewTextBoxColumn1.HeaderText = "OrderNumber";
+            this.orderNumberDataGridViewTextBoxColumn1.HeaderText = "Order Number";
             this.orderNumberDataGridViewTextBoxColumn1.Name = "orderNumberDataGridViewTextBoxColumn1";
             this.orderNumberDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.orderNumberDataGridViewTextBoxColumn1.Width = 167;
+            // 
+            // receiptNumberDataGridViewTextBoxColumn1
+            // 
+            this.receiptNumberDataGridViewTextBoxColumn1.DataPropertyName = "ReceiptNumber";
+            this.receiptNumberDataGridViewTextBoxColumn1.HeaderText = "Receipt Number";
+            this.receiptNumberDataGridViewTextBoxColumn1.Name = "receiptNumberDataGridViewTextBoxColumn1";
+            this.receiptNumberDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.receiptNumberDataGridViewTextBoxColumn1.Width = 180;
+            // 
+            // receiptDateDataGridViewTextBoxColumn1
+            // 
+            this.receiptDateDataGridViewTextBoxColumn1.DataPropertyName = "ReceiptDate";
+            this.receiptDateDataGridViewTextBoxColumn1.HeaderText = "Receipt Date";
+            this.receiptDateDataGridViewTextBoxColumn1.Name = "receiptDateDataGridViewTextBoxColumn1";
+            this.receiptDateDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.receiptDateDataGridViewTextBoxColumn1.Width = 149;
+            // 
+            // orderTypeDataGridViewTextBoxColumn1
+            // 
+            this.orderTypeDataGridViewTextBoxColumn1.DataPropertyName = "OrderType";
+            this.orderTypeDataGridViewTextBoxColumn1.HeaderText = "Order Type";
+            this.orderTypeDataGridViewTextBoxColumn1.Name = "orderTypeDataGridViewTextBoxColumn1";
+            this.orderTypeDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.orderTypeDataGridViewTextBoxColumn1.Width = 136;
             // 
             // paymentAmountDataGridViewTextBoxColumn1
             // 
             this.paymentAmountDataGridViewTextBoxColumn1.DataPropertyName = "PaymentAmount";
-            this.paymentAmountDataGridViewTextBoxColumn1.HeaderText = "PaymentAmount";
+            this.paymentAmountDataGridViewTextBoxColumn1.HeaderText = "Payment Amount";
             this.paymentAmountDataGridViewTextBoxColumn1.Name = "paymentAmountDataGridViewTextBoxColumn1";
             this.paymentAmountDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.paymentAmountDataGridViewTextBoxColumn1.Width = 190;
             // 
             // branchDataGridViewTextBoxColumn1
             // 
@@ -364,20 +394,7 @@
             this.branchDataGridViewTextBoxColumn1.HeaderText = "Branch";
             this.branchDataGridViewTextBoxColumn1.Name = "branchDataGridViewTextBoxColumn1";
             this.branchDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // receiptNumberDataGridViewTextBoxColumn1
-            // 
-            this.receiptNumberDataGridViewTextBoxColumn1.DataPropertyName = "ReceiptNumber";
-            this.receiptNumberDataGridViewTextBoxColumn1.HeaderText = "ReceiptNumber";
-            this.receiptNumberDataGridViewTextBoxColumn1.Name = "receiptNumberDataGridViewTextBoxColumn1";
-            this.receiptNumberDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // orderTypeDataGridViewTextBoxColumn1
-            // 
-            this.orderTypeDataGridViewTextBoxColumn1.DataPropertyName = "OrderType";
-            this.orderTypeDataGridViewTextBoxColumn1.HeaderText = "OrderType";
-            this.orderTypeDataGridViewTextBoxColumn1.Name = "orderTypeDataGridViewTextBoxColumn1";
-            this.orderTypeDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.branchDataGridViewTextBoxColumn1.Width = 98;
             // 
             // yearDataGridViewTextBoxColumn1
             // 
@@ -385,6 +402,15 @@
             this.yearDataGridViewTextBoxColumn1.HeaderText = "Year";
             this.yearDataGridViewTextBoxColumn1.Name = "yearDataGridViewTextBoxColumn1";
             this.yearDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.yearDataGridViewTextBoxColumn1.Width = 75;
+            // 
+            // CustId
+            // 
+            this.CustId.DataPropertyName = "CustId";
+            this.CustId.HeaderText = "Customer ID";
+            this.CustId.Name = "CustId";
+            this.CustId.ReadOnly = true;
+            this.CustId.Width = 147;
             // 
             // receiptBindingSource
             // 
@@ -400,18 +426,69 @@
             // 
             this.receiptTableAdapter.ClearBeforeFill = true;
             // 
-            // CustId
+            // LblCustomer
             // 
-            this.CustId.DataPropertyName = "CustId";
-            this.CustId.HeaderText = "CustId";
-            this.CustId.Name = "CustId";
-            this.CustId.ReadOnly = true;
+            this.LblCustomer.AutoSize = true;
+            this.LblCustomer.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.LblCustomer.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.LblCustomer.Location = new System.Drawing.Point(184, 91);
+            this.LblCustomer.Name = "LblCustomer";
+            this.LblCustomer.Size = new System.Drawing.Size(155, 25);
+            this.LblCustomer.TabIndex = 10;
+            this.LblCustomer.Text = "Customer Name";
+            // 
+            // LblTotal
+            // 
+            this.LblTotal.AutoSize = true;
+            this.LblTotal.Location = new System.Drawing.Point(986, 96);
+            this.LblTotal.Name = "LblTotal";
+            this.LblTotal.Size = new System.Drawing.Size(111, 20);
+            this.LblTotal.TabIndex = 10;
+            this.LblTotal.Text = "Customer Name";
+            // 
+            // LblDue
+            // 
+            this.LblDue.AutoSize = true;
+            this.LblDue.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.LblDue.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.LblDue.Location = new System.Drawing.Point(559, 91);
+            this.LblDue.Name = "LblDue";
+            this.LblDue.Size = new System.Drawing.Size(155, 25);
+            this.LblDue.TabIndex = 10;
+            this.LblDue.Text = "Customer Name";
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.Location = new System.Drawing.Point(23, 91);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(155, 25);
+            this.metroLabel1.TabIndex = 10;
+            this.metroLabel1.Text = "Customer Name";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel2.Location = new System.Drawing.Point(427, 91);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(126, 25);
+            this.metroLabel2.TabIndex = 10;
+            this.metroLabel2.Text = "Due Amount";
             // 
             // UI_PAYMENT_VIEWER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1120, 694);
+            this.Controls.Add(this.LblDue);
+            this.Controls.Add(this.LblTotal);
+            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.metroLabel1);
+            this.Controls.Add(this.LblCustomer);
             this.Controls.Add(this.GridPayment);
             this.Controls.Add(this.TxtSearchReceipt);
             this.Controls.Add(this.BtnRefresh);
@@ -428,6 +505,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -450,13 +528,18 @@
         private technovisionDataSet technovisionDataSet;
         private System.Windows.Forms.BindingSource receiptBindingSource;
         private technovisionDataSetTableAdapters.receiptTableAdapter receiptTableAdapter;
+        private MetroFramework.Controls.MetroLabel LblCustomer;
+        private MetroFramework.Controls.MetroLabel LblTotal;
+        private MetroFramework.Controls.MetroLabel LblDue;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn receiptDateDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderNumberDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn receiptNumberDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn receiptDateDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orderTypeDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn paymentAmountDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn branchDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn receiptNumberDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn orderTypeDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustId;
     }

@@ -64,7 +64,7 @@ namespace TechnoVision.view
                 technovisionDataSetTableAdapters.framesTableAdapter t = new technovisionDataSetTableAdapters.framesTableAdapter();
                 t.DeleteByID(int.Parse(GridFrame.SelectedRows[0].Cells[0].Value.ToString()));
                 this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
-                CommonFunctions.WriteUserLog(Session.Username, "Deleted Frame" + TxtAddFrame.Text);
+                CommonFunctions.WriteUserLog(Session.Username, "Deleted Frame" + GridFrame.SelectedRows[0].Cells[1].Value.ToString());
                 CommonFunctions.ShowSuccess(this, "Frame Deleted Successfully...");
             }
             catch(Exception ex)
@@ -76,7 +76,15 @@ namespace TechnoVision.view
         }
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
-            framesBindingSource.Filter = ("FrameName LIKE '%" + TxtSearch.Text + "%'");
+            try
+            {
+                framesBindingSource.Filter = ("FrameName LIKE '%" + TxtSearch.Text + "%'");
+            }
+            catch(Exception)
+            {
+                CommonFunctions.ShowError(this, "No data to search...");
+            }
+           
         }
     }
 }

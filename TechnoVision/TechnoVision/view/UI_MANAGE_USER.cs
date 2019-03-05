@@ -84,7 +84,15 @@ namespace TechnoVision.view
 
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
-            usersBindingSource.Filter = ("Nic LIKE '%" + TxtSearch.Text + "%' AND Branch =" + Session.BranchId);
+            try
+            {
+                usersBindingSource.Filter = ("Nic LIKE '%" + TxtSearch.Text + "%' AND Branch =" + Session.BranchId);
+            }
+            catch(Exception)
+            {
+                CommonFunctions.ShowError(this, "No data to search...");
+            }
+            
         }
     }
 }

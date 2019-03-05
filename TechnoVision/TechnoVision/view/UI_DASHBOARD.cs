@@ -62,5 +62,16 @@ namespace TechnoVision.view
         {
             new UI_PAYMENT_VIEWER().Show();
         }
+
+        private void BtnReports_Click(object sender, EventArgs e)
+        {
+            new UI_REPORTS().Show();
+        }
+
+        private void BtnSystemUsers_Click(object sender, EventArgs e)
+        {
+            new UI_SELECT_OPTION_SYSTEM_USER().Show();
+            
+        }
     }
 }

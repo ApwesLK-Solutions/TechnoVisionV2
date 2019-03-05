@@ -23,14 +23,23 @@ namespace TechnoVision.view
 
         private void UI_SHOW_ORDER_BY_CUSTOMER_Load(object sender, EventArgs e)
         {
-            RadioSpectacles.Checked = true;
-            // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
-            this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
-            // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
-            this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
-            contactlenseBindingSource.Filter = "CustomerId = " + custID;
-            spectaclesBindingSource.Filter = "CustomerId = " + custID;
-            LblCustomerName.Text = CustName;
+            try
+            {
+                RadioSpectacles.Checked = true;
+                // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
+                this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+                // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
+                this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+                contactlenseBindingSource.Filter = "CustomerId = " + custID;
+                spectaclesBindingSource.Filter = "CustomerId = " + custID;
+                LblCustomerName.Text = CustName;
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
 
         }
 
@@ -52,11 +61,11 @@ namespace TechnoVision.view
         {
             if (RadioContactLense.Checked == true)
             {
-                contactlenseBindingSource.Filter ="CustomerId = " + custID + " AND Branch =" + Session.BranchId + "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
+                contactlenseBindingSource.Filter ="CustomerId = " + custID + " AND Branch =" + Session.BranchId + "AND OrderNumber LIKE '%" + TxtSearch.Text + "%'";
             }
             else if (RadioSpectacles.Checked == true)
             {
-                spectaclesBindingSource.Filter = "CustomerId = " + custID + " AND Branch =" + Session.BranchId + "AND OrderNumber LIKE '*" + TxtSearch.Text + "*'";
+                spectaclesBindingSource.Filter = "CustomerId = " + custID + " AND Branch =" + Session.BranchId + "AND OrderNumber LIKE '%" + TxtSearch.Text + "%'";
             }
         }
 

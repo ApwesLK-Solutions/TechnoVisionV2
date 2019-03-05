@@ -29,5 +29,10 @@ namespace TechnoVision.view
             User.Password = TxtPassword.Text;
             User.login(this);
         }
+
+        private void BtnForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new UI_FORGET_PASSWORD().Show();
+        }
     }
 }

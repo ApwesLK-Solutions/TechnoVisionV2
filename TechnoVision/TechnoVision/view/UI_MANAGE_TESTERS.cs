@@ -63,13 +63,14 @@ namespace TechnoVision.view
                 technovisionDataSetTableAdapters.testersTableAdapter t = new technovisionDataSetTableAdapters.testersTableAdapter();
                 t.DeleteById(int.Parse(GridTesters.SelectedRows[0].Cells[0].Value.ToString()));
                 this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+                CommonFunctions.ShowSuccess(this, "Tester Deleted Successfully...");
+                CommonFunctions.WriteUserLog(Session.Username, "Deleted Tester" + GridTesters.SelectedRows[0].Cells[1].Value.ToString());
             }
             catch(Exception ex)
             {
                 CommonFunctions.ShowError(this, "Nothing To Delete Or Not Selected...");
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
-                CommonFunctions.ShowSuccess(this, "Tester Deleted Successfully...");
-                CommonFunctions.WriteUserLog(Session.Username, "Deleted Tester" + GridTesters.SelectedRows[0].Cells[1].Value.ToString());
+                
             }
             
 

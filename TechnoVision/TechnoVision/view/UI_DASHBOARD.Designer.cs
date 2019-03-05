@@ -39,7 +39,7 @@
             this.BtnManageBranches = new MetroFramework.Controls.MetroTile();
             this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
-            this.metroTile10 = new MetroFramework.Controls.MetroTile();
+            this.BtnSystemUsers = new MetroFramework.Controls.MetroTile();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -89,7 +89,7 @@
             this.tableLayoutPanel2.Controls.Add(this.BtnManageBranches, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.metroTile8, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.metroTile9, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.metroTile10, 4, 1);
+            this.tableLayoutPanel2.Controls.Add(this.BtnSystemUsers, 4, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 167);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -150,6 +150,7 @@
             this.BtnReports.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.BtnReports.UseSelectable = true;
             this.BtnReports.UseTileImage = true;
+            this.BtnReports.Click += new System.EventHandler(this.BtnReports_Click);
             // 
             // BtnManageCustomer
             // 
@@ -249,19 +250,20 @@
             this.metroTile9.UseTileImage = true;
             this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
             // 
-            // metroTile10
+            // BtnSystemUsers
             // 
-            this.metroTile10.ActiveControl = null;
-            this.metroTile10.Location = new System.Drawing.Point(1243, 219);
-            this.metroTile10.Name = "metroTile10";
-            this.metroTile10.Size = new System.Drawing.Size(304, 210);
-            this.metroTile10.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile10.TabIndex = 0;
-            this.metroTile10.Text = "New Spectacles Order";
-            this.metroTile10.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile10.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.metroTile10.UseSelectable = true;
-            this.metroTile10.UseTileImage = true;
+            this.BtnSystemUsers.ActiveControl = null;
+            this.BtnSystemUsers.Location = new System.Drawing.Point(1243, 219);
+            this.BtnSystemUsers.Name = "BtnSystemUsers";
+            this.BtnSystemUsers.Size = new System.Drawing.Size(304, 210);
+            this.BtnSystemUsers.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnSystemUsers.TabIndex = 0;
+            this.BtnSystemUsers.Text = "Manage System User";
+            this.BtnSystemUsers.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.BtnSystemUsers.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.BtnSystemUsers.UseSelectable = true;
+            this.BtnSystemUsers.UseTileImage = true;
+            this.BtnSystemUsers.Click += new System.EventHandler(this.BtnSystemUsers_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -341,10 +343,11 @@
             // 
             this.LblUsername.AutoSize = true;
             this.LblUsername.Dock = System.Windows.Forms.DockStyle.Right;
+            this.LblUsername.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.LblUsername.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblUsername.Location = new System.Drawing.Point(679, 0);
+            this.LblUsername.Location = new System.Drawing.Point(657, 0);
             this.LblUsername.Name = "LblUsername";
-            this.LblUsername.Size = new System.Drawing.Size(83, 35);
+            this.LblUsername.Size = new System.Drawing.Size(105, 35);
             this.LblUsername.TabIndex = 0;
             this.LblUsername.Text = "Shehantha";
             // 
@@ -414,6 +417,6 @@
         private MetroFramework.Controls.MetroTile BtnManageBranches;
         private MetroFramework.Controls.MetroTile metroTile8;
         private MetroFramework.Controls.MetroTile metroTile9;
-        private MetroFramework.Controls.MetroTile metroTile10;
+        private MetroFramework.Controls.MetroTile BtnSystemUsers;
     }
 }
