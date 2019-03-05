@@ -38,7 +38,7 @@ namespace TechnoVision.view
 
         private void TxtSearchCustomer_TextChanged(object sender, EventArgs e)
         {
-            customerBindingSource.Filter = "'Branch =" + Session.BranchId + "AND Name LIKE '%" + TxtSearchCustomer.Text + "%' OR Phone LIKE'%" + TxtSearchCustomer.Text;
+            customerBindingSource.Filter = "Branch =" + Session.BranchId + " AND Name LIKE '%" + TxtSearchCustomer.Text + "%' OR Phone LIKE'%" + TxtSearchCustomer.Text + "%'";
         }
 
         private void BtnAddCustomer_Click(object sender, EventArgs e)
