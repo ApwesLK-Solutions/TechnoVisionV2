@@ -54,7 +54,15 @@ namespace TechnoVision.view
 
         private void BtnRefresh_Click(object sender, EventArgs e)
         {
-            this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+            try
+            {
+                this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+            }
+            catch(Exception)
+            {
+                CommonFunctions.ShowError(this, "No data to search...");
+            }
+           
         }
 
         private void BtnShowOrders_Click(object sender, EventArgs e)

@@ -55,15 +55,23 @@ namespace TechnoVision.view
 
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
-            if(RadioContactLense.Checked == true)
+            try
             {
-                contactlenseBindingSource.Filter = "Branch =" + Session.BranchId + "AND OrderNumber LIKE '%" + TxtSearch.Text + "%'";
-            }
-            else if(RadioSpectacles.Checked == true)
-            {
-                spectaclesBindingSource.Filter = "Branch =" + Session.BranchId + "AND OrderNumber LIKE '%" + TxtSearch.Text + "%'";
+                if (RadioContactLense.Checked == true)
+                {
+                    contactlenseBindingSource.Filter = "Branch =" + Session.BranchId + "AND OrderNumber LIKE '%" + TxtSearch.Text + "%'";
+                }
+                else if (RadioSpectacles.Checked == true)
+                {
+                    spectaclesBindingSource.Filter = "Branch =" + Session.BranchId + "AND OrderNumber LIKE '%" + TxtSearch.Text + "%'";
 
+                }
             }
+            catch(Exception)
+            {
+                CommonFunctions.ShowError(this, "No data to search...");
+            }
+            
         }
 
         private void BtnMarkAs_Click(object sender, EventArgs e)

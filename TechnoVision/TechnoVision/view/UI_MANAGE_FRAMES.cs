@@ -76,7 +76,15 @@ namespace TechnoVision.view
         }
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
-            framesBindingSource.Filter = ("FrameName LIKE '%" + TxtSearch.Text + "%'");
+            try
+            {
+                framesBindingSource.Filter = ("FrameName LIKE '%" + TxtSearch.Text + "%'");
+            }
+            catch(Exception)
+            {
+                CommonFunctions.ShowError(this, "No data to search...");
+            }
+           
         }
     }
 }
