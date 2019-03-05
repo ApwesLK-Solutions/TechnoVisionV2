@@ -21,10 +21,7 @@ namespace TechnoVision.view
 
         private void UI_PAYMENT_VIEWER_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.receipt' table. You can move, or remove it, as needed.
             this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
-
-
         }
     }
 }
