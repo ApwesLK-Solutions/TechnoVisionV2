@@ -52,8 +52,9 @@ namespace TechnoVision.view
         {
             try
             {
-                ordertype = GridPayment.SelectedRows[0].Cells[6].Value.ToString();
-                orderNumber = GridPayment.SelectedRows[0].Cells[2].Value.ToString();
+                ordertype = GridPayment.SelectedRows[0].Cells[4].Value.ToString();
+                orderNumber = GridPayment.SelectedRows[0].Cells[1].Value.ToString();
+                MessageBox.Show(ordertype + " - " + orderNumber);
                 if (ordertype == "SPEC")
                 {
                     LblDue.Text = spec.FindBalanceByOrderNumber(orderNumber).ToString();
@@ -63,7 +64,6 @@ namespace TechnoVision.view
                 {
                     LblDue.Text = lense.FindBalanceByOrderNumber(orderNumber).ToString();
                     LblTotal.Text = lense.FindTotalByOrderNumber(orderNumber).ToString();
-
                 }
             }
             catch(Exception ex)
@@ -77,6 +77,11 @@ namespace TechnoVision.view
         private void BtnNewPayment_Click(object sender, EventArgs e)
         {
             new UI_ADD_NEW_PAYMENT().Show();
+        }
+
+        private void TxtSearchReceipt_TextChanged(object sender, EventArgs e)
+        {
+            receiptBindingSource.Filter = "ReceiptNumber LIKE '%" + TxtSearchReceipt.Text + "%' OR OrderNumber LIKE '%" + TxtSearchReceipt.Text + "%' AND Branch = " + Session.BranchId;
         }
     }
 }
