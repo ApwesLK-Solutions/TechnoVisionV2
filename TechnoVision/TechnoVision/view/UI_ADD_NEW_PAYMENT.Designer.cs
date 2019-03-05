@@ -200,6 +200,7 @@
             this.TxtDueAmount.MaxLength = 32767;
             this.TxtDueAmount.Name = "TxtDueAmount";
             this.TxtDueAmount.PasswordChar = '\0';
+            this.TxtDueAmount.ReadOnly = true;
             this.TxtDueAmount.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtDueAmount.SelectedText = "";
             this.TxtDueAmount.SelectionLength = 0;

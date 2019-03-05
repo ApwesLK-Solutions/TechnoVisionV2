@@ -38,7 +38,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // UserName
+            // TxtUsername
             // 
             // 
             // 
@@ -56,8 +56,9 @@
             this.TxtUsername.Lines = new string[0];
             this.TxtUsername.Location = new System.Drawing.Point(183, 145);
             this.TxtUsername.MaxLength = 32767;
-            this.TxtUsername.Name = "UserName";
+            this.TxtUsername.Name = "TxtUsername";
             this.TxtUsername.PasswordChar = '\0';
+            this.TxtUsername.PromptText = "Enter Username";
             this.TxtUsername.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtUsername.SelectedText = "";
             this.TxtUsername.SelectionLength = 0;
@@ -70,7 +71,7 @@
             this.TxtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtUsername.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // Password
+            // TxtPassword
             // 
             // 
             // 
@@ -88,8 +89,9 @@
             this.TxtPassword.Lines = new string[0];
             this.TxtPassword.Location = new System.Drawing.Point(183, 181);
             this.TxtPassword.MaxLength = 32767;
-            this.TxtPassword.Name = "Password";
+            this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
+            this.TxtPassword.PromptText = "Enter Password";
             this.TxtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtPassword.SelectedText = "";
             this.TxtPassword.SelectionLength = 0;
@@ -144,6 +146,7 @@
             this.BtnForgetPassword.TabIndex = 3;
             this.BtnForgetPassword.TabStop = true;
             this.BtnForgetPassword.Text = "Forget Password";
+            this.BtnForgetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BtnForgetPassword_LinkClicked);
             // 
             // pictureBox1
             // 

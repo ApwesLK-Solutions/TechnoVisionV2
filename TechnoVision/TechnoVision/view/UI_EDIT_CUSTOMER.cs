@@ -49,6 +49,8 @@ namespace TechnoVision.view
             {
                 customerBindingSource.EndEdit();
                 customerTableAdapter.Update(technovisionDataSet);
+                CommonFunctions.ShowSuccess(this, "Customer Details Edited Successfully...");
+                this.Dispose();
             }
             catch(Exception ex)
             {

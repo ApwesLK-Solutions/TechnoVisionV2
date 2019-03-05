@@ -73,5 +73,10 @@ namespace TechnoVision.view
             }
             
         }
+
+        private void BtnNewPayment_Click(object sender, EventArgs e)
+        {
+            new UI_ADD_NEW_PAYMENT().Show();
+        }
     }
 }

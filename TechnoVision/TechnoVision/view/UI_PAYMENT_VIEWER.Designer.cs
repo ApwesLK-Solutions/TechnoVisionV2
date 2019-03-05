@@ -49,14 +49,6 @@
             this.orderTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GridPayment = new MetroFramework.Controls.MetroGrid();
-            this.receiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.receiptTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.receiptTableAdapter();
-            this.LblCustomer = new MetroFramework.Controls.MetroLabel();
-            this.LblTotal = new MetroFramework.Controls.MetroLabel();
-            this.LblDue = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.receiptNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +58,14 @@
             this.branchDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.receiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.technovisionDataSet = new TechnoVision.technovisionDataSet();
+            this.receiptTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.receiptTableAdapter();
+            this.LblCustomer = new MetroFramework.Controls.MetroLabel();
+            this.LblTotal = new MetroFramework.Controls.MetroLabel();
+            this.LblDue = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.GridPayments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridPayment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.receiptBindingSource)).BeginInit();
@@ -107,6 +107,7 @@
             this.BtnNewPayment.UseCustomForeColor = true;
             this.BtnNewPayment.UseSelectable = true;
             this.BtnNewPayment.UseStyleColors = true;
+            this.BtnNewPayment.Click += new System.EventHandler(this.BtnNewPayment_Click);
             // 
             // BtnPrintReceipt
             // 
@@ -339,73 +340,6 @@
             this.GridPayment.TabIndex = 9;
             this.GridPayment.Click += new System.EventHandler(this.GridPayment_Click);
             // 
-            // receiptBindingSource
-            // 
-            this.receiptBindingSource.DataMember = "receipt";
-            this.receiptBindingSource.DataSource = this.technovisionDataSet;
-            // 
-            // technovisionDataSet
-            // 
-            this.technovisionDataSet.DataSetName = "technovisionDataSet";
-            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // receiptTableAdapter
-            // 
-            this.receiptTableAdapter.ClearBeforeFill = true;
-            // 
-            // LblCustomer
-            // 
-            this.LblCustomer.AutoSize = true;
-            this.LblCustomer.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.LblCustomer.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblCustomer.Location = new System.Drawing.Point(184, 91);
-            this.LblCustomer.Name = "LblCustomer";
-            this.LblCustomer.Size = new System.Drawing.Size(155, 25);
-            this.LblCustomer.TabIndex = 10;
-            this.LblCustomer.Text = "Customer Name";
-            // 
-            // LblTotal
-            // 
-            this.LblTotal.AutoSize = true;
-            this.LblTotal.Location = new System.Drawing.Point(986, 96);
-            this.LblTotal.Name = "LblTotal";
-            this.LblTotal.Size = new System.Drawing.Size(111, 20);
-            this.LblTotal.TabIndex = 10;
-            this.LblTotal.Text = "Customer Name";
-            // 
-            // LblDue
-            // 
-            this.LblDue.AutoSize = true;
-            this.LblDue.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.LblDue.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblDue.Location = new System.Drawing.Point(559, 91);
-            this.LblDue.Name = "LblDue";
-            this.LblDue.Size = new System.Drawing.Size(155, 25);
-            this.LblDue.TabIndex = 10;
-            this.LblDue.Text = "Customer Name";
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(23, 91);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(155, 25);
-            this.metroLabel1.TabIndex = 10;
-            this.metroLabel1.Text = "Customer Name";
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel2.Location = new System.Drawing.Point(427, 91);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(126, 25);
-            this.metroLabel2.TabIndex = 10;
-            this.metroLabel2.Text = "Due Amount";
-            // 
             // idDataGridViewTextBoxColumn1
             // 
             this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
@@ -477,6 +411,73 @@
             this.CustId.Name = "CustId";
             this.CustId.ReadOnly = true;
             this.CustId.Width = 147;
+            // 
+            // receiptBindingSource
+            // 
+            this.receiptBindingSource.DataMember = "receipt";
+            this.receiptBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // technovisionDataSet
+            // 
+            this.technovisionDataSet.DataSetName = "technovisionDataSet";
+            this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // receiptTableAdapter
+            // 
+            this.receiptTableAdapter.ClearBeforeFill = true;
+            // 
+            // LblCustomer
+            // 
+            this.LblCustomer.AutoSize = true;
+            this.LblCustomer.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.LblCustomer.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.LblCustomer.Location = new System.Drawing.Point(184, 91);
+            this.LblCustomer.Name = "LblCustomer";
+            this.LblCustomer.Size = new System.Drawing.Size(155, 25);
+            this.LblCustomer.TabIndex = 10;
+            this.LblCustomer.Text = "Customer Name";
+            // 
+            // LblTotal
+            // 
+            this.LblTotal.AutoSize = true;
+            this.LblTotal.Location = new System.Drawing.Point(986, 96);
+            this.LblTotal.Name = "LblTotal";
+            this.LblTotal.Size = new System.Drawing.Size(111, 20);
+            this.LblTotal.TabIndex = 10;
+            this.LblTotal.Text = "Customer Name";
+            // 
+            // LblDue
+            // 
+            this.LblDue.AutoSize = true;
+            this.LblDue.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.LblDue.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.LblDue.Location = new System.Drawing.Point(559, 91);
+            this.LblDue.Name = "LblDue";
+            this.LblDue.Size = new System.Drawing.Size(155, 25);
+            this.LblDue.TabIndex = 10;
+            this.LblDue.Text = "Customer Name";
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.Location = new System.Drawing.Point(23, 91);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(155, 25);
+            this.metroLabel1.TabIndex = 10;
+            this.metroLabel1.Text = "Customer Name";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel2.Location = new System.Drawing.Point(427, 91);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(126, 25);
+            this.metroLabel2.TabIndex = 10;
+            this.metroLabel2.Text = "Due Amount";
             // 
             // UI_PAYMENT_VIEWER
             // 
