@@ -23,7 +23,7 @@ namespace TechnoVision.view
         private void UI_EDIT_CUSTOMER_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'technovisionDataSet.branch' table. You can move, or remove it, as needed.
-            
+            BtnSave.Enabled = false;
             try
             {
                 // TODO: This line of code loads data into the 'technovisionDataSet.customer' table. You can move, or remove it, as needed.
@@ -65,6 +65,18 @@ namespace TechnoVision.view
            (e.KeyChar != '.'))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void TxtMasterPassword_TextChanged(object sender, EventArgs e)
+        {
+            if(TxtMasterPassword.Text == Session.BranchMasterPassword)
+            {
+                BtnSave.Enabled = true;
+            }
+            else
+            {
+                BtnSave.Enabled = false;
             }
         }
     }
