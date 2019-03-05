@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using TechnoVision.reports;
 namespace TechnoVision.view
 {
     public partial class UI_SHOW_ORDER_BY_CUSTOMER : MetroFramework.Forms.MetroForm
@@ -71,7 +71,52 @@ namespace TechnoVision.view
 
         private void BtnPrintCompanyCopy_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (RadioSpectacles.Checked == true)
+                {
+                    InvoiceSpecCompany rpt = new InvoiceSpecCompany();
+                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + GridSpectacle.SelectedRows[0].Cells[1].Value.ToString() + "' AND {spectacles1.Branch} =" + Session.BranchId;
+                    new UI_REPORT_VIEWER(rpt).Show();
+                    rpt.PrintToPrinter(1, false, 1, 1);
+                }
+                else if (RadioContactLense.Checked == true)
+                {
+                    InvoiceLenseCompany rpt = new InvoiceLenseCompany();
+                    rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + GridContactLense.SelectedRows[0].Cells[1].Value.ToString() + "' AND {contactlense1.Branch} =" + Session.BranchId;
+                    new UI_REPORT_VIEWER(rpt).Show();
+                    rpt.PrintToPrinter(1, false, 1, 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+            }
+        }
 
+        private void BtnPrintCustomerCopy_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (RadioSpectacles.Checked == true)
+                {
+                    InvoiceSpecCustomer rpt = new InvoiceSpecCustomer();
+                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + GridSpectacle.SelectedRows[0].Cells[1].Value.ToString() + "' AND {spectacles1.Branch} =" + Session.BranchId;
+                    new UI_REPORT_VIEWER(rpt).Show();
+                    rpt.PrintToPrinter(1, false, 1, 1);
+                }
+                else if (RadioContactLense.Checked == true)
+                {
+                    InvoiceLenseCustomer rpt = new InvoiceLenseCustomer();
+                    rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + GridContactLense.SelectedRows[0].Cells[1].Value.ToString() + "' AND {contactlense1.Branch} =" + Session.BranchId;
+                    new UI_REPORT_VIEWER(rpt).Show();
+                    rpt.PrintToPrinter(1, false, 1, 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+            }
         }
     }
 }
