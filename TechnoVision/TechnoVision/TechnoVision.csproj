@@ -225,6 +225,12 @@
     <Compile Include="view\UI_PAYMENT_VIEWER.Designer.cs">
       <DependentUpon>UI_PAYMENT_VIEWER.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\UI_REPORTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\UI_REPORTS.Designer.cs">
+      <DependentUpon>UI_REPORTS.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\UI_REPORT_VIEWER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -346,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_PAYMENT_VIEWER.resx">
       <DependentUpon>UI_PAYMENT_VIEWER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\UI_REPORTS.resx">
+      <DependentUpon>UI_REPORTS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_REPORT_VIEWER.resx">
       <DependentUpon>UI_REPORT_VIEWER.cs</DependentUpon>
