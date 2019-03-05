@@ -125,7 +125,7 @@
             this.BtnContactLenses.Name = "BtnContactLenses";
             this.BtnContactLenses.Size = new System.Drawing.Size(304, 210);
             this.BtnContactLenses.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnContactLenses.TabIndex = 0;
+            this.BtnContactLenses.TabIndex = 1;
             this.BtnContactLenses.Text = "New Contact Lense Order";
             this.BtnContactLenses.TileImage = global::TechnoVision.Properties.Resources.lenses;
             this.BtnContactLenses.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -142,7 +142,7 @@
             this.BtnReports.Name = "BtnReports";
             this.BtnReports.Size = new System.Drawing.Size(304, 210);
             this.BtnReports.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnReports.TabIndex = 0;
+            this.BtnReports.TabIndex = 2;
             this.BtnReports.Text = "Reports";
             this.BtnReports.TileImage = global::TechnoVision.Properties.Resources.reports;
             this.BtnReports.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -159,7 +159,7 @@
             this.BtnManageCustomer.Name = "BtnManageCustomer";
             this.BtnManageCustomer.Size = new System.Drawing.Size(304, 210);
             this.BtnManageCustomer.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnManageCustomer.TabIndex = 0;
+            this.BtnManageCustomer.TabIndex = 3;
             this.BtnManageCustomer.Text = "Manage Customers";
             this.BtnManageCustomer.TileImage = global::TechnoVision.Properties.Resources.customers;
             this.BtnManageCustomer.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -176,7 +176,7 @@
             this.BtnManageFrames.Name = "BtnManageFrames";
             this.BtnManageFrames.Size = new System.Drawing.Size(304, 210);
             this.BtnManageFrames.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnManageFrames.TabIndex = 0;
+            this.BtnManageFrames.TabIndex = 4;
             this.BtnManageFrames.Text = "Manage Frames";
             this.BtnManageFrames.TileImage = global::TechnoVision.Properties.Resources.frames;
             this.BtnManageFrames.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -193,7 +193,7 @@
             this.BtnManageTesters.Name = "BtnManageTesters";
             this.BtnManageTesters.Size = new System.Drawing.Size(304, 210);
             this.BtnManageTesters.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnManageTesters.TabIndex = 0;
+            this.BtnManageTesters.TabIndex = 5;
             this.BtnManageTesters.Text = "Manage Testers";
             this.BtnManageTesters.TileImage = global::TechnoVision.Properties.Resources.testers;
             this.BtnManageTesters.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -210,7 +210,7 @@
             this.BtnManageBranches.Name = "BtnManageBranches";
             this.BtnManageBranches.Size = new System.Drawing.Size(304, 210);
             this.BtnManageBranches.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnManageBranches.TabIndex = 0;
+            this.BtnManageBranches.TabIndex = 6;
             this.BtnManageBranches.Text = "Manage Branches";
             this.BtnManageBranches.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.BtnManageBranches.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -225,7 +225,7 @@
             this.metroTile8.Name = "metroTile8";
             this.metroTile8.Size = new System.Drawing.Size(304, 210);
             this.metroTile8.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile8.TabIndex = 0;
+            this.metroTile8.TabIndex = 7;
             this.metroTile8.Text = "Order List";
             this.metroTile8.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile8.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -240,7 +240,7 @@
             this.metroTile9.Name = "metroTile9";
             this.metroTile9.Size = new System.Drawing.Size(304, 210);
             this.metroTile9.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile9.TabIndex = 0;
+            this.metroTile9.TabIndex = 8;
             this.metroTile9.Text = "Payment Plan";
             this.metroTile9.TileImage = global::TechnoVision.Properties.Resources.plan;
             this.metroTile9.TileImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -257,7 +257,7 @@
             this.BtnSystemUsers.Name = "BtnSystemUsers";
             this.BtnSystemUsers.Size = new System.Drawing.Size(304, 210);
             this.BtnSystemUsers.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnSystemUsers.TabIndex = 0;
+            this.BtnSystemUsers.TabIndex = 9;
             this.BtnSystemUsers.Text = "Manage System User";
             this.BtnSystemUsers.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.BtnSystemUsers.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -318,7 +318,7 @@
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.Size = new System.Drawing.Size(71, 64);
             this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile3.TabIndex = 0;
+            this.metroTile3.TabIndex = 10;
             this.metroTile3.TileImage = global::TechnoVision.Properties.Resources.backup_KjJ_icon;
             this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile3.UseSelectable = true;
