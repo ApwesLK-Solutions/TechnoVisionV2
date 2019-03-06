@@ -7,17 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TechnoVision.controller;
 using TechnoVision.model;
-
+using TechnoVision.controller;
 namespace TechnoVision.view
 {
-    public partial class UI_ADD_NEW_PAYMENT : MetroFramework.Forms.MetroForm
+    public partial class UI_ADD_NEW_PAYMENTS : MetroFramework.Forms.MetroForm
     {
         string orderNumber;
         string orderType;
         int custID;
-        public UI_ADD_NEW_PAYMENT(string orderNumber, string orderType, int custID)
+        public UI_ADD_NEW_PAYMENTS(string orderNumber , string orderType , int custID)
         {
             InitializeComponent();
             this.orderNumber = orderNumber;
@@ -37,7 +36,7 @@ namespace TechnoVision.view
             {
                 technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
                 LblDueAmount.Text = t.FindBalanceByOrderNumber(orderNumber).ToString();
-                
+                Amount.Dispose();
             }
             if (orderType == "SPEC")
             {
@@ -45,9 +44,7 @@ namespace TechnoVision.view
                 LblDueAmount.Text = t.FindBalanceByOrderNumber(orderNumber).ToString();
                 t.Dispose();
             }
-
         }
-
         private void showReceiptNumber()
         {
             technovisionDataSetTableAdapters.receiptTableAdapter t = new technovisionDataSetTableAdapters.receiptTableAdapter();
@@ -73,18 +70,18 @@ namespace TechnoVision.view
 
         private void BtnAddPayment_Click(object sender, EventArgs e)
         {
-            receiptController.FillReceipt(orderNumber, double.Parse(TxtAmount.Text), DateOrderDate.Value.ToString("yyyy-MM-dd"), orderType, custID);
+            receiptController.FillReceipt(orderNumber, double.Parse(Amount.Text), DateOrderDate.Value.ToString("yyyy-MM-dd"), orderType, custID);
             receiptController.WriteReceipt(this);
-            if (orderType == "LENSE")
+            if(orderType == "LENSE")
             {
                 technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
-                t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
-                TxtAmount.Dispose();
+                t.UpdateBalanceByOrderNumber(double.Parse(Amount.Text), orderNumber);
+                Amount.Dispose();
             }
             if (orderType == "SPEC")
             {
                 technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
-                t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
+                t.UpdateBalanceByOrderNumber(double.Parse(Amount.Text), orderNumber);
                 t.Dispose();
             }
             this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
