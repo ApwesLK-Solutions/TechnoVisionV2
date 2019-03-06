@@ -30,6 +30,8 @@ namespace TechnoVision.view
             {
                 // TODO: This line of code loads data into the 'technovisionDataSet.receipt' table. You can move, or remove it, as needed.
                 this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
+                receiptBindingSource.Filter = "Branch = " + Session.BranchId;
+
                 LblCustomer.Text = cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
                 getAmounts();
             }
@@ -85,6 +87,12 @@ namespace TechnoVision.view
         private void TxtReceiptSearch_TextChanged(object sender, EventArgs e)
         {
             receiptBindingSource.Filter = "ReceiptNumber LIKE '%" + TxtReceiptSearch.Text + "%' OR OrderNumber LIKE '%" + TxtReceiptSearch.Text + "%' AND Branch = " + Session.BranchId;
+        }
+
+        private void BtnRefresh_Click(object sender, EventArgs e)
+        {
+            this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
+            receiptBindingSource.Filter = "Branch = " + Session.BranchId;
         }
     }
 }
