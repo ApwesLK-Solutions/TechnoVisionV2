@@ -21,7 +21,7 @@ namespace TechnoVision.view
         public UI_PAYMENT_VIEWER()
         {
             InitializeComponent();
-            
+
         }
 
         private void UI_PAYMENT_VIEWER_Load(object sender, EventArgs e)
@@ -33,18 +33,18 @@ namespace TechnoVision.view
                 LblCustomer.Text = cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
                 getAmounts();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
                 CommonFunctions.ShowError(this, "Can not Load or No Data to Load ");
 
             }
-            
+
         }
 
         private void GridPayment_Click(object sender, EventArgs e)
         {
-            LblCustomer.Text =cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
+            LblCustomer.Text = cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
             getAmounts();
         }
 
@@ -66,12 +66,14 @@ namespace TechnoVision.view
                     LblTotal.Text = lense.FindTotalByOrderNumber(orderNumber).ToString();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-               CommonFunctions.WriteToErrorLog(ex.Message.ToString());
-               CommonFunctions.ShowError(this, "Can not Load Customer Name or Due amount or No Data to Load ");
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+                CommonFunctions.ShowError(this, "Can not Load Customer Name or Due amount or No Data to Load ");
+                //receiptBindingSource.Filter = "ReceiptNumber LIKE '%" + TxtSearchReceipt.Text + "%' OR OrderNumber LIKE '%" + TxtSearchReceipt.Text + "%' AND Branch = " + Session.BranchId;
+
             }
-            
+
         }
 
         private void BtnNewPayment_Click(object sender, EventArgs e)
@@ -79,9 +81,9 @@ namespace TechnoVision.view
             new UI_ADD_NEW_PAYMENT().Show();
         }
 
-        private void TxtSearchReceipt_TextChanged(object sender, EventArgs e)
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
-            receiptBindingSource.Filter = "ReceiptNumber LIKE '%" + TxtSearchReceipt.Text + "%' OR OrderNumber LIKE '%" + TxtSearchReceipt.Text + "%' AND Branch = " + Session.BranchId;
+           // MessageBox.Show(Search.Text);
         }
     }
 }
