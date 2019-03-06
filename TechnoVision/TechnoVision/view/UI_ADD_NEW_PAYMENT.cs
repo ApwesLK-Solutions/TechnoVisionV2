@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TechnoVision.model;
+using TechnoVision.controller;
 namespace TechnoVision.view
 {
     public partial class UI_ADD_NEW_PAYMENT : MetroFramework.Forms.MetroForm
@@ -27,6 +28,18 @@ namespace TechnoVision.view
         {
             LblOrderNumber.Text = orderNumber;
             showReceiptNumber();
+            if (orderType == "LENSE")
+            {
+                technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+                LblDueAmount.Text = t.FindBalanceByOrderNumber(orderNumber).ToString();
+                TxtPaymentAmount.Dispose();
+            }
+            if (orderType == "SPEC")
+            {
+                technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
+                LblDueAmount.Text = t.FindBalanceByOrderNumber(orderNumber).ToString();
+                t.Dispose();
+            }
         }
         private void showReceiptNumber()
         {
@@ -49,6 +62,24 @@ namespace TechnoVision.view
             }
             LblReceiptNo.Text = newRno;
             Receipt.ReceiptNumber = newRno;
+        }
+
+        private void BtnAddPayment_Click(object sender, EventArgs e)
+        {
+            receiptController.FillReceipt(orderNumber, double.Parse(TxtPaymentAmount.Text), DateOrderDate.Value.ToString("yyyy-MM-dd"), orderType, custID);
+            receiptController.WriteReceipt(this);
+            if(orderType == "LENSE")
+            {
+                technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+                t.UpdateBalanceByOrderNumber(double.Parse(TxtPaymentAmount.Text), orderNumber);
+                TxtPaymentAmount.Dispose();
+            }
+            if (orderType == "SPEC")
+            {
+                technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
+                t.UpdateBalanceByOrderNumber(double.Parse(TxtPaymentAmount.Text), orderNumber);
+                t.Dispose();
+            }
         }
     }
 }

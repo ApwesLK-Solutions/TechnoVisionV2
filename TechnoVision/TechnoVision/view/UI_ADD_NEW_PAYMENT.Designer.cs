@@ -39,12 +39,12 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.TxtPaymentAmount = new MetroFramework.Controls.MetroTextBox();
-            this.TxtDueAmount = new MetroFramework.Controls.MetroTextBox();
             this.BtnAddPayment = new MetroFramework.Controls.MetroButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.GridPayementHistory = new MetroFramework.Controls.MetroGrid();
             this.LblOrderNumber = new MetroFramework.Controls.MetroLabel();
+            this.LblDueAmount = new MetroFramework.Controls.MetroLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridPayementHistory)).BeginInit();
@@ -72,7 +72,7 @@
             // 
             // DateOrderDate
             // 
-            this.DateOrderDate.Location = new System.Drawing.Point(146, 118);
+            this.DateOrderDate.Location = new System.Drawing.Point(146, 160);
             this.DateOrderDate.MinimumSize = new System.Drawing.Size(0, 30);
             this.DateOrderDate.Name = "DateOrderDate";
             this.DateOrderDate.Size = new System.Drawing.Size(290, 30);
@@ -83,7 +83,7 @@
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel3.Location = new System.Drawing.Point(12, 123);
+            this.metroLabel3.Location = new System.Drawing.Point(12, 165);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(95, 20);
             this.metroLabel3.TabIndex = 71;
@@ -103,7 +103,7 @@
             // 
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel4.Location = new System.Drawing.Point(13, 162);
+            this.metroLabel4.Location = new System.Drawing.Point(18, 105);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(93, 20);
             this.metroLabel4.TabIndex = 71;
@@ -152,39 +152,6 @@
             this.TxtPaymentAmount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtPaymentAmount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // TxtDueAmount
-            // 
-            this.TxtDueAmount.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            // 
-            // 
-            // 
-            this.TxtDueAmount.CustomButton.Image = null;
-            this.TxtDueAmount.CustomButton.Location = new System.Drawing.Point(256, 2);
-            this.TxtDueAmount.CustomButton.Name = "";
-            this.TxtDueAmount.CustomButton.Size = new System.Drawing.Size(31, 31);
-            this.TxtDueAmount.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TxtDueAmount.CustomButton.TabIndex = 1;
-            this.TxtDueAmount.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TxtDueAmount.CustomButton.UseSelectable = true;
-            this.TxtDueAmount.CustomButton.Visible = false;
-            this.TxtDueAmount.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.TxtDueAmount.Lines = new string[0];
-            this.TxtDueAmount.Location = new System.Drawing.Point(146, 154);
-            this.TxtDueAmount.MaxLength = 32767;
-            this.TxtDueAmount.Name = "TxtDueAmount";
-            this.TxtDueAmount.PasswordChar = '\0';
-            this.TxtDueAmount.ReadOnly = true;
-            this.TxtDueAmount.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TxtDueAmount.SelectedText = "";
-            this.TxtDueAmount.SelectionLength = 0;
-            this.TxtDueAmount.SelectionStart = 0;
-            this.TxtDueAmount.ShortcutsEnabled = true;
-            this.TxtDueAmount.Size = new System.Drawing.Size(290, 36);
-            this.TxtDueAmount.TabIndex = 74;
-            this.TxtDueAmount.UseSelectable = true;
-            this.TxtDueAmount.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TxtDueAmount.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // BtnAddPayment
             // 
             this.BtnAddPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -202,9 +169,11 @@
             this.BtnAddPayment.UseCustomForeColor = true;
             this.BtnAddPayment.UseSelectable = true;
             this.BtnAddPayment.UseStyleColors = true;
+            this.BtnAddPayment.Click += new System.EventHandler(this.BtnAddPayment_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.LblDueAmount);
             this.groupBox1.Controls.Add(this.LblOrderNumber);
             this.groupBox1.Controls.Add(this.LblReceiptNo);
             this.groupBox1.Controls.Add(this.BtnAddPayment);
@@ -212,7 +181,6 @@
             this.groupBox1.Controls.Add(this.metroLabel2);
             this.groupBox1.Controls.Add(this.TxtPaymentAmount);
             this.groupBox1.Controls.Add(this.metroLabel3);
-            this.groupBox1.Controls.Add(this.TxtDueAmount);
             this.groupBox1.Controls.Add(this.metroLabel4);
             this.groupBox1.Controls.Add(this.DateOrderDate);
             this.groupBox1.Controls.Add(this.metroLabel5);
@@ -289,6 +257,16 @@
             this.LblOrderNumber.TabIndex = 76;
             this.LblOrderNumber.Text = "Receipt Number";
             // 
+            // LblDueAmount
+            // 
+            this.LblDueAmount.AutoSize = true;
+            this.LblDueAmount.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.LblDueAmount.Location = new System.Drawing.Point(146, 105);
+            this.LblDueAmount.Name = "LblDueAmount";
+            this.LblDueAmount.Size = new System.Drawing.Size(123, 20);
+            this.LblDueAmount.TabIndex = 76;
+            this.LblDueAmount.Text = "Receipt Number";
+            // 
             // UI_ADD_NEW_PAYMENT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -320,11 +298,11 @@
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroTextBox TxtPaymentAmount;
-        private MetroFramework.Controls.MetroTextBox TxtDueAmount;
         private MetroFramework.Controls.MetroButton BtnAddPayment;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private MetroFramework.Controls.MetroGrid GridPayementHistory;
         private MetroFramework.Controls.MetroLabel LblOrderNumber;
+        private MetroFramework.Controls.MetroLabel LblDueAmount;
     }
 }
