@@ -65,7 +65,7 @@
             this.TxtUsername.SelectionStart = 0;
             this.TxtUsername.ShortcutsEnabled = true;
             this.TxtUsername.Size = new System.Drawing.Size(213, 30);
-            this.TxtUsername.TabIndex = 0;
+            this.TxtUsername.TabIndex = 1;
             this.TxtUsername.UseSelectable = true;
             this.TxtUsername.WaterMark = "Enter Username";
             this.TxtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -98,7 +98,7 @@
             this.TxtPassword.SelectionStart = 0;
             this.TxtPassword.ShortcutsEnabled = true;
             this.TxtPassword.Size = new System.Drawing.Size(213, 30);
-            this.TxtPassword.TabIndex = 1;
+            this.TxtPassword.TabIndex = 2;
             this.TxtPassword.UseSelectable = true;
             this.TxtPassword.WaterMark = "Enter Password";
             this.TxtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -107,11 +107,12 @@
             // BtnLogin
             // 
             this.BtnLogin.ActiveControl = null;
+            this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLogin.Location = new System.Drawing.Point(217, 226);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(119, 46);
             this.BtnLogin.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnLogin.TabIndex = 2;
+            this.BtnLogin.TabIndex = 3;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BtnLogin.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
@@ -143,7 +144,7 @@
             this.BtnForgetPassword.Location = new System.Drawing.Point(420, 255);
             this.BtnForgetPassword.Name = "BtnForgetPassword";
             this.BtnForgetPassword.Size = new System.Drawing.Size(114, 17);
-            this.BtnForgetPassword.TabIndex = 3;
+            this.BtnForgetPassword.TabIndex = 4;
             this.BtnForgetPassword.TabStop = true;
             this.BtnForgetPassword.Text = "Forget Password";
             this.BtnForgetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BtnForgetPassword_LinkClicked);

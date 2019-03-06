@@ -62,9 +62,11 @@ namespace TechnoVision.controller
                     Session.BranchMasterPassword = Brow.MasterPassword;
                     Session.BranchName = Brow.BranchName;
                     CommonFunctions.WriteUserLog("SYSTEM", User.Username + " is Log into the System");
-                    new UI_LOGIN().Dispose();
-                    new UI_DASHBOARD().Show();
                     
+                    new UI_DASHBOARD(form).Show();
+                    form.Hide();
+                    form.ShowInTaskbar = false;
+
                     //return true;
                 }
             }

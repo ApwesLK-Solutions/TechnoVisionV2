@@ -383,6 +383,7 @@
             this.Name = "UI_DASHBOARD";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UI_DASHBOARD_FormClosed);
             this.Load += new System.EventHandler(this.UI_DASHBOARD_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

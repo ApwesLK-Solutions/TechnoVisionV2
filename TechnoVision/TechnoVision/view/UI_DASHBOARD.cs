@@ -13,9 +13,12 @@ namespace TechnoVision.view
 {
     public partial class UI_DASHBOARD : MetroFramework.Forms.MetroForm
     {
-        public UI_DASHBOARD()
+        MetroFramework.Forms.MetroForm f;
+        
+        public UI_DASHBOARD(MetroFramework.Forms.MetroForm form)
         {
             InitializeComponent();
+            f = form;
         }
 
         private void UI_DASHBOARD_Load(object sender, EventArgs e)
@@ -72,6 +75,11 @@ namespace TechnoVision.view
         {
             new UI_SELECT_OPTION_SYSTEM_USER().Show();
             
+        }
+
+        private void UI_DASHBOARD_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            f.Show();
         }
     }
 }
