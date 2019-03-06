@@ -84,8 +84,14 @@ namespace TechnoVision.view
                 t.UpdateBalanceByOrderNumber(double.Parse(Amount.Text), orderNumber);
                 t.Dispose();
             }
+            
             this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
             receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
+        }
+
+        private void BtnAddPayment_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
