@@ -18,6 +18,9 @@ namespace TechnoVision.view
         string ordertype;
         string orderNumber;
 
+        string T_OrderNumber;
+        string T_OrderType;
+        int T_CustID;
         public UI_PAYMENT_VIEWER()
         {
             InitializeComponent();
@@ -47,6 +50,9 @@ namespace TechnoVision.view
         private void GridPayment_Click(object sender, EventArgs e)
         {
             LblCustomer.Text = cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
+            T_OrderNumber = GridPayment.SelectedRows[0].Cells[1].Value.ToString();
+            T_OrderType  = GridPayment.SelectedRows[0].Cells[4].Value.ToString();
+            T_CustID = int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString());
             getAmounts();
         }
 
@@ -72,7 +78,6 @@ namespace TechnoVision.view
             {
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
                 CommonFunctions.ShowError(this, "Can not Load Customer Name or Due amount or No Data to Load ");
-                //receiptBindingSource.Filter = "ReceiptNumber LIKE '%" + TxtSearchReceipt.Text + "%' OR OrderNumber LIKE '%" + TxtSearchReceipt.Text + "%' AND Branch = " + Session.BranchId;
 
             }
 
@@ -80,7 +85,7 @@ namespace TechnoVision.view
 
         private void BtnNewPayment_Click(object sender, EventArgs e)
         {
-            new UI_ADD_NEW_PAYMENT().Show();
+            new UI_ADD_NEW_PAYMENT(T_OrderNumber,T_OrderType,T_CustID).Show();
         }
 
 
