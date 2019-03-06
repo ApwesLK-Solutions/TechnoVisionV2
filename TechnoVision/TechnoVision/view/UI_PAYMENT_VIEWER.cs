@@ -79,9 +79,10 @@ namespace TechnoVision.view
             new UI_ADD_NEW_PAYMENT().Show();
         }
 
-        private void TxtSearchReceipt_TextChanged(object sender, EventArgs e)
+        
+        private void TxtReceiptSearch_TextChanged(object sender, EventArgs e)
         {
-            receiptBindingSource.Filter = "ReceiptNumber LIKE '%" + TxtSearchReceipt.Text + "%' OR OrderNumber LIKE '%" + TxtSearchReceipt.Text + "%' AND Branch = " + Session.BranchId;
+            receiptBindingSource.Filter = "ReceiptNumber LIKE '%" + TxtReceiptSearch.Text + "%' OR OrderNumber LIKE '%" + TxtReceiptSearch.Text + "%' AND Branch = " + Session.BranchId;
         }
     }
 }
