@@ -28,6 +28,7 @@ namespace TechnoVision.view
             User.Username = TxtUsername.Text;
             User.Password = TxtPassword.Text;
             User.login(this);
+            TxtPassword.Text = "";
         }
 
         private void BtnForgetPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
