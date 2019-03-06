@@ -47,11 +47,8 @@
             this.GridPayementHistory = new MetroFramework.Controls.MetroGrid();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.receiptNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.receiptDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.receiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.receiptTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.receiptTableAdapter();
@@ -235,11 +232,8 @@
             this.GridPayementHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.orderNumberDataGridViewTextBoxColumn,
-            this.receiptNumberDataGridViewTextBoxColumn,
             this.receiptDateDataGridViewTextBoxColumn,
-            this.paymentAmountDataGridViewTextBoxColumn,
-            this.orderTypeDataGridViewTextBoxColumn,
-            this.yearDataGridViewTextBoxColumn});
+            this.paymentAmountDataGridViewTextBoxColumn});
             this.GridPayementHistory.DataSource = this.receiptBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -252,7 +246,7 @@
             this.GridPayementHistory.EnableHeadersVisualStyles = false;
             this.GridPayementHistory.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridPayementHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GridPayementHistory.Location = new System.Drawing.Point(7, 27);
+            this.GridPayementHistory.Location = new System.Drawing.Point(7, 26);
             this.GridPayementHistory.Name = "GridPayementHistory";
             this.GridPayementHistory.ReadOnly = true;
             this.GridPayementHistory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -267,7 +261,7 @@
             this.GridPayementHistory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GridPayementHistory.RowTemplate.Height = 24;
             this.GridPayementHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GridPayementHistory.Size = new System.Drawing.Size(614, 298);
+            this.GridPayementHistory.Size = new System.Drawing.Size(614, 299);
             this.GridPayementHistory.Style = MetroFramework.MetroColorStyle.Green;
             this.GridPayementHistory.TabIndex = 0;
             // 
@@ -287,14 +281,6 @@
             this.orderNumberDataGridViewTextBoxColumn.ReadOnly = true;
             this.orderNumberDataGridViewTextBoxColumn.Width = 162;
             // 
-            // receiptNumberDataGridViewTextBoxColumn
-            // 
-            this.receiptNumberDataGridViewTextBoxColumn.DataPropertyName = "ReceiptNumber";
-            this.receiptNumberDataGridViewTextBoxColumn.HeaderText = "ReceiptNumber";
-            this.receiptNumberDataGridViewTextBoxColumn.Name = "receiptNumberDataGridViewTextBoxColumn";
-            this.receiptNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            this.receiptNumberDataGridViewTextBoxColumn.Width = 175;
-            // 
             // receiptDateDataGridViewTextBoxColumn
             // 
             this.receiptDateDataGridViewTextBoxColumn.DataPropertyName = "ReceiptDate";
@@ -310,22 +296,6 @@
             this.paymentAmountDataGridViewTextBoxColumn.Name = "paymentAmountDataGridViewTextBoxColumn";
             this.paymentAmountDataGridViewTextBoxColumn.ReadOnly = true;
             this.paymentAmountDataGridViewTextBoxColumn.Width = 185;
-            // 
-            // orderTypeDataGridViewTextBoxColumn
-            // 
-            this.orderTypeDataGridViewTextBoxColumn.DataPropertyName = "OrderType";
-            this.orderTypeDataGridViewTextBoxColumn.HeaderText = "OrderType";
-            this.orderTypeDataGridViewTextBoxColumn.Name = "orderTypeDataGridViewTextBoxColumn";
-            this.orderTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.orderTypeDataGridViewTextBoxColumn.Width = 131;
-            // 
-            // yearDataGridViewTextBoxColumn
-            // 
-            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
-            this.yearDataGridViewTextBoxColumn.HeaderText = "Year";
-            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
-            this.yearDataGridViewTextBoxColumn.ReadOnly = true;
-            this.yearDataGridViewTextBoxColumn.Width = 75;
             // 
             // receiptBindingSource
             // 

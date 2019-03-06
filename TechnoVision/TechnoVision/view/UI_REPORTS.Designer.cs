@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.DateDailyReport = new MetroFramework.Controls.MetroDateTime();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.BtnContactLenses = new MetroFramework.Controls.MetroButton();
             this.BtnSpectacles = new MetroFramework.Controls.MetroButton();
+            this.BtnContactLenses = new MetroFramework.Controls.MetroButton();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.DateDailyReport = new MetroFramework.Controls.MetroDateTime();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.DateStartDate = new MetroFramework.Controls.MetroDateTime();
-            this.DateEndDate = new MetroFramework.Controls.MetroDateTime();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.DateEndDate = new MetroFramework.Controls.MetroDateTime();
+            this.DateStartDate = new MetroFramework.Controls.MetroDateTime();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -58,24 +58,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Daily Reports";
             // 
-            // DateDailyReport
+            // BtnSpectacles
             // 
-            this.DateDailyReport.Location = new System.Drawing.Point(15, 71);
-            this.DateDailyReport.MinimumSize = new System.Drawing.Size(0, 30);
-            this.DateDailyReport.Name = "DateDailyReport";
-            this.DateDailyReport.Size = new System.Drawing.Size(340, 30);
-            this.DateDailyReport.TabIndex = 0;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(15, 43);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(125, 25);
-            this.metroLabel1.TabIndex = 1;
-            this.metroLabel1.Text = "Select a Date";
+            this.BtnSpectacles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnSpectacles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSpectacles.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.BtnSpectacles.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnSpectacles.Highlight = true;
+            this.BtnSpectacles.Location = new System.Drawing.Point(32, 173);
+            this.BtnSpectacles.Name = "BtnSpectacles";
+            this.BtnSpectacles.Size = new System.Drawing.Size(287, 45);
+            this.BtnSpectacles.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnSpectacles.TabIndex = 2;
+            this.BtnSpectacles.Text = "Spectacles Sales Report";
+            this.BtnSpectacles.UseCustomBackColor = true;
+            this.BtnSpectacles.UseCustomForeColor = true;
+            this.BtnSpectacles.UseSelectable = true;
+            this.BtnSpectacles.UseStyleColors = true;
+            this.BtnSpectacles.Click += new System.EventHandler(this.BtnSpectacles_Click);
             // 
             // BtnContactLenses
             // 
@@ -94,24 +94,26 @@
             this.BtnContactLenses.UseCustomForeColor = true;
             this.BtnContactLenses.UseSelectable = true;
             this.BtnContactLenses.UseStyleColors = true;
+            this.BtnContactLenses.Click += new System.EventHandler(this.BtnContactLenses_Click);
             // 
-            // BtnSpectacles
+            // metroLabel1
             // 
-            this.BtnSpectacles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnSpectacles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSpectacles.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.BtnSpectacles.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnSpectacles.Highlight = true;
-            this.BtnSpectacles.Location = new System.Drawing.Point(32, 173);
-            this.BtnSpectacles.Name = "BtnSpectacles";
-            this.BtnSpectacles.Size = new System.Drawing.Size(287, 45);
-            this.BtnSpectacles.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnSpectacles.TabIndex = 2;
-            this.BtnSpectacles.Text = "Spectacles Sales Report";
-            this.BtnSpectacles.UseCustomBackColor = true;
-            this.BtnSpectacles.UseCustomForeColor = true;
-            this.BtnSpectacles.UseSelectable = true;
-            this.BtnSpectacles.UseStyleColors = true;
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.Location = new System.Drawing.Point(15, 43);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(125, 25);
+            this.metroLabel1.TabIndex = 1;
+            this.metroLabel1.Text = "Select a Date";
+            // 
+            // DateDailyReport
+            // 
+            this.DateDailyReport.Location = new System.Drawing.Point(15, 71);
+            this.DateDailyReport.MinimumSize = new System.Drawing.Size(0, 30);
+            this.DateDailyReport.Name = "DateDailyReport";
+            this.DateDailyReport.Size = new System.Drawing.Size(340, 30);
+            this.DateDailyReport.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -146,6 +148,7 @@
             this.metroButton1.UseCustomForeColor = true;
             this.metroButton1.UseSelectable = true;
             this.metroButton1.UseStyleColors = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroButton2
             // 
@@ -164,6 +167,18 @@
             this.metroButton2.UseCustomForeColor = true;
             this.metroButton2.UseSelectable = true;
             this.metroButton2.UseStyleColors = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel3.Location = new System.Drawing.Point(206, 43);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(92, 25);
+            this.metroLabel3.TabIndex = 1;
+            this.metroLabel3.Text = "End Date";
             // 
             // metroLabel2
             // 
@@ -176,14 +191,6 @@
             this.metroLabel2.TabIndex = 1;
             this.metroLabel2.Text = "Start Date";
             // 
-            // DateStartDate
-            // 
-            this.DateStartDate.Location = new System.Drawing.Point(15, 71);
-            this.DateStartDate.MinimumSize = new System.Drawing.Size(0, 30);
-            this.DateStartDate.Name = "DateStartDate";
-            this.DateStartDate.Size = new System.Drawing.Size(185, 30);
-            this.DateStartDate.TabIndex = 0;
-            // 
             // DateEndDate
             // 
             this.DateEndDate.Location = new System.Drawing.Point(206, 71);
@@ -192,16 +199,13 @@
             this.DateEndDate.Size = new System.Drawing.Size(185, 30);
             this.DateEndDate.TabIndex = 0;
             // 
-            // metroLabel3
+            // DateStartDate
             // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel3.Location = new System.Drawing.Point(206, 43);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(92, 25);
-            this.metroLabel3.TabIndex = 1;
-            this.metroLabel3.Text = "End Date";
+            this.DateStartDate.Location = new System.Drawing.Point(15, 71);
+            this.DateStartDate.MinimumSize = new System.Drawing.Size(0, 30);
+            this.DateStartDate.Name = "DateStartDate";
+            this.DateStartDate.Size = new System.Drawing.Size(185, 30);
+            this.DateStartDate.TabIndex = 0;
             // 
             // UI_REPORTS
             // 

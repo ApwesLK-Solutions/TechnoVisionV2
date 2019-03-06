@@ -11975,17 +11975,18 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._commandCollection[3].Parameters.Add(param);
             this._commandCollection[4] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "UPDATE `contactlense` SET `Balance` = @p9, WHERE `OrderNumber` = @ono";
+            this._commandCollection[4].CommandText = "UPDATE `contactlense` SET `Balance` = @NewBalance WHERE `OrderNumber`  = @orderNu" +
+                "mber";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@p9";
+            param.ParameterName = "@NewBalance";
             param.DbType = global::System.Data.DbType.Double;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Double;
             param.IsNullable = true;
             param.SourceColumn = "Balance";
             this._commandCollection[4].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
-            param.ParameterName = "@ono";
+            param.ParameterName = "@orderNumber";
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.Size = 8;
@@ -13356,14 +13357,14 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int UpdateBalanceByOrderNumber(double p9, string ono) {
+        public virtual int UpdateBalanceByOrderNumber(double NewBalance, string orderNumber) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[4];
-            command.Parameters[0].Value = ((double)(p9));
-            if ((ono == null)) {
-                throw new global::System.ArgumentNullException("ono");
+            command.Parameters[0].Value = ((double)(NewBalance));
+            if ((orderNumber == null)) {
+                throw new global::System.ArgumentNullException("orderNumber");
             }
             else {
-                command.Parameters[1].Value = ((string)(ono));
+                command.Parameters[1].Value = ((string)(orderNumber));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 

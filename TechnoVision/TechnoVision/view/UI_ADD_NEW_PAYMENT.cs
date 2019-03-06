@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TechnoVision.controller;
 using TechnoVision.model;
-
+using TechnoVision.reports;
 namespace TechnoVision.view
 {
     public partial class UI_ADD_NEW_PAYMENT : MetroFramework.Forms.MetroForm
@@ -37,7 +37,7 @@ namespace TechnoVision.view
             {
                 technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
                 LblDueAmount.Text = t.FindBalanceByOrderNumber(orderNumber).ToString();
-                
+                t.Dispose();
             }
             if (orderType == "SPEC")
             {
@@ -68,7 +68,7 @@ namespace TechnoVision.view
                 newRno = Session.BranchName[0] + "1";
             }
             LblReceiptNo.Text = newRno;
-            Receipt.ReceiptNumber = newRno;
+            TechnoVision.model.Receipt.ReceiptNumber = newRno;
         }
 
         private void BtnAddPayment_Click(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace TechnoVision.view
             {
                 technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
                 t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
-                TxtAmount.Dispose();
+                t.Dispose();                
             }
             if (orderType == "SPEC")
             {
@@ -87,6 +87,11 @@ namespace TechnoVision.view
                 t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
                 t.Dispose();
             }
+            InvReceipt rpt = new InvReceipt();
+            rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
+            MessageBox.Show(rpt.RecordSelectionFormula.ToString());
+            rpt.PrintToPrinter(1, false, 1, 1);
+            new UI_REPORT_VIEWER(rpt).Show();
             this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
             receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
         }

@@ -16,14 +16,14 @@ namespace TechnoVision.reports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class Receipt : ReportClass {
+    public class InvReceipt : ReportClass {
         
-        public Receipt() {
+        public InvReceipt() {
         }
         
         public override string ResourceName {
             get {
-                return "Receipt.rpt";
+                return "InvReceipt.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace TechnoVision.reports {
         
         public override string FullResourceName {
             get {
-                return "TechnoVision.reports.Receipt.rpt";
+                return "TechnoVision.reports.InvReceipt.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace TechnoVision.reports {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReceipt : Component, ICachedReport {
+    public class CachedInvReceipt : Component, ICachedReport {
         
-        public CachedReceipt() {
+        public CachedInvReceipt() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace TechnoVision.reports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            Receipt rpt = new Receipt();
+            InvReceipt rpt = new InvReceipt();
             rpt.Site = this.Site;
             return rpt;
         }
