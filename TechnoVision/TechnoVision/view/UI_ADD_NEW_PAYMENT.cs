@@ -73,27 +73,40 @@ namespace TechnoVision.view
 
         private void BtnAddPayment_Click(object sender, EventArgs e)
         {
-            receiptController.FillReceipt(orderNumber, double.Parse(TxtAmount.Text), DateOrderDate.Value.ToString("yyyy-MM-dd"), orderType, custID);
-            receiptController.WriteReceipt(this);
-            if (orderType == "LENSE")
+            try
             {
-                technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
-                t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
-                t.Dispose();                
+                receiptController.FillReceipt(orderNumber, double.Parse(TxtAmount.Text), DateOrderDate.Value.ToString("yyyy-MM-dd"), orderType, custID);
+                receiptController.WriteReceipt(this);
+                if (orderType == "LENSE")
+                {
+                    technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+                    t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
+                    t.Dispose();
+                    CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo);
+                    CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo);
+                }
+                if (orderType == "SPEC")
+                {
+                    technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
+                    t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
+                    t.Dispose();
+                    CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo);
+                    CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo);
+                }
+                InvReceipt rpt = new InvReceipt();
+                rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
+                MessageBox.Show(rpt.RecordSelectionFormula.ToString());
+                rpt.PrintToPrinter(1, false, 1, 1);
+                new UI_REPORT_VIEWER(rpt).Show();
+                this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
+                receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
             }
-            if (orderType == "SPEC")
+            catch(Exception ex)
             {
-                technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
-                t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
-                t.Dispose();
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
-            InvReceipt rpt = new InvReceipt();
-            rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
-            MessageBox.Show(rpt.RecordSelectionFormula.ToString());
-            rpt.PrintToPrinter(1, false, 1, 1);
-            new UI_REPORT_VIEWER(rpt).Show();
-            this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
-            receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
+            
         }
     }
 }

@@ -40,6 +40,7 @@ namespace TechnoVision.view
                 technovisionDataSetTableAdapters.branchTableAdapter t = new technovisionDataSetTableAdapters.branchTableAdapter();
                 t.Insert(TxtBranchName.Text, TxtMasterPassword.Text);
                 CommonFunctions.ShowSuccess(this, "New Branch Added Successfully...");
+                CommonFunctions.WriteUserLog(Session.Username, "has added new Branch Named" + TxtBranchName);
                 this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
 
             }

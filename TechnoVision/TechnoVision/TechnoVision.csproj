@@ -129,7 +129,6 @@
     <Compile Include="Session.cs" />
     <Compile Include="technovisionDataSet.cs">
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="technovisionDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -153,12 +152,6 @@
     </Compile>
     <Compile Include="view\UI_ADD_NEW_PAYMENT.Designer.cs">
       <DependentUpon>UI_ADD_NEW_PAYMENT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="view\UI_ADD_NEW_PAYMENTS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\UI_ADD_NEW_PAYMENTS.Designer.cs">
-      <DependentUpon>UI_ADD_NEW_PAYMENTS.cs</DependentUpon>
     </Compile>
     <Compile Include="view\UI_ADD_USER.cs">
       <SubType>Form</SubType>
@@ -351,9 +344,6 @@
     <EmbeddedResource Include="view\UI_ADD_NEW_PAYMENT.resx">
       <DependentUpon>UI_ADD_NEW_PAYMENT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\UI_ADD_NEW_PAYMENTS.resx">
-      <DependentUpon>UI_ADD_NEW_PAYMENTS.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="view\UI_ADD_USER.resx">
       <DependentUpon>UI_ADD_USER.cs</DependentUpon>
     </EmbeddedResource>
@@ -523,6 +513,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cal_GUh_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\branches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
