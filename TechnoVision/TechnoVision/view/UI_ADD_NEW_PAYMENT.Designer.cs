@@ -161,6 +161,7 @@
             this.TxtAmount.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtAmount.CustomButton.UseSelectable = true;
             this.TxtAmount.CustomButton.Visible = false;
+            this.TxtAmount.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtAmount.Lines = new string[0];
             this.TxtAmount.Location = new System.Drawing.Point(173, 243);
             this.TxtAmount.MaxLength = 32767;

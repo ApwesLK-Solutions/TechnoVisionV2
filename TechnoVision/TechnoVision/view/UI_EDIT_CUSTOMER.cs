@@ -50,11 +50,13 @@ namespace TechnoVision.view
                 customerBindingSource.EndEdit();
                 customerTableAdapter.Update(technovisionDataSet);
                 CommonFunctions.ShowSuccess(this, "Customer Details Edited Successfully...");
+                CommonFunctions.WriteUserLog(Session.Username, "has changed dtails of customer " + LblCustomerId);
                 this.Dispose();
             }
             catch(Exception ex)
             {
                 CommonFunctions.WriteToErrorLog(ex.Message);
+                CommonFunctions.ShowError(this, "Customer Details Can not be Edited...");
             }
 
         }

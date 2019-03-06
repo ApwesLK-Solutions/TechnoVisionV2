@@ -42,7 +42,7 @@ namespace TechnoVision.view
                 User.DeleteUser(this, GrdUser.SelectedRows[0].Cells[0].Value.ToString());
                 this.usersTableAdapter.Fill(this.technovisionDataSet.users);
                 CommonFunctions.WriteUserLog(Session.Username,"has change system user "+GrdUser.SelectedRows[0].Cells[0].Value.ToString() + " to DEACTIVATE status");
-                CommonFunctions.ShowSuccess(this,"User Deactivated Successfully...");
+                //CommonFunctions.ShowSuccess(this,"User Deactivated Successfully...");
             }
             catch(Exception ex)
             {
@@ -59,7 +59,7 @@ namespace TechnoVision.view
                 User.ActiveUser(this, GrdUser.SelectedRows[0].Cells[0].Value.ToString());
                 this.usersTableAdapter.Fill(this.technovisionDataSet.users);
                 CommonFunctions.WriteUserLog(Session.Username, "has change system user " + GrdUser.SelectedRows[0].Cells[0].Value.ToString() + " to ACTIVATE status");
-                CommonFunctions.ShowSuccess(this, "User Activated Successfully...");
+                //CommonFunctions.ShowSuccess(this, "User Activated Successfully...");
             }
             catch(Exception ex)
             {

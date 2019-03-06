@@ -62,7 +62,7 @@ namespace TechnoVision.view
             {
                 ordertype = GridPayment.SelectedRows[0].Cells[4].Value.ToString();
                 orderNumber = GridPayment.SelectedRows[0].Cells[1].Value.ToString();
-                MessageBox.Show(ordertype + " - " + orderNumber);
+               
                 if (ordertype == "SPEC")
                 {
                     LblDue.Text = spec.FindBalanceByOrderNumber(orderNumber).ToString();
@@ -91,7 +91,16 @@ namespace TechnoVision.view
 
         private void TxtReceiptSearch_TextChanged(object sender, EventArgs e)
         {
-            receiptBindingSource.Filter = "ReceiptNumber LIKE '%" + TxtReceiptSearch.Text + "%' OR OrderNumber LIKE '%" + TxtReceiptSearch.Text + "%' AND Branch = " + Session.BranchId;
+            try
+            {
+                receiptBindingSource.Filter = "ReceiptNumber LIKE '%" + TxtReceiptSearch.Text + "%' OR OrderNumber LIKE '%" + TxtReceiptSearch.Text + "%' AND Branch = " + Session.BranchId;
+
+            }
+            catch (Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+            }
         }
 
         private void BtnRefresh_Click(object sender, EventArgs e)
@@ -99,5 +108,12 @@ namespace TechnoVision.view
             this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
             receiptBindingSource.Filter = "Branch = " + Session.BranchId;
         }
+
+        private void BtnPrintReceipt_Click(object sender, EventArgs e)
+        {
+            //print receipt
+        }
+
+       
     }
 }

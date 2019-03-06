@@ -126,6 +126,12 @@
       <DependentUpon>InvReceipt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="reports\InvReceiptContactLense.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvReceiptContactLense.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Session.cs" />
     <Compile Include="technovisionDataSet.cs">
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
@@ -334,6 +340,10 @@
     <EmbeddedResource Include="reports\InvReceipt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InvReceipt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\InvReceiptContactLense.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InvReceiptContactLense.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_ADD_BRANCH.resx">
       <DependentUpon>UI_ADD_BRANCH.cs</DependentUpon>
