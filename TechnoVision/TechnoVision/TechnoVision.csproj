@@ -126,10 +126,15 @@
       <DependentUpon>InvReceipt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="reports\InvReceiptContactLense.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvReceiptContactLense.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Session.cs" />
     <Compile Include="technovisionDataSet.cs">
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="technovisionDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -153,12 +158,6 @@
     </Compile>
     <Compile Include="view\UI_ADD_NEW_PAYMENT.Designer.cs">
       <DependentUpon>UI_ADD_NEW_PAYMENT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="view\UI_ADD_NEW_PAYMENTS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\UI_ADD_NEW_PAYMENTS.Designer.cs">
-      <DependentUpon>UI_ADD_NEW_PAYMENTS.cs</DependentUpon>
     </Compile>
     <Compile Include="view\UI_ADD_USER.cs">
       <SubType>Form</SubType>
@@ -342,6 +341,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InvReceipt.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="reports\InvReceiptContactLense.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InvReceiptContactLense.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\UI_ADD_BRANCH.resx">
       <DependentUpon>UI_ADD_BRANCH.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,9 +353,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_ADD_NEW_PAYMENT.resx">
       <DependentUpon>UI_ADD_NEW_PAYMENT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\UI_ADD_NEW_PAYMENTS.resx">
-      <DependentUpon>UI_ADD_NEW_PAYMENTS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\UI_ADD_USER.resx">
       <DependentUpon>UI_ADD_USER.cs</DependentUpon>
@@ -523,6 +523,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cal_GUh_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\branches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

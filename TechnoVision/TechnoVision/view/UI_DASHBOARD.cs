@@ -80,6 +80,7 @@ namespace TechnoVision.view
         private void UI_DASHBOARD_FormClosed(object sender, FormClosedEventArgs e)
         {
             f.Show();
+            f.ShowInTaskbar = true;
         }
 
     }

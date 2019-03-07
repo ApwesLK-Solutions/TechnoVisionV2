@@ -1199,9 +1199,9 @@
             this.metroLabel24.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel24.Location = new System.Drawing.Point(537, 337);
             this.metroLabel24.Name = "metroLabel24";
-            this.metroLabel24.Size = new System.Drawing.Size(73, 20);
+            this.metroLabel24.Size = new System.Drawing.Size(71, 20);
             this.metroLabel24.TabIndex = 0;
-            this.metroLabel24.Text = "Blind Test";
+            this.metroLabel24.Text = "Blink Test";
             // 
             // metroLabel25
             // 

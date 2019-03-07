@@ -67,9 +67,10 @@ namespace TechnoVision.view
 
                 }
             }
-            catch(Exception)
+            catch(Exception ex)
             {
                 CommonFunctions.ShowError(this, "No data to search...");
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
             
         }
@@ -98,6 +99,7 @@ namespace TechnoVision.view
             catch(Exception ex)
             {
                 CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
             
         }
@@ -138,6 +140,7 @@ namespace TechnoVision.view
             catch(Exception ex)
             {
                 CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
             
         }

@@ -64,7 +64,7 @@
             this.BtnDiscard.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnDiscard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnDiscard.Highlight = true;
-            this.BtnDiscard.Location = new System.Drawing.Point(671, 408);
+            this.BtnDiscard.Location = new System.Drawing.Point(671, 447);
             this.BtnDiscard.Name = "BtnDiscard";
             this.BtnDiscard.Size = new System.Drawing.Size(126, 45);
             this.BtnDiscard.Style = MetroFramework.MetroColorStyle.Green;
@@ -83,7 +83,7 @@
             this.BtnSave.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnSave.Highlight = true;
-            this.BtnSave.Location = new System.Drawing.Point(803, 408);
+            this.BtnSave.Location = new System.Drawing.Point(803, 447);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(126, 45);
             this.BtnSave.Style = MetroFramework.MetroColorStyle.Green;
@@ -450,7 +450,7 @@
             // 
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel8.Location = new System.Drawing.Point(291, 404);
+            this.metroLabel8.Location = new System.Drawing.Point(255, 439);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(316, 20);
             this.metroLabel8.TabIndex = 19;
@@ -460,7 +460,7 @@
             // 
             this.metroLabel9.AutoSize = true;
             this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel9.Location = new System.Drawing.Point(259, 384);
+            this.metroLabel9.Location = new System.Drawing.Point(223, 419);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(393, 20);
             this.metroLabel9.TabIndex = 18;
@@ -482,7 +482,7 @@
             this.TxtMasterPassword.CustomButton.Visible = false;
             this.TxtMasterPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtMasterPassword.Lines = new string[0];
-            this.TxtMasterPassword.Location = new System.Drawing.Point(333, 427);
+            this.TxtMasterPassword.Location = new System.Drawing.Point(297, 462);
             this.TxtMasterPassword.MaxLength = 32767;
             this.TxtMasterPassword.Name = "TxtMasterPassword";
             this.TxtMasterPassword.PasswordChar = '#';
@@ -504,7 +504,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(963, 470);
+            this.ClientSize = new System.Drawing.Size(963, 516);
             this.Controls.Add(this.metroLabel8);
             this.Controls.Add(this.metroLabel9);
             this.Controls.Add(this.TxtMasterPassword);

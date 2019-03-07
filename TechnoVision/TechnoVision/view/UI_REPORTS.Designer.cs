@@ -65,7 +65,7 @@
             this.BtnSpectacles.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnSpectacles.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnSpectacles.Highlight = true;
-            this.BtnSpectacles.Location = new System.Drawing.Point(32, 173);
+            this.BtnSpectacles.Location = new System.Drawing.Point(41, 173);
             this.BtnSpectacles.Name = "BtnSpectacles";
             this.BtnSpectacles.Size = new System.Drawing.Size(287, 45);
             this.BtnSpectacles.Style = MetroFramework.MetroColorStyle.Green;
@@ -84,7 +84,7 @@
             this.BtnContactLenses.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnContactLenses.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnContactLenses.Highlight = true;
-            this.BtnContactLenses.Location = new System.Drawing.Point(32, 122);
+            this.BtnContactLenses.Location = new System.Drawing.Point(41, 122);
             this.BtnContactLenses.Name = "BtnContactLenses";
             this.BtnContactLenses.Size = new System.Drawing.Size(287, 45);
             this.BtnContactLenses.Style = MetroFramework.MetroColorStyle.Green;
@@ -138,7 +138,7 @@
             this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(32, 173);
+            this.metroButton1.Location = new System.Drawing.Point(62, 173);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(287, 45);
             this.metroButton1.Style = MetroFramework.MetroColorStyle.Green;
@@ -157,7 +157,7 @@
             this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.metroButton2.Highlight = true;
-            this.metroButton2.Location = new System.Drawing.Point(32, 122);
+            this.metroButton2.Location = new System.Drawing.Point(62, 122);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(287, 45);
             this.metroButton2.Style = MetroFramework.MetroColorStyle.Green;

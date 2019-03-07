@@ -66,6 +66,7 @@ namespace TechnoVision.controller
                     new UI_DASHBOARD(form).Show();
                     form.Hide();
                     form.ShowInTaskbar = false;
+                    
 
                     //return true;
                 }

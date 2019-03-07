@@ -50,13 +50,23 @@ namespace TechnoVision.view
             catch (Exception ex)
             {
                 CommonFunctions.WriteToErrorLog(ex.Message);
+                CommonFunctions.ShowError(this,ex.Message);
             }
         }
 
         private void UI_SPECTACLES_DIAGNOSIS_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.frames' table. You can move, or remove it, as needed.
-            this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.frames' table. You can move, or remove it, as needed.
+                this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.WriteToErrorLog(ex.Message);
+                CommonFunctions.ShowError(this, ex.Message);
+            }
+            
 
         }
 
@@ -64,6 +74,24 @@ namespace TechnoVision.view
         {
             this.Dispose();
             form.Show();
+        }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            TxtRightDistSph.Text = "";
+            TxtRightDistCyl.Text = "";
+            TxtRightDistAxis.Text = "";
+            TxtLeftDistSph.Text = "";
+            TxtLeftDistCyl.Text = "";
+            TxtLeftDistAxis.Text = "";
+            TxtRightAdd.Text = "";
+            TxtLeftAdd.Text = "";
+            TxtLenseType.Text = "";
+            CmbFrame.Text = "";
+            TxtPD.Text = "";
+            TxtSegmentHeight.Text = "";
+            TxtSpecialIns.Text = "";
+            TxtRemarks.Text = "";
         }
     }
 }

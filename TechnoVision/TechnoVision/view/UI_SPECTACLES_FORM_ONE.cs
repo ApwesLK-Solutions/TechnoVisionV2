@@ -14,6 +14,12 @@ namespace TechnoVision.view
     public partial class UI_SPECTACLES_FORM_ONE : MetroFramework.Forms.MetroForm
     {
         int custID;
+        double EyeWearAmount = 0;
+        double LenseAmount = 0;
+        double total = 0;
+        double discount = 0;
+        double advance = 0;
+        double balance = 0;
         public UI_SPECTACLES_FORM_ONE(int CustID)
         {
             InitializeComponent();
@@ -29,7 +35,7 @@ namespace TechnoVision.view
             CmbOrderStatus.SelectedIndex = 0;
             CmbPaymentMethod.SelectedIndex = 0;
             CmbPaymentPlan.SelectedIndex = 0;
-            //CmbTestedBy.SelectedIndex = 0;
+            CmbTestedBy.SelectedIndex = 0;
             showReceiptNumber();     
             TxtOrderNo.Text = getOrderNumber();
         }
@@ -39,6 +45,7 @@ namespace TechnoVision.view
             {
                 string LastOrderNumber;
                 string NewOrderNumber;
+
                 technovisionDataSetTableAdapters.spectaclesTableAdapter table = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
                 try
                 {
@@ -107,24 +114,41 @@ namespace TechnoVision.view
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            double EyeWearAmount = 0;
-            double LenseAmount = 0;
-            double total = 0;
-            double discount = 0;
-            double advance = 0;
-            double balance = 0;
+            if (TxtAdvance.Text == "")
+            {
+                CommonFunctions.ShowError(this, " Amounts Can not be Null. please Enter Valid Amount");
+                TxtAdvance.Text = "0";
+            }
+            else if (TxtDiscount.Text == "")
+            {
+                CommonFunctions.ShowError(this, " Amounts Can not be Null. please Enter Valid Amount");
+                TxtDiscount.Text = "0";
+            }
+            else if (TxtEyeWearAmount.Text == "")
+            {
+                CommonFunctions.ShowError(this, " Amounts Can not be Null. please Enter Valid Amount");
+                TxtEyeWearAmount.Text = "0";
+            }
+            else if (TxtLenseAmount.Text == "")
+            {
+                CommonFunctions.ShowError(this, " Amounts Can not be Null. please Enter Valid Amount");
+                TxtLenseAmount.Text = "0";
+            }
+            else
+            {
+                EyeWearAmount = Double.Parse(TxtEyeWearAmount.Text);
+                LenseAmount = Double.Parse(TxtLenseAmount.Text);
+                total = Double.Parse(TxtDiscount.Text);
+                discount = Double.Parse(TxtDiscount.Text);
+                advance = Double.Parse(TxtAdvance.Text);
+                balance = Double.Parse(TxtBalance.Text);
 
-            EyeWearAmount =Double.Parse(TxtEyeWearAmount.Text);
-            LenseAmount = Double.Parse(TxtLenseAmount.Text);
-            total = Double.Parse(TxtDiscount.Text);
-            discount = Double.Parse(TxtDiscount.Text);
-            advance = Double.Parse(TxtAdvance.Text);
-            balance = Double.Parse(TxtBalance.Text);
-
-            total = EyeWearAmount + LenseAmount;
-            TxtTotal.Text = total.ToString();
-            balance = total - discount - advance;
-            TxtBalance.Text = balance.ToString();
+                total = EyeWearAmount + LenseAmount;
+                TxtTotal.Text = total.ToString();
+                balance = total - discount - advance;
+                TxtBalance.Text = balance.ToString();
+            }
+            
         }
 
         private void TxtEyeWearAmount_KeyPress(object sender, KeyPressEventArgs e)
@@ -170,6 +194,17 @@ namespace TechnoVision.view
             {
                 e.Handled = true;
             }
+        }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            TxtAdvance.Text = "0";
+            TxtDiscount.Text = "0";
+            TxtEyeWearAmount.Text = "0";
+            TxtLenseAmount.Text = "0";
+            TxtBalance.Text = "0";
+            TxtTotal.Text = "0";
+            TxtRemindDays.Text = "";
         }
     }
 }

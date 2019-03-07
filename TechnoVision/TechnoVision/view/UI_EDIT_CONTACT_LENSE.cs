@@ -13,6 +13,10 @@ namespace TechnoVision.view
     public partial class UI_EDIT_CONTACT_LENSE : MetroFramework.Forms.MetroForm
     {
         string OrderNumber;
+        double total = 0;
+        double discount = 0;
+        double advance = 0;
+        double balance = 0;
         public UI_EDIT_CONTACT_LENSE(string OrderNumber)
         {
             InitializeComponent();
@@ -70,17 +74,31 @@ namespace TechnoVision.view
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            double total = 0;
-            double discount = 0;
-            double advance = 0;
-            double balance = 0;
+            if(TxtLensesTotal.Text=="")
+            {
+                CommonFunctions.ShowError(this, " Amounts Can not be Null. please Enter Valid Amount");
+                TxtLensesTotal.Text = "0";
+            }
+            else if(TxtDiscount.Text=="")
+            {
+                CommonFunctions.ShowError(this, " Amounts Can not be Null. please Enter Valid Amount");
+                TxtDiscount.Text = "0";
+            }
+            else if(TxtAdvance.Text=="")
+            {
+                CommonFunctions.ShowError(this, " Amounts Can not be Null. please Enter Valid Amount");
+                TxtAdvance.Text = "0";
+            }
+            else
+            {
+                total = Double.Parse(TxtLensesTotal.Text);
+                discount = Double.Parse(TxtDiscount.Text);
+                advance = Double.Parse(TxtAdvance.Text);
 
-            total = Double.Parse(TxtLensesTotal.Text);
-            discount = Double.Parse(TxtDiscount.Text);
-            advance = Double.Parse(TxtAdvance.Text);
-
-            balance = (total) - (discount) - (advance);
-            TxtBalance.Text = balance.ToString();
+                balance = (total) - (discount) - (advance);
+                TxtBalance.Text = balance.ToString();
+            }
+            
         }
 
         private void TxtLensesTotal_KeyPress(object sender, KeyPressEventArgs e)

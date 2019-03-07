@@ -17,6 +17,7 @@ namespace TechnoVision.controller
             {
                 tableAdapter.Insert(Customer.Name, Customer.Address, Customer.Profession, Customer.Age, Customer.Phone, Customer.Email, int.Parse(Customer.Branch));
                 CommonFunctions.ShowSuccess(form, "New Customer Details Saved Successfully. Please Refresh to see Customer Details In Table");
+                CommonFunctions.WriteUserLog(Session.Username, "Added new customer " + Customer.Name);
             }
             catch(Exception ex)
             {

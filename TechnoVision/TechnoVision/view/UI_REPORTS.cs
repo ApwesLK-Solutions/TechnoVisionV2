@@ -26,49 +26,85 @@ namespace TechnoVision.view
 
         private void BtnContactLenses_Click(object sender, EventArgs e)
         {
-            fromYear = DateDailyReport.Value.Year.ToString();
-            fromMonth = DateDailyReport.Value.Month.ToString();
-            fromDay = DateDailyReport.Value.Day.ToString();
-            DailyReportContactLense rpt = new DailyReportContactLense();
-            rpt.RecordSelectionFormula = "{contactlense1.OrderDate} = DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") AND {contactlense1.Branch} = " + Session.BranchId;          
-            new UI_REPORT_VIEWER(rpt).Show();
+            try
+            {
+                fromYear = DateDailyReport.Value.Year.ToString();
+                fromMonth = DateDailyReport.Value.Month.ToString();
+                fromDay = DateDailyReport.Value.Day.ToString();
+                DailyReportContactLense rpt = new DailyReportContactLense();
+                rpt.RecordSelectionFormula = "{contactlense1.OrderDate} = DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") AND {contactlense1.Branch} = " + Session.BranchId;
+                new UI_REPORT_VIEWER(rpt).Show();
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this,ex.ToString());
+                CommonFunctions.WriteToErrorLog(ex.ToString());
+            }
+           
         }
 
         private void BtnSpectacles_Click(object sender, EventArgs e)
         {
-            fromYear = DateDailyReport.Value.Year.ToString();
-            fromMonth = DateDailyReport.Value.Month.ToString();
-            fromDay = DateDailyReport.Value.Day.ToString();
-            DailyReportSpectacle rpt = new DailyReportSpectacle();
-            rpt.RecordSelectionFormula = "{spectacles1.OrderDate} = DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") AND {spectacles1.Branch} = " + Session.BranchId;
-            new UI_REPORT_VIEWER(rpt).Show();
+            try
+            {
+                fromYear = DateDailyReport.Value.Year.ToString();
+                fromMonth = DateDailyReport.Value.Month.ToString();
+                fromDay = DateDailyReport.Value.Day.ToString();
+                DailyReportSpectacle rpt = new DailyReportSpectacle();
+                rpt.RecordSelectionFormula = "{spectacles1.OrderDate} = DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") AND {spectacles1.Branch} = " + Session.BranchId;
+                new UI_REPORT_VIEWER(rpt).Show();
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.ToString());
+                CommonFunctions.WriteToErrorLog(ex.ToString());
+            }
+            
 
         }
 
         private void metroButton2_Click(object sender, EventArgs e)
         {
-            fromYear = DateStartDate.Value.Year.ToString();
-            fromMonth = DateStartDate.Value.Month.ToString();
-            fromDay = DateStartDate.Value.Day.ToString();
-            toYear = DateEndDate.Value.Day.ToString();
-            toMonth = DateEndDate.Value.Day.ToString();
-            toDay = DateEndDate.Value.Day.ToString();
-            DailyReportContactLense rpt = new DailyReportContactLense();
-            rpt.RecordSelectionFormula = "{contactlense1.OrderDate} FROM DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") TO DATE(" + toYear + "," + toMonth + "," + toDay + ") AND {contactlense1.Branch} = " + Session.BranchId;
-            new UI_REPORT_VIEWER(rpt).Show();
+            try
+            {
+                fromYear = DateStartDate.Value.Year.ToString();
+                fromMonth = DateStartDate.Value.Month.ToString();
+                fromDay = DateStartDate.Value.Day.ToString();
+                toYear = DateEndDate.Value.Day.ToString();
+                toMonth = DateEndDate.Value.Day.ToString();
+                toDay = DateEndDate.Value.Day.ToString();
+                DailyReportContactLense rpt = new DailyReportContactLense();
+                rpt.RecordSelectionFormula = "{contactlense1.OrderDate} in DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") TO DATE(" + toYear + "," + toMonth + "," + toDay + ") AND {contactlense1.Branch} = " + Session.BranchId;
+                new UI_REPORT_VIEWER(rpt).Show();
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.ToString());
+                CommonFunctions.WriteToErrorLog(ex.ToString());
+            }
+            
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            fromYear = DateStartDate.Value.Year.ToString();
-            fromMonth = DateStartDate.Value.Month.ToString();
-            fromDay = DateStartDate.Value.Day.ToString();
-            toYear = DateEndDate.Value.Day.ToString();
-            toMonth = DateEndDate.Value.Day.ToString();
-            toDay = DateEndDate.Value.Day.ToString();
-            DailyReportSpectacle rpt = new DailyReportSpectacle();
-            rpt.RecordSelectionFormula = "{spectacles1.OrderDate} FROM DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") TO DATE(" + toYear + "," + toMonth + "," + toDay + ") AND {spectacles1.Branch} = " + Session.BranchId;
-            new UI_REPORT_VIEWER(rpt).Show();
+            try
+            {
+                fromYear = DateStartDate.Value.Year.ToString();
+                fromMonth = DateStartDate.Value.Month.ToString();
+                fromDay = DateStartDate.Value.Day.ToString();
+                toYear = DateEndDate.Value.Day.ToString();
+                toMonth = DateEndDate.Value.Day.ToString();
+                toDay = DateEndDate.Value.Day.ToString();
+                DailyReportSpectacle rpt = new DailyReportSpectacle();
+                rpt.RecordSelectionFormula = "{spectacles1.OrderDate} in DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") TO DATE(" + toYear + "," + toMonth + "," + toDay + ") AND {spectacles1.Branch} = " + Session.BranchId;
+                new UI_REPORT_VIEWER(rpt).Show();
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.ToString());
+                CommonFunctions.WriteToErrorLog(ex.ToString());
+            }
+            
         }
     }
 }
