@@ -166,7 +166,9 @@
             this.Controls.Add(this.BtnPrintCustomerCopy);
             this.Controls.Add(this.BtnViewCustomerCopy);
             this.Controls.Add(this.metroLabel1);
+            this.MaximizeBox = false;
             this.Name = "UI_ORDER_COMPLETE";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Order Complete ";
             this.Load += new System.EventHandler(this.UI_ORDER_COMPLETE_Load);

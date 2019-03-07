@@ -18,6 +18,7 @@ namespace TechnoVision.controller
         {
             try
             {
+                usersAdapter.Fill(userTable);
                 if ((User.Username == "") || (User.Password == ""))
                 {
                     CommonFunctions.ShowError(form, "Please Enter valid username or Password.Fields can not be empty...");
@@ -132,15 +133,29 @@ namespace TechnoVision.controller
                 if (row == null)
                 {
                     CommonFunctions.WriteUserLog(Session.Username, "Entered wrong Username");
+                    CommonFunctions.ShowError(form,"wrong Username");
+                }
+                else if(nic !=row.Nic)
+                {
+                    CommonFunctions.WriteUserLog(Session.Username, "Entered wrong Nic");
+                    CommonFunctions.ShowError(form, "wrong NIC");
+                }
+                else if (Contact != row.ContactNumber)
+                {
+                    CommonFunctions.WriteUserLog(Session.Username, "Entered wrong Contact  Number ");
+                    CommonFunctions.ShowError(form, "Wrong contact number");
+                }
+                else if(password =="")
+                {
+                    CommonFunctions.WriteUserLog(Session.Username, "Entered without value ");
+                    CommonFunctions.ShowError(form, "Please Enter password");
                 }
                 else if (password != confirmPassword)
                 {
                     CommonFunctions.WriteUserLog(Session.Username, "Entered wrong Password");
+                    CommonFunctions.ShowError(form, "Passwords does not match");
                 }
-                else if ((Contact != row.ContactNumber) || (nic != row.Nic))
-                {
-                    CommonFunctions.WriteUserLog(Session.Username, "Entered wrong Contact  Number ");
-                }
+                
                 else
                 {
                     usersAdapter.UpdateUserPasswordByUsername(password, username);

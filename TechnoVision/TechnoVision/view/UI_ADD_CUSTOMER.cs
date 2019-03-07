@@ -27,6 +27,10 @@ namespace TechnoVision.view
                     CommonFunctions.ShowError(this, "Please Fill All Required Fields..");
                     CommonFunctions.WriteUserLog(Session.Username, User.Username + " Tried to save without filling all fileds");
                 }
+                else if (TxtContactNumber.Text.Length != 10)
+                {
+                    CommonFunctions.ShowError(this, "Please Enter 10 Digits Contact Number");
+                }
                 else
                 {
                     Customer.Name = TxtCustomerName.Text;

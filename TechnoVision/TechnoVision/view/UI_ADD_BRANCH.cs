@@ -37,11 +37,19 @@ namespace TechnoVision.view
         {
             try
             {
-                technovisionDataSetTableAdapters.branchTableAdapter t = new technovisionDataSetTableAdapters.branchTableAdapter();
-                t.Insert(TxtBranchName.Text, TxtMasterPassword.Text);
-                CommonFunctions.ShowSuccess(this, "New Branch Added Successfully...");
-                CommonFunctions.WriteUserLog(Session.Username, "has added new Branch Named" + TxtBranchName);
-                this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
+                if(TxtBranchName.Text=="" || TxtMasterPassword.Text == "")
+                {
+                    CommonFunctions.ShowSuccess(this, "Please Enter Branch Name Or Master Password");
+                }
+                else
+                {
+                    technovisionDataSetTableAdapters.branchTableAdapter t = new technovisionDataSetTableAdapters.branchTableAdapter();
+                    t.Insert(TxtBranchName.Text, TxtMasterPassword.Text);
+                    CommonFunctions.ShowSuccess(this, "New Branch Added Successfully...");
+                    CommonFunctions.WriteUserLog(Session.Username, "has added new Branch Named" + TxtBranchName);
+                    this.branchTableAdapter.Fill(this.technovisionDataSet.branch);
+                }
+                
 
             }
             catch(Exception ex)

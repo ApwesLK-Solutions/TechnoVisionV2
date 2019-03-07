@@ -102,7 +102,7 @@
             this.TxtPassword.Location = new System.Drawing.Point(168, 142);
             this.TxtPassword.MaxLength = 32767;
             this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.PasswordChar = '\0';
+            this.TxtPassword.PasswordChar = '●';
             this.TxtPassword.PromptText = "Enter Password...";
             this.TxtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TxtPassword.SelectedText = "";
@@ -112,6 +112,7 @@
             this.TxtPassword.Size = new System.Drawing.Size(400, 30);
             this.TxtPassword.TabIndex = 1;
             this.TxtPassword.UseSelectable = true;
+            this.TxtPassword.UseSystemPasswordChar = true;
             this.TxtPassword.WaterMark = "Enter Password...";
             this.TxtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -214,6 +215,7 @@
             this.TxtContactNumber.WaterMark = "Enter Contact Number...";
             this.TxtContactNumber.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtContactNumber.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TxtContactNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtContactNumber_KeyPress);
             // 
             // metroLabel1
             // 

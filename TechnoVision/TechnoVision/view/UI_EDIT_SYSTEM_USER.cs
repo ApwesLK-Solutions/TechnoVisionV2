@@ -23,11 +23,20 @@ namespace TechnoVision.view
         {
             try
             {
+                if(TxtContactNumber.Text =="" ||TxtFullName.Text=="" ||TxtPassword.Text=="" ||TxtUsername.Text=="")
+                {
+                    CommonFunctions.ShowError(this, "Please Enter All Fileds...");
+                }
+                else if(TxtContactNumber.Text.Length !=10)
+                {
+                    CommonFunctions.ShowError(this, "Please enter 10 digits Contact Number");
+                }
+                
                 usersBindingSource.EndEdit();
                 usersTableAdapter.Update(technovisionDataSet);
                 CommonFunctions.WriteUserLog(Session.Username, "Changed the details of " + username);
                 CommonFunctions.ShowSuccess(this, "Data Successfully Changed...");
-                CommonFunctions.WriteUserLog(Session.Username, "has changed systerm user " + TxtFullName + " Details");
+                
             }
             catch(Exception ex)
             {

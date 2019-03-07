@@ -56,16 +56,13 @@ namespace TechnoVision.view
             try
             {
                 rno = t.getReceiptNumberByBranch(Session.BranchId, DateTime.Now.ToString("yyyy")).ToString();
-                MessageBox.Show(rno);
                 string BranchCharacter = rno.Substring(0, 1);
-                MessageBox.Show(rno);
-                MessageBox.Show(BranchCharacter);
-
                 newRno = BranchCharacter + (int.Parse(rno.Remove(0, 1)) + 1).ToString();
             }
             catch (NullReferenceException ex)
             {
                 newRno = Session.BranchName[0] + "1";
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
             LblReceiptNo.Text = newRno;
             TechnoVision.model.Receipt.ReceiptNumber = newRno;
@@ -82,20 +79,19 @@ namespace TechnoVision.view
                     technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
                     t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
                     t.Dispose();
-                    CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo);
-                    CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo);
+                    CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo.Text);
+                    CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo.Text);
                 }
                 if (orderType == "SPEC")
                 {
                     technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
                     t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
                     t.Dispose();
-                    CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo);
-                    CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo);
+                    CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo.Text);
+                    CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo.Text);
                 }
                 InvReceipt rpt = new InvReceipt();
                 rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
-                MessageBox.Show(rpt.RecordSelectionFormula.ToString());
                 rpt.PrintToPrinter(1, false, 1, 1);
                 new UI_REPORT_VIEWER(rpt).Show();
                 this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);

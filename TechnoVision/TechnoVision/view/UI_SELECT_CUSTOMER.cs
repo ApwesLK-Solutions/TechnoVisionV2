@@ -86,6 +86,7 @@ namespace TechnoVision.view
             {
                 CommonFunctions.ShowError(this, "Please Select a customer from the table or Double click on customer");
                 CommonFunctions.WriteUserLog(Session.Username, "selected customer null");
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
             
             this.Dispose();

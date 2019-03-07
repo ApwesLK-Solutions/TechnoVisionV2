@@ -68,6 +68,8 @@ namespace TechnoVision.view
                 CmbTestedBy.SelectedIndex = 0;
                 TxtOrderNo.Text = getOrderNumber();
                 showReceiptNumber();
+                DateOrderDate.MinDate = DateTime.UtcNow;
+                DateDueDate.MinDate = DateTime.UtcNow;
             }
             catch(Exception ex)
             {

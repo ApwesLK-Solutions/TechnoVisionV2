@@ -43,6 +43,10 @@ namespace TechnoVision.view
                     CommonFunctions.ShowError(this, "All Fileds Required...");
                     CommonFunctions.WriteUserLog("SYSTEM", User.Username + " is tried to save data without filling required fields");
                 }
+                else if(TxtContactNumber.Text.Length !=10)
+                {
+                    CommonFunctions.ShowError(this, "Please Enter 10 Digits Contact Number");
+                }
                 else
                 {
                     User.Username = TxtUsername.Text;
@@ -61,6 +65,15 @@ namespace TechnoVision.view
                 CommonFunctions.ShowError(this,ex.ToString());
             }
             
+        }
+
+        private void TxtContactNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+           (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
