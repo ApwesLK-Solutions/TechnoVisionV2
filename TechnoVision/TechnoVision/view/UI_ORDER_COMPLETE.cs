@@ -37,7 +37,7 @@ namespace TechnoVision.view
                 if (OrderType == "S")
                 {
                     InvoiceSpecCompany rpt = new InvoiceSpecCompany();
-                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "'AND {contactlense1.Branch} =" + Session.BranchId;
+                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "'AND {spectacles1.Branch} =" + Session.BranchId;
                     new UI_REPORT_VIEWER(rpt).Show();
                 }
                 else if (OrderType == "L")
@@ -85,7 +85,7 @@ namespace TechnoVision.view
                 if (OrderType == "S")
                 {
                     InvoiceSpecCustomer rpt = new InvoiceSpecCustomer();
-                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {contactlense1.Branch} =" + Session.BranchId;
+                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {spectacles1.Branch} =" + Session.BranchId;
                     rpt.PrintToPrinter(1, false, 1, 1);
                 }
                 else if (OrderType == "L")
@@ -109,7 +109,7 @@ namespace TechnoVision.view
                 if (OrderType == "S")
                 {
                     InvoiceSpecCompany rpt = new InvoiceSpecCompany();
-                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {contactlense1.Branch} =" + Session.BranchId;
+                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {spectacles1.Branch} =" + Session.BranchId;
                     rpt.PrintToPrinter(1, false, 1, 1);
 
                 }
@@ -134,10 +134,10 @@ namespace TechnoVision.view
                 if (OrderType == "S")
                 {
                     InvoiceSpecCompany rpt = new InvoiceSpecCompany();
-                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {contactlense1.Branch} =" + Session.BranchId;
+                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {spectacles1.Branch} =" + Session.BranchId;
                     rpt.PrintToPrinter(1, false, 1, 1);
                     InvoiceSpecCustomer rpt2 = new InvoiceSpecCustomer();
-                    rpt2.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {contactlense1.Branch} =" + Session.BranchId;
+                    rpt2.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {spectacles1.Branch} =" + Session.BranchId;
                     rpt2.PrintToPrinter(1, false, 1, 1);
                 }
                 else if (OrderType == "L")
