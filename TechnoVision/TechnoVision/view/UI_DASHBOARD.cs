@@ -8,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
+using System.IO;
+using ICSharpCode.SharpZipLib;
 namespace TechnoVision.view
 {
     public partial class UI_DASHBOARD : MetroFramework.Forms.MetroForm
@@ -81,6 +83,121 @@ namespace TechnoVision.view
         {
             f.Show();
             f.ShowInTaskbar = true;
+        }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                string branch = "D:/TechnoVision/Backups/Branch.csv";
+                string contactlense = "D:/TechnoVision/Backups/contactlense.csv";
+                string customer = "D:/TechnoVision/Backups/customer.csv";
+                string frames = "D:/TechnoVision/Backups/frames.csv";
+                string logs = "D:/TechnoVision/Backups/logs.csv";
+                string receipt = "D:/TechnoVision/Backups/receipt.csv";
+                string spectacles = "D:/TechnoVision/Backups/spectacles.csv";
+                string testers = "D:/TechnoVision/Backups/testers.csv";
+                string users = "D:/TechnoVision/Backups/users.csv";
+                string zipfile = "D:/TechnoVision/Backups/Backups.zip";
+                if (File.Exists(branch))
+                {
+                    File.Delete(branch);
+                }
+                if (File.Exists(contactlense))
+                {
+                    File.Delete(contactlense);
+                }
+                if (File.Exists(customer))
+                {
+                    File.Delete(customer);
+                }
+                if (File.Exists(frames))
+                {
+                    File.Delete(frames);
+                }
+                if (File.Exists(logs))
+                {
+                    File.Delete(logs);
+                }
+                if (File.Exists(receipt))
+                {
+                    File.Delete(receipt);
+                }
+                if (File.Exists(spectacles))
+                {
+                    File.Delete(spectacles);
+                }
+                if (File.Exists(testers))
+                {
+                    File.Delete(testers);
+                }
+                if (File.Exists(users))
+                {
+                    File.Delete(users);
+                }
+                technovisionDataSetTableAdapters.QueriesTableAdapter t = new technovisionDataSetTableAdapters.QueriesTableAdapter();
+                t.Backup();
+
+                File.SetAttributes(branch, FileAttributes.Hidden);
+                File.SetAttributes(contactlense, FileAttributes.Hidden);
+                File.SetAttributes(customer, FileAttributes.Hidden);
+                File.SetAttributes(frames, FileAttributes.Hidden);
+                File.SetAttributes(logs, FileAttributes.Hidden);
+                File.SetAttributes(receipt, FileAttributes.Hidden);
+                File.SetAttributes(spectacles, FileAttributes.Hidden);
+                File.SetAttributes(testers, FileAttributes.Hidden);
+                File.SetAttributes(users, FileAttributes.Hidden);
+               
+               /* ICSharpCode.SharpZipLib.Zip.ZipFile zip = new ICSharpCode.SharpZipLib.Zip.ZipFile(zipfile);
+
+                zip.Password = "BACKUP@TECHNOVISION";
+                zip.BeginUpdate();
+                zip.SetComment(DateTime.Now.ToString());
+
+                zip.Delete("branch.csv");
+                zip.Delete("contactlense.csv");
+                zip.Delete("customer.csv");
+                zip.Delete("frames.csv");
+                zip.Delete("logs.csv");
+                zip.Delete("receipt.csv");
+                zip.Delete("spectacles.csv");
+                zip.Delete("testers.csv");
+                zip.Delete("users.csv");
+
+
+                zip.Add(branch);
+                zip.Add(contactlense);
+                zip.Add(customer);
+                zip.Add(frames);
+                zip.Add(logs);
+                zip.Add(receipt);
+                zip.Add(spectacles);
+                zip.Add(testers);
+                zip.Add(users);
+                zip.CommitUpdate();
+
+               
+             
+                zip.Close();
+                MessageBox.Show("Done");
+                /*File.Delete(branch);
+                File.Delete(contactlense);
+                File.Delete(customer);
+                File.Delete(frames);
+                File.Delete(logs);
+                File.Delete(receipt);
+                File.Delete(spectacles);
+                File.Delete(testers);
+                File.Delete(users);*/
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
+            
+            
         }
 
     }
