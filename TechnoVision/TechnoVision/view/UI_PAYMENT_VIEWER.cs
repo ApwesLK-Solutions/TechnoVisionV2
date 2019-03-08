@@ -49,11 +49,20 @@ namespace TechnoVision.view
 
         private void GridPayment_Click(object sender, EventArgs e)
         {
-            LblCustomer.Text = cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
-            T_OrderNumber = GridPayment.SelectedRows[0].Cells[1].Value.ToString();
-            T_OrderType  = GridPayment.SelectedRows[0].Cells[4].Value.ToString();
-            T_CustID = int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString());
-            getAmounts();
+            try
+            {
+                LblCustomer.Text = cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
+                T_OrderNumber = GridPayment.SelectedRows[0].Cells[1].Value.ToString();
+                T_OrderType = GridPayment.SelectedRows[0].Cells[4].Value.ToString();
+                T_CustID = int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString());
+                getAmounts();
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, "No payemnts to Select ");
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+           
         }
 
         private void getAmounts()
@@ -85,7 +94,16 @@ namespace TechnoVision.view
 
         private void BtnNewPayment_Click(object sender, EventArgs e)
         {
-            new UI_ADD_NEW_PAYMENT(T_OrderNumber,T_OrderType,T_CustID).Show();
+            try
+            {
+                new UI_ADD_NEW_PAYMENT(T_OrderNumber, T_OrderType, T_CustID).Show();
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, "No payemnts to Select ");
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
         }
 
 
@@ -116,11 +134,20 @@ namespace TechnoVision.view
 
         private void GridPayment_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            LblCustomer.Text = cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
-            T_OrderNumber = GridPayment.SelectedRows[0].Cells[1].Value.ToString();
-            T_OrderType = GridPayment.SelectedRows[0].Cells[4].Value.ToString();
-            T_CustID = int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString());
-            getAmounts();
+            try
+            {
+                LblCustomer.Text = cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
+                T_OrderNumber = GridPayment.SelectedRows[0].Cells[1].Value.ToString();
+                T_OrderType = GridPayment.SelectedRows[0].Cells[4].Value.ToString();
+                T_CustID = int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString());
+                getAmounts();
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, "No payemnts to Select ");
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+            
         }
     }
 }
