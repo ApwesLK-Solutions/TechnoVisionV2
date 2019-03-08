@@ -59,14 +59,24 @@ namespace TechnoVision.view
 
         private void GridSelectCustomer_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if(OrderType == "S")
+            try
             {
-                new UI_SPECTACLES_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+                if (OrderType == "S")
+                {
+                    new UI_SPECTACLES_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+                }
+                else if (OrderType == "L")
+                {
+                    new UI_CONTACT_LENSE_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+                }
             }
-            else if(OrderType == "L")
+            catch(Exception ex)
             {
-                new UI_CONTACT_LENSE_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+                CommonFunctions.ShowError(this, "Please Select a customer from the table or Double click on customer");
+                CommonFunctions.WriteUserLog(Session.Username, "selected customer null");
+                CommonFunctions.WriteToErrorLog("selected customer null");
             }
+            
         }
 
         private void BtnSelect_Click(object sender, EventArgs e)
