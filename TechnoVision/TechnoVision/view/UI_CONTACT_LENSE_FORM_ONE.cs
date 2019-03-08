@@ -30,22 +30,35 @@ namespace TechnoVision.view
         {
             try
             {
-                if(TxtAdvance.Text=="" || TxtBalance.Text=="" || TxtDiscount.Text=="" || TxtLensesTotal.Text=="" || TxtOrderNo.Text == ""||TxtRemindDays.Text=="")
+                if (TxtLensesTotal.Text != "0")
                 {
-                    CommonFunctions.ShowError(this, "Please Complete All Fields to continue...");
-                    CommonFunctions.WriteUserLog(Session.Username, "tried to continue without enter all fields");
+                    if (TxtBalance.Text == "0")
+                    {
+                        CommonFunctions.ShowError(this, "Please click calculate button to calcutale total");
+                    }
+                    else
+                    {
+                        if (TxtAdvance.Text == "" || TxtBalance.Text == "" || TxtDiscount.Text == "" || TxtLensesTotal.Text == "" || TxtOrderNo.Text == "" || TxtRemindDays.Text == "")
+                        {
+                            CommonFunctions.ShowError(this, "Please Complete All Fields to continue...");
+                            CommonFunctions.WriteUserLog(Session.Username, "tried to continue without enter all fields");
+                        }
+                        else
+                        {
+                            LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yyyy-MM-dd"), DateDueDate.Value.ToString("yyyy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text), CmbJobType.Text, custID);
+                            Receipt.ReceiptNumber = LblReceiptNo.Text;
+                            receiptController.FillReceipt(LenseOrder.OrderNumber, LenseOrder.Advance, LenseOrder.OrderDate, "LENSE", LenseOrder.custID);
+                            this.Hide();
+                            new UI_CONTACT_LENSE_DIAGNOSIS(this).Show();
+                        }
+                    }
                 }
                 else
                 {
-                    LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yyyy-MM-dd"), DateDueDate.Value.ToString("yyyy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text),CmbJobType.Text,custID);
-                    Receipt.ReceiptNumber = LblReceiptNo.Text;
-                    receiptController.FillReceipt(LenseOrder.OrderNumber, LenseOrder.Advance, LenseOrder.OrderDate, "LENSE", LenseOrder.custID);
-                    this.Hide();
-                    new UI_CONTACT_LENSE_DIAGNOSIS(this).Show();
+                    CommonFunctions.ShowError(this, "Total cannot be Zero..!");
                 }
-                
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }

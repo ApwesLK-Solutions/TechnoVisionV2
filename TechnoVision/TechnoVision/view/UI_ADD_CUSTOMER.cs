@@ -41,6 +41,7 @@ namespace TechnoVision.view
                     Customer.Email = TxtEmail.Text;
                     Customer.Branch = CmbBranch.SelectedValue.ToString();
                     Customer.RegisterNewCustomer(this);
+
                 }
                 
             }

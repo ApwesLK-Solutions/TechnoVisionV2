@@ -47,11 +47,33 @@ namespace TechnoVision.view
         {
             try
             {
-                spectaclesBindingSource.EndEdit();
-                spectaclesTableAdapter.Update(technovisionDataSet);
-                this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
-                CommonFunctions.ShowSuccess(this, "Successfully Changed edit Details...");
-                CommonFunctions.WriteUserLog(Session.Username, "Edited order number"+TxtOrderNo+ "...Critical");
+                if (TxtAdvance.Text == "" || TxtDiscount.Text == "" || TxtTotal.Text == "")
+                {
+                    CommonFunctions.ShowError(this, "Fields cannot be empty");
+                }
+                else
+                {
+                    if(TxtTotal.Text != "0")
+                    {
+                        if(TxtBalance.Text == "0")
+                        {
+                            CommonFunctions.ShowError(this, "Please click calculate button to calculate total");
+                        }
+                        else
+                        {
+                            spectaclesBindingSource.EndEdit();
+                            spectaclesTableAdapter.Update(technovisionDataSet);
+                            this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+                            CommonFunctions.ShowSuccess(this, "Successfully Changed edit Details...");
+                            CommonFunctions.WriteUserLog(Session.Username, "Edited order number" + TxtOrderNo + "...Critical");
+                        }
+                    }
+                    else
+                    {
+                        CommonFunctions.ShowError(this, "Total cannot be Zero..!");
+                    }
+                }
+
             }
             catch(Exception ex)
             {

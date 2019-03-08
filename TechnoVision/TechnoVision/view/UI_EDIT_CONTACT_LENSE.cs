@@ -46,11 +46,33 @@ namespace TechnoVision.view
         {
             try
             {
-                contactlenseBindingSource.EndEdit();
-                contactlenseTableAdapter.Update(technovisionDataSet);
-                this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
-                CommonFunctions.WriteUserLog(Session.Username, "Edited order number" + TxtOrderNo + "...Critical");
-                CommonFunctions.ShowSuccess(this, "Successfully Changed edit Details...");
+                if (TxtAdvance.Text == "" || TxtDiscount.Text == "" || TxtLensesTotal.Text == "")
+                {
+                    CommonFunctions.ShowError(this, "Fields cannot me Null");
+                }
+                else
+                {
+                    if (TxtLensesTotal.Text != "0")
+                    {
+                        if (TxtBalance.Text == "0")
+                        {
+                            CommonFunctions.ShowError(this, "Please click calculate button to calculate total");
+                        }
+                        else
+                        {
+                            contactlenseBindingSource.EndEdit();
+                            contactlenseTableAdapter.Update(technovisionDataSet);
+                            this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+                            CommonFunctions.WriteUserLog(Session.Username, "Edited order number" + TxtOrderNo + "...Critical");
+                            CommonFunctions.ShowSuccess(this, "Successfully Changed edit Details...");
+                        }
+                    }
+                    else
+                    {
+                        CommonFunctions.ShowError(this, "Total connot be Zero..!");
+                    }
+                }
+               
             }
             catch(Exception ex)
             {
