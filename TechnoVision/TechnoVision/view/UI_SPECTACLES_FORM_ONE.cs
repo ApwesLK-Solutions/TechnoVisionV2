@@ -74,9 +74,10 @@ namespace TechnoVision.view
             string newRno;
             try
             {
-                rno = t.getReceiptNumberByBranch(Session.BranchId,DateTime.Now.ToString("yyyy")).ToString();
+                t.GetMaxReceipt(Session.BranchId, DateTime.Now.ToString("yyyy"), out rno);
+                Console.WriteLine(rno);
                 string BranchCharacter = rno.Substring(0, 1);
-                newRno = BranchCharacter + (int.Parse(rno.Remove(0,1)) + 1).ToString();
+                newRno = BranchCharacter + (int.Parse(rno.Remove(0, 1)) + 1).ToString();
             }
             catch (NullReferenceException ex)
             {
@@ -84,7 +85,7 @@ namespace TechnoVision.view
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
             LblReceiptNo.Text = newRno;
-            Receipt.ReceiptNumber = newRno;
+            TechnoVision.model.Receipt.ReceiptNumber = newRno;
         }
 
         private void BtnNext_Click(object sender, EventArgs e)

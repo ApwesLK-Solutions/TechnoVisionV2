@@ -109,15 +109,18 @@ namespace TechnoVision.view
             string newRno;
             try
             {
-                rno = t.getReceiptNumberByBranch(Session.BranchId, DateTime.Now.ToString("yyyy")).ToString();
+                t.GetMaxReceipt(Session.BranchId, DateTime.Now.ToString("yyyy"), out rno);
+                Console.WriteLine(rno);
                 string BranchCharacter = rno.Substring(0, 1);
                 newRno = BranchCharacter + (int.Parse(rno.Remove(0, 1)) + 1).ToString();
             }
-            catch(NullReferenceException ex)
+            catch (NullReferenceException ex)
             {
                 newRno = Session.BranchName[0] + "1";
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
             LblReceiptNo.Text = newRno;
+            TechnoVision.model.Receipt.ReceiptNumber = newRno;
         }
 
         private void BtnCalculate_Click(object sender, EventArgs e)

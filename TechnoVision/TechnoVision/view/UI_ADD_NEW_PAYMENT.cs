@@ -55,7 +55,8 @@ namespace TechnoVision.view
             string newRno;
             try
             {
-                rno = t.getReceiptNumberByBranch(Session.BranchId, DateTime.Now.ToString("yyyy")).ToString();
+                t.GetMaxReceipt(Session.BranchId,DateTime.Now.ToString("yyyy"),out rno);
+                Console.WriteLine(rno);
                 string BranchCharacter = rno.Substring(0, 1);
                 newRno = BranchCharacter + (int.Parse(rno.Remove(0, 1)) + 1).ToString();
             }
@@ -81,6 +82,12 @@ namespace TechnoVision.view
                     t.Dispose();
                     CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo.Text);
                     CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo.Text);
+                    InvReceiptContactLense rpt = new InvReceiptContactLense();
+                    rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
+                    rpt.PrintToPrinter(1, false, 1, 1);
+                    new UI_REPORT_VIEWER(rpt).Show();
+                    this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
+                    receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
                 }
                 if (orderType == "SPEC")
                 {
@@ -89,13 +96,14 @@ namespace TechnoVision.view
                     t.Dispose();
                     CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo.Text);
                     CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo.Text);
+                    InvReceipt rpt = new InvReceipt();
+                    rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
+                    rpt.PrintToPrinter(1, false, 1, 1);
+                    new UI_REPORT_VIEWER(rpt).Show();
+                    this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
+                    receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
                 }
-                InvReceipt rpt = new InvReceipt();
-                rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
-                rpt.PrintToPrinter(1, false, 1, 1);
-                new UI_REPORT_VIEWER(rpt).Show();
-                this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
-                receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
+                
             }
             catch(Exception ex)
             {
