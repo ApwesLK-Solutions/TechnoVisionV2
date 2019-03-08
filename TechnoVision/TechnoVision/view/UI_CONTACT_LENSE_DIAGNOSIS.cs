@@ -37,7 +37,7 @@ namespace TechnoVision.view
                     t.Insert(LenseOrder.OrderNumber, DateTime.Parse(LenseOrder.OrderDate), DateTime.Parse(LenseOrder.DueDate), LenseOrder.JobType, LenseOrder.TestedBy, LenseOrder.Total, LenseOrder.Discount, LenseOrder.Advance, LenseOrder.Balance, LenseOrder.PaymentMethod, LenseOrder.PaymentPlan, LenseOrder.OrderStatus, LenseOrder.OldRightSph, LenseOrder.OldRightCyl, LenseOrder.OldRightAxis, LenseOrder.OldRightAdd, LenseOrder.OldLeftSph, LenseOrder.OldLeftCyl, LenseOrder.OldLeftAxis, LenseOrder.OldLeftAdd, LenseOrder.PresentRightSph, LenseOrder.PresentRightCyl, LenseOrder.PresentRightAxis, LenseOrder.PresentRightAdd, LenseOrder.PresentLeftSph, LenseOrder.PresentLeftCyl, LenseOrder.PresentLeftAxis, LenseOrder.PresentLeftAdd, LenseOrder.RightBc, LenseOrder.RightPow, LenseOrder.RightDia, LenseOrder.RightDesz, LenseOrder.LeftBc, LenseOrder.LeftPow, LenseOrder.LeftDia, LenseOrder.LeftDesz, LenseOrder.TrailLense, LenseOrder.OverRefract, LenseOrder.KReading, LenseOrder.BlinkTest, LenseOrder.SpecialInstruction, LenseOrder.Remarks, LenseOrder.ReminderDays, LenseOrder.Branch,DateTime.Now.ToString("yyyy"),LenseOrder.custID);
                     receiptController.WriteReceipt(this);
                     CommonFunctions.WriteUserLog(Session.Username, "Added New Lense Order : " + LenseOrder.OrderNumber);
-                    CommonFunctions.ShowSuccess(this, "Order Number " + LenseOrder.OrderNumber + "Saved Succesfully...");
+                    CommonFunctions.ShowSuccess(this, "Order Number " + LenseOrder.OrderNumber + " Saved Succesfully...");
                     this.Dispose();
                     f.Dispose();
                     new UI_ORDER_COMPLETE("L", LenseOrder.OrderNumber, Receipt.ReceiptNumber).Show();

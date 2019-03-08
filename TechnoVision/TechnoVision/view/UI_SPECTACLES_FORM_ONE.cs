@@ -97,12 +97,28 @@ namespace TechnoVision.view
                     CommonFunctions.ShowError(this, "Please Complete All Fields to continue...");
                     CommonFunctions.WriteUserLog(Session.Username, "tried to continue without enter all fields");
                 }
+            
                 else
                 {
-                    SpecOrderController.FillFormOne(TxtOrderNo.Text,DateOrderDate.Value.ToString("yyyy-MM-dd"),DateDueDate.Value.ToString("yyyy-MM-dd"),CmbPaymentPlan.Text,CmbPaymentMethod.Text,CmbTestedBy.Text,CmbOrderStatus.Text,Double.Parse(TxtEyeWearAmount.Text),Double.Parse(TxtLenseAmount.Text),Double.Parse(TxtTotal.Text),Double.Parse(TxtAdvance.Text),Double.Parse(TxtDiscount.Text),Double.Parse(TxtBalance.Text),int.Parse(TxtRemindDays.Text),custID);
-                    receiptController.FillReceipt(SpecOrder.OrderNumber, SpecOrder.Advance, SpecOrder.OrderDate, "SPEC", custID);
+                    if(TxtTotal.Text != "0")
+                    {
+                        if(TxtBalance.Text == "0")
+                        {
+                            CommonFunctions.ShowError(this, "Please click calculate button to calculate total");
+                        }
+                        else
+                        {
+                            SpecOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yyyy-MM-dd"), DateDueDate.Value.ToString("yyyy-MM-dd"), CmbPaymentPlan.Text, CmbPaymentMethod.Text, CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtEyeWearAmount.Text), Double.Parse(TxtLenseAmount.Text), Double.Parse(TxtTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), int.Parse(TxtRemindDays.Text), custID);
+                            receiptController.FillReceipt(SpecOrder.OrderNumber, SpecOrder.Advance, SpecOrder.OrderDate, "SPEC", custID);
 
-                    new UI_SPECTACLES_DIAGNOSIS(this).Show();
+                            new UI_SPECTACLES_DIAGNOSIS(this).Show();
+                        }
+                    }
+                    else
+                    {
+                        CommonFunctions.ShowError(this, "Total cannot be Zero..!");
+                    }
+
                 }
                 
             }

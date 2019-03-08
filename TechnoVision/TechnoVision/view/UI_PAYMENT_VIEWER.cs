@@ -114,6 +114,13 @@ namespace TechnoVision.view
             //print receipt
         }
 
-       
+        private void GridPayment_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            LblCustomer.Text = cust.FindNameById(int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString())).ToString();
+            T_OrderNumber = GridPayment.SelectedRows[0].Cells[1].Value.ToString();
+            T_OrderType = GridPayment.SelectedRows[0].Cells[4].Value.ToString();
+            T_CustID = int.Parse(GridPayment.SelectedRows[0].Cells[8].Value.ToString());
+            getAmounts();
+        }
     }
 }
