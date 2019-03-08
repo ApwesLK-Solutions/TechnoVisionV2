@@ -28,18 +28,28 @@ namespace TechnoVision.view
 
         private void UI_SPECTACLES_FORM_ONE_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
-            this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
-            DateOrderDate.Value = DateTime.UtcNow;
-            DateDueDate.Value = DateTime.UtcNow;
-            CmbOrderStatus.SelectedIndex = 0;
-            CmbPaymentMethod.SelectedIndex = 0;
-            CmbPaymentPlan.SelectedIndex = 0;
-            CmbTestedBy.SelectedIndex = 0;
-            showReceiptNumber();     
+            try
+            {
+                // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
+                this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+                DateOrderDate.Value = DateTime.UtcNow;
+                DateDueDate.Value = DateTime.UtcNow;
+                CmbOrderStatus.SelectedIndex = 0;
+                CmbPaymentMethod.SelectedIndex = 0;
+                CmbPaymentPlan.SelectedIndex = 0;
+                CmbTestedBy.SelectedIndex = 0;
+                
+                DateOrderDate.MinDate = DateTime.UtcNow;
+                DateDueDate.MinDate = DateTime.UtcNow;
+            }
+            catch(Exception)
+            {
+                CommonFunctions.ShowError(this,"Can not Find any Testers in a system.Please Enter Tester to Continue");
+
+            }
+            showReceiptNumber();
             TxtOrderNo.Text = getOrderNumber();
-            DateOrderDate.MinDate = DateTime.UtcNow;
-            DateDueDate.MinDate = DateTime.UtcNow;
+
 
         }
         private string getOrderNumber()

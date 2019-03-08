@@ -46,6 +46,7 @@ namespace TechnoVision.view
                     t.Insert(TxtAddFrame.Text);
                     this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
                     CommonFunctions.ShowSuccess(this, "New Frame Saved Successfully...");
+                    TxtAddFrame.Text = "";
                     CommonFunctions.WriteUserLog(Session.Username, "Added new Frame" + TxtAddFrame.Text);
                 }
                 
