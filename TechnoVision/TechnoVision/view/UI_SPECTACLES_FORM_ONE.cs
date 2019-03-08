@@ -38,16 +38,18 @@ namespace TechnoVision.view
                 CmbPaymentMethod.SelectedIndex = 0;
                 CmbPaymentPlan.SelectedIndex = 0;
                 CmbTestedBy.SelectedIndex = 0;
-                showReceiptNumber();
-                TxtOrderNo.Text = getOrderNumber();
+                
                 DateOrderDate.MinDate = DateTime.UtcNow;
                 DateDueDate.MinDate = DateTime.UtcNow;
             }
             catch(Exception)
             {
                 CommonFunctions.ShowError(this,"Can not Find any Testers in a system.Please Enter Tester to Continue");
+
             }
-            
+            showReceiptNumber();
+            TxtOrderNo.Text = getOrderNumber();
+
 
         }
         private string getOrderNumber()
