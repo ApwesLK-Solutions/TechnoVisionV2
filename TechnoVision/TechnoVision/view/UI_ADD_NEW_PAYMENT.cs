@@ -79,7 +79,7 @@ namespace TechnoVision.view
                 if (orderType == "LENSE")
                 {
                     technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
-                    t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
+                    t.UpdateBalanceByOrderNumber(double.Parse(LblDueAmount.Text) - double.Parse(TxtAmount.Text), orderNumber);
                     t.Dispose();
                     CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo.Text);
                     CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo.Text);

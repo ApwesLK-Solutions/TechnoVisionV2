@@ -67,14 +67,8 @@ namespace TechnoVision.view
         {
             try
             {
-                fromYear = DateStartDate.Value.Year.ToString();
-                fromMonth = DateStartDate.Value.Month.ToString();
-                fromDay = DateStartDate.Value.Day.ToString();
-                toYear = DateEndDate.Value.Day.ToString();
-                toMonth = DateEndDate.Value.Day.ToString();
-                toDay = DateEndDate.Value.Day.ToString();
                 DailyReportContactLense rpt = new DailyReportContactLense();
-                rpt.RecordSelectionFormula = "{contactlense1.OrderDate} in DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") TO DATE(" + toYear + "," + toMonth + "," + toDay + ") AND {contactlense1.Branch} = " + Session.BranchId;
+                rpt.RecordSelectionFormula = "{contactlense1.OrderDate} in Date(" + DateStartDate.Value.ToString("yyyy,MM,dd") + ") to Date(" + DateEndDate.Value.ToString("yyyy,MM,dd") + ") AND {contactlense1.Branch} = " + Session.BranchId;
                 new UI_REPORT_VIEWER(rpt).Show();
             }
             catch(Exception ex)
@@ -89,14 +83,8 @@ namespace TechnoVision.view
         {
             try
             {
-                fromYear = DateStartDate.Value.Year.ToString();
-                fromMonth = DateStartDate.Value.Month.ToString();
-                fromDay = DateStartDate.Value.Day.ToString();
-                toYear = DateEndDate.Value.Day.ToString();
-                toMonth = DateEndDate.Value.Day.ToString();
-                toDay = DateEndDate.Value.Day.ToString();
                 DailyReportSpectacle rpt = new DailyReportSpectacle();
-                rpt.RecordSelectionFormula = "{spectacles1.OrderDate} in DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") TO DATE(" + toYear + "," + toMonth + "," + toDay + ") AND {spectacles1.Branch} = " + Session.BranchId;
+                rpt.RecordSelectionFormula = "{spectacles1.OrderDate} in Date(" + DateStartDate.Value.ToString("yyyy,MM,dd") + ") to Date(" + DateEndDate.Value.ToString("yyyy,MM,dd") + ") AND {spectacles1.Branch} = " + Session.BranchId;
                 new UI_REPORT_VIEWER(rpt).Show();
             }
             catch(Exception ex)
