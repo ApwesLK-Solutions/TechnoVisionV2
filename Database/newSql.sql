@@ -221,3 +221,56 @@ BEGIN
  SELECT ReceiptNumber INTO xReceiptNumber  FROM receipt WHERE Branch =  xBranch AND Year = xYear AND substring(ReceiptNumber,2)=(SELECT MAX(CAST(SUBSTRING(ReceiptNumber,2) AS SIGNED)) FROM receipt);
 END$$
 DELIMITER ;
+
+DELIMITER $$
+CREATE PROCEDURE `Backup`()
+BEGIN
+
+SELECT * FROM branch 
+INTO OUTFILE 'D:/Backups/branch.csv'
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY '\n';
+
+SELECT * FROM contactlense 
+INTO OUTFILE 'D:/Backups/contactlense.csv'
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY '\n';
+
+SELECT * FROM customer 
+INTO OUTFILE 'D:/Backups/customer.csv'
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY '\n';
+
+SELECT * FROM frames 
+INTO OUTFILE 'D:/Backups/frames.csv'
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY '\n';
+
+SELECT * FROM `logs` 
+INTO OUTFILE 'D:/Backups/logs.csv'
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY '\n';
+
+SELECT * FROM receipt 
+INTO OUTFILE 'D:/Backups/receipt.csv'
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY '\n';
+
+SELECT * FROM spectacles 
+INTO OUTFILE 'D:/Backups/spectacles.csv'
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY '\n';
+
+SELECT * FROM testers 
+INTO OUTFILE 'D:/Backups/testers.csv'
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY '\n';
+
+SELECT * FROM users 
+INTO OUTFILE 'D:/Backups/users.csv'
+FIELDS TERMINATED BY ','  
+LINES TERMINATED BY '\n';
+
+
+END$$
+DELIMITER ;

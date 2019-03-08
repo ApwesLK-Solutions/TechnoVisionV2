@@ -288,7 +288,7 @@
             this.GridPayment.EnableHeadersVisualStyles = false;
             this.GridPayment.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridPayment.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GridPayment.Location = new System.Drawing.Point(23, 128);
+            this.GridPayment.Location = new System.Drawing.Point(23, 119);
             this.GridPayment.Name = "GridPayment";
             this.GridPayment.ReadOnly = true;
             this.GridPayment.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;

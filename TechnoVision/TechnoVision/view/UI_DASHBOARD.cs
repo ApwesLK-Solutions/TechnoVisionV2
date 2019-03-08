@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
-using ICSharpCode.SharpZipLib;
 namespace TechnoVision.view
 {
     public partial class UI_DASHBOARD : MetroFramework.Forms.MetroForm

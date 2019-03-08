@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using TechnoVision.reports;
 namespace TechnoVision.view
 {
     public partial class UI_PAYMENT_VIEWER : MetroFramework.Forms.MetroForm
@@ -129,7 +129,28 @@ namespace TechnoVision.view
 
         private void BtnPrintReceipt_Click(object sender, EventArgs e)
         {
-            //print receipt
+            string OrderType = GridPayment.SelectedRows[0].Cells[4].Value.ToString();
+            string ReceiptNumber = GridPayment.SelectedRows[0].Cells[2].Value.ToString();
+
+            if (OrderType == "LENSE")
+            {
+                InvReceiptContactLense rpt = new InvReceiptContactLense();
+                rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + ReceiptNumber + "'";
+                rpt.PrintToPrinter(1, false, 1, 1);
+                new UI_REPORT_VIEWER(rpt).Show();
+                rpt.PrintToPrinter(1, false, 1, 1);
+            }
+            else if(OrderType == "SPEC")
+            {
+                InvReceipt rpt = new InvReceipt();
+                rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + ReceiptNumber + "'";
+                rpt.PrintToPrinter(1, false, 1, 1);
+                new UI_REPORT_VIEWER(rpt).Show();
+                rpt.PrintToPrinter(1, false, 1, 1);
+
+
+            }
+
         }
 
         private void GridPayment_CellContentClick(object sender, DataGridViewCellEventArgs e)
