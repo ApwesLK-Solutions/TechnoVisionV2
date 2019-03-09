@@ -147,6 +147,8 @@ namespace TechnoVision.view
                 File.SetAttributes(spectacles, FileAttributes.Hidden);
                 File.SetAttributes(testers, FileAttributes.Hidden);
                 File.SetAttributes(users, FileAttributes.Hidden);
+
+                CommonFunctions.ShowSuccess(this,"successfully backup Data");
                
                /* ICSharpCode.SharpZipLib.Zip.ZipFile zip = new ICSharpCode.SharpZipLib.Zip.ZipFile(zipfile);
 
@@ -192,7 +194,7 @@ namespace TechnoVision.view
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                CommonFunctions.ShowError(this, ex.ToString());
             }
            
             

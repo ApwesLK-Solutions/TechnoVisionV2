@@ -30,14 +30,7 @@ namespace TechnoVision.view
         {
             try
             {
-                if (TxtLensesTotal.Text != "0")
-                {
-                    if (TxtBalance.Text == "0")
-                    {
-                        CommonFunctions.ShowError(this, "Please click calculate button to calcutale total");
-                    }
-                    else
-                    {
+                
                         if (TxtAdvance.Text == "" || TxtBalance.Text == "" || TxtDiscount.Text == "" || TxtLensesTotal.Text == "" || TxtOrderNo.Text == "" || TxtRemindDays.Text == "")
                         {
                             CommonFunctions.ShowError(this, "Please Complete All Fields to continue...");
@@ -51,12 +44,8 @@ namespace TechnoVision.view
                             this.Hide();
                             new UI_CONTACT_LENSE_DIAGNOSIS(this).Show();
                         }
-                    }
-                }
-                else
-                {
-                    CommonFunctions.ShowError(this, "Total cannot be Zero..!");
-                }
+                    
+                
             }
             catch (Exception ex)
             {
@@ -79,8 +68,7 @@ namespace TechnoVision.view
                 CmbPaymentMethod.SelectedIndex = 0;
                 CmbPaymentPlan.SelectedIndex = 0;
                 CmbTestedBy.SelectedIndex = 0;
-                TxtOrderNo.Text = getOrderNumber();
-                showReceiptNumber();
+                
                 DateOrderDate.MinDate = DateTime.UtcNow;
                 DateDueDate.MinDate = DateTime.UtcNow;
             }
@@ -89,7 +77,9 @@ namespace TechnoVision.view
                 CommonFunctions.ShowError(this,ex.Message.ToString());
                 CommonFunctions.WriteToErrorLog( ex.Message.ToString());
             }
-           
+            TxtOrderNo.Text = getOrderNumber();
+            showReceiptNumber();
+
         }
 
         private string getOrderNumber()
