@@ -173,7 +173,6 @@
     <Compile Include="Session.cs" />
     <Compile Include="technovisionDataSet.cs">
       <DependentUpon>technovisionDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="technovisionDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
