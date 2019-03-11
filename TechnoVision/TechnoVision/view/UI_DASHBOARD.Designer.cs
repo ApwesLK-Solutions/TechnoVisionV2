@@ -104,6 +104,7 @@
             // BtnSpectacles
             // 
             this.BtnSpectacles.ActiveControl = null;
+            this.BtnSpectacles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnSpectacles.Location = new System.Drawing.Point(3, 3);
             this.BtnSpectacles.Name = "BtnSpectacles";
             this.BtnSpectacles.Size = new System.Drawing.Size(304, 210);
@@ -121,6 +122,7 @@
             // BtnContactLenses
             // 
             this.BtnContactLenses.ActiveControl = null;
+            this.BtnContactLenses.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnContactLenses.Location = new System.Drawing.Point(313, 3);
             this.BtnContactLenses.Name = "BtnContactLenses";
             this.BtnContactLenses.Size = new System.Drawing.Size(304, 210);
@@ -138,6 +140,7 @@
             // BtnReports
             // 
             this.BtnReports.ActiveControl = null;
+            this.BtnReports.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnReports.Location = new System.Drawing.Point(623, 3);
             this.BtnReports.Name = "BtnReports";
             this.BtnReports.Size = new System.Drawing.Size(304, 210);
@@ -155,6 +158,7 @@
             // BtnManageCustomer
             // 
             this.BtnManageCustomer.ActiveControl = null;
+            this.BtnManageCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnManageCustomer.Location = new System.Drawing.Point(933, 3);
             this.BtnManageCustomer.Name = "BtnManageCustomer";
             this.BtnManageCustomer.Size = new System.Drawing.Size(304, 210);
@@ -172,9 +176,10 @@
             // BtnManageFrames
             // 
             this.BtnManageFrames.ActiveControl = null;
+            this.BtnManageFrames.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnManageFrames.Location = new System.Drawing.Point(1243, 3);
             this.BtnManageFrames.Name = "BtnManageFrames";
-            this.BtnManageFrames.Size = new System.Drawing.Size(304, 210);
+            this.BtnManageFrames.Size = new System.Drawing.Size(308, 210);
             this.BtnManageFrames.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnManageFrames.TabIndex = 4;
             this.BtnManageFrames.Text = "Manage Frames";
@@ -189,6 +194,7 @@
             // BtnManageTesters
             // 
             this.BtnManageTesters.ActiveControl = null;
+            this.BtnManageTesters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnManageTesters.Location = new System.Drawing.Point(3, 219);
             this.BtnManageTesters.Name = "BtnManageTesters";
             this.BtnManageTesters.Size = new System.Drawing.Size(304, 210);
@@ -206,6 +212,7 @@
             // BtnManageBranches
             // 
             this.BtnManageBranches.ActiveControl = null;
+            this.BtnManageBranches.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnManageBranches.Location = new System.Drawing.Point(313, 219);
             this.BtnManageBranches.Name = "BtnManageBranches";
             this.BtnManageBranches.Size = new System.Drawing.Size(304, 210);
@@ -223,6 +230,7 @@
             // metroTile8
             // 
             this.metroTile8.ActiveControl = null;
+            this.metroTile8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTile8.Location = new System.Drawing.Point(623, 219);
             this.metroTile8.Name = "metroTile8";
             this.metroTile8.Size = new System.Drawing.Size(304, 210);
@@ -240,6 +248,7 @@
             // metroTile9
             // 
             this.metroTile9.ActiveControl = null;
+            this.metroTile9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTile9.Location = new System.Drawing.Point(933, 219);
             this.metroTile9.Name = "metroTile9";
             this.metroTile9.Size = new System.Drawing.Size(304, 210);
@@ -257,9 +266,10 @@
             // BtnSystemUsers
             // 
             this.BtnSystemUsers.ActiveControl = null;
+            this.BtnSystemUsers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnSystemUsers.Location = new System.Drawing.Point(1243, 219);
             this.BtnSystemUsers.Name = "BtnSystemUsers";
-            this.BtnSystemUsers.Size = new System.Drawing.Size(304, 210);
+            this.BtnSystemUsers.Size = new System.Drawing.Size(308, 210);
             this.BtnSystemUsers.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnSystemUsers.TabIndex = 9;
             this.BtnSystemUsers.Text = "Manage System User";
@@ -371,6 +381,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = global::TechnoVision.Properties.Resources.logo1;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";

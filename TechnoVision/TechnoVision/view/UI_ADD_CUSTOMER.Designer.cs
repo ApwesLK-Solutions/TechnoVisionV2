@@ -69,9 +69,9 @@
             // 
             // 
             this.TxtCustomerName.CustomButton.Image = null;
-            this.TxtCustomerName.CustomButton.Location = new System.Drawing.Point(743, 2);
+            this.TxtCustomerName.CustomButton.Location = new System.Drawing.Point(737, 1);
             this.TxtCustomerName.CustomButton.Name = "";
-            this.TxtCustomerName.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtCustomerName.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtCustomerName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtCustomerName.CustomButton.TabIndex = 1;
             this.TxtCustomerName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -89,7 +89,7 @@
             this.TxtCustomerName.SelectionLength = 0;
             this.TxtCustomerName.SelectionStart = 0;
             this.TxtCustomerName.ShortcutsEnabled = true;
-            this.TxtCustomerName.Size = new System.Drawing.Size(771, 30);
+            this.TxtCustomerName.Size = new System.Drawing.Size(771, 35);
             this.TxtCustomerName.TabIndex = 1;
             this.TxtCustomerName.UseSelectable = true;
             this.TxtCustomerName.WaterMark = "Enter Name...";
@@ -138,9 +138,9 @@
             // 
             // 
             this.TxtEmail.CustomButton.Image = null;
-            this.TxtEmail.CustomButton.Location = new System.Drawing.Point(743, 2);
+            this.TxtEmail.CustomButton.Location = new System.Drawing.Point(737, 1);
             this.TxtEmail.CustomButton.Name = "";
-            this.TxtEmail.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtEmail.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtEmail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtEmail.CustomButton.TabIndex = 1;
             this.TxtEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -158,7 +158,7 @@
             this.TxtEmail.SelectionLength = 0;
             this.TxtEmail.SelectionStart = 0;
             this.TxtEmail.ShortcutsEnabled = true;
-            this.TxtEmail.Size = new System.Drawing.Size(771, 30);
+            this.TxtEmail.Size = new System.Drawing.Size(771, 35);
             this.TxtEmail.TabIndex = 3;
             this.TxtEmail.UseSelectable = true;
             this.TxtEmail.WaterMark = "Enter E-mail address...";
@@ -171,9 +171,9 @@
             // 
             // 
             this.TxtContactNumber.CustomButton.Image = null;
-            this.TxtContactNumber.CustomButton.Location = new System.Drawing.Point(238, 2);
+            this.TxtContactNumber.CustomButton.Location = new System.Drawing.Point(232, 1);
             this.TxtContactNumber.CustomButton.Name = "";
-            this.TxtContactNumber.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtContactNumber.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtContactNumber.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtContactNumber.CustomButton.TabIndex = 1;
             this.TxtContactNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -191,7 +191,7 @@
             this.TxtContactNumber.SelectionLength = 0;
             this.TxtContactNumber.SelectionStart = 0;
             this.TxtContactNumber.ShortcutsEnabled = true;
-            this.TxtContactNumber.Size = new System.Drawing.Size(266, 30);
+            this.TxtContactNumber.Size = new System.Drawing.Size(266, 35);
             this.TxtContactNumber.TabIndex = 4;
             this.TxtContactNumber.UseSelectable = true;
             this.TxtContactNumber.WaterMark = "Enter Contact number...";
@@ -206,9 +206,9 @@
             // 
             // 
             this.TxtAge.CustomButton.Image = null;
-            this.TxtAge.CustomButton.Location = new System.Drawing.Point(258, 2);
+            this.TxtAge.CustomButton.Location = new System.Drawing.Point(252, 1);
             this.TxtAge.CustomButton.Name = "";
-            this.TxtAge.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtAge.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtAge.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtAge.CustomButton.TabIndex = 1;
             this.TxtAge.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -226,7 +226,7 @@
             this.TxtAge.SelectionLength = 0;
             this.TxtAge.SelectionStart = 0;
             this.TxtAge.ShortcutsEnabled = true;
-            this.TxtAge.Size = new System.Drawing.Size(286, 30);
+            this.TxtAge.Size = new System.Drawing.Size(286, 35);
             this.TxtAge.TabIndex = 6;
             this.TxtAge.UseSelectable = true;
             this.TxtAge.WaterMark = "Enter Age...";
@@ -240,9 +240,9 @@
             // 
             // 
             this.TxtProffession.CustomButton.Image = null;
-            this.TxtProffession.CustomButton.Location = new System.Drawing.Point(238, 2);
+            this.TxtProffession.CustomButton.Location = new System.Drawing.Point(232, 1);
             this.TxtProffession.CustomButton.Name = "";
-            this.TxtProffession.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtProffession.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtProffession.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtProffession.CustomButton.TabIndex = 1;
             this.TxtProffession.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -260,7 +260,7 @@
             this.TxtProffession.SelectionLength = 0;
             this.TxtProffession.SelectionStart = 0;
             this.TxtProffession.ShortcutsEnabled = true;
-            this.TxtProffession.Size = new System.Drawing.Size(266, 30);
+            this.TxtProffession.Size = new System.Drawing.Size(266, 35);
             this.TxtProffession.TabIndex = 5;
             this.TxtProffession.UseSelectable = true;
             this.TxtProffession.WaterMark = "Enter profession...";

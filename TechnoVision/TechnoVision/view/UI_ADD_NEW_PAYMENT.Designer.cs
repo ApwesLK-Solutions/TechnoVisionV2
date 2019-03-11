@@ -141,7 +141,7 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel5.Location = new System.Drawing.Point(45, 243);
+            this.metroLabel5.Location = new System.Drawing.Point(45, 244);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(122, 20);
             this.metroLabel5.TabIndex = 92;
@@ -163,7 +163,7 @@
             this.TxtAmount.CustomButton.Visible = false;
             this.TxtAmount.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtAmount.Lines = new string[0];
-            this.TxtAmount.Location = new System.Drawing.Point(173, 243);
+            this.TxtAmount.Location = new System.Drawing.Point(173, 244);
             this.TxtAmount.MaxLength = 32767;
             this.TxtAmount.Name = "TxtAmount";
             this.TxtAmount.PasswordChar = '\0';
@@ -185,9 +185,9 @@
             this.BtnAddPayment.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnAddPayment.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnAddPayment.Highlight = true;
-            this.BtnAddPayment.Location = new System.Drawing.Point(174, 310);
+            this.BtnAddPayment.Location = new System.Drawing.Point(109, 311);
             this.BtnAddPayment.Name = "BtnAddPayment";
-            this.BtnAddPayment.Size = new System.Drawing.Size(177, 45);
+            this.BtnAddPayment.Size = new System.Drawing.Size(261, 45);
             this.BtnAddPayment.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnAddPayment.TabIndex = 98;
             this.BtnAddPayment.Text = "Add New Payment";
@@ -201,9 +201,9 @@
             // 
             this.groupBox2.Controls.Add(this.GridPayementHistory);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(483, 72);
+            this.groupBox2.Location = new System.Drawing.Point(472, 63);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(632, 331);
+            this.groupBox2.Size = new System.Drawing.Size(644, 348);
             this.groupBox2.TabIndex = 99;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Payment History";
@@ -247,7 +247,7 @@
             this.GridPayementHistory.EnableHeadersVisualStyles = false;
             this.GridPayementHistory.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridPayementHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GridPayementHistory.Location = new System.Drawing.Point(7, 26);
+            this.GridPayementHistory.Location = new System.Drawing.Point(9, 26);
             this.GridPayementHistory.Name = "GridPayementHistory";
             this.GridPayementHistory.ReadOnly = true;
             this.GridPayementHistory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;

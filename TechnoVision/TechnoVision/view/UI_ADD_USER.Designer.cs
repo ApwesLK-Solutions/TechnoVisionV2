@@ -35,7 +35,6 @@
             this.TxtNic = new MetroFramework.Controls.MetroTextBox();
             this.TxtContactNumber = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
@@ -66,7 +65,7 @@
             this.TxtUsername.CustomButton.Visible = false;
             this.TxtUsername.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtUsername.Lines = new string[0];
-            this.TxtUsername.Location = new System.Drawing.Point(168, 104);
+            this.TxtUsername.Location = new System.Drawing.Point(162, 83);
             this.TxtUsername.MaxLength = 32767;
             this.TxtUsername.Name = "TxtUsername";
             this.TxtUsername.PasswordChar = '\0';
@@ -99,7 +98,7 @@
             this.TxtPassword.CustomButton.Visible = false;
             this.TxtPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtPassword.Lines = new string[0];
-            this.TxtPassword.Location = new System.Drawing.Point(168, 142);
+            this.TxtPassword.Location = new System.Drawing.Point(162, 126);
             this.TxtPassword.MaxLength = 32767;
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '●';
@@ -133,7 +132,7 @@
             this.TxtFullName.CustomButton.Visible = false;
             this.TxtFullName.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtFullName.Lines = new string[0];
-            this.TxtFullName.Location = new System.Drawing.Point(168, 178);
+            this.TxtFullName.Location = new System.Drawing.Point(162, 169);
             this.TxtFullName.MaxLength = 32767;
             this.TxtFullName.Name = "TxtFullName";
             this.TxtFullName.PasswordChar = '\0';
@@ -166,7 +165,7 @@
             this.TxtNic.CustomButton.Visible = false;
             this.TxtNic.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtNic.Lines = new string[0];
-            this.TxtNic.Location = new System.Drawing.Point(168, 214);
+            this.TxtNic.Location = new System.Drawing.Point(161, 212);
             this.TxtNic.MaxLength = 32767;
             this.TxtNic.Name = "TxtNic";
             this.TxtNic.PasswordChar = '\0';
@@ -199,7 +198,7 @@
             this.TxtContactNumber.CustomButton.Visible = false;
             this.TxtContactNumber.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtContactNumber.Lines = new string[0];
-            this.TxtContactNumber.Location = new System.Drawing.Point(168, 250);
+            this.TxtContactNumber.Location = new System.Drawing.Point(161, 255);
             this.TxtContactNumber.MaxLength = 32767;
             this.TxtContactNumber.Name = "TxtContactNumber";
             this.TxtContactNumber.PasswordChar = '\0';
@@ -221,27 +220,17 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(39, 109);
+            this.metroLabel1.Location = new System.Drawing.Point(27, 88);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(75, 20);
             this.metroLabel1.TabIndex = 1;
             this.metroLabel1.Text = "Username";
             // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(39, 109);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(75, 20);
-            this.metroLabel2.TabIndex = 1;
-            this.metroLabel2.Text = "Username";
-            // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel3.Location = new System.Drawing.Point(39, 147);
+            this.metroLabel3.Location = new System.Drawing.Point(27, 131);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(70, 20);
             this.metroLabel3.TabIndex = 1;
@@ -251,7 +240,7 @@
             // 
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel4.Location = new System.Drawing.Point(39, 183);
+            this.metroLabel4.Location = new System.Drawing.Point(27, 174);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(76, 20);
             this.metroLabel4.TabIndex = 1;
@@ -261,7 +250,7 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel5.Location = new System.Drawing.Point(39, 219);
+            this.metroLabel5.Location = new System.Drawing.Point(27, 217);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(33, 20);
             this.metroLabel5.TabIndex = 1;
@@ -271,7 +260,7 @@
             // 
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel6.Location = new System.Drawing.Point(39, 255);
+            this.metroLabel6.Location = new System.Drawing.Point(27, 260);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(118, 20);
             this.metroLabel6.TabIndex = 1;
@@ -281,7 +270,7 @@
             // 
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel7.Location = new System.Drawing.Point(39, 291);
+            this.metroLabel7.Location = new System.Drawing.Point(27, 303);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(54, 20);
             this.metroLabel7.TabIndex = 1;
@@ -293,7 +282,7 @@
             this.CmbBranch.DisplayMember = "BranchName";
             this.CmbBranch.FormattingEnabled = true;
             this.CmbBranch.ItemHeight = 24;
-            this.CmbBranch.Location = new System.Drawing.Point(168, 286);
+            this.CmbBranch.Location = new System.Drawing.Point(161, 298);
             this.CmbBranch.Name = "CmbBranch";
             this.CmbBranch.Size = new System.Drawing.Size(400, 30);
             this.CmbBranch.TabIndex = 5;
@@ -317,9 +306,9 @@
             this.BtnAddUser.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnAddUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnAddUser.Highlight = true;
-            this.BtnAddUser.Location = new System.Drawing.Point(223, 336);
+            this.BtnAddUser.Location = new System.Drawing.Point(177, 346);
             this.BtnAddUser.Name = "BtnAddUser";
-            this.BtnAddUser.Size = new System.Drawing.Size(181, 45);
+            this.BtnAddUser.Size = new System.Drawing.Size(233, 45);
             this.BtnAddUser.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnAddUser.TabIndex = 6;
             this.BtnAddUser.Text = "Add System User";
@@ -337,7 +326,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 404);
+            this.ClientSize = new System.Drawing.Size(584, 419);
             this.Controls.Add(this.BtnAddUser);
             this.Controls.Add(this.CmbBranch);
             this.Controls.Add(this.metroLabel7);
@@ -345,7 +334,6 @@
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
-            this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.TxtContactNumber);
             this.Controls.Add(this.TxtNic);
@@ -373,7 +361,6 @@
         private MetroFramework.Controls.MetroTextBox TxtNic;
         private MetroFramework.Controls.MetroTextBox TxtContactNumber;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel metroLabel5;

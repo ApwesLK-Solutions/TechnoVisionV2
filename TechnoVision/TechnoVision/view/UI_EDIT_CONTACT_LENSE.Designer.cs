@@ -135,7 +135,7 @@
             this.groupBox1.Controls.Add(this.metroLabel13);
             this.groupBox1.Controls.Add(this.metroLabel2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(24, 64);
+            this.groupBox1.Location = new System.Drawing.Point(40, 64);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1042, 199);
             this.groupBox1.TabIndex = 41;
@@ -146,7 +146,7 @@
             // 
             this.BtnCalculate.ActiveControl = null;
             this.BtnCalculate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCalculate.Location = new System.Drawing.Point(905, 148);
+            this.BtnCalculate.Location = new System.Drawing.Point(935, 151);
             this.BtnCalculate.Name = "BtnCalculate";
             this.BtnCalculate.Size = new System.Drawing.Size(38, 36);
             this.BtnCalculate.Style = MetroFramework.MetroColorStyle.Green;
@@ -212,7 +212,7 @@
             this.TxtBalance.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtBalance.Lines = new string[] {
         "0"};
-            this.TxtBalance.Location = new System.Drawing.Point(653, 148);
+            this.TxtBalance.Location = new System.Drawing.Point(683, 151);
             this.TxtBalance.MaxLength = 32767;
             this.TxtBalance.Name = "TxtBalance";
             this.TxtBalance.PasswordChar = '\0';
@@ -248,7 +248,7 @@
             this.TxtAdvance.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtAdvance.Lines = new string[] {
         "0"};
-            this.TxtAdvance.Location = new System.Drawing.Point(653, 104);
+            this.TxtAdvance.Location = new System.Drawing.Point(683, 107);
             this.TxtAdvance.MaxLength = 32767;
             this.TxtAdvance.Name = "TxtAdvance";
             this.TxtAdvance.PasswordChar = '\0';
@@ -317,7 +317,7 @@
             this.TxtDiscount.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtDiscount.Lines = new string[] {
         "0"};
-            this.TxtDiscount.Location = new System.Drawing.Point(653, 63);
+            this.TxtDiscount.Location = new System.Drawing.Point(683, 66);
             this.TxtDiscount.MaxLength = 32767;
             this.TxtDiscount.Name = "TxtDiscount";
             this.TxtDiscount.PasswordChar = '\0';
@@ -353,7 +353,7 @@
             this.TxtLensesTotal.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLensesTotal.Lines = new string[] {
         "0"};
-            this.TxtLensesTotal.Location = new System.Drawing.Point(653, 23);
+            this.TxtLensesTotal.Location = new System.Drawing.Point(683, 26);
             this.TxtLensesTotal.MaxLength = 32767;
             this.TxtLensesTotal.Name = "TxtLensesTotal";
             this.TxtLensesTotal.PasswordChar = '\0';
@@ -408,7 +408,7 @@
             // 
             this.metroLabel12.AutoSize = true;
             this.metroLabel12.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel12.Location = new System.Drawing.Point(519, 156);
+            this.metroLabel12.Location = new System.Drawing.Point(512, 156);
             this.metroLabel12.Name = "metroLabel12";
             this.metroLabel12.Size = new System.Drawing.Size(61, 20);
             this.metroLabel12.TabIndex = 74;
@@ -418,7 +418,7 @@
             // 
             this.metroLabel14.AutoSize = true;
             this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel14.Location = new System.Drawing.Point(519, 71);
+            this.metroLabel14.Location = new System.Drawing.Point(512, 71);
             this.metroLabel14.Name = "metroLabel14";
             this.metroLabel14.Size = new System.Drawing.Size(67, 20);
             this.metroLabel14.TabIndex = 73;
@@ -428,7 +428,7 @@
             // 
             this.metroLabel11.AutoSize = true;
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel11.Location = new System.Drawing.Point(519, 112);
+            this.metroLabel11.Location = new System.Drawing.Point(512, 112);
             this.metroLabel11.Name = "metroLabel11";
             this.metroLabel11.Size = new System.Drawing.Size(66, 20);
             this.metroLabel11.TabIndex = 72;
@@ -438,7 +438,7 @@
             // 
             this.metroLabel10.AutoSize = true;
             this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel10.Location = new System.Drawing.Point(519, 31);
+            this.metroLabel10.Location = new System.Drawing.Point(512, 31);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(89, 20);
             this.metroLabel10.TabIndex = 71;
@@ -448,7 +448,7 @@
             // 
             this.metroLabel9.AutoSize = true;
             this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel9.Location = new System.Drawing.Point(67, 148);
+            this.metroLabel9.Location = new System.Drawing.Point(30, 148);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(97, 20);
             this.metroLabel9.TabIndex = 70;
@@ -458,7 +458,7 @@
             // 
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel8.Location = new System.Drawing.Point(67, 112);
+            this.metroLabel8.Location = new System.Drawing.Point(30, 112);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(121, 20);
             this.metroLabel8.TabIndex = 77;
@@ -468,7 +468,7 @@
             // 
             this.metroLabel13.AutoSize = true;
             this.metroLabel13.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel13.Location = new System.Drawing.Point(67, 71);
+            this.metroLabel13.Location = new System.Drawing.Point(30, 71);
             this.metroLabel13.Name = "metroLabel13";
             this.metroLabel13.Size = new System.Drawing.Size(117, 20);
             this.metroLabel13.TabIndex = 78;
@@ -478,7 +478,7 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(67, 31);
+            this.metroLabel2.Location = new System.Drawing.Point(30, 31);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(71, 20);
             this.metroLabel2.TabIndex = 94;
@@ -543,7 +543,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(24, 270);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1042, 327);
+            this.groupBox2.Size = new System.Drawing.Size(1074, 327);
             this.groupBox2.TabIndex = 42;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Diagnosis";
@@ -566,7 +566,7 @@
             this.TxtRemarks.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "Remarks", true));
             this.TxtRemarks.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRemarks.Lines = new string[0];
-            this.TxtRemarks.Location = new System.Drawing.Point(84, 211);
+            this.TxtRemarks.Location = new System.Drawing.Point(117, 213);
             this.TxtRemarks.MaxLength = 32767;
             this.TxtRemarks.Multiline = true;
             this.TxtRemarks.Name = "TxtRemarks";
@@ -610,7 +610,7 @@
             this.TxtBlindTest.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "BlinkTest", true));
             this.TxtBlindTest.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtBlindTest.Lines = new string[0];
-            this.TxtBlindTest.Location = new System.Drawing.Point(819, 160);
+            this.TxtBlindTest.Location = new System.Drawing.Point(852, 162);
             this.TxtBlindTest.MaxLength = 32767;
             this.TxtBlindTest.Name = "TxtBlindTest";
             this.TxtBlindTest.PasswordChar = '\0';
@@ -643,7 +643,7 @@
             this.TxtKReading.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "KReading", true));
             this.TxtKReading.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtKReading.Lines = new string[0];
-            this.TxtKReading.Location = new System.Drawing.Point(819, 119);
+            this.TxtKReading.Location = new System.Drawing.Point(852, 121);
             this.TxtKReading.MaxLength = 32767;
             this.TxtKReading.Name = "TxtKReading";
             this.TxtKReading.PasswordChar = '\0';
@@ -662,7 +662,7 @@
             // 
             this.metroLabel31.AutoSize = true;
             this.metroLabel31.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel31.Location = new System.Drawing.Point(721, 167);
+            this.metroLabel31.Location = new System.Drawing.Point(746, 169);
             this.metroLabel31.Name = "metroLabel31";
             this.metroLabel31.Size = new System.Drawing.Size(73, 20);
             this.metroLabel31.TabIndex = 69;
@@ -672,7 +672,7 @@
             // 
             this.metroLabel32.AutoSize = true;
             this.metroLabel32.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel32.Location = new System.Drawing.Point(719, 126);
+            this.metroLabel32.Location = new System.Drawing.Point(746, 128);
             this.metroLabel32.Name = "metroLabel32";
             this.metroLabel32.Size = new System.Drawing.Size(87, 20);
             this.metroLabel32.TabIndex = 70;
@@ -696,7 +696,7 @@
             this.TxtOverRefract.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OverRefract", true));
             this.TxtOverRefract.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtOverRefract.Lines = new string[0];
-            this.TxtOverRefract.Location = new System.Drawing.Point(819, 78);
+            this.TxtOverRefract.Location = new System.Drawing.Point(852, 80);
             this.TxtOverRefract.MaxLength = 32767;
             this.TxtOverRefract.Name = "TxtOverRefract";
             this.TxtOverRefract.PasswordChar = '\0';
@@ -728,7 +728,7 @@
             this.TxtLeftDeze.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "LeftDesz", true));
             this.TxtLeftDeze.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftDeze.Lines = new string[0];
-            this.TxtLeftDeze.Location = new System.Drawing.Point(622, 158);
+            this.TxtLeftDeze.Location = new System.Drawing.Point(655, 160);
             this.TxtLeftDeze.MaxLength = 32767;
             this.TxtLeftDeze.Name = "TxtLeftDeze";
             this.TxtLeftDeze.PasswordChar = '\0';
@@ -761,7 +761,7 @@
             this.TxtTrailLense.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "TrailLense", true));
             this.TxtTrailLense.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtTrailLense.Lines = new string[0];
-            this.TxtTrailLense.Location = new System.Drawing.Point(819, 37);
+            this.TxtTrailLense.Location = new System.Drawing.Point(852, 39);
             this.TxtTrailLense.MaxLength = 32767;
             this.TxtTrailLense.Name = "TxtTrailLense";
             this.TxtTrailLense.PasswordChar = '\0';
@@ -780,7 +780,7 @@
             // 
             this.metroLabel29.AutoSize = true;
             this.metroLabel29.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel29.Location = new System.Drawing.Point(710, 85);
+            this.metroLabel29.Location = new System.Drawing.Point(746, 87);
             this.metroLabel29.Name = "metroLabel29";
             this.metroLabel29.Size = new System.Drawing.Size(91, 20);
             this.metroLabel29.TabIndex = 27;
@@ -803,7 +803,7 @@
             this.TxtLeftDia.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "LeftDia", true));
             this.TxtLeftDia.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftDia.Lines = new string[0];
-            this.TxtLeftDia.Location = new System.Drawing.Point(547, 158);
+            this.TxtLeftDia.Location = new System.Drawing.Point(580, 160);
             this.TxtLeftDia.MaxLength = 32767;
             this.TxtLeftDia.Name = "TxtLeftDia";
             this.TxtLeftDia.PasswordChar = '\0';
@@ -822,7 +822,7 @@
             // 
             this.metroLabel30.AutoSize = true;
             this.metroLabel30.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel30.Location = new System.Drawing.Point(710, 44);
+            this.metroLabel30.Location = new System.Drawing.Point(746, 46);
             this.metroLabel30.Name = "metroLabel30";
             this.metroLabel30.Size = new System.Drawing.Size(78, 20);
             this.metroLabel30.TabIndex = 28;
@@ -845,7 +845,7 @@
             this.TxtLeftPow.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "LeftPow", true));
             this.TxtLeftPow.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftPow.Lines = new string[0];
-            this.TxtLeftPow.Location = new System.Drawing.Point(472, 158);
+            this.TxtLeftPow.Location = new System.Drawing.Point(505, 160);
             this.TxtLeftPow.MaxLength = 32767;
             this.TxtLeftPow.Name = "TxtLeftPow";
             this.TxtLeftPow.PasswordChar = '\0';
@@ -877,7 +877,7 @@
             this.TxtLeftBc.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "LeftBc", true));
             this.TxtLeftBc.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftBc.Lines = new string[0];
-            this.TxtLeftBc.Location = new System.Drawing.Point(397, 158);
+            this.TxtLeftBc.Location = new System.Drawing.Point(430, 160);
             this.TxtLeftBc.MaxLength = 32767;
             this.TxtLeftBc.Name = "TxtLeftBc";
             this.TxtLeftBc.PasswordChar = '\0';
@@ -909,7 +909,7 @@
             this.TxtRightDeze.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "RightDesz", true));
             this.TxtRightDeze.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightDeze.Lines = new string[0];
-            this.TxtRightDeze.Location = new System.Drawing.Point(309, 158);
+            this.TxtRightDeze.Location = new System.Drawing.Point(342, 160);
             this.TxtRightDeze.MaxLength = 32767;
             this.TxtRightDeze.Name = "TxtRightDeze";
             this.TxtRightDeze.PasswordChar = '\0';
@@ -941,7 +941,7 @@
             this.TxtRightDia.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "RightDia", true));
             this.TxtRightDia.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightDia.Lines = new string[0];
-            this.TxtRightDia.Location = new System.Drawing.Point(234, 158);
+            this.TxtRightDia.Location = new System.Drawing.Point(267, 160);
             this.TxtRightDia.MaxLength = 32767;
             this.TxtRightDia.Name = "TxtRightDia";
             this.TxtRightDia.PasswordChar = '\0';
@@ -973,7 +973,7 @@
             this.TxtRightPow.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "RightPow", true));
             this.TxtRightPow.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightPow.Lines = new string[0];
-            this.TxtRightPow.Location = new System.Drawing.Point(159, 158);
+            this.TxtRightPow.Location = new System.Drawing.Point(192, 160);
             this.TxtRightPow.MaxLength = 32767;
             this.TxtRightPow.Name = "TxtRightPow";
             this.TxtRightPow.PasswordChar = '\0';
@@ -1005,7 +1005,7 @@
             this.TxtRightBc.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "RightBc", true));
             this.TxtRightBc.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightBc.Lines = new string[0];
-            this.TxtRightBc.Location = new System.Drawing.Point(84, 158);
+            this.TxtRightBc.Location = new System.Drawing.Point(117, 160);
             this.TxtRightBc.MaxLength = 32767;
             this.TxtRightBc.Name = "TxtRightBc";
             this.TxtRightBc.PasswordChar = '\0';
@@ -1037,7 +1037,7 @@
             this.TxtRightPresentSph.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentRightSph", true));
             this.TxtRightPresentSph.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightPresentSph.Lines = new string[0];
-            this.TxtRightPresentSph.Location = new System.Drawing.Point(84, 97);
+            this.TxtRightPresentSph.Location = new System.Drawing.Point(117, 99);
             this.TxtRightPresentSph.MaxLength = 32767;
             this.TxtRightPresentSph.Name = "TxtRightPresentSph";
             this.TxtRightPresentSph.PasswordChar = '\0';
@@ -1069,7 +1069,7 @@
             this.TxtRightPresentCyl.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentRightCyl", true));
             this.TxtRightPresentCyl.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightPresentCyl.Lines = new string[0];
-            this.TxtRightPresentCyl.Location = new System.Drawing.Point(159, 97);
+            this.TxtRightPresentCyl.Location = new System.Drawing.Point(192, 99);
             this.TxtRightPresentCyl.MaxLength = 32767;
             this.TxtRightPresentCyl.Name = "TxtRightPresentCyl";
             this.TxtRightPresentCyl.PasswordChar = '\0';
@@ -1101,7 +1101,7 @@
             this.TxtRightPresentAxis.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentRightAxis", true));
             this.TxtRightPresentAxis.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightPresentAxis.Lines = new string[0];
-            this.TxtRightPresentAxis.Location = new System.Drawing.Point(234, 97);
+            this.TxtRightPresentAxis.Location = new System.Drawing.Point(267, 99);
             this.TxtRightPresentAxis.MaxLength = 32767;
             this.TxtRightPresentAxis.Name = "TxtRightPresentAxis";
             this.TxtRightPresentAxis.PasswordChar = '\0';
@@ -1133,7 +1133,7 @@
             this.TxtRightPresentAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentRightAdd", true));
             this.TxtRightPresentAdd.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightPresentAdd.Lines = new string[0];
-            this.TxtRightPresentAdd.Location = new System.Drawing.Point(309, 97);
+            this.TxtRightPresentAdd.Location = new System.Drawing.Point(342, 99);
             this.TxtRightPresentAdd.MaxLength = 32767;
             this.TxtRightPresentAdd.Name = "TxtRightPresentAdd";
             this.TxtRightPresentAdd.PasswordChar = '\0';
@@ -1165,7 +1165,7 @@
             this.TxtLeftPresentSph.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentLeftSph", true));
             this.TxtLeftPresentSph.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftPresentSph.Lines = new string[0];
-            this.TxtLeftPresentSph.Location = new System.Drawing.Point(397, 97);
+            this.TxtLeftPresentSph.Location = new System.Drawing.Point(430, 99);
             this.TxtLeftPresentSph.MaxLength = 32767;
             this.TxtLeftPresentSph.Name = "TxtLeftPresentSph";
             this.TxtLeftPresentSph.PasswordChar = '\0';
@@ -1197,7 +1197,7 @@
             this.TxtLeftPresentCyl.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentLeftCyl", true));
             this.TxtLeftPresentCyl.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftPresentCyl.Lines = new string[0];
-            this.TxtLeftPresentCyl.Location = new System.Drawing.Point(472, 97);
+            this.TxtLeftPresentCyl.Location = new System.Drawing.Point(505, 99);
             this.TxtLeftPresentCyl.MaxLength = 32767;
             this.TxtLeftPresentCyl.Name = "TxtLeftPresentCyl";
             this.TxtLeftPresentCyl.PasswordChar = '\0';
@@ -1229,7 +1229,7 @@
             this.TxtLeftPresentAxis.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentLeftAxis", true));
             this.TxtLeftPresentAxis.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftPresentAxis.Lines = new string[0];
-            this.TxtLeftPresentAxis.Location = new System.Drawing.Point(547, 97);
+            this.TxtLeftPresentAxis.Location = new System.Drawing.Point(580, 99);
             this.TxtLeftPresentAxis.MaxLength = 32767;
             this.TxtLeftPresentAxis.Name = "TxtLeftPresentAxis";
             this.TxtLeftPresentAxis.PasswordChar = '\0';
@@ -1261,7 +1261,7 @@
             this.TxtLeftPresentAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "PresentLeftAdd", true));
             this.TxtLeftPresentAdd.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftPresentAdd.Lines = new string[0];
-            this.TxtLeftPresentAdd.Location = new System.Drawing.Point(622, 97);
+            this.TxtLeftPresentAdd.Location = new System.Drawing.Point(655, 99);
             this.TxtLeftPresentAdd.MaxLength = 32767;
             this.TxtLeftPresentAdd.Name = "TxtLeftPresentAdd";
             this.TxtLeftPresentAdd.PasswordChar = '\0';
@@ -1293,7 +1293,7 @@
             this.TxtLeftOldAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldLeftAdd", true));
             this.TxtLeftOldAdd.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftOldAdd.Lines = new string[0];
-            this.TxtLeftOldAdd.Location = new System.Drawing.Point(622, 60);
+            this.TxtLeftOldAdd.Location = new System.Drawing.Point(655, 62);
             this.TxtLeftOldAdd.MaxLength = 32767;
             this.TxtLeftOldAdd.Name = "TxtLeftOldAdd";
             this.TxtLeftOldAdd.PasswordChar = '\0';
@@ -1325,7 +1325,7 @@
             this.TxtLeftOldAxis.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldLeftAxis", true));
             this.TxtLeftOldAxis.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftOldAxis.Lines = new string[0];
-            this.TxtLeftOldAxis.Location = new System.Drawing.Point(547, 60);
+            this.TxtLeftOldAxis.Location = new System.Drawing.Point(580, 62);
             this.TxtLeftOldAxis.MaxLength = 32767;
             this.TxtLeftOldAxis.Name = "TxtLeftOldAxis";
             this.TxtLeftOldAxis.PasswordChar = '\0';
@@ -1357,7 +1357,7 @@
             this.TxtLeftOldCyl.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldLeftCyl", true));
             this.TxtLeftOldCyl.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftOldCyl.Lines = new string[0];
-            this.TxtLeftOldCyl.Location = new System.Drawing.Point(472, 60);
+            this.TxtLeftOldCyl.Location = new System.Drawing.Point(505, 62);
             this.TxtLeftOldCyl.MaxLength = 32767;
             this.TxtLeftOldCyl.Name = "TxtLeftOldCyl";
             this.TxtLeftOldCyl.PasswordChar = '\0';
@@ -1389,7 +1389,7 @@
             this.TxtLeftOldSph.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldLeftSph", true));
             this.TxtLeftOldSph.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLeftOldSph.Lines = new string[0];
-            this.TxtLeftOldSph.Location = new System.Drawing.Point(397, 60);
+            this.TxtLeftOldSph.Location = new System.Drawing.Point(430, 62);
             this.TxtLeftOldSph.MaxLength = 32767;
             this.TxtLeftOldSph.Name = "TxtLeftOldSph";
             this.TxtLeftOldSph.PasswordChar = '\0';
@@ -1421,7 +1421,7 @@
             this.TxtRightOldAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldRightAdd", true));
             this.TxtRightOldAdd.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightOldAdd.Lines = new string[0];
-            this.TxtRightOldAdd.Location = new System.Drawing.Point(309, 60);
+            this.TxtRightOldAdd.Location = new System.Drawing.Point(342, 62);
             this.TxtRightOldAdd.MaxLength = 32767;
             this.TxtRightOldAdd.Name = "TxtRightOldAdd";
             this.TxtRightOldAdd.PasswordChar = '\0';
@@ -1453,7 +1453,7 @@
             this.TxtRightOldAxis.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldRightAxis", true));
             this.TxtRightOldAxis.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightOldAxis.Lines = new string[0];
-            this.TxtRightOldAxis.Location = new System.Drawing.Point(234, 60);
+            this.TxtRightOldAxis.Location = new System.Drawing.Point(267, 62);
             this.TxtRightOldAxis.MaxLength = 32767;
             this.TxtRightOldAxis.Name = "TxtRightOldAxis";
             this.TxtRightOldAxis.PasswordChar = '\0';
@@ -1485,7 +1485,7 @@
             this.TxtRightOldCyl.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldRightCyl", true));
             this.TxtRightOldCyl.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightOldCyl.Lines = new string[0];
-            this.TxtRightOldCyl.Location = new System.Drawing.Point(159, 60);
+            this.TxtRightOldCyl.Location = new System.Drawing.Point(192, 62);
             this.TxtRightOldCyl.MaxLength = 32767;
             this.TxtRightOldCyl.Name = "TxtRightOldCyl";
             this.TxtRightOldCyl.PasswordChar = '\0';
@@ -1517,7 +1517,7 @@
             this.TxtRightOldSph.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contactlenseBindingSource, "OldRightSph", true));
             this.TxtRightOldSph.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRightOldSph.Lines = new string[0];
-            this.TxtRightOldSph.Location = new System.Drawing.Point(84, 60);
+            this.TxtRightOldSph.Location = new System.Drawing.Point(117, 62);
             this.TxtRightOldSph.MaxLength = 32767;
             this.TxtRightOldSph.Name = "TxtRightOldSph";
             this.TxtRightOldSph.PasswordChar = '\0';
@@ -1536,7 +1536,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(6, 104);
+            this.metroLabel1.Location = new System.Drawing.Point(13, 104);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(77, 20);
             this.metroLabel1.TabIndex = 26;
@@ -1546,7 +1546,7 @@
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel3.Location = new System.Drawing.Point(639, 37);
+            this.metroLabel3.Location = new System.Drawing.Point(672, 39);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(41, 20);
             this.metroLabel3.TabIndex = 27;
@@ -1556,7 +1556,7 @@
             // 
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel6.Location = new System.Drawing.Point(323, 37);
+            this.metroLabel6.Location = new System.Drawing.Point(356, 39);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(41, 20);
             this.metroLabel6.TabIndex = 28;
@@ -1566,7 +1566,7 @@
             // 
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel4.Location = new System.Drawing.Point(564, 37);
+            this.metroLabel4.Location = new System.Drawing.Point(597, 39);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(40, 20);
             this.metroLabel4.TabIndex = 29;
@@ -1576,7 +1576,7 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel5.Location = new System.Drawing.Point(249, 37);
+            this.metroLabel5.Location = new System.Drawing.Point(282, 39);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(40, 20);
             this.metroLabel5.TabIndex = 30;
@@ -1586,7 +1586,7 @@
             // 
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel7.Location = new System.Drawing.Point(493, 37);
+            this.metroLabel7.Location = new System.Drawing.Point(526, 39);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(33, 20);
             this.metroLabel7.TabIndex = 31;
@@ -1596,7 +1596,7 @@
             // 
             this.metroLabel15.AutoSize = true;
             this.metroLabel15.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel15.Location = new System.Drawing.Point(179, 37);
+            this.metroLabel15.Location = new System.Drawing.Point(212, 39);
             this.metroLabel15.Name = "metroLabel15";
             this.metroLabel15.Size = new System.Drawing.Size(33, 20);
             this.metroLabel15.TabIndex = 32;
@@ -1606,7 +1606,7 @@
             // 
             this.metroLabel16.AutoSize = true;
             this.metroLabel16.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel16.Location = new System.Drawing.Point(421, 135);
+            this.metroLabel16.Location = new System.Drawing.Point(454, 137);
             this.metroLabel16.Name = "metroLabel16";
             this.metroLabel16.Size = new System.Drawing.Size(27, 20);
             this.metroLabel16.TabIndex = 33;
@@ -1616,7 +1616,7 @@
             // 
             this.metroLabel18.AutoSize = true;
             this.metroLabel18.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel18.Location = new System.Drawing.Point(635, 135);
+            this.metroLabel18.Location = new System.Drawing.Point(668, 137);
             this.metroLabel18.Name = "metroLabel18";
             this.metroLabel18.Size = new System.Drawing.Size(48, 20);
             this.metroLabel18.TabIndex = 34;
@@ -1626,7 +1626,7 @@
             // 
             this.metroLabel17.AutoSize = true;
             this.metroLabel17.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel17.Location = new System.Drawing.Point(319, 136);
+            this.metroLabel17.Location = new System.Drawing.Point(352, 138);
             this.metroLabel17.Name = "metroLabel17";
             this.metroLabel17.Size = new System.Drawing.Size(48, 20);
             this.metroLabel17.TabIndex = 43;
@@ -1636,7 +1636,7 @@
             // 
             this.metroLabel19.AutoSize = true;
             this.metroLabel19.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel19.Location = new System.Drawing.Point(567, 135);
+            this.metroLabel19.Location = new System.Drawing.Point(600, 137);
             this.metroLabel19.Name = "metroLabel19";
             this.metroLabel19.Size = new System.Drawing.Size(34, 20);
             this.metroLabel19.TabIndex = 35;
@@ -1646,7 +1646,7 @@
             // 
             this.metroLabel20.AutoSize = true;
             this.metroLabel20.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel20.Location = new System.Drawing.Point(252, 136);
+            this.metroLabel20.Location = new System.Drawing.Point(285, 138);
             this.metroLabel20.Name = "metroLabel20";
             this.metroLabel20.Size = new System.Drawing.Size(34, 20);
             this.metroLabel20.TabIndex = 36;
@@ -1656,7 +1656,7 @@
             // 
             this.metroLabel21.AutoSize = true;
             this.metroLabel21.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel21.Location = new System.Drawing.Point(488, 135);
+            this.metroLabel21.Location = new System.Drawing.Point(521, 137);
             this.metroLabel21.Name = "metroLabel21";
             this.metroLabel21.Size = new System.Drawing.Size(42, 20);
             this.metroLabel21.TabIndex = 37;
@@ -1666,7 +1666,7 @@
             // 
             this.metroLabel22.AutoSize = true;
             this.metroLabel22.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel22.Location = new System.Drawing.Point(174, 136);
+            this.metroLabel22.Location = new System.Drawing.Point(207, 138);
             this.metroLabel22.Name = "metroLabel22";
             this.metroLabel22.Size = new System.Drawing.Size(42, 20);
             this.metroLabel22.TabIndex = 38;
@@ -1676,7 +1676,7 @@
             // 
             this.metroLabel23.AutoSize = true;
             this.metroLabel23.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel23.Location = new System.Drawing.Point(108, 136);
+            this.metroLabel23.Location = new System.Drawing.Point(141, 138);
             this.metroLabel23.Name = "metroLabel23";
             this.metroLabel23.Size = new System.Drawing.Size(27, 20);
             this.metroLabel23.TabIndex = 39;
@@ -1686,7 +1686,7 @@
             // 
             this.metroLabel24.AutoSize = true;
             this.metroLabel24.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel24.Location = new System.Drawing.Point(416, 37);
+            this.metroLabel24.Location = new System.Drawing.Point(449, 39);
             this.metroLabel24.Name = "metroLabel24";
             this.metroLabel24.Size = new System.Drawing.Size(36, 20);
             this.metroLabel24.TabIndex = 40;
@@ -1697,7 +1697,7 @@
             this.metroLabel25.AutoSize = true;
             this.metroLabel25.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel25.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel25.Location = new System.Drawing.Point(495, 11);
+            this.metroLabel25.Location = new System.Drawing.Point(528, 13);
             this.metroLabel25.Name = "metroLabel25";
             this.metroLabel25.Size = new System.Drawing.Size(81, 25);
             this.metroLabel25.TabIndex = 41;
@@ -1708,7 +1708,7 @@
             this.metroLabel26.AutoSize = true;
             this.metroLabel26.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel26.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel26.Location = new System.Drawing.Point(170, 11);
+            this.metroLabel26.Location = new System.Drawing.Point(203, 13);
             this.metroLabel26.Name = "metroLabel26";
             this.metroLabel26.Size = new System.Drawing.Size(94, 25);
             this.metroLabel26.TabIndex = 42;
@@ -1718,7 +1718,7 @@
             // 
             this.metroLabel27.AutoSize = true;
             this.metroLabel27.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel27.Location = new System.Drawing.Point(103, 37);
+            this.metroLabel27.Location = new System.Drawing.Point(136, 39);
             this.metroLabel27.Name = "metroLabel27";
             this.metroLabel27.Size = new System.Drawing.Size(36, 20);
             this.metroLabel27.TabIndex = 44;
@@ -1728,7 +1728,7 @@
             // 
             this.metroLabel28.AutoSize = true;
             this.metroLabel28.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel28.Location = new System.Drawing.Point(6, 67);
+            this.metroLabel28.Location = new System.Drawing.Point(13, 67);
             this.metroLabel28.Name = "metroLabel28";
             this.metroLabel28.Size = new System.Drawing.Size(53, 20);
             this.metroLabel28.TabIndex = 25;
@@ -1738,7 +1738,7 @@
             // 
             this.metroLabel34.AutoSize = true;
             this.metroLabel34.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel34.Location = new System.Drawing.Point(56, 638);
+            this.metroLabel34.Location = new System.Drawing.Point(283, 635);
             this.metroLabel34.Name = "metroLabel34";
             this.metroLabel34.Size = new System.Drawing.Size(316, 20);
             this.metroLabel34.TabIndex = 19;
@@ -1748,7 +1748,7 @@
             // 
             this.metroLabel35.AutoSize = true;
             this.metroLabel35.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel35.Location = new System.Drawing.Point(24, 618);
+            this.metroLabel35.Location = new System.Drawing.Point(251, 615);
             this.metroLabel35.Name = "metroLabel35";
             this.metroLabel35.Size = new System.Drawing.Size(393, 20);
             this.metroLabel35.TabIndex = 20;
@@ -1761,9 +1761,9 @@
             this.BtnSave.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnSave.Highlight = true;
-            this.BtnSave.Location = new System.Drawing.Point(452, 651);
+            this.BtnSave.Location = new System.Drawing.Point(679, 648);
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(158, 45);
+            this.BtnSave.Size = new System.Drawing.Size(194, 45);
             this.BtnSave.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnSave.TabIndex = 39;
             this.BtnSave.Text = "Save changes";
@@ -1779,9 +1779,9 @@
             // 
             // 
             this.TxtMasterPassword.CustomButton.Image = null;
-            this.TxtMasterPassword.CustomButton.Location = new System.Drawing.Point(208, 2);
+            this.TxtMasterPassword.CustomButton.Location = new System.Drawing.Point(202, 1);
             this.TxtMasterPassword.CustomButton.Name = "";
-            this.TxtMasterPassword.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtMasterPassword.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtMasterPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtMasterPassword.CustomButton.TabIndex = 1;
             this.TxtMasterPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -1789,7 +1789,7 @@
             this.TxtMasterPassword.CustomButton.Visible = false;
             this.TxtMasterPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtMasterPassword.Lines = new string[0];
-            this.TxtMasterPassword.Location = new System.Drawing.Point(98, 666);
+            this.TxtMasterPassword.Location = new System.Drawing.Point(325, 663);
             this.TxtMasterPassword.MaxLength = 32767;
             this.TxtMasterPassword.Name = "TxtMasterPassword";
             this.TxtMasterPassword.PasswordChar = '#';
@@ -1799,7 +1799,7 @@
             this.TxtMasterPassword.SelectionLength = 0;
             this.TxtMasterPassword.SelectionStart = 0;
             this.TxtMasterPassword.ShortcutsEnabled = true;
-            this.TxtMasterPassword.Size = new System.Drawing.Size(236, 30);
+            this.TxtMasterPassword.Size = new System.Drawing.Size(236, 35);
             this.TxtMasterPassword.TabIndex = 38;
             this.TxtMasterPassword.UseSelectable = true;
             this.TxtMasterPassword.WaterMark = "Enter Master Password...";
@@ -1815,7 +1815,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1112, 707);
+            this.ClientSize = new System.Drawing.Size(1112, 722);
             this.Controls.Add(this.metroLabel34);
             this.Controls.Add(this.metroLabel35);
             this.Controls.Add(this.BtnSave);

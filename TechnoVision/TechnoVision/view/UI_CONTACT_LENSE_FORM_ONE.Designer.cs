@@ -71,7 +71,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(653, 34);
+            this.metroLabel1.Location = new System.Drawing.Point(547, 34);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(123, 20);
             this.metroLabel1.TabIndex = 0;
@@ -81,7 +81,7 @@
             // 
             this.LblReceiptNo.AutoSize = true;
             this.LblReceiptNo.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblReceiptNo.Location = new System.Drawing.Point(782, 34);
+            this.LblReceiptNo.Location = new System.Drawing.Point(727, 34);
             this.LblReceiptNo.Name = "LblReceiptNo";
             this.LblReceiptNo.Size = new System.Drawing.Size(123, 20);
             this.LblReceiptNo.TabIndex = 0;
@@ -114,7 +114,7 @@
             this.TxtOrderNo.CustomButton.Visible = false;
             this.TxtOrderNo.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtOrderNo.Lines = new string[0];
-            this.TxtOrderNo.Location = new System.Drawing.Point(155, 99);
+            this.TxtOrderNo.Location = new System.Drawing.Point(195, 96);
             this.TxtOrderNo.MaxLength = 32767;
             this.TxtOrderNo.Name = "TxtOrderNo";
             this.TxtOrderNo.PasswordChar = '\0';
@@ -184,7 +184,7 @@
             // 
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel8.Location = new System.Drawing.Point(491, 107);
+            this.metroLabel8.Location = new System.Drawing.Point(493, 107);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(121, 20);
             this.metroLabel8.TabIndex = 1;
@@ -194,7 +194,7 @@
             // 
             this.metroLabel9.AutoSize = true;
             this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel9.Location = new System.Drawing.Point(491, 149);
+            this.metroLabel9.Location = new System.Drawing.Point(493, 149);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(97, 20);
             this.metroLabel9.TabIndex = 1;
@@ -204,7 +204,7 @@
             // 
             this.metroLabel10.AutoSize = true;
             this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel10.Location = new System.Drawing.Point(491, 189);
+            this.metroLabel10.Location = new System.Drawing.Point(493, 189);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(89, 20);
             this.metroLabel10.TabIndex = 1;
@@ -214,7 +214,7 @@
             // 
             this.metroLabel11.AutoSize = true;
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel11.Location = new System.Drawing.Point(491, 270);
+            this.metroLabel11.Location = new System.Drawing.Point(493, 270);
             this.metroLabel11.Name = "metroLabel11";
             this.metroLabel11.Size = new System.Drawing.Size(66, 20);
             this.metroLabel11.TabIndex = 1;
@@ -224,7 +224,7 @@
             // 
             this.metroLabel12.AutoSize = true;
             this.metroLabel12.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel12.Location = new System.Drawing.Point(491, 314);
+            this.metroLabel12.Location = new System.Drawing.Point(493, 314);
             this.metroLabel12.Name = "metroLabel12";
             this.metroLabel12.Size = new System.Drawing.Size(61, 20);
             this.metroLabel12.TabIndex = 1;
@@ -248,7 +248,7 @@
             this.TxtLensesTotal.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtLensesTotal.Lines = new string[] {
         "0"};
-            this.TxtLensesTotal.Location = new System.Drawing.Point(625, 181);
+            this.TxtLensesTotal.Location = new System.Drawing.Point(662, 181);
             this.TxtLensesTotal.MaxLength = 32767;
             this.TxtLensesTotal.Name = "TxtLensesTotal";
             this.TxtLensesTotal.PasswordChar = '\0';
@@ -283,7 +283,7 @@
             this.TxtAdvance.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtAdvance.Lines = new string[] {
         "0"};
-            this.TxtAdvance.Location = new System.Drawing.Point(625, 262);
+            this.TxtAdvance.Location = new System.Drawing.Point(662, 262);
             this.TxtAdvance.MaxLength = 32767;
             this.TxtAdvance.Name = "TxtAdvance";
             this.TxtAdvance.PasswordChar = '\0';
@@ -318,7 +318,7 @@
             this.TxtBalance.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtBalance.Lines = new string[] {
         "0"};
-            this.TxtBalance.Location = new System.Drawing.Point(625, 306);
+            this.TxtBalance.Location = new System.Drawing.Point(662, 306);
             this.TxtBalance.MaxLength = 32767;
             this.TxtBalance.Name = "TxtBalance";
             this.TxtBalance.PasswordChar = '\0';
@@ -337,7 +337,7 @@
             // 
             // DateOrderDate
             // 
-            this.DateOrderDate.Location = new System.Drawing.Point(155, 144);
+            this.DateOrderDate.Location = new System.Drawing.Point(195, 141);
             this.DateOrderDate.MinimumSize = new System.Drawing.Size(0, 30);
             this.DateOrderDate.Name = "DateOrderDate";
             this.DateOrderDate.Size = new System.Drawing.Size(290, 30);
@@ -346,7 +346,7 @@
             // 
             // DateDueDate
             // 
-            this.DateDueDate.Location = new System.Drawing.Point(155, 184);
+            this.DateDueDate.Location = new System.Drawing.Point(195, 181);
             this.DateDueDate.MinimumSize = new System.Drawing.Size(0, 30);
             this.DateDueDate.Name = "DateDueDate";
             this.DateDueDate.Size = new System.Drawing.Size(290, 30);
@@ -360,7 +360,7 @@
             this.CmbJobType.Items.AddRange(new object[] {
             "NEW",
             "REPLACEMENT"});
-            this.CmbJobType.Location = new System.Drawing.Point(155, 226);
+            this.CmbJobType.Location = new System.Drawing.Point(195, 223);
             this.CmbJobType.Name = "CmbJobType";
             this.CmbJobType.Size = new System.Drawing.Size(290, 30);
             this.CmbJobType.TabIndex = 2;
@@ -373,7 +373,7 @@
             this.CmbOrderStatus.Items.AddRange(new object[] {
             "PENDING",
             "DELEVERED"});
-            this.CmbOrderStatus.Location = new System.Drawing.Point(155, 270);
+            this.CmbOrderStatus.Location = new System.Drawing.Point(195, 267);
             this.CmbOrderStatus.Name = "CmbOrderStatus";
             this.CmbOrderStatus.Size = new System.Drawing.Size(290, 30);
             this.CmbOrderStatus.TabIndex = 3;
@@ -385,7 +385,7 @@
             this.CmbTestedBy.DisplayMember = "Name";
             this.CmbTestedBy.FormattingEnabled = true;
             this.CmbTestedBy.ItemHeight = 24;
-            this.CmbTestedBy.Location = new System.Drawing.Point(155, 312);
+            this.CmbTestedBy.Location = new System.Drawing.Point(195, 309);
             this.CmbTestedBy.Name = "CmbTestedBy";
             this.CmbTestedBy.Size = new System.Drawing.Size(290, 30);
             this.CmbTestedBy.TabIndex = 4;
@@ -410,7 +410,7 @@
             "CASH",
             "CREDIT CARD",
             "DEBIT CARD"});
-            this.CmbPaymentMethod.Location = new System.Drawing.Point(625, 102);
+            this.CmbPaymentMethod.Location = new System.Drawing.Point(662, 102);
             this.CmbPaymentMethod.Name = "CmbPaymentMethod";
             this.CmbPaymentMethod.Size = new System.Drawing.Size(288, 30);
             this.CmbPaymentMethod.TabIndex = 6;
@@ -423,7 +423,7 @@
             this.CmbPaymentPlan.Items.AddRange(new object[] {
             "FULL PAYMENT",
             "INSTALLAMENT"});
-            this.CmbPaymentPlan.Location = new System.Drawing.Point(625, 144);
+            this.CmbPaymentPlan.Location = new System.Drawing.Point(662, 144);
             this.CmbPaymentPlan.Name = "CmbPaymentPlan";
             this.CmbPaymentPlan.Size = new System.Drawing.Size(290, 30);
             this.CmbPaymentPlan.TabIndex = 7;
@@ -456,7 +456,7 @@
             this.TxtRemindDays.CustomButton.Visible = false;
             this.TxtRemindDays.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtRemindDays.Lines = new string[0];
-            this.TxtRemindDays.Location = new System.Drawing.Point(155, 357);
+            this.TxtRemindDays.Location = new System.Drawing.Point(195, 354);
             this.TxtRemindDays.MaxLength = 32767;
             this.TxtRemindDays.Name = "TxtRemindDays";
             this.TxtRemindDays.PasswordChar = '\0';
@@ -476,7 +476,7 @@
             // 
             this.BtnCalculate.ActiveControl = null;
             this.BtnCalculate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCalculate.Location = new System.Drawing.Point(877, 306);
+            this.BtnCalculate.Location = new System.Drawing.Point(914, 306);
             this.BtnCalculate.Name = "BtnCalculate";
             this.BtnCalculate.Size = new System.Drawing.Size(38, 36);
             this.BtnCalculate.Style = MetroFramework.MetroColorStyle.Green;
@@ -494,7 +494,7 @@
             this.BtnNext.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnNext.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnNext.Highlight = true;
-            this.BtnNext.Location = new System.Drawing.Point(797, 383);
+            this.BtnNext.Location = new System.Drawing.Point(832, 372);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(118, 45);
             this.BtnNext.Style = MetroFramework.MetroColorStyle.Green;
@@ -513,7 +513,7 @@
             this.BtnClear.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnClear.Highlight = true;
-            this.BtnClear.Location = new System.Drawing.Point(673, 383);
+            this.BtnClear.Location = new System.Drawing.Point(708, 372);
             this.BtnClear.Name = "BtnClear";
             this.BtnClear.Size = new System.Drawing.Size(118, 45);
             this.BtnClear.Style = MetroFramework.MetroColorStyle.Green;
@@ -529,7 +529,7 @@
             // 
             this.metroLabel14.AutoSize = true;
             this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel14.Location = new System.Drawing.Point(491, 229);
+            this.metroLabel14.Location = new System.Drawing.Point(493, 229);
             this.metroLabel14.Name = "metroLabel14";
             this.metroLabel14.Size = new System.Drawing.Size(67, 20);
             this.metroLabel14.TabIndex = 1;
@@ -553,7 +553,7 @@
             this.TxtDiscount.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtDiscount.Lines = new string[] {
         "0"};
-            this.TxtDiscount.Location = new System.Drawing.Point(625, 221);
+            this.TxtDiscount.Location = new System.Drawing.Point(662, 221);
             this.TxtDiscount.MaxLength = 32767;
             this.TxtDiscount.Name = "TxtDiscount";
             this.TxtDiscount.PasswordChar = '\0';
@@ -578,7 +578,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 440);
+            this.ClientSize = new System.Drawing.Size(993, 440);
             this.Controls.Add(this.BtnClear);
             this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.BtnCalculate);

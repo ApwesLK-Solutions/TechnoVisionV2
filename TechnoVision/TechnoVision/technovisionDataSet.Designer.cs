@@ -4517,7 +4517,7 @@ namespace TechnoVision {
                 this.columnDiscount.AllowDBNull = false;
                 this.columnBalance.AllowDBNull = false;
                 this.columnTestBy.AllowDBNull = false;
-                this.columnTestBy.MaxLength = 10;
+                this.columnTestBy.MaxLength = 45;
                 this.columnEyeWear.AllowDBNull = false;
                 this.columnLense.AllowDBNull = false;
                 this.columnPaymentPlan.AllowDBNull = false;

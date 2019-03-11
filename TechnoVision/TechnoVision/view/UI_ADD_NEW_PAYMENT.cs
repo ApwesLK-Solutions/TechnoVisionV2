@@ -85,7 +85,7 @@ namespace TechnoVision.view
                     CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo.Text);
                     InvReceiptContactLense rpt = new InvReceiptContactLense();
                     rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
-                    rpt.PrintToPrinter(1, false, 1, 1);
+                    rpt.PrintToPrinter(2, false, 1, 1);
                     new UI_REPORT_VIEWER(rpt).Show();
                     this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
                     receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
@@ -99,7 +99,7 @@ namespace TechnoVision.view
                     CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo.Text);
                     InvReceipt rpt = new InvReceipt();
                     rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
-                    rpt.PrintToPrinter(1, false, 1, 1);
+                    rpt.PrintToPrinter(2, false, 1, 1);
                     new UI_REPORT_VIEWER(rpt).Show();
                     this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
                     receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;

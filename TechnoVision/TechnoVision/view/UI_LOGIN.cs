@@ -36,6 +36,14 @@ namespace TechnoVision.view
             new UI_FORGET_PASSWORD().Show();
         }
 
-        
+        private void TxtPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UI_LOGIN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -64,10 +64,12 @@ namespace TechnoVision.view
                 if (OrderType == "S")
                 {
                     new UI_SPECTACLES_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+                    this.Dispose();
                 }
                 else if (OrderType == "L")
                 {
                     new UI_CONTACT_LENSE_FORM_ONE(int.Parse(GridSelectCustomer.SelectedRows[0].Cells[0].Value.ToString())).Show();
+                    this.Dispose();
                 }
             }
             catch(Exception ex)
@@ -108,6 +110,9 @@ namespace TechnoVision.view
             this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
         }
 
-        
+        private void GridSelectCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

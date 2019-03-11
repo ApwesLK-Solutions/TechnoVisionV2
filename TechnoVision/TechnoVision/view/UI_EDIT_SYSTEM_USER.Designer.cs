@@ -35,7 +35,6 @@
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.TxtContactNumber = new MetroFramework.Controls.MetroTextBox();
             this.TxtFullName = new MetroFramework.Controls.MetroTextBox();
@@ -57,9 +56,9 @@
             this.BtnEditUser.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnEditUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnEditUser.Highlight = true;
-            this.BtnEditUser.Location = new System.Drawing.Point(216, 352);
+            this.BtnEditUser.Location = new System.Drawing.Point(228, 400);
             this.BtnEditUser.Name = "BtnEditUser";
-            this.BtnEditUser.Size = new System.Drawing.Size(158, 45);
+            this.BtnEditUser.Size = new System.Drawing.Size(158, 64);
             this.BtnEditUser.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnEditUser.TabIndex = 7;
             this.BtnEditUser.Text = "Save changes";
@@ -83,7 +82,7 @@
             // 
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel6.Location = new System.Drawing.Point(31, 213);
+            this.metroLabel6.Location = new System.Drawing.Point(31, 227);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(118, 20);
             this.metroLabel6.TabIndex = 10;
@@ -93,7 +92,7 @@
             // 
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel4.Location = new System.Drawing.Point(31, 177);
+            this.metroLabel4.Location = new System.Drawing.Point(31, 183);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(76, 20);
             this.metroLabel4.TabIndex = 12;
@@ -103,27 +102,17 @@
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel3.Location = new System.Drawing.Point(31, 141);
+            this.metroLabel3.Location = new System.Drawing.Point(31, 139);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(70, 20);
             this.metroLabel3.TabIndex = 13;
             this.metroLabel3.Text = "Password";
             // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(31, 103);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(75, 20);
-            this.metroLabel2.TabIndex = 14;
-            this.metroLabel2.Text = "Username";
-            // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(31, 103);
+            this.metroLabel1.Location = new System.Drawing.Point(31, 95);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(75, 20);
             this.metroLabel1.TabIndex = 15;
@@ -135,9 +124,9 @@
             // 
             // 
             this.TxtContactNumber.CustomButton.Image = null;
-            this.TxtContactNumber.CustomButton.Location = new System.Drawing.Point(372, 2);
+            this.TxtContactNumber.CustomButton.Location = new System.Drawing.Point(366, 1);
             this.TxtContactNumber.CustomButton.Name = "";
-            this.TxtContactNumber.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtContactNumber.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtContactNumber.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtContactNumber.CustomButton.TabIndex = 1;
             this.TxtContactNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -146,7 +135,7 @@
             this.TxtContactNumber.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "ContactNumber", true));
             this.TxtContactNumber.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtContactNumber.Lines = new string[0];
-            this.TxtContactNumber.Location = new System.Drawing.Point(160, 208);
+            this.TxtContactNumber.Location = new System.Drawing.Point(180, 220);
             this.TxtContactNumber.MaxLength = 32767;
             this.TxtContactNumber.Name = "TxtContactNumber";
             this.TxtContactNumber.PasswordChar = '\0';
@@ -156,7 +145,7 @@
             this.TxtContactNumber.SelectionLength = 0;
             this.TxtContactNumber.SelectionStart = 0;
             this.TxtContactNumber.ShortcutsEnabled = true;
-            this.TxtContactNumber.Size = new System.Drawing.Size(400, 30);
+            this.TxtContactNumber.Size = new System.Drawing.Size(400, 35);
             this.TxtContactNumber.TabIndex = 4;
             this.TxtContactNumber.UseSelectable = true;
             this.TxtContactNumber.WaterMark = "Enter Contact Number...";
@@ -169,9 +158,9 @@
             // 
             // 
             this.TxtFullName.CustomButton.Image = null;
-            this.TxtFullName.CustomButton.Location = new System.Drawing.Point(372, 2);
+            this.TxtFullName.CustomButton.Location = new System.Drawing.Point(366, 1);
             this.TxtFullName.CustomButton.Name = "";
-            this.TxtFullName.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtFullName.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtFullName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtFullName.CustomButton.TabIndex = 1;
             this.TxtFullName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -180,7 +169,7 @@
             this.TxtFullName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "FullName", true));
             this.TxtFullName.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtFullName.Lines = new string[0];
-            this.TxtFullName.Location = new System.Drawing.Point(160, 172);
+            this.TxtFullName.Location = new System.Drawing.Point(180, 176);
             this.TxtFullName.MaxLength = 32767;
             this.TxtFullName.Name = "TxtFullName";
             this.TxtFullName.PasswordChar = '\0';
@@ -190,7 +179,7 @@
             this.TxtFullName.SelectionLength = 0;
             this.TxtFullName.SelectionStart = 0;
             this.TxtFullName.ShortcutsEnabled = true;
-            this.TxtFullName.Size = new System.Drawing.Size(400, 30);
+            this.TxtFullName.Size = new System.Drawing.Size(400, 35);
             this.TxtFullName.TabIndex = 3;
             this.TxtFullName.UseSelectable = true;
             this.TxtFullName.WaterMark = "Enter Full Name...";
@@ -203,9 +192,9 @@
             // 
             // 
             this.TxtPassword.CustomButton.Image = null;
-            this.TxtPassword.CustomButton.Location = new System.Drawing.Point(372, 2);
+            this.TxtPassword.CustomButton.Location = new System.Drawing.Point(366, 1);
             this.TxtPassword.CustomButton.Name = "";
-            this.TxtPassword.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtPassword.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtPassword.CustomButton.TabIndex = 1;
             this.TxtPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -214,7 +203,7 @@
             this.TxtPassword.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Password", true));
             this.TxtPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtPassword.Lines = new string[0];
-            this.TxtPassword.Location = new System.Drawing.Point(160, 136);
+            this.TxtPassword.Location = new System.Drawing.Point(180, 132);
             this.TxtPassword.MaxLength = 32767;
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
@@ -224,7 +213,7 @@
             this.TxtPassword.SelectionLength = 0;
             this.TxtPassword.SelectionStart = 0;
             this.TxtPassword.ShortcutsEnabled = true;
-            this.TxtPassword.Size = new System.Drawing.Size(400, 30);
+            this.TxtPassword.Size = new System.Drawing.Size(400, 35);
             this.TxtPassword.TabIndex = 2;
             this.TxtPassword.UseSelectable = true;
             this.TxtPassword.WaterMark = "Enter Password...";
@@ -237,9 +226,9 @@
             // 
             // 
             this.TxtUsername.CustomButton.Image = null;
-            this.TxtUsername.CustomButton.Location = new System.Drawing.Point(372, 2);
+            this.TxtUsername.CustomButton.Location = new System.Drawing.Point(366, 1);
             this.TxtUsername.CustomButton.Name = "";
-            this.TxtUsername.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtUsername.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtUsername.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtUsername.CustomButton.TabIndex = 1;
             this.TxtUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -248,7 +237,7 @@
             this.TxtUsername.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Username", true));
             this.TxtUsername.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtUsername.Lines = new string[0];
-            this.TxtUsername.Location = new System.Drawing.Point(160, 98);
+            this.TxtUsername.Location = new System.Drawing.Point(180, 88);
             this.TxtUsername.MaxLength = 32767;
             this.TxtUsername.Name = "TxtUsername";
             this.TxtUsername.PasswordChar = '\0';
@@ -258,7 +247,7 @@
             this.TxtUsername.SelectionLength = 0;
             this.TxtUsername.SelectionStart = 0;
             this.TxtUsername.ShortcutsEnabled = true;
-            this.TxtUsername.Size = new System.Drawing.Size(400, 30);
+            this.TxtUsername.Size = new System.Drawing.Size(400, 35);
             this.TxtUsername.TabIndex = 1;
             this.TxtUsername.UseSelectable = true;
             this.TxtUsername.WaterMark = "Enter Username...";
@@ -275,9 +264,9 @@
             // 
             // 
             this.TxtMasterPassword.CustomButton.Image = null;
-            this.TxtMasterPassword.CustomButton.Location = new System.Drawing.Point(208, 2);
+            this.TxtMasterPassword.CustomButton.Location = new System.Drawing.Point(202, 1);
             this.TxtMasterPassword.CustomButton.Name = "";
-            this.TxtMasterPassword.CustomButton.Size = new System.Drawing.Size(25, 25);
+            this.TxtMasterPassword.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.TxtMasterPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtMasterPassword.CustomButton.TabIndex = 1;
             this.TxtMasterPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -285,7 +274,7 @@
             this.TxtMasterPassword.CustomButton.Visible = false;
             this.TxtMasterPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtMasterPassword.Lines = new string[0];
-            this.TxtMasterPassword.Location = new System.Drawing.Point(182, 316);
+            this.TxtMasterPassword.Location = new System.Drawing.Point(190, 349);
             this.TxtMasterPassword.MaxLength = 32767;
             this.TxtMasterPassword.Name = "TxtMasterPassword";
             this.TxtMasterPassword.PasswordChar = '#';
@@ -295,7 +284,7 @@
             this.TxtMasterPassword.SelectionLength = 0;
             this.TxtMasterPassword.SelectionStart = 0;
             this.TxtMasterPassword.ShortcutsEnabled = true;
-            this.TxtMasterPassword.Size = new System.Drawing.Size(236, 30);
+            this.TxtMasterPassword.Size = new System.Drawing.Size(236, 35);
             this.TxtMasterPassword.TabIndex = 6;
             this.TxtMasterPassword.UseSelectable = true;
             this.TxtMasterPassword.WaterMark = "Enter Master Password...";
@@ -311,7 +300,7 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel5.Location = new System.Drawing.Point(108, 268);
+            this.metroLabel5.Location = new System.Drawing.Point(120, 282);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(393, 20);
             this.metroLabel5.TabIndex = 16;
@@ -321,7 +310,7 @@
             // 
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel8.Location = new System.Drawing.Point(140, 288);
+            this.metroLabel8.Location = new System.Drawing.Point(152, 302);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(316, 20);
             this.metroLabel8.TabIndex = 16;
@@ -331,14 +320,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 414);
+            this.ClientSize = new System.Drawing.Size(644, 487);
             this.Controls.Add(this.metroLabel8);
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.BtnEditUser);
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
-            this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.TxtContactNumber);
             this.Controls.Add(this.TxtMasterPassword);
@@ -364,7 +352,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroTextBox TxtContactNumber;
         private MetroFramework.Controls.MetroTextBox TxtFullName;

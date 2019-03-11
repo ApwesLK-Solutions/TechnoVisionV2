@@ -106,18 +106,27 @@ namespace TechnoVision.view
 
         private void BtnViewCustomerCopy_Click(object sender, EventArgs e)
         {
-            if(RadioContactLense.Checked == true)
+            try
             {
-                InvoiceLenseCustomer rpt = new InvoiceLenseCustomer();
-                rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + LenseGrid.SelectedRows[0].Cells[0].Value.ToString() + "'AND {contactlense1.Branch} =" + Session.BranchId;
-                new UI_REPORT_VIEWER(rpt).Show();
+                if (RadioContactLense.Checked == true)
+                {
+                    InvoiceLenseCustomer rpt = new InvoiceLenseCustomer();
+                    rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + LenseGrid.SelectedRows[0].Cells[0].Value.ToString() + "'AND {contactlense1.Branch} =" + Session.BranchId;
+                    new UI_REPORT_VIEWER(rpt).Show();
+                }
+                else if (RadioSpectacles.Checked == true)
+                {
+                    InvoiceSpecCustomer rpt = new InvoiceSpecCustomer();
+                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + SpecGrid.SelectedRows[0].Cells[0].Value.ToString() + "'AND {spectacles1.Branch} =" + Session.BranchId;
+                    new UI_REPORT_VIEWER(rpt).Show();
+                }
             }
-            else if(RadioSpectacles.Checked == true)
+            catch(Exception ex)
             {
-                InvoiceSpecCustomer rpt = new InvoiceSpecCustomer();
-                rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + SpecGrid.SelectedRows[0].Cells[0].Value.ToString() + "'AND {spectacles1.Branch} =" + Session.BranchId;
-                new UI_REPORT_VIEWER(rpt).Show();
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
+            
         }
 
         private void BtnViewCompanyCopy_Click(object sender, EventArgs e)
@@ -173,7 +182,5 @@ namespace TechnoVision.view
                 
             }
         }
-
-       
     }
 }
