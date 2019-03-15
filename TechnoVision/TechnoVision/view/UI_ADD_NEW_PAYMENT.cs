@@ -93,7 +93,7 @@ namespace TechnoVision.view
                 if (orderType == "SPEC")
                 {
                     technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
-                    t.UpdateBalanceByOrderNumber(double.Parse(TxtAmount.Text), orderNumber);
+                    t.UpdateBalanceByOrderNumber(double.Parse(LblDueAmount.Text) - double.Parse(TxtAmount.Text), orderNumber);
                     t.Dispose();
                     CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo.Text);
                     CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo.Text);
