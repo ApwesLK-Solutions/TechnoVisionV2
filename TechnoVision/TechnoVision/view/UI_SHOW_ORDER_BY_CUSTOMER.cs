@@ -33,6 +33,7 @@ namespace TechnoVision.view
                 contactlenseBindingSource.Filter = "CustomerId = " + custID;
                 spectaclesBindingSource.Filter = "CustomerId = " + custID;
                 LblCustomerName.Text = CustName;
+                BtnMakeAdvance.Visible = false;
             }
             catch(Exception ex)
             {
@@ -119,9 +120,52 @@ namespace TechnoVision.view
             }
         }
 
-        private void BtnViewOrder_Click(object sender, EventArgs e)
-        {
+       
 
+        private void BtnMakeAdvance_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(RadioSpectacles.Checked == true)
+                {
+                    new UI_ADD_ADVANCE(GridSpectacle.SelectedRows[0].Cells[1].Value.ToString(), "SPEC", int.Parse(GridSpectacle.SelectedRows[0].Cells[30].Value.ToString())).Show();
+                }
+                else if(RadioContactLense.Checked == true)
+                {
+                    new UI_ADD_ADVANCE(GridContactLense.SelectedRows[0].Cells[1].Value.ToString(),"LENSE", int.Parse(GridContactLense.SelectedRows[0].Cells[46].Value.ToString())).Show();
+                }
+               
+            }
+            catch (Exception ex)
+            {
+                CommonFunctions.ShowError(this, "No payemnts to Select ");
+                CommonFunctions.WriteToErrorLog(ex.Message.ToString());
+            }
+
+        }
+
+        private void GridContactLense_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(GridContactLense.SelectedRows[0].Cells[8].Value.ToString() == "0")
+            {
+                BtnMakeAdvance.Visible = true;
+            }
+            else
+            {
+                BtnMakeAdvance.Visible = false;
+            }
+        }
+
+        private void GridSpectacle_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (GridSpectacle.SelectedRows[0].Cells[6].Value.ToString() == "0")
+            {
+                BtnMakeAdvance.Visible = true;
+            }
+            else
+            {
+                BtnMakeAdvance.Visible = false;
+            }
         }
     }
 }

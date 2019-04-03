@@ -264,6 +264,7 @@
             // 
             // UI_LOGIN
             // 
+            this.AcceptButton = this.BtnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(519, 452);

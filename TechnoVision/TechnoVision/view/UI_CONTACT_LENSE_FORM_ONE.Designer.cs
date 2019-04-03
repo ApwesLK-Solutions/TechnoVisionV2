@@ -409,7 +409,8 @@
             this.CmbPaymentMethod.Items.AddRange(new object[] {
             "CASH",
             "CREDIT CARD",
-            "DEBIT CARD"});
+            "DEBIT CARD",
+            "N-C"});
             this.CmbPaymentMethod.Location = new System.Drawing.Point(662, 102);
             this.CmbPaymentMethod.Name = "CmbPaymentMethod";
             this.CmbPaymentMethod.Size = new System.Drawing.Size(288, 30);

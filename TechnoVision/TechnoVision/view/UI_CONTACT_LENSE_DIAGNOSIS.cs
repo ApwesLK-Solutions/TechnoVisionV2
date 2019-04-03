@@ -32,15 +32,38 @@ namespace TechnoVision.view
                 }
                 else
                 {
-                    LenseOrderController.FillFormTwo(TxtRightOldSph.Text, TxtRightOldCyl.Text, TxtRightOldAxis.Text, TxtRightOldAdd.Text, TxtLeftOldSph.Text, TxtLeftOldCyl.Text, TxtLeftOldAxis.Text, TxtLeftOldAdd.Text, TxtRightPresentSph.Text, TxtRightPresentCyl.Text, TxtRightPresentAxis.Text, TxtRightPresentAdd.Text, TxtRightPresentAdd.Text, TxtLeftPresentCyl.Text, TxtLeftPresentAxis.Text, TxtLeftPresentAdd.Text, TxtRightBc.Text, TxtRightPow.Text, TxtRightDia.Text, TxtRightDeze.Text, TxtLeftBc.Text, TxtLeftPow.Text, TxtLeftDia.Text, TxtLeftDeze.Text, TxtTrailLense.Text, TxtOverRefract.Text, TxtKReading.Text, TxtBlindTest.Text, TxtSpecialIns.Text, TxtRemarks.Text);
-                    technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter(); 
-                    t.Insert(LenseOrder.OrderNumber, DateTime.Parse(LenseOrder.OrderDate), DateTime.Parse(LenseOrder.DueDate), LenseOrder.JobType, LenseOrder.TestedBy, LenseOrder.Total, LenseOrder.Discount, LenseOrder.Advance, LenseOrder.Balance, LenseOrder.PaymentMethod, LenseOrder.PaymentPlan, LenseOrder.OrderStatus, LenseOrder.OldRightSph, LenseOrder.OldRightCyl, LenseOrder.OldRightAxis, LenseOrder.OldRightAdd, LenseOrder.OldLeftSph, LenseOrder.OldLeftCyl, LenseOrder.OldLeftAxis, LenseOrder.OldLeftAdd, LenseOrder.PresentRightSph, LenseOrder.PresentRightCyl, LenseOrder.PresentRightAxis, LenseOrder.PresentRightAdd, LenseOrder.PresentLeftSph, LenseOrder.PresentLeftCyl, LenseOrder.PresentLeftAxis, LenseOrder.PresentLeftAdd, LenseOrder.RightBc, LenseOrder.RightPow, LenseOrder.RightDia, LenseOrder.RightDesz, LenseOrder.LeftBc, LenseOrder.LeftPow, LenseOrder.LeftDia, LenseOrder.LeftDesz, LenseOrder.TrailLense, LenseOrder.OverRefract, LenseOrder.KReading, LenseOrder.BlinkTest, LenseOrder.SpecialInstruction, LenseOrder.Remarks, LenseOrder.ReminderDays, LenseOrder.Branch,DateTime.Now.ToString("yyyy"),LenseOrder.custID);
-                    receiptController.WriteReceipt(this);
-                    CommonFunctions.WriteUserLog(Session.Username, "Added New Lense Order : " + LenseOrder.OrderNumber);
-                    CommonFunctions.ShowSuccess(this, "Order Number " + LenseOrder.OrderNumber + " Saved Succesfully...");
-                    this.Dispose();
-                    f.Dispose();
-                    new UI_ORDER_COMPLETE("L", LenseOrder.OrderNumber, Receipt.ReceiptNumber).Show();
+                    if(LenseOrder.Advance == 0 || LenseOrder.PaymentMethod=="N-C")
+                    {
+                        LenseOrderController.FillFormTwo(TxtRightOldSph.Text, TxtRightOldCyl.Text, TxtRightOldAxis.Text, TxtRightOldAdd.Text, TxtLeftOldSph.Text, TxtLeftOldCyl.Text, TxtLeftOldAxis.Text, TxtLeftOldAdd.Text, TxtRightPresentSph.Text, TxtRightPresentCyl.Text, TxtRightPresentAxis.Text, TxtRightPresentAdd.Text, TxtRightPresentAdd.Text, TxtLeftPresentCyl.Text, TxtLeftPresentAxis.Text, TxtLeftPresentAdd.Text, TxtRightBc.Text, TxtRightPow.Text, TxtRightDia.Text, TxtRightDeze.Text, TxtLeftBc.Text, TxtLeftPow.Text, TxtLeftDia.Text, TxtLeftDeze.Text, TxtTrailLense.Text, TxtOverRefract.Text, TxtKReading.Text, TxtBlindTest.Text, TxtSpecialIns.Text, TxtRemarks.Text);
+                        technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+                        t.Insert(LenseOrder.OrderNumber, DateTime.Parse(LenseOrder.OrderDate), DateTime.Parse(LenseOrder.DueDate), LenseOrder.JobType, LenseOrder.TestedBy, LenseOrder.Total, LenseOrder.Discount, LenseOrder.Advance, LenseOrder.Balance, LenseOrder.PaymentMethod, LenseOrder.PaymentPlan, LenseOrder.OrderStatus, LenseOrder.OldRightSph, LenseOrder.OldRightCyl, LenseOrder.OldRightAxis, LenseOrder.OldRightAdd, LenseOrder.OldLeftSph, LenseOrder.OldLeftCyl, LenseOrder.OldLeftAxis, LenseOrder.OldLeftAdd, LenseOrder.PresentRightSph, LenseOrder.PresentRightCyl, LenseOrder.PresentRightAxis, LenseOrder.PresentRightAdd, LenseOrder.PresentLeftSph, LenseOrder.PresentLeftCyl, LenseOrder.PresentLeftAxis, LenseOrder.PresentLeftAdd, LenseOrder.RightBc, LenseOrder.RightPow, LenseOrder.RightDia, LenseOrder.RightDesz, LenseOrder.LeftBc, LenseOrder.LeftPow, LenseOrder.LeftDia, LenseOrder.LeftDesz, LenseOrder.TrailLense, LenseOrder.OverRefract, LenseOrder.KReading, LenseOrder.BlinkTest, LenseOrder.SpecialInstruction, LenseOrder.Remarks, LenseOrder.ReminderDays, LenseOrder.Branch, DateTime.Now.ToString("yyyy"), LenseOrder.custID);
+                        //receiptController.WriteReceipt(this);
+                        CommonFunctions.WriteUserLog(Session.Username, "Added New Lense Order : " + LenseOrder.OrderNumber);
+                        CommonFunctions.ShowSuccess(this, "Order Number " + LenseOrder.OrderNumber + " Saved Succesfully...");
+                        this.Dispose();
+                        f.Dispose();
+                        if(LenseOrder.PaymentMethod =="N-C" && LenseOrder.Advance==0)
+                        {
+                            new UI_ORDER_COMPLETE("L", LenseOrder.OrderNumber, "N-C").Show();
+                        }
+                        else if(LenseOrder.PaymentMethod !="N-C" && LenseOrder.Advance==0)
+                        {
+                            new UI_ORDER_COMPLETE("L", LenseOrder.OrderNumber, "Not Paid").Show();
+                        }
+                    }
+                    else
+                    {
+                        LenseOrderController.FillFormTwo(TxtRightOldSph.Text, TxtRightOldCyl.Text, TxtRightOldAxis.Text, TxtRightOldAdd.Text, TxtLeftOldSph.Text, TxtLeftOldCyl.Text, TxtLeftOldAxis.Text, TxtLeftOldAdd.Text, TxtRightPresentSph.Text, TxtRightPresentCyl.Text, TxtRightPresentAxis.Text, TxtRightPresentAdd.Text, TxtRightPresentAdd.Text, TxtLeftPresentCyl.Text, TxtLeftPresentAxis.Text, TxtLeftPresentAdd.Text, TxtRightBc.Text, TxtRightPow.Text, TxtRightDia.Text, TxtRightDeze.Text, TxtLeftBc.Text, TxtLeftPow.Text, TxtLeftDia.Text, TxtLeftDeze.Text, TxtTrailLense.Text, TxtOverRefract.Text, TxtKReading.Text, TxtBlindTest.Text, TxtSpecialIns.Text, TxtRemarks.Text);
+                        technovisionDataSetTableAdapters.contactlenseTableAdapter t = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+                        t.Insert(LenseOrder.OrderNumber, DateTime.Parse(LenseOrder.OrderDate), DateTime.Parse(LenseOrder.DueDate), LenseOrder.JobType, LenseOrder.TestedBy, LenseOrder.Total, LenseOrder.Discount, LenseOrder.Advance, LenseOrder.Balance, LenseOrder.PaymentMethod, LenseOrder.PaymentPlan, LenseOrder.OrderStatus, LenseOrder.OldRightSph, LenseOrder.OldRightCyl, LenseOrder.OldRightAxis, LenseOrder.OldRightAdd, LenseOrder.OldLeftSph, LenseOrder.OldLeftCyl, LenseOrder.OldLeftAxis, LenseOrder.OldLeftAdd, LenseOrder.PresentRightSph, LenseOrder.PresentRightCyl, LenseOrder.PresentRightAxis, LenseOrder.PresentRightAdd, LenseOrder.PresentLeftSph, LenseOrder.PresentLeftCyl, LenseOrder.PresentLeftAxis, LenseOrder.PresentLeftAdd, LenseOrder.RightBc, LenseOrder.RightPow, LenseOrder.RightDia, LenseOrder.RightDesz, LenseOrder.LeftBc, LenseOrder.LeftPow, LenseOrder.LeftDia, LenseOrder.LeftDesz, LenseOrder.TrailLense, LenseOrder.OverRefract, LenseOrder.KReading, LenseOrder.BlinkTest, LenseOrder.SpecialInstruction, LenseOrder.Remarks, LenseOrder.ReminderDays, LenseOrder.Branch, DateTime.Now.ToString("yyyy"), LenseOrder.custID);
+                        receiptController.WriteReceipt(this);
+                        CommonFunctions.WriteUserLog(Session.Username, "Added New Lense Order : " + LenseOrder.OrderNumber);
+                        CommonFunctions.ShowSuccess(this, "Order Number " + LenseOrder.OrderNumber + " Saved Succesfully...");
+                        this.Dispose();
+                        f.Dispose();
+                        new UI_ORDER_COMPLETE("L", LenseOrder.OrderNumber, Receipt.ReceiptNumber).Show();
+                    }
+                    
 
                 }
                 

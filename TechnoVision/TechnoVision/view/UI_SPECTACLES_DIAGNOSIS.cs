@@ -34,16 +34,43 @@ namespace TechnoVision.view
                 }
                 else
                 {
-                    SpecOrderController.FillFormTwo(TxtRightDistSph.Text, TxtRightDistCyl.Text, TxtRightDistAxis.Text, TxtLeftDistSph.Text, TxtLeftDistCyl.Text, TxtLeftDistAxis.Text, TxtRightAdd.Text, TxtLeftAdd.Text, TxtLenseType.Text, CmbFrame.Text, TxtPD.Text, TxtSegmentHeight.Text, TxtSpecialIns.Text, TxtRemarks.Text);
-                    receiptController.FillReceipt(SpecOrder.OrderNumber, SpecOrder.Advance, SpecOrder.OrderDate,"SPEC",SpecOrder.custID);
-                    technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
-                    t.Insert(SpecOrder.OrderNumber, DateTime.Parse(SpecOrder.OrderDate), DateTime.Parse(SpecOrder.DueDate), SpecOrder.OrderStatus, SpecOrder.Total, SpecOrder.Advance, SpecOrder.Discount, SpecOrder.Balance, SpecOrder.TestBy, SpecOrder.Eyewear, SpecOrder.Lense, SpecOrder.PaymentPlan, SpecOrder.PaymentMethod, SpecOrder.DistRightSph, SpecOrder.DistRightCyl, SpecOrder.DistRightAxis, SpecOrder.DistLeftSph, SpecOrder.DistLeftCyl, SpecOrder.DistLeftAxis, SpecOrder.AddRight, SpecOrder.AddLeft, SpecOrder.LenseType, SpecOrder.Frame, SpecOrder.PD, SpecOrder.SegmentHeight, SpecOrder.SpecialInstruction, SpecOrder.Remarks, SpecOrder.ReminderDays, SpecOrder.Branch,DateTime.Now.ToString("yyyy"),SpecOrder.custID);
-                    CommonFunctions.WriteUserLog(Session.Username, "Added New Spec Order : " + SpecOrder.OrderNumber);
-                    receiptController.WriteReceipt(this);
-                    CommonFunctions.ShowSuccess(this, "Order Number " + SpecOrder.OrderNumber + " Saved Succesfully...");
-                    this.Dispose();
-                    new UI_ORDER_COMPLETE("S", SpecOrder.OrderNumber, Receipt.ReceiptNumber).Show();
-                    form.Dispose();
+                    if (SpecOrder.Advance == 0 || SpecOrder.PaymentMethod == "N-C")
+                    {
+                        SpecOrderController.FillFormTwo(TxtRightDistSph.Text, TxtRightDistCyl.Text, TxtRightDistAxis.Text, TxtLeftDistSph.Text, TxtLeftDistCyl.Text, TxtLeftDistAxis.Text, TxtRightAdd.Text, TxtLeftAdd.Text, TxtLenseType.Text, CmbFrame.Text, TxtPD.Text, TxtSegmentHeight.Text, TxtSpecialIns.Text, TxtRemarks.Text);
+                        receiptController.FillReceipt(SpecOrder.OrderNumber, SpecOrder.Advance, SpecOrder.OrderDate, "SPEC", SpecOrder.custID);
+                        technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
+                        t.Insert(SpecOrder.OrderNumber, DateTime.Parse(SpecOrder.OrderDate), DateTime.Parse(SpecOrder.DueDate), SpecOrder.OrderStatus, SpecOrder.Total, SpecOrder.Advance, SpecOrder.Discount, SpecOrder.Balance, SpecOrder.TestBy, SpecOrder.Eyewear, SpecOrder.Lense, SpecOrder.PaymentPlan, SpecOrder.PaymentMethod, SpecOrder.DistRightSph, SpecOrder.DistRightCyl, SpecOrder.DistRightAxis, SpecOrder.DistLeftSph, SpecOrder.DistLeftCyl, SpecOrder.DistLeftAxis, SpecOrder.AddRight, SpecOrder.AddLeft, SpecOrder.LenseType, SpecOrder.Frame, SpecOrder.PD, SpecOrder.SegmentHeight, SpecOrder.SpecialInstruction, SpecOrder.Remarks, SpecOrder.ReminderDays, SpecOrder.Branch, DateTime.Now.ToString("yyyy"), SpecOrder.custID);
+                        CommonFunctions.WriteUserLog(Session.Username, "Added New Spec Order : " + SpecOrder.OrderNumber);
+                        //receiptController.WriteReceipt(this);
+                        CommonFunctions.ShowSuccess(this, "Order Number " + SpecOrder.OrderNumber + " Saved Succesfully...");
+                        this.Dispose();
+                        form.Dispose();
+                        if( SpecOrder.PaymentMethod=="N-C" && SpecOrder.Advance == 0)
+                        {
+                            new UI_ORDER_COMPLETE("S", SpecOrder.OrderNumber, "N-C").Show();
+                        }
+                        
+                        else if (SpecOrder.PaymentMethod != "N-C" && SpecOrder.Advance == 0)
+                        {
+                            new UI_ORDER_COMPLETE("S", SpecOrder.OrderNumber, "Not Paid").Show();
+                        }
+
+
+                    }
+                    else
+                    {
+                        SpecOrderController.FillFormTwo(TxtRightDistSph.Text, TxtRightDistCyl.Text, TxtRightDistAxis.Text, TxtLeftDistSph.Text, TxtLeftDistCyl.Text, TxtLeftDistAxis.Text, TxtRightAdd.Text, TxtLeftAdd.Text, TxtLenseType.Text, CmbFrame.Text, TxtPD.Text, TxtSegmentHeight.Text, TxtSpecialIns.Text, TxtRemarks.Text);
+                        receiptController.FillReceipt(SpecOrder.OrderNumber, SpecOrder.Advance, SpecOrder.OrderDate, "SPEC", SpecOrder.custID);
+                        technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
+                        t.Insert(SpecOrder.OrderNumber, DateTime.Parse(SpecOrder.OrderDate), DateTime.Parse(SpecOrder.DueDate), SpecOrder.OrderStatus, SpecOrder.Total, SpecOrder.Advance, SpecOrder.Discount, SpecOrder.Balance, SpecOrder.TestBy, SpecOrder.Eyewear, SpecOrder.Lense, SpecOrder.PaymentPlan, SpecOrder.PaymentMethod, SpecOrder.DistRightSph, SpecOrder.DistRightCyl, SpecOrder.DistRightAxis, SpecOrder.DistLeftSph, SpecOrder.DistLeftCyl, SpecOrder.DistLeftAxis, SpecOrder.AddRight, SpecOrder.AddLeft, SpecOrder.LenseType, SpecOrder.Frame, SpecOrder.PD, SpecOrder.SegmentHeight, SpecOrder.SpecialInstruction, SpecOrder.Remarks, SpecOrder.ReminderDays, SpecOrder.Branch, DateTime.Now.ToString("yyyy"), SpecOrder.custID);
+                        CommonFunctions.WriteUserLog(Session.Username, "Added New Spec Order : " + SpecOrder.OrderNumber);
+                        receiptController.WriteReceipt(this);
+                        CommonFunctions.ShowSuccess(this, "Order Number " + SpecOrder.OrderNumber + " Saved Succesfully...");
+                        this.Dispose();
+                        new UI_ORDER_COMPLETE("S", SpecOrder.OrderNumber, Receipt.ReceiptNumber).Show();
+                        form.Dispose();
+                    }
+                    
                 }
                 
             }
