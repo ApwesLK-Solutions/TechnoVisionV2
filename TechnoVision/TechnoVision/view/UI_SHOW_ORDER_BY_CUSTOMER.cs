@@ -33,7 +33,7 @@ namespace TechnoVision.view
                 contactlenseBindingSource.Filter = "CustomerId = " + custID;
                 spectaclesBindingSource.Filter = "CustomerId = " + custID;
                 LblCustomerName.Text = CustName;
-                BtnMakeAdvance.Visible = false;
+                BtnMakeAdvance.Enabled = false;
             }
             catch(Exception ex)
             {
@@ -160,11 +160,33 @@ namespace TechnoVision.view
         {
             if (GridSpectacle.SelectedRows[0].Cells[6].Value.ToString() == "0")
             {
-                BtnMakeAdvance.Visible = true;
+                BtnMakeAdvance.Enabled = true;
             }
             else
             {
-                BtnMakeAdvance.Visible = false;
+                BtnMakeAdvance.Enabled = false;
+            }
+        }
+
+        private void BtnAddPayment_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                RadioSpectacles.Checked = true;
+                // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
+                this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+                // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
+                this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+                contactlenseBindingSource.Filter = "CustomerId = " + custID;
+                spectaclesBindingSource.Filter = "CustomerId = " + custID;
+                LblCustomerName.Text = CustName;
+                BtnMakeAdvance.Enabled = false;
+
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, "Can not Refresh tables.Try again Later");
+                CommonFunctions.WriteToErrorLog(ex.ToString());
             }
         }
     }
