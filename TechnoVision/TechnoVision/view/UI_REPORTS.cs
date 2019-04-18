@@ -33,7 +33,8 @@ namespace TechnoVision.view
                 fromMonth = DateDailyReport.Value.Month.ToString();
                 fromDay = DateDailyReport.Value.Day.ToString();
                 DailyReportContactLense rpt = new DailyReportContactLense();
-                rpt.RecordSelectionFormula = "{contactlense1.OrderDate} = DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") AND {contactlense1.Branch} = " + Session.BranchId + "AND {receipt1.OrderType} = 'LENSE'";
+                //{receipt1.ReceiptDate} = {receipt1.Branch}{receipt1.OrderType}
+                rpt.RecordSelectionFormula = "{receipt1.ReceiptDate} = DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") AND {contactlense1.Branch} = " + Session.BranchId + "AND {receipt1.OrderType} = 'LENSE'";
                 //CommonFunctions.ShowError(this,rpt.RecordSelectionFormula.ToString());
                 new UI_REPORT_VIEWER(rpt).Show();
             }
@@ -53,7 +54,7 @@ namespace TechnoVision.view
                 fromMonth = DateDailyReport.Value.Month.ToString();
                 fromDay = DateDailyReport.Value.Day.ToString();
                 DailyReportSpectacle rpt = new DailyReportSpectacle();
-                rpt.RecordSelectionFormula = "{spectacles1.OrderDate} = DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") AND {spectacles1.Branch} = " + Session.BranchId + "AND {receipt1.OrderType} = 'SPEC'";
+                rpt.RecordSelectionFormula = "{receipt1.ReceiptDate} = DATE(" + fromYear + "," + fromMonth + "," + fromDay + ") AND {spectacles1.Branch} = " + Session.BranchId + "AND {receipt1.OrderType} = 'SPEC'";
                 new UI_REPORT_VIEWER(rpt).Show();
             }
             catch(Exception ex)
@@ -70,7 +71,7 @@ namespace TechnoVision.view
             try
             {
                 DailyReportContactLense rpt = new DailyReportContactLense();
-                rpt.RecordSelectionFormula = "{contactlense1.OrderDate} in Date(" + DateStartDate.Value.ToString("yyyy,MM,dd") + ") to Date(" + DateEndDate.Value.ToString("yyyy,MM,dd") + ") AND {contactlense1.Branch} = " + Session.BranchId + "AND {receipt1.OrderType} = 'LENSE'";
+                rpt.RecordSelectionFormula = "{receipt1.ReceiptDate} in Date(" + DateStartDate.Value.ToString("yyyy,MM,dd") + ") to Date(" + DateEndDate.Value.ToString("yyyy,MM,dd") + ") AND {contactlense1.Branch} = " + Session.BranchId + "AND {receipt1.OrderType} = 'LENSE'";
                 new UI_REPORT_VIEWER(rpt).Show();
             }
             catch(Exception ex)
@@ -86,7 +87,7 @@ namespace TechnoVision.view
             try
             {
                 DailyReportSpectacle rpt = new DailyReportSpectacle();
-                rpt.RecordSelectionFormula = "{spectacles1.OrderDate} in Date(" + DateStartDate.Value.ToString("yyyy,MM,dd") + ") to Date(" + DateEndDate.Value.ToString("yyyy,MM,dd") + ") AND {spectacles1.Branch} = " + Session.BranchId + "AND {receipt1.OrderType} = 'SPEC'";
+                rpt.RecordSelectionFormula = "{receipt1.ReceiptDate} in Date(" + DateStartDate.Value.ToString("yyyy,MM,dd") + ") to Date(" + DateEndDate.Value.ToString("yyyy,MM,dd") + ") AND {spectacles1.Branch} = " + Session.BranchId + "AND {receipt1.OrderType} = 'SPEC'";
                 new UI_REPORT_VIEWER(rpt).Show();
             }
             catch(Exception ex)
