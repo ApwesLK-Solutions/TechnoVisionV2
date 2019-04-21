@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_ADD_ADVANCE));
             this.BtnAddPayment = new MetroFramework.Controls.MetroButton();
             this.TxtAmount = new MetroFramework.Controls.MetroTextBox();
             this.LblOrderNo = new MetroFramework.Controls.MetroLabel();
@@ -197,6 +198,7 @@
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_ADD_ADVANCE";
             this.Resizable = false;

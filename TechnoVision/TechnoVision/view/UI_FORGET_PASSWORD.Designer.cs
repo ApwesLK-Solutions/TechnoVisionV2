@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_FORGET_PASSWORD));
             this.BtnChangePassword = new MetroFramework.Controls.MetroButton();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
@@ -303,6 +304,7 @@
             this.Controls.Add(this.TxtConfirmPassword);
             this.Controls.Add(this.TxtNewPassword);
             this.Controls.Add(this.TxtUsername);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_FORGET_PASSWORD";
             this.Resizable = false;

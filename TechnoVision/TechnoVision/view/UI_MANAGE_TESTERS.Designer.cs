@@ -32,28 +32,29 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_MANAGE_TESTERS));
             this.testersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
             this.testersTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.testersTableAdapter();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.TxtAddTester = new MetroFramework.Controls.MetroTextBox();
-            this.BtnAddTester = new MetroFramework.Controls.MetroButton();
-            this.BtnDeleteTester = new MetroFramework.Controls.MetroButton();
             this.GridTesters = new MetroFramework.Controls.MetroGrid();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnDeleteTester = new MetroFramework.Controls.MetroButton();
+            this.BtnAddTester = new MetroFramework.Controls.MetroButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridTesters)).BeginInit();
-            this.tabControl1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // testersBindingSource
@@ -135,46 +136,6 @@
             this.TxtAddTester.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtAddTester.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // BtnAddTester
-            // 
-            this.BtnAddTester.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnAddTester.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAddTester.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnAddTester.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.BtnAddTester.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnAddTester.Highlight = true;
-            this.BtnAddTester.Location = new System.Drawing.Point(3, 3);
-            this.BtnAddTester.Name = "BtnAddTester";
-            this.BtnAddTester.Size = new System.Drawing.Size(248, 42);
-            this.BtnAddTester.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnAddTester.TabIndex = 3;
-            this.BtnAddTester.Text = "Save Tester";
-            this.BtnAddTester.UseCustomBackColor = true;
-            this.BtnAddTester.UseCustomForeColor = true;
-            this.BtnAddTester.UseSelectable = true;
-            this.BtnAddTester.UseStyleColors = true;
-            this.BtnAddTester.Click += new System.EventHandler(this.BtnAddTester_Click);
-            // 
-            // BtnDeleteTester
-            // 
-            this.BtnDeleteTester.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnDeleteTester.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnDeleteTester.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnDeleteTester.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.BtnDeleteTester.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnDeleteTester.Highlight = true;
-            this.BtnDeleteTester.Location = new System.Drawing.Point(257, 3);
-            this.BtnDeleteTester.Name = "BtnDeleteTester";
-            this.BtnDeleteTester.Size = new System.Drawing.Size(249, 42);
-            this.BtnDeleteTester.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnDeleteTester.TabIndex = 4;
-            this.BtnDeleteTester.Text = "Delete Tester";
-            this.BtnDeleteTester.UseCustomBackColor = true;
-            this.BtnDeleteTester.UseCustomForeColor = true;
-            this.BtnDeleteTester.UseSelectable = true;
-            this.BtnDeleteTester.UseStyleColors = true;
-            this.BtnDeleteTester.Click += new System.EventHandler(this.BtnDeleteTester_Click);
-            // 
             // GridTesters
             // 
             this.GridTesters.AllowUserToAddRows = false;
@@ -246,6 +207,61 @@
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.BtnDeleteTester, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.BtnAddTester, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 478);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(509, 48);
+            this.tableLayoutPanel3.TabIndex = 8;
+            // 
+            // BtnDeleteTester
+            // 
+            this.BtnDeleteTester.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnDeleteTester.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDeleteTester.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnDeleteTester.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.BtnDeleteTester.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnDeleteTester.Highlight = true;
+            this.BtnDeleteTester.Location = new System.Drawing.Point(257, 3);
+            this.BtnDeleteTester.Name = "BtnDeleteTester";
+            this.BtnDeleteTester.Size = new System.Drawing.Size(249, 42);
+            this.BtnDeleteTester.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnDeleteTester.TabIndex = 4;
+            this.BtnDeleteTester.Text = "Delete Tester";
+            this.BtnDeleteTester.UseCustomBackColor = true;
+            this.BtnDeleteTester.UseCustomForeColor = true;
+            this.BtnDeleteTester.UseSelectable = true;
+            this.BtnDeleteTester.UseStyleColors = true;
+            this.BtnDeleteTester.Click += new System.EventHandler(this.BtnDeleteTester_Click);
+            // 
+            // BtnAddTester
+            // 
+            this.BtnAddTester.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnAddTester.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAddTester.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnAddTester.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.BtnAddTester.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnAddTester.Highlight = true;
+            this.BtnAddTester.Location = new System.Drawing.Point(3, 3);
+            this.BtnAddTester.Name = "BtnAddTester";
+            this.BtnAddTester.Size = new System.Drawing.Size(248, 42);
+            this.BtnAddTester.Style = MetroFramework.MetroColorStyle.Green;
+            this.BtnAddTester.TabIndex = 3;
+            this.BtnAddTester.Text = "Save Tester";
+            this.BtnAddTester.UseCustomBackColor = true;
+            this.BtnAddTester.UseCustomForeColor = true;
+            this.BtnAddTester.UseSelectable = true;
+            this.BtnAddTester.UseStyleColors = true;
+            this.BtnAddTester.Click += new System.EventHandler(this.BtnAddTester_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -276,21 +292,6 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.BtnDeleteTester, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.BtnAddTester, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 478);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(509, 48);
-            this.tableLayoutPanel3.TabIndex = 8;
-            // 
             // UI_MANAGE_TESTERS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -298,6 +299,7 @@
             this.ClientSize = new System.Drawing.Size(555, 609);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_MANAGE_TESTERS";
             this.Resizable = false;
@@ -309,8 +311,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridTesters)).EndInit();
-            this.tabControl1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

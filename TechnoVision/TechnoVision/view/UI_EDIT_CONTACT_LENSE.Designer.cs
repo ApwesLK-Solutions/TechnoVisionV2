@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_EDIT_CONTACT_LENSE));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BtnCalculate = new MetroFramework.Controls.MetroTile();
             this.CmbPaymentPlan = new MetroFramework.Controls.MetroComboBox();
@@ -1822,6 +1823,7 @@
             this.Controls.Add(this.TxtMasterPassword);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_EDIT_CONTACT_LENSE";
             this.Resizable = false;

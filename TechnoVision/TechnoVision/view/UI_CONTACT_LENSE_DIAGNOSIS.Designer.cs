@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_CONTACT_LENSE_DIAGNOSIS));
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.TxtRightOldSph = new MetroFramework.Controls.MetroTextBox();
             this.TxtRightOldCyl = new MetroFramework.Controls.MetroTextBox();
@@ -1405,6 +1406,7 @@
             this.Controls.Add(this.metroLabel19);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_CONTACT_LENSE_DIAGNOSIS";
             this.Resizable = false;

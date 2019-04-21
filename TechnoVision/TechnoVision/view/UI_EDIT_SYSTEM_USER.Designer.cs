@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_EDIT_SYSTEM_USER));
             this.BtnEditUser = new MetroFramework.Controls.MetroButton();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
@@ -333,6 +334,7 @@
             this.Controls.Add(this.TxtFullName);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtUsername);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_EDIT_SYSTEM_USER";
             this.Resizable = false;

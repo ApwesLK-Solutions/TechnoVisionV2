@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_ADD_CUSTOMER));
             this.lael = new MetroFramework.Controls.MetroLabel();
             this.TxtCustomerName = new MetroFramework.Controls.MetroTextBox();
             this.TxtAddress = new MetroFramework.Controls.MetroTextBox();
@@ -413,6 +414,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.lael);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_ADD_CUSTOMER";
             this.Resizable = false;

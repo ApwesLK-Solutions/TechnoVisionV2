@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_SPECTACLES_DIAGNOSIS));
             this.BtnBack = new MetroFramework.Controls.MetroTile();
             this.BtnSave = new MetroFramework.Controls.MetroButton();
             this.BtnClear = new MetroFramework.Controls.MetroButton();
@@ -761,6 +762,7 @@
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.BtnBack);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_SPECTACLES_DIAGNOSIS";
             this.Resizable = false;

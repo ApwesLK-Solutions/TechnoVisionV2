@@ -30,21 +30,19 @@ namespace TechnoVision.view
         {
             try
             {
-                
-                        if (TxtAdvance.Text == "" || TxtBalance.Text == "" || TxtDiscount.Text == "" || TxtLensesTotal.Text == "" || TxtOrderNo.Text == "" || TxtRemindDays.Text == "")
-                        {
-                            CommonFunctions.ShowError(this, "Please Complete All Fields to continue...");
-                            CommonFunctions.WriteUserLog(Session.Username, "tried to continue without enter all fields");
-                        }
-                        else
-                        {
-                            LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yyyy-MM-dd"), DateDueDate.Value.ToString("yyyy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text), CmbJobType.Text, custID);
-                            Receipt.ReceiptNumber = LblReceiptNo.Text;
-                            receiptController.FillReceipt(LenseOrder.OrderNumber, LenseOrder.Advance, LenseOrder.OrderDate, "LENSE", LenseOrder.custID);
-                            this.Hide();
-                            new UI_CONTACT_LENSE_DIAGNOSIS(this).Show();
-                        }
-                    
+                    if (TxtAdvance.Text == "" || TxtBalance.Text == "" || TxtDiscount.Text == "" || TxtLensesTotal.Text == "" || TxtOrderNo.Text == "" || TxtRemindDays.Text == "")
+                    {
+                        CommonFunctions.ShowError(this, "Please Complete All Fields to continue...");
+                        CommonFunctions.WriteUserLog(Session.Username, "tried to continue without enter all fields");
+                    }
+                    else
+                    {
+                        LenseOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yyyy-MM-dd"), DateDueDate.Value.ToString("yyyy-MM-dd"), CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtLensesTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), CmbPaymentMethod.Text, CmbPaymentPlan.Text, int.Parse(TxtRemindDays.Text), CmbJobType.Text, custID);
+                        Receipt.ReceiptNumber = LblReceiptNo.Text;
+                        receiptController.FillReceipt(LenseOrder.OrderNumber, LenseOrder.Advance, LenseOrder.OrderDate, "LENSE", LenseOrder.custID);
+                        this.Hide();
+                        new UI_CONTACT_LENSE_DIAGNOSIS(this).Show();
+                    }
                 
             }
             catch (Exception ex)
@@ -56,8 +54,9 @@ namespace TechnoVision.view
 
         private void UI_CONTACT_LENSE_FORM_ONE_Load(object sender, EventArgs e)
         {
+            
             try
-            {
+            {   
                 // TODO: This line of code loads data into the 'technovisionDataSet.testers' table. You can move, or remove it, as needed.
                 this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
                 DateOrderDate.Value = DateTime.UtcNow;
@@ -69,7 +68,7 @@ namespace TechnoVision.view
                 CmbPaymentPlan.SelectedIndex = 0;
                 CmbTestedBy.SelectedIndex = 0;
                 
-                DateOrderDate.MinDate = DateTime.UtcNow;
+                DateOrderDate.MinDate = DateTime.UtcNow.AddDays(-1);
                 DateDueDate.MinDate = DateTime.UtcNow;
             }
             catch(Exception ex)
@@ -116,6 +115,7 @@ namespace TechnoVision.view
                 Console.WriteLine(rno);
                 string BranchCharacter = rno.Substring(0, 1);
                 newRno = BranchCharacter + (int.Parse(rno.Remove(0, 1)) + 1).ToString();
+                
             }
             catch (NullReferenceException ex)
             {

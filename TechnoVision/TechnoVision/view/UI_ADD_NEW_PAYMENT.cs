@@ -27,7 +27,7 @@ namespace TechnoVision.view
 
         private void UI_ADD_NEW_PAYMENT_Load(object sender, EventArgs e)
         {
-            DateOrderDate.MinDate = DateTime.UtcNow;
+            DateOrderDate.MinDate = DateTime.UtcNow.AddDays(-1);
             // TODO: This line of code loads data into the 'technovisionDataSet.receipt' table. You can move, or remove it, as needed.
             this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
             receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;

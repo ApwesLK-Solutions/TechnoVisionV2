@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_ADD_USER));
             this.TxtUsername = new MetroFramework.Controls.MetroTextBox();
             this.TxtPassword = new MetroFramework.Controls.MetroTextBox();
             this.TxtFullName = new MetroFramework.Controls.MetroTextBox();
@@ -340,6 +341,7 @@
             this.Controls.Add(this.TxtFullName);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtUsername);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_ADD_USER";
             this.Resizable = false;

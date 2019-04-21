@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_SPECTACLES_FORM_ONE));
             this.BtnClear = new MetroFramework.Controls.MetroButton();
             this.BtnNext = new MetroFramework.Controls.MetroButton();
             this.BtnCalculate = new MetroFramework.Controls.MetroTile();
@@ -682,6 +683,7 @@
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_SPECTACLES_FORM_ONE";
             this.Resizable = false;

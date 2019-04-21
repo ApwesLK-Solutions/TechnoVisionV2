@@ -28,7 +28,7 @@ namespace TechnoVision.view
 
         private void UI_ADD_ADVANCE_Load(object sender, EventArgs e)
         {
-            DateOrderDate.MinDate = DateTime.UtcNow;
+            DateOrderDate.MinDate = DateTime.UtcNow.AddDays(-1);
             LblOrderNo.Text = orderNumber;
             showReceiptNumber();
             if (orderType == "LENSE")

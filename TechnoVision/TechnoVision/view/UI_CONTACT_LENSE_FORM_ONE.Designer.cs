@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_CONTACT_LENSE_FORM_ONE));
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.LblReceiptNo = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
@@ -611,6 +612,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.LblReceiptNo);
             this.Controls.Add(this.metroLabel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_CONTACT_LENSE_FORM_ONE";
             this.Resizable = false;

@@ -38,8 +38,8 @@ namespace TechnoVision.view
                 CmbPaymentMethod.SelectedIndex = 0;
                 CmbPaymentPlan.SelectedIndex = 0;
                 CmbTestedBy.SelectedIndex = 0;
-                
-                DateOrderDate.MinDate = DateTime.UtcNow;
+
+                DateOrderDate.MinDate =  DateTime.UtcNow.AddDays(-1);;
                 DateDueDate.MinDate = DateTime.UtcNow;
             }
             catch(Exception)

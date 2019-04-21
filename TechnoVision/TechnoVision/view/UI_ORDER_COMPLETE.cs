@@ -133,21 +133,23 @@ namespace TechnoVision.view
             {
                 if (OrderType == "S")
                 {
-                    InvoiceSpecCompany rpt = new InvoiceSpecCompany();
-                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {receipt1.ReceiptNumber} = '" + ReceiptNumber +"' AND {spectacles1.Branch} =" + Session.BranchId;
-                    rpt.PrintToPrinter(1, false, 1, 1);
                     InvoiceSpecCustomer rpt2 = new InvoiceSpecCustomer();
                     rpt2.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {receipt1.ReceiptNumber} = '" + ReceiptNumber + "' AND {spectacles1.Branch} =" + Session.BranchId;
                     rpt2.PrintToPrinter(1, false, 1, 1);
+                    InvoiceSpecCompany rpt = new InvoiceSpecCompany();
+                    rpt.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + OrderNumber + "' AND {receipt1.ReceiptNumber} = '" + ReceiptNumber +"' AND {spectacles1.Branch} =" + Session.BranchId;
+                    rpt.PrintToPrinter(1, false, 1, 1);
+                  
                 }
                 else if (OrderType == "L")
                 {
-                    InvoiceLenseCompany rpt = new InvoiceLenseCompany();
-                    rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + OrderNumber + "' AND {receipt1.ReceiptNumber} = '" + ReceiptNumber + "' AND {contactlense1.Branch} =" + Session.BranchId;
-                    rpt.PrintToPrinter(1, false, 1, 1);
                     InvoiceLenseCustomer rpt2 = new InvoiceLenseCustomer();
                     rpt2.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + OrderNumber + "' AND {receipt1.ReceiptNumber} = '" + ReceiptNumber + "' AND {contactlense1.Branch} =" + Session.BranchId;
                     rpt2.PrintToPrinter(1, false, 1, 1);
+                    InvoiceLenseCompany rpt = new InvoiceLenseCompany();
+                    rpt.RecordSelectionFormula = "{contactlense1.OrderNumber} = '" + OrderNumber + "' AND {receipt1.ReceiptNumber} = '" + ReceiptNumber + "' AND {contactlense1.Branch} =" + Session.BranchId;
+                    rpt.PrintToPrinter(1, false, 1, 1);
+                    
                 }
                 
             }
