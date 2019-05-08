@@ -148,11 +148,11 @@ namespace TechnoVision.view
         {
             if(GridContactLense.SelectedRows[0].Cells[8].Value.ToString() == "0")
             {
-                BtnMakeAdvance.Visible = true;
+                BtnMakeAdvance.Enabled = true;
             }
             else
             {
-                BtnMakeAdvance.Visible = false;
+                BtnMakeAdvance.Enabled = false;
             }
         }
 
@@ -172,7 +172,7 @@ namespace TechnoVision.view
         {
             try
             {
-                RadioSpectacles.Checked = true;
+                //RadioSpectacles.Checked = true;
                 // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
                 this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
                 // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.

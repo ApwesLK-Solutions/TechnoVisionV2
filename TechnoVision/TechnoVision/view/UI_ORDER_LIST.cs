@@ -182,5 +182,23 @@ namespace TechnoVision.view
                 
             }
         }
+
+        private void BtnRefresh_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                spectaclesBindingSource.Filter = "Branch =" + Session.BranchId;
+                contactlenseBindingSource.Filter = "Branch =" + Session.BranchId;
+                // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
+                this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+                timer1.Enabled = true;
+                // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
+                this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+            }
+            catch (Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+            }
+        }
     }
 }

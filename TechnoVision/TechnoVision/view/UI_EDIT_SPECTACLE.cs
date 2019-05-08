@@ -115,9 +115,9 @@ namespace TechnoVision.view
                 advance = Double.Parse(TxtAdvance.Text);
                 balance = Double.Parse(TxtBalance.Text);
 
-                total = EyeWearAmount + LenseAmount;
+                total = (EyeWearAmount + LenseAmount);
                 TxtTotal.Text = total.ToString();
-                balance = total - discount - advance;
+                balance = (total - discount - advance);
                 TxtBalance.Text = balance.ToString();
             }
             
