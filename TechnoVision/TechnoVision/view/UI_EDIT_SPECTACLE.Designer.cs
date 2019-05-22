@@ -88,10 +88,13 @@
             this.TxtMasterPassword = new MetroFramework.Controls.MetroTextBox();
             this.BtnSaveUser = new MetroFramework.Controls.MetroButton();
             this.spectaclesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.spectaclesTableAdapter();
+            this.framesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.framesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.framesTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spectaclesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -644,8 +647,9 @@
             // 
             // CmbFrame
             // 
-            this.CmbFrame.DataSource = this.spectaclesBindingSource;
-            this.CmbFrame.DisplayMember = "Frame";
+            this.CmbFrame.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.technovisionDataSet, "frames.FrameName", true));
+            this.CmbFrame.DataSource = this.framesBindingSource;
+            this.CmbFrame.DisplayMember = "FrameName";
             this.CmbFrame.FormattingEnabled = true;
             this.CmbFrame.ItemHeight = 24;
             this.CmbFrame.Location = new System.Drawing.Point(800, 83);
@@ -1231,6 +1235,15 @@
             // 
             this.spectaclesTableAdapter.ClearBeforeFill = true;
             // 
+            // framesBindingSource
+            // 
+            this.framesBindingSource.DataMember = "frames";
+            this.framesBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // framesTableAdapter
+            // 
+            this.framesTableAdapter.ClearBeforeFill = true;
+            // 
             // UI_EDIT_SPECTACLE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1255,6 +1268,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1320,5 +1334,7 @@
         private technovisionDataSet technovisionDataSet;
         private System.Windows.Forms.BindingSource spectaclesBindingSource;
         private technovisionDataSetTableAdapters.spectaclesTableAdapter spectaclesTableAdapter;
+        private System.Windows.Forms.BindingSource framesBindingSource;
+        private technovisionDataSetTableAdapters.framesTableAdapter framesTableAdapter;
     }
 }

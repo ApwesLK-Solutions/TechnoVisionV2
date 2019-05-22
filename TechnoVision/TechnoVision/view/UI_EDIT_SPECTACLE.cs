@@ -27,6 +27,8 @@ namespace TechnoVision.view
 
         private void UI_EDIT_SPECTACLE_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'technovisionDataSet.frames' table. You can move, or remove it, as needed.
+            this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
             try
             {
                 // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
