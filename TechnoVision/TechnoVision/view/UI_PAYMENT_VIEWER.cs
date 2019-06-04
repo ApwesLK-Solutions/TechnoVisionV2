@@ -97,6 +97,7 @@ namespace TechnoVision.view
             try
             {
                 new UI_ADD_NEW_PAYMENT(T_OrderNumber, T_OrderType, T_CustID).Show();
+                this.Dispose();
             }
             catch(Exception ex)
             {
@@ -120,13 +121,7 @@ namespace TechnoVision.view
                 CommonFunctions.ShowError(this, ex.Message.ToString());
             }
         }
-
-        private void BtnRefresh_Click(object sender, EventArgs e)
-        {
-            this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
-            receiptBindingSource.Filter = "Branch = " + Session.BranchId;
-        }
-
+        
         private void BtnPrintReceipt_Click(object sender, EventArgs e)
         {
             string OrderType = GridPayment.SelectedRows[0].Cells[4].Value.ToString();

@@ -58,16 +58,16 @@
             // 
             // 
             this.TxtSearch.CustomButton.Image = null;
-            this.TxtSearch.CustomButton.Location = new System.Drawing.Point(475, 1);
+            this.TxtSearch.CustomButton.Location = new System.Drawing.Point(471, 1);
             this.TxtSearch.CustomButton.Name = "";
-            this.TxtSearch.CustomButton.Size = new System.Drawing.Size(33, 33);
+            this.TxtSearch.CustomButton.Size = new System.Drawing.Size(37, 37);
             this.TxtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtSearch.CustomButton.TabIndex = 1;
             this.TxtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtSearch.CustomButton.UseSelectable = true;
             this.TxtSearch.CustomButton.Visible = false;
             this.TxtSearch.DisplayIcon = true;
-            this.TxtSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TxtSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtSearch.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtSearch.Icon = global::TechnoVision.Properties.Resources.search;
             this.TxtSearch.Lines = new string[0];
@@ -81,7 +81,7 @@
             this.TxtSearch.SelectionLength = 0;
             this.TxtSearch.SelectionStart = 0;
             this.TxtSearch.ShortcutsEnabled = true;
-            this.TxtSearch.Size = new System.Drawing.Size(509, 35);
+            this.TxtSearch.Size = new System.Drawing.Size(509, 39);
             this.TxtSearch.TabIndex = 1;
             this.TxtSearch.UseSelectable = true;
             this.TxtSearch.WaterMark = "Search Frames...";
@@ -127,7 +127,7 @@
             this.GridFrame.EnableHeadersVisualStyles = false;
             this.GridFrame.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.GridFrame.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.GridFrame.Location = new System.Drawing.Point(3, 60);
+            this.GridFrame.Location = new System.Drawing.Point(3, 48);
             this.GridFrame.Name = "GridFrame";
             this.GridFrame.ReadOnly = true;
             this.GridFrame.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -260,8 +260,8 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(23, 67);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.637236F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.20921F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(515, 521);

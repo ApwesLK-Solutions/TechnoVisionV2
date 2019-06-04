@@ -66,16 +66,16 @@
             // 
             // 
             this.TxtSearchCustomer.CustomButton.Image = null;
-            this.TxtSearchCustomer.CustomButton.Location = new System.Drawing.Point(310, 1);
+            this.TxtSearchCustomer.CustomButton.Location = new System.Drawing.Point(306, 1);
             this.TxtSearchCustomer.CustomButton.Name = "";
-            this.TxtSearchCustomer.CustomButton.Size = new System.Drawing.Size(33, 33);
+            this.TxtSearchCustomer.CustomButton.Size = new System.Drawing.Size(37, 37);
             this.TxtSearchCustomer.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtSearchCustomer.CustomButton.TabIndex = 1;
             this.TxtSearchCustomer.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtSearchCustomer.CustomButton.UseSelectable = true;
             this.TxtSearchCustomer.CustomButton.Visible = false;
             this.TxtSearchCustomer.DisplayIcon = true;
-            this.TxtSearchCustomer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TxtSearchCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtSearchCustomer.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtSearchCustomer.Icon = global::TechnoVision.Properties.Resources.search;
             this.TxtSearchCustomer.Lines = new string[0];
@@ -89,7 +89,7 @@
             this.TxtSearchCustomer.SelectionLength = 0;
             this.TxtSearchCustomer.SelectionStart = 0;
             this.TxtSearchCustomer.ShortcutsEnabled = true;
-            this.TxtSearchCustomer.Size = new System.Drawing.Size(344, 35);
+            this.TxtSearchCustomer.Size = new System.Drawing.Size(344, 39);
             this.TxtSearchCustomer.TabIndex = 5;
             this.TxtSearchCustomer.UseSelectable = true;
             this.TxtSearchCustomer.WaterMark = "Search by Name or Phone...";
@@ -325,12 +325,11 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel3.Controls.Add(this.TxtSearchCustomer, 1, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1164, 56);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1164, 45);
             this.tableLayoutPanel3.TabIndex = 11;
             // 
             // tableLayoutPanel2

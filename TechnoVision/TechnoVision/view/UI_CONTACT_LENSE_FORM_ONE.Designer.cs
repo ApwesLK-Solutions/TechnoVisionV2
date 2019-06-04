@@ -72,7 +72,7 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(547, 34);
+            this.metroLabel1.Location = new System.Drawing.Point(535, 34);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(123, 20);
             this.metroLabel1.TabIndex = 0;
@@ -411,7 +411,8 @@
             "CASH",
             "CREDIT CARD",
             "DEBIT CARD",
-            "N-C"});
+            "N-C",
+            "UNKNOWN"});
             this.CmbPaymentMethod.Location = new System.Drawing.Point(662, 102);
             this.CmbPaymentMethod.Name = "CmbPaymentMethod";
             this.CmbPaymentMethod.Size = new System.Drawing.Size(288, 30);

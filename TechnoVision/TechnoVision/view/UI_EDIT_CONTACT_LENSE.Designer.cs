@@ -1739,7 +1739,7 @@
             // 
             this.metroLabel34.AutoSize = true;
             this.metroLabel34.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel34.Location = new System.Drawing.Point(283, 635);
+            this.metroLabel34.Location = new System.Drawing.Point(123, 636);
             this.metroLabel34.Name = "metroLabel34";
             this.metroLabel34.Size = new System.Drawing.Size(316, 20);
             this.metroLabel34.TabIndex = 19;
@@ -1749,7 +1749,7 @@
             // 
             this.metroLabel35.AutoSize = true;
             this.metroLabel35.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel35.Location = new System.Drawing.Point(251, 615);
+            this.metroLabel35.Location = new System.Drawing.Point(91, 616);
             this.metroLabel35.Name = "metroLabel35";
             this.metroLabel35.Size = new System.Drawing.Size(393, 20);
             this.metroLabel35.TabIndex = 20;
@@ -1762,7 +1762,7 @@
             this.BtnSave.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnSave.Highlight = true;
-            this.BtnSave.Location = new System.Drawing.Point(679, 648);
+            this.BtnSave.Location = new System.Drawing.Point(494, 654);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(194, 45);
             this.BtnSave.Style = MetroFramework.MetroColorStyle.Green;
@@ -1790,7 +1790,7 @@
             this.TxtMasterPassword.CustomButton.Visible = false;
             this.TxtMasterPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtMasterPassword.Lines = new string[0];
-            this.TxtMasterPassword.Location = new System.Drawing.Point(325, 663);
+            this.TxtMasterPassword.Location = new System.Drawing.Point(165, 664);
             this.TxtMasterPassword.MaxLength = 32767;
             this.TxtMasterPassword.Name = "TxtMasterPassword";
             this.TxtMasterPassword.PasswordChar = '#';
@@ -1829,6 +1829,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Edit Contact Lense Order";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UI_EDIT_CONTACT_LENSE_FormClosed);
             this.Load += new System.EventHandler(this.UI_EDIT_CONTACT_LENSE_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

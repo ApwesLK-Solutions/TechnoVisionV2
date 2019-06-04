@@ -68,7 +68,7 @@ namespace TechnoVision.view
                 CmbPaymentPlan.SelectedIndex = 0;
                 CmbTestedBy.SelectedIndex = 0;
                 
-                DateOrderDate.MinDate = DateTime.UtcNow.AddDays(-1);
+                DateOrderDate.MinDate = DateTime.UtcNow.AddDays(-2);
                 DateDueDate.MinDate = DateTime.UtcNow;
             }
             catch(Exception ex)

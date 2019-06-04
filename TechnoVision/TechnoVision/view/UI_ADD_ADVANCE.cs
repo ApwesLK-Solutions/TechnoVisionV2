@@ -28,7 +28,7 @@ namespace TechnoVision.view
 
         private void UI_ADD_ADVANCE_Load(object sender, EventArgs e)
         {
-            DateOrderDate.MinDate = DateTime.UtcNow.AddDays(-1);
+            DateOrderDate.MinDate = DateTime.UtcNow.AddDays(-2);
             LblOrderNo.Text = orderNumber;
             showReceiptNumber();
             if (orderType == "LENSE")
@@ -96,8 +96,11 @@ namespace TechnoVision.view
                     rpt1.PrintToPrinter(1, false, 1, 1);
                     new UI_REPORT_VIEWER(rpt1).Show();
 
+                    
+
+
                 }
-                if(orderType =="SPEC")
+                if (orderType =="SPEC")
                 {
                     technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
                     t.UpdateBalanceByOrderNumber(double.Parse(LblDueAmount.Text) - double.Parse(TxtAmount.Text), orderNumber);
@@ -113,8 +116,11 @@ namespace TechnoVision.view
                     rpt1.RecordSelectionFormula = "{spectacles1.OrderNumber} ='" + orderNumber + "' AND {receipt1.ReceiptNumber} = '" + Receipt.ReceiptNumber + "' AND {spectacles1.Branch} =" + Session.BranchId;
                     rpt1.PrintToPrinter(1, false, 1, 1);
                     new UI_REPORT_VIEWER(rpt1).Show();
+
+                    
+
                 }
-                
+
 
             }
             catch(Exception ex)
@@ -132,6 +138,11 @@ namespace TechnoVision.view
             {
                 e.Handled = true;
             }
+        }
+
+        private void UI_ADD_ADVANCE_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //new UI_PAYMENT_VIEWER().Show();
         }
     }
 }

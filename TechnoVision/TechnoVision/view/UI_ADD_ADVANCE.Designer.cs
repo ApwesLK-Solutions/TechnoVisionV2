@@ -97,7 +97,7 @@
             // 
             this.LblOrderNo.AutoSize = true;
             this.LblOrderNo.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblOrderNo.Location = new System.Drawing.Point(156, 106);
+            this.LblOrderNo.Location = new System.Drawing.Point(157, 106);
             this.LblOrderNo.Name = "LblOrderNo";
             this.LblOrderNo.Size = new System.Drawing.Size(74, 20);
             this.LblOrderNo.TabIndex = 108;
@@ -127,7 +127,7 @@
             // 
             this.LblReceiptNo.AutoSize = true;
             this.LblReceiptNo.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblReceiptNo.Location = new System.Drawing.Point(157, 72);
+            this.LblReceiptNo.Location = new System.Drawing.Point(205, 72);
             this.LblReceiptNo.Name = "LblReceiptNo";
             this.LblReceiptNo.Size = new System.Drawing.Size(123, 20);
             this.LblReceiptNo.TabIndex = 100;
@@ -204,6 +204,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "New Advance Payment";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UI_ADD_ADVANCE_FormClosed);
             this.Load += new System.EventHandler(this.UI_ADD_ADVANCE_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using TechnoVision.technovisionDataSetTableAdapters;
 
 namespace TechnoVision.view
 {
@@ -27,14 +29,18 @@ namespace TechnoVision.view
 
         private void UI_EDIT_SPECTACLE_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'technovisionDataSet.frames' table. You can move, or remove it, as needed.
-            this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
+            
+
             try
             {
+                this.testersTableAdapter.Fill(this.technovisionDataSet.testers);
+                this.framesTableAdapter.Fill(this.technovisionDataSet.frames);
                 // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
                 this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
                 spectaclesBindingSource.Filter = "OrderNumber = '" + OrderNumber + "' AND Branch = " + Session.BranchId;
                 BtnSaveUser.Enabled = false;
+                testedBy.Text = CmbTestedBy.Text;
+                frame.Text = CmbFrame.Text;
             }
             catch (Exception ex)
             {
@@ -55,18 +61,37 @@ namespace TechnoVision.view
                 }
                 else
                 {
+                    //technovisionDataSet.receiptDataTable receiptT = new technovisionDataSet.receiptDataTable();
+                    technovisionDataSetTableAdapters.receiptTableAdapter tt = new receiptTableAdapter();
+                    if(int.Parse(tt.getReceiptCountByOrder(TxtOrderNo.Text, "SPEC").ToString()) == 0 || int.Parse(tt.getReceiptCountByOrder(TxtOrderNo.Text, "SPEC").ToString()) >=2)
+                    {
+                        CommonFunctions.ShowError(this, "You can not update the 'PAYMENT DETAILS' because there is two or more payments to this order. You can only update order when there was one payment.But Other details such as Diognosis Details, other Order details Except Payment Details will update as normally...");
+                        spectaclesBindingSource.EndEdit();
+                        spectaclesTableAdapter.Update(technovisionDataSet);
+                        this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+                        CommonFunctions.ShowSuccess(this, "Successfully Changed Diognosis Details and other Order details...");
+                        CommonFunctions.WriteUserLog(Session.Username, "Edited order number" + TxtOrderNo.Text + "...Critical");
+                        new UI_ORDER_LIST().Show();
+                        this.Dispose();
+                    }
+                    else if(int.Parse(tt.getReceiptCountByOrder(TxtOrderNo.Text,"SPEC").ToString()) == 1)
+                    {
+                        tt.UpdatePaymentAmountByOrder(double.Parse(TxtAdvance.Text),TxtOrderNo.Text,"SPEC");
+                        spectaclesBindingSource.EndEdit();
+                        spectaclesTableAdapter.Update(technovisionDataSet);
+                        this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+                        CommonFunctions.ShowSuccess(this, "Successfully Changed edit Details...");
+                        CommonFunctions.WriteUserLog(Session.Username, "Edited order number" + TxtOrderNo.Text + "...Critical");
+                        new UI_ORDER_LIST().Show();
+                        this.Dispose();
+                    }
                     
-                            spectaclesBindingSource.EndEdit();
-                            spectaclesTableAdapter.Update(technovisionDataSet);
-                            this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
-                            CommonFunctions.ShowSuccess(this, "Successfully Changed edit Details...");
-                            CommonFunctions.WriteUserLog(Session.Username, "Edited order number" + TxtOrderNo + "...Critical");
-                        
                 }
 
             }
             catch(Exception ex)
             {
+                CommonFunctions.ShowError(this, "Error occurred. error - "+ex.ToString());
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
         }
@@ -168,6 +193,26 @@ namespace TechnoVision.view
             {
                 e.Handled = true;
             }
+        }
+
+        private void CmbTestedBy_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void testedBy_TextChanged(object sender, EventArgs e)
+        {
+            CmbTestedBy.Text = testedBy.Text;
+        }
+
+        private void frame_TextChanged(object sender, EventArgs e)
+        {
+            CmbFrame.Text = frame.Text;
+        }
+
+        private void UI_EDIT_SPECTACLE_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            new UI_ORDER_LIST().Show();
         }
     }
 }

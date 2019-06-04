@@ -36,7 +36,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_PAYMENT_VIEWER));
-            this.BtnRefresh = new MetroFramework.Controls.MetroButton();
             this.BtnNewPayment = new MetroFramework.Controls.MetroButton();
             this.BtnPrintReceipt = new MetroFramework.Controls.MetroButton();
             this.GridPayments = new MetroFramework.Controls.MetroGrid();
@@ -81,26 +80,6 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BtnRefresh
-            // 
-            this.BtnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnRefresh.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.BtnRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnRefresh.Highlight = true;
-            this.BtnRefresh.Location = new System.Drawing.Point(568, 3);
-            this.BtnRefresh.Name = "BtnRefresh";
-            this.BtnRefresh.Size = new System.Drawing.Size(276, 52);
-            this.BtnRefresh.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnRefresh.TabIndex = 3;
-            this.BtnRefresh.Text = "Refresh";
-            this.BtnRefresh.UseCustomBackColor = true;
-            this.BtnRefresh.UseCustomForeColor = true;
-            this.BtnRefresh.UseSelectable = true;
-            this.BtnRefresh.UseStyleColors = true;
-            this.BtnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
             // 
             // BtnNewPayment
             // 
@@ -407,7 +386,7 @@
             this.LblCustomer.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.LblCustomer.Location = new System.Drawing.Point(220, 0);
             this.LblCustomer.Name = "LblCustomer";
-            this.LblCustomer.Size = new System.Drawing.Size(429, 25);
+            this.LblCustomer.Size = new System.Drawing.Size(429, 35);
             this.LblCustomer.TabIndex = 10;
             this.LblCustomer.Text = "Customer Name";
             // 
@@ -419,7 +398,7 @@
             this.LblTotal.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.LblTotal.Location = new System.Drawing.Point(1240, 0);
             this.LblTotal.Name = "LblTotal";
-            this.LblTotal.Size = new System.Drawing.Size(171, 25);
+            this.LblTotal.Size = new System.Drawing.Size(171, 35);
             this.LblTotal.TabIndex = 10;
             this.LblTotal.Text = "Total";
             // 
@@ -431,7 +410,7 @@
             this.LblDue.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.LblDue.Location = new System.Drawing.Point(854, 0);
             this.LblDue.Name = "LblDue";
-            this.LblDue.Size = new System.Drawing.Size(235, 25);
+            this.LblDue.Size = new System.Drawing.Size(235, 35);
             this.LblDue.TabIndex = 10;
             this.LblDue.Text = "Due Amount";
             // 
@@ -443,7 +422,7 @@
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel1.Location = new System.Drawing.Point(59, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(155, 25);
+            this.metroLabel1.Size = new System.Drawing.Size(155, 35);
             this.metroLabel1.TabIndex = 10;
             this.metroLabel1.Text = "Customer Name";
             // 
@@ -455,7 +434,7 @@
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel2.Location = new System.Drawing.Point(722, 0);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(126, 25);
+            this.metroLabel2.Size = new System.Drawing.Size(126, 35);
             this.metroLabel2.TabIndex = 10;
             this.metroLabel2.Text = "Due Amount";
             // 
@@ -465,16 +444,16 @@
             // 
             // 
             this.TxtReceiptSearch.CustomButton.Image = null;
-            this.TxtReceiptSearch.CustomButton.Location = new System.Drawing.Point(385, 1);
+            this.TxtReceiptSearch.CustomButton.Location = new System.Drawing.Point(379, 1);
             this.TxtReceiptSearch.CustomButton.Name = "";
-            this.TxtReceiptSearch.CustomButton.Size = new System.Drawing.Size(33, 33);
+            this.TxtReceiptSearch.CustomButton.Size = new System.Drawing.Size(39, 39);
             this.TxtReceiptSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtReceiptSearch.CustomButton.TabIndex = 1;
             this.TxtReceiptSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtReceiptSearch.CustomButton.UseSelectable = true;
             this.TxtReceiptSearch.CustomButton.Visible = false;
             this.TxtReceiptSearch.DisplayIcon = true;
-            this.TxtReceiptSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TxtReceiptSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtReceiptSearch.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtReceiptSearch.Icon = global::TechnoVision.Properties.Resources.search;
             this.TxtReceiptSearch.Lines = new string[0];
@@ -488,7 +467,7 @@
             this.TxtReceiptSearch.SelectionLength = 0;
             this.TxtReceiptSearch.SelectionStart = 0;
             this.TxtReceiptSearch.ShortcutsEnabled = true;
-            this.TxtReceiptSearch.Size = new System.Drawing.Size(419, 35);
+            this.TxtReceiptSearch.Size = new System.Drawing.Size(419, 41);
             this.TxtReceiptSearch.TabIndex = 1;
             this.TxtReceiptSearch.UseSelectable = true;
             this.TxtReceiptSearch.WaterMark = "Search by Order Number and Receipt No...";
@@ -504,7 +483,7 @@
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel3.Location = new System.Drawing.Point(1179, 0);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(55, 25);
+            this.metroLabel3.Size = new System.Drawing.Size(55, 35);
             this.metroLabel3.TabIndex = 10;
             this.metroLabel3.Text = "Total";
             // 
@@ -520,8 +499,8 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(20, 60);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.386076F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.487342F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1420, 632);
@@ -534,7 +513,6 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.Controls.Add(this.BtnRefresh, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.BtnNewPayment, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.BtnPrintReceipt, 3, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -562,11 +540,11 @@
             this.tableLayoutPanel3.Controls.Add(this.LblDue, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.metroLabel3, 4, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 66);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 56);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1414, 25);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1414, 35);
             this.tableLayoutPanel3.TabIndex = 13;
             // 
             // tableLayoutPanel2
@@ -574,13 +552,14 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel2.Controls.Add(this.TxtReceiptSearch, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.TxtReceiptSearch, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1414, 57);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1414, 47);
             this.tableLayoutPanel2.TabIndex = 12;
             // 
             // UI_PAYMENT_VIEWER
@@ -610,8 +589,6 @@
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroButton BtnRefresh;
         private MetroFramework.Controls.MetroButton BtnNewPayment;
         private MetroFramework.Controls.MetroButton BtnPrintReceipt;
         private MetroFramework.Controls.MetroGrid GridPayments;

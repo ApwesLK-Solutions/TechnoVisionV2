@@ -125,7 +125,7 @@
             this.BtnLogin.Location = new System.Drawing.Point(157, 0);
             this.BtnLogin.Margin = new System.Windows.Forms.Padding(0);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(157, 50);
+            this.BtnLogin.Size = new System.Drawing.Size(157, 59);
             this.BtnLogin.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnLogin.TabIndex = 3;
             this.BtnLogin.Text = "Login";
@@ -161,9 +161,9 @@
             // 
             this.BtnForgetPassword.AutoSize = true;
             this.BtnForgetPassword.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BtnForgetPassword.Location = new System.Drawing.Point(362, 343);
+            this.BtnForgetPassword.Location = new System.Drawing.Point(362, 351);
             this.BtnForgetPassword.Name = "BtnForgetPassword";
-            this.BtnForgetPassword.Size = new System.Drawing.Size(114, 29);
+            this.BtnForgetPassword.Size = new System.Drawing.Size(114, 21);
             this.BtnForgetPassword.TabIndex = 4;
             this.BtnForgetPassword.TabStop = true;
             this.BtnForgetPassword.Text = "Forgot Password";
@@ -175,7 +175,7 @@
             this.pictureBox1.Image = global::TechnoVision.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(50, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(372, 141);
+            this.pictureBox1.Size = new System.Drawing.Size(372, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -196,8 +196,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.45011F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.1286F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.1286F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.19955F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.093124F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.74194F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.376344F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(479, 372);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
@@ -209,7 +209,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.TxtPassword, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 238);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 237);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -224,7 +224,7 @@
             this.tableLayoutPanel2.Controls.Add(this.TxtUsername, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 186);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 185);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -244,7 +244,7 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.33334F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(473, 177);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(473, 176);
             this.tableLayoutPanel4.TabIndex = 9;
             // 
             // tableLayoutPanel5
@@ -255,12 +255,12 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.Controls.Add(this.BtnLogin, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 290);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 289);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(473, 50);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(473, 59);
             this.tableLayoutPanel5.TabIndex = 10;
             // 
             // UI_LOGIN

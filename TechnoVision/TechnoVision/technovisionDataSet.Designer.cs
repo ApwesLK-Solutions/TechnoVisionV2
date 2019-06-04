@@ -9524,7 +9524,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[4];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[6];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT * FROM `receipt`";
@@ -9557,21 +9557,42 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             this._commandCollection[1].Parameters.Add(param);
             this._commandCollection[2] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT MAX(Id) FROM receipt";
+            this._commandCollection[2].CommandText = "SELECT COUNT(*) FROM receipt WHERE OrderNumber = @OrderNumber  AND OrderType =@Or" +
+                "derType";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@OrderNumber";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 10;
+            param.IsNullable = true;
+            param.SourceColumn = "OrderNumber";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@OrderType";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 45;
+            param.IsNullable = true;
+            param.SourceColumn = "OrderType";
+            this._commandCollection[2].Parameters.Add(param);
             this._commandCollection[3] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT ReceiptNumber FROM receipt WHERE Branch =  @Branch AND Year = @Year AND su" +
+            this._commandCollection[3].CommandText = "SELECT MAX(Id) FROM receipt";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "SELECT ReceiptNumber FROM receipt WHERE Branch =  @Branch AND Year = @Year AND su" +
                 "bstring(ReceiptNumber,2)=(SELECT MAX(CAST(SUBSTRING(ReceiptNumber,2) AS SIGNED))" +
                 " FROM receipt);";
-            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@branchID";
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
             param.SourceColumn = "Branch";
-            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@year";
             param.DbType = global::System.Data.DbType.String;
@@ -9579,7 +9600,37 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.Size = 45;
             param.IsNullable = true;
             param.SourceColumn = "Year";
-            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
+            this._commandCollection[5] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[5].Connection = this.Connection;
+            this._commandCollection[5].CommandText = "UPDATE receipt SET  PaymentAmount = @PaymentAmount WHERE OrderNumber = @OrderNumb" +
+                "er AND OrderType =@OrderType";
+            this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@PaymentAmount";
+            param.DbType = global::System.Data.DbType.Double;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Double;
+            param.IsNullable = true;
+            param.SourceColumn = "PaymentAmount";
+            this._commandCollection[5].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@OrderNumber";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 10;
+            param.IsNullable = true;
+            param.SourceColumn = "OrderNumber";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[5].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@OrderType";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 45;
+            param.IsNullable = true;
+            param.SourceColumn = "OrderType";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[5].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9879,8 +9930,48 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual global::System.Nullable<int> GetReceiptNumber() {
+        public virtual object getReceiptCountByOrder(string OrderNumber, string OrderType) {
             global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[2];
+            if ((OrderNumber == null)) {
+                throw new global::System.ArgumentNullException("OrderNumber");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(OrderNumber));
+            }
+            if ((OrderType == null)) {
+                throw new global::System.ArgumentNullException("OrderType");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(OrderType));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            object returnValue;
+            try {
+                returnValue = command.ExecuteScalar();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual global::System.Nullable<int> GetReceiptNumber() {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[3];
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -9908,7 +9999,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual object getReceiptNumberByBranch(int branchID, string year) {
-            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[3];
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[4];
             command.Parameters[0].Value = ((int)(branchID));
             if ((year == null)) {
                 throw new global::System.ArgumentNullException("year");
@@ -9937,6 +10028,42 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             else {
                 return ((object)(returnValue));
             }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdatePaymentAmountByOrder(double PaymentAmount, string OrderNumber, string OrderType) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[5];
+            command.Parameters[0].Value = ((double)(PaymentAmount));
+            if ((OrderNumber == null)) {
+                throw new global::System.ArgumentNullException("OrderNumber");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(OrderNumber));
+            }
+            if ((OrderType == null)) {
+                throw new global::System.ArgumentNullException("OrderType");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(OrderType));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
@@ -12360,7 +12487,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[7];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[8];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT * FROM `contactlense`";
@@ -12473,6 +12600,28 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceColumn = "OrderNumber";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[6].Parameters.Add(param);
+            this._commandCollection[7] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[7].Connection = this.Connection;
+            this._commandCollection[7].CommandText = "UPDATE `contactlense` SET  `TestedBy` = @TestedBy WHERE OrderNumber = @OrderNumbe" +
+                "r";
+            this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@TestedBy";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 45;
+            param.IsNullable = true;
+            param.SourceColumn = "TestedBy";
+            this._commandCollection[7].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@OrderNumber";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "OrderNumber";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[7].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13904,6 +14053,41 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             return returnValue;
         }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int updateTesterbyOrderNumber(string TestedBy, string OrderNumber) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[7];
+            if ((TestedBy == null)) {
+                throw new global::System.ArgumentNullException("TestedBy");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(TestedBy));
+            }
+            if ((OrderNumber == null)) {
+                throw new global::System.ArgumentNullException("OrderNumber");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(OrderNumber));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
     }
     
     /// <summary>
@@ -15030,7 +15214,7 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[7];
+            this._commandCollection = new global::MySql.Data.MySqlClient.MySqlCommand[8];
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT * FROM spectacles";
@@ -15140,6 +15324,36 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             param.SourceColumn = "OrderNumber";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[6].Parameters.Add(param);
+            this._commandCollection[7] = new global::MySql.Data.MySqlClient.MySqlCommand();
+            this._commandCollection[7].Connection = this.Connection;
+            this._commandCollection[7].CommandText = "UPDATE `spectacles` SET `TestBy` = @p9 , `Frame` = @p23 WHERE `OrderNumber` = @p1" +
+                " ";
+            this._commandCollection[7].CommandType = global::System.Data.CommandType.Text;
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p9";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 45;
+            param.IsNullable = true;
+            param.SourceColumn = "TestBy";
+            this._commandCollection[7].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p23";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 45;
+            param.IsNullable = true;
+            param.SourceColumn = "Frame";
+            this._commandCollection[7].Parameters.Add(param);
+            param = new global::MySql.Data.MySqlClient.MySqlParameter();
+            param.ParameterName = "@p1";
+            param.DbType = global::System.Data.DbType.String;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "OrderNumber";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[7].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16090,6 +16304,47 @@ namespace TechnoVision.technovisionDataSetTableAdapters {
             }
             else {
                 command.Parameters[1].Value = ((string)(OrderNumber));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateTesterAndFrame(string p9, string p23, string p1) {
+            global::MySql.Data.MySqlClient.MySqlCommand command = this.CommandCollection[7];
+            if ((p9 == null)) {
+                throw new global::System.ArgumentNullException("p9");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(p9));
+            }
+            if ((p23 == null)) {
+                throw new global::System.ArgumentNullException("p23");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(p23));
+            }
+            if ((p1 == null)) {
+                throw new global::System.ArgumentNullException("p1");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(p1));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 

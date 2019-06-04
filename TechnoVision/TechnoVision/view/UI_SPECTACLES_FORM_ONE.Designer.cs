@@ -180,7 +180,8 @@
             "CASH",
             "CREDIT CARD",
             "DEBIT CARD",
-            "N-C"});
+            "N-C",
+            "UNKNOWN"});
             this.CmbPaymentMethod.Location = new System.Drawing.Point(240, 341);
             this.CmbPaymentMethod.Name = "CmbPaymentMethod";
             this.CmbPaymentMethod.Size = new System.Drawing.Size(290, 30);
@@ -635,7 +636,7 @@
             // 
             this.metroLabel15.AutoSize = true;
             this.metroLabel15.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel15.Location = new System.Drawing.Point(762, 44);
+            this.metroLabel15.Location = new System.Drawing.Point(734, 44);
             this.metroLabel15.Name = "metroLabel15";
             this.metroLabel15.Size = new System.Drawing.Size(123, 20);
             this.metroLabel15.TabIndex = 98;

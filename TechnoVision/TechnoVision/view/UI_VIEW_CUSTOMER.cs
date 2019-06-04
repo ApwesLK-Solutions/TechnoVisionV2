@@ -78,5 +78,10 @@ namespace TechnoVision.view
                 CommonFunctions.ShowError(this,ex.Message.ToString());
             }
         }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

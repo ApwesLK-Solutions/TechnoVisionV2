@@ -143,7 +143,7 @@
             // 
             // 
             this.TxtBranchName.CustomButton.Image = null;
-            this.TxtBranchName.CustomButton.Location = new System.Drawing.Point(189, 1);
+            this.TxtBranchName.CustomButton.Location = new System.Drawing.Point(177, 1);
             this.TxtBranchName.CustomButton.Name = "";
             this.TxtBranchName.CustomButton.Size = new System.Drawing.Size(37, 37);
             this.TxtBranchName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -164,7 +164,7 @@
             this.TxtBranchName.SelectionLength = 0;
             this.TxtBranchName.SelectionStart = 0;
             this.TxtBranchName.ShortcutsEnabled = true;
-            this.TxtBranchName.Size = new System.Drawing.Size(227, 39);
+            this.TxtBranchName.Size = new System.Drawing.Size(215, 39);
             this.TxtBranchName.TabIndex = 1;
             this.TxtBranchName.UseSelectable = true;
             this.TxtBranchName.WaterMark = "Enter Branch Name...";
@@ -179,9 +179,9 @@
             this.BtnAddBranch.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.BtnAddBranch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnAddBranch.Highlight = true;
-            this.BtnAddBranch.Location = new System.Drawing.Point(469, 3);
+            this.BtnAddBranch.Location = new System.Drawing.Point(429, 3);
             this.BtnAddBranch.Name = "BtnAddBranch";
-            this.BtnAddBranch.Size = new System.Drawing.Size(89, 39);
+            this.BtnAddBranch.Size = new System.Drawing.Size(129, 39);
             this.BtnAddBranch.Style = MetroFramework.MetroColorStyle.Green;
             this.BtnAddBranch.TabIndex = 7;
             this.BtnAddBranch.Text = "Add Branch";
@@ -197,7 +197,7 @@
             // 
             // 
             this.TxtMasterPassword.CustomButton.Image = null;
-            this.TxtMasterPassword.CustomButton.Location = new System.Drawing.Point(189, 1);
+            this.TxtMasterPassword.CustomButton.Location = new System.Drawing.Point(161, 1);
             this.TxtMasterPassword.CustomButton.Name = "";
             this.TxtMasterPassword.CustomButton.Size = new System.Drawing.Size(37, 37);
             this.TxtMasterPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -208,7 +208,7 @@
             this.TxtMasterPassword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtMasterPassword.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtMasterPassword.Lines = new string[0];
-            this.TxtMasterPassword.Location = new System.Drawing.Point(236, 3);
+            this.TxtMasterPassword.Location = new System.Drawing.Point(224, 3);
             this.TxtMasterPassword.MaxLength = 32767;
             this.TxtMasterPassword.Name = "TxtMasterPassword";
             this.TxtMasterPassword.PasswordChar = '*';
@@ -218,7 +218,7 @@
             this.TxtMasterPassword.SelectionLength = 0;
             this.TxtMasterPassword.SelectionStart = 0;
             this.TxtMasterPassword.ShortcutsEnabled = true;
-            this.TxtMasterPassword.Size = new System.Drawing.Size(227, 39);
+            this.TxtMasterPassword.Size = new System.Drawing.Size(199, 39);
             this.TxtMasterPassword.TabIndex = 2;
             this.TxtMasterPassword.UseSelectable = true;
             this.TxtMasterPassword.WaterMark = "Enter Branch Master Password...";
@@ -243,13 +243,12 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.66667F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.39394F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.54189F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.88592F));
             this.tableLayoutPanel2.Controls.Add(this.TxtBranchName, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.BtnAddBranch, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.TxtMasterPassword, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 505);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;

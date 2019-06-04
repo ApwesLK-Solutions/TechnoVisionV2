@@ -63,7 +63,7 @@
             // 
             this.LblOrderNo.AutoSize = true;
             this.LblOrderNo.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblOrderNo.Location = new System.Drawing.Point(173, 120);
+            this.LblOrderNo.Location = new System.Drawing.Point(174, 120);
             this.LblOrderNo.Name = "LblOrderNo";
             this.LblOrderNo.Size = new System.Drawing.Size(74, 20);
             this.LblOrderNo.TabIndex = 96;
@@ -93,7 +93,7 @@
             // 
             this.LblReceiptNo.AutoSize = true;
             this.LblReceiptNo.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.LblReceiptNo.Location = new System.Drawing.Point(174, 86);
+            this.LblReceiptNo.Location = new System.Drawing.Point(235, 86);
             this.LblReceiptNo.Name = "LblReceiptNo";
             this.LblReceiptNo.Size = new System.Drawing.Size(123, 20);
             this.LblReceiptNo.TabIndex = 89;
@@ -337,6 +337,7 @@
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Add New Payment";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UI_ADD_NEW_PAYMENT_FormClosed);
             this.Load += new System.EventHandler(this.UI_ADD_NEW_PAYMENT_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridPayementHistory)).EndInit();

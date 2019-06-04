@@ -55,9 +55,13 @@
             this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.frame = new System.Windows.Forms.ComboBox();
+            this.framesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.testedBy = new System.Windows.Forms.ComboBox();
+            this.testersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.metroLabel28 = new MetroFramework.Controls.MetroLabel();
             this.TxtRemarks = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel26 = new MetroFramework.Controls.MetroLabel();
-            this.CmbFrame = new MetroFramework.Controls.MetroComboBox();
             this.TxtSegmentHeight = new MetroFramework.Controls.MetroTextBox();
             this.TxtPD = new MetroFramework.Controls.MetroTextBox();
             this.TxtLenseType = new MetroFramework.Controls.MetroTextBox();
@@ -88,13 +92,16 @@
             this.TxtMasterPassword = new MetroFramework.Controls.MetroTextBox();
             this.BtnSaveUser = new MetroFramework.Controls.MetroButton();
             this.spectaclesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.spectaclesTableAdapter();
-            this.framesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.framesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.framesTableAdapter();
+            this.testersTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.testersTableAdapter();
+            this.CmbTestedBy = new System.Windows.Forms.TextBox();
+            this.CmbFrame = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spectaclesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.technovisionDataSet)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -565,9 +572,11 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.frame);
+            this.groupBox2.Controls.Add(this.testedBy);
+            this.groupBox2.Controls.Add(this.metroLabel28);
             this.groupBox2.Controls.Add(this.TxtRemarks);
             this.groupBox2.Controls.Add(this.metroLabel26);
-            this.groupBox2.Controls.Add(this.CmbFrame);
             this.groupBox2.Controls.Add(this.TxtSegmentHeight);
             this.groupBox2.Controls.Add(this.TxtPD);
             this.groupBox2.Controls.Add(this.TxtLenseType);
@@ -601,6 +610,54 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Diagonosis";
             // 
+            // frame
+            // 
+            this.frame.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.technovisionDataSet, "spectacles.Frame", true));
+            this.frame.DataSource = this.framesBindingSource;
+            this.frame.DisplayMember = "FrameName";
+            this.frame.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frame.FormattingEnabled = true;
+            this.frame.Location = new System.Drawing.Point(800, 83);
+            this.frame.Name = "frame";
+            this.frame.Size = new System.Drawing.Size(253, 33);
+            this.frame.TabIndex = 21;
+            this.frame.ValueMember = "FrameName";
+            this.frame.TextChanged += new System.EventHandler(this.frame_TextChanged);
+            // 
+            // framesBindingSource
+            // 
+            this.framesBindingSource.DataMember = "frames";
+            this.framesBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // testedBy
+            // 
+            this.testedBy.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.technovisionDataSet, "spectacles.TestBy", true));
+            this.testedBy.DataSource = this.testersBindingSource;
+            this.testedBy.DisplayMember = "Name";
+            this.testedBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testedBy.FormattingEnabled = true;
+            this.testedBy.Location = new System.Drawing.Point(800, 46);
+            this.testedBy.Name = "testedBy";
+            this.testedBy.Size = new System.Drawing.Size(253, 33);
+            this.testedBy.TabIndex = 20;
+            this.testedBy.ValueMember = "Name";
+            this.testedBy.TextChanged += new System.EventHandler(this.testedBy_TextChanged);
+            // 
+            // testersBindingSource
+            // 
+            this.testersBindingSource.DataMember = "testers";
+            this.testersBindingSource.DataSource = this.technovisionDataSet;
+            // 
+            // metroLabel28
+            // 
+            this.metroLabel28.AutoSize = true;
+            this.metroLabel28.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel28.Location = new System.Drawing.Point(647, 50);
+            this.metroLabel28.Name = "metroLabel28";
+            this.metroLabel28.Size = new System.Drawing.Size(72, 20);
+            this.metroLabel28.TabIndex = 125;
+            this.metroLabel28.Text = "Tested By";
+            // 
             // TxtRemarks
             // 
             this.TxtRemarks.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
@@ -630,7 +687,7 @@
             this.TxtRemarks.SelectionStart = 0;
             this.TxtRemarks.ShortcutsEnabled = true;
             this.TxtRemarks.Size = new System.Drawing.Size(924, 46);
-            this.TxtRemarks.TabIndex = 23;
+            this.TxtRemarks.TabIndex = 24;
             this.TxtRemarks.UseSelectable = true;
             this.TxtRemarks.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtRemarks.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -644,20 +701,6 @@
             this.metroLabel26.Size = new System.Drawing.Size(65, 20);
             this.metroLabel26.TabIndex = 124;
             this.metroLabel26.Text = "Remarks";
-            // 
-            // CmbFrame
-            // 
-            this.CmbFrame.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.technovisionDataSet, "frames.FrameName", true));
-            this.CmbFrame.DataSource = this.framesBindingSource;
-            this.CmbFrame.DisplayMember = "FrameName";
-            this.CmbFrame.FormattingEnabled = true;
-            this.CmbFrame.ItemHeight = 24;
-            this.CmbFrame.Location = new System.Drawing.Point(800, 83);
-            this.CmbFrame.Name = "CmbFrame";
-            this.CmbFrame.Size = new System.Drawing.Size(253, 30);
-            this.CmbFrame.TabIndex = 21;
-            this.CmbFrame.UseSelectable = true;
-            this.CmbFrame.ValueMember = "Frame";
             // 
             // TxtSegmentHeight
             // 
@@ -687,7 +730,7 @@
             this.TxtSegmentHeight.SelectionStart = 0;
             this.TxtSegmentHeight.ShortcutsEnabled = true;
             this.TxtSegmentHeight.Size = new System.Drawing.Size(253, 35);
-            this.TxtSegmentHeight.TabIndex = 20;
+            this.TxtSegmentHeight.TabIndex = 23;
             this.TxtSegmentHeight.UseSelectable = true;
             this.TxtSegmentHeight.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSegmentHeight.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -1205,7 +1248,7 @@
             this.TxtMasterPassword.SelectionStart = 0;
             this.TxtMasterPassword.ShortcutsEnabled = true;
             this.TxtMasterPassword.Size = new System.Drawing.Size(236, 35);
-            this.TxtMasterPassword.TabIndex = 24;
+            this.TxtMasterPassword.TabIndex = 25;
             this.TxtMasterPassword.UseSelectable = true;
             this.TxtMasterPassword.WaterMark = "Enter Master Password...";
             this.TxtMasterPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1223,7 +1266,7 @@
             this.BtnSaveUser.Name = "BtnSaveUser";
             this.BtnSaveUser.Size = new System.Drawing.Size(219, 45);
             this.BtnSaveUser.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnSaveUser.TabIndex = 25;
+            this.BtnSaveUser.TabIndex = 26;
             this.BtnSaveUser.Text = "Save changes";
             this.BtnSaveUser.UseCustomBackColor = true;
             this.BtnSaveUser.UseCustomForeColor = true;
@@ -1235,14 +1278,35 @@
             // 
             this.spectaclesTableAdapter.ClearBeforeFill = true;
             // 
-            // framesBindingSource
-            // 
-            this.framesBindingSource.DataMember = "frames";
-            this.framesBindingSource.DataSource = this.technovisionDataSet;
-            // 
             // framesTableAdapter
             // 
             this.framesTableAdapter.ClearBeforeFill = true;
+            // 
+            // testersTableAdapter
+            // 
+            this.testersTableAdapter.ClearBeforeFill = true;
+            // 
+            // CmbTestedBy
+            // 
+            this.CmbTestedBy.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CmbTestedBy.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spectaclesBindingSource, "TestBy", true));
+            this.CmbTestedBy.ForeColor = System.Drawing.SystemColors.Window;
+            this.CmbTestedBy.Location = new System.Drawing.Point(435, 654);
+            this.CmbTestedBy.Name = "CmbTestedBy";
+            this.CmbTestedBy.Size = new System.Drawing.Size(200, 15);
+            this.CmbTestedBy.TabIndex = 126;
+            this.CmbTestedBy.TabStop = false;
+            this.CmbTestedBy.TextChanged += new System.EventHandler(this.CmbTestedBy_TextChanged);
+            // 
+            // CmbFrame
+            // 
+            this.CmbFrame.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CmbFrame.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.spectaclesBindingSource, "Frame", true));
+            this.CmbFrame.ForeColor = System.Drawing.SystemColors.Window;
+            this.CmbFrame.Location = new System.Drawing.Point(490, 654);
+            this.CmbFrame.Name = "CmbFrame";
+            this.CmbFrame.Size = new System.Drawing.Size(140, 15);
+            this.CmbFrame.TabIndex = 127;
             // 
             // UI_EDIT_SPECTACLE
             // 
@@ -1255,12 +1319,15 @@
             this.Controls.Add(this.TxtMasterPassword);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.CmbTestedBy);
+            this.Controls.Add(this.CmbFrame);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "UI_EDIT_SPECTACLE";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Edit Spectacle Order";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UI_EDIT_SPECTACLE_FormClosed);
             this.Load += new System.EventHandler(this.UI_EDIT_SPECTACLE_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1269,6 +1336,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.framesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1317,7 +1385,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel19;
         private MetroFramework.Controls.MetroLabel metroLabel17;
         private MetroFramework.Controls.MetroLabel metroLabel18;
-        private MetroFramework.Controls.MetroComboBox CmbFrame;
         private MetroFramework.Controls.MetroTextBox TxtSegmentHeight;
         private MetroFramework.Controls.MetroTextBox TxtPD;
         private MetroFramework.Controls.MetroTextBox TxtLenseType;
@@ -1336,5 +1403,12 @@
         private technovisionDataSetTableAdapters.spectaclesTableAdapter spectaclesTableAdapter;
         private System.Windows.Forms.BindingSource framesBindingSource;
         private technovisionDataSetTableAdapters.framesTableAdapter framesTableAdapter;
+        private MetroFramework.Controls.MetroLabel metroLabel28;
+        private System.Windows.Forms.BindingSource testersBindingSource;
+        private technovisionDataSetTableAdapters.testersTableAdapter testersTableAdapter;
+        private System.Windows.Forms.TextBox CmbTestedBy;
+        private System.Windows.Forms.TextBox CmbFrame;
+        private System.Windows.Forms.ComboBox frame;
+        private System.Windows.Forms.ComboBox testedBy;
     }
 }

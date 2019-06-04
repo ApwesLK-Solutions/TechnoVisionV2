@@ -162,13 +162,12 @@
             this.tableLayoutPanel1.Controls.Add(this.RadioContactLense, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.TxtSearch, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.RadioSpectacles, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 24);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1205, 42);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1205, 45);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // RadioContactLense
@@ -190,16 +189,16 @@
             // 
             // 
             this.TxtSearch.CustomButton.Image = null;
-            this.TxtSearch.CustomButton.Location = new System.Drawing.Point(443, 1);
+            this.TxtSearch.CustomButton.Location = new System.Drawing.Point(439, 1);
             this.TxtSearch.CustomButton.Name = "";
-            this.TxtSearch.CustomButton.Size = new System.Drawing.Size(33, 33);
+            this.TxtSearch.CustomButton.Size = new System.Drawing.Size(37, 37);
             this.TxtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TxtSearch.CustomButton.TabIndex = 1;
             this.TxtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TxtSearch.CustomButton.UseSelectable = true;
             this.TxtSearch.CustomButton.Visible = false;
             this.TxtSearch.DisplayIcon = true;
-            this.TxtSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TxtSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtSearch.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtSearch.Icon = global::TechnoVision.Properties.Resources.search;
             this.TxtSearch.Lines = new string[0];
@@ -213,7 +212,7 @@
             this.TxtSearch.SelectionLength = 0;
             this.TxtSearch.SelectionStart = 0;
             this.TxtSearch.ShortcutsEnabled = true;
-            this.TxtSearch.Size = new System.Drawing.Size(477, 35);
+            this.TxtSearch.Size = new System.Drawing.Size(477, 39);
             this.TxtSearch.TabIndex = 3;
             this.TxtSearch.UseSelectable = true;
             this.TxtSearch.WaterMark = "Search By Order Number...";

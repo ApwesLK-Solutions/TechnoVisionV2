@@ -27,7 +27,7 @@ namespace TechnoVision.view
 
         private void UI_ADD_NEW_PAYMENT_Load(object sender, EventArgs e)
         {
-            DateOrderDate.MinDate = DateTime.UtcNow.AddDays(-1);
+            DateOrderDate.MinDate = DateTime.UtcNow.AddDays(-2);
             // TODO: This line of code loads data into the 'technovisionDataSet.receipt' table. You can move, or remove it, as needed.
             this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
             receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
@@ -83,12 +83,13 @@ namespace TechnoVision.view
                     t.Dispose();
                     CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo.Text);
                     CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo.Text);
+                    this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
+                    receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
                     InvReceiptContactLense rpt = new InvReceiptContactLense();
                     rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
                     rpt.PrintToPrinter(2, false, 1, 1);
                     new UI_REPORT_VIEWER(rpt).Show();
-                    this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
-                    receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
+                    
                 }
                 if (orderType == "SPEC")
                 {
@@ -97,12 +98,13 @@ namespace TechnoVision.view
                     t.Dispose();
                     CommonFunctions.ShowSuccess(this, "New Payment Added To " + LblOrderNo.Text);
                     CommonFunctions.WriteUserLog(Session.Username, "New Payment Added To " + LblOrderNo.Text);
+                    this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
+                    receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
                     InvReceipt rpt = new InvReceipt();
                     rpt.RecordSelectionFormula = "{receipt1.ReceiptNumber} ='" + LblReceiptNo.Text + "'";
                     rpt.PrintToPrinter(2, false, 1, 1);
                     new UI_REPORT_VIEWER(rpt).Show();
-                    this.receiptTableAdapter.Fill(this.technovisionDataSet.receipt);
-                    receiptBindingSource.Filter = "OrderNumber ='" + orderNumber + "' AND OrderType = '" + orderType + "' AND Branch = " + Session.BranchId;
+                    
                 }
                 
             }
@@ -112,6 +114,11 @@ namespace TechnoVision.view
                 CommonFunctions.WriteToErrorLog(ex.Message.ToString());
             }
             
+        }
+
+        private void UI_ADD_NEW_PAYMENT_FormClosed(object sender, FormClosedEventArgs e)
+        {  
+            new UI_PAYMENT_VIEWER().Show();
         }
     }
 }

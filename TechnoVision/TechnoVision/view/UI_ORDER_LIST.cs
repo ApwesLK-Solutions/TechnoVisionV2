@@ -30,6 +30,7 @@ namespace TechnoVision.view
                 RadioSpectacles.Checked = true;
                 // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
                 this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+                CmbSetAs.SelectedIndex = 0;
             }
             catch(Exception ex)
             {
@@ -161,10 +162,12 @@ namespace TechnoVision.view
                 if (RadioContactLense.Checked == true)
                 {
                     new UI_EDIT_CONTACT_LENSE(LenseGrid.SelectedRows[0].Cells[0].Value.ToString()).Show();
+                    this.Dispose();
                 }
                 else if (RadioSpectacles.Checked == true)
                 {
                     new UI_EDIT_SPECTACLE(SpecGrid.SelectedRows[0].Cells[0].Value.ToString()).Show();
+                    this.Dispose();
                 }
             }
             catch(Exception ex)
@@ -183,22 +186,6 @@ namespace TechnoVision.view
             }
         }
 
-        private void BtnRefresh_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                spectaclesBindingSource.Filter = "Branch =" + Session.BranchId;
-                contactlenseBindingSource.Filter = "Branch =" + Session.BranchId;
-                // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
-                this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
-                timer1.Enabled = true;
-                // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
-                this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
-            }
-            catch (Exception ex)
-            {
-                CommonFunctions.ShowError(this, ex.Message.ToString());
-            }
-        }
+        
     }
 }

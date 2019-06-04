@@ -130,7 +130,6 @@
             this.contactlenseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.contactlenseTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.contactlenseTableAdapter();
             this.BtnEditOrder = new MetroFramework.Controls.MetroButton();
-            this.BtnRefresh = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecGrid)).BeginInit();
@@ -184,10 +183,11 @@
             this.CmbSetAs.FormattingEnabled = true;
             this.CmbSetAs.ItemHeight = 29;
             this.CmbSetAs.Items.AddRange(new object[] {
+            "PENDING",
             "DELEVERED",
-            "CANCELED",
-            "HOLD"});
-            this.CmbSetAs.Location = new System.Drawing.Point(19, 599);
+            "HOLD",
+            "CANCELED"});
+            this.CmbSetAs.Location = new System.Drawing.Point(19, 594);
             this.CmbSetAs.Name = "CmbSetAs";
             this.CmbSetAs.Size = new System.Drawing.Size(261, 35);
             this.CmbSetAs.TabIndex = 2;
@@ -1140,31 +1140,11 @@
             this.BtnEditOrder.UseStyleColors = true;
             this.BtnEditOrder.Click += new System.EventHandler(this.BtnEditOrder_Click);
             // 
-            // BtnRefresh
-            // 
-            this.BtnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnRefresh.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.BtnRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnRefresh.Highlight = true;
-            this.BtnRefresh.Location = new System.Drawing.Point(444, 594);
-            this.BtnRefresh.Name = "BtnRefresh";
-            this.BtnRefresh.Size = new System.Drawing.Size(74, 45);
-            this.BtnRefresh.Style = MetroFramework.MetroColorStyle.Green;
-            this.BtnRefresh.TabIndex = 8;
-            this.BtnRefresh.Text = "Refresh";
-            this.BtnRefresh.UseCustomBackColor = true;
-            this.BtnRefresh.UseCustomForeColor = true;
-            this.BtnRefresh.UseSelectable = true;
-            this.BtnRefresh.UseStyleColors = true;
-            this.BtnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
-            // 
             // UI_ORDER_LIST
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1144, 709);
-            this.Controls.Add(this.BtnRefresh);
             this.Controls.Add(this.LenseGrid);
             this.Controls.Add(this.SpecGrid);
             this.Controls.Add(this.groupBox1);
@@ -1288,6 +1268,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Remarks;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomerId;
-        private MetroFramework.Controls.MetroButton BtnRefresh;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TechnoVision.technovisionDataSetTableAdapters;
 
 namespace TechnoVision.view
 {
@@ -50,15 +51,32 @@ namespace TechnoVision.view
                 {
                     CommonFunctions.ShowError(this, "Fields cannot me Null");
                 }
-                
-                        else
-                        {
-                            contactlenseBindingSource.EndEdit();
-                            contactlenseTableAdapter.Update(technovisionDataSet);
-                            this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
-                            CommonFunctions.WriteUserLog(Session.Username, "Edited order number" + TxtOrderNo + "...Critical");
-                            CommonFunctions.ShowSuccess(this, "Successfully Changed edit Details...");
-                        }
+                else
+                {
+                    technovisionDataSetTableAdapters.receiptTableAdapter tt = new receiptTableAdapter();
+                    if (int.Parse(tt.getReceiptCountByOrder(TxtOrderNo.Text, "LENSE").ToString()) == 0 || int.Parse(tt.getReceiptCountByOrder(TxtOrderNo.Text, "LENSE").ToString()) >= 2)
+                    {
+                        CommonFunctions.ShowError(this, "You can not update the 'PAYMENT DETAILS' because there is two or more payments to this order. You can only update order when there was one payment.But Other details such as Diognosis Details, other Order details Except Payment Details will update as normally...");
+                        contactlenseBindingSource.EndEdit();
+                        contactlenseTableAdapter.Update(technovisionDataSet);
+                        this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+                        CommonFunctions.WriteUserLog(Session.Username, "Edited order number" + TxtOrderNo.Text + "...Critical");
+                        CommonFunctions.ShowSuccess(this, "Successfully Changed Diognosis Details and other Order details...");
+                        new UI_ORDER_LIST().Show();
+                        this.Dispose();
+                    }
+                    else if (int.Parse(tt.getReceiptCountByOrder(TxtOrderNo.Text, "LENSE").ToString()) == 1)
+                    {
+                        tt.UpdatePaymentAmountByOrder(double.Parse(TxtAdvance.Text), TxtOrderNo.Text, "LENSE");
+                        contactlenseBindingSource.EndEdit();
+                        contactlenseTableAdapter.Update(technovisionDataSet);
+                        this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+                        CommonFunctions.WriteUserLog(Session.Username, "Edited order number" + TxtOrderNo.Text + "...Critical");
+                        CommonFunctions.ShowSuccess(this, "Successfully Changed Diognosis Details and other Order details...");
+                        new UI_ORDER_LIST().Show();
+                        this.Dispose();
+                    }  
+                 }
                     
                
             }
@@ -136,6 +154,12 @@ namespace TechnoVision.view
             {
                 e.Handled = true;
             }
+        }
+
+        private void UI_EDIT_CONTACT_LENSE_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            new UI_ORDER_LIST().Show();
+            
         }
     }
 }
