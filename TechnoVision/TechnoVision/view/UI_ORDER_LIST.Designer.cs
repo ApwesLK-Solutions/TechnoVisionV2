@@ -45,6 +45,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.TxtSearch = new MetroFramework.Controls.MetroTextBox();
+            this.cmbYear = new System.Windows.Forms.ComboBox();
             this.SpecGrid = new MetroFramework.Controls.MetroGrid();
             this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,30 +57,10 @@
             this.balanceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentPlanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.paymentMethodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reminderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.branchDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.testByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EyeWear = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lense = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DistRightSph = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DistRightCyl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DistRightAxis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DistLeftSph = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DistLeftCyl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DistLeftAxis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AddRight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AddLeft = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LenseType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Frame = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SegmentHight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReminderDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spectaclesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.technovisionDataSet = new TechnoVision.technovisionDataSet();
-            this.spectaclesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.spectaclesTableAdapter();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.LenseGrid = new MetroFramework.Controls.MetroGrid();
             this.orderNumberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -128,8 +109,9 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactlenseBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.contactlenseTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.contactlenseTableAdapter();
             this.BtnEditOrder = new MetroFramework.Controls.MetroButton();
+            this.spectaclesTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.spectaclesTableAdapter();
+            this.contactlenseTableAdapter = new TechnoVision.technovisionDataSetTableAdapters.contactlenseTableAdapter();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpecGrid)).BeginInit();
@@ -217,7 +199,7 @@
             this.RadioContactLense.AutoSize = true;
             this.RadioContactLense.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.RadioContactLense.FontWeight = MetroFramework.MetroCheckBoxWeight.Bold;
-            this.RadioContactLense.Location = new System.Drawing.Point(333, 3);
+            this.RadioContactLense.Location = new System.Drawing.Point(240, 3);
             this.RadioContactLense.Name = "RadioContactLense";
             this.RadioContactLense.Size = new System.Drawing.Size(160, 25);
             this.RadioContactLense.Style = MetroFramework.MetroColorStyle.Green;
@@ -251,18 +233,20 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.5666F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.5666F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.75546F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.11134F));
             this.tableLayoutPanel1.Controls.Add(this.RadioSpectacles, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.RadioContactLense, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.TxtSearch, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.TxtSearch, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.cmbYear, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 24);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1103, 50);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
@@ -272,7 +256,7 @@
             // 
             // 
             this.TxtSearch.CustomButton.Image = null;
-            this.TxtSearch.CustomButton.Location = new System.Drawing.Point(399, 2);
+            this.TxtSearch.CustomButton.Location = new System.Drawing.Point(268, 2);
             this.TxtSearch.CustomButton.Name = "";
             this.TxtSearch.CustomButton.Size = new System.Drawing.Size(35, 35);
             this.TxtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -285,7 +269,7 @@
             this.TxtSearch.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.TxtSearch.Icon = global::TechnoVision.Properties.Resources.search;
             this.TxtSearch.Lines = new string[0];
-            this.TxtSearch.Location = new System.Drawing.Point(663, 3);
+            this.TxtSearch.Location = new System.Drawing.Point(794, 3);
             this.TxtSearch.MaxLength = 32767;
             this.TxtSearch.Name = "TxtSearch";
             this.TxtSearch.PasswordChar = '\0';
@@ -295,13 +279,30 @@
             this.TxtSearch.SelectionLength = 0;
             this.TxtSearch.SelectionStart = 0;
             this.TxtSearch.ShortcutsEnabled = true;
-            this.TxtSearch.Size = new System.Drawing.Size(437, 40);
+            this.TxtSearch.Size = new System.Drawing.Size(306, 40);
             this.TxtSearch.TabIndex = 7;
             this.TxtSearch.UseSelectable = true;
             this.TxtSearch.WaterMark = "Search By Order Number...";
             this.TxtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.TxtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
+            // 
+            // cmbYear
+            // 
+            this.cmbYear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbYear.FormattingEnabled = true;
+            this.cmbYear.Items.AddRange(new object[] {
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019"});
+            this.cmbYear.Location = new System.Drawing.Point(546, 3);
+            this.cmbYear.Name = "cmbYear";
+            this.cmbYear.Size = new System.Drawing.Size(242, 37);
+            this.cmbYear.TabIndex = 8;
+            this.cmbYear.TextChanged += new System.EventHandler(this.cmbYear_TextChanged);
             // 
             // SpecGrid
             // 
@@ -336,26 +337,7 @@
             this.balanceDataGridViewTextBoxColumn,
             this.paymentPlanDataGridViewTextBoxColumn,
             this.paymentMethodDataGridViewTextBoxColumn,
-            this.reminderDateDataGridViewTextBoxColumn,
             this.branchDataGridViewTextBoxColumn,
-            this.testByDataGridViewTextBoxColumn,
-            this.EyeWear,
-            this.Lense,
-            this.DistRightSph,
-            this.DistRightCyl,
-            this.DistRightAxis,
-            this.DistLeftSph,
-            this.DistLeftCyl,
-            this.DistLeftAxis,
-            this.AddRight,
-            this.AddLeft,
-            this.LenseType,
-            this.Frame,
-            this.PD,
-            this.SegmentHight,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.ReminderDate,
             this.dataGridViewTextBoxColumn4});
             this.SpecGrid.DataSource = this.spectaclesBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -468,14 +450,6 @@
             this.paymentMethodDataGridViewTextBoxColumn.ReadOnly = true;
             this.paymentMethodDataGridViewTextBoxColumn.Width = 189;
             // 
-            // reminderDateDataGridViewTextBoxColumn
-            // 
-            this.reminderDateDataGridViewTextBoxColumn.DataPropertyName = "ReminderDate";
-            this.reminderDateDataGridViewTextBoxColumn.HeaderText = "Reminder Days";
-            this.reminderDateDataGridViewTextBoxColumn.Name = "reminderDateDataGridViewTextBoxColumn";
-            this.reminderDateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.reminderDateDataGridViewTextBoxColumn.Width = 169;
-            // 
             // branchDataGridViewTextBoxColumn
             // 
             this.branchDataGridViewTextBoxColumn.DataPropertyName = "Branch";
@@ -483,150 +457,6 @@
             this.branchDataGridViewTextBoxColumn.Name = "branchDataGridViewTextBoxColumn";
             this.branchDataGridViewTextBoxColumn.ReadOnly = true;
             this.branchDataGridViewTextBoxColumn.Width = 98;
-            // 
-            // testByDataGridViewTextBoxColumn
-            // 
-            this.testByDataGridViewTextBoxColumn.DataPropertyName = "TestBy";
-            this.testByDataGridViewTextBoxColumn.HeaderText = "Test By";
-            this.testByDataGridViewTextBoxColumn.Name = "testByDataGridViewTextBoxColumn";
-            this.testByDataGridViewTextBoxColumn.ReadOnly = true;
-            this.testByDataGridViewTextBoxColumn.Width = 98;
-            // 
-            // EyeWear
-            // 
-            this.EyeWear.DataPropertyName = "EyeWear";
-            this.EyeWear.HeaderText = "EyeWear";
-            this.EyeWear.Name = "EyeWear";
-            this.EyeWear.ReadOnly = true;
-            this.EyeWear.Width = 114;
-            // 
-            // Lense
-            // 
-            this.Lense.DataPropertyName = "Lense";
-            this.Lense.HeaderText = "Lense";
-            this.Lense.Name = "Lense";
-            this.Lense.ReadOnly = true;
-            this.Lense.Width = 87;
-            // 
-            // DistRightSph
-            // 
-            this.DistRightSph.DataPropertyName = "DistRightSph";
-            this.DistRightSph.HeaderText = "DistRightSph";
-            this.DistRightSph.Name = "DistRightSph";
-            this.DistRightSph.ReadOnly = true;
-            this.DistRightSph.Width = 154;
-            // 
-            // DistRightCyl
-            // 
-            this.DistRightCyl.DataPropertyName = "DistRightCyl";
-            this.DistRightCyl.HeaderText = "DistRightCyl";
-            this.DistRightCyl.Name = "DistRightCyl";
-            this.DistRightCyl.ReadOnly = true;
-            this.DistRightCyl.Width = 147;
-            // 
-            // DistRightAxis
-            // 
-            this.DistRightAxis.DataPropertyName = "DistRightAxis";
-            this.DistRightAxis.HeaderText = "DistRightAxis";
-            this.DistRightAxis.Name = "DistRightAxis";
-            this.DistRightAxis.ReadOnly = true;
-            this.DistRightAxis.Width = 155;
-            // 
-            // DistLeftSph
-            // 
-            this.DistLeftSph.DataPropertyName = "DistLeftSph";
-            this.DistLeftSph.HeaderText = "DistLeftSph";
-            this.DistLeftSph.Name = "DistLeftSph";
-            this.DistLeftSph.ReadOnly = true;
-            this.DistLeftSph.Width = 139;
-            // 
-            // DistLeftCyl
-            // 
-            this.DistLeftCyl.DataPropertyName = "DistLeftCyl";
-            this.DistLeftCyl.HeaderText = "DistLeftCyl";
-            this.DistLeftCyl.Name = "DistLeftCyl";
-            this.DistLeftCyl.ReadOnly = true;
-            this.DistLeftCyl.Width = 132;
-            // 
-            // DistLeftAxis
-            // 
-            this.DistLeftAxis.DataPropertyName = "DistLeftAxis";
-            this.DistLeftAxis.HeaderText = "DistLeftAxis";
-            this.DistLeftAxis.Name = "DistLeftAxis";
-            this.DistLeftAxis.ReadOnly = true;
-            this.DistLeftAxis.Width = 140;
-            // 
-            // AddRight
-            // 
-            this.AddRight.DataPropertyName = "AddRight";
-            this.AddRight.HeaderText = "AddRight";
-            this.AddRight.Name = "AddRight";
-            this.AddRight.ReadOnly = true;
-            this.AddRight.Width = 123;
-            // 
-            // AddLeft
-            // 
-            this.AddLeft.DataPropertyName = "AddLeft";
-            this.AddLeft.HeaderText = "AddLeft";
-            this.AddLeft.Name = "AddLeft";
-            this.AddLeft.ReadOnly = true;
-            this.AddLeft.Width = 108;
-            // 
-            // LenseType
-            // 
-            this.LenseType.DataPropertyName = "LenseType";
-            this.LenseType.HeaderText = "LenseType";
-            this.LenseType.Name = "LenseType";
-            this.LenseType.ReadOnly = true;
-            this.LenseType.Width = 128;
-            // 
-            // Frame
-            // 
-            this.Frame.DataPropertyName = "Frame";
-            this.Frame.HeaderText = "Frame";
-            this.Frame.Name = "Frame";
-            this.Frame.ReadOnly = true;
-            this.Frame.Width = 93;
-            // 
-            // PD
-            // 
-            this.PD.DataPropertyName = "PD";
-            this.PD.HeaderText = "PD";
-            this.PD.Name = "PD";
-            this.PD.ReadOnly = true;
-            this.PD.Width = 64;
-            // 
-            // SegmentHight
-            // 
-            this.SegmentHight.DataPropertyName = "SegmentHight";
-            this.SegmentHight.HeaderText = "SegmentHight";
-            this.SegmentHight.Name = "SegmentHight";
-            this.SegmentHight.ReadOnly = true;
-            this.SegmentHight.Width = 166;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "SpecialInstractions";
-            this.dataGridViewTextBoxColumn2.HeaderText = "SpecialInstractions";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 201;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Remarks";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Remarks";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 112;
-            // 
-            // ReminderDate
-            // 
-            this.ReminderDate.DataPropertyName = "ReminderDate";
-            this.ReminderDate.HeaderText = "ReminderDate";
-            this.ReminderDate.Name = "ReminderDate";
-            this.ReminderDate.ReadOnly = true;
-            this.ReminderDate.Width = 163;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -645,10 +475,6 @@
             // 
             this.technovisionDataSet.DataSetName = "technovisionDataSet";
             this.technovisionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // spectaclesTableAdapter
-            // 
-            this.spectaclesTableAdapter.ClearBeforeFill = true;
             // 
             // timer1
             // 
@@ -734,7 +560,7 @@
             this.LenseGrid.EnableHeadersVisualStyles = false;
             this.LenseGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.LenseGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.LenseGrid.Location = new System.Drawing.Point(18, 172);
+            this.LenseGrid.Location = new System.Drawing.Point(19, 225);
             this.LenseGrid.Name = "LenseGrid";
             this.LenseGrid.ReadOnly = true;
             this.LenseGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -1117,10 +943,6 @@
             this.contactlenseBindingSource.DataMember = "contactlense";
             this.contactlenseBindingSource.DataSource = this.technovisionDataSet;
             // 
-            // contactlenseTableAdapter
-            // 
-            this.contactlenseTableAdapter.ClearBeforeFill = true;
-            // 
             // BtnEditOrder
             // 
             this.BtnEditOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -1139,6 +961,14 @@
             this.BtnEditOrder.UseSelectable = true;
             this.BtnEditOrder.UseStyleColors = true;
             this.BtnEditOrder.Click += new System.EventHandler(this.BtnEditOrder_Click);
+            // 
+            // spectaclesTableAdapter
+            // 
+            this.spectaclesTableAdapter.ClearBeforeFill = true;
+            // 
+            // contactlenseTableAdapter
+            // 
+            this.contactlenseTableAdapter.ClearBeforeFill = true;
             // 
             // UI_ORDER_LIST
             // 
@@ -1192,37 +1022,6 @@
         private technovisionDataSetTableAdapters.contactlenseTableAdapter contactlenseTableAdapter;
         private MetroFramework.Controls.MetroButton BtnEditOrder;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn orderNumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn orderStatusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn orderDateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dueDateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn advanceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn discountDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn balanceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn paymentPlanDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn paymentMethodDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reminderDateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn branchDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn testByDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EyeWear;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lense;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DistRightSph;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DistRightCyl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DistRightAxis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DistLeftSph;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DistLeftCyl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DistLeftAxis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AddRight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AddLeft;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LenseType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Frame;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SegmentHight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ReminderDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderNumberDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderStatusDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderDateDataGridViewTextBoxColumn1;
@@ -1268,5 +1067,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Remarks;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomerId;
+        private System.Windows.Forms.ComboBox cmbYear;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orderNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orderStatusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orderDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dueDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn advanceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn discountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn balanceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paymentPlanDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paymentMethodDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn branchDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

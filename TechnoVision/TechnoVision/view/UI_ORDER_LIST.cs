@@ -24,19 +24,50 @@ namespace TechnoVision.view
             {
                 spectaclesBindingSource.Filter = "Branch =" + Session.BranchId;
                 contactlenseBindingSource.Filter = "Branch =" + Session.BranchId;
+                cmbYear.SelectedIndex = 0;
+
                 // TODO: This line of code loads data into the 'technovisionDataSet.contactlense' table. You can move, or remove it, as needed.
-                this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
+                //this.contactlenseTableAdapter.Fill(this.technovisionDataSet.contactlense);
                 timer1.Enabled = true;
                 RadioSpectacles.Checked = true;
+
                 // TODO: This line of code loads data into the 'technovisionDataSet.spectacles' table. You can move, or remove it, as needed.
-                this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+                //this.spectaclesTableAdapter.Fill(this.technovisionDataSet.spectacles);
+                loadData();
                 CmbSetAs.SelectedIndex = 0;
+
             }
             catch(Exception ex)
             {
                 CommonFunctions.ShowError(this,ex.Message.ToString());
             }
             
+
+        }
+
+        private void loadData() 
+        {
+            try
+            {
+                
+                technovisionDataSetTableAdapters.spectaclesTableAdapter ta = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
+                technovisionDataSetTableAdapters.spec_ordersTableAdapter taa = new technovisionDataSetTableAdapters.spec_ordersTableAdapter();
+
+                //technovisionDataSet.spectaclesDataTable dt = new technovisionDataSet.spectaclesDataTable();
+                //ta.FillByYearSpectacles(dt, cmbYear.Text);
+                this.SpecGrid.DataSource = taa.GetDataByYear(cmbYear.Text);
+                //this.SpecGrid.DataSource = ta.GetDataByYear(cmbYear.Text);
+
+                //load contact lenses
+                technovisionDataSetTableAdapters.contactlenseTableAdapter co = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+                technovisionDataSet.contactlenseDataTable tb = new technovisionDataSet.contactlenseDataTable();
+                co.FillByYearContactlenses(tb, cmbYear.Text);
+                this.LenseGrid.DataSource = tb;
+            }
+            catch(Exception ex)
+            {
+                CommonFunctions.ShowError(this, ex.Message.ToString());
+            }
 
         }
 
@@ -60,11 +91,11 @@ namespace TechnoVision.view
             {
                 if (RadioContactLense.Checked == true)
                 {
-                    contactlenseBindingSource.Filter = "Branch =" + Session.BranchId + "AND OrderNumber LIKE '%" + TxtSearch.Text + "%'";
+                    (LenseGrid.DataSource as DataTable).DefaultView.RowFilter = "Branch =" + Session.BranchId + "AND OrderNumber LIKE '%" + TxtSearch.Text + "%'";
                 }
                 else if (RadioSpectacles.Checked == true)
                 {
-                    spectaclesBindingSource.Filter = "Branch =" + Session.BranchId + "AND OrderNumber LIKE '%" + TxtSearch.Text + "%'";
+                    (SpecGrid.DataSource as DataTable).DefaultView.RowFilter = "Branch =" + Session.BranchId + "AND OrderNumber LIKE '%" + TxtSearch.Text + "%'";
 
                 }
             }
@@ -186,6 +217,18 @@ namespace TechnoVision.view
             }
         }
 
-        
+        private void cmbYear_TextChanged(object sender, EventArgs e)
+        {
+            technovisionDataSetTableAdapters.spectaclesTableAdapter ta = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
+            technovisionDataSet.spectaclesDataTable dt = new technovisionDataSet.spectaclesDataTable();
+            ta.FillByYearSpectacles(dt, cmbYear.Text);
+            this.SpecGrid.DataSource = dt;
+
+            //load contact lenses
+            technovisionDataSetTableAdapters.contactlenseTableAdapter co = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
+            technovisionDataSet.contactlenseDataTable tb = new technovisionDataSet.contactlenseDataTable();
+            co.FillByYearContactlenses(tb, cmbYear.Text);
+            this.LenseGrid.DataSource = tb;
+        }
     }
 }

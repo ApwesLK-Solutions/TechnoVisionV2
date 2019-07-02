@@ -30,7 +30,9 @@ namespace TechnoVision.view
 
         private void BtnSpectacles_Click(object sender, EventArgs e)
         {
-            new UI_SELECT_CUSTOMER("S").Show(); 
+            
+             new UI_SELECT_CUSTOMER("S").Show();
+            
         }
 
         private void BtnContactLenses_Click(object sender, EventArgs e)
@@ -80,6 +82,7 @@ namespace TechnoVision.view
 
         private void UI_DASHBOARD_FormClosed(object sender, FormClosedEventArgs e)
         {
+            
             f.Show();
             f.ShowInTaskbar = true;
         }
@@ -201,5 +204,9 @@ namespace TechnoVision.view
             
         }
 
+        private void UI_DASHBOARD_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
     }
 }

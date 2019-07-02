@@ -49,7 +49,20 @@ namespace TechnoVision.view
 
         private void TxtSearchCustomer_TextChanged(object sender, EventArgs e)
         {
-            customerBindingSource.Filter = "Name LIKE '*" + TxtSearchCustomer.Text + "*' OR Phone LIKE'*" + TxtSearchCustomer.Text + "*'";
+            if(TxtSearchCustomer.Text=="")
+            {
+                this.customerTableAdapter.Fill(this.technovisionDataSet.customer);
+                this.GridManageCustomer.DataSource = this.technovisionDataSet.customer;
+
+            }
+            else
+            {
+                technovisionDataSetTableAdapters.customerTableAdapter ta = new technovisionDataSetTableAdapters.customerTableAdapter();
+                technovisionDataSet.customerDataTable dt = ta.GetDataByName("%" + TxtSearchCustomer.Text + "%");
+                this.GridManageCustomer.DataSource = dt;
+                //"SELECT * FROM customer WHERE Name LIKE '*" + TxtSearchCustomer.Text + "*' OR Phone LIKE'*" + TxtSearchCustomer.Text + "*'";
+            }
+            //customerBindingSource.Filter = "Name LIKE '*" + TxtSearchCustomer.Text + "*' OR Phone LIKE'*" + TxtSearchCustomer.Text + "*'";
         }
 
         private void BtnRefresh_Click(object sender, EventArgs e)
@@ -80,6 +93,11 @@ namespace TechnoVision.view
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TxtSearchCustomer_Click(object sender, EventArgs e)
         {
 
         }

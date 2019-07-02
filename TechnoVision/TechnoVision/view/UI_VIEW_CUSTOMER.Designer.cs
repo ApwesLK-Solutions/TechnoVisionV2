@@ -122,6 +122,7 @@
             this.GridManageCustomer.Size = new System.Drawing.Size(1164, 511);
             this.GridManageCustomer.Style = MetroFramework.MetroColorStyle.Green;
             this.GridManageCustomer.TabIndex = 1;
+            this.GridManageCustomer.VirtualMode = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -277,6 +278,7 @@
             this.TxtSearchCustomer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TxtSearchCustomer.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.TxtSearchCustomer.TextChanged += new System.EventHandler(this.TxtSearchCustomer_TextChanged);
+            this.TxtSearchCustomer.Click += new System.EventHandler(this.TxtSearchCustomer_Click);
             // 
             // BtnRefresh
             // 

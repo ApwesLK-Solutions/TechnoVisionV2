@@ -39,7 +39,7 @@ namespace TechnoVision.view
                 CmbPaymentPlan.SelectedIndex = 0;
                 CmbTestedBy.SelectedIndex = 0;
                 
-                DateOrderDate.MinDate =  DateTime.UtcNow.AddDays(-2);;
+                DateOrderDate.MinDate =  DateTime.UtcNow.AddDays(-30);;
                 DateDueDate.MinDate = DateTime.UtcNow;
             }
             catch(Exception)
@@ -110,7 +110,7 @@ namespace TechnoVision.view
             
                 else
                 {
-                    
+                       
                     SpecOrderController.FillFormOne(TxtOrderNo.Text, DateOrderDate.Value.ToString("yyyy-MM-dd"), DateDueDate.Value.ToString("yyyy-MM-dd"), CmbPaymentPlan.Text, CmbPaymentMethod.Text, CmbTestedBy.Text, CmbOrderStatus.Text, Double.Parse(TxtEyeWearAmount.Text), Double.Parse(TxtLenseAmount.Text), Double.Parse(TxtTotal.Text), Double.Parse(TxtAdvance.Text), Double.Parse(TxtDiscount.Text), Double.Parse(TxtBalance.Text), int.Parse(TxtRemindDays.Text), custID);
                     receiptController.FillReceipt(SpecOrder.OrderNumber, SpecOrder.Advance, SpecOrder.OrderDate, "SPEC", custID);
 

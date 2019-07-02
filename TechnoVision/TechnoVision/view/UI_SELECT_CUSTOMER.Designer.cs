@@ -199,6 +199,7 @@
             this.GridSelectCustomer.Size = new System.Drawing.Size(1164, 492);
             this.GridSelectCustomer.Style = MetroFramework.MetroColorStyle.Green;
             this.GridSelectCustomer.TabIndex = 6;
+            this.GridSelectCustomer.VirtualMode = true;
             this.GridSelectCustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridSelectCustomer_CellContentClick);
             this.GridSelectCustomer.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.GridSelectCustomer_MouseDoubleClick);
             // 

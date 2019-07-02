@@ -22,7 +22,7 @@ namespace TechnoVision.controller
             SpecOrder.Total = total;
             SpecOrder.Advance = advance;
             SpecOrder.Discount = discount;
-            SpecOrder.Balance = balance;
+            SpecOrder.Balance = total - discount - advance; // 20190608 Updated
             SpecOrder.ReminderDays = reminderDays;
             SpecOrder.custID = custid;
         }
