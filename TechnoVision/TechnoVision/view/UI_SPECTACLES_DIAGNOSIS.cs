@@ -32,7 +32,7 @@ namespace TechnoVision.view
                 else
                 {
                     SpecOrderController.FillFormTwo(TxtRightDistSph.Text, TxtRightDistCyl.Text, TxtRightDistAxis.Text, TxtLeftDistSph.Text, TxtLeftDistCyl.Text, TxtLeftDistAxis.Text, TxtRightAdd.Text, TxtLeftAdd.Text, TxtLenseType.Text, CmbFrame.Text, TxtPD.Text, TxtSegmentHeight.Text, TxtSpecialIns.Text, TxtRemarks.Text);
-                    receiptController.FillReceipt(int.Parse(SpecOrder.OrderNumber), SpecOrder.Advance, SpecOrder.OrderDate,"SPEC");
+                    receiptController.FillReceipt(SpecOrder.OrderNumber, SpecOrder.Advance, SpecOrder.OrderDate,"SPEC");
                     technovisionDataSetTableAdapters.spectaclesTableAdapter t = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
 
                     t.Insert(SpecOrder.OrderNumber, DateTime.Parse(SpecOrder.OrderDate), DateTime.Parse(SpecOrder.DueDate), SpecOrder.OrderStatus, SpecOrder.Total, SpecOrder.Advance, SpecOrder.Discount, SpecOrder.Balance, SpecOrder.TestBy, SpecOrder.Eyewear, SpecOrder.Lense, SpecOrder.PaymentPlan, SpecOrder.PaymentMethod, SpecOrder.DistRightSph, SpecOrder.DistRightCyl, SpecOrder.DistRightAxis, SpecOrder.DistLeftSph, SpecOrder.DistLeftCyl, SpecOrder.DistLeftAxis, SpecOrder.AddRight, SpecOrder.AddLeft, SpecOrder.LenseType, SpecOrder.Frame, SpecOrder.PD, SpecOrder.SegmentHeight, SpecOrder.SpecialInstruction, SpecOrder.Remarks, SpecOrder.ReminderDays, SpecOrder.Branch,DateTime.Now.ToString("yyyy"));

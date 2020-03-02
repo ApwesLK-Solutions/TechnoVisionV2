@@ -71,6 +71,7 @@ namespace TechnoVision.view
                 newRno = Session.BranchName[0] + "1";
             }
             LblReceiptNo.Text = newRno;
+            Receipt.ReceiptNumber = newRno;
         }
 
         private void BtnNext_Click(object sender, EventArgs e)
