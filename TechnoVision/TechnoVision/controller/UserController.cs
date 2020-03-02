@@ -60,6 +60,7 @@ namespace TechnoVision.controller
                     Session.BranchId = row.BranchId;
                     Brow = branchTable.FindById(row.BranchId);
                     Session.BranchMasterPassword = Brow.MasterPassword;
+                    Session.BranchName = Brow.BranchName;
                     CommonFunctions.WriteUserLog("SYSTEM", User.Username + " is Log into the System");
                     //return true;
                 }

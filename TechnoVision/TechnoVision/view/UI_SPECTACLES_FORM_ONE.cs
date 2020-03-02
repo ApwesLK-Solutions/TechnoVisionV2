@@ -40,8 +40,8 @@ namespace TechnoVision.view
                 technovisionDataSetTableAdapters.spectaclesTableAdapter table = new technovisionDataSetTableAdapters.spectaclesTableAdapter();
                 try
                 {
-                    LastOrderNumber = table.GetMaxOrderNumber(Session.BranchId).ToString();
-                    NewOrderNumber = (int.Parse(LastOrderNumber) + 1).ToString();
+                    LastOrderNumber = table.GetLastOrderNumber(Session.BranchId , DateTime.Now.ToString("yyyy")).ToString();
+                    NewOrderNumber = (int.Parse(LastOrderNumber) + 1).ToString();                  
                 }
                 catch (NullReferenceException ex)
                 {

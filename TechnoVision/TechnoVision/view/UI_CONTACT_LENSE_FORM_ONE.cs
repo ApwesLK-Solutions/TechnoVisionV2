@@ -69,7 +69,7 @@ namespace TechnoVision.view
                 technovisionDataSetTableAdapters.contactlenseTableAdapter table = new technovisionDataSetTableAdapters.contactlenseTableAdapter();
                 try
                 {
-                    LastOrderNumber = table.GetMaxOrderNumber(Session.BranchId).ToString();
+                    LastOrderNumber = table.GetLastOrderNumber(Session.BranchId,DateTime.Now.ToString("yyyy")).ToString();
                     NewOrderNumber = (int.Parse(LastOrderNumber) + 1).ToString();
                 }
                 catch (NullReferenceException ex)
